@@ -2,7 +2,7 @@
 	title = "Brig Chief"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "Marshall"
 	economic_power = 5
 	minimal_player_age = 7
 	ideal_character_age = 35
@@ -45,7 +45,7 @@
 	title = "Forensic Technician"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "Marshall"
 	economic_power = 5
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -94,10 +94,10 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/officer
-	title = "Master at Arms"
+	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Chief of Security"
+	supervisors = "Marshall"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
