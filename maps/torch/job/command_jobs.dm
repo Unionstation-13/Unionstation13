@@ -126,14 +126,10 @@
 		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_rd,
 		access_petrov_control, access_petrov_maint, access_pathfinder, access_explorer, access_eva, access_solgov_crew,
-		access_expedition_shuttle, access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm,
-		access_radio_sci, access_radio_exp, access_research_storage, access_fabrication
-		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads,
-		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
-		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
-		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_torch_fax, access_radio_comm,
-		access_radio_med
+		access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm, access_radio_sci, access_radio_exp,
+		access_radio_med, access_research_storage, access_fabrication, access_medical, access_morgue, access_external_airlocks,
+		access_chapel_office, access_crematorium, access_chemistry, access_virology,
+		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
