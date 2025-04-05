@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Physician"
+	title = "Medical Officer"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -47,7 +47,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/junior_doctor
-	title = "Medical Resident"
+	title = "Nurse"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2

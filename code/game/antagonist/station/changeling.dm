@@ -2,8 +2,8 @@ GLOBAL_TYPED_NEW(changelings, /datum/antagonist/changeling)
 
 /datum/antagonist/changeling
 	id = MODE_CHANGELING
-	role_text = "Changeling"
-	role_text_plural = "Changelings"
+	role_text = "The Entity"
+	role_text_plural = "Entities"
 	feedback_tag = "changeling_objective"
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/submap)
 	restricted_jobs = list(/datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/captain, /datum/job/hos)
