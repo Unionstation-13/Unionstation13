@@ -1,5 +1,5 @@
 /datum/job/senior_scientist
-	title = "Senior Researcher"
+	title = "Research Supervisor"
 	department = "Science"
 	department_flag = SCI
 
@@ -12,7 +12,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 30)
 	ideal_character_age = 50
 	alt_titles = list(
-		"Research Supervisor")
+		"Server Manager")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps

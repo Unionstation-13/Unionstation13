@@ -24,23 +24,12 @@ Civilian
 *******/
 
 /datum/job/assistant
-	title = "Passenger"
+	title = "Prisoner of war"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	announced = FALSE
-	alt_titles = list(
-		"Journalist" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Historian",
-		"Botanist",
-		"Investor" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/investor,
-		"Naturalist",
-		"Ecologist",
-		"Entertainer",
-		"Independent Observer",
-		"Sociologist",
-		"Trainer")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(

@@ -1,5 +1,5 @@
 /datum/job/qm
-	title = "Deck Chief"
+	title = "Supply Manager"
 	department = "Supply"
 	department_flag = SUP
 	total_positions = 1
@@ -44,7 +44,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cargo_tech
-	title = "Deck Technician"
+	title = "Logistics Officer"
 	department = "Supply"
 	department_flag = SUP
 	total_positions = 3
