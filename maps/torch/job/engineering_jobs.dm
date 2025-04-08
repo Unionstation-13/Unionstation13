@@ -54,7 +54,7 @@
 	return "You are the Engineer. You are a veteran SNCO. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
 
 /datum/job/engineer
-	title = "Maitnence Technician"
+	title = "Maintenance Technician"
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief Engineer"
@@ -112,10 +112,10 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer/get_description_blurb()
-	return "You are a maitnence technician. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
+	return "You are a maintenance technician. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
 
 /datum/job/engineer_trainee
-	title = "Maitnence Technician Trainee"
+	title = "Maintenance Technician Trainee"
 	department = "Engineering"
 	department_flag = ENG
 	total_positions = 2
@@ -166,7 +166,7 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer_trainee/get_description_blurb()
-	return "You are a engineering trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
+	return "You are an engineering trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
 
 /datum/job/roboticist
 	title = "Roboticist"
