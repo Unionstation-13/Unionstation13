@@ -21,14 +21,14 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
-	name = OUTFIT_JOB_NAME("Maitnence Technician - Torch")
+	name = OUTFIT_JOB_NAME("Maintenance Technician - Torch")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/engineering)
 	pda_type = /obj/item/modular_computer/pda/engineering
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
-	name = OUTFIT_JOB_NAME("Maitnence Technician - Fleet")
+	name = OUTFIT_JOB_NAME("Maintenance Technician - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 
