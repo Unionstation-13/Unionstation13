@@ -1,10 +1,10 @@
 /datum/job/pathfinder
-	title = "Pathfinder"
+	title = "Seinor Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Science Officer"
+	supervisors = "The United Rocknall Corporate representative"
 	selection_color = "#68099e"
 	minimal_player_age = 1
 	economic_power = 10
@@ -41,11 +41,11 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the EC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot Charon if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
+	return "You are the Seinor Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"
-	supervisors = "the Pathfinder"
+	supervisors = "Seinor Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
@@ -85,12 +85,12 @@
 	)
 
 /datum/job/explorer
-	title = "Explorer"
+	title = "Juinor Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Pathfinder"
+	supervisors = "Your Rocknall Employment Contract and the Seinor Rocknall Associate"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
@@ -119,4 +119,4 @@
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
 /datum/job/explorer/get_description_blurb()
-	return "You are an Explorer. Your duty is to go on expeditions to away sites. The Pathfinder is your team leader. You are to look for anything of economic or scientific interest to the SCG - mineral deposits, alien flora/fauna, artifacts. You will also likely encounter hazardous environments, aggressive wildlife or malfunctioning defense systems, so tread carefully."
+	return "You are a Juinor Rocknall Associate. Your duty is to maintain your seinor officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."

@@ -1,10 +1,10 @@
 /datum/job/liaison
-	title = "Workplace Liaison"
+	title = "Human Resources Manager"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Corporate Regulations, the Union Charter, and the Expeditionary Corps Organisation"
+	supervisors = "Your own judgement in maintaining workplace stability as well as the laws of the UGN."
 	selection_color = "#2f2f7f"
 	economic_power = 18
 	minimal_player_age = 0
