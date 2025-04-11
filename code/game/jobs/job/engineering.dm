@@ -22,7 +22,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/engineering/chief_engineer
 
 /datum/job/engineer
-	title = "Maintenance Technician"
+	title = "Engineer"
 	department = "Engineering"
 	department_flag = ENG
 
