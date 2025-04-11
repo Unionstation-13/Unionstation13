@@ -92,6 +92,7 @@
 /datum/job/rd
 	title = "Sci-Med Officer"
 	supervisors = "The United Rocknall Corporation and the UGN"
+	department_flag = COM|MED|SCI
 	economic_power = 12
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -140,8 +141,8 @@
 /datum/job/rd/get_description_blurb()
 	return "You are the Sci-Med Officer. You are responsible for both the research and medical department. You keep the crew healthy, as well as handle the science aspects of the ship. Send people to explore, don't get killed yourself, and advise the CO on relevant matters."
 /datum/job/cmo
-	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	title = "Medical Administrator"
+	supervisors = "The Sci-Med Officer and your moral code"
 	economic_power = 14
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -184,7 +185,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cmo/get_description_blurb()
-	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
+	return "You are the Medical Administrator, your job is to maintain the order of medical and ensure paitent survival. You are a subordinate to the Sci-Med Administrator on account of your employment at the United Rocknall Corporation. Refer to Rocknall Code for incidents."
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
@@ -245,7 +246,7 @@
 
 /datum/job/hos
 	title = "Marshall"
-	supervisors = "the Commanding Officer and the First Lieutenant"
+	supervisors = "The Security Code of Conduct and your own instincts"
 	economic_power = 10
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -322,12 +323,12 @@
 	return "You are the United Galactic Nations Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to the UGN on mission progress and important events."
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "United Galatic Nations Commissioned Advisor"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "Directives from the UGN"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
 	economic_power = 11
@@ -370,8 +371,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and First Lieutenant. You are an experienced enlisted person, very likely equal only in experience to the CO and First Lieutenant. You know the regulations better than anyone."
-
+	return "You are United Galactic Nations Commissioned Advisor. You are responsible for maintaining conformity to the UGN Code. Any and all violations should be reported to the Peacekeeper Division of the ship."
 /datum/job/bridgeofficer
 	title = "Command Secretary"
 	department = "Support"

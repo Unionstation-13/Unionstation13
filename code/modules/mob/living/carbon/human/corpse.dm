@@ -146,7 +146,7 @@
 	corpse_outfits = list(/singleton/hierarchy/outfit/job/medical/doctor)
 
 /obj/landmark/corpse/engineer
-	name = "Engineer"
+	name = "Frontier Engineer"
 	corpse_outfits = list(/singleton/hierarchy/outfit/job/engineering/engineer)
 
 /obj/landmark/corpse/scientist

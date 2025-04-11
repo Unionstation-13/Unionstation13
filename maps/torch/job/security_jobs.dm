@@ -1,5 +1,5 @@
 /datum/job/warden
-	title = "Second Lietenant"
+	title = "Second Lieutenant"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Marshall"
@@ -42,17 +42,14 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Forensic Technician"
+	title = "UGN Commissioned Investigator"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Marshall"
+	supervisors = "The UGN and your intuition."
 	economic_power = 5
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
-	alt_titles = list(
-		"Criminal Investigator"
-	)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -97,7 +94,7 @@
 	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "Marshall"
+	supervisors = "Marshall and your reasoning"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
