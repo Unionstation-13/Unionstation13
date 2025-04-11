@@ -140,8 +140,8 @@
 /datum/job/rd/get_description_blurb()
 	return "You are the Sci-Med Officer. You are responsible for both the research and medical department. You keep the crew healthy, as well as handle the science aspects of the ship. Send people to explore, don't get killed yourself, and advise the CO on relevant matters."
 /datum/job/cmo
-	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	title = "Medical Administrator"
+	supervisors = "The Sci-Med Officer and your moral code"
 	economic_power = 14
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -184,7 +184,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cmo/get_description_blurb()
-	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
+	return "You are the Medical Administrator, your job is to maintain the order of medical and ensure paitent survival. You are a subordinate to the Sci-Med Administrator on account of your employment at the United Rocknall Corporation. Refer to Rocknall Code for incidents."
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
