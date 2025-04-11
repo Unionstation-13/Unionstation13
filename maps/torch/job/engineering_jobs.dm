@@ -63,10 +63,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 30
 	alt_titles = list(
-		"Engine Technician",
-		"Damage Control Technician",
-		"Electrician",
-		"Atmospheric Technician",
+		"EVA Technician"
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
