@@ -55,7 +55,7 @@
 	ideal_character_age = 45
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "physicians and the Chief Medical Officer"
+	supervisors = "Physicians and the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 6
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
@@ -95,7 +95,7 @@
 	title = "Medical Technician"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "physicians and the Chief Medical Officer"
+	supervisors = "Physicians and the Chief Medical Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
@@ -192,7 +192,7 @@
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "medical personnel, and the Chief Medical Officer"
+	supervisors = "Medical personnel, and the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
