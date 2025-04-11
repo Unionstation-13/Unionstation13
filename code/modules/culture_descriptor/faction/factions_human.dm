@@ -87,11 +87,8 @@
 
 
 /singleton/cultural_info/faction/remote/xynergy
-	name = FACTION_XYNERGY
-	description = "Xynergy is a privately held company, known for their work with xenobiological organisms. They develop and \
-	produce products such as the netgun and dociler, both used for capturing or taming xenofauna. In addition, they are the largest \
-	commercial fishing entity for spacefaring animals, such as space carp and space pikes. They recently gained public notoriety by discovering and \
-	training the Giant Armoured Serpentids."
+	name = FACTION_URC
+	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy. Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
 
 
@@ -118,12 +115,8 @@
 
 
 /singleton/cultural_info/faction/pcrc
-	name = FACTION_PCRC
-	description = "Proxima Centauri Risk Control, often known as PCRC, is one of the largest suppliers of private security in Sol Space. \
-	The PCRC handles numerous government, private, and corporate contracts to provide a variety of services. They primarily act as private law enforcement, \
-	security, VIP protection, asset protection, search and rescue operations, peacekeeping, and escort duties. A relatively quiet and new company, \
-	it has quickly established itself as a reliable and effective provider of security solutions. This has often put it at odds with its main \
-	competitor, SAARE."
+	name = FACTION_PEACEKEEPER
+	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading. They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
 
 
 /singleton/cultural_info/faction/saare
