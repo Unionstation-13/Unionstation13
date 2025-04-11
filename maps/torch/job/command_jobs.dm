@@ -245,7 +245,7 @@
 
 /datum/job/hos
 	title = "Marshall"
-	supervisors = "the Commanding Officer and the First Lieutenant"
+	supervisors = "The Security Code of Conduct and your own instincts"
 	economic_power = 10
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -322,12 +322,12 @@
 	return "You are the United Galactic Nations Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to the UGN on mission progress and important events."
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "United Galatic Nations Commisioned Advisor"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "Directives from the UGN"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
 	economic_power = 11
@@ -370,8 +370,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and First Lieutenant. You are an experienced enlisted person, very likely equal only in experience to the CO and First Lieutenant. You know the regulations better than anyone."
-
+	return "You are United Galactic Nations Commissioned Advisor. You are responsible for maintaining conformity to the UGN Code. Any and all violations should be reported to the Peacekeeper Division of the ship."
 /datum/job/bridgeofficer
 	title = "Command Secretary"
 	department = "Support"
