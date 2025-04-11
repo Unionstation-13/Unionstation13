@@ -1,5 +1,5 @@
 /datum/job/warden
-	title = "Second Lietenant"
+	title = "Second Lieutenant"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Marshall"
@@ -42,7 +42,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "UGN Commisioned Investigator"
+	title = "UGN Commissioned Investigator"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The UGN and your intuition."
