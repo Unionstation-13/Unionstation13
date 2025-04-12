@@ -1,9 +1,9 @@
 /singleton/cultural_info/faction/scg
 	name = FACTION_UNITED_GALACTIC_NATIONS
-	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax.
-	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy.
-	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts.
-	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances.
+	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
+	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
+	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
+	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
 
 
@@ -131,6 +131,13 @@
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
+
+/singleton/cultural_info/faction/formerunion
+	name = FACTION_FORMERUNION
+	description = "You were once a citizen of the Union. For one reason or another, you recognized the regime for what it was, and set your mind on leaving. \
+	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
+	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
+	economic_power = 0.8
 
 
 /singleton/cultural_info/faction/other
