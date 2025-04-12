@@ -1,6 +1,5 @@
 var/global/list/stored_shock_by_ref = list()
 
-
 /singleton/cultural_info/faction
 	var/list/invalid_jobs = list()
 
