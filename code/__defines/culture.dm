@@ -11,7 +11,7 @@
 	)
 
 // Cultural IDs.
-#define FACTION_SOL_CENTRAL    "United Galactic Nations"
+#define FACTION_UNITED_GALACTIC_NATIONS    "United Galactic Nations"
 #define FACTION_INDIE_CONFED  "Gilgamesh Colonial Confederation"
 #define FACTION_NANOTRASEN     "NanoTrasen"
 #define FACTION_FREETRADE      "Free Trade Union"

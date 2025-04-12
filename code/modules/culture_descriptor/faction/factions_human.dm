@@ -1,9 +1,9 @@
 /singleton/cultural_info/faction/scg
 	name = FACTION_UNITED_GALACTIC_NATIONS
-	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax.
-	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy.
-	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts.
-	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances.
+	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
+	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
+	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
+	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
 
 
