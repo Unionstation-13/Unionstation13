@@ -6,7 +6,7 @@
 		/singleton/species/vox = list(/datum/job/ai, /datum/job/cyborg),
 		/singleton/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 	)
-
+	var/faction_to_job_blacklist = list(CULTURE_FORMERUNION = list(/datum/job/officer, /datum/job/warden, /datum/job/hos))
 #define HUMAN_ONLY_JOBS /datum/job/rd, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/cmo, /datum/job/doctor, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/chemist, /datum/job/pathfinder, /datum/job/explorer
 	species_to_job_blacklist = list(
 		/singleton/species/machine = list(HUMAN_ONLY_JOBS),
@@ -49,7 +49,7 @@
 	for(var/job_type in allowed_jobs)
 		var/datum/job/job = SSjobs.get_by_path(job_type)
 		// Most species are restricted from SCG security and command roles
-		if(job && (job.department_flag) && length(job.allowed_branches) && !(/datum/mil_branch/civilian in job.allowed_branches))
+		if(job && (job.department_flag | COM) && length(job.allowed_branches) && !(/datum/mil_branch/civilian in job.allowed_branches))
 			for(var/species_name in list())
 				var/singleton/species/S = GLOB.species_by_name[species_name]
 				var/species_blacklist = species_to_job_blacklist[S.type]

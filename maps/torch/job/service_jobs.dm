@@ -73,7 +73,7 @@
 	)
 
 /datum/job/janitor
-	title = "B.I.O Juinor Associate"
+	title = "B.I.O Junior Associate"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
@@ -106,7 +106,7 @@
 
 
 /datum/job/chef
-	title = "B.I.O Seinor Serviceman"
+	title = "B.I.O Senior Serviceman"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
@@ -144,12 +144,12 @@
 
 
 /datum/job/crew
-	title = "Juinor Kitchen Assistant"
+	title = "Junior Kitchen Assistant"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "The B.I.O Seinor Servicemen and everyone above you in service."
+	supervisors = "The B.I.O Senior Servicemen and everyone above you in service."
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman

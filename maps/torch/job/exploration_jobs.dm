@@ -45,7 +45,7 @@
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"
-	supervisors = "Seinor Rocknall Associate"
+	supervisors = "Senior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
@@ -119,4 +119,4 @@
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
 /datum/job/explorer/get_description_blurb()
-	return "You are a Junior Rocknall Associate. Your duty is to maintain your seinor officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."
+	return "You are a Junior Rocknall Associate. Your duty is to maintain your senior officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."
