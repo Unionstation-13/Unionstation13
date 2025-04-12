@@ -4,7 +4,7 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "UGN and Cooran Supply approved transit laws"
+	supervisors = "Customs and Cooran Supply approved transit laws"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 27)
