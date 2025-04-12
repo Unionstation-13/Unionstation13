@@ -138,6 +138,13 @@
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
 
+/singleton/cultural_info/faction/formerunion
+	name = FACTION_FORMERUNION
+	description = "You were once a citizen of the Union. For one reason or another, you recognized the regime for what it was, and set your mind on leaving. \
+	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
+	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
+	economic_power = 0.8
+
 
 /singleton/cultural_info/faction/other
 	name = FACTION_OTHER
