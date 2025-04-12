@@ -650,9 +650,8 @@
 
 /obj/item/paper/memo/security/testing
 	name = "research testing notice"
-	info = {"An inter-departmental memo from the Chief Engineer, co-signed by the Seinor Enlisted Advisor conserning repeated instances of the research department testing explosive devices aboard the vessel. Attached is a copy of the vessel's SOP pertaining to research operations, with in big bold letters "Testing of any explosives with risk of penetrating the hull or causing mass destruction must be done at an away site." with a note that the testing aboard has repeatedly caused damage to the thruster fuel storage tank, and that engineering staff are 'prepared to file as much paperwork that is required'."}
+	info = {"An inter-departmental memo from the Chief Engineer, co-signed by the Senior Enlisted Advisor conserning repeated instances of the research department testing explosive devices aboard the vessel. Attached is a copy of the vessel's SOP pertaining to research operations, with in big bold letters "Testing of any explosives with risk of penetrating the hull or causing mass destruction must be done at an away site." with a note that the testing aboard has repeatedly caused damage to the thruster fuel storage tank, and that engineering staff are 'prepared to file as much paperwork that is required'."}
 
 /obj/item/paper/memo/security/goodcomms
 	name = "security comm report"
 	info = {"An "internal use only" report created by mid-level EXO Security Officers, complimenting Torch for their effective, direct and information focused radio-communication. The author mentions an abbreviation table from years ago that is no longer used. It ends by gently reminding members that gossiping in person is fine, but not to do it in recorded rooms like interrogation."}
-

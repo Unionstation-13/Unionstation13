@@ -11,7 +11,7 @@
 	)
 
 // Cultural IDs.
-#define FACTION_SOL_CENTRAL    "Sol Central Government"
+#define FACTION_UNITED_GALACTIC_NATIONS    "United Galactic Nations"
 #define FACTION_INDIE_CONFED  "Gilgamesh Colonial Confederation"
 #define FACTION_NANOTRASEN     "NanoTrasen"
 #define FACTION_FREETRADE      "Free Trade Union"
@@ -25,7 +25,9 @@
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
-#define FACTION_SPACECOPS  "Sol Federal Police"
+#define FACTION_SPACECOPS  "UGN Peacekeeper Corps"
+#define FACTION_UNION  "The Union"
+#define FACTION_FORMERUNION "Former Union Citizen"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"

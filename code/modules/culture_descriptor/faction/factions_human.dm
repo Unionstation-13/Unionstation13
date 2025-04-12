@@ -1,16 +1,10 @@
 /singleton/cultural_info/faction/scg
-	name = FACTION_SOL_CENTRAL
-	description = "The Sol Central Government, commonly referred to as SolGov or the SCG, is a federal republic \
-	composed of numerous human member states spanning many systems.\
-	Based in the Sol System and with most seats of Government on Olympus, Mars,\
-	the SCG governs the majority of human space. Currently engaged in a cold war with the Confederation of Gilgamesh \
-	Its primary governing bodies are the Assemblies which are led by an Assembly-elected secretary general. \
-	Member states have a great degree of freedom in their actions, though the SCG manages sapient rights, \
-	domestic security, economic policy, and diplomacy for humanity as a whole. The SCG's population is diverse \
-	including many non-humans (though they are not citizens) and encompassing a wide range of systems, territories \
-	habitats, and celestial bodies. However, it is large, cumbersome, divided and slow to respond to issues due to \
-	its massive bureaucracy and the distance between worlds. Through its member states, the SCG governs as one of the \
-	most advanced and powerful civilisations in the known galaxy."
+	name = FACTION_UNITED_GALACTIC_NATIONS
+	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
+	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
+	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
+	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
+	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
 
 
 /singleton/cultural_info/faction/scg/fleet
@@ -137,6 +131,13 @@
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
+
+/singleton/cultural_info/faction/formerunion
+	name = FACTION_FORMERUNION
+	description = "You were once a citizen of the Union. For one reason or another, you recognized the regime for what it was, and set your mind on leaving. \
+	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
+	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
+	economic_power = 0.8
 
 
 /singleton/cultural_info/faction/other
