@@ -1,8 +1,12 @@
 var/global/list/stored_shock_by_ref = list()
 
-/singleton/cultural_info/
-	var/Name = FACTION_FORMERUNION
-	var/list/invalid_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+
+/singleton/cultural_info/faction
+	var/list/invalid_jobs = list()
+
+/singleton/cultural_info/faction/formerunion
+	name = FACTION_FORMERUNION
+	invalid_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /mob/living/proc/apply_stored_shock_to(mob/living/target)
 	if(stored_shock_by_ref["\ref[src]"])
@@ -64,7 +68,7 @@ var/global/list/stored_shock_by_ref = list()
 
 //Culture blacklist code.
 /singleton/species/proc/check_background(datum/job/job, datum/preferences/prefs)
-	var/singleton/cultural_info/culture = SSculture.get_culture(prefs.cultural_info[TAG_FACTION])
+	var/singleton/cultural_info/faction/culture = SSculture.get_culture(prefs.cultural_info[TAG_FACTION])
 	. = istype(culture) && !(job.type in culture.invalid_jobs)
 
 /singleton/species/proc/get_digestion_product()
