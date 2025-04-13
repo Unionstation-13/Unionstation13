@@ -8,32 +8,17 @@
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/scg/fleet
-	name = FACTION_FLEET
-	description = "The Fleet is the primary component of the SCG Defence Forces. It mostly protects SCG space from pirates, smugglers, \
-	and occasional vox raiders, with its last serious military engagement being the Gaia war over 10 years ago. \
-	The oldest component of the Defence Forces, the Fleet considers itself the pinnacle of Human military accomplishment. \
-	It is well funded, but seen as complacent and bloated. It is made up of five Fleets, with missions ranging from \
-	diplomatic security for Sol dignitaries, to border patrol along the vast frontier and quick reaction force duties. \
-	Any SCG human citizen with at least a secondary school level of education can enlist into the Fleet, going through \
-	basic training and on-ship training for their rating (speciality). Commissioned officer candidates require at least a \
-	bachelor's degree and go through a lengthy training process before being assigned to a warship. \
-	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle."
+	name = FACTION_UGNFLEET
+	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
+	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
+	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
+	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations.\"
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/torchco
-	name = FACTION_CORPORATE
-	description = "The Expeditionary Corps Organisation is a government-owned, publicly traded limited liability company assembled from the corporate \
-	backers who asssisted in funding the Torch project when it opened five years ago. Major players include NanoTrasen, Xynergy and \
-	Hephaestus Industries, as well as dozens of others. The Expeditionary Corps Organisation reports its earnings and operation plans directly to a board of \
-	directors, made up of corporate representatives and members of Expeditionary Corps command and the Committee for the Economy. \
-	While on the surface the Expeditionary Corps Organisation appears to have noble goals, it is in reality a compromise between the noble ideals of pioneering \
-	science, and the corporate desire to make a quick buck off whatever is found. Rumours also abound about shady practices, hidden \
-	protocols, and xenoartifacts being 'lost' in transit, but nothing has been conclusively proven as of yet, and SCG doubtless is \
-	reluctant to harpoon their own project."
-	economic_power = 1.2
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
-
-/singleton/cultural_info/faction/gcc
+	name = FACTION_URC_EXP
+	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy\
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)/singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
 	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
 	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
