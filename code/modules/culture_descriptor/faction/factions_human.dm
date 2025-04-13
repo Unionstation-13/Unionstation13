@@ -18,9 +18,10 @@
 /singleton/cultural_info/faction/torchco
 	name = FACTION_URC_EXP
 	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy."
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)/singleton/cultural_info/faction/gcc
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 	economic_power = 1.2
 
+/singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
 	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
 	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
