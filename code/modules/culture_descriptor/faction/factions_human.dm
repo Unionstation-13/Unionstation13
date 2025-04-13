@@ -110,7 +110,8 @@
 
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PEACEKEEPER
-	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading. They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
+	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
+	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax.\"
 
 
 /singleton/cultural_info/faction/saare
