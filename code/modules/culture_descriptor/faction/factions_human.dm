@@ -5,7 +5,7 @@
 	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
 	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
@@ -18,7 +18,7 @@
 	basic training and on-ship training for their rating (speciality). Commissioned officer candidates require at least a \
 	bachelor's degree and go through a lengthy training process before being assigned to a warship. \
 	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle."
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_CORPORATE
@@ -31,7 +31,7 @@
 	protocols, and xenoartifacts being 'lost' in transit, but nothing has been conclusively proven as of yet, and SCG doubtless is \
 	reluctant to harpoon their own project."
 	economic_power = 1.2
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
@@ -44,7 +44,7 @@
 	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
 	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
 	economic_power = 0.9
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
@@ -56,7 +56,7 @@
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
 	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
 	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc)."
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/police
 	name = FACTION_SPACECOPS
@@ -66,7 +66,7 @@
 	Notable units are: Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
 	Special Investigations (sensitive and urgent cases) and the Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
 	The contractor SFP \"Trackers\" are also used find and arrest low-profile fugitives."
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
@@ -78,13 +78,13 @@
 	NanoTrasen is characterized by its aggression and questionable ethics, which combined with the high emphasis they put on new, untested, and dangerous \
 	technology, which means their installations are often considered unsafe and hazardous."
 	economic_power = 1.2
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/remote/xynergy
 	name = FACTION_URC
 	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy. Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/remote/hephaestus
 	name = FACTION_HEPHAESTUS
@@ -95,7 +95,7 @@
 	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/free
 	name = FACTION_FREETRADE
@@ -106,13 +106,12 @@
 	Gateway installations and planets. Somewhat unscrupulous, FTU stations and merchants are known for \
 	selling a great many restricted items, and supplying all manner of goods indiscriminately."
 	economic_power = 1.3
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PEACEKEEPER
 	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
 	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax.\"
-
 
 /singleton/cultural_info/faction/saare
 	name = FACTION_SAARE
@@ -121,7 +120,7 @@
 	military services, but have begun training programs to breed their own operatives for future members. Typical assignments for SAARE \
 	contractors include: private law enforcement, ship escort, location security, VIP escort, and VIP or asset recovery. In the last decade, the \
 	company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/dais
 	name = FACTION_DAIS
@@ -132,6 +131,7 @@
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/formerunion
 	name = FACTION_FORMERUNION
@@ -139,8 +139,9 @@
 	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
 	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
 	economic_power = 0.8
-
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/other
 	name = FACTION_OTHER
 	description = "You belong to one of the many other factions that operate in the galaxy. Too numerous to list, these factions represent a variety of interests, purposes, intents and goals."
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
