@@ -1,4 +1,4 @@
-/singleton/cultural_info/faction/scg
+	/singleton/cultural_info/faction/scg
 	name = FACTION_UNITED_GALACTIC_NATIONS
 	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
 	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
@@ -18,8 +18,9 @@
 /singleton/cultural_info/faction/torchco
 	name = FACTION_URC_EXP
 	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy."
+  economic_power = 1.2
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
-	economic_power = 1.2
+	
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
@@ -30,7 +31,7 @@
 	Increasingly xenophobic, the GCC is in a cold war with the Sol Central Government following the Gaia Conflict — a large- \
 	scale conflict between the SCG and GCC that saw a great deal of death and destruction. Citizens of the GCC are referred to as \"Indies\" in Sol space, \
 	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
+	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
 	economic_power = 0.9
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
@@ -43,7 +44,7 @@
 	long-term scientific outposts, and studying anomalies and xenoarcheological sites. \
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
 	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
-	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc)."
+	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc). "
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/police
@@ -70,7 +71,8 @@
 
 /singleton/cultural_info/faction/remote/xynergy
 	name = FACTION_URC
-	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy. Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
+	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
+	 Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
@@ -100,7 +102,6 @@
 	name = FACTION_PEACEKEEPER
 	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
 	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
-
 
 /singleton/cultural_info/faction/saare
 	name = FACTION_SAARE
