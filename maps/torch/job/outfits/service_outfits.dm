@@ -16,7 +16,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/service/janitor
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Torch")
+	name = OUTFIT_JOB_NAME("Sanitation Technician - Titen")
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/black
 	id_types = list(/obj/item/card/id/torch/crew/service/janitor)
@@ -35,7 +35,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/service/cook
-	name = OUTFIT_JOB_NAME("Cook - Torch")
+	name = OUTFIT_JOB_NAME("Cook - Titen")
 	uniform = /obj/item/clothing/under/rank/chef
 	shoes = /obj/item/clothing/shoes/black
 	id_types = list(/obj/item/card/id/torch/crew/service/chef)
@@ -66,11 +66,11 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/assist/janitor
-	name = OUTFIT_JOB_NAME("Custodian - Torch")
+	name = OUTFIT_JOB_NAME("Custodian - Titen")
 	uniform = /obj/item/clothing/under/rank/janitor
 
 /singleton/hierarchy/outfit/job/torch/crew/service/chaplain
-	name = OUTFIT_JOB_NAME("Chaplain - Torch")
+	name = OUTFIT_JOB_NAME("Chaplain - Titen")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	id_types = list(/obj/item/card/id/torch/crew/service/chaplain)
 

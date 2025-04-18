@@ -7221,7 +7221,7 @@
 	},
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Medical Paperwork Office"
+	department = "Titen - Medical Paperwork Office"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medpaperworkoffice)
@@ -14763,7 +14763,7 @@
 	},
 /obj/floor_decal/corner/research/mono,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Research Paperwork Office"
+	department = "Titen - Research Paperwork Office"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
@@ -23036,7 +23036,7 @@
 	dir = 4
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Investigations Office"
+	department = "Titen - Investigations Office"
 	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
@@ -23183,7 +23183,7 @@
 "nFh" = (
 /obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Brig Chief"
+	department = "Titen - Brig Chief"
 	},
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -32

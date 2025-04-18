@@ -252,7 +252,7 @@ var/global/const/access_petrov_maint = "ACCESS_TORCH_PETROV_MAINT" //208
 var/global/const/access_torch_helm = "ACCESS_TORCH_HELM"
 /datum/access/torch_helm
 	id = access_torch_helm
-	desc = "Torch Helm"
+	desc = "Titen Helm"
 	region = ACCESS_REGION_COMMAND
 
 // Torch Radio Access

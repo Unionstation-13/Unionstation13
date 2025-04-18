@@ -116,7 +116,7 @@
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology, such as computer hardware \
 	software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in the Sol Central \
 	 Government; its systems used by most consumers and businesses within SolGov. DAIS is predates the Sol Central Government, and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
+	few corporate members of the Solar Assembly. DAIS is also a major investor in the Titen project, and is on the Expeditionary Corps Organization board of directors. \
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
