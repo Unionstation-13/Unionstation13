@@ -267,7 +267,7 @@ var/global/list/changeling_fabricated_clothing = list(
 
 /obj/item/card/id/syndicate/changeling
 	name = "identification card"
-	desc = "An identification card issued to SolGov crewmembers aboard the SEV Torch."
+	desc = "An identification card issued to crewmembers aboard the UGN Titen."
 	icon_state = "changeling"
 	assignment = "Harvester"
 	origin_tech = list()

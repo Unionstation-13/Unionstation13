@@ -201,7 +201,7 @@
 	info = {"A "confidential" notice issued to Sol Government Representatives, informing them of an office fire caused by improper cigarette ash management."}
 
 /obj/item/paper/memo/scgr/boringreports
-	name = "\improper Torch project status update #132"
+	name = "\improper Titen project status update #132"
 	info = {"A "confidential" report containing nothing you'd like to read, featuring updates that you knew about three weeks ago."}
 
 /obj/item/paper/memo/scgr/documentdamage
@@ -214,7 +214,7 @@
 
 /obj/item/paper/memo/scgr/yourjob
 	name = "\improper SCG and you"
-	info = {"Some "confidential" briefing documents, detailing the job of the SCGR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the SEV Torch. They also should advise the Commanding Officer, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations. At the bottom, underlined several times and in bold is "YOU ARE NOT A LAWYER"."}
+	info = {"Some "confidential" briefing documents, detailing the job of the SCGR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the UGN Titen. They also should advise the Commanding Officer, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations. At the bottom, underlined several times and in bold is "YOU ARE NOT A LAWYER"."}
 
 /obj/item/paper/memo/scgr/perdiemdeny
 	name = "per diem denials"
@@ -226,11 +226,11 @@
 
 /obj/item/paper/memo/scgr/floritstatement
 	name = "undersecretary statement"
-	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the SEV Torch. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the SCG Fleet under Florit's leadership in the interest of preventing any further incidents."}
+	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the UGN Titen. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the SCG Fleet under Florit's leadership in the interest of preventing any further incidents."}
 
 /obj/item/paper/memo/scgr/senateminutes
 	name = "assembly floor proceedings"
-	info = {"A copy of the minutes from the Sol Assembly hearing over an emergency bill giving the SCG Defense Forces jurisdiction over the Expeditionary Corps (and by extension, the SEV Torch). The debate is vicious and devolves into angry bickering at points. The bill appears to have gotten uncomfortably close to being passed."}
+	info = {"A copy of the minutes from the Sol Assembly hearing over an emergency bill giving the SCG Defense Forces jurisdiction over the Expeditionary Corps (and by extension, the UGN Titen). The debate is vicious and devolves into angry bickering at points. The bill appears to have gotten uncomfortably close to being passed."}
 
 /obj/item/paper/memo/scgr/radicals
 	name = "radicalization investigation report"
@@ -297,7 +297,7 @@
 
 /obj/item/paper/memo/command/evasiveflight
 	name = "evasive flight maneuvers"
-	info = {"A hastily-penned report detailing strategies for evading ship-to-ship laser fire and missile strikes in the event of another attack on the Torch. The author highly recommends the tactical use of space dust and other debris, citing the successful evasive action taken during the attack by the SFV Nathan Hale."}
+	info = {"A hastily-penned report detailing strategies for evading ship-to-ship laser fire and missile strikes in the event of another attack on the Titen. The author highly recommends the tactical use of space dust and other debris, citing the successful evasive action taken during the attack by the SFV Nathan Hale."}
 
 /obj/item/paper/memo/command/confedsightings
 	name = "confederate naval protocols"
@@ -309,7 +309,7 @@
 
 /obj/item/paper/memo/command/miranda
 	name = "miranda line caution"
-	info = {"A notice from the Ministry of Stellar Charts to the command of the SEV Torch. It is long and full of technical Cartography, but is quite clearly summarized when it says "although the Miranda Line was drawn as the edge of 'Known' Space during the Collapse of the Terran Commonwealth, the Space you are exploring was known to Humanity, but the charts were lost, it is not impossible for you to come across evidence of previous human presence."}
+	info = {"A notice from the Ministry of Stellar Charts to the command of the UGN Titen. It is long and full of technical Cartography, but is quite clearly summarized when it says "although the Miranda Line was drawn as the edge of 'Known' Space during the Collapse of the Terran Commonwealth, the Space you are exploring was known to Humanity, but the charts were lost, it is not impossible for you to come across evidence of previous human presence."}
 
 /obj/item/paper/memo/command/testing
 	name = "research testing complaints"
