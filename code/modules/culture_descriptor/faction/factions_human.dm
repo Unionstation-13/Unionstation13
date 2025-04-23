@@ -12,16 +12,13 @@
 	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
 	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
 	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
-	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations."
+	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations.\"
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_URC_EXP
-	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy."
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
-	economic_power = 1.2
-
-/singleton/cultural_info/faction/gcc
+	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy\
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)/singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
 	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
 	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
@@ -99,8 +96,7 @@
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PEACEKEEPER
 	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
-	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
-
+	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax.\"
 
 /singleton/cultural_info/faction/saare
 	name = FACTION_SAARE
