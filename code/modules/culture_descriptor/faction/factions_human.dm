@@ -7,6 +7,7 @@
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
 
 
+
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_UGNFLEET
 	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
@@ -34,6 +35,7 @@
 	economic_power = 0.9
 
 
+
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
 	description = "The Expeditionary Corps is an SCG agency tasked with exploration of uncharted space, uncharted worlds, \
@@ -57,6 +59,7 @@
 	The contractor SFP \"Trackers\" are also used find and arrest low-profile fugitives."
 
 
+
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
 	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the largest megacorporations of the modern day.\
@@ -69,11 +72,13 @@
 	economic_power = 1.2
 
 
+
 /singleton/cultural_info/faction/remote/xynergy
 	name = FACTION_URC
 	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
 	 Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
+
 
 
 /singleton/cultural_info/faction/remote/hephaestus
@@ -85,6 +90,7 @@
 	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
+
 
 
 /singleton/cultural_info/faction/free
@@ -102,6 +108,7 @@
 	name = FACTION_PEACEKEEPER
 	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
 	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
+
 
 
 /singleton/cultural_info/faction/saare
