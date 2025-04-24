@@ -38,8 +38,7 @@
 
 	return FALSE
 
-
-// Faction whitelist/blacklist system
+// Faction blacklist/whitelist system
 // Faction-specific whitelists/blacklists are located in factions_human.dm
 /singleton/species/proc/check_background(datum/job/J, datum/preferences/prefs)
 	var/singleton/cultural_info/faction/F = SSculture.get_culture(prefs.cultural_info[TAG_FACTION])

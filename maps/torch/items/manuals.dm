@@ -68,7 +68,7 @@
 /obj/item/material/folder/nt/rd
 
 /obj/item/material/folder/envelope/preset/captain
-	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - TORCH UMBRA'."
+	desc = "A thick envelope. The UGN crest is stamped in the corner, along with 'TOP SECRET - TITEN GAMMA'."
 
 /obj/item/material/folder/envelope/preset/captain/Initialize()
 	..()
@@ -78,11 +78,11 @@
 	var/obj/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b>[SPAN_COLOR("red", "SECRET - CODE WORDS: TORCH")]</b>
-	<h3>SOL CENTRAL GOVERNMENT EXPEDITIONARY COMMAND</h3>
+	<h3>UNITED GALACTIC NATIONS COMMAND</h3>
 	<img src = sollogo.png>
 	</center>
-	<b>FROM:</b> ADM William Lau<br>
-	<b>TO:</b> Commanding Officer of SEV Torch<br>
+	<b>FROM:</b> ADM Clark Nexov<br>
+	<b>TO:</b> Commanding Officer of UGN Titen<br>
 	<b>SUBJECT:</b> Standing Orders<br>
 	<hr>
 	Captain.<br>
@@ -100,18 +100,18 @@
 	Priority targets are artifacts of uncontacted alien species and signal sources of unknown origin.<br>
 	None of these systems are claimed by any entity recognized by the SCG, so you have full salvage rights on any derelicts discovered.<br>
 	Investigate and mark any prospective colony worlds as per usual procedures.<br>
-	There is no SCG presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
+	There is no UGN presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
 	The current docking code is: [torch.docking_codes]<br>
 	Report all findings via bluespace comm buoys during inter-system jumps.<br>
 
-	<i>ADM Lau.</i></tt>
-	<i>This paper has been stamped with the stamp of SCG Expeditionary Command.</i>
+	<i>ADM Nexov.</i></tt>
+	<i>This paper has been stamped with the stamp of UGN Expeditionary Command.</i>
 	"}
 	new/obj/item/paper(src, memo, "Standing Orders")
 	new/obj/item/paper/umbra(src)
 
 /obj/item/material/folder/envelope/preset/rep
-	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - TORCH UMBRA'."
+	desc = "A thick envelope. The UGN crest is stamped in the corner, along with 'TOP SECRET - TITEN GAMMA'."
 	seal_stamp = "General Secretary rubber stamp"
 
 /obj/item/material/folder/envelope/preset/rep/Initialize()
@@ -119,28 +119,34 @@
 	new/obj/item/paper/umbra(src)
 
 /obj/item/paper/umbra
-	name = "UMBRA Protocol"
+	name = "GAMMA Protocol"
 	info = {"
-	<tt><center><b><span style='color: red'>TOP SECRET - CODE WORDS: TORCH UMBRA</span></b>
-	<h3>OFFICE OF THE SECRETARY GENERAL OF SOL CENTRAL GOVERNMENT</h3>
+	<tt><center><b><span style='color: red'>TOP SECRET READ ONLY IN EMERGENCY - CODE WORDS: TITEN GAMMA</span></b>
+	<h3>OFFICE OF THE SECRETARY OF INFORMATION SAFETY</h3>
 	<img src = sollogo.png>
 	</center>
-	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
+	<b>FROM:</b> Edward Cooran, Secretary of Information Safety<br>
 	<b>TO:</b> Commanding Officer of the SEV Torch<br>
 	<b>CC:</b> Special Representative aboard the SEV Torch<br>
-	<b>SUBJECT:</b> UMBRA protocol<br>
+	<b>SUBJECT:</b> GAMMA protocol<br>
 	<hr>
-	This is a small addendum to the usual operating procedures. Unlike the rest of SOP, this is not left to the Commanding Officer's discretion and is mandatory. As unconventional as this is, we felt it is essential for smooth operation of this mission.<br>
-	Procedure can be initiated only by transmission from SCG Expeditionary Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
-	The signal to initiate the procedure are codewords 'GOOD NIGHT WORLD' used in this order as one phrase. You do not need to send acknowledgement.
-	<li>Information about this expedition's findings is to be treated as secret and vital to SCG's national security, and is protected under codeword UMBRA. Only SCG government employees and Skrell citizens aboard the SEV Torch are allowed access to this information on a need-to-know basis.</li>
-	<li>The secrecy of this information is to be applied retroactively. Any non-cleared personnel who were exposed to such information are to be secured and transferred to DIA on arrival at home port.</li>
-	<li>Any devices capable of transmitting or receiving data at interstellar range are to be confiscated from private possession.</li>
-	<li>Disregard any systems remaining in your flight plan and set course for Sol, Neptune orbit. You will be contacted upon your arrival. Do not make stops in ports on the way unless absolutely necessary.</li>
-	<br>
-	While drastic, I assure you this is a simple precaution, lest any issues. Just keep the option open, and carry on with your normal duties.
-	<i>Regards, John.</i></tt>
-	<i>This paper has been stamped with the stamp of Office of the General Secretary of SCG.</i>
+	In the event you are reading this the Titen is in peril. This is a contingency procedure to ensure classified data stays safe. This may seem quite unconventinal but our data cannot be allowed to fall into
+	the Union's hands.
+	<li>Firstly after reading this, DESTROY ALL DOCUMENTATION, including this paper.
+	<li>Secondly, prime self destruct systems using the provided nuclear disk
+	<li>Thirdly, deploy an emergency distress beacon
+	<li>Finally, guide all personeel to safe bunkers across the ship, stay put and make sure to set the self destruct to at least 20 minutes to allow ample time for the crew to board a rescue boat.
+	I do understand that you may not want to lose the Titen, but the Galactic Nations safety is more important than a ship.
+	This contingency protocol will be activated when a UGN representative says so.
+	Violators of this protocol may and should be shot on sight by peacekeepers.
+	If this code is initiated immedietly change the alert level to Delta by contacting your nearest UGN representative.
+	The UGN takes information safety VERY seriously, any confidental information will be your responsibility to contain and destroy.
+	Finally, do NOT share this document with anyone else, and ensure the crew have no knowledge of the initiation of Protocol GAMMA.
+	If staff attempt to leak this information, terminate them immedietly.
+
+
+	<i>Regards, Edward.</i></tt>
+	<i>This paper has been stamped with the stamp of Department of Information Safety.</i>
 	"}
 
 /obj/item/paper/newrust
@@ -157,3 +163,42 @@
 </ul>
 <p><i>Chief Petty Officer Meng Jiao</i></p>
 "}
+/obj/item/material/folder/envelope/preset/rep
+	desc = "A thick envelope. The UGN crest is stamped in the corner, along with 'TOP SECRET- URC PROTOCOL'."
+	seal_stamp = "General Secretary rubber stamp"
+
+/obj/item/paper/
+	name = "United Rocknall Procedure"
+	info = {"
+	<tt><center><b><span style='color: red'>TOP SECRET- URC EMERGENCY CODE</span></b></tt>
+	<h3>UNITED ROCKNALL ADMINISTRATIVE AFFAIRS DEPARTMENT</h3>
+	<img src = sollogo.png>
+	</center>
+	<b>FROM:</b> Henry Forn, Chief of Administrative Affairs<br>
+	<b>TO:</b> Sci-Med Officer<br>
+	<b>CC:</b> Medical Administrator's Office<br>
+	<b>SUBJECT:</b> United Rocknall Operating and Emergency procedure<br>
+	<hr>
+	Good Day Administrator,
+	This is quite a large piece of documentation so please take your time to read through it.
+	You are an Administrator of the United Rocknall Corporation, correct?
+	If not, burn this document and halt reading.
+	If so, continue reading.
+	I am Henry Forn, Chief of Administrative Affairs of the United Rocknall Corporation.
+	This is the standard operating procedure for the United Rocknall Corporation's administrative staff.
+	<li>Ensure xenobiological life stays at the bottom of the URC command chain.
+	<li>Always stay in uniform, violations of this rule may be on the grounds of a demotion
+	<li>Act presentable, please know what you are doing
+	Once you have read those, you are ready for the emergency procedure.
+	In the event of a terrible accident onboard the ship, please secure all data before it is destroyed.
+	In this case, you MAY acquire a weapon from security, please refrence the Standard Operating Procedure if they do not comply.
+	DO NOT let the data fall into any hands other than your own or the other administrator's.
+	In the case individuals of the URC or any other department take data, you are given authorization to terminate their lives.
+	Make your way to the nearest URC owned shuttle, xenos last to board, and take off to the stars.
+	Remember: This is only to be used in situations where code delta has been invoked.
+	If members of the URC do not comply, show them this document, and they will.
+	With the exception of xenos of course.
+	See attached document for further information of the United Rocknall Code
+	<i>Regards, Forn.</i></tt>
+	<i>This paper has been stamped with the stamp of The United Rocknall Corporation.</i>
+	"}
