@@ -170,7 +170,7 @@
 /obj/item/paper/
 	name = "United Rocknall Procedure"
 	info = {"
-	<tt><center><b><span style='color: red'>TOP SECRET- URC EMERGENCY CODE<span style='color: red'><center><tt>
+	<tt><center><b><span style='color: red'>TOP SECRET- URC EMERGENCY CODE</span style='color: red'></b></center></tt>
 	<h3>UNITED ROCKNALL ADMINISTRATIVE AFFAIRS DEPARTMENT</h3>
 	<img src = sollogo.png>
 	</center>
