@@ -46,6 +46,7 @@
 	var/obj/item/stock_parts/computer/ai_slot/ai_slot							// AI slot, an intellicard housing that allows modifications of AIs.
 	var/obj/item/stock_parts/computer/tesla_link/tesla_link						// Tesla Link, Allows remote charging from nearest APC.
 	var/obj/item/stock_parts/computer/scanner/scanner							// One of several optional scanner attachments.
+	var/obj/item/stock_parts/computer/uplink_cable/uplink_cable					// Uplink cable.
 
 	var/modifiable = TRUE	// can't be modified or damaged if false
 

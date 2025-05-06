@@ -66,6 +66,12 @@
 		found = 1
 		scanner = H
 		scanner.do_after_install(user, src)
+	else if(istype(H, /obj/item/stock_parts/computer/uplink_cable))
+		if(uplink_cable)
+			to_chat(user, "This computer's scanner slot is already occupied by \the [uplink_cable].")
+			return
+		found = 1
+		uplink_cable = H
 	if(found && user.unEquip(H, src))
 		to_chat(user, "You install \the [H] into \the [src]")
 		update_verbs()

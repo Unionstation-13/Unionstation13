@@ -52,7 +52,7 @@
 
 /obj/item/stock_parts/computer/scanner/proc/run_scan(mob/user, datum/computer_file/program/scanner/program) //For scans done from the software.
 
-/obj/item/stock_parts/computer/scanner/proc/do_on_afterattack(mob/user, atom/target, proximity)
+/obj/item/stock_parts/computer/proc/do_on_afterattack(mob/user, atom/target, proximity)
 
 /obj/item/stock_parts/computer/scanner/use_tool(obj/item/W, mob/living/user, list/click_params)
 	do_on_attackby(user, W)

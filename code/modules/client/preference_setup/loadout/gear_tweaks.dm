@@ -378,6 +378,7 @@ Custom Description
 	var/list/ValidNanoPrinters = list(null, /obj/item/stock_parts/computer/nano_printer)
 	var/list/ValidCardSlots = list(null, /obj/item/stock_parts/computer/card_slot)
 	var/list/ValidTeslaLinks = list(null, /obj/item/stock_parts/computer/tesla_link)
+	var/list/ValidUplinkCables = list(null, /obj/item/stock_parts/computer/uplink_cable)
 
 /datum/gear_tweak/tablet/get_contents(list/metadata)
 	var/list/names = list()
@@ -403,6 +404,9 @@ Custom Description
 	if(O)
 		names += initial(O.name)
 	O = ValidTeslaLinks[metadata[7]]
+	if(O)
+		names += initial(O.name)
+	O = ValidUplinkCables[metadata[8]]
 	if(O)
 		names += initial(O.name)
 	return english_list(names, and_text = ", ")
@@ -510,10 +514,26 @@ Custom Description
 	entry = input(user, "Choose a tesla link.", CHARACTER_PREFERENCE_INPUT_TITLE) in names
 	. += names[entry]
 
+	names = list()
+	counter = 1
+	for(var/i in ValidUplinkCables)
+		if(i)
+			var/obj/O = i
+			names[initial(O.name)] = counter++
+		else
+			names["None"] = counter++
+
+	if(!user || !user.client)
+		return
+	entry = input(user, "Choose an uplink cable.", CHARACTER_PREFERENCE_INPUT_TITLE) in names
+	. += names[entry]
+
+
 /datum/gear_tweak/tablet/get_default()
 	. = list()
 	for(var/i in 1 to TWEAKABLE_COMPUTER_PART_SLOTS)
 		. += 1
+
 
 /datum/gear_tweak/tablet/tweak_item(user, obj/item/modular_computer/tablet/I, list/metadata)
 	if(length(metadata) < TWEAKABLE_COMPUTER_PART_SLOTS)
@@ -540,3 +560,6 @@ Custom Description
 	if(ValidTeslaLinks[metadata[7]])
 		var/t = ValidTeslaLinks[metadata[7]]
 		I.tesla_link = new t(I)
+	if(ValidUplinkCables[metadata[8]])
+		var/t = ValidUplinkCables[metadata[8]]
+		I.uplink_cable = new t(I)
