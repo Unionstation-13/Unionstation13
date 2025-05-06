@@ -664,6 +664,9 @@ var/global/const/NO_EMAG_ACT = -50
 /obj/item/card/id/science/roboticist
 	job_access_type = /datum/job/roboticist
 
+/obj/item/card/id/science/it_tech
+	job_access_type = /datum/job/it_tech
+
 /obj/item/card/id/science/head
 	name = "identification card"
 	desc = "A card which represents knowledge and reasoning."

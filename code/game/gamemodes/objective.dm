@@ -323,7 +323,7 @@ var/global/list/all_objectives = list()
 	return
 
 /datum/objective/heist/kidnap
-	var/list/roles = list(/datum/job/chief_engineer, /datum/job/rd, /datum/job/roboticist, /datum/job/chemist, /datum/job/engineer)
+	var/list/roles = list(/datum/job/chief_engineer, /datum/job/rd, /datum/job/roboticist, /datum/job/chemist, /datum/job/engineer, /datum/job/ito, /datum/job/it_tech)
 
 /datum/objective/heist/kidnap/choose_target()
 	var/list/possible_targets = list()

@@ -26,7 +26,7 @@
 		/datum/job/senior_doctor, /datum/job/doctor, /datum/job/junior_doctor, /datum/job/chemist, /datum/job/medical_trainee,
 		/datum/job/psychiatrist,
 		/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining,
-		/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
+		/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/ito, /datum/job/it_tech,
 		/datum/job/chief_steward, /datum/job/chef, /datum/job/janitor, /datum/job/crew,
 		/datum/job/cyborg,
 		/datum/job/chaplain,
