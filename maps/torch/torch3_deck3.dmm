@@ -1493,16 +1493,13 @@
 	name = "Hangar Deck Checkpoint Shutters";
 	opacity = 0
 	},
-/obj/structure/table/steel_reinforced,
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Checkpoint Desk"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "dF" = (
@@ -8874,7 +8871,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
+	name = "Peacekeeper Physician's Office";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -8945,6 +8942,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
+"uW" = (
+/obj/catwalk_plated/dark,
+/obj/machinery/computer/modular/preset/medical{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/security/habcheck)
 "uZ" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -10397,6 +10401,10 @@
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
+"zc" = (
+/obj/structure/closet/secure_closet/medical_torchsenior,
+/turf/simulated/wall/prepainted,
+/area/security/habcheck)
 "ze" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -12739,9 +12747,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/floor_decal/corner/red{
-	dir = 5
-	},
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12750,6 +12755,9 @@
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 4
+	},
+/obj/floor_decal/corner/paleblue/half{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/habcheck)
@@ -14655,11 +14663,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "Kc" = (
-/obj/structure/bed/chair/padded/red{
-	dir = 1
-	},
-/obj/floor_decal/corner/red/half{
+/obj/floor_decal/corner/paleblue/half{
 	dir = 8
+	},
+/obj/structure/bed/chair/padded/teal{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
@@ -16016,13 +16024,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/floor_decal/corner/red/half{
-	dir = 4
-	},
 /obj/item/device/radio/intercom/department/security{
 	dir = 8;
 	pixel_x = 21
 	},
+/obj/floor_decal/corner/paleblue/half,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "Nt" = (
@@ -17115,10 +17121,6 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Qv" = (
-/obj/machinery/computer/modular/preset/security,
-/obj/floor_decal/corner/red{
-	dir = 5
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -17129,16 +17131,18 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/floor_decal/corner/paleblue/half{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/habcheck)
 "Qx" = (
-/obj/machinery/computer/modular/preset/security,
-/obj/floor_decal/corner/red/mono,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/floor_decal/corner/paleblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "Qy" = (
@@ -17179,18 +17183,16 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "QE" = (
-/obj/structure/table/rack,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
-	},
-/obj/item/device/binoculars,
-/obj/floor_decal/corner/red{
-	dir = 5
 	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/floor_decal/corner/paleblue/half{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/habcheck)
@@ -17728,7 +17730,6 @@
 	name = "east bump";
 	pixel_x = 24
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -17742,6 +17743,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/floor_decal/corner/paleblue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "Sn" = (
@@ -19827,6 +19829,15 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/item/gun/projectile/pistol/m19/empty,
+/obj/item/clothing/suit/armor/pcarrier/medium/security,
+/obj/item/clothing/accessory/armor_tag/solgov/medic,
+/obj/item/clothing/head/helmet/armsman,
+/obj/item/storage/box/nitrilegloves,
+/obj/item/clothing/accessory/storage/holster/thigh,
+/obj/item/ammo_magazine/pistol/rubber,
+/obj/item/ammo_magazine/pistol/rubber,
 /turf/simulated/floor/tiled/dark,
 /area/security/habcheck)
 "XK" = (
@@ -34890,7 +34901,7 @@ LV
 Qx
 Kc
 KS
-Vx
+zc
 Px
 AB
 Bp
@@ -35090,7 +35101,7 @@ sj
 tv
 UA
 Qv
-jQ
+uW
 nI
 Vx
 tU

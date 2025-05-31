@@ -809,6 +809,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "bH" = (
+/obj/machinery/light,
 /turf/simulated/floor/plating,
 /area/vacant/armory)
 "bI" = (

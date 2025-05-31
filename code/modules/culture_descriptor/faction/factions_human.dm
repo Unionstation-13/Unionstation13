@@ -5,7 +5,7 @@
 	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
 	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/scg/fleet
@@ -14,12 +14,12 @@
 	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
 	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
 	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations."
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_URC_EXP
 	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy"
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 	economic_power = 1.2
 
 /singleton/cultural_info/faction/gcc
@@ -46,7 +46,7 @@
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
 	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
 	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc). "
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/police
@@ -70,7 +70,7 @@
 	NanoTrasen is characterized by its aggression and questionable ethics, which combined with the high emphasis they put on new, untested, and dangerous \
 	technology, which means their installations are often considered unsafe and hazardous."
 	economic_power = 1.2
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/remote/xynergy
@@ -78,7 +78,7 @@
 	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
 	 Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/remote/hephaestus
@@ -90,7 +90,7 @@
 	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/free

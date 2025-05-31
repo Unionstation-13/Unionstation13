@@ -76,6 +76,9 @@
 /obj/item/card/id/torch/crew/security/forensic
 	job_access_type = /datum/job/detective
 
+/obj/item/card/id/torch/crew/security/sec_physician
+	job_access_type = /datum/job/sec_physician
+	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/silver/engineering
 	job_access_type = /datum/job/chief_engineer
