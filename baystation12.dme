@@ -2558,6 +2558,7 @@
 #include "code\modules\modular_computers\file_system\programs\research\ai_restorer.dm"
 #include "code\modules\modular_computers\file_system\programs\research\email_administration.dm"
 #include "code\modules\modular_computers\file_system\programs\research\ntmonitor.dm"
+#include "code\modules\modular_computers\file_system\programs\research\serveraccessport.dm"
 #include "code\modules\modular_computers\file_system\programs\security\digitalwarrant.dm"
 #include "code\modules\modular_computers\file_system\programs\security\forceauthorization.dm"
 #include "code\modules\modular_computers\file_system\reports\crew_record.dm"

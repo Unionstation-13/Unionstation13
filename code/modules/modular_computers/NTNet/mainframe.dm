@@ -1,8 +1,8 @@
 /obj/machinery/network/mainframe
 	name ="\improper Departmental IT Mainframe"
 	desc = "You probably shouldn't be able to see this."
-	icon = 'icons/obj/machines/telecomms.dmi'
-	icon_state = "hub"
+	icon = 'icons/obj/machines/research/server.dmi'
+	icon_state = "server"
 	use_power = POWER_USE_ACTIVE
 	active_power_usage = 2000
 	idle_power_usage = 2000
@@ -14,7 +14,7 @@
 	machine_desc = "A large information bank for a specific department. Better keep this secure."
 
 	var/circuitboard = /obj/item/stock_parts/circuitboard/network/mainframe    //string pointing to circuitboard
-	var/on = TRUE   //device on/off
+	var/on = TRUE    //device on/off
 	var/list/accesstype = null    //the amount of access a server will provide if hacked into
 
 /obj/machinery/network/mainframe/security

@@ -176,6 +176,6 @@ var/global/const/NETWORK_HELMETS       = "Helmet Cameras"
 #define  PART_AI  		/obj/item/stock_parts/computer/ai_slot						// AI slot, an intellicard housing that allows modifications of AIs.
 #define  PART_TESLA  	/obj/item/stock_parts/computer/tesla_link					// Tesla Link, Allows remote charging from nearest APC.
 #define  PART_SCANNER  	/obj/item/stock_parts/computer/scanner						// One of several optional scanner attachments.
-#define PART_CABLE  	/obj/item/stock_parts/computer/uplink_cable					// An uplink cable, for use in the terminal/command console.
+#define  PART_CABLE  	/obj/item/stock_parts/computer/uplink_cable					// An uplink cable, for use in the terminal/command console.
 
 #define CLICKSOUND_INTERVAL (5 SECONDS)

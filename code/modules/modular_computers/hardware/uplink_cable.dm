@@ -4,51 +4,50 @@
 	critical = FALSE
 	icon_state = "uplinkcable"
 	hardware_size = 1
-	var/IsUplinkCableActive = FALSE
-	var/connection_ready = FALSE
-	var/connected_user = null
-	var/connected_target = null
+	var/isUplinkCableActive = FALSE
+	var/admin = null
 
 
-/proc/get_mainframes_in_view(mob/user)
-	var/list/mainframes = list()
-	for(var/obj/machinery/network/mainframe/M in view(1, user))
-		mainframes += M
-	return mainframes
-
-/obj/item/stock_parts/computer/uplink_cable/proc/monitor_connection()
-	while(IsUplinkCableActive && connected_user && connected_target)
-		if(get_dist(connected_user, connected_target) > 1)
-			to_chat(connected_user, SPAN_WARNING("You move too far away and the uplink cable is ripped out of the socket!"))
-			IsUplinkCableActive = FALSE
-			connected_user = null
-			connected_target = null
-			return
-		sleep(10)
-
-/obj/item/stock_parts/computer/uplink_cable/verb/uplink_cable()
-	set name = "Connect Uplink Cable"
-	set category = "Object"
-	set src in usr.contents
-
-	var/list/mainframes = get_mainframes_in_view(usr)
-
-	if(!mainframes.len)
-		to_chat(usr, SPAN_NOTICE("No mainframes nearby to connect to."))
+/obj/item/stock_parts/computer/uplink_cable/MouseDrop(atom/over_atom, source_loc, over_loc)
+	if (!usr)
 		return
-
-	var/obj/machinery/network/mainframe/target = input(usr, "Choose a mainframe to connect to:") in mainframes
-
-	if(IsUplinkCableActive)
-		to_chat(usr, SPAN_WARNING("You are already connected to a mainframe!"))
+	if (!over_atom)
 		return
-
-	if(!target)
+	if (!Adjacent(usr) || !over_atom.Adjacent(usr))
 		return
+	if (isliving(over_atom))
+		MouseDrop_T(over_atom, usr)
+	else
+		over_atom.MouseDrop_T(src, usr)
 
-	to_chat(usr, SPAN_NOTICE("You plug your uplink cable into [target]."))
-	IsUplinkCableActive = TRUE
-	connected_user = usr
-	connected_target = target
 
-	spawn() monitor_connection()
+/obj/item/stock_parts/computer/uplink_cable/MouseDrop_T(atom/dropped, mob/living/user)
+	var/M = /obj/machinery/network/mainframe
+
+	if (src == dropped && user.canClick())
+		user.ClickOn(src)
+		return
+	if (!CheckDexterity(user))
+		to_chat(user, SPAN_WARNING("You're not dextrous enough to do that."))
+		return
+	if (user.incapacitated())
+		to_chat(user, SPAN_WARNING("You're in no condition to do that."))
+		return
+	if (M && isUplinkCableActive == dropped)
+		to_chat(usr, "You unplug the cable from the mainframe.")
+		isUplinkCableActive = FALSE
+		admin = null
+	else if (istype(M, dropped))
+		to_chat(usr, "You plug the cable into the mainframe.")
+		isUplinkCableActive = TRUE
+		admin = usr
+
+/obj/item/stock_parts/computer/uplink_cable/Process()
+	if (!admin)
+		return PROCESS_KILL
+	if (!Adjacent(admin))
+		isUplinkCableActive = FALSE
+		to_chat(admin, "The cable gets ripped out of the socket!")
+		return PROCESS_KILL
+	if (SSobj.times_fired & 1)
+		return
