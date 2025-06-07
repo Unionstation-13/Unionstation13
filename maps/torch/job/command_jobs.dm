@@ -92,6 +92,7 @@
 /datum/job/rd
 	title = "Sci-Med Officer"
 	supervisors = "The United Rocknall Corporation and the UGN"
+	department_flag = COM|MED|SCI
 	economic_power = 12
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -322,7 +323,7 @@
 	return "You are the United Galactic Nations Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to the UGN on mission progress and important events."
 
 /datum/job/sea
-	title = "United Galatic Nations Commisioned Advisor"
+	title = "United Galatic Nations Commissioned Advisor"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1

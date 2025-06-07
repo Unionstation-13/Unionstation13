@@ -37,3 +37,18 @@
 		return (S.type in blacklist)
 
 	return FALSE
+
+// Faction blacklist/whitelist system
+// Faction-specific whitelists/blacklists are located in factions_human.dm
+/singleton/species/proc/check_background(datum/job/J, datum/preferences/prefs)
+	var/singleton/cultural_info/faction/F = SSculture.get_culture(prefs.cultural_info[TAG_FACTION])
+	if(!istype(J) || !istype(F))
+		return TRUE
+
+	if(LAZYLEN(F.whitelisted_jobs) && !(J.type in F.whitelisted_jobs))
+		return FALSE
+
+	if(LAZYLEN(F.blacklisted_jobs) && (J.type in F.blacklisted_jobs))
+		return FALSE
+
+	return TRUE

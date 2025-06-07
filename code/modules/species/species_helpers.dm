@@ -58,9 +58,6 @@ var/global/list/stored_shock_by_ref = list()
 					return FALSE
 	return TRUE
 
-/singleton/species/proc/check_background(datum/job/job, datum/preferences/prefs)
-	. = TRUE
-
 /singleton/species/proc/get_digestion_product()
 	return /datum/reagent/nutriment
 

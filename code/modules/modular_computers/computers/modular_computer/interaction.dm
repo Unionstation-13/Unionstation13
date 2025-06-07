@@ -14,6 +14,7 @@
 	else
 		verbs -= /obj/item/stock_parts/computer/card_slot/proc/verb_eject_id
 
+
 // Forcibly shut down the device. To be used when something bugs out and the UI is nonfunctional.
 /obj/item/modular_computer/verb/emergency_shutdown()
 	set name = "Forced Shutdown"
@@ -36,7 +37,6 @@
 		spawn(2 SECONDS)
 			bsod = 0
 			update_icon()
-
 
 // Eject ID card from computer, if it has ID slot with card inside.
 /obj/item/modular_computer/proc/eject_usb()
@@ -232,6 +232,9 @@
 	. = ..()
 	if(scanner)
 		scanner.do_on_afterattack(user, target, proximity)
+	if(uplink_cable)
+		uplink_cable.do_on_afterattack(user, target, proximity)
+
 
 /obj/item/modular_computer/CtrlAltClick(mob/user)
 	if(!CanPhysicallyInteract(user))

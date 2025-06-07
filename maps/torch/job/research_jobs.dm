@@ -11,8 +11,6 @@
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 30)
 	ideal_character_age = 50
-	alt_titles = list(
-		"Server Manager")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -44,6 +42,73 @@
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	possible_goals = list(/datum/goal/achievement/notslimefodder)
+
+/datum/job/ito
+	title = "IT Officer"
+	department = "Science"
+	department_flag = COM|SCI
+
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "The First Lieutenant and the Regulations"
+	selection_color = "#633d63"
+	economic_power = 13
+	minimal_player_age = 14
+	ideal_character_age = 35
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/ito
+	access = list(access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
+		access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
+		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
+		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control,
+		access_petrov_maint, access_torch_fax, access_radio_sci, access_radio_exp, access_research_storage, access_fabrication,
+		access_network, access_robotics, access_it, access_teleporter, access_network_admin, access_ai_upload, access_RC_announce, access_heads
+	)
+
+	skill_points = 36
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_BASIC,
+		SKILL_FINANCE = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED
+	)
+
+	max_skill = list(
+		SKILL_DEVICES = SKILL_MAX,
+		SKILL_SCIENCE = SKILL_MAX
+	)
+
+/datum/job/it_tech
+	title = "IT Technician"
+	department = "science"
+	department_flag = SCI
+
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "The IT Officer"
+	selection_color = "#633d63"
+	economic_power = 7
+	minimal_player_age = 7
+	ideal_character_age = 20
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/it_tech
+	access = list(access_tox, access_tox_storage, access_maint_tunnels, access_research,
+		access_xenoarch, access_nanotrasen, access_solgov_crew,
+		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
+		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control,
+		access_petrov_maint, access_torch_fax, access_radio_sci, access_research_storage, access_fabrication,
+		access_network, access_robotics, access_it, access_network_admin
+	)
+
+	skill_points = 26
+	min_skill = list(
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_BASIC
+	)
+
+	max_skill = list(
+		SKILL_DEVICES = SKILL_MAX
+	)
 
 /datum/job/scientist
 	title = "Scientist"

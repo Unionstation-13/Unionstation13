@@ -1,5 +1,5 @@
 /datum/job/chief_steward
-	title = "Chief Steward"
+	title = "Community Services Director"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
@@ -8,7 +8,7 @@
 	ideal_character_age = 35
 	economic_power = 6
 	minimal_player_age = 7
-	supervisors = "the Executive Officer"
+	supervisors = "The UGN food safety regulations and recreational advisory"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -41,7 +41,7 @@
 	)
 
 /datum/job/chaplain
-	title = "Chaplain"
+	title = "Reverend"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
@@ -50,7 +50,7 @@
 	ideal_character_age = 40
 	economic_power = 6
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	supervisors = "UGN Religious code"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -73,17 +73,14 @@
 	)
 
 /datum/job/janitor
-	title = "Sanitation Technician"
+	title = "B.I.O Junior Associate"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Steward"
+	supervisors = "Containment protocols for biohazard breaches, otherwise, the Community Services Director"
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
-	alt_titles = list(
-		"Custodian",
-		"Janitor")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -109,18 +106,13 @@
 
 
 /datum/job/chef
-	title = "Steward"
+	title = "B.I.O Senior Serviceman"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
 	minimum_character_age = list(SPECIES_HUMAN = 20)
-	supervisors = "the Chief Steward"
-	alt_titles = list(
-		"Bartender",
-		"Cook",
-		"Culinary Specialist"
-	)
+	supervisors = "UGN Food regulations and the Community Services Director"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -152,12 +144,12 @@
 
 
 /datum/job/crew
-	title = "Crewman"
+	title = "Junior Kitchen Assistant"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Chief Steward"
+	supervisors = "The B.I.O Senior Servicemen and everyone above you in service."
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman

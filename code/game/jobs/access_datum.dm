@@ -268,121 +268,127 @@ var/global/const/access_research = "ACCESS_RESEARCH" //47
 	desc = "Science"
 	region = ACCESS_REGION_RESEARCH
 
-var/global/const/access_mining = "ACCESS_MINING" //48
+var/global/const/access_it = "ACCESS_IT" //48
+/datum/access/it
+	id = access_it
+	desc = "Information Technology"
+	region = ACCESS_REGION_RESEARCH
+
+var/global/const/access_mining = "ACCESS_MINING" //49
 /datum/access/mining
 	id = access_mining
 	desc = "Mining"
 	region = ACCESS_REGION_SUPPLY
 
-var/global/const/access_mining_office = "ACCESS_MINING_OFFICE" //49
+var/global/const/access_mining_office = "ACCESS_MINING_OFFICE" //50
 /datum/access/mining_office
 	id = access_mining_office
 	desc = "Mining Office"
 	access_type = ACCESS_TYPE_NONE
 
-var/global/const/access_mailsorting = "ACCESS_SORTING" //50
+var/global/const/access_mailsorting = "ACCESS_SORTING" //51
 /datum/access/mailsorting
 	id = access_mailsorting
 	desc = "Cargo Office"
 	region = ACCESS_REGION_SUPPLY
 
-var/global/const/access_heads_vault = "ACCESS_VAULT"  //53
+var/global/const/access_heads_vault = "ACCESS_VAULT"  //52
 /datum/access/heads_vault
 	id = access_heads_vault
 	desc = "Main Vault"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_mining_station = "ACCESS_MINING_EVA" //54
+var/global/const/access_mining_station = "ACCESS_MINING_EVA" //53
 /datum/access/mining_station
 	id = access_mining_station
 	desc = "Mining EVA"
 	region = ACCESS_REGION_SUPPLY
 
-var/global/const/access_xenobiology = "ACCESS_XENOBIO" //55
+var/global/const/access_xenobiology = "ACCESS_XENOBIO" //54
 /datum/access/xenobiology
 	id = access_xenobiology
 	desc = "Xenobiology Lab"
 	region = ACCESS_REGION_RESEARCH
 
-var/global/const/access_ce = "ACCESS_CHIEF_ENGINEER" //56
+var/global/const/access_ce = "ACCESS_CHIEF_ENGINEER" //55
 /datum/access/ce
 	id = access_ce
 	desc = "Chief Engineer"
 	region = ACCESS_REGION_ENGINEERING
 
-var/global/const/access_hop = "ACCESS_HEAD_OF_PERSONNEL" //57
+var/global/const/access_hop = "ACCESS_HEAD_OF_PERSONNEL" //56
 /datum/access/hop
 	id = access_hop
 	desc = "Head of Personnel"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_hos = "ACCESS_HEAD_OF_SECURITY" //58
+var/global/const/access_hos = "ACCESS_HEAD_OF_SECURITY" //57
 /datum/access/hos
 	id = access_hos
 	desc = "Head of Security"
 	region = ACCESS_REGION_SECURITY
 
-var/global/const/access_RC_announce = "ACCESS_REQUEST_ANNOUCE" //Request console announcements 59
+var/global/const/access_RC_announce = "ACCESS_REQUEST_ANNOUCE" //Request console announcements 58
 /datum/access/RC_announce
 	id = access_RC_announce
 	desc = "RC Announcements"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_keycard_auth = "ACCESS_KEYCARD_AUTH" //Used for events which require at least two people to confirm them 60
+var/global/const/access_keycard_auth = "ACCESS_KEYCARD_AUTH" //Used for events which require at least two people to confirm them 59
 /datum/access/keycard_auth
 	id = access_keycard_auth
 	desc = "Keycode Auth. Device"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_tcomsat ="ACCESS_TELECOMS" // has access to the entire telecomms satellite / machinery 61
+var/global/const/access_tcomsat ="ACCESS_TELECOMS" // has access to the entire telecomms satellite / machinery 60
 /datum/access/tcomsat
 	id = access_tcomsat
 	desc = "Telecommunications"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_gateway = "ACCESS_GATEWAY" //62
+var/global/const/access_gateway = "ACCESS_GATEWAY" //61
 /datum/access/gateway
 	id = access_gateway
 	desc = "Gateway"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_sec_doors = "ACCESS_SEC_DOORS" // Security front doors //63
+var/global/const/access_sec_doors = "ACCESS_SEC_DOORS" // Security front doors //62
 /datum/access/sec_doors
 	id = access_sec_doors
 	desc = "Security"
 	region = ACCESS_REGION_SECURITY
 
-var/global/const/access_psychiatrist = "ACCESS_PSYCHIATRIST" // Psychiatrist's office 64
+var/global/const/access_psychiatrist = "ACCESS_PSYCHIATRIST" // Psychiatrist's office 63
 /datum/access/psychiatrist
 	id = access_psychiatrist
 	desc = "Counselor's Office"
 	region = ACCESS_REGION_MEDBAY
 
-var/global/const/access_xenoarch = "ACCESS_XENOARCH" //65
+var/global/const/access_xenoarch = "ACCESS_XENOARCH" //64
 /datum/access/xenoarch
 	id = access_xenoarch
 	desc = "Xenoarchaeology"
 	region = ACCESS_REGION_RESEARCH
 
-var/global/const/access_medical_equip = "ACCESS_MEDICAL_EQUIP" //66
+var/global/const/access_medical_equip = "ACCESS_MEDICAL_EQUIP" //65
 /datum/access/medical_equip
 	id = access_medical_equip
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
 
-var/global/const/access_heads = "ACCESS_HEADS" //67
+var/global/const/access_heads = "ACCESS_HEADS" //66
 /datum/access/heads
 	id = access_heads
 	desc = "Command"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_research_storage = "ACCESS_RESEARCH_STORAGE"
+var/global/const/access_research_storage = "ACCESS_RESEARCH_STORAGE" //67
 /datum/access/research_storage
 	id = access_research_storage
 	desc = "Science Storage"
 	region = ACCESS_REGION_RESEARCH
 
-var/global/const/access_pilot = "ACCESS_PILOT"
+var/global/const/access_pilot = "ACCESS_PILOT" //68
 /datum/access/pilot
 	id = access_pilot
 	desc = "Pilot"

@@ -1,43 +1,26 @@
 /singleton/cultural_info/faction/scg
-	name = FACTION_SOL_CENTRAL
-	description = "The Sol Central Government, commonly referred to as SolGov or the SCG, is a federal republic \
-	composed of numerous human member states spanning many systems.\
-	Based in the Sol System and with most seats of Government on Olympus, Mars,\
-	the SCG governs the majority of human space. Currently engaged in a cold war with the Confederation of Gilgamesh \
-	Its primary governing bodies are the Assemblies which are led by an Assembly-elected secretary general. \
-	Member states have a great degree of freedom in their actions, though the SCG manages sapient rights, \
-	domestic security, economic policy, and diplomacy for humanity as a whole. The SCG's population is diverse \
-	including many non-humans (though they are not citizens) and encompassing a wide range of systems, territories \
-	habitats, and celestial bodies. However, it is large, cumbersome, divided and slow to respond to issues due to \
-	its massive bureaucracy and the distance between worlds. Through its member states, the SCG governs as one of the \
-	most advanced and powerful civilisations in the known galaxy."
+	name = FACTION_UNITED_GALACTIC_NATIONS
+	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
+	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
+	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
+	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
+	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 
 /singleton/cultural_info/faction/scg/fleet
-	name = FACTION_FLEET
-	description = "The Fleet is the primary component of the SCG Defence Forces. It mostly protects SCG space from pirates, smugglers, \
-	and occasional vox raiders, with its last serious military engagement being the Gaia war over 10 years ago. \
-	The oldest component of the Defence Forces, the Fleet considers itself the pinnacle of Human military accomplishment. \
-	It is well funded, but seen as complacent and bloated. It is made up of five Fleets, with missions ranging from \
-	diplomatic security for Sol dignitaries, to border patrol along the vast frontier and quick reaction force duties. \
-	Any SCG human citizen with at least a secondary school level of education can enlist into the Fleet, going through \
-	basic training and on-ship training for their rating (speciality). Commissioned officer candidates require at least a \
-	bachelor's degree and go through a lengthy training process before being assigned to a warship. \
-	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle."
-
+	name = FACTION_UGNFLEET
+	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
+	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
+	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
+	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations."
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 /singleton/cultural_info/faction/torchco
-	name = FACTION_CORPORATE
-	description = "The Expeditionary Corps Organisation is a government-owned, publicly traded limited liability company assembled from the corporate \
-	backers who asssisted in funding the Torch project when it opened five years ago. Major players include NanoTrasen, Xynergy and \
-	Hephaestus Industries, as well as dozens of others. The Expeditionary Corps Organisation reports its earnings and operation plans directly to a board of \
-	directors, made up of corporate representatives and members of Expeditionary Corps command and the Committee for the Economy. \
-	While on the surface the Expeditionary Corps Organisation appears to have noble goals, it is in reality a compromise between the noble ideals of pioneering \
-	science, and the corporate desire to make a quick buck off whatever is found. Rumours also abound about shady practices, hidden \
-	protocols, and xenoartifacts being 'lost' in transit, but nothing has been conclusively proven as of yet, and SCG doubtless is \
-	reluctant to harpoon their own project."
+	name = FACTION_URC_EXP
+	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy"
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 	economic_power = 1.2
-
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
@@ -48,8 +31,9 @@
 	Increasingly xenophobic, the GCC is in a cold war with the Sol Central Government following the Gaia Conflict — a large- \
 	scale conflict between the SCG and GCC that saw a great deal of death and destruction. Citizens of the GCC are referred to as \"Indies\" in Sol space, \
 	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
+	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
 	economic_power = 0.9
+
 
 
 /singleton/cultural_info/faction/remote
@@ -61,7 +45,8 @@
 	long-term scientific outposts, and studying anomalies and xenoarcheological sites. \
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
 	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
-	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc)."
+	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc). "
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 
 /singleton/cultural_info/faction/police
@@ -74,6 +59,7 @@
 	The contractor SFP \"Trackers\" are also used find and arrest low-profile fugitives."
 
 
+
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
 	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the largest megacorporations of the modern day.\
@@ -84,15 +70,15 @@
 	NanoTrasen is characterized by its aggression and questionable ethics, which combined with the high emphasis they put on new, untested, and dangerous \
 	technology, which means their installations are often considered unsafe and hazardous."
 	economic_power = 1.2
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 
 /singleton/cultural_info/faction/remote/xynergy
-	name = FACTION_XYNERGY
-	description = "Xynergy is a privately held company, known for their work with xenobiological organisms. They develop and \
-	produce products such as the netgun and dociler, both used for capturing or taming xenofauna. In addition, they are the largest \
-	commercial fishing entity for spacefaring animals, such as space carp and space pikes. They recently gained public notoriety by discovering and \
-	training the Giant Armoured Serpentids."
+	name = FACTION_URC
+	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
+	 Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 
 /singleton/cultural_info/faction/remote/hephaestus
@@ -104,6 +90,7 @@
 	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
 
 
 /singleton/cultural_info/faction/free
@@ -118,12 +105,10 @@
 
 
 /singleton/cultural_info/faction/pcrc
-	name = FACTION_PCRC
-	description = "Proxima Centauri Risk Control, often known as PCRC, is one of the largest suppliers of private security in Sol Space. \
-	The PCRC handles numerous government, private, and corporate contracts to provide a variety of services. They primarily act as private law enforcement, \
-	security, VIP protection, asset protection, search and rescue operations, peacekeeping, and escort duties. A relatively quiet and new company, \
-	it has quickly established itself as a reliable and effective provider of security solutions. This has often put it at odds with its main \
-	competitor, SAARE."
+	name = FACTION_PEACEKEEPER
+	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
+	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
+
 
 
 /singleton/cultural_info/faction/saare
@@ -140,10 +125,17 @@
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology, such as computer hardware \
 	software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in the Sol Central \
 	 Government; its systems used by most consumers and businesses within SolGov. DAIS is predates the Sol Central Government, and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
+	few corporate members of the Solar Assembly. DAIS is also a major investor in the Titen project, and is on the Expeditionary Corps Organization board of directors. \
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
+
+/singleton/cultural_info/faction/formerunion
+	name = FACTION_FORMERUNION
+	description = "You were once a citizen of the Union. For one reason or another, you recognized the regime for what it was, and set your mind on leaving. \
+	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
+	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
+	economic_power = 0.8
 
 
 /singleton/cultural_info/faction/other

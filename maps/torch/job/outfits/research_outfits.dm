@@ -17,6 +17,18 @@
 	id_types = list(/obj/item/card/id/torch/silver/research)
 	pda_type = /obj/item/modular_computer/pda/heads/rd
 
+/singleton/hierarchy/outfit/job/torch/crew/research/ito
+	name = OUTFIT_JOB_NAME("Information Technology Officer")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
+	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
+	id_types = list(/obj/item/card/id/torch/silver/research)
+	pda_type = /obj/item/modular_computer/pda/heads/rd
+
+/singleton/hierarchy/outfit/job/torch/crew/research/it_tech
+	name = OUTFIT_JOB_NAME("Information Technology Technician")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
+	id_types = list(/obj/item/card/id/torch/crew/research/it_tech)
+
 /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	name = OUTFIT_JOB_NAME("Senior Scientist - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research

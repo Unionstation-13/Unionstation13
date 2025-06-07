@@ -8,7 +8,7 @@
 	supervisors = "absolutely everyone"
 	economic_power = 1
 	access = list()
-	alt_titles = list("Technical Assistant","Medical Intern","Research Assistant","Visitor")
+	alt_titles = list("Technical Assistant","Medical Intern","Research Intern","Visitor")
 	outfit_type = /singleton/hierarchy/outfit/job/assistant
 
 /datum/job/assistant/get_access()

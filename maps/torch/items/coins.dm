@@ -66,12 +66,12 @@
 
 /obj/item/material/coin/challenge/sol/torch
 	default_material = MATERIAL_GOLD
-	name = "torch mission challenge coin"
+	name = "titen mission challenge coin"
 	icon_state = "torch"
 	desc = {"\
-		A challenge coin distributed by the Expeditionary Corps for those \
-		partaking in the Torch mission. On the front is the insignia of the \
-		SEV Torch, and on the back is a folksy frontiersman with the text, \
+		A challenge coin distributed by the UGN for those \
+		partaking in the Titen mission. On the front is the insignia of the \
+		UGN Titen, and on the back is a folksy frontiersman with the text, \
 		"PUSHING THE BOUNDARIES."\
 	"}
 
