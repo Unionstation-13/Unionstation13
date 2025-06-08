@@ -171,7 +171,7 @@
 		access_security, access_brig, access_maint_tunnels,
 		access_external_airlocks, access_emergency_storage,
 		access_eva, access_sec_doors, access_solgov_crew,
-		access_radio_sec, access_medical, access_surgery, access_medical_equip
+		access_radio_sec, access_medical, access_surgery, access_senmed
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
