@@ -20,7 +20,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech
-	name = OUTFIT_JOB_NAME("Forensic Technician - Torch")
+	name = OUTFIT_JOB_NAME("Forensic Technician - Titen")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/security/forensic)
@@ -54,3 +54,9 @@
 	name = OUTFIT_JOB_NAME("Master at Arms - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
 	shoes = /obj/item/clothing/shoes/dutyboots
+
+/singleton/hierarchy/outfit/job/torch/crew/security/sec_physician
+	name = OUTFIT_JOB_NAME("Peacekeeper Physician")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_types = list(/obj/item/card/id/torch/crew/security/sec_physician)

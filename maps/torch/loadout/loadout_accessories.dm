@@ -78,9 +78,9 @@
 	)
 
 /datum/gear/accessory/torch_patch
-	display_name = "Torch mission patch"
+	display_name = "Titen mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the SEV Torch and its mission. Given to all the oddjobs pulled from various branches to work on the Torch."
+	description = "A shoulder patch representing the UGN Titen and its mission. Given to all the oddjobs pulled from various branches to work on the Titen."
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/accessory/pilot_pin

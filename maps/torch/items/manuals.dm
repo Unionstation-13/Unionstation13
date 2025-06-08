@@ -45,9 +45,9 @@
 
 /obj/item/book/manual/sol_sop
 	name = "Standard Operating Procedure"
-	desc = "SOP aboard the SEV Torch."
+	desc = "SOP aboard the UGN Titen."
 	icon_state = "booksolregs"
-	author = "The Sol Central Government"
+	author = "The Rocknall Corporation"
 	title = "Standard Operating Procedure"
 
 /obj/item/book/manual/sol_sop/Initialize()

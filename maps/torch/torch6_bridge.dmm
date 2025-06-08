@@ -1825,7 +1825,7 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Bridge"
+	department = "Titen - Bridge"
 	},
 /obj/machinery/button/alternate/door{
 	id_tag = "meetingstarboard";
@@ -3986,7 +3986,7 @@
 /area/crew_quarters/heads/office/ce)
 "ik" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Corporate Liasion"
+	department = "Titen - Corporate Liasion"
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/noticeboard{
@@ -5366,7 +5366,7 @@
 	pixel_x = 20
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief of Security"
+	department = "Titen - Chief of Security"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
@@ -8962,7 +8962,7 @@
 "wD" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - SolGov Representative"
+	department = "Titen - SolGov Representative"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -9686,7 +9686,7 @@
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
-	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = "U.G.N Titen  - Mako Class - United Galactic Nations Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
@@ -11207,7 +11207,7 @@
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Executive Officer"
+	department = "Titen - Executive Officer"
 	},
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -12104,7 +12104,7 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Senior Enlisted Advisor"
+	department = "Titen - Senior Enlisted Advisor"
 	},
 /obj/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
@@ -12541,7 +12541,7 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Medical Officer"
+	department = "Titen - Chief Medical Officer"
 	},
 /obj/item/stamp/cmo,
 /turf/simulated/floor/tiled/white,
@@ -12999,7 +12999,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Commanding Officer"
+	department = "Titen - Commanding Officer"
 	},
 /obj/machinery/button/windowtint{
 	id = "co_windows";
@@ -15140,7 +15140,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Science Officer"
+	department = " - Chief Science Officer"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -15770,7 +15770,7 @@
 	},
 /obj/floor_decal/corner/yellow/mono,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Engineer"
+	department = " - Chief Engineer"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)

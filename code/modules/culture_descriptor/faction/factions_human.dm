@@ -5,7 +5,8 @@
 	They follow strict codes and laws but are quite lenient corporate wise due to corporate assistance during many conflicts. \
 	UGN Influence is broad across the surrounding areas of Pax. When in doubt of your superiors please contact your UGN representative and they will inform you of your occupational circumstances. \
 	By default, all staff, excluding United Rocknall Employees, are to follow UGN emergency code in the case of an emergency. "
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
+
 
 
 /singleton/cultural_info/faction/scg/fleet
@@ -14,12 +15,12 @@
 	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
 	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
 	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations."
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_URC_EXP
 	description = "Founded by the United Rocknall Corporation and funded by the UGN, the Exploration and Ecology division, often abbreviated E&E, is the leading expedition and exploration faction of the galaxy"
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 	economic_power = 1.2
 
 /singleton/cultural_info/faction/gcc
@@ -32,7 +33,10 @@
 	scale conflict between the SCG and GCC that saw a great deal of death and destruction. Citizens of the GCC are referred to as \"Indies\" in Sol space, \
 	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
 	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
+	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
 	economic_power = 0.9
+
+
 
 
 
@@ -45,8 +49,8 @@
 	long-term scientific outposts, and studying anomalies and xenoarcheological sites. \
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
 	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
-	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc). "
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc).  "
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
 /singleton/cultural_info/faction/police
@@ -60,6 +64,8 @@
 
 
 
+
+
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
 	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the largest megacorporations of the modern day.\
@@ -70,15 +76,17 @@
 	NanoTrasen is characterized by its aggression and questionable ethics, which combined with the high emphasis they put on new, untested, and dangerous \
 	technology, which means their installations are often considered unsafe and hazardous."
 	economic_power = 1.2
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
+
 
 
 /singleton/cultural_info/faction/remote/xynergy
 	name = FACTION_URC
 	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
-	 Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
+	Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
+
 
 
 /singleton/cultural_info/faction/remote/hephaestus
@@ -90,7 +98,8 @@
 	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
-	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective)
+	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
+
 
 
 /singleton/cultural_info/faction/free
@@ -102,6 +111,7 @@
 	Gateway installations and planets. Somewhat unscrupulous, FTU stations and merchants are known for \
 	selling a great many restricted items, and supplying all manner of goods indiscriminately."
 	economic_power = 1.3
+
 
 
 /singleton/cultural_info/faction/pcrc
@@ -120,12 +130,13 @@
 	company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
 
 
+
 /singleton/cultural_info/faction/dais
 	name = FACTION_DAIS
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology, such as computer hardware \
 	software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in the Sol Central \
-	 Government; its systems used by most consumers and businesses within SolGov. DAIS is predates the Sol Central Government, and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
+	Government; its systems used by most consumers and businesses within SolGov. DAIS is predates the Sol Central Government, and is one of the very \
+	few corporate members of the Solar Assembly. DAIS is also a major investor in the Titen project, and is on the Expeditionary Corps Organization board of directors. \
 	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
@@ -136,6 +147,7 @@
 	The United Galactic Nations begrudgingly took you in, accepting that you have thrown off your chains for a better life. \
 	Despite the immense ridicule, contempt, and discrimination afforded to you by other citizens of the UGN, you carry on to forge your own path."
 	economic_power = 0.8
+
 
 
 /singleton/cultural_info/faction/other

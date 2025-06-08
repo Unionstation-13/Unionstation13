@@ -9,11 +9,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/brig_chief
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/brig_chief/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e7,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8,
@@ -52,15 +50,12 @@
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
 		/datum/mil_branch/solgov = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/civ/contractor,
@@ -102,11 +97,9 @@
 	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/maa/fleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5
@@ -128,6 +121,57 @@
 		access_external_airlocks, access_emergency_storage,
 		access_eva, access_sec_doors, access_solgov_crew,
 		access_radio_sec
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+
+/datum/job/sec_physician
+	title = "Peacekeeper Physician"
+	alt_titles = list(
+		"Peacekeeper Medical Specialist",
+		"Combat Physician"
+)
+
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Marshall, and your duty"
+	selection_color = "#601c1c"
+	department_flag = SEC
+	economic_power = 5
+	minimal_player_age = 7
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	ideal_character_age = 30
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/sec_physician
+	allowed_branches = list(
+		/datum/mil_branch/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
+	)
+	min_skill = list( // 49 points
+		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
+		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
+		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
+		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
+		SKILL_DEVICES = SKILL_TRAINED, // 4 points
+		SKILL_COMBAT = SKILL_TRAINED, // 4 points
+		SKILL_WEAPONS = SKILL_TRAINED // 4 points
+	)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_ANATOMY     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERIENCED,
+						SKILL_WEAPONS     = SKILL_EXPERIENCED
+	)
+
+	access = list(
+		access_security, access_brig, access_maint_tunnels,
+		access_external_airlocks, access_emergency_storage,
+		access_eva, access_sec_doors, access_solgov_crew,
+		access_radio_sec, access_medical, access_surgery, access_medical_equip
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,

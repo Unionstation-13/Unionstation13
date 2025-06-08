@@ -10,7 +10,7 @@
 	id_types = list(/obj/item/card/id/torch/passenger/research/nt_pilot)
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
-	name = OUTFIT_JOB_NAME("Scientist - Torch")
+	name = OUTFIT_JOB_NAME("Scientist - Titen")
 	uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/science
@@ -21,7 +21,7 @@
 	BACKPACK_OVERRIDE_RESEARCH_CORP
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/assist
-	name = OUTFIT_JOB_NAME("Research Assistant - Torch")
+	name = OUTFIT_JOB_NAME("Research Assistant - Titen")
 	uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/science
