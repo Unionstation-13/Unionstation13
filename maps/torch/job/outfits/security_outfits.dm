@@ -61,3 +61,4 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/security/sec_physician)
 	pda_type = /obj/item/modular_computer/pda/security
+
