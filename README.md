@@ -1,6 +1,6 @@
 # Unionstation [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3.0-orange.svg)](https://opensource.org/licenses/AGPL-3.0) [![CodeQL](https://github.com/unionstation-13/unionstation13/workflows/CodeQL/badge.svg)](https://github.com/unionstation-13/unionstation13/actions/workflows/codeql-analysis.yml) [![CI Status](https://github.com/unionstation-13/unionstation13/workflows/Run%20Tests/badge.svg)](https://github.com/unionstation-13/unionstation13/actions/workflows/test.yml) [![codebeat badge](https://codebeat.co/badges/8ecb9a34-1bab-4d80-b34d-b16e8b216a03)](https://codebeat.co/projects/github-com-baystation12-baystation12-dev)
 
-[Website](https://baystation.xyz) - [Website](https://unionstation.miraheze.org/wiki/Main_Page) - [Discord]([https://discord.gg/jwjnpDBGTw]) - [Code](https://github.com/Unionstation-13/Unionstation13) - [DMDoc](https://dmdoc.baystation.xyz)
+[Baystation](https://baystation.xyz) - [Unionstation13 Wiki](https://unionstation.miraheze.org/wiki/Main_Page) - [Discord](https://discord.gg/jwjnpDBGTw) - [Code](https://github.com/Unionstation-13/Unionstation13) - [DMDoc](https://dmdoc.baystation.xyz)
 
 ---
 
