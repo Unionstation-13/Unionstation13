@@ -1617,7 +1617,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
 	id_tag = "csodoor";
-	name = "Chief Science Officer";
+	name = "Rocknall Lead Administrator";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -1631,6 +1631,11 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/door/airlock/research{
+	id_tag = "csodoor";
+	name = "Rocknall Lead Administrator";
+	secured_wires = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
@@ -2339,7 +2344,7 @@
 /area/bridge/meeting_room)
 "eq" = (
 /obj/machinery/door/airlock/sol{
-	name = "XO's Quarters";
+	name = "FL's Quarters";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -6593,7 +6598,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	id_tag = "cosdoor";
-	name = "Chief of Security";
+	name = "Marshall";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7405,7 +7410,7 @@
 "sz" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
-	name = "Senior Enlisted Advisor";
+	name = "UGN Commisioned Advisor";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -7955,7 +7960,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	name = "SolGov Representative";
+	name = "UGN Representative Quarters";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -11591,7 +11596,7 @@
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
-	name = "Executive Officer";
+	name = "First Lieutenant";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15321,7 +15326,7 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
 	id_tag = "cmodoor";
-	name = "Chief Medical Officer";
+	name = "Medical Administrator";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15559,7 +15564,7 @@
 "YC" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "repdoor";
-	name = "SolGov Representative";
+	name = "UGN Representative";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,

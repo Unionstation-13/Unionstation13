@@ -23,40 +23,28 @@
 /turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
 "ae" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "af" = (
-/obj/machinery/computer/arcade,
-/turf/simulated/floor/tiled/monotile,
+/obj/wallframe_spawn/reinforced_phoron/titanium,
+/turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
 "ag" = (
+/obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
-/area/vacant/brig)
-"ah" = (
-/obj/structure/table/standard,
-/obj/random/junk,
-/turf/simulated/floor/tiled/monotile,
-/area/vacant/brig)
-"ai" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled/monotile,
 /area/vacant/brig)
 "aj" = (
 /turf/simulated/wall/r_wall/hull,
 /area/crew_quarters/gym)
-"ak" = (
-/obj/random/junk,
-/turf/simulated/floor/tiled,
-/area/vacant/brig)
 "al" = (
-/obj/random/trash,
-/turf/simulated/floor/tiled,
+/obj/wallframe_spawn/reinforced_phoron,
+/turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
 "am" = (
 /obj/machinery/shieldwallgen{
 	anchored = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "an" = (
 /obj/random/junk,
@@ -74,109 +62,92 @@
 /area/maintenance/thirddeck/foreport)
 "ao" = (
 /obj/structure/grille/broken,
+/obj/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/vacant/brig)
 "ap" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aq" = (
-/obj/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
-/turf/simulated/floor/tiled,
+/obj/wallframe_spawn/reinforced_phoron/titanium,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "ar" = (
-/obj/decal/cleanable/vomit,
-/turf/simulated/floor/tiled,
-/area/vacant/brig)
-"as" = (
-/obj/structure/hygiene/toilet{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/obj/wallframe_spawn/reinforced_phoron/hull,
+/turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
 "at" = (
 /obj/random/junk,
-/turf/simulated/floor/plating,
+/obj/machinery/door/airlock/external/glass/bolted_open,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "au" = (
 /obj/structure/wall_frame,
 /obj/structure/grille,
+/obj/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/vacant/brig)
 "av" = (
 /obj/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/vacant/brig)
-"aw" = (
-/obj/structure/bed,
-/turf/simulated/floor/plating,
-/area/vacant/brig)
 "ax" = (
 /obj/floor_decal/corner/red{
 	dir = 1
 	},
-/obj/machinery/constructable_frame/computerframe,
-/turf/simulated/floor/tiled,
+/obj/machinery/computer/modular/preset/security,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "ay" = (
 /obj/floor_decal/corner/red{
 	dir = 1
 	},
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "az" = (
-/obj/structure/door_assembly,
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/glass/security,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aA" = (
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled,
-/area/vacant/brig)
-"aB" = (
-/obj/structure/closet{
-	name = "Prisoner's Locker"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aC" = (
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aD" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aE" = (
-/obj/machinery/door/airlock/security{
-	name = "Old Brig"
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/brig)
 "aF" = (
 /obj/random/obstruction,
-/turf/simulated/floor/plating,
+/obj/wallframe_spawn/reinforced_phoron/titanium,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aG" = (
 /obj/floor_decal/industrial/warning{
 	dir = 9
 	},
 /obj/structure/closet/secure_closet/brig,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aH" = (
 /obj/floor_decal/industrial/warning{
 	dir = 5
 	},
 /obj/machinery/portable_atmospherics/canister/sleeping_agent,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aI" = (
 /turf/simulated/floor/reinforced,
@@ -185,7 +156,7 @@
 /obj/floor_decal/industrial/warning{
 	dir = 10
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aK" = (
 /obj/structure/cable/green{
@@ -193,7 +164,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aL" = (
 /obj/machinery/power/apc{
@@ -205,7 +176,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "aN" = (
 /turf/simulated/wall/prepainted,
@@ -253,10 +224,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/security{
-	name = "Old Brig"
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/brig)
 "aT" = (
 /turf/simulated/wall/r_wall/hull,
@@ -1868,9 +1837,10 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/fore)
 "eA" = (
-/obj/random/trash,
-/turf/simulated/floor/tiled/monotile,
-/area/vacant/brig)
+/turf/simulated/floor/reinforced,
+/area/vacant/brig{
+	name = "Contingency Hub"
+	})
 "eB" = (
 /obj/machinery/light{
 	dir = 1;
@@ -5716,13 +5686,6 @@
 /obj/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
-"nb" = (
-/obj/item/storage/mirror{
-	icon_state = "mirror_broke";
-	pixel_y = 32
-	},
-/turf/simulated/floor/plating,
-/area/vacant/brig)
 "nc" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -16010,8 +15973,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/service_break_room)
 "Np" = (
-/obj/structure/decorative/md_slug,
-/turf/simulated/floor/plating,
+/obj/machinery/door/airlock/external/glass/bolted_open,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "Nq" = (
 /obj/structure/closet/crate/trashcart,
@@ -17173,8 +17136,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "QC" = (
-/turf/simulated/floor/tiled/monotile,
-/area/vacant/brig)
+/obj/machinery/button,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/thirddeck/starboard)
 "QD" = (
 /obj/floor_decal/corner/green{
 	dir = 5
@@ -18605,11 +18569,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
-"UD" = (
-/obj/structure/grille,
-/obj/structure/wall_frame,
-/turf/simulated/floor/plating,
-/area/vacant/brig)
 "UE" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/floor_decal/industrial/outline/grey,
@@ -19249,8 +19208,8 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
 "We" = (
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/tiled,
+/obj/machinery/suit_cycler/command,
+/turf/simulated/floor/reinforced,
 /area/vacant/brig)
 "Wg" = (
 /obj/random/trash,
@@ -40117,9 +40076,9 @@ aa
 aa
 aa
 ad
-ag
-at
-aw
+ae
+ae
+ae
 ad
 aa
 aa
@@ -40319,9 +40278,9 @@ aa
 aa
 ad
 ad
-nb
-ag
-ag
+ae
+ae
+ae
 ad
 ad
 aa
@@ -40520,11 +40479,11 @@ aa
 aa
 ad
 ad
-ag
-ao
-ak
-av
-ag
+ae
+ae
+ae
+ae
+ae
 ad
 ad
 aa
@@ -40721,13 +40680,13 @@ aa
 aa
 aa
 ad
-QC
 ae
 ae
-ag
 ae
 ae
-aB
+ae
+ae
+ae
 ad
 aa
 aI
@@ -40923,19 +40882,19 @@ aa
 aa
 aa
 ad
-af
-ag
-ag
 ae
 ae
-ag
-QC
+ae
+ae
+ae
+ae
+ae
 ad
 aa
 aI
 aQ
 aQ
-aQ
+QC
 bE
 QY
 dc
@@ -41124,17 +41083,17 @@ aa
 aa
 aa
 aa
-ad
-QC
+ar
 ae
 ae
-ag
+ae
+av
 av
 az
 av
 ad
-ad
-ad
+af
+af
 ad
 aQ
 bh
@@ -41326,18 +41285,18 @@ aa
 aa
 aa
 aa
-ad
-ag
-ak
+ar
+ae
+ae
 ap
 au
 ax
-ag
+ae
 aC
-ad
+af
 aG
 aJ
-ad
+aq
 aX
 aY
 bF
@@ -41528,17 +41487,17 @@ aa
 aa
 aa
 aa
-ad
-ag
+ar
 ae
-aq
+ae
+ae
 ao
 We
 ae
-ag
-az
-ag
-ag
+ae
+aE
+ae
+ae
 aE
 aY
 aY
@@ -41730,13 +41689,13 @@ aa
 aa
 aa
 aa
-ad
-QC
+ar
 ae
-ag
+ae
+ae
 av
-ag
-Np
+We
+ae
 eA
 aE
 ae
@@ -41932,18 +41891,18 @@ aa
 aa
 aa
 aa
-ad
-QC
-al
+ar
+ae
+ae
 ae
 av
 ay
 aA
-ag
+ae
 aF
 aH
 aL
-ad
+aq
 ba
 aY
 PP
@@ -42135,16 +42094,16 @@ aa
 aa
 aa
 ad
-ah
-ag
 ae
-ag
-ag
+ae
+ae
+av
+av
 av
 av
 ad
-ad
-ad
+af
+af
 ad
 aQ
 Zy
@@ -42337,11 +42296,11 @@ aa
 aa
 aa
 ad
-ai
 ae
-ar
 ae
-ag
+ae
+ae
+ae
 ae
 aD
 ad
@@ -42539,12 +42498,12 @@ aa
 aa
 aa
 ad
-ag
 ae
-ag
-ag
-ak
-ag
+ae
+ae
+ae
+ae
+ae
 aD
 ad
 aa
@@ -42743,9 +42702,9 @@ aa
 ad
 ad
 am
-ag
 ae
-UD
+ae
+ae
 am
 ad
 ad
@@ -42944,11 +42903,11 @@ aa
 aa
 aa
 ad
-ad
+al
 ag
 at
 ag
-ad
+al
 ad
 aa
 aa
@@ -43146,11 +43105,11 @@ aa
 aa
 aa
 aa
-ad
-as
-ag
-ag
-ad
+al
+ae
+ae
+ae
+al
 aa
 aa
 aa
@@ -43348,11 +43307,11 @@ aa
 aa
 aa
 aa
-ad
-ad
-ad
-ad
-ad
+al
+al
+Np
+al
+al
 aa
 aa
 aa

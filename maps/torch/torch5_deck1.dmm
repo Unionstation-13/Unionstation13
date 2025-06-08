@@ -28084,7 +28084,7 @@
 /area/medical/medicalhallway)
 "tgs" = (
 /obj/machinery/door/airlock/security{
-	name = "Brig Chief"
+	name = "Second Lieutenant"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
