@@ -1,7 +1,7 @@
 /datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "The United Galatic Nations"
-	minimal_player_age = 14
+	minimal_player_age = 35
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
@@ -36,7 +36,7 @@
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 14
+	minimal_player_age = 35
 	economic_power = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
@@ -86,7 +86,7 @@
 	supervisors = "The United Rocknall Corporation and the UGN"
 	department_flag = COM|MED|SCI
 	economic_power = 12
-	minimal_player_age = 14
+	minimal_player_age = 25
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso

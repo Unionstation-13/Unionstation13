@@ -25,21 +25,14 @@
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
-	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
-	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
-	in the Gilgamesh system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
-	a strong focus on independent planetary government with the GCC itself only handling defence, foreign relations and some intergalactic trade. \
-	Increasingly xenophobic, the GCC is in a cold war with the Sol Central Government following the Gaia Conflict — a large- \
-	scale conflict between the SCG and GCC that saw a great deal of death and destruction. Citizens of the GCC are referred to as \"Indies\" in Sol space, \
-	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
-	economic_power = 0.9
-
-
-
-
-
+	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410. \
+	Its greatest neighbor is the UGN, where it acquires most of its goods for trade and commerce, it is also home to Nitros Engineering, a pillar of the UGN's engineering wing. \
+	It is located in the Nitros system, and due to the abundance of resources in that system,they are able to make exorbiant profits off of the ruins of the Great Union Invasion \
+	The Federated Republic of Nitros is a externally independant pacifist nation, however singificant corruption has been unveiled over the past decades, particularly- \
+	related to the large population of ex URC employees in their political ranks, and thus the majority of individuals believe the Republic of Nitros to be in leagues with the URC\
+	In the year 2450, The Republic is a flourishing economic powerhouse, however individuals from the republic are often nickanmed as \"Wafflers\" in UGN space- \
+	due to their often exorbiant inherited riches or pompous attitude."
+	economic_power = 1.4
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
 	description = "The Expeditionary Corps is an SCG agency tasked with exploration of uncharted space, uncharted worlds, \
@@ -54,6 +47,7 @@
 
 
 /singleton/cultural_info/faction/police
+// Merge  this into Peacekeepers
 	name = FACTION_SPACECOPS
 	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
 	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
@@ -91,7 +85,7 @@
 
 /singleton/cultural_info/faction/remote/hephaestus
 	name = FACTION_HEPHAESTUS
-	description = "Hephaestus Industries, known simply as Hephaestus, is one of the largest megacorporations of the modern day. \
+	description = "Nitros Engineering, known simply as NE or Nitros, is one of the largest megacorporations of the modern day. \
 	They are the leading manufacturer of military grade personal weapons, assault vehicles, defence systems, and security measures. \
 	Hephaestus has a somewhat controversial reputation as a participant in blatant war profiteering, compounded by their attempts to \
 	exploit Unathi equipment and assets for their own gains. In spite of this, Hephaestus maintains a reputation for the quality and \
@@ -104,24 +98,28 @@
 
 /singleton/cultural_info/faction/free
 	name = FACTION_FREETRADE
-	description = "The Free Trade Union, commonly referred to as the FTU, is is an employee-owned conglomerate of tens of thousands of \
-	various traders and merchants from all over SCG space and beyond. Colloquially known as the 'fifth megacorp', they control a sizeable fleet \
-	of trading ships which form the backbone of their trading force, along with a large contingent of combat capable vessels that cruise the shipping lanes to \
-	keep their members safe from pirate activity. The FTU has a large amount of economic power across Sol space, and operates large trade hubs and stations near most \
-	Gateway installations and planets. Somewhat unscrupulous, FTU stations and merchants are known for \
-	selling a great many restricted items, and supplying all manner of goods indiscriminately."
-	economic_power = 1.3
+	description = "Cooran Supply, commonly referred to as CS, is a family owned megacorporation that manages logistics across the stars \
+	They bolster an enormous fleet of cargo vessels as well as a propieretary investor of Hilton Capital, a non-profit desirous to end the conflict between the union and the UGN \
+	Yet, Cooran Supply is not all perfect, for in a recent investigation, they discovered almost 3/4th's of the workforce during an anonymous census, would work for another employer \
+	if they paid more. This includes criminal activity! \
+	CS also is admirabily good at catching smuggling operations. As long as the manager is not corrupt of course."
+	economic_power = 1.8
+
 
 
 
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PEACEKEEPER
 	description = "The Peacekeeper Division is a subdivision of the UGN and is a pseudo-military operation to secure and contain Union influence from spreading.\
-	 They are main targets for Union spies, but also vice versa. In the present day they are the major military prescence across the nearby systems around Pax."
+The majority of union spies target the Peacekeeper division because of\
+It's lucrative information revolving around it, such as the rumors spreading\
+of a secret fusion bomb in development, or the rumored draconian methods\
+they used to silence dissenters."
 
 
 
 /singleton/cultural_info/faction/saare
+// merge into Peacekeeper
 	name = FACTION_SAARE
 	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Military Corporation that caters to large \
 	firms requiring discrete military and private security services. The company has taken to hiring skilled veterans from both private and public \
@@ -133,12 +131,11 @@
 
 /singleton/cultural_info/faction/dais
 	name = FACTION_DAIS
-	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology, such as computer hardware \
-	software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in the Sol Central \
-	Government; its systems used by most consumers and businesses within SolGov. DAIS is predates the Sol Central Government, and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Titen project, and is on the Expeditionary Corps Organization board of directors. \
-	Currently, DAIS is invested in researching bluespace computing and artificial intelligence. Despite recent intrusions by NanoTrasen into their sector with NTNet \
-	and related products, they still remain the market leader in computer technologies."
+	description = "ABCDEFG, or Algebraic Boolean Coordinated Distribution Effort for Frontier Grounds, is a hyper advanced anonymously owned tech conglomerate.\
+	Founded in an unknown year, it quickly rose to the top with its inventions of hi-tech consoles, tablets, and PDAs.\
+	All electronics on the station, including the cybersecurity network, are owned and processed through ABCDEFG's servers.\
+	In recent years, the URC and ABCDEFG have grown a festering rivalry.\
+	Particularly because ABCDEFG is made primarily of Skrell and Vox with minimal human population. But in recent years they have grown to accept the humans."
 	economic_power = 1.1
 
 /singleton/cultural_info/faction/formerunion
