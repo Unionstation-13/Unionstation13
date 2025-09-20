@@ -1,5 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-<<<<<<< Updated upstream
 "aa" = (
 /turf/space,
 /area/space)
@@ -5290,9 +5289,9 @@
 "lF" = (
 /obj/machinery/button/crematorium,
 /obj/machinery/light_switch{
-	pixel_x = -;
+	pixel_x = -1;
 	pixel_y = -9;
-	id_tag = s
+	id_tag = "s"
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/medical/morgue)
@@ -9166,7 +9165,7 @@
 "vY" = (
 /obj/machinery/light/spot{
 	dir = 4;
-	id_tag = "Cremation_Chamber_light"\"
+	id_tag = "Cremation_Chamber_light"
 	},
 /obj/floor_decal/corner/black/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -14463,7 +14462,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/glass{
-	name = Morgue
+	name = "Morgue"
 	},
 /turf/simulated/floor/tiled,
 /area/medical/morgue)
@@ -59093,5 +59092,3 @@ aa
 aa
 aa
 "}
-=======
->>>>>>> Stashed changes

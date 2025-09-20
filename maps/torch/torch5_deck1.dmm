@@ -12729,9 +12729,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/engineering{
-<<<<<<< Updated upstream
-	name = "Robotics"
-=======
 	name = "Technical Workshop Office"
 	},
 /obj/machinery/door/blast/shutters/open{
@@ -12740,7 +12737,6 @@
 /obj/machinery/door/blast/shutters/open{
 	name = "Office Lockdown Shutters";
 	id_tag = "robotics_lab_office"
->>>>>>> Stashed changes
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/office)
@@ -17129,13 +17125,10 @@
 	})
 "foK" = (
 /obj/wallframe_spawn/reinforced/no_grille,
-<<<<<<< Updated upstream
-=======
 /obj/machinery/door/blast/shutters/open{
 	name = "Office Lockdown Shutters";
 	id_tag = "robotics_lab_office"
 	},
->>>>>>> Stashed changes
 /turf/simulated/floor/plating,
 /area/assembly/robotics/office)
 "foP" = (
@@ -20671,15 +20664,12 @@
 /obj/floor_decal/corner/yellow{
 	dir = 5
 	},
-<<<<<<< Updated upstream
-=======
 /obj/machinery/button/blast_door{
 	id_tag = "s";
 	name = "Office Lockdown";
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_ROBOTICS"));
 	pixel_x = -34
 	},
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
 "kiR" = (
@@ -20883,13 +20873,10 @@
 /obj/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "roboticlab_window"
 	},
-<<<<<<< Updated upstream
-=======
 /obj/machinery/door/blast/shutters/open{
 	name = "Office Lockdown Shutters";
 	id_tag = "robotics_lab_office"
 	},
->>>>>>> Stashed changes
 /turf/simulated/floor/plating,
 /area/assembly/robotics/office)
 "kwb" = (
@@ -24266,13 +24253,10 @@
 	name = "Robotics"
 	},
 /obj/structure/disposalpipe/segment,
-<<<<<<< Updated upstream
-=======
 /obj/machinery/door/blast/shutters/open{
 	name = "Office Lockdown Shutters";
 	id_tag = "robotics_lab_office"
 	},
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics/office)
 "oQb" = (
@@ -27804,7 +27788,7 @@
 /area/rnd/xenobiology/cell_3)
 "sMf" = (
 /obj/structure/sign/warning/detailed{
-	desc = YOUAREBEINGWATCHED;
+	desc = "YOUAREBEINGWATCHED";
 	name = "WARNING SIGN"
 	},
 /turf/simulated/wall/prepainted,
