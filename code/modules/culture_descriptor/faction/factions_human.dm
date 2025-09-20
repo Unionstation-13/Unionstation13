@@ -24,7 +24,7 @@
 	economic_power = 1.2
 
 /singleton/cultural_info/faction/gcc
-	name = FACTION_INDUSTRIAL_CONFED
+	name = FACTION_INDIE_CONFED
 	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410. \
 	Its greatest neighbor is the UGN, where it acquires most of its goods for trade and commerce, it is also home to Nitros Engineering, a pillar of the UGN's engineering wing. \
 	It is located in the Nitros system, and due to the abundance of resources in that system,they are able to make exorbiant profits off of the ruins of the Great Union Invasion \
@@ -52,7 +52,7 @@
 
 
 /singleton/cultural_info/faction/police
-#Merge  this into Peacekeepers
+// Merge  this into Peacekeepers
 	name = FACTION_SPACECOPS
 	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
 	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
@@ -89,7 +89,7 @@
 
 
 /singleton/cultural_info/faction/remote/hephaestus
-	name = FACTION_NITROS_ENGINEERING
+	name = FACTION_HEPHAESTUS
 	description = "Nitros Engineering, known simply as NE or Nitros, is one of the largest megacorporations of the modern day. \
 	They are the leading manufacturer of military grade personal weapons, assault vehicles, defence systems, and security measures. \
 	Hephaestus has a somewhat controversial reputation as a participant in blatant war profiteering, compounded by their attempts to \
@@ -123,7 +123,7 @@ they used to silence dissenters."
 
 
 /singleton/cultural_info/faction/saare
-#merge into Peacekeeper
+// merge into Peacekeeper
 	name = FACTION_SAARE
 	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Military Corporation that caters to large \
 	firms requiring discrete military and private security services. The company has taken to hiring skilled veterans from both private and public \
@@ -134,7 +134,7 @@ they used to silence dissenters."
 
 
 /singleton/cultural_info/faction/dais
-	name = FACTION_ABCDEFG
+	name = FACTION_DAIS
 	description = "ABCDEFG, or Algebraic Boolean Coordinated Distribution Effort for Frontier Grounds, is a hyper advanced anonymously owned tech conglomerate.\
 	Founded in an unknown year, it quickly rose to the top with its inventions of hi-tech consoles, tablets, and PDAs.\
 	All electronics on the station, including the cybersecurity network, are owned and processed through ABCDEFG's servers.\
