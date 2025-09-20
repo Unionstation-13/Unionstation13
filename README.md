@@ -1,6 +1,6 @@
-# Baystation [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3.0-orange.svg)](https://opensource.org/licenses/AGPL-3.0) [![CodeQL](https://github.com/baystation12/baystation12/workflows/CodeQL/badge.svg)](https://github.com/Baystation12/Baystation12/actions/workflows/codeql-analysis.yml) [![CI Status](https://github.com/baystation12/baystation12/workflows/Run%20Tests/badge.svg)](https://github.com/Baystation12/Baystation12/actions/workflows/test.yml) [![codebeat badge](https://codebeat.co/badges/8ecb9a34-1bab-4d80-b34d-b16e8b216a03)](https://codebeat.co/projects/github-com-baystation12-baystation12-dev)
+# Unionstation [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3.0-orange.svg)](https://opensource.org/licenses/AGPL-3.0) [![CodeQL](https://github.com/unionstation-13/unionstation13/workflows/CodeQL/badge.svg)](https://github.com/unionstation-13/unionstation13/actions/workflows/codeql-analysis.yml) [![CI Status](https://github.com/unionstation-13/unionstation13/workflows/Run%20Tests/badge.svg)](https://github.com/unionstation-13/unionstation13/actions/workflows/test.yml) [![codebeat badge](https://codebeat.co/badges/8ecb9a34-1bab-4d80-b34d-b16e8b216a03)](https://codebeat.co/projects/github-com-baystation12-baystation12-dev)
 
-[Website](https://baystation.xyz) - [Discord](https://baystation.xyz/discord) - [Code](https://baystation.xyz/github) - [DMDoc](https://dmdoc.baystation.xyz)
+[Baystation](https://baystation.xyz) - [Unionstation13 Wiki](https://unionstation.miraheze.org/wiki/Main_Page) - [Discord](https://discord.gg/jwjnpDBGTw) - [Code](https://github.com/Unionstation-13/Unionstation13) - [DMDoc](https://dmdoc.baystation.xyz)
 
 ---
 
@@ -20,7 +20,7 @@ Please see [/docs/SECURITY.md](/docs/SECURITY.md) for this repository's security
 
 ### LICENSE
 
-The code for Baystation is licensed under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
+The code for Baystation and Unionstation13 is licensed under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
 
 Code with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00 GMT) is licensed under the GNU General Public License version 3, which can be found in full in [/docs/GPL3.txt](/docs/GPL3.txt)
 

@@ -33,11 +33,6 @@
 	In the year 2450, The Republic is a flourishing economic powerhouse, however individuals from the republic are often nickanmed as \"Wafflers\" in UGN space- \
 	due to their often exorbiant inherited riches or pompous attitude."
 	economic_power = 1.4
-
-
-
-
-
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
 	description = "The Expeditionary Corps is an SCG agency tasked with exploration of uncharted space, uncharted worlds, \
@@ -109,6 +104,7 @@
 	if they paid more. This includes criminal activity! \
 	CS also is admirabily good at catching smuggling operations. As long as the manager is not corrupt of course."
 	economic_power = 1.8
+
 
 
 
