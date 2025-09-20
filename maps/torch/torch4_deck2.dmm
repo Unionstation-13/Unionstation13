@@ -1000,12 +1000,13 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -1059,7 +1060,6 @@
 	dir = 8;
 	icon_state = "warningcorner"
 	},
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
@@ -1067,7 +1067,6 @@
 /area/assembly/robotics)
 "bZ" = (
 /obj/structure/closet/crate/plastic,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/item/device/scanner/health,
 /obj/item/storage/firstaid/empty,
 /obj/item/device/assembly/prox_sensor{
@@ -1098,6 +1097,11 @@
 /obj/structure/catwalk,
 /obj/floor_decal/corner/black/half{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue)
@@ -1267,7 +1271,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
 "cr" = (
-/obj/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/glass{
 	amount = 20;
 	pixel_x = -3;
@@ -1388,7 +1391,6 @@
 /area/assembly/robotics)
 "cA" = (
 /obj/machinery/robotics_fabricator,
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "cB" = (
@@ -2545,7 +2547,6 @@
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -2582,10 +2583,6 @@
 /area/assembly/robotics)
 "eV" = (
 /obj/machinery/fabricator,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "eW" = (
@@ -2632,6 +2629,15 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_bay)
+"fb" = (
+/obj/floor_decal/corner/black/mono,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/medical/morgue)
 "fc" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
@@ -6419,6 +6425,15 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/engineering/engine_room)
+"oR" = (
+/obj/floor_decal/corner/black/mono,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/medical/morgue)
 "oU" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -6428,6 +6443,7 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/light,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "oV" = (
@@ -7899,8 +7915,6 @@
 /turf/simulated/floor/tiled,
 /area/maintenance/seconddeck/aftstarboard)
 "su" = (
-/obj/machinery/mech_recharger,
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "sv" = (
@@ -9166,7 +9180,6 @@
 /obj/machinery/light/spot{
 	dir = 4;
 	id_tag = "Cremation_Chamber_light"
-	},
 /obj/floor_decal/corner/black/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue)
@@ -10984,6 +10997,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"By" = (
+/obj/floor_decal/corner/black/mono,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/medical/morgue)
 "BA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13664,7 +13685,7 @@
 /area/engineering/foyer)
 "IL" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics Surgical Theater"
+	name = "Deep Repair Suite"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14280,10 +14301,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics Workshop"
+	name = "Technical Workshop Lower"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/assembly/robotics)
 "KT" = (
@@ -15994,7 +16015,6 @@
 	dir = 4;
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/oiljug=5,/obj/item/stack/cable_coil=6,/obj/item/device/flash/synthetic=4,/obj/item/cell/standard=4,/obj/item/device/scanner/health=2,/obj/item/scalpel/basic=1,/obj/item/circular_saw=1,/obj/item/tank/anesthetic=2,/obj/item/clothing/mask/breath/medical=5,/obj/item/screwdriver=2,/obj/item/crowbar=2)
 	},
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/requests_console{
 	department = "Robotics";
 	departmentType = 2;
@@ -16927,7 +16947,6 @@
 /area/hallway/primary/seconddeck)
 "TD" = (
 /obj/machinery/computer/rdconsole/robotics,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/structure/reagent_dispensers/acid{
 	pixel_x = 32
 	},
@@ -18093,6 +18112,10 @@
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
+"XC" = (
+/obj/machinery/light_switch,
+/turf/simulated/wall/prepainted,
+/area/storage/medical)
 "XE" = (
 /obj/floor_decal/industrial/warning,
 /turf/simulated/floor/greengrid,
@@ -18120,9 +18143,16 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"XL" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/medical/morgue)
 "XO" = (
 /obj/machinery/r_n_d/circuit_imprinter,
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "XP" = (
@@ -42007,7 +42037,7 @@ Lk
 Bb
 ed
 VP
-Lk
+XC
 fH
 gu
 az
