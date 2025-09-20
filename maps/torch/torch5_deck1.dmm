@@ -1339,7 +1339,6 @@
 	pixel_y = -6;
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_ROBOTICS"))
 	},
-/obj/floor_decal/corner/yellow/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
 "acG" = (
@@ -2230,20 +2229,20 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "aek" = (
-/obj/machinery/optable,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 10
 	},
-/obj/machinery/oxygen_pump{
-	pixel_x = -32;
-	pixel_y = 32
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/structure/closet/secure_closet/wall{
+	name = "Prep Locker"
 	},
-/obj/machinery/body_scan_display{
-	pixel_y = 24
-	},
+/obj/item/clothing/under/rank/medical/scrubs/blue,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "ael" = (
@@ -3035,8 +3034,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/medicalhallway)
 "afn" = (
-/obj/structure/closet/l3closet/general,
-/obj/floor_decal/industrial/outline/grey,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
@@ -3474,7 +3471,7 @@
 /obj/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	id_tag = "ETC_stage";
-	name = "Treatment Center"
+	name = "Trauma Center"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -3610,9 +3607,13 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/item/autopsy_scanner,
-/obj/machinery/light/small{
-	dir = 4
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/surgicalapron,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/head/surgery/blue,
+/obj/structure/closet/secure_closet/wall{
+	name = "Prep Supplies"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue/autopsy)
@@ -3693,6 +3694,10 @@
 	dir = 10
 	},
 /obj/structure/catwalk,
+/obj/catwalk_plated,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "agw" = (
@@ -3924,7 +3929,7 @@
 /obj/machinery/door/airlock/glass/medical{
 	autoset_access = 0;
 	id_tag = "inf_recep";
-	name = "Infirmary Reception";
+	name = "Reception";
 	req_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -3978,7 +3983,7 @@
 /obj/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	id_tag = "inf_stage";
-	name = "Infirmary Staging"
+	name = "Trauma Center"
 	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -4752,6 +4757,12 @@
 "aiu" = (
 /turf/simulated/wall/prepainted,
 /area/security/evidence)
+"aiv" = (
+/obj/machinery/light_switch{
+	dir = 8
+	},
+/turf/simulated/wall/prepainted,
+/area/medical/morgue/autopsy)
 "aiG" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -4974,12 +4985,10 @@
 /turf/simulated/wall/prepainted,
 /area/engineering/auxpower)
 "ajv" = (
-/obj/machinery/recharge_station,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "ajG" = (
 /obj/structure/cable/green{
@@ -5604,34 +5613,32 @@
 /turf/simulated/floor/plating,
 /area/engineering/auxpower)
 "alo" = (
-/obj/structure/closet/l3closet/general,
-/obj/floor_decal/industrial/outline/grey,
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "alp" = (
-/obj/machinery/atmospherics/binary/pump{
+/obj/floor_decal/industrial/warning{
+	dir = 5
+	},
+/obj/floor_decal/corner/paleblue/half{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "alq" = (
-/obj/machinery/atmospherics/binary/passive_gate{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "alr" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/catwalk,
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "alD" = (
 /obj/floor_decal/techfloor{
@@ -5648,7 +5655,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green,
-/turf/simulated/floor/tiled/techfloor,
+/turf/space,
 /area/maintenance/firstdeck/centralstarboard)
 "alO" = (
 /obj/structure/table/rack,
@@ -5745,10 +5752,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "amp" = (
-/obj/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
@@ -5835,24 +5838,38 @@
 /turf/simulated/floor/plating,
 /area/engineering/auxpower)
 "amy" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 4
-	},
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/plating,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/clothing/mask/breath/anesthetic,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/trauma,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "amz" = (
-/obj/machinery/atmospherics/tvalve/bypass{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/prepainted,
 /area/maintenance/firstdeck/centralstarboard)
 "amA" = (
-/obj/machinery/atmospherics/unary/tank/air{
-	dir = 1
+/obj/machinery/computer/operating{
+	dir = 4
 	},
-/obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/plating,
+/obj/floor_decal/corner/blue/diagonal,
+/obj/floor_decal/corner/paleblue/mono,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "amP" = (
 /obj/structure/table/rack,
@@ -6182,9 +6199,6 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
@@ -6892,12 +6906,6 @@
 	pixel_y = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/corner/yellow{
-	dir = 10
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 5
-	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "atV" = (
@@ -7141,24 +7149,15 @@
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/firstdeck/center)
 "auO" = (
-/obj/machinery/mech_recharger,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/monotile,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "auP" = (
-/obj/floor_decal/industrial/warning{
-	dir = 8;
-	icon_state = "warning"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -7174,12 +7173,6 @@
 "auS" = (
 /obj/machinery/light{
 	dir = 8
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 10
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 5
 	},
 /obj/structure/bed/chair/padded/yellow{
 	dir = 4
@@ -11977,9 +11970,6 @@
 /area/maintenance/firstdeck/centralport)
 "aRb" = (
 /obj/floor_decal/corner/yellow/mono,
-/obj/structure/closet/wardrobe/robotics_black,
-/obj/item/clothing/under/rank/roboticist/skirt,
-/obj/item/clothing/under/rank/roboticist/skirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
@@ -12747,7 +12737,13 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics"
+	name = "Technical Workshop Office"
+	},
+/obj/machinery/door/blast/shutters/open{
+	name = "Office Lockdown Shutters"
+	},
+/obj/machinery/door/blast/shutters/open{
+	name = "Office Lockdown Shutters"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/office)
@@ -14173,9 +14169,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/floor_decal/corner/yellow{
-	dir = 5
-	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "bkG" = (
@@ -14375,10 +14368,6 @@
 /turf/simulated/floor/plating,
 /area/thruster/d1port)
 "bvY" = (
-/obj/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -14391,10 +14380,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "bxK" = (
-/obj/machinery/cryopod/robot{
-	dir = 4
-	},
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
@@ -14402,7 +14387,10 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/tiled/monotile,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
+/turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "byb" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -14693,6 +14681,12 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rnd/entry)
+"bPL" = (
+/obj/machinery/door/airlock/medical{
+	name = "Operating Room"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/medical/surgery)
 "bPR" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -15123,23 +15117,8 @@
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters/safe_room/firstdeck)
 "ctb" = (
-/obj/floor_decal/floordetail/edgedrain{
-	dir = 8
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
-	},
-/obj/item/device/radio/intercom/department/medbay{
-	dir = 4;
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -15374,13 +15353,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/atmospherics/unary/freezer{
-	dir = 4;
-	icon_state = "freezer";
-	set_temperature = 80;
-	use_power = 1
-	},
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "cFb" = (
@@ -15450,14 +15422,13 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "cMb" = (
 /obj/floor_decal/techfloor/orange{
@@ -15486,15 +15457,16 @@
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "cOb" = (
-/obj/machinery/vitals_monitor,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 9
 	},
-/obj/floor_decal/corner/paleblue,
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -21
 	},
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/structure/closet/secure_closet/personal/patient,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "cOH" = (
@@ -15550,13 +15522,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "cTb" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/surgery,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 10
 	},
 /obj/machinery/light{
 	dir = 1
@@ -15585,8 +15552,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "cWb" = (
-/obj/structure/closet/wardrobe/medic_torch,
-/obj/floor_decal/industrial/outline/grey,
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
@@ -15604,8 +15569,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "cXb" = (
-/obj/structure/closet/l3closet/general,
-/obj/floor_decal/industrial/outline/grey,
+/obj/structure/closet/secure_closet{
+	desc = "A label on it reads: 'TEMPORARY STORAGE ONLY FOR USE DURING AUTOPSY'";
+	name = "Deceased Belongings"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "cXj" = (
@@ -15691,7 +15658,14 @@
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_y = 24
 	},
-/obj/item/storage/firstaid/surgery,
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/surgicalapron,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/head/surgery/blue,
+/obj/structure/closet/secure_closet/wall{
+	name = "Prep Supplies"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue/autopsy)
 "daB" = (
@@ -15818,20 +15792,11 @@
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1port)
 "dkb" = (
-/obj/machinery/optable,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
-/obj/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/machinery/oxygen_pump{
-	pixel_x = -32;
-	pixel_y = 32
-	},
-/obj/machinery/body_scan_display{
-	pixel_y = 24
-	},
+/obj/structure/bed/padded,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "dkG" = (
@@ -16195,7 +16160,6 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
 "dPr" = (
@@ -16465,15 +16429,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
 "edM" = (
-/obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
-/obj/structure/catwalk,
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "edT" = (
 /obj/structure/sign/warning/high_voltage{
@@ -16868,7 +16827,7 @@
 /area/medical/morgue/autopsy)
 "ePb" = (
 /obj/machinery/door/airlock/medical{
-	name = "Operating Room 1"
+	name = "Surgery Prep Room"
 	},
 /obj/machinery/holosign/surgery{
 	dir = 4;
@@ -16917,13 +16876,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "eRQ" = (
-/obj/machinery/door/airlock/medical{
-	autoset_access = 0;
-	name = "Robotics Laboratory";
-	req_access = list(list("ACCESS_MEDICAL","ACCESS_ROBOTICS"))
-	},
-/obj/floor_decal/industrial/hatch/blue,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -16935,7 +16887,20 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/structure/table/reinforced,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "robotics_lab_Reception";
+	name = "Reception Shutters";
+	opacity = 0
+	},
+/obj/machinery/door/window/brigdoor/northright{
+	name = "Robotics Reception";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "eRU" = (
 /turf/simulated/wall/r_wall/hull,
@@ -17067,11 +17032,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "fmb" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "fnu" = (
@@ -17086,6 +17046,9 @@
 /area/medical/counselor/therapy)
 "foK" = (
 /obj/wallframe_spawn/reinforced/no_grille,
+/obj/machinery/door/blast/shutters/open{
+	name = "Office Lockdown Shutters"
+	},
 /turf/simulated/floor/plating,
 /area/assembly/robotics/office)
 "foP" = (
@@ -17107,11 +17070,9 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
 "fps" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8
-	},
-/obj/machinery/meter,
-/turf/simulated/floor/plating,
+/obj/machinery/optable,
+/obj/floor_decal/corner/paleblue/mono,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "fpu" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -17195,8 +17156,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
 "fCb" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/surgery,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 1
 	},
@@ -17206,6 +17165,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/structure/closet/secure_closet/wall{
+	name = "Prep Locker"
+	},
+/obj/item/clothing/under/rank/medical/scrubs/blue,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "fDJ" = (
@@ -17231,6 +17198,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"fET" = (
+/obj/machinery/door/airlock/medical{
+	name = "Operating Room"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/medical/surgery2)
 "fHk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -17545,7 +17518,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "ghb" = (
-/obj/structure/iv_stand,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 8
 	},
@@ -17610,8 +17582,6 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
 "gjb" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/adv,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 4
 	},
@@ -17621,9 +17591,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "gkb" = (
-/obj/wallframe_spawn/reinforced/polarized/no_grille/regular{
-	id = "or1"
-	},
+/obj/wallframe_spawn,
 /turf/simulated/floor/plating,
 /area/medical/surgery)
 "glb" = (
@@ -17823,19 +17791,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/firstdeck)
 "gEb" = (
-/obj/wallframe_spawn/reinforced/polarized/no_grille/regular{
-	id = "exam_windows"
-	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
-	dir = 4;
+	dir = 2;
 	icon_state = "shutter0";
-	id_tag = "infirm_windows";
-	name = "Infirmary Window Lockdown";
+	id_tag = "robotics_lab_Reception";
+	name = "Reception Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/plating,
-/area/medical/exam_room)
+/obj/structure/table/reinforced,
+/obj/item/material/bell,
+/obj/machinery/door/window/brigdoor/northright{
+	name = "Robotics Reception"
+	},
+/turf/simulated/floor/tiled/white,
+/area/assembly/robotics/laboratory)
 "gEY" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -17965,28 +17935,21 @@
 /turf/simulated/floor/plating,
 /area/medical/medicalhallway)
 "gWY" = (
-/obj/machinery/mech_recharger,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/monotile,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "gXb" = (
-/obj/wallframe_spawn/reinforced/polarized/full{
-	id = "exam_windows"
+/obj/machinery/button/blast_door{
+	pixel_y = 120;
+	name = "Reception Shutters";
+	id_tag = "robotics_lab_Reception"
 	},
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
-	id_tag = "infirm_windows";
-	name = "Infirmary Window Lockdown";
-	opacity = 0
-	},
-/turf/simulated/floor/plating,
-/area/medical/exam_room)
+/turf/simulated/wall/prepainted,
+/area/assembly/robotics/laboratory)
 "gZb" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -18122,15 +18085,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "hgP" = (
-/obj/machinery/vitals_monitor,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 9
 	},
 /obj/floor_decal/corner/paleblue,
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -21
-	},
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "hhb" = (
@@ -18189,14 +18149,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
 "hku" = (
-/obj/floor_decal/floordetail/edgedrain{
-	dir = 4
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/surgery2)
+/obj/structure/iv_stand,
+/turf/simulated/floor/tiled/white/monotile,
+/area/maintenance/firstdeck/centralstarboard)
 "hlb" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 5
@@ -18944,7 +18899,7 @@
 "ikZ" = (
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/floor_decal/industrial/shutoff,
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "ila" = (
 /obj/floor_decal/industrial/warning,
@@ -19202,8 +19157,6 @@
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 24
 	},
-/obj/item/book/manual/ripley_build_and_repair,
-/obj/item/book/manual/robotics_cyborgs,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
 "izd" = (
@@ -19301,7 +19254,6 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/structure/closet/crate/secure/biohazard/alt,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "iHb" = (
@@ -19362,13 +19314,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/secure_storage)
 "iLB" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "iMW" = (
 /obj/floor_decal/corner/paleblue{
@@ -19726,12 +19673,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "jiq" = (
-/obj/structure/iv_stand,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 8
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 6
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -20510,12 +20453,6 @@
 	dir = 4;
 	pixel_x = 21
 	},
-/obj/floor_decal/corner/yellow{
-	dir = 5
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 10
-	},
 /obj/structure/bed/chair/padded/yellow{
 	dir = 8
 	},
@@ -20534,7 +20471,6 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/obj/floor_decal/corner/yellow/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
 "kfb" = (
@@ -20555,7 +20491,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/thruster/d1starboard)
 "kgi" = (
-/obj/floor_decal/industrial/warning/corner,
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
@@ -20586,6 +20521,12 @@
 	},
 /obj/floor_decal/corner/yellow{
 	dir = 5
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "robotics_lab_office";
+	name = "Office Lockdown";
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_ROBOTICS"));
+	pixel_x = -34
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
@@ -20793,6 +20734,9 @@
 /obj/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "roboticlab_window"
 	},
+/obj/machinery/door/blast/shutters/open{
+	name = "Office Lockdown Shutters"
+	},
 /turf/simulated/floor/plating,
 /area/assembly/robotics/office)
 "kwb" = (
@@ -20831,10 +20775,8 @@
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "kyb" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/wall/prepainted,
 /area/assembly/robotics/laboratory)
 "kyt" = (
 /obj/floor_decal/techfloor,
@@ -20886,15 +20828,9 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/secure_storage)
 "kDb" = (
-/obj/floor_decal/industrial/warning{
-	icon_state = "warning"
-	},
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/machinery/button/blast_door{
 	id_tag = "Skynet_launch";
-	name = "Charging Bay Door Control";
+	name = "Repair Bay Door Controls";
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled,
@@ -20998,13 +20934,10 @@
 /area/medical/staging)
 "kLY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "kNb" = (
 /obj/item/stool/padded,
-/obj/floor_decal/corner/yellow{
-	dir = 8
-	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "kOb" = (
@@ -21161,7 +21094,7 @@
 	dir = 2;
 	icon_state = "shutter0";
 	id_tag = "Skynet_launch";
-	name = "Mech Bay";
+	name = "Repair Bay";
 	opacity = 0
 	},
 /obj/floor_decal/industrial/hatch/yellow,
@@ -21187,7 +21120,6 @@
 /obj/item/storage/backpack/weldpack,
 /obj/item/reagent_containers/spray/sterilizine,
 /obj/item/storage/toolbox/mechanical,
-/obj/floor_decal/corner/yellow/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
 "kVi" = (
@@ -21201,17 +21133,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "kWb" = (
-/obj/floor_decal/corner/yellow{
-	dir = 10
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/turf/simulated/wall/prepainted,
+/area/maintenance/firstdeck/centralstarboard)
 "kXb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
-	},
-/obj/floor_decal/corner/yellow{
-	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
@@ -21256,9 +21189,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "lcq" = (
-/obj/machinery/recharge_station,
-/obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/tiled,
 /area/assembly/chargebay)
 "lcI" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -21303,7 +21234,7 @@
 "ldb" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "roboticslab";
-	name = "Robotics Laboratory"
+	name = "Technical Workshop Reception"
 	},
 /obj/machinery/door/firedoor,
 /obj/floor_decal/industrial/hatch/blue,
@@ -21924,7 +21855,6 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 4
 	},
-/obj/machinery/organ_printer/robot/mapped,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -21941,10 +21871,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "mcA" = (
-/obj/floor_decal/industrial/warning{
-	dir = 8;
-	icon_state = "warning"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
@@ -22200,15 +22126,15 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/locker)
 "mrX" = (
+/obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
 	icon_state = "shutter0";
 	id_tag = "Skynet_launch";
-	name = "Mech Bay";
+	name = "Repair Bay";
 	opacity = 0
 	},
-/obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/chargebay)
 "mtk" = (
@@ -22360,9 +22286,6 @@
 "mwV" = (
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 6
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 1
 	},
 /obj/floor_decal/sign/or2,
 /obj/machinery/button/holosign{
@@ -22573,9 +22496,14 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/fore)
 "mLu" = (
-/obj/machinery/portable_atmospherics/powered/pump/filled,
-/obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/plating,
+/obj/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/floor_decal/corner/paleblue/half{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "mMb" = (
 /obj/floor_decal/industrial/warning{
@@ -22846,21 +22774,14 @@
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "njg" = (
-/obj/structure/table/standard,
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/spray/sterilizine,
-/obj/machinery/vending/wallmed1{
-	pixel_y = 32
-	},
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 5
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 8
 	},
-/obj/item/reagent_containers/dropper/peridaxon,
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "njj" = (
@@ -23191,7 +23112,7 @@
 /area/medical/medpaperworkoffice)
 "nDx" = (
 /obj/machinery/door/airlock/medical{
-	name = "Operating Room 2"
+	name = "Pre-Surgery Room"
 	},
 /obj/machinery/holosign/surgery{
 	dir = 4;
@@ -23446,10 +23367,6 @@
 	},
 /obj/landmark/start{
 	name = "Cyborg"
-	},
-/obj/floor_decal/industrial/warning{
-	dir = 8;
-	icon_state = "warning"
 	},
 /obj/machinery/computer/cryopod/robot{
 	pixel_y = 30
@@ -23731,9 +23648,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "ohy" = (
-/obj/floor_decal/corner/yellow{
-	dir = 5
-	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "oib" = (
@@ -23878,7 +23792,7 @@
 /obj/machinery/door/airlock/glass/medical{
 	autoset_access = 0;
 	id_tag = "inf_recep";
-	name = "Infirmary Reception";
+	name = "Reception";
 	req_access = list("ACCESS_MEDICAL")
 	},
 /obj/machinery/door/blast/shutters{
@@ -23914,6 +23828,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue/autopsy)
 "oxb" = (
@@ -24093,23 +24008,8 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/wing)
 "oMi" = (
-/obj/floor_decal/floordetail/edgedrain{
-	dir = 8
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
-	},
-/obj/item/device/radio/intercom/department/medbay{
-	dir = 4;
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
@@ -24146,9 +24046,6 @@
 /area/security/opscheck)
 "oOt" = (
 /obj/floor_decal/floordetail/edgedrain,
-/obj/floor_decal/corner/paleblue{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -24160,7 +24057,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/structure/closet/crate/secure/biohazard/alt,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "oPb" = (
@@ -24176,9 +24073,12 @@
 /area/rnd/development)
 "oPD" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Robotics"
+	name = "Technical Workshop Office"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/blast/shutters/open{
+	name = "Office Lockdown Shutters"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics/office)
 "oQb" = (
@@ -24905,13 +24805,8 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "pIk" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/adv,
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 4
-	},
-/obj/floor_decal/corner/paleblue{
-	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -25336,9 +25231,6 @@
 /area/rnd/misc_lab)
 "qju" = (
 /obj/floor_decal/floordetail/edgedrain,
-/obj/floor_decal/corner/paleblue{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -25351,6 +25243,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light,
+/obj/structure/bed/chair/padded/blue{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "qkb" = (
@@ -25400,16 +25295,16 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/reagent_containers/ivbag/nanoblood,
-/obj/item/reagent_containers/ivbag/blood/human/oneg,
-/obj/item/reagent_containers/ivbag/blood/human/oneg,
-/obj/item/reagent_containers/ivbag/blood/skrell/oneg,
-/obj/item/reagent_containers/ivbag/blood/unathi/oneg,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
+"qnM" = (
+/obj/machinery/pager/robotics{
+	pixel_y = 30;
+	dir = 4
+	},
+/turf/simulated/wall/prepainted,
+/area/assembly/robotics/laboratory)
 "qqb" = (
 /obj/wallframe_spawn/reinforced/polarized/full{
 	id = "sci_office"
@@ -26242,21 +26137,11 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
 "rpn" = (
-/obj/structure/table/standard,
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/spray/sterilizine,
-/obj/machinery/vending/wallmed1{
-	pixel_y = 32
-	},
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 5
 	},
-/obj/floor_decal/corner/paleblue{
-	dir = 8
-	},
-/obj/item/reagent_containers/dropper/peridaxon,
+/obj/structure/table/reinforced,
+/obj/structure/bedsheetbin,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "rpB" = (
@@ -26920,15 +26805,11 @@
 /area/rnd/xenobiology/xenoflora)
 "sag" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/structure/catwalk,
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "saS" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -27096,12 +26977,18 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
 "shQ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/industrial/warning/corner{
-	dir = 1
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/centralstarboard)
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/open,
+/area/medical/morgue/autopsy{
+	name = "\improper Autopsy prep"
+	})
 "sib" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -27667,7 +27554,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "sLb" = (
-/obj/machinery/atmospherics/unary/cryo_cell,
 /obj/floor_decal/corner/paleblue/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -27680,7 +27566,7 @@
 /area/rnd/xenobiology/cell_3)
 "sMf" = (
 /obj/structure/sign/warning/detailed{
-	desc = YOU ARE BEING WATCHED;
+	desc = "YOUAREBEINGWATCHED";
 	name = "WARNING SIGN"
 	},
 /turf/simulated/wall/prepainted,
@@ -28436,20 +28322,13 @@
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 10
 	},
-/obj/floor_decal/corner/paleblue{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
 	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/reagent_containers/ivbag/nanoblood,
-/obj/item/reagent_containers/ivbag/blood/human/oneg,
-/obj/item/reagent_containers/ivbag/blood/human/oneg,
-/obj/item/reagent_containers/ivbag/blood/skrell/oneg,
-/obj/item/reagent_containers/ivbag/blood/unathi/oneg,
+/obj/structure/bed/chair/padded/blue{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "tCO" = (
@@ -28461,14 +28340,6 @@
 	},
 /obj/item/auto_cpr,
 /obj/item/bodybag/rescue/loaded,
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 7;
-	pixel_y = 1
-	},
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 7;
-	pixel_y = 1
-	},
 /obj/structure/table/standard,
 /obj/machinery/body_scan_display{
 	pixel_y = 24
@@ -28691,11 +28562,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "ubf" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
-/obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/plating,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "udY" = (
 /obj/machinery/washing_machine,
@@ -29106,14 +28974,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
 "uWa" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
-	},
-/obj/structure/closet/firecloset,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/wrench,
-/obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/plating,
+/obj/machinery/vitals_monitor,
+/obj/floor_decal/corner/paleblue/mono,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "uWu" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
@@ -29777,9 +29640,6 @@
 	pixel_y = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/floor_decal/corner/yellow{
-	dir = 5
-	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "wvZ" = (
@@ -30065,11 +29925,6 @@
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 1
-	},
-/obj/machinery/button/windowtint{
-	id = "or1";
-	pixel_x = -6;
-	pixel_y = -24
 	},
 /obj/machinery/button/holosign{
 	id_tag = "or1";
@@ -47867,7 +47722,7 @@ acw
 aeU
 abP
 cBU
-ahX
+amz
 acD
 uWa
 fps
@@ -48069,10 +47924,10 @@ abP
 abP
 xEq
 cCb
-ahX
-acD
-alp
+amz
 amy
+alp
+mLu
 mLu
 xcW
 aPb
@@ -48081,7 +47936,7 @@ aSb
 aTb
 bkb
 kOb
-kWb
+ohy
 ldb
 ycz
 lib
@@ -48269,12 +48124,12 @@ abP
 abP
 aae
 rhO
-rhO
-rhO
-ahX
 acD
-alq
+acD
 amz
+hku
+alq
+ubf
 ubf
 xcW
 xcW
@@ -48284,7 +48139,7 @@ xcW
 wtS
 kPb
 kXb
-acE
+gEb
 axh
 ayi
 ghI
@@ -48471,14 +48326,14 @@ abP
 abP
 rhO
 abd
-agP
-agP
+kWb
+alr
 cLb
 iLB
-alr
+edM
 edM
 sag
-shQ
+kLY
 ikZ
 kLY
 kLY
@@ -48486,7 +48341,7 @@ kyb
 atK
 apo
 kdb
-oJb
+gXb
 abf
 ayg
 azq
@@ -48677,17 +48532,17 @@ alN
 vzy
 vzy
 vzy
+fET
 vzy
-vzy
 kCb
 kCb
 kCb
-kCb
+bPL
 kCb
 kCb
 oJb
 eRQ
-oJb
+qnM
 oJb
 koX
 ayg
@@ -49485,7 +49340,7 @@ rhO
 vzy
 rpn
 pIk
-hku
+pIk
 mwV
 kCb
 njg
@@ -52726,8 +52581,8 @@ afi
 aqM
 nCb
 nCb
-gEb
-gEb
+nCb
+nCb
 nCb
 axy
 heb
@@ -52930,7 +52785,7 @@ nBb
 ata
 aua
 avl
-gXb
+nCb
 lMD
 ayy
 iXb
@@ -53132,7 +52987,7 @@ fYb
 atb
 xMy
 gRb
-gXb
+nCb
 ycz
 xmO
 gAU
@@ -53334,7 +53189,7 @@ nBb
 iMW
 twz
 oZb
-gXb
+nCb
 ycz
 ayw
 iZb
@@ -55542,7 +55397,7 @@ tVi
 aes
 afs
 pZE
-lBd
+shQ
 abj
 abj
 abx
@@ -57765,11 +57620,11 @@ bbb
 acv
 aet
 abN
-abM
-acd
-acd
-acd
-acd
+jCM
+jCM
+aiv
+jCM
+jCM
 dVw
 dVw
 dVw
