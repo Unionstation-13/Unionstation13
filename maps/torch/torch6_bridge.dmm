@@ -12202,6 +12202,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
+"IU" = (
+/obj/item/storage/toolbox{
+	contents = /obj/item/wrench;
+	contents_allowed = /obj/item/wrench
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
 "IW" = (
 /obj/floor_decal/corner/yellow/full,
 /obj/floor_decal/industrial/outline/yellow,
@@ -23842,7 +23849,7 @@ Af
 hn
 hn
 HK
-hn
+IU
 hn
 SJ
 ev

@@ -32,7 +32,7 @@
 	Increasingly xenophobic, the GCC is in a cold war with the Sol Central Government following the Gaia Conflict — a large- \
 	scale conflict between the SCG and GCC that saw a great deal of death and destruction. Citizens of the GCC are referred to as \"Indies\" in Sol space, \
 	and are often subject to deep distrust, and in some instances, met with downright hostility. Today, the GCC continues to be an economic powerhouse following \
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
+	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. \
 	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments. "
 	economic_power = 0.9
 

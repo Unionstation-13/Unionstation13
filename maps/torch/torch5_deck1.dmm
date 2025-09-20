@@ -10557,8 +10557,10 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
 "aLu" = (
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy{
+	name = "\improper Holding Cell"
+	})
 "aLv" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/flasher/portable,
@@ -17089,10 +17091,9 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "fnR" = (
-/obj/structure/bed,
-/obj/item/bedsheet/hos,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/obj/structure/bed/padded,
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy)
 "foK" = (
 /obj/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
@@ -21333,10 +21334,8 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
 "ldP" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy)
 "leb" = (
 /turf/simulated/wall/prepainted,
 /area/medical/staging)
@@ -21839,9 +21838,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "lLD" = (
-/obj/machinery/computer/arcade,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/material/knife/utility,
+/obj/item/ducttape,
+/obj/item/ducttape,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/head/helmet/facecover,
+/obj/item/clothing/mask/muzzle,
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy)
 "lMb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -24383,6 +24391,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"paT" = (
+/obj/structure/closet/walllocker/emerglocker/south,
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/armoury/access)
 "pbb" = (
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
@@ -29410,9 +29422,12 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d1starboard)
 "vBV" = (
-/obj/random/obstruction,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/obj/machinery/door/airlock/vault{
+	name = "Cell";
+	desc = "The door is labeled DO NOT ENTER. You can hear a faint scream from inside."
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy)
 "vDD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -29917,6 +29932,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
+"wQS" = (
+/obj/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftport)
 "wRs" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -30110,9 +30129,9 @@
 /turf/simulated/wall/r_wall/hull,
 /area/rnd/xenobiology/cell_4)
 "xxB" = (
-/obj/machinery/constructable_frame/computerframe,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftport)
+/obj/structure/bed/chair/padded,
+/turf/simulated/floor/tiled/freezer,
+/area/medical/counselor/therapy)
 "xxY" = (
 /obj/floor_decal/corner/research{
 	dir = 10
@@ -56800,7 +56819,7 @@ aAV
 aCr
 auk
 aED
-aFM
+wQS
 aFM
 aHS
 aJj
@@ -57001,9 +57020,9 @@ awJ
 aAW
 vtY
 auk
-aTK
+ahd
 vBV
-aTK
+ahd
 bDK
 bDK
 bDK
@@ -57202,9 +57221,9 @@ ayJ
 ayJ
 mwJ
 snG
-aTK
+ahd
 xxB
-aLu
+ldP
 ldP
 bDK
 bDK
@@ -57403,9 +57422,9 @@ acB
 ayK
 jrH
 aAX
-aGN
+paT
 lLD
-aLu
+ldP
 aLu
 fnR
 bDK
