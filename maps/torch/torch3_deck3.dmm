@@ -1827,7 +1827,9 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "eu" = (
-/obj/machinery/icecream_vat,
+/obj/structure/closet/fridge{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "ev" = (
@@ -7288,7 +7290,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/curtain/black,
+/obj/machinery/door/morgue{
+	name = "Worship Chamber"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/chapel/main)
 "rG" = (
@@ -8317,6 +8321,25 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
+"tV" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/blast/shutters/open{
+	dir = 4;
+	id_tag = "Cargo_Maints"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "tW" = (
 /obj/machinery/light,
 /obj/floor_decal/corner/green{
@@ -10501,6 +10524,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Az" = (
+/obj/machinery/door/blast/shutters/open{
+	dir = 4;
+	id_tag = "Cargo_Maints"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/port)
 "AA" = (
 /obj/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -11549,13 +11579,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"Du" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/chaplain{
-	name = "Chapel"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/chapel/memorial)
 "Dv" = (
 /obj/structure/table/steel,
 /obj/item/paper_bin{
@@ -16672,6 +16695,13 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/thruster/d3starboard)
+"Qb" = (
+/obj/machinery/button/blast_door{
+	id_tag = "cargo_maints";
+	name = "shutter control"
+	},
+/turf/simulated/wall/prepainted,
+/area/maintenance/thirddeck/port)
 "Qd" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/donkpocket_premium,
@@ -18741,6 +18771,22 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"VP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	name = "Cargo Storage Maintenance";
+	req_access = list("ACCESS_MAINT","ACCESS_CARGO")
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "VQ" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
@@ -20182,7 +20228,6 @@
 /area/maintenance/thirddeck/starboard)
 "ZW" = (
 /obj/structure/table/woodentable_reinforced/mahogany,
-/obj/item/spirit_board,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
@@ -39709,7 +39754,7 @@ hL
 UZ
 Ez
 Ez
-Ez
+Qb
 OZ
 Ez
 Hf
@@ -39909,7 +39954,7 @@ kg
 kU
 hL
 Vw
-wf
+VP
 wf
 wf
 Zl
@@ -40114,8 +40159,8 @@ CE
 Ez
 Ff
 Ez
-HD
-Ts
+tV
+Az
 Hf
 Hf
 Hf
@@ -42733,7 +42778,7 @@ Yn
 vo
 AP
 AS
-Du
+Yn
 Ba
 CU
 Dn

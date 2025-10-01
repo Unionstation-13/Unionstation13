@@ -2795,6 +2795,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/eva)
+"kf" = (
+/obj/structure/filingcabinet/filingcabinet,
+/obj/item/material/folder/envelope,
+/obj/item/material/folder/envelope,
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/office)
 "kg" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/machinery/button/windowtint{
@@ -3555,13 +3561,13 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
 "mo" = (
-/obj/machinery/hologram/holopad/longrange,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	id_tag = "disposal_lockdown";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/quartermaster/office)
+/turf/simulated/floor/plating,
+/area/quartermaster/sorting)
 "mp" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3615,6 +3621,14 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
+"mx" = (
+/obj/machinery/button/blast_door{
+	dir = 4;
+	name = "West-Reception Lockdown";
+	id_tag = "cargo_left"
+	},
+/turf/simulated/wall/prepainted,
+/area/quartermaster/office)
 "my" = (
 /obj/structure/table/standard,
 /obj/floor_decal/corner/mauve/half{
@@ -5510,6 +5524,9 @@
 /obj/wallframe_spawn/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/blast/shutters{
+	id_tag = "disposal_lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "tA" = (
@@ -5829,13 +5846,12 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "uq" = (
-/obj/machinery/door/blast/shutters{
-	dir = 4;
-	id_tag = "sup_office";
-	name = "Supply Desk Shutters"
-	},
 /obj/wallframe_spawn/reinforced/no_grille,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "cargo_left";
+	name = "lockdown blast door"
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/office)
 "ur" = (
@@ -7134,6 +7150,9 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "yH" = (
@@ -7216,6 +7235,9 @@
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
@@ -8060,13 +8082,14 @@
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/catwalks)
 "Cr" = (
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "sup_office";
-	name = "Supply Office Shutters"
-	},
-/obj/wallframe_spawn/reinforced/no_grille,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/window/brigdoor,
+/obj/structure/table/steel_reinforced,
+/obj/item/material/bell,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "cargo_left";
+	name = "lockdown blast door"
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/office)
 "Ct" = (
@@ -8285,12 +8308,14 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Cargo Maintenance"
 	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "cargo_left";
+	name = "lockdown blast door"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/office)
 "Dr" = (
 /obj/floor_decal/corner/brown/mono,
-/obj/machinery/photocopier,
-/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "Ds" = (
@@ -8932,6 +8957,9 @@
 /area/crew_quarters/lounge)
 "FK" = (
 /obj/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	id_tag = "disposal_lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "FL" = (
@@ -9850,6 +9878,9 @@
 	dir = 4
 	},
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "IY" = (
@@ -10346,6 +10377,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/blast/shutters{
+	id_tag = "disposal_lockdown"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/sorting)
 "KF" = (
@@ -10475,6 +10509,11 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "do_office";
+	name = "privacy shutters"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/deckchief)
 "La" = (
@@ -11667,6 +11706,9 @@
 	id = "packageSort1"
 	},
 /obj/structure/plasticflaps,
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "Oy" = (
@@ -13941,6 +13983,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "disposal_lockdown";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/sorting)
 "UM" = (
@@ -14173,10 +14219,6 @@
 /obj/floor_decal/corner/brown/half{
 	dir = 1
 	},
-/obj/structure/filingcabinet/filingcabinet,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/item/material/folder/envelope,
-/obj/item/material/folder/envelope,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "Vx" = (
@@ -14400,6 +14442,12 @@
 /area/crew_quarters/lounge)
 "Wi" = (
 /obj/structure/sign/warning/moving_parts,
+/obj/machinery/button/blast_door{
+	dir = 1;
+	pixel_y = 9;
+	name = "disposals lockdown";
+	id_tag = "disposal_lockdown"
+	},
 /turf/simulated/wall/prepainted,
 /area/quartermaster/sorting)
 "Wj" = (
@@ -14603,6 +14651,9 @@
 	},
 /obj/random/junk,
 /obj/machinery/light/spot,
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/sorting)
 "WK" = (
@@ -35812,7 +35863,7 @@ vQ
 uq
 Dq
 vQ
-vQ
+mx
 vQ
 vQ
 sh
@@ -36212,9 +36263,9 @@ pI
 pI
 mG
 Wo
-Cr
+uq
 Vw
-yy
+kf
 Fb
 Lo
 Rb
@@ -36620,7 +36671,7 @@ vQ
 jB
 IF
 UI
-mo
+uo
 yy
 mz
 sh
@@ -37230,7 +37281,7 @@ Yf
 QI
 Yf
 sh
-FK
+mo
 sh
 sh
 sh
