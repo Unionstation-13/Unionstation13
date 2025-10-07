@@ -18763,6 +18763,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
+"hXw" = (
+/obj/floor_decal/industrial/warning/corner,
+/turf/simulated/floor/tiled/freezer,
+/area/rnd/xenobiology/xenoflora)
 "hYM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -21350,6 +21354,10 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
+"lkz" = (
+/obj/structure/sign/warning/caution,
+/turf/simulated/wall/prepainted,
+/area/rnd/xenobiology/xenoflora)
 "llb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -22318,6 +22326,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
+"mBK" = (
+/obj/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/freezer,
+/area/rnd/xenobiology/xenoflora)
 "mCe" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/fingerprints,
@@ -23878,6 +23890,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology/cell_3)
+"oyG" = (
+/obj/floor_decal/corner/research{
+	dir = 5
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "ozm" = (
 /obj/item/storage/firstaid/surgery,
 /obj/item/storage/firstaid/surgery,
@@ -25811,6 +25832,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
+/obj/structure/sign/warning/caution,
 /turf/simulated/wall/prepainted,
 /area/rnd/xenobiology/xenoflora)
 "rab" = (
@@ -26253,6 +26275,9 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -27364,6 +27389,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
+"sNE" = (
+/obj/floor_decal/industrial/warning/corner{
+	dir = 8;
+	icon_state = "warningcorner"
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/rnd/xenobiology/xenoflora)
 "sOb" = (
 /obj/structure/hygiene/sink{
 	dir = 1;
@@ -28531,6 +28563,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
+"uFT" = (
+/obj/floor_decal/corner/research{
+	dir = 5
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "uGu" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -51727,7 +51768,7 @@ lBb
 qtb
 rbb
 qab
-qHb
+hXw
 qZb
 rBb
 rNb
@@ -51930,9 +51971,9 @@ dxm
 qtb
 qHb
 qHb
-qHb
+mBK
 rab
-rCb
+uFT
 rOb
 sjb
 qgb
@@ -52133,9 +52174,9 @@ dxm
 qtb
 qHb
 qHb
-qHb
-aSK
-rCb
+sNE
+lkz
+oyG
 rRb
 skb
 sub
