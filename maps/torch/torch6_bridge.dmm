@@ -2053,9 +2053,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "dH" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -2063,9 +2060,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
-	},
-/obj/machinery/vending/cola{
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -3022,6 +3016,14 @@
 /area/bridge/hallway/port)
 "fD" = (
 /obj/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "fE" = (
@@ -3283,9 +3285,6 @@
 /area/aquila/storage)
 "fY" = (
 /obj/floor_decal/corner/red/half,
-/obj/machinery/vending/coffee{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -4018,10 +4017,11 @@
 /obj/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/structure/bed/chair,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "im" = (
-/obj/structure/railing/mapped,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/open,
 /area/hallway/primary/bridge/fore)
 "in" = (
@@ -4262,7 +4262,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "iY" = (
 /obj/structure/disposalpipe/segment,
@@ -4884,15 +4884,6 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"lo" = (
-/obj/floor_decal/scglogo,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "lq" = (
 /obj/machinery/disposal,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -5145,10 +5136,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "lS" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-right"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "lT" = (
@@ -6503,9 +6490,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/storage)
 "qf" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6542,9 +6526,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "qh" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -7091,16 +7072,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"rA" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-left"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "rC" = (
 /obj/machinery/light{
 	dir = 1
@@ -8007,18 +7978,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
-"up" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-right"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "uq" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "center-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -8193,6 +8153,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"uL" = (
+/obj/structure/window/boron_reinforced,
+/obj/structure/window/boron_reinforced{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/hallway/primary/bridge/fore)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/paper_bin{
@@ -8230,9 +8197,6 @@
 	dir = 4;
 	pixel_x = -37
 	},
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uT" = (
@@ -8249,10 +8213,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uU" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-center"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -8310,12 +8270,6 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/shield/bridge)
-"vf" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-center"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "vg" = (
 /obj/floor_decal/corner/blue{
 	dir = 1
@@ -8608,7 +8562,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/disciplinary_board_room/deliberation)
 "wc" = (
-/obj/floor_decal/corner/blue/diagonal,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -8623,9 +8576,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room/deliberation)
 "wd" = (
-/obj/floor_decal/corner/blue{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -8638,11 +8588,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room/deliberation)
 "wf" = (
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen,
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
@@ -8660,12 +8605,10 @@
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wg" = (
-/obj/item/tableflag{
-	pixel_x = 4
-	},
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
@@ -8681,15 +8624,17 @@
 	dir = 9
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wh" = (
-/obj/item/book/manual/military_law,
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wj" = (
@@ -8984,9 +8929,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/disciplinary_board_room/deliberation)
 "wI" = (
-/obj/floor_decal/corner/blue{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	name = "south bump";
 	pixel_y = -24
@@ -9585,12 +9527,6 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/xo)
-"yh" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-center"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "yi" = (
 /obj/floor_decal/corner/red/full,
 /obj/floor_decal/industrial/outline/yellow,
@@ -9708,6 +9644,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "yS" = (
@@ -10112,8 +10056,8 @@
 	pixel_x = 24
 	},
 /obj/floor_decal/corner/red/half,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/hologram/holopad,
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "AA" = (
@@ -10433,12 +10377,13 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
-/obj/structure/closet/emcloset,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "APC"
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "BY" = (
@@ -10532,9 +10477,6 @@
 "Ch" = (
 /obj/structure/bed/chair/comfy/captain{
 	dir = 8
-	},
-/obj/floor_decal/scglogo{
-	icon_state = "center-left"
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10878,9 +10820,6 @@
 /obj/floor_decal/corner/blue{
 	dir = 5
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "DY" = (
@@ -10968,14 +10907,15 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/rack,
-/obj/item/device/binoculars,
 /obj/machinery/light,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Security";
 	departmentType = 5;
 	pixel_y = -32
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
@@ -11165,16 +11105,6 @@
 /obj/item/material/folder/envelope/preset/lauletter1,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
-"Fn" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-center"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "Fp" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
@@ -11248,9 +11178,6 @@
 	dir = 5
 	},
 /obj/structure/bed/chair/padded/blue,
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Ga" = (
@@ -11779,17 +11706,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"HH" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-left"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "HI" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/command{
@@ -12292,6 +12208,8 @@
 	dir = 1;
 	icon_state = "warning"
 	},
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "JA" = (
@@ -12443,9 +12361,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Kt" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -12557,13 +12472,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "La" = (
-/obj/structure/sign/directions/supply{
-	pixel_y = -4
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/structure/sign/directions/engineering{
-	pixel_y = 3
-	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "Lb" = (
 /obj/floor_decal/corner/blue{
@@ -12813,10 +12725,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "Mh" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-left"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -13110,7 +13018,7 @@
 /area/crew_quarters/heads/cobed)
 "NE" = (
 /obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
+	name = "Bridge Holding Cell";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -13456,6 +13364,9 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Pe" = (
@@ -13687,9 +13598,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "Qg" = (
-/obj/floor_decal/scglogo{
-	dir = 4
-	},
 /obj/structure/bed/chair,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14602,9 +14510,6 @@
 /obj/floor_decal/corner/blue/three_quarters{
 	dir = 1
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "TK" = (
@@ -14856,10 +14761,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "Vf" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "center-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -15154,6 +15055,9 @@
 	pixel_x = -23
 	},
 /obj/floor_decal/corner/red/mono,
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "Disposal"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "Wr" = (
@@ -15703,9 +15607,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "Zg" = (
-/obj/floor_decal/scglogo{
-	icon_state = "center-right"
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -24446,7 +24347,7 @@ lL
 Hx
 EV
 Vw
-HH
+Kt
 Ch
 Kt
 Lw
@@ -24648,9 +24549,9 @@ eP
 hV
 eP
 nu
-vf
-lo
-yh
+hn
+HC
+hn
 dW
 eP
 HX
@@ -28887,7 +28788,7 @@ dk
 Re
 Bw
 CH
-im
+uL
 iV
 nM
 VL
@@ -29291,9 +29192,9 @@ sT
 uJ
 zo
 hC
-La
+hC
 iX
-Dr
+La
 fB
 yW
 mO
@@ -29507,7 +29408,7 @@ rl
 zF
 TX
 DV
-up
+lS
 uU
 Mh
 wf
@@ -29912,8 +29813,8 @@ pI
 kJ
 FX
 lS
-Fn
-rA
+uU
+Mh
 wh
 wN
 TX

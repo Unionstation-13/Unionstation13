@@ -62,13 +62,16 @@
 
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
-	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the largest megacorporations of the modern day.\
-	Currently headquartered in New Amsterdam on Luna and headed by CEO Jackson Trasen, it deals in research of the most advanced sciences \
-	such as genetics, bluespace, mass consumer manufacturing on an interstellar scale, and - recently - the use of phoron. \
-	They also have a sizeable asset protection and security branch, with which they secure both investments and new acquisitions. \
-	They are a distressing rival to some minor star systems, with a powerful administrative branch sitting atop it all to direct the company's actions. \
-	NanoTrasen is characterized by its aggression and questionable ethics, which combined with the high emphasis they put on new, untested, and dangerous \
-	technology, which means their installations are often considered unsafe and hazardous."
+	description = "The NeoTrasen Corporation is a megaconglomerate entity that controls a\ majority of the management industry. Its employees are almost always\
+members of command or heads of departments, as it prides itself\
+on a capable workforce that is both ingenious and industrious\
+However, in recent years, NeoTrasen has been exposed for scandalous\
+activities revolving around the discovery of the Nitros system and the reported\
+Xeno exploitation initiatives NeoTrasen has put into effect under its new management of the NeoBoard. On top of that, NeoTrasen has also been\
+exposed in recent years for worker exploitation and wage theft,\
+suggesting that NeoTrasen should be investigated further by journalists.\
+At the present day, NeoTrasen is the wealthiest of the megacorps, valued at\
+609 trillion Galactic Space Currency."
 	economic_power = 1.2
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
@@ -121,11 +124,10 @@ they used to silence dissenters."
 /singleton/cultural_info/faction/saare
 // merge into Peacekeeper
 	name = FACTION_SAARE
-	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Military Corporation that caters to large \
-	firms requiring discrete military and private security services. The company has taken to hiring skilled veterans from both private and public \
-	military services, but have begun training programs to breed their own operatives for future members. Typical assignments for SAARE \
-	contractors include: private law enforcement, ship escort, location security, VIP escort, and VIP or asset recovery. In the last decade, the \
-	company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
+	description = "WALDO (Weaponized Antindo Liberation Defensive Organization)\
+is an initiative founded in 2449 by Dr. Edward Waldo in spite of the Antido\ dictatorship. It is known for recruiting sleeper agents to its cause, and thus\
+all members of WALDO are genuinely benign unless the words Where is WALDO? Are spoken; then they activate into a trance and will do the bidding of all WALDO higher-ups. All WALDO members carry an unlicensed firearm on\ them at all times. Their identity as WALDO conspirators cannot be known\
+to the general public, lest the UGN execute them for terrorism."
 
 
 
