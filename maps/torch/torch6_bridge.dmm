@@ -2053,9 +2053,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "dH" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -2063,9 +2060,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
-	},
-/obj/machinery/vending/cola{
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -3022,6 +3016,14 @@
 /area/bridge/hallway/port)
 "fD" = (
 /obj/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "fE" = (
@@ -3283,9 +3285,6 @@
 /area/aquila/storage)
 "fY" = (
 /obj/floor_decal/corner/red/half,
-/obj/machinery/vending/coffee{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -4018,10 +4017,11 @@
 /obj/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/structure/bed/chair,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "im" = (
-/obj/structure/railing/mapped,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/open,
 /area/hallway/primary/bridge/fore)
 "in" = (
@@ -4262,7 +4262,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "iY" = (
 /obj/structure/disposalpipe/segment,
@@ -8153,6 +8153,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"uL" = (
+/obj/structure/window/boron_reinforced,
+/obj/structure/window/boron_reinforced{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/hallway/primary/bridge/fore)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/paper_bin{
@@ -9637,6 +9644,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "yS" = (
@@ -10041,8 +10056,8 @@
 	pixel_x = 24
 	},
 /obj/floor_decal/corner/red/half,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/hologram/holopad,
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "AA" = (
@@ -10362,12 +10377,13 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
-/obj/structure/closet/emcloset,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "APC"
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "BY" = (
@@ -10891,14 +10907,15 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/rack,
-/obj/item/device/binoculars,
 /obj/machinery/light,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Security";
 	departmentType = 5;
 	pixel_y = -32
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
@@ -12191,6 +12208,8 @@
 	dir = 1;
 	icon_state = "warning"
 	},
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "JA" = (
@@ -12453,13 +12472,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "La" = (
-/obj/structure/sign/directions/supply{
-	pixel_y = -4
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/structure/sign/directions/engineering{
-	pixel_y = 3
-	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "Lb" = (
 /obj/floor_decal/corner/blue{
@@ -13002,7 +13018,7 @@
 /area/crew_quarters/heads/cobed)
 "NE" = (
 /obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
+	name = "Bridge Holding Cell";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -13348,6 +13364,9 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Pe" = (
@@ -15036,6 +15055,9 @@
 	pixel_x = -23
 	},
 /obj/floor_decal/corner/red/mono,
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "Disposal"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "Wr" = (
@@ -28766,7 +28788,7 @@ dk
 Re
 Bw
 CH
-im
+uL
 iV
 nM
 VL
@@ -29170,9 +29192,9 @@ sT
 uJ
 zo
 hC
-La
+hC
 iX
-Dr
+La
 fB
 yW
 mO

@@ -14141,8 +14141,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
 "bmb" = (
-/obj/wallframe_spawn/reinforced/no_grille,
-/turf/simulated/floor/plating,
+/obj/floor_decal/industrial/warning/fulltile,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown" "Cycle";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "bmB" = (
 /obj/floor_decal/corner/blue{
@@ -14327,6 +14331,14 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
+"bvg" = (
+/obj/machinery/button/ignition{
+	id_tag = "Specimin_Ext";
+	pixel_x = 6;
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "bvI" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
@@ -14562,6 +14574,22 @@
 /obj/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/reinforced,
 /area/shuttle/escape_pod13/station)
+"bKv" = (
+/obj/machinery/atmospherics/unary/vent_pump/tank{
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	icon_state = "map_vent_in";
+	id_tag = "d1ph_out";
+	initialize_directions = 1;
+	internal_pressure_bound = 2000;
+	internal_pressure_bound_default = 2000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0;
+	use_power = 1
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/rnd/xenobiology/xenoflora)
 "bLb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -15219,6 +15247,16 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
+"cyI" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/window/boron_reinforced{
+	dir = 8
+	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Research- Specimin Control"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/brig)
 "czb" = (
 /obj/floor_decal/techfloor{
 	dir = 5
@@ -18441,6 +18479,13 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/security/secure_storage)
+"hzR" = (
+/obj/machinery/button/blast_door{
+	id_tag = "Cybersec_lockdown";
+	name = "Lockdown"
+	},
+/turf/simulated/wall/prepainted,
+/area/rnd/office)
 "hzT" = (
 /obj/item/device/radio/intercom/department/medbay{
 	dir = 1;
@@ -18765,6 +18810,10 @@
 /area/security/armoury)
 "hXw" = (
 /obj/floor_decal/industrial/warning/corner,
+/obj/machinery/sparker{
+	id_tag = "Specimin_Ext";
+	pixel_x = -18
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
 "hYM" = (
@@ -18803,6 +18852,23 @@
 /turf/unsimulated/floor/steeldirty,
 /area/rnd/development)
 "hZO" = (
+/obj/structure/closet/secure_closet/guncabinet{
+	name = "Emergency locker"
+	},
+/obj/item/gun/projectile/shotgun/pump,
+/obj/item/gun/projectile/shotgun/pump,
+/obj/item/storage/box/ammo/shotgunammo,
+/obj/item/storage/box/ammo/shotgunammo,
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/suit/armor/riot,
+/obj/item/clothing/suit/armor/riot,
+/obj/item/clothing/accessory/leg_guards/riot,
+/obj/item/clothing/accessory/leg_guards/riot,
+/obj/item/clothing/accessory/arm_guards/riot,
+/obj/item/clothing/accessory/arm_guards/riot,
+/obj/item/shield/riot,
+/obj/item/shield/riot,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig{
 	name = "/improper XenoFlora Checkpoint"
@@ -19478,6 +19544,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
+"iZl" = (
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "jab" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -21448,6 +21520,9 @@
 /area/maintenance/firstdeck/centralport)
 "lsl" = (
 /obj/wallframe_spawn/reinforced/no_grille,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/security/brig)
 "lst" = (
@@ -22328,6 +22403,9 @@
 /area/security/questioning)
 "mBK" = (
 /obj/floor_decal/industrial/warning,
+/obj/item/pipe{
+	dir = 3
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
 "mCe" = (
@@ -22458,6 +22536,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
+"mKi" = (
+/obj/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/rnd/xenobiology/xenoflora)
 "mKw" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -23388,6 +23476,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
+"nVq" = (
+/obj/item/pipe{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "nWb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -23698,6 +23792,11 @@
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
+/obj/machinery/button/blast_door{
+	id_tag = "Em_Lockdown";
+	name = "Emergency Lockdown";
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig)
 "omb" = (
@@ -23896,6 +23995,11 @@
 	},
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1
+	},
+/obj/machinery/atmospherics/valve/shutoff/scrubbers{
+	dir = 4;
+	layer = 3;
+	hidden_layer = 3
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -24489,6 +24593,9 @@
 /obj/floor_decal/corner/research{
 	dir = 6
 	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown"
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "pmz" = (
@@ -24626,6 +24733,9 @@
 	name = "Containment Testing"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown"
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "pxb" = (
@@ -24904,7 +25014,6 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
 "pLb" = (
-/obj/floor_decal/industrial/outline/blue,
 /obj/machinery/light_switch{
 	pixel_x = -10;
 	pixel_y = 28
@@ -24912,13 +25021,16 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
+/obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "pMb" = (
-/obj/floor_decal/industrial/outline/blue,
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
+/obj/item/wrench,
+/obj/structure/table/steel_reinforced,
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "pOL" = (
@@ -24977,6 +25089,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
+"pSP" = (
+/obj/item/pipe{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology/xenoflora)
 "pUb" = (
 /obj/structure/closet/toolcloset,
 /obj/floor_decal/industrial/outline/grey,
@@ -25142,9 +25260,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
 "qeb" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
@@ -25175,11 +25290,10 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "qfb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/rnd/xenobiology/xenoflora)
+/obj/structure/catwalk,
+/obj/machinery/door/airlock/hatch/maintenance,
+/turf/simulated/floor/plating,
+/area/thruster/d1port)
 "qgb" = (
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -25294,6 +25408,9 @@
 "qqb" = (
 /obj/wallframe_spawn/reinforced/polarized/full{
 	id = "sci_office"
+	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown"
 	},
 /turf/simulated/floor/plating,
 /area/rnd/office)
@@ -25494,6 +25611,10 @@
 	name = "Research Paperwork Office"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
 "qFb" = (
@@ -25514,7 +25635,6 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "qGb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light{
@@ -25533,6 +25653,9 @@
 	},
 /obj/floor_decal/corner/research{
 	dir = 9
+	},
+/obj/item/pipe{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -25628,7 +25751,9 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/northright,
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_SEC_DOORS")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/xenobiology/xenoflora)
 "qNb" = (
@@ -25844,6 +25969,9 @@
 /obj/machinery/door/blast/shutters{
 	id_tag = "Cage_Entry"
 	},
+/obj/item/pipe{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
 "rap" = (
@@ -25860,6 +25988,10 @@
 /obj/item/clothing/head/helmet/facecover,
 /obj/structure/closet/secure_closet/personal/patient,
 /turf/simulated/floor/tiled/freezer,
+/area/rnd/xenobiology/xenoflora)
+"rbx" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "rby" = (
 /obj/structure/table/rack,
@@ -25879,12 +26011,15 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "rdb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
+/obj/wallframe_spawn/reinforced/polarized/full{
+	id = "sci_office"
 	},
-/obj/wallframe_spawn/reinforced/no_grille,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown";
+	dir = 8
+	},
 /turf/simulated/floor/plating,
-/area/rnd/xenobiology/xenoflora)
+/area/rnd/office)
 "reb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -25899,8 +26034,11 @@
 /obj/floor_decal/corner/research{
 	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 9
+/obj/item/pipe{
+	dir = 3
+	},
+/obj/item/pipe{
+	dir = 3
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -25974,6 +26112,9 @@
 	pixel_x = 11;
 	pixel_y = 5
 	},
+/obj/floor_decal/industrial/warning/cee{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/xenobiology/xenoflora)
 "rlb" = (
@@ -25997,6 +26138,12 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
+"rmd" = (
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown"
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/research)
 "rmH" = (
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 4
@@ -26087,6 +26234,9 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -26285,6 +26435,9 @@
 /obj/floor_decal/corner/research{
 	dir = 5
 	},
+/obj/item/pipe{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "rCc" = (
@@ -26328,6 +26481,9 @@
 	},
 /obj/floor_decal/corner/research{
 	dir = 9
+	},
+/obj/item/pipe{
+	dir = 3
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -26453,6 +26609,9 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Cybersec_lockdown"
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "rNb" = (
@@ -26528,6 +26687,9 @@
 	},
 /obj/floor_decal/corner/research{
 	dir = 9
+	},
+/obj/item/pipe{
+	dir = 3
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -26751,6 +26913,9 @@
 	name = "Containment Cell Maitnence"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown"
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "sfb" = (
@@ -26902,12 +27067,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/item/pipe{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "smb" = (
-/obj/machinery/door/airlock/glass/research{
-	name = "Cell"
-	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
@@ -26925,7 +27090,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/firedoor,
+/obj/floor_decal/industrial/warning/fulltile,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "Em_Lockdown" "Cycle";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "smp" = (
@@ -26957,6 +27126,9 @@
 	icon_state = "1-8"
 	},
 /obj/floor_decal/corner/research{
+	dir = 9
+	},
+/obj/item/pipe{
 	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
@@ -27204,6 +27376,13 @@
 "szb" = (
 /obj/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/white/monotile,
+/area/rnd/xenobiology/xenoflora)
+"szT" = (
+/obj/machinery/button/blast_door{
+	id_tag = "Cycle";
+	name = "Airlock Cycle"
+	},
+/turf/simulated/wall/prepainted,
 /area/rnd/xenobiology/xenoflora)
 "sAb" = (
 )
@@ -28569,6 +28748,9 @@
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 1
+	},
+/obj/item/pipe{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -30067,6 +30249,7 @@
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "yeS" = (
+/obj/item/pipe,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora{
 	name = "\improper Containment Cell"
@@ -50345,7 +50528,7 @@ aHn
 aHn
 aIG
 aHn
-mav
+hzR
 qsO
 cAO
 dfZ
@@ -50955,8 +51138,8 @@ jMb
 jXb
 pkb
 mav
-qqb
-qqb
+rdb
+rdb
 qEb
 mav
 mav
@@ -51156,7 +51339,7 @@ awX
 awX
 jNb
 jyb
-pWb
+rmd
 pAb
 pWb
 qrb
@@ -51774,7 +51957,7 @@ rBb
 rNb
 sib
 stb
-aSK
+szT
 aTe
 aTE
 bDK
@@ -51970,13 +52153,13 @@ pab
 dxm
 qtb
 qHb
-qHb
+bKv
 mBK
 rab
 uFT
 rOb
 sjb
-qgb
+bvg
 aSK
 aTe
 aFM
@@ -52380,7 +52563,7 @@ qdb
 qAb
 aSK
 rCb
-qgb
+iZl
 slb
 svb
 aSK
@@ -52581,7 +52764,7 @@ aSK
 aSK
 aSK
 aSK
-rdb
+aSK
 bmb
 bmb
 smb
@@ -52985,8 +53168,8 @@ jKb
 kwb
 pwb
 pJb
-qfb
 qgb
+pSP
 rfb
 qgb
 rUb
@@ -53189,7 +53372,7 @@ oQb
 aSK
 pLb
 yeS
-qgb
+nVq
 rgb
 qgb
 rVb
@@ -53391,7 +53574,7 @@ mmP
 oTb
 aSK
 pMb
-rHb
+rbx
 rHb
 rHb
 rHb
@@ -53594,13 +53777,13 @@ jUb
 oUb
 lsl
 okr
-okr
-jpJ
-rJb
-rJb
-rJb
-rJb
-rJb
+cyI
+aSK
+mKi
+mKi
+mKi
+mKi
+mKi
 aSK
 aTe
 aTK
@@ -55836,7 +56019,7 @@ aRf
 tCu
 nPT
 xaC
-wEw
+qfb
 bvI
 jbk
 abM
