@@ -14143,7 +14143,7 @@
 "bmb" = (
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular/open{
-	id_tag = "Em_Lockdown" "Cycle";
+	id_tag = "Em_Lockdown";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -22642,11 +22642,11 @@
 /obj/item/syringe_cartridge/sleepy,
 /obj/item/clothing/suit/bio_suit/security{
 	name = "armored suit";
-	armor = list("bio" = 50, "rad" = 10 "bullet" = 75 "brute" = 50);
+	armor = list("bio" = 50, "rad" = 10, "bullet" = 75, "brute" = 50);
 	desc = "A Specially Armored suit which provides extra protection against bullets and brute force at the cost of biological protection"
 	},
 /obj/item/clothing/head/bio_hood/security{
-	armor = list("bio" = 50, "rad" = 10 "bullet" = 75 "brute" = 50);
+	armor = list("bio" = 50, "rad" = 10, "bullet" = 75, "brute" = 50);
 	name = "armored helmet";
 	desc = "A Specially Protected Helmet with extra protection from bullets and brute force at the cost of biological protection"
 	},
@@ -24710,11 +24710,11 @@
 /obj/item/syringe_cartridge/sleepy,
 /obj/item/clothing/suit/bio_suit/security{
 	name = "armored suit";
-	armor = list("bio" = 50, "rad" = 10 "bullet" = 75 "brute" = 50);
+	armor = list("bio" = 50, "rad" = 10, "bullet" = 75, "brute" = 50);
 	desc = "A Specially Armored suit which provides extra protection against bullets and brute force at the cost of biological protection"
 	},
 /obj/item/clothing/head/bio_hood/security{
-	armor = list("bio" = 50, "rad" = 10 "bullet" = 75 "brute" = 50);
+	armor = list("bio" = 50, "rad" = 10, "bullet" = 75, "brute" = 50);
 	name = "armored helmet";
 	desc = "A Specially Protected Helmet with extra protection from bullets and brute force at the cost of biological protection"
 	},
@@ -27092,7 +27092,7 @@
 	},
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/machinery/door/blast/regular/open{
-	id_tag = "Em_Lockdown" "Cycle";
+	id_tag = "Em_Lockdown";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
