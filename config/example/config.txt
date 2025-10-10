@@ -1,11 +1,11 @@
 ## Server name: This appears at the top of the screen in-game and on hub listings.
-# SERVER_NAME Space Station 13
+# SERVER_NAME Unionstation13
 
 ## Game Version: The archetype of the server for topic status requests. Unless significantly deviated, avoid changing this. Default Baystation12
 # GAME_VERSION Baystation12
 
 ## Hub visibility: If you want to be visible on the hub, uncomment the below line and be sure that Dream Daemon is set to "Visible." This can be changed in-round as well with toggle-hub-visibility if Dream Daemon is set correctly.
-# HUB_VISIBLE
+HUB_VISIBLE
 
 ## Add a # infront of this if you want to use the SQL based admin system, the legacy system uses admins.txt. You need to set up your database to use the SQL based system.
 ADMIN_LEGACY_SYSTEM
@@ -202,15 +202,15 @@ GUEST_BAN
 
 ## Wiki address
 ## Where your server's documentation lives
-# WIKI_URL https://example.com
+# WIKI_URL https://unionstation.miraheze.org/wiki/Main_Page
 
 ## Rules address
 ## Where your server's rules can be found
-# RULES_URL https://example.com
+# RULES_URL https://unionstation.miraheze.org/wiki/Rules
 
 ## Lore address
 ## Where your server's scintillating background material can be read
-# LORE_URL https://example.com
+# LORE_URL https://unionstation.miraheze.org/wiki/Lore_Primer
 
 ## Forum address
 ## Where your users can go to chat in the old fashion
@@ -218,7 +218,7 @@ GUEST_BAN
 
 ## Source address
 ## Where your users can go to stick their fingers in the code
-# SOURCE_URL https://example.com
+# SOURCE_URL https://github.com/Unionstation-13/Unionstation13
 
 ## GitHub new issue address
 ## Where your users can go to complain about problems with the code
@@ -226,11 +226,11 @@ GUEST_BAN
 
 ## Discord address
 ## Where your users can go to complain at each other in real time
-# DISCORD_URL https://example.com
+# DISCORD_URL https://discord.gg/HfAMcwJE
 
 ## Ban appeals URL
 ## Where your users can go to tell you they've changed
-# BANAPPEALS https://example.com
+# BANAPPEALS https://discord.gg/HfAMcwJE
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
