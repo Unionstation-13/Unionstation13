@@ -1,8 +1,8 @@
 ## Server name: This appears at the top of the screen in-game and on hub listings.
-# SERVER_NAME Unionstation13
+SERVER_NAME Unionstation13
 
 ## Game Version: The archetype of the server for topic status requests. Unless significantly deviated, avoid changing this. Default Baystation12
-# GAME_VERSION Baystation12
+GAME_VERSION Baystation12
 
 ## Hub visibility: If you want to be visible on the hub, uncomment the below line and be sure that Dream Daemon is set to "Visible." This can be changed in-round as well with toggle-hub-visibility if Dream Daemon is set correctly.
 HUB_VISIBLE
