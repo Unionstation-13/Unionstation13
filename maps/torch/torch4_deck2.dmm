@@ -1969,7 +1969,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "dO" = (
 /obj/structure/table/rack{
@@ -2346,7 +2346,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "ev" = (
 /obj/structure/ladder,
@@ -6298,9 +6298,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod10/station)
 "on" = (
-/obj/structure/catwalk,
-/turf/simulated/open,
-/area/maintenance/seconddeck/aftstarboard)
+/turf/simulated/wall/prepainted,
+/area/storage/cargo)
 "oq" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -6618,6 +6617,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
+"pt" = (
+/turf/simulated/wall/prepainted,
+/area/maintenance/seconddeck/aftport)
 "pv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7737,7 +7739,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "rD" = (
 /obj/floor_decal/industrial/warning{
@@ -9566,8 +9568,6 @@
 /area/engineering/engine_smes)
 "xC" = (
 /area/teleporter/seconddeck)
-"xD" = (
-/area/engineering/atmos)
 "xE" = (
 /turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/atmos)
@@ -9606,6 +9606,7 @@
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/surgery)
 "xR" = (
+/turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/seconddeck/fore)
 "xS" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -9628,8 +9629,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue)
-"yf" = (
-/area/engineering/prototype/control)
 "yg" = (
 /area/maintenance/incinerator)
 "yj" = (
@@ -9760,6 +9759,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
 "yR" = (
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "yT" = (
 /obj/floor_decal/industrial/warning{
@@ -9792,12 +9792,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/incinerator)
-"yZ" = (
-/obj/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor{
-	map_airless = 1
-	},
-/area/engineering/engine_room)
+"za" = (
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/seconddeck/aftport)
 "zc" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
@@ -9972,6 +9969,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "zO" = (
+/turf/simulated/wall/prepainted,
 /area/engineering/atmos/storage)
 "zT" = (
 /obj/structure/cable/green{
@@ -10218,6 +10216,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/engineering/engineering_bay)
 "AN" = (
+/turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "AO" = (
 /obj/machinery/door/firedoor,
@@ -10276,6 +10275,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/vacant/cargo)
 "Bm" = (
+/turf/simulated/wall/prepainted,
 /area/vacant/cargo)
 "Bq" = (
 /obj/machinery/rotating_alarm/security_alarm{
@@ -10478,7 +10478,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "BY" = (
-/area/maintenance/auxsolarport)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/hallway/primary/seconddeck/fore)
 "Ca" = (
 /obj/machinery/door/airlock/engineering{
 	icon_state = "closed";
@@ -10767,15 +10769,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "CM" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 4
-	},
-/obj/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj,
-/turf/simulated/floor/tiled/techfloor,
-/area/engineering/engine_room)
+/turf/simulated/wall/r_wall/prepainted,
+/area/maintenance/incinerator)
 "CN" = (
 /obj/structure/disposalpipe/down,
 /obj/structure/lattice,
@@ -14278,13 +14273,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "NG" = (
-/obj/random/obstruction,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/seconddeck/aftport)
 "NH" = (
 /obj/floor_decal/corner/black/border,
@@ -14931,6 +14925,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/surgery)
+"Pv" = (
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
+	},
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/maintenance/seconddeck/aftport)
 "Py" = (
 /obj/structure/sign/deck/second{
 	dir = 4;
@@ -15255,6 +15257,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "QC" = (
@@ -15599,7 +15602,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
 "RJ" = (
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "RK" = (
 /obj/structure/cable{
@@ -17277,6 +17280,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
+/obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "Xp" = (
@@ -28968,7 +28972,7 @@ ir
 fU
 JX
 Sx
-yf
+Qe
 mf
 Rf
 Pg
@@ -29170,7 +29174,7 @@ is
 fU
 JX
 xR
-yf
+Qe
 Mi
 Sf
 Qg
@@ -29372,7 +29376,7 @@ gK
 fU
 JX
 xR
-yf
+Qe
 Gf
 Jh
 ri
@@ -29380,7 +29384,7 @@ vk
 Ij
 Rj
 Wj
-yf
+Qe
 ZV
 Wp
 vt
@@ -29574,15 +29578,15 @@ gL
 fU
 JX
 xR
-yf
+Qe
 Hf
 Vh
 Gi
-yf
+Qe
 bl
 Sj
 Xi
-yf
+Qe
 ZV
 Wp
 vt
@@ -29776,15 +29780,15 @@ JX
 JX
 JX
 SU
-yf
+Qe
 Ug
 Vf
 vi
-yf
+Qe
 Fi
 Oi
 Nl
-yf
+Qe
 Mz
 Wp
 Wp
@@ -29978,15 +29982,15 @@ bd
 bI
 tj
 xR
-yf
-yf
-yf
+Qe
+Qe
+Qe
 qk
 ZH
-yf
-yf
-yf
-yf
+Qe
+Qe
+Qe
+Qe
 ZV
 uM
 UQ
@@ -30381,8 +30385,8 @@ hC
 it
 bI
 yx
-xR
-xR
+BY
+BY
 wT
 iM
 xS
@@ -31406,11 +31410,11 @@ ha
 dX
 aK
 aK
-yg
-yg
-yg
-yg
-yg
+CM
+CM
+CM
+CM
+CM
 pi
 Cm
 Wp
@@ -31608,11 +31612,11 @@ ha
 uQ
 zK
 uN
-yg
+CM
 go
 zD
 Aw
-yg
+CM
 pi
 pi
 Wp
@@ -31810,7 +31814,7 @@ oh
 vz
 kL
 dX
-yg
+CM
 yU
 Aw
 Ax
@@ -32012,7 +32016,7 @@ jV
 vB
 nc
 dX
-yg
+CM
 yU
 Aw
 Ay
@@ -32214,7 +32218,7 @@ rF
 jV
 qv
 dX
-yg
+CM
 yW
 yg
 Az
@@ -32416,7 +32420,7 @@ Wk
 jV
 qv
 dX
-yg
+CM
 yX
 Aw
 AA
@@ -32618,7 +32622,7 @@ JE
 jV
 qv
 dX
-yg
+CM
 yY
 Aw
 cT
@@ -32820,11 +32824,11 @@ sF
 jV
 qv
 dX
-yg
-yg
+CM
+CM
 zJ
-yg
-yg
+CM
+CM
 BM
 Cp
 CS
@@ -34036,7 +34040,7 @@ yl
 yl
 zO
 AF
-mT
+Bm
 Cr
 Cr
 CV
@@ -36259,8 +36263,8 @@ TJ
 Ky
 VK
 Bm
-BY
-BY
+Cb
+Cb
 Ir
 Ir
 Ir
@@ -36854,14 +36858,14 @@ Mm
 nY
 nY
 nY
-BI
+At
 NG
-BI
-BI
-BI
-BI
-BI
-BI
+At
+At
+At
+At
+At
+At
 oY
 HY
 Kn
@@ -37066,9 +37070,9 @@ Ma
 Ky
 Fn
 QB
-BI
-BY
-BY
+Pv
+Cb
+Cb
 Ir
 Ir
 Ir
@@ -37269,9 +37273,9 @@ Kh
 zT
 Ha
 lt
-BI
+pt
 Mn
-BI
+pt
 aa
 aa
 aa
@@ -37467,11 +37471,11 @@ Vu
 OS
 FB
 GG
-BI
-BI
+za
+za
 lO
-AN
-AN
+on
+on
 AN
 Dc
 Dc
@@ -37672,7 +37676,7 @@ Yy
 Yy
 Is
 Fn
-AN
+on
 Cd
 CB
 Dd
@@ -38076,7 +38080,7 @@ nB
 Yy
 Yy
 Fn
-AN
+on
 TV
 AN
 AN
@@ -38278,7 +38282,7 @@ xC
 kG
 Yy
 Fn
-AN
+on
 Cf
 AN
 De
@@ -38480,12 +38484,12 @@ xC
 kM
 Yy
 JA
-AN
-AN
-AN
-AN
-AN
-AN
+on
+on
+on
+on
+on
+on
 Dc
 aa
 aa
@@ -39282,7 +39286,7 @@ YA
 YA
 jP
 sZ
-xD
+xE
 JR
 sZ
 sZ
@@ -42894,9 +42898,9 @@ IE
 bC
 GM
 cD
-on
-on
-on
+hj
+hj
+hj
 eX
 fN
 WK
@@ -44125,7 +44129,7 @@ Zh
 To
 Rd
 qc
-CM
+te
 jL
 uI
 uI
@@ -44311,7 +44315,7 @@ aa
 TK
 ox
 MS
-yZ
+gz
 PY
 xa
 yR
