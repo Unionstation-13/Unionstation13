@@ -4014,10 +4014,7 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "il" = (
-/obj/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/bed/chair,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "im" = (
@@ -4214,9 +4211,6 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
 "iU" = (
-/obj/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -4229,6 +4223,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
@@ -8152,13 +8150,6 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
-"uL" = (
-/obj/structure/window/boron_reinforced,
-/obj/structure/window/boron_reinforced{
-	dir = 8
-	},
-/turf/simulated/open,
 /area/hallway/primary/bridge/fore)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -28585,7 +28576,7 @@ ua
 dk
 gf
 gM
-fD
+bT
 il
 iU
 TM
@@ -28788,7 +28779,7 @@ dk
 Re
 Bw
 CH
-uL
+im
 iV
 nM
 VL
