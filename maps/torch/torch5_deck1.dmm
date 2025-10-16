@@ -11898,17 +11898,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/item/clothing/mask/surgical,
-/obj/item/clothing/suit/surgicalapron,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/clothing/head/surgery/blue,
-/obj/item/clothing/under/rank/medical/scrubs/blue,
-/obj/structure/closet{
-	req_access = list("BRIG_ACCESS");
-	name = "Prep-Closet"
+/obj/structure/bed/chair,
+/obj/floor_decal/industrial/warning{
+	dir = 5
 	},
-/obj/item/clothing/gloves/latex,
-/obj/item/clothing/gloves/latex/nitrile,
+/obj/floor_decal/industrial/warning{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/white,
 /area/security/brig)
 "aQz" = (
@@ -17287,11 +17283,6 @@
 /area/medical/morgue/autopsy{
 	name = "\improper Autopsy prep"
 	})
-"eYq" = (
-/obj/machinery/light,
-/obj/machinery/optable,
-/turf/simulated/floor/tiled/white,
-/area/security/brig)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4
@@ -27475,9 +27466,17 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "rGU" = (
-/obj/machinery/computer/operating{
-	dir = 4
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/surgicalapron,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/clothing/head/surgery/blue,
+/obj/item/clothing/under/rank/medical/scrubs/blue,
+/obj/structure/closet{
+	req_access = list("BRIG_ACCESS");
+	name = "Prep-Closet"
 	},
+/obj/item/clothing/gloves/latex,
+/obj/item/clothing/gloves/latex/nitrile,
 /turf/simulated/floor/tiled/white,
 /area/security/brig)
 "rHb" = (
@@ -43025,7 +43024,7 @@ aML
 oWb
 sQq
 mtk
-eYq
+mQh
 aRu
 aSs
 tAS
@@ -43631,7 +43630,7 @@ uUC
 uVw
 qvX
 qvX
-mQh
+qvX
 rDC
 aSu
 tAS
