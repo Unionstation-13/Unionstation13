@@ -182,7 +182,6 @@
 	seal_stamp = "\improper SCG Expeditionary Command rubber stamp"
 
 /obj/item/material/folder/envelope/preset/bio_ordering_station
-
 	name = "sealed B.I.O LLC envelope"
 	desc = "An official envelope with the B.I.O LLC corporate seal."
 	icon_state = "envelope_sealed"
