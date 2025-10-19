@@ -28,7 +28,7 @@
 /obj/machinery/suit_cycler/security
 	name = "security suit cycler"
 	model_text = "Security"
-	req_access = list(access_security)
+	req_access = list(access_brig)
 	available_modifications = list(/singleton/item_modifier/space_suit/security)
 	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
 

@@ -1064,6 +1064,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
+"dF" = (
+/obj/shuttle_landmark/ert/dock,
+/turf/space,
+/area/space)
 "dH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2260,6 +2264,11 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/fourthdeck/starboard)
+"hD" = (
+/obj/machinery/door/firedoor,
+/obj/wallframe_spawn/reinforced/no_grille,
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar/catwalks)
 "hE" = (
 /obj/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -4240,9 +4249,6 @@
 /area/maintenance/fourthdeck/starboard)
 "oV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/floor_decal/corner/green{
 	dir = 4
 	},
@@ -4754,7 +4760,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "rg" = (
-/obj/machinery/light,
 /obj/floor_decal/corner/brown{
 	dir = 4
 	},
@@ -6708,6 +6713,13 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
+"xq" = (
+/obj/shuttle_landmark/ert/dock/secondary{
+	name = "Deck 4, Fore Port";
+	docking_controller = null
+	},
+/turf/space,
+/area/space)
 "xr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -6800,7 +6812,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "xL" = (
@@ -10270,14 +10281,7 @@
 /turf/space,
 /area/space)
 "Ko" = (
-/obj/shuttle_landmark/ert/dock,
 /obj/shuttle_landmark/skrellscout/dock,
-/turf/space,
-/area/space)
-"Kp" = (
-/obj/shuttle_landmark/ert/deck5{
-	name = "4th Deck, Fore Port"
-	},
 /turf/space,
 /area/space)
 "Kq" = (
@@ -12375,7 +12379,6 @@
 /area/crew_quarters/lounge)
 "Qu" = (
 /obj/structure/table/standard,
-/obj/item/material/folder/envelope/preset/dcorder,
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
 "Qy" = (
@@ -12413,7 +12416,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
 "QD" = (
@@ -14336,6 +14338,7 @@
 /obj/floor_decal/corner/brown{
 	dir = 1
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "VQ" = (
@@ -14909,6 +14912,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"Xu" = (
+/obj/shuttle_landmark/cubkitten/torch,
+/turf/space,
+/area/space)
 "Xv" = (
 /obj/floor_decal/corner/brown{
 	dir = 10
@@ -23934,7 +23941,7 @@ aa
 aa
 aa
 aa
-aa
+Xu
 aa
 aa
 aa
@@ -24170,7 +24177,7 @@ aa
 aa
 aa
 aa
-Kp
+aa
 aa
 aa
 aa
@@ -24759,7 +24766,7 @@ aa
 aa
 aa
 aa
-aa
+xq
 aa
 aa
 aa
@@ -32417,9 +32424,9 @@ TT
 TT
 fl
 fl
-le
+hD
 NR
-le
+hD
 le
 iI
 wS
@@ -36861,9 +36868,9 @@ PJ
 PJ
 PJ
 PJ
-Xn
+hD
 NR
-Xn
+hD
 we
 Xn
 Xn
@@ -40321,7 +40328,7 @@ mR
 Tb
 TN
 Ko
-aa
+dF
 aa
 aa
 aa

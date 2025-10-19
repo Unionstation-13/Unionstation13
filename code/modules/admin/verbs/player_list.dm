@@ -34,7 +34,7 @@
 		entry = replacetext_char(entry, "{KEY}", replacetext_char(player.key, strip_symbols, ""))
 		entry = replacetext_char(entry, "{ANTAG}", is_special_character(player) ? "true" : "false")
 		entry = replacetext_char(entry, "{REF}", "\ref[player]")
-		entry = replacetext_char(entry, "{ADDR}", player.lastKnownIP)
+		entry = replacetext_char(entry, "{ADDR}", player.last_address)
 		entries[index] = entry
 		--index
 	var/doc = replacetext_char(file2text("html/pages/player_list.html"), "{REF_SRC}", "\ref[src]")

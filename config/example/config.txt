@@ -465,3 +465,49 @@ RADIATION_LOWER_LIMIT 0.15
 ## Uncomment this to bypass empty z-level checks in certain subsystems. For testing and development purposes only.
 ## Not recommended for live use.
 #RUN_EMPTY_LEVELS
+
+## SKIP_CONN_WARN_CID_ALL
+## Bool. Default: Off
+## Whether we should skip warning staff and players about connections with CID collisions
+#SKIP_CONN_WARN_CID_ALL
+
+## SKIP_CONN_WARN_CID
+## Multi-List. Default: None Set
+## If SKIP_CONN_WARN_CID_ALL is not set, an optional list of CIDs to skip anyway
+## Add lines of 'SKIP_CONN_WARN_CID CID' to add entries, eg:
+#SKIP_CONN_WARN_CID 14138560
+#SKIP_CONN_WARN_CID 10964753
+
+## SKIP_CONN_WARN_ADDRESS_ALL
+## Bool. Default: Off
+## Whether we should skip warning about connections with address (IP) collisions
+#SKIP_CONN_WARN_ADDRESS_ALL
+
+## SKIP_CONN_WARN_ADDRESS
+## Multi-List. Default: Empty
+## If SKIP_CONN_WARN_ADDRESS_ALL is not set, an optional list of addresses (IPs) to skip anyway
+## Add lines of 'SKIP_CONN_WARN_ADDRESS ADDRESS' to add entries, eg:
+#SKIP_CONN_WARN_ADDRESS 3.33.130.190
+#SKIP_CONN_WARN_ADDRESS 213.186.33.5
+
+## SKIP_CONN_WARN_CKEY
+## Multi-List. Default: Empty
+## An optional list of ckeys to skip warning about connection detail collisions
+## Members of this list are mapped to ckey(entry) - you may use key here instead
+## Add lines of 'SKIP_CONN_WARN_CKEY ckeyable' to add entries, eg:
+#SKIP_CONN_WARN_CKEY exadv1
+#SKIP_CONN_WARN_CKEY Looming Wombat 99
+
+## SKIP_CONN_WARN_CLIENT
+## Bool. Default: Off
+## Whether we should warn the triggering client about connection detail collisions
+#SKIP_CONN_WARN_CLIENT
+
+## CONN_WARN_CLIENT_MESSAGE
+## Text. Default: Builtin
+## The message we should display to clients if they appear to be sharing an address or machine with
+## another client, after respecting SKIP_CONN_* rules. If not set, the default message is sent:
+## "You share some connection details with another connected player. Using more than one account at
+## a time is not allowed. If this is your first time seeing this message, please contact staff by
+## using the AdminHelp command."
+#CONN_WARN_CLIENT_MESSAGE It looks like you're multi-keying. Please stop that!

@@ -220,6 +220,8 @@
 
 #define FONT_GIANT(X) SPAN_SIZE("24px", "[X]")
 
+#define SPAN_SYSTEM(X) SPAN_COLOR("purple", "[X]")
+
 #define TO_HEX_DIGIT(n) ascii2text((n&15) + ((n&15)<10 ? 48 : 87))
 
 

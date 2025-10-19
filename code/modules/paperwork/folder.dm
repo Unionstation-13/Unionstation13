@@ -394,6 +394,10 @@
 	onclose(user, window_name)
 	add_fingerprint(usr)
 
+/obj/item/material/folder/clipboard/examine(mob/user, distance, is_adjacent)
+	. = ..()
+	if (top_paper && is_adjacent)
+		top_paper.show_content(user)
 
 /obj/item/material/folder/clipboard/Topic(href_text, list/href_list, datum/topic_state/state)
 	if (!CanPhysicallyInteractWith(usr, src))
@@ -464,6 +468,23 @@
 		)
 		stored_pen = pen
 		attack_self(usr)
+		update_icon()
+		return
+	if (href_list["remove"])
+		var/obj/item/removed_item = locate(href_list["remove"]) in contents
+		if (!removed_item)
+			to_chat(usr, SPAN_WARNING("That's no longer held by \the [src]."))
+			return
+		usr.put_in_hands(removed_item)
+		attack_hand(usr)
+		if (removed_item == top_paper)
+			top_paper = null
+			var/i = length(contents)
+			while (i > 0 && !top_paper)
+				var/obj/item/item = contents[i]
+				if (istype(item, /obj/item/paper))
+					top_paper = item
+				i--
 		update_icon()
 		return
 	..()
