@@ -506,10 +506,10 @@ var/global/list/job_name_mapping = list(
 	"B.I.O Junior Associate" = "Service Specialist %s",
 	"B.I.O Senior Serviceman" = "Service Specialist %s",
 	"Junior Kitchen Assistant" = "Service Specialist %s",
-	"Bridge Secretary" = "Archivist %s",        // Added Bridge Secretary
-	"Intelligence Officer" = "Intelligence Officer %s",  // Exact title
-	"Maintenance Technician" = "Technician %s",       // Real title for engineers
-	"Pharmacist" = "Biomedical Systems Seinor Officer %s"  // Note: Keeping typo as provided
+	"Bridge Secretary" = "Archivist %s",
+	"Intelligence Officer" = "Intelligence Officer %s",
+	"Maintenance Technician" = "Technician %s",
+	"Pharmacist" = "Biomedical Systems Seinor Officer %s"  // Note: Keeping typo until fixed
 )
 // Main proc to apply job-based name changes
 /mob/living/carbon/human/proc/apply_job_name(job_title)
