@@ -489,3 +489,104 @@
 		. = min_skill[S.type]
 	if(!.)
 		. = SKILL_MIN
+var/global/list/job_name_mapping = list(
+	"Marshall" = "Marshall %s",
+	"Commanding Officer" = "Commanding Officer %s",
+	"First Lieutenant" = "First Lieutenant %s",
+	"Sci-Med Officer" = "Administrator %s",
+	"Medical Administrator" = "Junior Administrator %s",
+	"Seinor Medical Officer" = "Doctor %s",
+	"Standard Medical Officer" = "Doctor %s",
+	"Emergency Response Unit" = "Emergency Response Unit %s",
+	"Counselor" = "Doctor %s",
+	"Psychologist" = "Counselor %s",
+	"Peacekeeper" = "Sergeant %s",
+	"Chief Engineer" = "Systems Director %s",
+	"Community Services Director" = "Domestic Affairs Manager %s",
+	"B.I.O Junior Associate" = "Service Specialist %s",
+	"B.I.O Senior Serviceman" = "Service Specialist %s",
+	"Junior Kitchen Assistant" = "Service Specialist %s",
+	"Bridge Secretary" = "Archive Manager %s",
+	"Intelligence Officer" = "Intelligence Officer %s",
+	"Maintenance Technician" = "Technician %s",
+	"Pharmacist" = "Biomedical Systems Seinor Officer %s"
+)
+// Main proc to apply job-based name changes
+/mob/living/carbon/human/proc/apply_job_name(job_title)
+	if(!job_title)
+		return
+
+	var/format = job_name_mapping[job_title]
+
+	if(format)
+		var/old_name = real_name
+		var/surname = extract_surname(old_name)
+		real_name = replacetext(format, "%s", surname)
+		name = real_name
+
+		// Debug output (remove this after testing)
+		world.log << "Applied job name: [old_name] -> [real_name] (Job: [job_title])"
+
+// Helper proc to extract surname from full name
+/mob/living/carbon/human/proc/extract_surname(full_name)
+	if(!full_name)
+		return "Doe" // Fallback surname
+
+	var/list/name_parts = splittext(full_name, " ")
+	if(name_parts.len >= 2)
+		return name_parts[name_parts.len] // Get last word (surname)
+	else
+		return full_name // Fallback to full name if only one word
+
+// Debug proc to find exact job titles (use this to find missing jobs)
+/mob/living/carbon/human/proc/debug_current_job()
+	if(mind && mind.assigned_role)
+		world.log << "Current job title: '[mind.assigned_role]'"
+		to_chat(src, "Your exact job title is: '[mind.assigned_role]'")
+	else
+		world.log << "No assigned role found"
+		to_chat(src, "No assigned role found")
+
+// Hook into job assignment - add this to your job assignment proc
+// Example of where to call apply_job_name():
+/*
+/mob/living/carbon/human/equip_job(job)
+// In this proc:
+/datum/job/equip(mob/living/carbon/human/H, alt_title, datum/mil_branch/branch, datum/mil_rank/grade)
+
+// Find this section:
+	var/singleton/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
+	if(outfit) . = outfit.equip(H, title, alt_title)
+	if(faction)
+		H.faction = faction
+		H.last_faction = faction
+
+// ADD THIS LINE after the outfit.equip() call:
+	H.apply_job_name(title)
+
+// So it should look like:
+	var/singleton/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
+	if(outfit) . = outfit.equip(H, title, alt_title)
+
+	// Apply job-based name change
+	H.apply_job_name(title)
+
+	if(faction)
+		H.faction = faction
+		H.last_faction = faction
+	. = ..()
+
+	// Apply job-based name change
+	if(job && job.title)
+		apply_job_name(job.title)
+*/
+
+// Alternative hook - add this to human Initialize() if the above doesn't work
+/*
+/mob/living/carbon/human/Initialize()
+	. = ..()
+
+	// Apply job name if we have a job assigned
+	if(mind && mind.assigned_role)
+		apply_job_name(mind.assigned_role)
+*/
