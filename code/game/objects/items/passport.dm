@@ -33,24 +33,14 @@
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
 /obj/item/passport/scg
-	name = "\improper SCG passport"
+	name = "\improper UGN passport"
 	icon_state = "passport_scg"
 	desc = "A passport from the Sol Central Government."
-
-/obj/item/passport/earth
-	name = "\improper Earth passport"
-	icon_state = "passport_scg2"
-	desc = "A passport from the Earth, within Sol Central Government space."
 
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
 	icon_state = "passport_scg2"
 	desc = "A passport from Venus, within Sol Central Government space."
-
-/obj/item/passport/luna
-	name = "\improper Luna passport"
-	icon_state = "passport_scg2"
-	desc = "A passport from Luna, within Sol Central Government space."
 
 /obj/item/passport/mars
 	name = "\improper Mars passport"

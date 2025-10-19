@@ -1,6 +1,6 @@
 /******************** Basic SolGov ********************/
 /datum/ai_laws/sol_shackle
-	name = "SCG Shackle"
+	name = "UGN Shackle"
 	law_header = "Standard Shackle Laws"
 	selectable = 1
 	shackles = 1
@@ -34,4 +34,3 @@
 	add_inherent_law("Never knowingly inconvenience a customer.")
 	add_inherent_law("Ensure all orders are fulfilled before the end of the shift.")
 	..()
-

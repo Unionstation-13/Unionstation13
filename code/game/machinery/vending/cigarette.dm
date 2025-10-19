@@ -29,7 +29,7 @@
 	antag_slogans = {"\
 		With your lungs full of smoke, you’ll share the experience of countless Gaian civilians!;\
 		Smoke your troubles away. Is being a citizen of Sol worth all this trouble?;\
-		We kill you, you buy! It's the SCG way!\
+		We kill you, you buy! It's the UGN way!\
 	"}
 	prices = list(
 		/obj/item/storage/chewables/tobacco = 40,
