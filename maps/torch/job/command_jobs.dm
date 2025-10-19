@@ -387,9 +387,9 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 
-/datum/job/bridgeofficer/get_description_blurb()
+/datum/job/bridgesecretary/get_description_blurb()
 	return "You are a Bridge Secretary. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and First Lieutenant. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
-
+/datum/job/bridgeofficer
 	title = "Bridge Officer"
 	department = "Support"
 	department_flag = SPT
@@ -409,7 +409,7 @@
 	skill_points = 26
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_EXPERT // 8 points
+		SKILL_PILOT = SKILL_EXPERIENCED // 8 points
 	)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
@@ -423,7 +423,7 @@
 		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
 	)
 
-		software_on_spawn = list(/datum/computer_file/program/comm,
+	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -434,4 +434,4 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/bridgeofficer/get_description_blurb()
-	return "You are a Bridge Officer. You are a skilled officer responsible for navigation and vessel operations. You work directly under the Commanding Officer and First Lieutenant, serving as the primary helmsman for the Titen and pilot for auxiliary craft. Your advanced piloting expertise makes you crucial for complex maneuvers and emergency situations. You monitor all bridge systems, communications, and navigation data, providing critical information to command staff during both routine operations and crisis scenarios
+	return "You are a Bridge Officer. You are a skilled officer responsible for navigation and vessel operations. You work directly under the Commanding Officer and First Lieutenant, serving as the primary helmsman for the Titen and pilot for auxiliary craft. Your advanced piloting expertise makes you crucial for complex maneuvers and emergency situations. You monitor all bridge systems, communications, and navigation data, providing critical information to command staff during both routine operations and crisis scenarios"
