@@ -78,6 +78,6 @@
 	return TRUE
 
 //Bluespace turfs for shuttles and possible future transit use
-/turf/space/bluespace
+bluespace
 	name = "bluespace"
 	icon_state = "bluespace"
