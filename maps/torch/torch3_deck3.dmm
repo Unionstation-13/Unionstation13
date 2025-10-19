@@ -1452,7 +1452,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/cooker/fryer,
+/obj/machinery/appliance/cooker/oven,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "dB" = (
@@ -1494,8 +1494,9 @@
 /area/crew_quarters/galley)
 "dG" = (
 /obj/structure/table/marble,
-/obj/machinery/cooker/cereal{
-	pixel_y = 8
+/obj/item/book/manual/chef_recipes,
+/obj/structure/window/basic{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -2229,7 +2230,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/machinery/cooker/grill,
+/obj/machinery/appliance/cooker/oven,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "fr" = (
@@ -2291,12 +2292,7 @@
 	pixel_y = 24
 	},
 /obj/structure/table/marble,
-/obj/machinery/microwave{
-	pixel_x = -1;
-	pixel_y = 6;
-	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
-	name = "Rapid Sanitization Device"
-	},
+/obj/machinery/appliance/cooker/microwave,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "fw" = (
@@ -3163,12 +3159,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/machinery/microwave{
-	pixel_x = -1;
-	pixel_y = 6;
-	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
-	name = "Rapid Sanitization Device"
-	},
+/obj/machinery/appliance/cooker/microwave,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "hp" = (
@@ -7179,12 +7170,7 @@
 	dir = 4;
 	pixel_x = -31
 	},
-/obj/machinery/microwave{
-	pixel_x = -1;
-	pixel_y = 6;
-	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
-	name = "Rapid Sanitization Device"
-	},
+/obj/machinery/appliance/mixer/cereal,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "rp" = (
@@ -7799,12 +7785,6 @@
 	dir = 8
 	},
 /obj/structure/table/marble,
-/obj/machinery/microwave{
-	pixel_x = -1;
-	pixel_y = 6;
-	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
-	name = "Rapid Sanitization Device"
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "sB" = (
@@ -9276,7 +9256,9 @@
 /area/chapel/main)
 "ww" = (
 /obj/structure/table/marble,
-/obj/item/material/chopping_board,
+/obj/structure/window/basic{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "wy" = (
@@ -10670,7 +10652,6 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/item/tray,
 /obj/floor_decal/corner/green/half{
 	dir = 1
 	},
@@ -12775,7 +12756,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/cryolocker)
 "FY" = (
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/stove{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "FZ" = (
@@ -13093,13 +13076,9 @@
 /turf/simulated/floor/plating,
 /area/vacant/cabin)
 "GN" = (
-/obj/structure/table/steel,
-/obj/machinery/microwave{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/cabin)
+/obj/machinery/appliance/cooker/stove,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "GO" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -15380,12 +15359,6 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
-"Mb" = (
-/obj/shuttle_landmark/ert/deck4{
-	name = "3rd Deck, Starboard"
-	},
-/turf/space,
-/area/space)
 "Mc" = (
 /obj/structure/table/reinforced,
 /obj/floor_decal/spline/plain/green{
@@ -15571,6 +15544,7 @@
 /obj/structure/closet/shipping_wall/filled{
 	pixel_y = 32
 	},
+/obj/machinery/appliance/mixer/candy,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "MD" = (
@@ -16171,7 +16145,6 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/table/reinforced,
-/obj/item/tray,
 /obj/floor_decal/corner/green/half{
 	dir = 1
 	},
@@ -17228,10 +17201,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
-"Rq" = (
-/obj/structure/table/marble,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "Rr" = (
 /obj/structure/cable{
 	d1 = 32;
@@ -18192,9 +18161,7 @@
 	dir = 1
 	},
 /obj/structure/table/marble,
-/obj/machinery/cooker/candy{
-	pixel_y = 13
-	},
+/obj/item/device/flashlight/lamp/lava,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Uh" = (
@@ -35617,7 +35584,7 @@ aa
 aa
 aa
 aa
-Mb
+aa
 aa
 aa
 aa
@@ -36255,7 +36222,7 @@ ev
 fq
 yI
 dG
-Rq
+ww
 ww
 cT
 yI
@@ -36456,8 +36423,8 @@ cc
 cN
 yI
 yI
-yI
-yI
+GN
+FY
 Fw
 cT
 jn
@@ -36859,7 +36826,7 @@ Mx
 th
 ev
 Ug
-FY
+yI
 es
 yI
 RD
@@ -43557,7 +43524,7 @@ ub
 Fj
 FM
 Go
-GN
+FN
 ub
 Ba
 jZ
