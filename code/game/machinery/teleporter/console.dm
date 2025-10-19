@@ -194,7 +194,7 @@
 		var/turf/TT = get_turf(M)
 		if (M.is_dead() && world.time > M.timeofdeath + 15 MINUTES)
 			continue
-		if (!isPlayerLevel(TT.z))
+		if (!isPlayerLevel(M.z))
 			continue
 		result["[M.name] \[[++ids[M.name]]\]"] = T
 	return result

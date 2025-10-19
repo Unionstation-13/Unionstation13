@@ -1,6 +1,6 @@
 /datum/map/torch
-	name = "\improper Torch"
-	full_name = "\improper SEV Torch"
+	name = "\improper Titen"
+	full_name = "\improper UGN Titen"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"
@@ -16,25 +16,25 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "\improper SEV Torch"
-	station_short = "\improper Torch"
+	station_name  = "\improper UGN Titen"
+	station_short = "\improper Titen"
 	dock_name     = "TBD"
 	boss_name     = "Expeditionary Command"
 	boss_short    = "Command"
-	company_name  = "Sol Central Government"
-	company_short = "SolGov"
+	company_name  = "United Galactic Nations"
+	company_short = "UGN"
 
 	map_admin_faxes = list(
-		"Expeditionary Corps Command",
-		"Expeditionary Corps Logistics",
+		"United Rocknall Command HQ",
+		"Commisionary Dock",
 		"EXO Head Office",
 		"EXO Internal Affairs",
 		"SFP Territory Support",
 		"SFP Special Investigations",
 		"SFP Fugitive Recovery",
 		"Sol Fleet Mars Command",
-		"Bureau of Diplomatic Affairs",
-		"Emergency Management Bureau",
+		"Diplomatic Representative's Office",
+		"Burea of Emergency Affairs",
 		"Secure Routing Service"
 	)
 

@@ -5,7 +5,7 @@
 	var/list/blacklisted_jobs =		list(/datum/job/submap)   // Jobs that can NEVER be this antagonist
 
 	// Strings.
-	var/welcome_text = "Cry havoc and let slip the dogs of war!"
+	var/welcome_text = "Follow the orders of The Glorius Leader. Make him proud."
 	var/leader_welcome_text                 // Text shown to the leader, if any.
 	var/victory_text                        // World output at roundend for victory.
 	var/loss_text                           // As above for loss.
@@ -14,7 +14,7 @@
 
 	// Role data.
 	var/id = "traitor"                      // Unique datum identifier. Also preferences option for this role.
-	var/role_text = "Traitor"               // special_role text.
+	var/role_text = "Divine Traitor"               // special_role text.
 	var/role_text_plural = "Traitors"       // As above but plural.
 
 	// Visual references.

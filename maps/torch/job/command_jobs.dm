@@ -1,17 +1,13 @@
 /datum/job/captain
 	title = "Commanding Officer"
-	supervisors = "the Sol Central Government and the Sol Code of Uniform Justice"
-	minimal_player_age = 14
+	supervisors = "The United Galatic Nations"
+	minimal_player_age = 35
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o6
-	)
+	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_ranks = list(/datum/mil_rank/fleet/o6)
 	skill_points = 36
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -28,7 +24,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
+	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your First Lieutenant, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
 
 /datum/job/captain/post_equip_rank(mob/person, alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
@@ -36,21 +32,17 @@
 	..()
 
 /datum/job/hop
-	title = "Executive Officer"
+	title = "First Lieutenant"
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 14
+	minimal_player_age = 35
 	economic_power = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	)
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
+	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o5,
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/fleet/o5
 	)
@@ -87,22 +79,19 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop/get_description_blurb()
-	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
+	return "You are the First Lieutenant. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Secretary tools at your disposal."
 
 /datum/job/rd
-	title = "Chief Science Officer"
-	supervisors = "the Commanding Officer"
+	title = "Sci-Med Officer"
+	supervisors = "The United Rocknall Corporation and the UGN"
+	department_flag = COM|MED|SCI
 	economic_power = 12
-	minimal_player_age = 14
+	minimal_player_age = 25
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o3
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	skill_points = 36
 	min_skill = list( // 16 points
@@ -126,8 +115,10 @@
 		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_rd,
 		access_petrov_control, access_petrov_maint, access_pathfinder, access_explorer, access_eva, access_solgov_crew,
-		access_expedition_shuttle, access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm,
-		access_radio_sci, access_radio_exp, access_research_storage, access_fabrication
+		access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm, access_radio_sci, access_radio_exp,
+		access_radio_med, access_research_storage, access_fabrication, access_medical, access_morgue, access_external_airlocks,
+		access_chapel_office, access_crematorium, access_chemistry, access_virology,
+		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -136,25 +127,17 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/rd/get_description_blurb()
-	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the corporate interests of the Expeditionary Corps Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
-
+	return "You are the Sci-Med Officer. You are responsible for both the research and medical department. You keep the crew healthy, as well as handle the science aspects of the ship. Send people to explore, don't get killed yourself, and advise the CO on relevant matters."
 /datum/job/cmo
-	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	title = "Medical Administrator"
+	supervisors = "The Sci-Med Officer and your moral code"
 	economic_power = 14
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cmo/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/ec/o3
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 32
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -183,7 +166,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cmo/get_description_blurb()
-	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
+	return "You are the Medical Administrator, your job is to maintain the order of medical and ensure paitent survival. You are a subordinate to the Sci-Med Administrator on account of your employment at the United Rocknall Corporation. Refer to Rocknall Code for incidents."
 
 /datum/job/chief_engineer
 	title = "Chief Engineer"
@@ -193,15 +176,8 @@
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 36
 	min_skill = list( // 31 points
 		SKILL_BUREAUCRACY  = SKILL_BASIC, // 1 point
@@ -243,21 +219,20 @@
 	return "You are the Chief Engineer. You manage the Engineering Department. You are responsible for the Senior engineer, who is your right hand and (should be) an experienced, skilled engineer. Delegate to and listen to them. Manage your engineers, ensure vessel power stays on, breaches are patched and problems are fixed. Advise the CO on engineering matters. You are also responsible for the maintenance and control of any vessel synthetics. You are an experienced engineer with a wealth of theoretical knowledge. You should also know vessel regulations to a reasonable degree."
 
 /datum/job/hos
-	title = "Chief of Security"
-	supervisors = "the Commanding Officer and the Executive Officer"
+	title = "Marshall"
+	supervisors = "The Security Code of Conduct and your own instincts"
 	economic_power = 10
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 	skill_points = 34
 	min_skill = list( // 15 points
@@ -287,15 +262,15 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hos/get_description_blurb()
-	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
+	return "You are the Marshall. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the First Lieutenant. You are expected to know the law, ship regulations, and alert procedure to a very high degree."
 
 /datum/job/representative
-	title = "SolGov Representative"
+	title = "United Galactic Nations Representative"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Sol Central Government and the SCG Charter"
+	supervisors = "the United Galactic Nations council"
 	selection_color = "#2f2f7f"
 	economic_power = 16
 	minimal_player_age = 0
@@ -318,24 +293,22 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
+	return "You are the United Galactic Nations Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to the UGN on mission progress and important events."
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "United Galatic Nations Commissioned Advisor"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the Executive Officer"
+	supervisors = "Directives from the UGN"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
 	economic_power = 11
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	allowed_branches = list(
-		/datum/mil_branch/fleet
-	)
+	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/fleet/e9_alt1,
@@ -369,14 +342,13 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
-
+	return "You are United Galactic Nations Commissioned Advisor. You are responsible for maintaining conformity to the UGN Code. Any and all violations should be reported to the Peacekeeper Division of the ship."
 /datum/job/bridgeofficer
-	title = "Bridge Officer"
+	title = "Command Secretary"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Commanding Officer and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
@@ -385,13 +357,9 @@
 	ideal_character_age = 24
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
 	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1
-	)
+	allowed_ranks = list(/datum/mil_rank/fleet/o1)
 	skill_points = 26
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -419,5 +387,51 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 
+/datum/job/bridgesecretary/get_description_blurb()
+	return "You are a Bridge Secretary. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and First Lieutenant. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+/datum/job/bridgeofficer
+	title = "Bridge Officer"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Commanding Officer and heads of staff"
+	selection_color = "#2f2f7f"
+	minimal_player_age = 0
+	economic_power = 8
+	minimum_character_age = list(SPECIES_HUMAN = 28)
+	ideal_character_age = 32
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+	)
+	allowed_ranks = list(/datum/mil_rank/fleet/o1)
+	skill_points = 26
+	min_skill = list( // 9 points
+		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
+		SKILL_PILOT = SKILL_EXPERIENCED // 8 points
+	)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+
+	access = list(
+		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
+		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
+		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
+		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
+		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports,
+							 /datum/computer_file/program/deck_management)
+
 /datum/job/bridgeofficer/get_description_blurb()
-	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+	return "You are a Bridge Officer. You are a skilled officer responsible for navigation and vessel operations. You work directly under the Commanding Officer and First Lieutenant, serving as the primary helmsman for the Titen and pilot for auxiliary craft. Your advanced piloting expertise makes you crucial for complex maneuvers and emergency situations. You monitor all bridge systems, communications, and navigation data, providing critical information to command staff during both routine operations and crisis scenarios"

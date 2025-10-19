@@ -1617,7 +1617,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
 	id_tag = "csodoor";
-	name = "Chief Science Officer";
+	name = "Rocknall Lead Administrator";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -1631,6 +1631,11 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/door/airlock/research{
+	id_tag = "csodoor";
+	name = "Rocknall Lead Administrator";
+	secured_wires = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
@@ -1820,7 +1825,7 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Bridge"
+	department = "Titen - Bridge"
 	},
 /obj/machinery/button/alternate/door{
 	id_tag = "meetingstarboard";
@@ -2048,9 +2053,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "dH" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -2058,9 +2060,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
-	},
-/obj/machinery/vending/cola{
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -2342,7 +2341,7 @@
 /area/bridge/meeting_room)
 "eq" = (
 /obj/machinery/door/airlock/sol{
-	name = "XO's Quarters";
+	name = "FL's Quarters";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -3020,6 +3019,14 @@
 /area/bridge/hallway/port)
 "fD" = (
 /obj/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "fE" = (
@@ -3281,9 +3288,6 @@
 /area/aquila/storage)
 "fY" = (
 /obj/floor_decal/corner/red/half,
-/obj/machinery/vending/coffee{
-	dir = 4
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -3983,7 +3987,7 @@
 /area/crew_quarters/heads/office/ce)
 "ik" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Corporate Liasion"
+	department = "Titen - Corporate Liasion"
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/noticeboard{
@@ -4012,13 +4016,11 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "il" = (
-/obj/floor_decal/industrial/warning{
-	dir = 4
-	},
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "im" = (
-/obj/structure/railing/mapped,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/open,
 /area/hallway/primary/bridge/fore)
 "in" = (
@@ -4210,9 +4212,6 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
 "iU" = (
-/obj/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -4225,6 +4224,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
@@ -4258,7 +4261,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "iY" = (
 /obj/structure/disposalpipe/segment,
@@ -4881,15 +4884,6 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"lo" = (
-/obj/floor_decal/scglogo,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "lq" = (
 /obj/machinery/disposal,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -5142,10 +5136,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "lS" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-right"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "lT" = (
@@ -5363,7 +5353,7 @@
 	pixel_x = 20
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief of Security"
+	department = "Titen - Chief of Security"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
@@ -6500,9 +6490,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/storage)
 "qf" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6539,9 +6526,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "qh" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -6595,7 +6579,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	id_tag = "cosdoor";
-	name = "Chief of Security";
+	name = "Marshall";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7088,16 +7072,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"rA" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-left"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "rC" = (
 /obj/machinery/light{
 	dir = 1
@@ -7407,7 +7381,7 @@
 "sz" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
-	name = "Senior Enlisted Advisor";
+	name = "UGN Commisioned Advisor";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -7957,7 +7931,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	name = "SolGov Representative";
+	name = "UGN Representative Quarters";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -8004,18 +7978,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
-"up" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-right"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "uq" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "center-right"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -8227,9 +8190,6 @@
 	dir = 4;
 	pixel_x = -37
 	},
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uT" = (
@@ -8246,10 +8206,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uU" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-center"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -8307,12 +8263,6 @@
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/shield/bridge)
-"vf" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-center"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "vg" = (
 /obj/floor_decal/corner/blue{
 	dir = 1
@@ -8493,13 +8443,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarbridge)
 "vJ" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarbridge)
 "vK" = (
 /obj/floor_decal/industrial/warning/corner{
@@ -8605,7 +8555,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/disciplinary_board_room/deliberation)
 "wc" = (
-/obj/floor_decal/corner/blue/diagonal,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -8620,9 +8569,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room/deliberation)
 "wd" = (
-/obj/floor_decal/corner/blue{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -8635,11 +8581,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room/deliberation)
 "wf" = (
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen,
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
@@ -8657,12 +8598,10 @@
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wg" = (
-/obj/item/tableflag{
-	pixel_x = 4
-	},
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
@@ -8678,15 +8617,17 @@
 	dir = 9
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wh" = (
-/obj/item/book/manual/military_law,
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
+/obj/item/pen/blue,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wj" = (
@@ -8751,6 +8692,11 @@
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8955,7 +8901,7 @@
 "wD" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - SolGov Representative"
+	department = "Titen - SolGov Representative"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -8977,9 +8923,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/disciplinary_board_room/deliberation)
 "wI" = (
-/obj/floor_decal/corner/blue{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	name = "south bump";
 	pixel_y = -24
@@ -9071,7 +9014,7 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarbridge)
 "wU" = (
 /obj/item/stool,
@@ -9578,12 +9521,6 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/xo)
-"yh" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-center"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "yi" = (
 /obj/floor_decal/corner/red/full,
 /obj/floor_decal/industrial/outline/yellow,
@@ -9679,7 +9616,7 @@
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
-	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = "U.G.N Titen  - Mako Class - United Galactic Nations Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
@@ -9701,6 +9638,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "bridge_checkpoint_shutters";
+	name = "Bridge Deck Checkpoint Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "yS" = (
@@ -10105,8 +10050,8 @@
 	pixel_x = 24
 	},
 /obj/floor_decal/corner/red/half,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/hologram/holopad,
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "AA" = (
@@ -10426,12 +10371,13 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
-/obj/structure/closet/emcloset,
-/obj/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "APC"
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "BY" = (
@@ -10525,9 +10471,6 @@
 "Ch" = (
 /obj/structure/bed/chair/comfy/captain{
 	dir = 8
-	},
-/obj/floor_decal/scglogo{
-	icon_state = "center-left"
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10871,9 +10814,6 @@
 /obj/floor_decal/corner/blue{
 	dir = 5
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "DY" = (
@@ -10961,14 +10901,15 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/rack,
-/obj/item/device/binoculars,
 /obj/machinery/light,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Security";
 	departmentType = 5;
 	pixel_y = -32
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
@@ -11157,16 +11098,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
-"Fn" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "bottom-center"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/disciplinary_board_room)
 "Fp" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
@@ -11199,7 +11130,7 @@
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Executive Officer"
+	department = "Titen - Executive Officer"
 	},
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -11240,9 +11171,6 @@
 	dir = 5
 	},
 /obj/structure/bed/chair/padded/blue,
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Ga" = (
@@ -11588,7 +11516,7 @@
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
-	name = "Executive Officer";
+	name = "First Lieutenant";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -11771,17 +11699,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"HH" = (
-/obj/floor_decal/scglogo{
-	icon_state = "top-left"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "HI" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/command{
@@ -12096,7 +12013,7 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Senior Enlisted Advisor"
+	department = "Titen - Senior Enlisted Advisor"
 	},
 /obj/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
@@ -12290,6 +12207,8 @@
 	dir = 1;
 	icon_state = "warning"
 	},
+/obj/structure/bed,
+/obj/item/bedsheet,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "JA" = (
@@ -12440,9 +12359,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Kt" = (
-/obj/floor_decal/scglogo{
-	icon_state = "bottom-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -12538,7 +12454,7 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Medical Officer"
+	department = "Titen - Chief Medical Officer"
 	},
 /obj/item/stamp/cmo,
 /turf/simulated/floor/tiled/white,
@@ -12554,13 +12470,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "La" = (
-/obj/structure/sign/directions/supply{
-	pixel_y = -4
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/structure/sign/directions/engineering{
-	pixel_y = 3
-	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "Lb" = (
 /obj/floor_decal/corner/blue{
@@ -12810,10 +12723,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "Mh" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "top-left"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -12996,7 +12905,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Commanding Officer"
+	department = "Titen - Commanding Officer"
 	},
 /obj/machinery/button/windowtint{
 	id = "co_windows";
@@ -13107,7 +13016,7 @@
 /area/crew_quarters/heads/cobed)
 "NE" = (
 /obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
+	name = "Bridge Holding Cell";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -13443,7 +13352,7 @@
 /obj/machinery/power/smes/buildable/preset/torch/bridge_solar{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarbridge)
 "Pd" = (
 /obj/item/device/radio/intercom{
@@ -13453,6 +13362,9 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Pe" = (
@@ -13684,9 +13596,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "Qg" = (
-/obj/floor_decal/scglogo{
-	dir = 4
-	},
 /obj/structure/bed/chair,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14598,9 +14507,6 @@
 /obj/floor_decal/corner/blue/three_quarters{
 	dir = 1
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "TK" = (
@@ -14845,10 +14751,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "Vf" = (
-/obj/floor_decal/scglogo{
-	dir = 4;
-	icon_state = "center-left"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -15128,7 +15030,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Science Officer"
+	department = " - Chief Science Officer"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -15142,6 +15044,9 @@
 	pixel_x = -23
 	},
 /obj/floor_decal/corner/red/mono,
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "Disposal"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
 "Wr" = (
@@ -15314,7 +15219,7 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
 	id_tag = "cmodoor";
-	name = "Chief Medical Officer";
+	name = "Medical Administrator";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15552,7 +15457,7 @@
 "YC" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "repdoor";
-	name = "SolGov Representative";
+	name = "UGN Representative";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15697,9 +15602,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "Zg" = (
-/obj/floor_decal/scglogo{
-	icon_state = "center-right"
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -15764,7 +15666,7 @@
 	},
 /obj/floor_decal/corner/yellow/mono,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Engineer"
+	department = " - Chief Engineer"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
@@ -24440,7 +24342,7 @@ lL
 Hx
 EV
 Vw
-HH
+Kt
 Ch
 Kt
 Lw
@@ -24642,9 +24544,9 @@ eP
 hV
 eP
 nu
-vf
-lo
-yh
+hn
+HC
+hn
 dW
 eP
 HX
@@ -28678,7 +28580,7 @@ ua
 dk
 gf
 gM
-fD
+bT
 il
 iU
 TM
@@ -29285,9 +29187,9 @@ sT
 uJ
 zo
 hC
-La
+hC
 iX
-Dr
+La
 fB
 yW
 mO
@@ -29501,7 +29403,7 @@ rl
 zF
 TX
 DV
-up
+lS
 uU
 Mh
 wf
@@ -29906,8 +29808,8 @@ pI
 kJ
 FX
 lS
-Fn
-rA
+uU
+Mh
 wh
 wN
 TX

@@ -12,6 +12,8 @@
 
 	z_eventually_space = TRUE
 	var/starlit = FALSE
+	var/dirt = 0
+	/turf/space/proc/update_dirt()
 
 /turf/space/Initialize()
 	. = ..()

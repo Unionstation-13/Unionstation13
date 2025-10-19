@@ -9,31 +9,31 @@
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
-	name = OUTFIT_JOB_NAME("Senior Engineer")
+	name = OUTFIT_JOB_NAME("Engineer")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/engineering/senior)
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
-	name = OUTFIT_JOB_NAME("Senior Engineer - Fleet")
+	name = OUTFIT_JOB_NAME("Engineer - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
-	name = OUTFIT_JOB_NAME("Engineer - Torch")
+	name = OUTFIT_JOB_NAME("Maintenance Technician - Titen")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/engineering)
 	pda_type = /obj/item/modular_computer/pda/engineering
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
-	name = OUTFIT_JOB_NAME("Engineer - Fleet")
+	name = OUTFIT_JOB_NAME("Maintenance Technician - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
-	name = OUTFIT_JOB_NAME("Engineering Assistant")
+	name = OUTFIT_JOB_NAME("Assistant Technician")
 	uniform = /obj/item/clothing/under/rank/engineer
 	shoes = /obj/item/clothing/shoes/workboots
 	id_types = list(/obj/item/card/id/torch/contractor/engineering)
@@ -47,7 +47,7 @@
 	pda_type = /obj/item/modular_computer/pda/roboticist
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticistec
-	name = OUTFIT_JOB_NAME("Roboticist - Torch")
+	name = OUTFIT_JOB_NAME("Roboticist - Titen")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)

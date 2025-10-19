@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Physician"
+	title = "Seinor Medical Officer"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -7,23 +7,16 @@
 	ideal_character_age = 45
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Medical Officer"
+	supervisors = "The URC Medical code and your ethics"
 	selection_color = "#013d3b"
 	economic_power = 10
 	alt_titles = list(
 		"Surgeon")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/senior/fleet,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/civ/contractor
-	)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 26
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -47,28 +40,22 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/junior_doctor
-	title = "Medical Resident"
+	title = "Standard Medical Officer"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 45
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "physicians and the Chief Medical Officer"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "Your seinor officer"
 	selection_color = "#013d3b"
 	economic_power = 6
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/senior/fleet,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/civ/contractor
-	)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 22
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -92,10 +79,10 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/doctor
-	title = "Medical Technician"
+	title = "Emergency Response Unit"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "physicians and the Chief Medical Officer"
+	supervisors = "Your intuition, ethics, and commanding officers"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
@@ -105,19 +92,9 @@
 		"Corpsman")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor
 	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/civ/contractor
-	)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 28
 	min_skill = list( // 9 points
 		SKILL_EVA = SKILL_BASIC, // 1 point
@@ -139,12 +116,12 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee
-	title = "Trainee Medical Technician"
+	title = "Juinor Officer"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "medical personnel and the Chief Medical Officer"
+	supervisors = "Your commanding officers"
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
@@ -152,14 +129,8 @@
 		"Corpsman Trainee")
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	skill_points = 10
 	min_skill = list( // 24 points
@@ -184,15 +155,15 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee/get_description_blurb()
-	return "You are a Trainee Medical Technician. You are learning how to treat and recover wounded crew from the more experienced medical personnel aboard. You are subordinate to the rest of the medical team. The role is only for players new to the medical system and department."
+	return "You are a Juinor "
 
 /datum/job/chemist
-	title = "Pharmacist"
+	title = "Biomedical Systems Seinor Officer"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "medical personnel, and the Chief Medical Officer"
+	supervisors = "Medical personnel, and the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -229,7 +200,7 @@
 	spawn_positions = 1
 	ideal_character_age = 40
 	economic_power = 5
-	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimum_character_age = list(SPECIES_HUMAN = 45)
 	minimal_player_age = 0
 	supervisors = "the Chief Medical Officer"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor

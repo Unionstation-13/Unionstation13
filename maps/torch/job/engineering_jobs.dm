@@ -1,5 +1,5 @@
 /datum/job/senior_engineer
-	title = "Senior Engineer"
+	title = "Engineer"
 	department = "Engineering"
 	department_flag = ENG
 	total_positions = 1
@@ -51,10 +51,10 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/senior_engineer/get_description_blurb()
-	return "You are the Senior Engineer. You are a veteran SNCO. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
+	return "You are the Engineer. You are a veteran of your trade. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
 
 /datum/job/engineer
-	title = "Engineer"
+	title = "Maintenance Technician"
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief Engineer"
@@ -63,23 +63,13 @@
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 30
 	alt_titles = list(
-		"Engine Technician",
-		"Damage Control Technician",
-		"Electrician",
-		"Atmospheric Technician",
+		"EVA Technician"
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/civ/contractor
 	)
 	skill_points = 26
@@ -112,10 +102,10 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer/get_description_blurb()
-	return "You are an Engineer. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
+	return "You are a maintenance technician. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
 
 /datum/job/engineer_trainee
-	title = "Engineer Trainee"
+	title = "Maintenance Technician Trainee"
 	department = "Engineering"
 	department_flag = ENG
 	total_positions = 2
@@ -127,12 +117,10 @@
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
+		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/civ/contractor
 	)
 
 	skill_points = 10
@@ -166,31 +154,27 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer_trainee/get_description_blurb()
-	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
+	return "You are an engineering trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
 
 /datum/job/roboticist
-	title = "Roboticist"
-	department = "Engineering"
+	title = "Technical Repair Specalist"
+	department = "Technical Service"
 	department_flag = ENG|ROB
 
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	supervisors = "the Chief Engineer."
+	supervisors = "ABCDEFG Inc's software/hardware rules"
 	selection_color = "#5b4d20"
 	economic_power = 6
 	alt_titles = list(
-		"Mechsuit Technician")
+		"Technician")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticistec,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticistfleet,
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/civ/contractor
 	)
 	skill_points = 26
@@ -217,4 +201,6 @@
 	)
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Engineer."
+	return "You are a Technical Repair Specalist.\
+	you are responsible for managing the ship's hardware systems such as synthetic units or the artificial intelligence(to a degree), however, please remember that you\
+	are not required to follow orders from the Chief Engineer or any other engineering staff, as you are an employee of ABCDEFG inc."

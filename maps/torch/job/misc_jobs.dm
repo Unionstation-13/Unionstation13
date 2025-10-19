@@ -24,23 +24,12 @@ Civilian
 *******/
 
 /datum/job/assistant
-	title = "Passenger"
+	title = "Prisoner of war"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	announced = FALSE
-	alt_titles = list(
-		"Journalist" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Historian",
-		"Botanist",
-		"Investor" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/investor,
-		"Naturalist",
-		"Ecologist",
-		"Entertainer",
-		"Independent Observer",
-		"Sociologist",
-		"Trainer")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
@@ -51,13 +40,13 @@ Civilian
 	max_goals = 7
 
 /datum/job/merchant
-	title = "Merchant"
+	title = "Diplomatic Merchant"
 	department = "Civilian"
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 2
 	availablity_chance = 30
-	supervisors = "the invisible hand of the market"
+	supervisors = "Trade Regulations put in place by Cooran Supply and Trading."
 	ideal_character_age = 30
 	minimal_player_age = 0
 	create_record = 0

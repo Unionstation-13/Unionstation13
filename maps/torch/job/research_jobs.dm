@@ -1,5 +1,5 @@
 /datum/job/senior_scientist
-	title = "Senior Researcher"
+	title = "Research Supervisor"
 	department = "Science"
 	department_flag = SCI
 
@@ -12,14 +12,10 @@
 	minimum_character_age = list(SPECIES_HUMAN = 30)
 	ideal_character_age = 50
 	alt_titles = list(
-		"Research Supervisor")
+		"Server Manager")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/ec/o1)
 
 	access = list(
 		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
@@ -74,16 +70,10 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
-	)
+	allowed_branches = list(/datum/mil_branch/civilian,)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
-	)
+		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
+		)
 
 	access = list(
 		access_tox, access_tox_storage, access_research, access_petrov, access_petrov_helm,
@@ -112,16 +102,9 @@
 		"Field Assistant")
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
-	)
+	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/assist,
-		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/assist/solgov
+		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/assist
 	)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,

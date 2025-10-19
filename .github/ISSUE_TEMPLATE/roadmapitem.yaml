@@ -1,0 +1,37 @@
+name: Roadmap addition
+description: File something that needs to be on the roadmap.
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of issue/addition
+      placeholder: Inconsistency in jobs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Why?
+      placeholder: The jobs gotta follow lore.
+
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Specific information for locating
+      description: >
+        e.g. an object name, specific message outputs, object paths or file names if known, specific maps and/or coordinates, etc
+      placeholder: |
+        Item name: The Command Jobs
+        Item path: `Maps/torch/jobs/randomjobs.something`
+
+  - type: checkboxes
+    id: version
+    attributes:
+      label: Issue bingo
+      description: Check all that apply.
+      options:
+        - label: High Priority
+        - label: Low Priority
+        - label: Pre Launch Issue
+        - label: Assistance Needed or self applicable

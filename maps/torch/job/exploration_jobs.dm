@@ -1,19 +1,19 @@
 /datum/job/pathfinder
-	title = "Pathfinder"
+	title = "Senior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Science Officer"
+	supervisors = "The United Rocknall Corporate representative"
 	selection_color = "#68099e"
 	minimal_player_age = 1
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
+		/datum/mil_rank/civ/contractor
 	)
 	skill_points = 28
 	min_skill = list( // 9 points
@@ -41,11 +41,11 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the EC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot Charon if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
+	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"
-	supervisors = "the Pathfinder"
+	supervisors = "Senior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
@@ -56,16 +56,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 25
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
-	)
+	allowed_branches = list(/datum/mil_branch/civilian,)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7
 	)
 
 	access = list(
@@ -85,22 +78,19 @@
 	)
 
 /datum/job/explorer
-	title = "Explorer"
+	title = "Junior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Pathfinder"
+	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5
-	)
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC // 1 point
 	)
@@ -119,4 +109,4 @@
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
 /datum/job/explorer/get_description_blurb()
-	return "You are an Explorer. Your duty is to go on expeditions to away sites. The Pathfinder is your team leader. You are to look for anything of economic or scientific interest to the SCG - mineral deposits, alien flora/fauna, artifacts. You will also likely encounter hazardous environments, aggressive wildlife or malfunctioning defense systems, so tread carefully."
+	return "You are a Junior Rocknall Associate. Your duty is to maintain your senior officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."

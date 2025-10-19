@@ -39,15 +39,14 @@
 			/datum/mil_branch/civilian,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
-		)
+		),
+		/singleton/species/skrell = list(/datum/mil_branch/alien),
+		/singleton/species/unathi = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet)
 	)
 
 	species_to_branch_whitelist = list(
 		/singleton/species/diona        = list(/datum/mil_branch/civilian),
 		/singleton/species/nabber       = list(/datum/mil_branch/civilian),
-		/singleton/species/skrell       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
-		/singleton/species/unathi       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/singleton/species/unathi/yeosa = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/singleton/species/adherent     = list(/datum/mil_branch/civilian),
 		/singleton/species/vox          = list(/datum/mil_branch/alien)
 	)
@@ -77,26 +76,6 @@
 				/datum/mil_rank/fleet/e6,
 				/datum/mil_rank/fleet/e7,
 				/datum/mil_rank/fleet/o1
-			)
-		),
-		/singleton/species/skrell = list(
-			/datum/mil_branch/expeditionary_corps = list(
-				/datum/mil_rank/ec/e3,
-				/datum/mil_rank/ec/e5,
-				/datum/mil_rank/ec/e7,
-				/datum/mil_rank/ec/o1
-			)
-		),
-		/singleton/species/unathi = list(
-			/datum/mil_branch/expeditionary_corps = list(
-				/datum/mil_rank/ec/e3,
-				/datum/mil_rank/ec/e5
-			)
-		),
-		/singleton/species/unathi/yeosa = list(
-			/datum/mil_branch/expeditionary_corps = list(
-				/datum/mil_rank/ec/e3,
-				/datum/mil_rank/ec/e5
 			)
 		),
 		/singleton/species/vox = list(
