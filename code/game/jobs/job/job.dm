@@ -489,3 +489,51 @@
 		. = min_skill[S.type]
 	if(!.)
 		. = SKILL_MIN
+ar/global/list/job_name_mapping = list(
+    "Marshall" = "Marshall %s",
+    "Commanding officer" = "Commanding Officer %s",
+    "First Lieutenant" = "First Lieutenant %s",
+    "Sci-med administrator" = "Administrator %s",
+    "Medical Administrator" = "Junior Administrator %s",
+    "Administrator(cybersec)" = "Cyber Administrator %s",
+    "Physician" = "Doctor %s",
+    "Pharmacists" = "Biomechanical Specialist %s",
+    "Paramedics" = "Emergency Response Unit %s",
+    "Psychologist" = "Counselor %s",
+    "Peacekeeper" = "Sergeant %s",
+    "Intel Officer" = "Intelligence Officer %s",
+    "Counselor" = "Doctor %s",
+    "Engineer" = "Technician %s",
+    "Head Engineer" = "Systems Director %s",
+    "Community Manager" = "Domestic Affairs Manager %s"
+)
+
+// Special case for BIO Service - check if job title contains "BIO"
+/mob/living/carbon/human/proc/apply_job_name(job_title)
+    var/format = null
+
+    // Check for BIO Service first (special case)
+    if(findtext(job_title, "BIO"))
+        format = "Service Specialist %s"
+    else
+        format = job_name_mapping[job_title]
+
+    if(format)
+        var/old_name = real_name
+        var/surname = extract_surname(old_name)
+        real_name = replacetext(format, "%s", surname)
+        name = real_name
+
+// Helper proc to extract surname
+/mob/living/carbon/human/proc/extract_surname(full_name)
+    var/list/name_parts = splittext(full_name, " ")
+    if(name_parts.len >= 2)
+        return name_parts[name_parts.len] // Get last word
+    else
+        return full_name // Fallback to full name
+/mob/living/carbon/human/proc/equip_job(job)
+    . = ..()
+
+    // Apply job-based name change
+    if(job && job.title)
+        apply_job_name(job.title)
