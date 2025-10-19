@@ -13,7 +13,7 @@
 	z_eventually_space = TRUE
 	var/starlit = FALSE
 
-Initialize()
+/turf/space/Initialize()
 	. = ..()
 	AMBIENT_LIGHT_QUEUE_TURF(src) //Doesnt really matter if we're considered outside or not
 
@@ -34,7 +34,7 @@ Initialize()
 
 	return INITIALIZE_HINT_LATELOAD // oh no! we need to switch to being a different kind of turf!
 
-Destroy()
+/turf/space/Destroy()
 	// Cleanup cached z_eventually_space values above us.
 	if (above)
 		var/turf/T = src
@@ -44,21 +44,21 @@ Destroy()
 			T.z_eventually_space = FALSE
 	return ..()
 
-LateInitialize(mapload)
+/turf/space/LateInitialize(mapload)
 	if(GLOB.using_map.base_floor_area)
 		var/area/new_area = locate(GLOB.using_map.base_floor_area) || new GLOB.using_map.base_floor_area
 		ChangeArea(src, new_area)
 	ChangeTurf(GLOB.using_map.base_floor_type)
 
 // override for space turfs, since they should never hide anything
-levelupdate()
+/turf/space/levelupdate()
 	for(var/obj/O in src)
 		O.hide(0)
 
-is_solid_structure()
+/turf/space/is_solid_structure()
 	return locate(/obj/structure/lattice, src) || locate(/obj/structure/catwalk, src) //counts as solid structure if it has a lattice or catwalk
 
-use_tool(obj/item/C, mob/living/user, list/click_params)
+/turf/space/use_tool(obj/item/C, mob/living/user, list/click_params)
 	var/datum/extension/support_lattice/sl = get_extension(src, /datum/extension/support_lattice)
 	if (sl.try_construct(C, user))
 		return TRUE
@@ -68,13 +68,13 @@ use_tool(obj/item/C, mob/living/user, list/click_params)
 
 // Ported from unstable r355
 
-Entered(atom/movable/A as mob|obj)
+/turf/space/Entered(atom/movable/A as mob|obj)
 	..()
 	if(A && A.loc == src)
 		if (A.x <= TRANSITIONEDGE || A.x >= (world.maxx - TRANSITIONEDGE + 1) || A.y <= TRANSITIONEDGE || A.y >= (world.maxy - TRANSITIONEDGE + 1))
 			A.touch_map_edge()
 
-is_open()
+/turf/space/is_open()
 	return TRUE
 
 //Bluespace turfs for shuttles and possible future transit use
