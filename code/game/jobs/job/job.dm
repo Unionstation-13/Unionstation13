@@ -495,21 +495,21 @@ var/global/list/job_name_mapping = list(
 	"First Lieutenant" = "First Lieutenant %s",
 	"Sci-Med Officer" = "Administrator %s",
 	"Medical Administrator" = "Junior Administrator %s",
-	"Seinor Medical Officer" = "Doctor %s",          // Note: Keeping original typo until fixed in codebase
+	"Seinor Medical Officer" = "Doctor %s",
 	"Standard Medical Officer" = "Doctor %s",
 	"Emergency Response Unit" = "Emergency Response Unit %s",
 	"Counselor" = "Doctor %s",
-	"Second Lieutenant" = "Second Lieutenant %s"
+	"Psychologist" = "Counselor %s",
 	"Peacekeeper" = "Sergeant %s",
 	"Chief Engineer" = "Systems Director %s",
 	"Community Services Director" = "Domestic Affairs Manager %s",
 	"B.I.O Junior Associate" = "Service Specialist %s",
 	"B.I.O Senior Serviceman" = "Service Specialist %s",
 	"Junior Kitchen Assistant" = "Service Specialist %s",
-	"Bridge Secretary" = "Archivist %s",
+	"Bridge Secretary" = "Archive Manager %s",
 	"Intelligence Officer" = "Intelligence Officer %s",
 	"Maintenance Technician" = "Technician %s",
-	"Pharmacist" = "Biomedical Systems Seinor Officer %s"  // Note: Keeping typo until fixed
+	"Pharmacist" = "Biomedical Systems Seinor Officer %s"
 )
 // Main proc to apply job-based name changes
 /mob/living/carbon/human/proc/apply_job_name(job_title)
