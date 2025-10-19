@@ -8,16 +8,22 @@
 	path = /obj/item/storage/briefcase
 
 /datum/gear/utility/clipboard
-	display_name = "clipboard"
+	display_name = "clipboards"
 	path = /obj/item/material/folder/clipboard
+
+/datum/gear/utility/clipboard/New()
+	..()
+	var/clipboards = list()
+	clipboards["wooden clipboard"] = /obj/item/material/folder/clipboard
+	clipboards["plastic clipboard"] = /obj/item/material/folder/clipboard/plastic
+	clipboards["aluminium clipboard"] = /obj/item/material/folder/clipboard/aluminium
+	clipboards["glass clipboard"] = /obj/item/material/folder/clipboard/glass
+	clipboards["ebony clipboard"] = /obj/item/material/folder/clipboard/ebony
+	gear_tweaks += new/datum/gear_tweak/path(clipboards)
 
 /datum/gear/utility/folder
 	display_name = "folders"
 	path = /obj/item/material/folder
-
-/datum/gear/utility/taperecorder
-	display_name = "tape recorder"
-	path = /obj/item/device/taperecorder
 
 /datum/gear/utility/folder/New()
 	..()
@@ -28,6 +34,10 @@
 	folders["white folder"] = /obj/item/material/folder/white
 	folders["yellow folder"] = /obj/item/material/folder/yellow
 	gear_tweaks += new/datum/gear_tweak/path(folders)
+
+/datum/gear/utility/taperecorder
+	display_name = "tape recorder"
+	path = /obj/item/device/taperecorder
 
 /datum/gear/utility/paicard
 	display_name = "personal AI device"
@@ -51,14 +61,19 @@
 	cost = 2
 
 /datum/gear/utility/pen
-	display_name = "Multicolored Pen"
-	path = /obj/item/pen/multi
-	cost = 2
+	display_name = "pens"
+	path = /obj/item/pen
 
-/datum/gear/utility/fancy
-	display_name = "Fancy Pen"
-	path = /obj/item/pen/fancy
-	cost = 2
+/datum/gear/utility/pen/New()
+	..()
+	var/pens = list()
+	pens["black pen"] = /obj/item/pen
+	pens["red pen"] = /obj/item/pen/red
+	pens["blue pen"] = /obj/item/pen/blue
+	pens["green pen"] = /obj/item/pen/green
+	pens["fancy pen"] = /obj/item/pen/fancy
+	pens["multicolored pen"] = /obj/item/pen/multi
+	gear_tweaks += new/datum/gear_tweak/path(pens)
 
 /datum/gear/utility/hand_labeler
 	display_name = "hand labeler"
@@ -103,6 +118,6 @@ Pouches and kits
 ****************/
 
 /datum/gear/utility/pencilcase
-	display_name = "Pencil case"
+	display_name = "pencil case"
 	path = /obj/item/storage/fancy/pencilcase
 	cost = 2

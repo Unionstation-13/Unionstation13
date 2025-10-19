@@ -167,7 +167,7 @@
 	return 1
 
 /obj/item/autopsy_scanner/proc/set_target(mob/new_target, user)
-	if (new_target.stat != DEAD && new_target.stat != FAKEDEATH)
+	if (!new_target.is_dead())
 		to_chat(user, SPAN_NOTICE("Scanned patient is currently alive. Aborting."))
 		return
 	if(target_name != new_target.name)

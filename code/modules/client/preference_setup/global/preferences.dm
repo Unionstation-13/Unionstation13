@@ -317,6 +317,36 @@ var/global/list/_client_preferences_by_type
 	options = list(GLOB.PREF_HIDE, GLOB.PREF_SHOW)
 	default_value = GLOB.PREF_HIDE
 
+
+GLOBAL_CONST(PREF_VA_NOTIFY, "Start Notify")
+GLOBAL_CONST(PREF_VA_POPUP, "Start Popup")
+GLOBAL_CONST(PREF_VA_HALF_NOTIFY, "Reminder Notify")
+GLOBAL_CONST(PREF_VA_HALF_POPUP, "Reminder Popup")
+
+/datum/client_preference/vote_assertiveness
+	description = "Vote Assertiveness"
+	key = "VOTE_ASSERTIVENESS"
+	options = list(
+		GLOB.PREF_VA_HALF_NOTIFY,
+		GLOB.PREF_VA_HALF_POPUP,
+		GLOB.PREF_VA_POPUP,
+		GLOB.PREF_VA_NOTIFY
+	)
+
+/datum/client_preference/vote_assertiveness/changed(mob/mob, new_value)
+	switch (new_value)
+		if (GLOB.PREF_VA_HALF_NOTIFY)
+			to_chat(mob, "[description]: When a vote starts, you will be notified. If you have not voted by half time, you will be notified again.")
+		if (GLOB.PREF_VA_HALF_POPUP)
+			to_chat(mob, "[description]:When a vote starts, you will be notified. If you have not voted by half time, it will pop up.")
+		if (GLOB.PREF_VA_POPUP)
+			to_chat(mob, "[description]:When a vote starts, it will pop up.")
+		if (GLOB.PREF_VA_NOTIFY)
+			to_chat(mob, "[description]:When a vote starts, you will be notified.")
+		else
+			to_chat(mob, {"[description]: "[new_value]" is unexpected. Please report this."})
+
+
 /********************
 * General Staff Preferences *
 ********************/
