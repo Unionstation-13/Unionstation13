@@ -1,5 +1,6 @@
 #define PAINT_REGION_PAINT    "Paint"
 #define PAINT_REGION_STRIPE   "Stripe"
+#define PAINT_REGION_FILL      "Fill"
 #define PAINT_REGION_WINDOW   "Window"
 
 #define PLACEMENT_MODE_QUARTERS  1
@@ -297,8 +298,8 @@
 		return user.dir
 	if (istext(click_parameters)) // Borgs pass down click parameters in a string format
 		click_parameters = params2list(click_parameters)
-	var/mouse_x = text2num(click_parameters["icon-x"])
-	var/mouse_y = text2num(click_parameters["icon-y"])
+	var/mouse_x = text2num(click_parameters[MOUSE_ICON_X])
+	var/mouse_y = text2num(click_parameters[MOUSE_ICON_Y])
 	switch (placement_mode)
 		if (PLACEMENT_MODE_QUARTERS)
 			// One case for each of the four quarters of a turf
@@ -370,23 +371,31 @@
 	return choice
 
 /obj/item/device/paint_sprayer/proc/paint_wall(turf/simulated/wall/wall, mob/user)
-	if(istype(wall) && (!wall.material?.wall_flags))
-		to_chat(user, SPAN_WARNING("You can't paint this wall type."))
+	if (!istype(wall))
 		return
 	if (!user.use_sanity_check(wall, src))
-		return FALSE
-	if(istype(wall))
-		if(wall_paint_region == PAINT_REGION_PAINT)
-			if(!(wall.material?.wall_flags & MATERIAL_PAINTABLE_MAIN))
+		return
+	var/wall_flags = wall.material?.wall_flags
+	if (!wall_flags)
+		to_chat(user, SPAN_WARNING("You can't paint this wall type."))
+		return
+	switch (wall_paint_region)
+		if (PAINT_REGION_PAINT)
+			if (~wall_flags & MATERIAL_PAINTABLE_MAIN)
 				to_chat(user, SPAN_WARNING("You can't paint this wall type."))
 				return FALSE
 			wall.paint_wall(paint_color)
 			return TRUE
-		else if(wall_paint_region == PAINT_REGION_STRIPE)
-			if(!(wall.material?.wall_flags & MATERIAL_PAINTABLE_STRIPE))
+		if (PAINT_REGION_STRIPE)
+			if (~wall_flags & MATERIAL_PAINTABLE_STRIPE)
 				to_chat(user, SPAN_WARNING("You can't stripe this wall type."))
 				return FALSE
 			wall.stripe_wall(paint_color)
+			return TRUE
+		if (PAINT_REGION_FILL)
+			wall.paint_wall(paint_color)
+			if (wall_flags & MATERIAL_PAINTABLE_STRIPE)
+				wall.stripe_wall(paint_color)
 			return TRUE
 
 
@@ -455,12 +464,16 @@
 	change_color(new_color, user)
 
 /obj/item/device/paint_sprayer/proc/choose_wall_paint_region(mob/user)
-	if(wall_paint_region == PAINT_REGION_STRIPE)
-		wall_paint_region = PAINT_REGION_PAINT
-		to_chat(user, SPAN_NOTICE("You set \the [src] to paint walls."))
-	else
-		wall_paint_region = PAINT_REGION_STRIPE
-		to_chat(user, SPAN_NOTICE("You set \the [src] to stripe walls."))
+	switch (wall_paint_region)
+		if (PAINT_REGION_FILL)
+			wall_paint_region = PAINT_REGION_PAINT
+			to_chat(user, SPAN_NOTICE("You set \the [src] to paint walls."))
+		if (PAINT_REGION_PAINT)
+			wall_paint_region = PAINT_REGION_STRIPE
+			to_chat(user, SPAN_NOTICE("You set \the [src] to stripe walls."))
+		if (PAINT_REGION_STRIPE)
+			wall_paint_region = PAINT_REGION_FILL
+			to_chat(user, SPAN_NOTICE("You set \the [src] to fill walls."))
 
 /obj/item/device/paint_sprayer/verb/choose_preset_color()
 	set name = "Choose Preset Color"
@@ -483,14 +496,15 @@
 	if (A != paint_sprayer)
 		if(!istype(user.buckled) || user.buckled.buckle_movable)
 			user.face_atom(A)
-		if(modifiers["ctrl"] && paint_sprayer.pick_color(A, user))
+		if(modifiers[MOUSE_CTRL] && paint_sprayer.pick_color(A, user))
 			return
-		if(modifiers["shift"] && paint_sprayer.remove_paint(A, user))
+		if(modifiers[MOUSE_SHIFT] && paint_sprayer.remove_paint(A, user))
 			return
 	user.ClickOn(A, params)
 
 #undef PAINT_REGION_PAINT
 #undef PAINT_REGION_STRIPE
+#undef PAINT_REGION_FILL
 #undef PAINT_REGION_WINDOW
 
 #undef PLACEMENT_MODE_QUARTERS

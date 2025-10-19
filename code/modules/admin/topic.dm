@@ -886,7 +886,7 @@
 					to_chat(usr, SPAN_DANGER("This mob's occupant has changed from [given_key] to [mob_key]. Please try again."))
 					show_player_panel(M)
 					return
-				AddBan(mob_key, M.computer_id, reason, usr.ckey, 1, mins)
+				AddBan(mob_key, M.last_cid, reason, usr.ckey, 1, mins)
 				var/mins_readable = time_to_readable(mins MINUTES)
 				ban_unban_log_save("[usr.client.ckey] has banned [mob_key]. - Reason: [reason] - This will be removed in [mins_readable].")
 				notes_add(mob_key,"[usr.client.ckey] has banned [mob_key]. - Reason: [reason] - This will be removed in [mins_readable].",usr)
@@ -917,9 +917,9 @@
 				switch(alert(usr,"IP ban?",,"Yes","No","Cancel"))
 					if("Cancel")	return
 					if("Yes")
-						AddBan(mob_key, M.computer_id, reason, usr.ckey, 0, 0, M.lastKnownIP)
+						AddBan(mob_key, M.last_cid, reason, usr.ckey, 0, 0, M.last_address)
 					if("No")
-						AddBan(mob_key, M.computer_id, reason, usr.ckey, 0, 0)
+						AddBan(mob_key, M.last_cid, reason, usr.ckey, 0, 0)
 				to_chat(M, SPAN_DANGER("You have been banned by [usr.client.ckey].\nReason: [reason]."))
 				to_chat(M, SPAN_WARNING("This is a ban until appeal."))
 				if(config.banappeals)
@@ -2145,6 +2145,11 @@
 				alt_title = M.mind.role_alt_title
 
 			M.delete_inventory(TRUE)
+
+			for (var/obj/item/organ/internal/augment/custom_augment in M.contents)
+				custom_augment.removed(M)
+				qdel(custom_augment)
+
 			job.equip(M, M.mind ? M.mind.role_alt_title : "", M.char_branch, M.char_rank)
 			spawn_in_storage = SSjobs.equip_custom_loadout(M, job)
 

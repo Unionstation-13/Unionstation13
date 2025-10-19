@@ -78,6 +78,10 @@ SUBSYSTEM_DEF(vote)
 	if(!new_vote.setup(creator, automatic))
 		return FALSE
 
+	var/half_vote_duration = round(new_vote.time_remaining * 0.5)
+	addtimer(new Callback(src, PROC_REF(notify_voters)), half_vote_duration SECONDS)
+	addtimer(new Callback(src, PROC_REF(notify_voters), TRUE), 0)
+
 	active_vote = new_vote
 	last_started_time = world.time
 	return TRUE
@@ -133,6 +137,46 @@ SUBSYSTEM_DEF(vote)
 	active_vote.report_result() // Will not make announcement, but do any override failure reporting tasks.
 	QDEL_NULL(active_vote)
 	reset()
+
+/datum/controller/subsystem/vote/proc/notify_voters(at_start)
+	if (!active_vote)
+		return
+	var/notify_message = "Enter the <b>vote</b> verb or [aref("click here", "vote_panel=1")] \
+		to vote.\nYou have [round(active_vote.time_remaining)] seconds"
+	if (at_start)
+		notify_message = SPAN_SYSTEM("<b>[active_vote.initiator] started \a \
+			[active_vote.name] vote.</b>\n[notify_message] to vote.")
+	else
+		notify_message = SPAN_SYSTEM("<b>The [active_vote.name] vote is half \
+			finished.</b>\n[notify_message] left to vote.")
+	var/notify_sound = sound('sound/ui/vote-notify.ogg', FALSE, FALSE, GLOB.vote_sound_channel, 33)
+	var/already_voted = active_vote.votes
+	var/list/voters = active_vote.get_allowed_voters()
+	for (var/mob/mob as anything in voters)
+		if (mob.ckey in already_voted)
+			continue
+		var/pref = mob.get_preference_value(/datum/client_preference/vote_assertiveness)
+		if (at_start)
+			if (pref == GLOB.PREF_VA_POPUP)
+				show_panel(mob)
+			to_chat(mob, notify_message)
+			sound_to(mob, notify_sound)
+			continue
+		if (pref == GLOB.PREF_VA_HALF_NOTIFY)
+			to_chat(mob, notify_message)
+			sound_to(mob, notify_sound)
+		else if (pref == GLOB.PREF_VA_HALF_POPUP)
+			to_chat(mob, notify_message)
+			sound_to(mob, notify_sound)
+			show_panel(mob)
+	if (!at_start)
+		return
+	notify_message = SPAN_SYSTEM("<b>[active_vote.initiator] started \a [active_vote.name] vote.\
+		</b>\nEnter the <b>vote</b> verb or [aref("click here", "vote_panel=1")] to watch.\n\
+		You cannot participate: [active_vote.get_disallowed_reason()]")
+	for (var/mob/mob as anything in (GLOB.player_list - voters))
+		to_chat(mob, notify_message)
+
 
 /datum/controller/subsystem/vote/Topic(href,href_list[],hsrc)
 	if(!usr || !usr.client)

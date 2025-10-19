@@ -26,29 +26,23 @@
 
 /singleton/cultural_info/culture/human/martian_tunneller
 	name = CULTURE_HUMAN_MARSTUN
-	description = "You are one of the people of the UnderCities of Mars. The UnderCities, originally built as 'temporary' living space while the cities above them \
-	were constructed, have since grown far beyond their original scope and have now spread out underneath the red planet. Tunnellers, despite typically having access \
-	to the same amenities and services as Surfacers are somewhat poorer than their aboveground brethren as a result of their less desirable locale as well as a strong \
-	criminal presence stemming from centuries of poor policing and a focus on the surface by the martian government. Most Tunnellers are resilient, though distrusting \
-	and wary of outsiders, and tend to strongly dislike non-Martians."
+	description = "You were born on Mars, a planet scarred by a harrowing war, an oppresive\
+	 autocracy, and a failing economy. For your early years, you lived in scorched\
+	 huts, destroyed structures, and refugee camps. Your whole life has been under\
+	 the thumb of the Peacekeepers. However, your fate changed one day.\
+	The UGN arrived, they took you, they took you to the stars. To your dreams.\
+	Or that is what you thought."
 	economic_power = 0.9
 
 /singleton/cultural_info/culture/human/luna_poor
 	name = CULTURE_HUMAN_LUNAPOOR
-	description = "You are from Luna, a natural satellite of Earth and home to some of the richest, mostly highly cultured or influential people humanity has. Unfortunately, you are most certainly not one of them. \
-	While Luna is known for its richness, the arts, culture and old money, it is also home to a sizeable population of working poor or middle-lower income persons. Typically the corporate employees \
-	of one of the various corporations, persons hired in service roles in one of the many prefectures or a resident of New Vegas. The 'poor' of Luna typically resent the rich because of their \
-	financial, cultural and political power and influence over their lives."
+	description = "DO NOT CHOOSE THIS OPTION" //Coders delete luna as an option
 	economic_power = 1
 	language = LANGUAGE_HUMAN_SELENIAN
 
 /singleton/cultural_info/culture/human/luna_rich
 	name = CULTURE_HUMAN_LUNARICH
-	description = "You are from Luna, Earths only natural satellite and home to some of the richest, most highly cultured, or influential people of humanity. Fortunately for you, you are one of this elite and well \
-	off class of people. The rich of Luna are politically and economically influential not just in Luna, but in the various corporations, organizations and government bodies of the SCG. \
-	Luna's upper class isn't equal; generally divided between new, corporate money and old, dynastic money; many members of the old dynasties look down on the newly wealthy. \
-	Much of the elite of Luna is embroiled in 'The Game' a state of political manoeuvring and intrigue among various factions and persons of influence and power \
-	with implications far beyond the squabbles of the prefectures."
+	description = "DO NOT CHOOSE THIS OPTION" //Coders delete luna as an option
 	economic_power = 1.3
 	language = LANGUAGE_HUMAN_SELENIAN
 
@@ -115,11 +109,7 @@
 
 /singleton/cultural_info/culture/human/earthling
 	name = CULTURE_HUMAN_EARTH
-	description = "You are from Earth, home of humanity. Earth culture is much as it has been for centuries, with the old nation states, while no longer politically important, still \
-	culturally significant to many humans across the galaxy, as all trace their roots to somewhere on the planet. While not as geographically diverse as they were in the past, most \
-	countries have at least two arcologies which make up much of the population, with the remaining humans living in small villages or from one of the many nature preserve communes. \
-	The long recovery period of Earth has resulted in much of the population being environmentally aware and heavily conservationist, eager to avoid past mistakes. Most Earthers are \
-	a content folk who see themselves as close to nature and keepers of the heritage of humanity."
+	description = "DO NOT CHOOSE THIS ONE" // Coder remove Earth or replace
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/ceti_north
@@ -238,18 +228,13 @@
 
 /singleton/cultural_info/culture/human/confederate_terra
 	name = CULTURE_HUMAN_CONFED_TERRA
-	description = "You are from the core of the Gilgamesh Colonial Confederation. Being from the Confederation's capital, your people embody what it means to be a part of the GCC. \
-	Unfortunately, the years since the war have not been easy on Terra, and the long period of economic recovery has not made life easy. The people of Terra are typically employed \
-	in the military, industrial, government or service sectors, with an emphasis being placed on mandatory military service. Terrans today are generally poor, bitter and a somewhat broken people angry and \
-	resentful about their loss in the Gaia Conflict. An upbringing from Terra emphasises an odd mix of service to the state, liberalism and militarism."
+	description = "Nitros Republic placeholder WIP DO NOT CHOOSE"
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/confederate_zemlya
 	name = CULTURE_HUMAN_CONFED_ZEMLYA
-	description = "You are from the core of the Gilgamesh Colonial Confederation. Being from Gilgamesh's Industrial Capital, your people embody what it means to be a part of the working class GCC. \
-	Unfortunately, the years since the war have not been easy on Zemlya and the long period of economic recovery has not made life easy. The people of Zemlya are typically employed \
-	in the vast industrial sector. Less patriotic then those from Terra itself, Zemlyans are still an extremely proud people who have pride in their industrial and working class origins."
+	description = "Nitros Republic Rich placeholder WIP DO NOT CHOOSE"
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 1.0
 

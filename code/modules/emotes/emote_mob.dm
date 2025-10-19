@@ -6,7 +6,7 @@
 
 /mob/proc/emote(act, m_type, message)
 	// s-s-snowflake
-	if((src.stat == DEAD || status_flags & FAKEDEATH) && act != "deathgasp")
+	if(is_dead() && act != "deathgasp")
 		return
 	if(usr == src) //client-called emote
 		if (client && (client.prefs.muted & MUTE_IC))
@@ -22,18 +22,6 @@
 			return
 
 		if(act == "me")
-			return custom_emote(m_type, message)
-
-		if(act == "custom")
-			if(!message)
-				message = sanitize(input("Enter an emote to display.") as text|null)
-			if(!message)
-				return
-			if (!m_type)
-				if(alert(src, "Is this an audible emote?", "Emote", "Yes", "No") == "No")
-					m_type = VISIBLE_MESSAGE
-				else
-					m_type = AUDIBLE_MESSAGE
 			return custom_emote(m_type, message)
 
 	var/splitpoint = findtext(act, " ")
@@ -122,13 +110,7 @@
 		to_chat(src, "You are unable to emote.")
 		return
 
-	var/input
-	if(!message)
-		input = sanitize(input(src,"Choose an emote to display.") as text|null)
-	else
-		input = message
-
-	if(input)
+	if(message)
 		message = format_emote(src, message)
 	else
 		return

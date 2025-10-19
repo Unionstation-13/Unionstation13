@@ -295,10 +295,6 @@
 
 	var/static/minimum_byond_build = 1647
 
-	var/static/login_export_addr
-
-	var/static/warn_if_staff_same_ip = FALSE
-
 	var/static/enter_allowed = TRUE
 
 	var/static/player_limit = FALSE
@@ -459,6 +455,47 @@
 	var/static/deletion_starts_paused = TRUE
 
 	var/static/enable_cold_mist = FALSE
+
+	/// Whether we should skip warning about connections with CID collisions
+	var/static/skip_conn_warn_cid_all = FALSE
+
+	/**
+	* If skip_conn_warn_cid_all is falsy, an optional list of CIDs to skip anyway
+	* Set by using the config option skip_conn_warn_cid multiple times:
+	* skip_conn_warn_cid 14138560
+	* skip_conn_warn_cid 10964753
+	* skip_conn_warn_cid 16383642
+	*/
+	var/static/list/skip_conn_warn_cid_list
+
+	/// Whether we should skip warning about connections with address collisions
+	var/static/skip_conn_warn_address_all = FALSE
+
+	/**
+	* If skip_conn_warn_address_all is falsy, an optional list of addresses to skip anyway
+	* Set by using the config option skip_conn_warn_address multiple times:
+	* skip_conn_warn_address 0.0.0.0
+	* skip_conn_warn_address 0.0.0.1
+	* skip_conn_warn_address 0.0.0.2
+	*/
+	var/static/list/skip_conn_warn_address_list
+
+	/**
+	* An optional list of ckeys to skip warning about connection detail collisions
+	* Set by using the config option skip_conn_warn_address multiple times:
+	* skip_conn_warn_ckey loomingwombat2
+	* skip_conn_warn_ckey exadv1
+	* skip_conn_warn_ckey p99gnf
+	*/
+	var/static/list/skip_conn_warn_ckey_list
+
+	/// Whether we should warn the triggering client about connection detail collisions
+	var/static/skip_conn_warn_client = FALSE
+
+	/// The message to display to clients if they have a collision and don't match a skip_conn* rule
+	var/static/conn_warn_client_message = "You share some connection details with another \
+	connected player. Using more than one account at a time is not allowed. If this is your \
+	first time seeing this message, please contact staff by using the AdminHelp command."
 
 
 /datum/configuration/New()
@@ -738,8 +775,6 @@
 				minimum_byond_version = text2num(value)
 			if ("minimum_byond_build")
 				minimum_byond_build = text2num(value)
-			if ("login_export_addr")
-				login_export_addr = value
 			if ("irc_bot_host")
 				irc_bot_host = value
 			if ("main_irc")
@@ -894,12 +929,32 @@
 				warn_autoban_duration = max(1, text2num(value))
 			if ("run_empty_levels")
 				run_empty_levels = TRUE
-			if ("warn_if_staff_same_ip")
-				warn_if_staff_same_ip = TRUE
 			if ("deletion_starts_paused")
 				deletion_starts_paused = TRUE
 			if ("enable_cold_mist")
 				enable_cold_mist = TRUE
+			if ("skip_conn_warn_cid_all")
+				skip_conn_warn_cid_all = TRUE
+			if ("skip_conn_warn_cid")
+				if (!islist(value))
+					value = list(value)
+				skip_conn_warn_cid_list = value
+			if ("skip_conn_warn_address_all")
+				skip_conn_warn_address_all = TRUE
+			if ("skip_conn_warn_address")
+				if (!islist(value))
+					value = list(value)
+				skip_conn_warn_address_list = value
+			if ("skip_conn_warn_ckey")
+				if (!islist(value))
+					value = list(value)
+				for (var/i = 1 to length(value))
+					value[i] = ckey(value[i])
+				skip_conn_warn_ckey_list = value
+			if ("skip_conn_warn_client")
+				skip_conn_warn_client = TRUE
+			if ("conn_warn_client_message")
+				conn_warn_client_message = value
 			else
 				log_misc("Unknown setting in config/config.txt: '[name]'")
 

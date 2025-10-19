@@ -63,7 +63,7 @@
 
 
 /// Place I into the first slot it fits in the order of slots_by_priority, returning the slot or falsy.
-/mob/proc/equip_to_appropriate_slot(obj/item/I, skip_storage, skip_timer)
+/mob/proc/equip_to_appropriate_slot(obj/item/I, skip_storage, skip_timer, destroy_on_fail, force_equip)
 	var/static/list/slots_by_priority = list(
 		slot_back, slot_wear_id, slot_w_uniform, slot_wear_suit,
 		slot_wear_mask, slot_head, slot_shoes, slot_gloves, slot_l_ear,
@@ -75,11 +75,15 @@
 	var/equip_flags = TRYEQUIP_REDRAW | TRYEQUIP_SILENT
 	if (skip_timer)
 		equip_flags |= TRYEQUIP_INSTANT
+	if (force_equip)
+		equip_flags |= TRYEQUIP_FORCE
 	for (var/slot in slots_by_priority)
 		if (skip_storage && (slot == slot_s_store || slot == slot_l_store || slot == slot_r_store))
 			continue
 		if (equip_to_slot_if_possible(I, slot, equip_flags))
 			return slot //slot is truthy; we can return it for info
+	if(destroy_on_fail)
+		qdel(I)
 
 
 //Checks if a given slot can be accessed at this time, either to equip or unequip I

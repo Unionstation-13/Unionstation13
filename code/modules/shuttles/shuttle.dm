@@ -203,13 +203,15 @@
 					continue
 				AM.shuttle_land_on()
 	var/list/powernets = list()
+	var/list/beacons = list()
+	var/list/roofs_to_clear = list()
 	for(var/area/A in shuttle_area)
-		// if there was a zlevel above our origin, erase our ceiling now we're leaving
+		// if there was a zlevel above our origin, prepare to erase our ceiling now we're leaving. The actual replacement occurs later, to prevent space turfs converting to open space because the shuttle's still there.
 		if(HasAbove(current_location.z))
 			for(var/turf/TO in A.contents)
 				var/turf/TA = GetAbove(TO)
 				if(istype(TA, ceiling_type))
-					TA.ChangeTurf(get_base_turf_by_area(TA), 1, 1)
+					roofs_to_clear += TA
 		if(knockdown)
 			for(var/mob/M in A)
 				spawn(0)
@@ -225,12 +227,17 @@
 
 		for(var/obj/structure/cable/C in A)
 			powernets |= C.powernet
+		for (var/obj/machinery/radio_beacon/beacon in A)
+			beacons |= beacon
 	if(logging_home_tag)
 		var/datum/shuttle_log/s_log = SSshuttle.shuttle_logs[src]
 		s_log.handle_move(current_location, destination)
 
 	translate_turfs(turf_translation, current_location.base_area, current_location.base_turf)
 	current_location = destination
+
+	for (var/turf/roof_turf as anything in roofs_to_clear)
+		roof_turf.ChangeTurf(get_base_turf_by_area(roof_turf), 1, 1)
 
 	// if there's a zlevel above our destination, paint in a ceiling on it so we retain our air
 	if(HasAbove(current_location.z))
@@ -254,6 +261,14 @@
 			var/datum/powernet/NewPN = new()
 			NewPN.add_cable(C)
 			propagate_network(C,C.powernet)
+
+	// Move any active radio beacon signals to follow the correct overmap object.
+	for (var/obj/machinery/radio_beacon/beacon as anything in beacons)
+		var/obj/overmap/visitable/visitable = map_sectors["[get_z(beacon)]"]
+		if (!visitable)
+			continue
+		beacon.signal?.set_origin(visitable)
+		beacon.emergency_signal?.set_origin(visitable)
 
 	if(mothershuttle)
 		var/datum/shuttle/mothership = SSshuttle.shuttles[mothershuttle]

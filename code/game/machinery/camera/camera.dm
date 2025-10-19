@@ -341,26 +341,17 @@
 	return see
 
 
-/**
- * Automatically sets the atom's direction based on nearby walls. Used for atoms that should appear 'attached' to walls.
- */
+/// Set the atom's direction according to bordering walls, preferring east/west
 /atom/proc/auto_turn()
-	//Automatically turns based on nearby walls.
-	var/turf/simulated/wall/T = null
-	for(var/i = 1, i <= 8; i += i)
-		T = get_ranged_target_turf(src, i, 1)
-		if(istype(T))
-			//If someone knows a better way to do this, let me know. -Giacom
-			switch(i)
-				if(NORTH)
-					src.set_dir(SOUTH)
-				if(SOUTH)
-					src.set_dir(NORTH)
-				if(WEST)
-					src.set_dir(EAST)
-				if(EAST)
-					src.set_dir(WEST)
-			break
+	if (istype(get_ranged_target_turf(src, EAST, 1), /turf/simulated/wall))
+		set_dir(WEST)
+	else if (istype(get_ranged_target_turf(src, WEST, 1), /turf/simulated/wall))
+		set_dir(EAST)
+	else if (istype(get_ranged_target_turf(src, SOUTH, 1), /turf/simulated/wall))
+		set_dir(NORTH)
+	else
+		set_dir(SOUTH)
+
 
 //Return a working camera that can see a given mob
 //or null if none

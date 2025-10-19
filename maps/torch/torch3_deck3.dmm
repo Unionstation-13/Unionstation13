@@ -444,9 +444,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "bE" = (
@@ -816,9 +819,12 @@
 	pixel_x = 26;
 	pixel_y = 6
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "cj" = (
@@ -2287,7 +2293,9 @@
 /obj/structure/table/marble,
 /obj/machinery/microwave{
 	pixel_x = -1;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
+	name = "Rapid Sanitization Device"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -2655,6 +2663,10 @@
 	name = "\improper Communal Manager's Office";
 	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
 	})
+"gi" = (
+/obj/structure/bed/chair,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "gk" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3153,7 +3165,9 @@
 /obj/structure/table/marble,
 /obj/machinery/microwave{
 	pixel_x = -1;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
+	name = "Rapid Sanitization Device"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -3290,11 +3304,13 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Sick Delivery"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "hz" = (
 /obj/structure/cable/green{
@@ -4332,9 +4348,12 @@
 	name = "Emergency NanoMed";
 	pixel_x = 28
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "jU" = (
@@ -5000,6 +5019,7 @@
 /obj/machinery/door/blast/shutters{
 	id_tag = "bar"
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/lino,
 /area/crew_quarters/galley)
 "ly" = (
@@ -6202,6 +6222,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "oK" = (
@@ -7160,7 +7181,9 @@
 	},
 /obj/machinery/microwave{
 	pixel_x = -1;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
+	name = "Rapid Sanitization Device"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -7778,7 +7801,9 @@
 /obj/structure/table/marble,
 /obj/machinery/microwave{
 	pixel_x = -1;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A rapid santization device which purifies the normally inedible toxins of reconstituted food";
+	name = "Rapid Sanitization Device"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -8536,6 +8561,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/gym)
+"us" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "ut" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/commissary)
@@ -8548,13 +8582,13 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "uv" = (
-/obj/structure/flora/ausbushes/pointybush,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "ux" = (
@@ -8941,6 +8975,12 @@
 /obj/machinery/atmospherics/pipe/manifold4w/visible/fuel,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
+"vB" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "vD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -8951,6 +8991,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "vF" = (
@@ -10238,9 +10279,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "zh" = (
@@ -15498,6 +15542,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
+"MA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "MB" = (
 /obj/structure/disposalpipe/segment,
 /obj/catwalk_plated,
@@ -17458,6 +17507,12 @@
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/cryolocker)
+"Sk" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "Sm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -17792,9 +17847,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "Te" = (
@@ -18065,9 +18123,12 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "TX" = (
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/floor_decal/corner/green/mono,
 /obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "TY" = (
@@ -18111,6 +18172,12 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3starboard)
+"Ue" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "Uf" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	injecting = 1;
@@ -18574,6 +18641,7 @@
 /obj/machinery/door/blast/shutters{
 	id_tag = "bar"
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/lino,
 /area/crew_quarters/galley)
 "Vi" = (
@@ -18831,6 +18899,15 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"VN" = (
+/obj/machinery/portable_atmospherics/hydroponics{
+	name = "Food Reconstituter";
+	desc = "A deep water filled tray used for reconstituting food from dna packets"
+	},
+/obj/floor_decal/corner/green/mono,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/monotile,
+/area/hydroponics)
 "VP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19637,6 +19714,10 @@
 /obj/item/device/taperecorder,
 /turf/simulated/floor/carpet/purple,
 /area/chapel/office)
+"XW" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/observation)
 "XX" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -28710,14 +28791,14 @@ Di
 lV
 ZL
 ZL
-ZL
-ZL
-ZL
+Sk
+Sk
+Sk
 Th
 ZL
-ZL
-ZL
-ZL
+Sk
+Sk
+Sk
 ZL
 KZ
 Di
@@ -28912,14 +28993,14 @@ vt
 UM
 ZL
 ZL
-ZL
-ZL
-ZL
+XW
+XW
+XW
 Th
 ZL
-ZL
-ZL
-ZL
+XW
+XW
+XW
 ZL
 IX
 vt
@@ -29114,14 +29195,14 @@ yH
 lW
 ZL
 ZL
-ZL
-ZL
-ZL
+vB
+vB
+vB
 Th
 ZL
-ZL
-ZL
-ZL
+vB
+vB
+vB
 ZL
 KZ
 LG
@@ -29316,14 +29397,14 @@ yH
 lX
 ZL
 ZL
-ZL
-ZL
-ZL
+gi
+XW
+Ue
 Th
 ZL
-ZL
-ZL
-ZL
+gi
+XW
+Ue
 ZL
 KZ
 LG
@@ -29518,14 +29599,14 @@ yH
 lY
 ZL
 ZL
-ZL
-ZL
-ZL
+Sk
+us
+Sk
 Th
 ZL
-ZL
-ZL
-ZL
+Sk
+Sk
+Sk
 ZL
 PH
 GV
@@ -29720,14 +29801,14 @@ yH
 lZ
 ZL
 ZL
-ZL
-ZL
-ZL
+XW
+XW
+XW
 Th
 ZL
-ZL
-ZL
-ZL
+XW
+XW
+XW
 ZL
 KZ
 GV
@@ -29922,14 +30003,14 @@ yH
 ma
 ZL
 ZL
-ZL
-ZL
-ZL
+vB
+vB
+vB
 Th
 ZL
-ZL
-ZL
-ZL
+vB
+vB
+vB
 ZL
 KZ
 GV
@@ -30123,15 +30204,15 @@ sN
 yH
 ma
 ZL
-ZL
-ZL
-ZL
+Sk
+Sk
+Sk
 ZL
 Th
 ZL
-ZL
-ZL
-ZL
+Sk
+Sk
+Sk
 ZL
 KZ
 GV
@@ -30325,15 +30406,15 @@ Py
 yH
 mc
 mR
-nB
+MA
 oJ
-nB
+MA
 qC
 rP
 Ym
 uv
 vD
-Ym
+uv
 Ym
 zB
 LG
@@ -37583,7 +37664,7 @@ CS
 be
 TX
 Td
-TX
+VN
 wn
 Kn
 ev

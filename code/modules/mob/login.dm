@@ -1,47 +1,43 @@
-//handles setting lastKnownIP and computer_id for use by the ban systems as well as checking for multikeying
-/mob/proc/update_Login_details()
-	//Multikey checks and logging
-	lastKnownIP	= client.address
-	computer_id	= client.computer_id
+/mob/proc/update_login_details()
+	last_address = client.address
+	last_cid = client.computer_id
 	last_ckey = ckey
-	if(config.log_access)
-		log_access("Login: [key_name(src)] from [lastKnownIP ? lastKnownIP : "localhost"]-[computer_id] || BYOND v[client.byond_version]")
-		var/is_multikeying = 0
-		if (config.warn_if_staff_same_ip || !check_rights(R_MOD, FALSE, client))
-			for(var/mob/M in GLOB.player_list)
-				if(M == src)	continue
-				if( M.key && (M.key != key) )
-					var/matches
-					if( (M.lastKnownIP == client.address) )
-						matches += "IP ([client.address])"
-					if( (client.connection != "web") && (M.computer_id == client.computer_id) )
-						if(matches)	matches += " and "
-						matches += "ID ([client.computer_id])"
-						is_multikeying = 1
-					if(matches)
-						if(M.client)
-							message_admins("[SPAN_DANGER("<B>Notice:</B>")] [SPAN_INFO("<A href='byond://?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as <A href='byond://?src=\ref[usr];priv_msg=\ref[M]'>[key_name_admin(M)]</A>.")]", 1)
-							log_access("Notice: [key_name(src)] has the same [matches] as [key_name(M)].")
-						else
-							message_admins("[SPAN_DANGER("<B>Notice:</B>")] [SPAN_INFO("<A href='byond://?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as [key_name_admin(M)] (no longer logged in).")]", 1)
-							log_access("Notice: [key_name(src)] has the same [matches] as [key_name(M)] (no longer logged in).")
-		if(is_multikeying && !client.warned_about_multikeying)
-			client.warned_about_multikeying = 1
-			spawn(1 SECOND)
-				to_chat(src, "<b>WARNING:</b> It would seem that you are sharing connection or computer with another player. If you haven't done so already, please contact the staff via the Adminhelp verb to resolve this situation. Failure to do so may result in administrative action. You have been warned.")
+	if (config.log_access)
+		var/log_addr = last_address ? last_address : "localhost"
+		log_access("Login: [key_name(src)] from [log_addr]-[last_cid] || BYOND v[client.byond_version]")
+	if (ckey in config.skip_conn_warn_ckey_list)
+		return
+	var/warn_cid = !config.skip_conn_warn_cid_all && !(last_cid in config.skip_conn_warn_cid_list)
+	var/warn_address = !config.skip_conn_warn_address_all && !(last_address in config.skip_conn_warn_address_list)
+	var/skip_ckey = islist(config.skip_conn_warn_ckey_list)
+	if (!warn_cid && !warn_address)
+		return
+	var/list/warn = list()
+	for (var/mob/other as anything in GLOB.player_list)
+		if (other == src)
+			continue
+		if (other.key == key)
+			continue
+		if (skip_ckey && (ckey(other.key) in config.skip_conn_warn_ckey_list))
+			continue
+		if (warn_address && other.last_address == last_address)
+			warn[other] += list("ADDR")
+		if (warn_cid && other.last_cid == last_cid)
+			warn[other] += list("CID")
+	if (!length(warn))
+		return
+	for (var/i = 1 to length(warn))
+		var/mob/other = warn[i]
+		warn[i] = "[key_name(other, TRUE)] \[[jointext(warn[other], ", ")]\]"
+	message_admins("Notice: [key_name(src, TRUE)] shares connection details:\n•  [jointext(warn, "\n•  ")]")
+	if (config.skip_conn_warn_client)
+		return
+	if (client.warned_about_multikeying)
+		return
+	client.warned_about_multikeying = TRUE
+	spawn (2 SECONDS)
+		to_chat(src, SPAN_WARNING(config.conn_warn_client_message))
 
-	if(config.login_export_addr)
-		spawn(-1)
-			var/list/params = new
-			params["login"] = 1
-			params["key"] = client.key
-			if(isnum(client.player_age))
-				params["server_age"] = client.player_age
-			params["ip"] = client.address
-			params["clientid"] = client.computer_id
-			params["roundid"] = game_id
-			params["name"] = real_name || name
-			world.Export("[config.login_export_addr]?[list2params(params)]", null, 1)
 
 /mob/proc/maybe_send_staffwarns(action)
 	if(client?.staffwarn)
@@ -65,7 +61,7 @@
 	if (!GLOB.player_list.Find(src))
 		ADD_SORTED(GLOB.player_list, src, GLOBAL_PROC_REF(cmp_mob_key))
 
-	update_Login_details()
+	update_login_details()
 	world.update_status()
 
 	maybe_send_staffwarns("joined the round")
