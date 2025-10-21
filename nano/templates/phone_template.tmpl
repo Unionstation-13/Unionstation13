@@ -1,57 +1,438 @@
-<!-- Phone App UI Template -->
-<div class="phoneApp" style="padding: 10px; background: #1a1a1a; color: #ffffff; font-family: Arial, sans-serif;">
-
-	<!-- Call Status Display -->
-	<div class="callStatus" style="margin-bottom: 15px; padding: 10px; background: #2a2a2a; border-radius: 5px; text-align: center;">
-		{{#if current_call}}
-			{{#if (eq current_call.status "ringing")}}
-				<div class="incomingCall">
-					<h3 style="color: #60a5fa; margin: 0 0 10px 0;">Incoming Call...</h3>
-					<p style="margin: 0 0 10px 0;">From: {{current_call.participant_name}}</p>
-					<div style="display: flex; gap: 10px; justify-content: center;">
-						<a href="?src={{ref}};action=accept_call" class="button" style="background: #22c55e; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">Accept</a>
-						<a href="?src={{ref}};action=decline_call" class="button" style="background: #ef4444; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">Decline</a>
-					</div>
-				</div>
-			{{else if (eq current_call.status "active")}}
-				<div class="activeCall">
-					<h3 style="color: #22c55e; margin: 0 0 10px 0;">Call Active</h3>
-					<p style="margin: 0 0 10px 0;">With: {{current_call.participant_name}}</p>
-					<p style="margin: 0 0 10px 0;">Duration: {{current_call.duration}}</p>
-					<a href="?src={{ref}};action=end_call" class="button" style="background: #ef4444; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">End Call</a>
-				</div>
-			{{/if}}
-		{{else}}
-			<div class="dialer">
-				<h3 style="color: #60a5fa; margin: 0 0 10px 0;">Make a Call</h3>
-				<form style="margin-bottom: 10px;">
-					<input type="text" name="target" placeholder="Enter name or select contact" style="width: 100%; padding: 5px; margin-bottom: 5px; background: #333; color: white; border: 1px solid #555; border-radius: 3px;">
-					<a href="?src={{ref}};action=make_call" class="button" style="background: #3b82f6; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px; width: 100%; display: block; text-align: center;">Call</a>
-				</form>
-			</div>
-		{{/if}}
-	</div>
-
-	<!-- Contacts List -->
-	<div class="contacts" style="background: #2a2a2a; padding: 10px; border-radius: 5px;">
-		<h4 style="color: #60a5fa; margin: 0 0 10px 0;">Contacts</h4>
-		{{#each contacts}}
-		<div class="contact" style="margin-bottom: 5px; padding: 5px; background: #333; border-radius: 3px;">
-			<a href="?src={{../ref}};action=make_call;target={{this.ckey}}" style="color: #e2e8f0; text-decoration: none; display: block;">{{this.name}}</a>
-		</div>
-		{{/each}}
-	</div>
-
-	<!-- Department Phones -->
-	<div class="departmentPhones" style="margin-top: 15px; background: #2a2a2a; padding: 10px; border-radius: 5px;">
-		<h4 style="color: #60a5fa; margin: 0 0 10px 0;">Department Phones</h4>
-		<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
-			<a href="?src={{ref}};action=make_call;target=1111" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Medical (1111)</a>
-			<a href="?src={{ref}};action=make_call;target=2222" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Security (2222)</a>
-			<a href="?src={{ref}};action=make_call;target=3333" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Engineering (3333)</a>
-			<a href="?src={{ref}};action=make_call;target=4444" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Science (4444)</a>
-			<a href="?src={{ref}};action=make_call;target=5555" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center; grid-column: 1 / -1;">Bridge (5555)</a>
-		</div>
-	</div>
-
-</div>
+{"data":
+{
+	"phone_number": "[phone_number]",
+	"last_dialed": "[last_dialed]",
+	"in_call": [in_call],
+	"call_status": "[call_status]",
+	"call_number": "[call_number]",
+	"call_duration": [call_duration],
+	"call_name": "[call_name]",
+	"can_make_call": [can_make_call],
+	"can_answer_call": [can_answer_call],
+	"can_end_call": [can_end_call],
+	"call_history": [call_history],
+	"department_contacts": [department_contacts],
+	"personal_contacts": [personal_contacts]
+},
+"window":
+{
+	"title": "Phone",
+	"width": 400,
+	"height": 500
+},
+"components":
+[
+	{
+		"type": "section",
+		"title": "Phone Status",
+		"components": [
+			{
+				"type": "label",
+				"text": "Your Number: [phone_number]"
+			}
+		]
+	},
+	{
+		"type": "conditional",
+		"condition": "in_call",
+		"components": [
+			{
+				"type": "section",
+				"title": "Current Call",
+				"style": "call-section",
+				"components": [
+					{
+						"type": "label",
+						"text": "[call_name] ([call_number])",
+						"style": "call-info"
+					},
+					{
+						"type": "conditional",
+						"condition": "call_status == 'active'",
+						"components": [
+							{
+								"type": "label",
+								"text": "Duration: [call_duration]s",
+								"style": "call-duration"
+							}
+						]
+					},
+					{
+						"type": "conditional",
+						"condition": "call_status == 'incoming'",
+						"components": [
+							{
+								"type": "label",
+								"text": "Incoming Call...",
+								"style": "call-incoming"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"type": "tabbedPanel",
+		"tabs": [
+			{
+				"name": "Dialer",
+				"panels": [
+					{
+						"type": "section",
+						"title": "Number Dialer",
+						"components": [
+							{
+								"type": "textField",
+								"name": "dial_number",
+								"value": "",
+								"placeholder": "Enter phone number...",
+								"style": "number-display"
+							},
+							{
+								"type": "grid",
+								"columns": 3,
+								"components": [
+									{
+										"type": "button",
+										"text": "1",
+										"action": "add_digit",
+										"params": { "digit": "1" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "2",
+										"action": "add_digit",
+										"params": { "digit": "2" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "3",
+										"action": "add_digit",
+										"params": { "digit": "3" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "4",
+										"action": "add_digit",
+										"params": { "digit": "4" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "5",
+										"action": "add_digit",
+										"params": { "digit": "5" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "6",
+										"action": "add_digit",
+										"params": { "digit": "6" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "7",
+										"action": "add_digit",
+										"params": { "digit": "7" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "8",
+										"action": "add_digit",
+										"params": { "digit": "8" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "9",
+										"action": "add_digit",
+										"params": { "digit": "9" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "*",
+										"action": "add_digit",
+										"params": { "digit": "*" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "0",
+										"action": "add_digit",
+										"params": { "digit": "0" },
+										"style": "dial-button"
+									},
+									{
+										"type": "button",
+										"text": "#",
+										"action": "add_digit",
+										"params": { "digit": "#" },
+										"style": "dial-button"
+									}
+								]
+							},
+							{
+								"type": "grid",
+								"columns": 2,
+								"components": [
+									{
+										"type": "conditional",
+										"condition": "can_make_call",
+										"components": [
+											{
+												"type": "button",
+												"text": "Call",
+												"action": "make_call",
+												"style": "call-button"
+											}
+										]
+									},
+									{
+										"type": "conditional",
+										"condition": "can_answer_call",
+										"components": [
+											{
+												"type": "button",
+												"text": "Answer",
+												"action": "answer_call",
+												"style": "answer-button"
+											}
+										]
+									},
+									{
+										"type": "conditional",
+										"condition": "can_end_call",
+										"components": [
+											{
+												"type": "button",
+												"text": "End Call",
+												"action": "end_call",
+												"style": "end-button"
+											}
+										]
+									},
+									{
+										"type": "button",
+										"text": "Clear",
+										"action": "clear_number",
+										"style": "clear-button"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Contacts",
+				"panels": [
+					{
+						"type": "section",
+						"title": "Department Contacts",
+						"components": [
+							{
+								"type": "list",
+								"name": "dept_contacts",
+								"source": "department_contacts",
+								"template": {
+									"type": "button",
+									"text": "{name} - {number}",
+									"action": "make_call",
+									"params": { "number": "{number}" },
+									"style": "contact-button"
+								}
+							}
+						]
+					},
+					{
+						"type": "section",
+						"title": "Personal Contacts",
+						"components": [
+							{
+								"type": "list",
+								"name": "personal_contacts",
+								"source": "personal_contacts",
+								"template": {
+									"type": "button",
+									"text": "{name} - {number}",
+									"action": "make_call",
+									"params": { "number": "{number}" },
+									"style": "contact-button"
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "History",
+				"panels": [
+					{
+						"type": "section",
+						"title": "Call History",
+						"components": [
+							{
+								"type": "list",
+								"name": "call_history",
+								"source": "call_history",
+								"template": {
+									"type": "grid",
+									"columns": 2,
+									"components": [
+										{
+											"type": "label",
+											"text": "{number}",
+											"style": "history-number"
+										},
+										{
+											"type": "label",
+											"text": "{type}",
+											"style": "history-type-{type}"
+										}
+									]
+								}
+							},
+							{
+								"type": "button",
+								"text": "Clear History",
+								"action": "clear_history",
+								"style": "clear-history-button"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+],
+"styles":
+{
+	"call-section": {
+		"background-color": "#2c3e50",
+		"color": "white",
+		"padding": "10px",
+		"margin": "5px",
+		"border-radius": "5px"
+	},
+	"call-info": {
+		"font-size": "16px",
+		"font-weight": "bold",
+		"text-align": "center"
+	},
+	"call-duration": {
+		"font-size": "14px",
+		"text-align": "center",
+		"color": "#27ae60"
+	},
+	"call-incoming": {
+		"font-size": "14px",
+		"text-align": "center",
+		"color": "#f39c12"
+	},
+	"number-display": {
+		"background-color": "#ecf0f1",
+		"border": "2px solid #bdc3c7",
+		"border-radius": "5px",
+		"padding": "10px",
+		"font-size": "16px",
+		"text-align": "center",
+		"margin-bottom": "10px"
+	},
+	"dial-button": {
+		"background-color": "#3498db",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "15px",
+		"font-size": "18px",
+		"margin": "2px"
+	},
+	"call-button": {
+		"background-color": "#27ae60",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "12px",
+		"font-size": "14px",
+		"margin": "2px"
+	},
+	"answer-button": {
+		"background-color": "#f39c12",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "12px",
+		"font-size": "14px",
+		"margin": "2px"
+	},
+	"end-button": {
+		"background-color": "#e74c3c",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "12px",
+		"font-size": "14px",
+		"margin": "2px"
+	},
+	"clear-button": {
+		"background-color": "#95a5a6",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "12px",
+		"font-size": "14px",
+		"margin": "2px"
+	},
+	"contact-button": {
+		"background-color": "#34495e",
+		"color": "white",
+		"border": "none",
+		"border-radius": "3px",
+		"padding": "8px",
+		"margin": "2px",
+		"text-align": "left",
+		"width": "100%"
+	},
+	"history-number": {
+		"font-weight": "bold",
+		"font-size": "14px"
+	},
+	"history-type-outgoing": {
+		"background-color": "#3498db",
+		"color": "white",
+		"padding": "2px 6px",
+		"border-radius": "3px",
+		"font-size": "12px"
+	},
+	"history-type-incoming": {
+		"background-color": "#27ae60",
+		"color": "white",
+		"padding": "2px 6px",
+		"border-radius": "3px",
+		"font-size": "12px"
+	},
+	"history-type-ended": {
+		"background-color": "#e74c3c",
+		"color": "white",
+		"padding": "2px 6px",
+		"border-radius": "3px",
+		"font-size": "12px"
+	},
+	"clear-history-button": {
+		"background-color": "#c0392b",
+		"color": "white",
+		"border": "none",
+		"border-radius": "5px",
+		"padding": "8px",
+		"margin-top": "10px"
+	}
+}
+}
