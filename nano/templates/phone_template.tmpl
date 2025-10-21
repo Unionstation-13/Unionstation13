@@ -1,0 +1,57 @@
+<!-- Phone App UI Template -->
+<div class="phoneApp" style="padding: 10px; background: #1a1a1a; color: #ffffff; font-family: Arial, sans-serif;">
+
+	<!-- Call Status Display -->
+	<div class="callStatus" style="margin-bottom: 15px; padding: 10px; background: #2a2a2a; border-radius: 5px; text-align: center;">
+		{{#if current_call}}
+			{{#if (eq current_call.status "ringing")}}
+				<div class="incomingCall">
+					<h3 style="color: #60a5fa; margin: 0 0 10px 0;">Incoming Call...</h3>
+					<p style="margin: 0 0 10px 0;">From: {{current_call.participant_name}}</p>
+					<div style="display: flex; gap: 10px; justify-content: center;">
+						<a href="?src={{ref}};action=accept_call" class="button" style="background: #22c55e; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">Accept</a>
+						<a href="?src={{ref}};action=decline_call" class="button" style="background: #ef4444; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">Decline</a>
+					</div>
+				</div>
+			{{else if (eq current_call.status "active")}}
+				<div class="activeCall">
+					<h3 style="color: #22c55e; margin: 0 0 10px 0;">Call Active</h3>
+					<p style="margin: 0 0 10px 0;">With: {{current_call.participant_name}}</p>
+					<p style="margin: 0 0 10px 0;">Duration: {{current_call.duration}}</p>
+					<a href="?src={{ref}};action=end_call" class="button" style="background: #ef4444; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px;">End Call</a>
+				</div>
+			{{/if}}
+		{{else}}
+			<div class="dialer">
+				<h3 style="color: #60a5fa; margin: 0 0 10px 0;">Make a Call</h3>
+				<form style="margin-bottom: 10px;">
+					<input type="text" name="target" placeholder="Enter name or select contact" style="width: 100%; padding: 5px; margin-bottom: 5px; background: #333; color: white; border: 1px solid #555; border-radius: 3px;">
+					<a href="?src={{ref}};action=make_call" class="button" style="background: #3b82f6; color: white; padding: 8px 16px; text-decoration: none; border-radius: 3px; width: 100%; display: block; text-align: center;">Call</a>
+				</form>
+			</div>
+		{{/if}}
+	</div>
+
+	<!-- Contacts List -->
+	<div class="contacts" style="background: #2a2a2a; padding: 10px; border-radius: 5px;">
+		<h4 style="color: #60a5fa; margin: 0 0 10px 0;">Contacts</h4>
+		{{#each contacts}}
+		<div class="contact" style="margin-bottom: 5px; padding: 5px; background: #333; border-radius: 3px;">
+			<a href="?src={{../ref}};action=make_call;target={{this.ckey}}" style="color: #e2e8f0; text-decoration: none; display: block;">{{this.name}}</a>
+		</div>
+		{{/each}}
+	</div>
+
+	<!-- Department Phones -->
+	<div class="departmentPhones" style="margin-top: 15px; background: #2a2a2a; padding: 10px; border-radius: 5px;">
+		<h4 style="color: #60a5fa; margin: 0 0 10px 0;">Department Phones</h4>
+		<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+			<a href="?src={{ref}};action=make_call;target=1111" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Medical (1111)</a>
+			<a href="?src={{ref}};action=make_call;target=2222" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Security (2222)</a>
+			<a href="?src={{ref}};action=make_call;target=3333" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Engineering (3333)</a>
+			<a href="?src={{ref}};action=make_call;target=4444" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center;">Science (4444)</a>
+			<a href="?src={{ref}};action=make_call;target=5555" style="background: #333; color: #e2e8f0; padding: 5px; text-decoration: none; border-radius: 3px; text-align: center; grid-column: 1 / -1;">Bridge (5555)</a>
+		</div>
+	</div>
+
+</div>

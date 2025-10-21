@@ -141,3 +141,12 @@
 /obj/item/modular_computer/pda/roboticist
 	icon_state = "pda-robot"
 	icon_state_unpowered = "pda-robot"
+/obj/item/modular_computer/pda/proc/receive_phone_call(datum/phone_call/incoming_call)
+    var/datum/computer_file/program/phone/phone_app = get_program("phone")
+    if(phone_app)
+        phone_app.receive_call(incoming_call)
+        notify_user("Incoming call!")
+
+/obj/item/modular_computer/pda/proc/notify_user(message)
+    if(usr)
+        to_chat(usr, SPAN_NOTICE("[message]"))
