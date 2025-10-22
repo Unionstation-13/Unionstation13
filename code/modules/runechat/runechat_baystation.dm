@@ -1,4 +1,4 @@
-// Baystation RuneChat System - Final version without argument conflicts
+// Baystation RuneChat System - Automatic speech integration
 // Path: code/modules/runechat/runechat_baystation.dm
 
 // Global runechat controller
@@ -279,24 +279,10 @@ var/global/datum/runechat_controller/runechat_controller
 
 	return text
 
-// Hook into Baystation's speech system using simple approach
-/mob/living/proc/runechat_say_hook(message)
-	if(runechat_controller && message)
-		runechat_controller.create_message(src, message, "say")
-
-/mob/living/proc/runechat_me_hook(message)
-	if(runechat_controller && message)
-		runechat_controller.create_message(src, message, "me")
-
-/mob/living/proc/runechat_whisper_hook(message)
-	if(runechat_controller && message)
-		runechat_controller.create_message(src, message, "whisper")
-
-// Simple approach - use custom verbs only, no proc overrides
-/mob/living/verb/runechat_say(msg as text)
-	set name = "RuneChat Say"
+// Hook into Baystation's speech system by overriding the to_chat proc to intercept speech
+/mob/living/verb/say(msg as text)
+	set name = "Say"
 	set category = "IC"
-	set desc = "Say with floating text"
 
 	if(!msg)
 		return
@@ -308,17 +294,17 @@ var/global/datum/runechat_controller/runechat_controller
 		to_chat(src, "You can't speak!")
 		return
 
-	// Create runechat message
-	runechat_say_hook(msg)
+	// Create runechat message BEFORE processing the speech
+	if(runechat_controller)
+		runechat_controller.create_message(src, msg, "say")
 
 	// Continue with normal say processing
-	say(msg)
+	..(msg)
 
-// Hook into emotes using custom verb
-/mob/living/verb/runechat_me(msg as text)
-	set name = "RuneChat Me"
+// Hook into emotes by overriding the me verb
+/mob/living/verb/me(msg as text)
+	set name = "Me"
 	set category = "IC"
-	set desc = "Custom emote for RuneChat"
 
 	if(!msg)
 		return
@@ -326,17 +312,17 @@ var/global/datum/runechat_controller/runechat_controller
 	if(stat)
 		return
 
-	// Create runechat message
-	runechat_me_hook(msg)
+	// Create runechat message BEFORE processing the emote
+	if(runechat_controller)
+		runechat_controller.create_message(src, msg, "me")
 
-	// Continue with normal me processing using the standard emote system
-	usr.emote("me", msg)
+	// Continue with normal me processing
+	..(msg)
 
-// Hook into whispers using custom verb
-/mob/living/verb/runechat_whisper(msg as text)
-	set name = "RuneChat Whisper"
+// Hook into whispers by overriding the whisper verb
+/mob/living/verb/whisper(msg as text)
+	set name = "Whisper"
 	set category = "IC"
-	set desc = "Custom whisper for RuneChat"
 
 	if(!msg)
 		return
@@ -344,11 +330,12 @@ var/global/datum/runechat_controller/runechat_controller
 	if(stat)
 		return
 
-	// Create runechat message
-	runechat_whisper_hook(msg)
+	// Create runechat message BEFORE processing the whisper
+	if(runechat_controller)
+		runechat_controller.create_message(src, msg, "whisper")
 
 	// Continue with normal whisper processing
-	whisper(msg)
+	..(msg)
 
 // Initialize runechat system on world start
 /world/New()
