@@ -16735,6 +16735,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
+"enH" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "enM" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -20227,6 +20235,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
+"jns" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "jnH" = (
 /obj/machinery/light{
 	dir = 1
@@ -22360,6 +22376,14 @@
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
+"lKi" = (
+/obj/machinery/light_switch{
+	pixel_x = 20
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "lMb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -28145,7 +28169,7 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
+/obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -29314,7 +29338,7 @@
 /obj/floor_decal/corner/b_green/border{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
+/obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
@@ -30528,7 +30552,7 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
+/obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -50992,7 +51016,7 @@ sTz
 hTJ
 xMq
 xeC
-aaG
+enH
 ekj
 oBX
 gce
@@ -52004,7 +52028,7 @@ jYs
 aaG
 aaG
 aaG
-aaG
+enH
 aaG
 dTG
 aaC
@@ -53013,8 +53037,8 @@ agg
 aaA
 aaG
 aaG
-aaG
-aaG
+lKi
+jns
 aaG
 aaM
 aaC
@@ -54022,7 +54046,7 @@ pMN
 vlh
 lnI
 aao
-aaG
+jns
 moB
 owa
 bEq

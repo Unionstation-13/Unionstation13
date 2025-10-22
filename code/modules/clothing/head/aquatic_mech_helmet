@@ -1,0 +1,25 @@
+/obj/item/clothing/head/aquatic_mech_helmet
+	name = "Aquatic Environment Helmet"
+	desc = "A sealed helmet with a water-filled visor for aquatic species."
+	icon = 'icons/obj/clothing/species/aquatic/aquaticsuit.dmi'
+	icon_state = "aquatichelmet"
+	item_state = "aquatichelmet"
+
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	heat_protection = HEAD
+	armor = list(
+		melee = 30,
+		bullet = 25,
+		laser = 20,
+		energy = 15,
+		bomb = 20,
+		bio = 100,
+		rad = 50
+	)
+
+	// Vision properties
+	vision_flags = 0
+	darkness_view = 2
+	see_in_dark = 2

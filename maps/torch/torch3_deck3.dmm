@@ -3578,6 +3578,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "ij" = (
@@ -5640,12 +5641,12 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "nj" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment,
 /obj/catwalk_plated,
 /obj/floor_decal/borderfloorblack/cee,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/mess)
 "nl" = (
@@ -6411,10 +6412,14 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/galley)
 "pb" = (
-/obj/floor_decal/borderfloorblack{
-	dir = 4
+/obj/floor_decal/corner/black/mono,
+/obj/structure/railing{
+	dir = 1
 	},
-/obj/machinery/light,
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen/fancy,
+/obj/item/pen/fancy,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "pc" = (
@@ -7377,6 +7382,14 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
+"rI" = (
+/obj/structure/table/marble,
+/obj/structure/window/basic{
+	dir = 4
+	},
+/obj/item/stack/material/plastic/fifty,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "rK" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -7478,6 +7491,15 @@
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation)
+"rX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/floor_decal/corner/black/mono,
+/obj/machinery/vending/dinnerware,
+/obj/structure/railing,
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "rZ" = (
 /obj/floor_decal/corner/green/half{
 	dir = 8
@@ -8989,6 +9011,15 @@
 	name = "\improper Communal Manager's Office";
 	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
 	})
+"vx" = (
+/obj/floor_decal/corner/b_green/half{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "vy" = (
 /obj/machinery/light_switch,
 /turf/simulated/wall/prepainted,
@@ -9304,6 +9335,8 @@
 /obj/structure/window/basic{
 	dir = 4
 	},
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/plastic/fifty,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "wy" = (
@@ -14636,6 +14669,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/floor_decal/corner/black/mono,
+/obj/structure/railing,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "Kp" = (
@@ -17447,6 +17482,15 @@
 /obj/floor_decal/borderfloorblack/cee,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
+"RZ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chemical_dispenser/bar_coffee/full,
+/obj/floor_decal/corner/black/mono,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "Sb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 4
@@ -17654,6 +17698,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/hologram/holopad,
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "Sw" = (
@@ -19700,6 +19747,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "XO" = (
+/obj/floor_decal/corner/black/mono,
+/obj/structure/table/reinforced,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/item/storage/box/condimentbottles,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "XP" = (
@@ -20399,6 +20452,9 @@
 	desc = "A device used to place orders to the Kitchen"
 	},
 /obj/structure/railing,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "ZR" = (
@@ -36297,7 +36353,7 @@ ev
 fq
 yI
 dG
-ww
+rI
 ww
 cT
 yI
@@ -37718,7 +37774,7 @@ ev
 jX
 RX
 Aq
-XO
+pb
 Ko
 RN
 yj
@@ -37920,8 +37976,8 @@ hu
 UK
 RX
 Aq
-XO
-Ko
+RZ
+rX
 Xs
 yj
 fB
@@ -38122,7 +38178,7 @@ ly
 Tx
 RX
 ii
-pb
+fB
 vq
 eV
 yj
@@ -38527,7 +38583,7 @@ Xw
 xc
 Jv
 mM
-uP
+vx
 uP
 uP
 fB

@@ -3142,6 +3142,7 @@
 #include "code\modules\species\outsider\vox.dm"
 #include "code\modules\species\outsider\zombie.dm"
 #include "code\modules\species\station\adherent.dm"
+#include "code\modules\species\station\aquatic_species.dm"
 #include "code\modules\species\station\golem.dm"
 #include "code\modules\species\station\human_subspecies.dm"
 #include "code\modules\species\station\lizard.dm"
