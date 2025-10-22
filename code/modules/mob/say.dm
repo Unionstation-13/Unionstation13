@@ -12,6 +12,10 @@
 	set category = "IC"
 	usr.say(message)
 
+	// RUNECHAT HOOK - Add this line after the say() call
+	if(usr && message)
+		runechat_create(usr, message, "say")
+
 
 /mob/verb/me_verb(message as text)
 	set name = "Me"
@@ -23,6 +27,10 @@
 		usr.emote("me",usr.emote_type,message)
 	else
 		usr.emote(message)
+
+	// RUNECHAT HOOK - Add this line after the emote() call
+	if(usr && message)
+		runechat_create(usr, "*[message]", "me")
 
 
 /mob/proc/say_dead(message)

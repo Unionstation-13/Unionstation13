@@ -1,377 +1,152 @@
-// Baystation RuneChat System - Automatic speech integration
-// Path: code/modules/runechat/runechat_baystation.dm
+// Global configuration
+var/global/list/runechat_messages = list() // List of active floating messages
+var/global/runechat_enabled = TRUE  // Master switch
 
-// Global runechat controller
-var/global/datum/runechat_controller/runechat_controller
-
-// Runechat controller datum - completely self-contained
-/datum/runechat_controller
-	var/list/active_messages = list()
-	var/max_messages_per_mob = 5
-	var/default_duration = 40 // 4 seconds at 10fps
-	var/fade_duration = 10 // 1 second fade
-	var/max_distance = 7 // Maximum distance to see runechat
-
-/datum/runechat_controller/New()
-	..()
-	// Start the update loop using a timer
-	start_update_loop()
-
-/datum/runechat_controller/Destroy()
-	return ..()
-
-/datum/runechat_controller/proc/start_update_loop()
-	// Create a simple timer-based update loop
-	spawn(1)
-		while(src)
-			update_messages()
-			sleep(1) // Update every 0.1 seconds
-
-/datum/runechat_controller/proc/create_message(mob/speaker, message, message_type = "say", color_override = null)
-	if(!speaker || !message)
-		return null
-
-	// Check if speaker has too many messages already
-	var/list/speaker_messages = active_messages[speaker]
-	if(speaker_messages && speaker_messages.len >= max_messages_per_mob)
-		return null
-
-	// Create the message
-	var/datum/runechat_message/new_message = new/datum/runechat_message(speaker, message, message_type, color_override)
-
-	// Add to active messages
-	if(!active_messages[speaker])
-		active_messages[speaker] = list()
-	active_messages[speaker] += new_message
-
-	// Position the message
-	position_message(new_message)
-
-	return new_message
-
-/datum/runechat_controller/proc/position_message(datum/runechat_message/message)
-	if(!message || !message.speaker)
-		return
-
-	var/mob/speaker = message.speaker
-
-	// Calculate position above the speaker's head
-	var/turf/speaker_turf = get_turf(speaker)
-	if(!speaker_turf)
-		return
-
-	// Base position is above the speaker
-	var/base_x = speaker_turf.x
-	var/base_y = speaker_turf.y
-	var/base_z = speaker_turf.z
-
-	// Calculate vertical offset based on existing messages
-	var/list/speaker_messages = active_messages[speaker]
-	var/vertical_offset = 0
-
-	if(speaker_messages)
-		for(var/datum/runechat_message/other_message in speaker_messages)
-			if(other_message != message && other_message.active)
-				vertical_offset += other_message.height + 2
-
-	// Set the message position
-	message.world_x = base_x
-	message.world_y = base_y
-	message.world_z = base_z
-	message.pixel_x = 0
-	message.pixel_y = 32 + vertical_offset // 32 pixels above base, plus offset for other messages
-	message.layer = speaker.layer + 0.1
-
-/datum/runechat_controller/proc/remove_message(datum/runechat_message/message)
-	if(!message)
-		return
-
-	if(active_messages[message.speaker])
-		active_messages[message.speaker] -= message
-		if(!active_messages[message.speaker].len)
-			active_messages.Remove(message.speaker)
-
-	message.active = FALSE
-	qdel(message)
-
-/datum/runechat_controller/proc/update_messages()
-	// Update all active messages
-	for(var/mob/speaker in active_messages)
-		var/list/speaker_messages = active_messages[speaker]
-		if(!speaker_messages)
-			continue
-
-		for(var/datum/runechat_message/message in speaker_messages)
-			if(message.active)
-				message.update()
-				if(message.should_remove())
-					remove_message(message)
-			else
-				speaker_messages -= message
-
-		// Reposition remaining messages
-		if(speaker_messages.len)
-			var/vertical_offset = 0
-			for(var/datum/runechat_message/message in speaker_messages)
-				if(message.active)
-					message.pixel_y = 32 + vertical_offset
-					vertical_offset += message.height + 2
-
-// Runechat message datum
+// RuneChat message datum
 /datum/runechat_message
-	var/mob/speaker
-	var/message_text
-	var/message_type
+	var/mob/owner
+	var/message
 	var/color
-	var/world_x
-	var/world_y
-	var/world_z
-	var/pixel_x = 0
-	var/pixel_y = 32
-	var/layer = 0
-	var/created_time
-	var/duration
-	var/fade_time = 10 // Default fade time
-	var/height = 12
-	var/width = 100
-	var/active = TRUE
-	var/obj/effect/overlay/runechat/display_object
+	var/atom/movable/text_object
+	var/time_created
+	var/lifetime = 40 // 4 seconds at 0.1 second intervals
 
-/datum/runechat_message/New(mob/speaker, message_text, message_type, color_override)
-	..()
+	New(mob/owner, message, color)
+		src.owner = owner
+		src.message = message
+		src.color = color
+		src.time_created = world.time
+		create_text_object()
 
-	src.speaker = speaker
-	src.message_text = message_text
-	src.message_type = message_type
-	src.created_time = world.time
-	src.duration = runechat_controller.default_duration
-	src.fade_time = runechat_controller.fade_duration // Use controller's fade_duration
+	proc/create_text_object()
+		if(!owner || !owner.loc)
+			return
 
-	// Set color based on message type
-	if(color_override)
-		src.color = color_override
-	else
-		src.color = get_message_color()
+		text_object = new /atom/movable
+		text_object.name = "runechat"
+		text_object.layer = 5 // Use numeric layer instead of FLY_LAYER
+		text_object.plane = 0 // Use numeric plane instead of GAME_PLANE
+		text_object.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA | KEEP_TOGETHER
+		text_object.mouse_opacity = 0
 
-	// Create the display object
-	create_display_object()
+		// Create the visual representation
+		text_object.icon = 'icons/effects/effects.dmi'
+		text_object.icon_state = "nothing"
+		text_object.maptext = "<span style='color: [color]; font-family: Arial, sans-serif; font-size: 14px; text-shadow: 1px 1px 2px black;'>[message]</span>"
 
-/datum/runechat_message/Destroy()
-	if(display_object)
-		qdel(display_object)
-	return ..()
+		// Position the text above the mob
+		update_position()
 
-/datum/runechat_message/proc/get_message_color()
-	switch(message_type)
-		if("say")
-			return "#ffffff" // White
-		if("whisper")
-			return "#add8e6" // Light blue
-		if("emote")
-			return "#90ee90" // Light green
+		// Add to the mob's vis_contents
+		owner.vis_contents += text_object
+
+	proc/update_position()
+		if(!owner || !text_object || !owner.loc)
+			return
+
+		// Position the text above the mob's head
+		var/offset = 32 // Base height above mob
+
+		// Check for other messages from this mob and stack them
+		for(var/datum/runechat_message/other in runechat_messages)
+			if(other.owner == owner && other != src && other.text_object)
+				offset += 20 // Stack messages vertically
+
+		text_object.pixel_y = offset
+
+	proc/tick()
+		if(!owner || !owner.loc || !text_object)
+			return FALSE
+
+		// Check lifetime
+		if(world.time - time_created > lifetime * 0.1)
+			return FALSE
+
+		// Update position in case mob moved
+		update_position()
+
+		// Fade out effect in last second
+		var/time_left = lifetime - (world.time - time_created) * 10
+		if(time_left <= 10)
+			var/alpha = (time_left / 10) * 255
+			text_object.alpha = alpha
+
+		return TRUE
+
+	proc/remove()
+		if(text_object && owner)
+			owner.vis_contents -= text_object
+			qdel(text_object)
+		text_object = null
+
+// Main proc to create floating text - this is what you call from other code
+/proc/runechat_create(mob/speaker, message, speech_type = "say")
+	if(!speaker || !message || !runechat_enabled)
+		return
+
+	var/color = "#FFFFFF" // Default white for say
+	switch(speech_type)
 		if("me")
-			return "#ffb6c1" // Light pink
-		if("ooc")
-			return "#ffa500" // Orange
-		if("admin")
-			return "#ff0000" // Red
+			color = "#FFB6C1" // Light pink for emotes
+		if("whisper")
+			color = "#87CEEB" // Sky blue for whispers
 		if("radio")
-			return "#00ffff" // Cyan
-		else
-			return "#ffffff" // Default white
+			color = "#90EE90" // Light green for radio
+		if("ooc")
+			color = "#FFD700" // Gold for OOC
 
-/datum/runechat_message/proc/create_display_object()
-	if(!speaker)
-		return
+	// Create new message
+	var/datum/runechat_message/new_message = new(speaker, html_encode(message), color)
+	runechat_messages += new_message
 
-	display_object = new/obj/effect/overlay/runechat()
-	display_object.message = src
-	display_object.loc = get_turf(speaker)
-	display_object.pixel_x = pixel_x
-	display_object.pixel_y = pixel_y
-	display_object.layer = layer
+// Process RuneChat messages
+/proc/runechat_process()
+	for(var/datum/runechat_message/msg in runechat_messages)
+		if(!msg.tick())
+			msg.remove()
+			runechat_messages -= msg
 
-/datum/runechat_message/proc/update()
-	if(!display_object || !active)
-		return
-
-	// Update position if speaker moved
-	var/turf/speaker_turf = get_turf(speaker)
-	if(speaker_turf && (display_object.loc != speaker_turf))
-		display_object.loc = speaker_turf
-
-	// Update appearance
-	display_object.update_display()
-
-/datum/runechat_message/proc/should_remove()
-	return (world.time - created_time) > (duration + fade_time)
-
-/datum/runechat_message/proc/get_alpha()
-	var/elapsed = world.time - created_time
-	if(elapsed < duration)
-		return 255 // Fully visible
-	else if(elapsed < duration + fade_time)
-		// Fade out
-		var/fade_progress = (elapsed - duration) / fade_time
-		return max(0, 255 * (1 - fade_progress))
-	else
-		return 0 // Invisible
-
-// Runechat display object using overlay
-/obj/effect/overlay/runechat
-	name = "runechat"
-	anchored = TRUE
-	mouse_opacity = 0 // Use 0 instead of MOUSE_OPACITY_TRANSPARENT
-	icon = 'icons/effects/effects.dmi'
-	icon_state = "nothing"
-	layer = FLOAT_LAYER
-	plane = 1 // Use 1 instead of GAME_PLANE
-	var/datum/runechat_message/message
-
-/obj/effect/overlay/runechat/Initialize()
-	. = ..()
-	update_maptext()
-
-/obj/effect/overlay/runechat/Destroy()
-	if(message)
-		message.display_object = null
-	return ..()
-
-/obj/effect/overlay/runechat/proc/update_display()
-	update_maptext()
-
-/obj/effect/overlay/runechat/proc/update_maptext()
-	if(!message || !message.message_text)
-		return
-
-	// Create the maptext with proper formatting
-	var/text_color = message.color
-	var/font_size = 12
-	var/font_family = "Verdana, Arial, sans-serif"
-
-	// Clean the message text
-	var/clean_text = runechat_sanitize(message.message_text)
-
-	// Create the maptext - fix the font-family variable name
-	var/maptext_style = {"<span style="color:[text_color]; font-size:[font_size]px; font-family:[font_family]; text-align: center; display: block; text-shadow: 1px 1px 2px black;">[clean_text]</span>"}
-
-	maptext = maptext_style
-	maptext_x = -50 // Center the text
-	maptext_y = 0
-	maptext_width = 100
-	maptext_height = 20
-	alpha = message.get_alpha()
-
-// Helper proc to sanitize text - renamed to avoid conflicts
-/proc/runechat_sanitize(text)
-	if(!text)
-		return ""
-
-	// Basic HTML sanitization
-	text = replacetext(text, "<", "&lt;")
-	text = replacetext(text, ">", "&gt;")
-	text = replacetext(text, "\"", "&quot;")
-	text = replacetext(text, "'", "&#39;")
-
-	// Limit length
-	if(length(text) > 50)
-		text = copytext(text, 1, 47) + "..."
-
-	return text
-
-// Hook into Baystation's speech system by overriding the to_chat proc to intercept speech
-/mob/living/verb/say(msg as text)
-	set name = "Say"
-	set category = "IC"
-
-	if(!msg)
-		return
-
-	if(stat)
-		return
-
-	if(src.silent)
-		to_chat(src, "You can't speak!")
-		return
-
-	// Create runechat message BEFORE processing the speech
-	if(runechat_controller)
-		runechat_controller.create_message(src, msg, "say")
-
-	// Continue with normal say processing
-	..(msg)
-
-// Hook into emotes by overriding the me verb
-/mob/living/verb/me(msg as text)
-	set name = "Me"
-	set category = "IC"
-
-	if(!msg)
-		return
-
-	if(stat)
-		return
-
-	// Create runechat message BEFORE processing the emote
-	if(runechat_controller)
-		runechat_controller.create_message(src, msg, "me")
-
-	// Continue with normal me processing
-	..(msg)
-
-// Hook into whispers by overriding the whisper verb
-/mob/living/verb/whisper(msg as text)
-	set name = "Whisper"
-	set category = "IC"
-
-	if(!msg)
-		return
-
-	if(stat)
-		return
-
-	// Create runechat message BEFORE processing the whisper
-	if(runechat_controller)
-		runechat_controller.create_message(src, msg, "whisper")
-
-	// Continue with normal whisper processing
-	..(msg)
-
-// Initialize runechat system on world start
-/world/New()
-	..()
-	runechat_controller = new/datum/runechat_controller()
-
-// Admin commands for testing
+// Admin commands
 /client/verb/test_runechat()
 	set name = "Test RuneChat"
 	set category = "Debug"
-
-	if(!runechat_controller)
-		to_chat(usr, "RuneChat controller not initialized!")
+	if(!holder)
 		return
 
 	if(!mob)
 		return
 
-	runechat_controller.create_message(mob, "This is a test message!", "say")
-	runechat_controller.create_message(mob, "This is a test emote!", "me")
-	runechat_controller.create_message(mob, "This is a test whisper!", "whisper")
-
-	to_chat(usr, "RuneChat test messages created!")
+	runechat_create(mob, "This is a test message!", "say")
+	runechat_create(mob, "*waves happily*", "me")
+	runechat_create(mob, "This is a whisper...", "whisper")
+	runechat_create(mob, "Request: Medical to robotics!", "radio")
+	to_chat(usr, "RuneChat test messages created above your head.")
 
 /client/verb/clear_runechat()
 	set name = "Clear RuneChat"
 	set category = "Debug"
-
-	if(!runechat_controller)
-		to_chat(usr, "RuneChat controller not initialized!")
+	if(!holder)
 		return
 
-	for(var/mob/speaker in runechat_controller.active_messages)
-		var/list/speaker_messages = runechat_controller.active_messages[speaker]
-		if(speaker_messages)
-			for(var/datum/runechat_message/message in speaker_messages)
-				runechat_controller.remove_message(message)
+	for(var/datum/runechat_message/msg in runechat_messages)
+		msg.remove()
+	runechat_messages.Cut()
+	to_chat(usr, "All RuneChat messages cleared.")
 
-	to_chat(usr, "All RuneChat messages cleared!")
+/client/verb/toggle_runechat()
+	set name = "Toggle RuneChat"
+	set category = "Debug"
+	if(!holder)
+		return
+
+	runechat_enabled = !runechat_enabled
+	to_chat(usr, "RuneChat is now [runechat_enabled ? "ENABLED" : "DISABLED"].")
+
+// Initialize the system
+/world/New()
+	..()
+	// Start the processing loop
+	spawn(1)
+		while(1)
+			runechat_process()
+			sleep(0.1) // Process every 0.1 seconds
