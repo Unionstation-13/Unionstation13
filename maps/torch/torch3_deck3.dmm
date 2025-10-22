@@ -2081,6 +2081,9 @@
 	dir = 4
 	},
 /obj/floor_decal/borderfloorblack,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "eW" = (
@@ -2800,7 +2803,9 @@
 	name = "Officer Mess Staff Entrance"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "gx" = (
 /obj/structure/lattice,
 /obj/structure/disposalpipe/down{
@@ -2824,7 +2829,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "gz" = (
 /obj/structure/disposalpipe/junction,
 /obj/catwalk_plated,
@@ -2848,7 +2855,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "gB" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/gym)
@@ -3262,7 +3271,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "hx" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/cable/green{
@@ -3705,7 +3716,9 @@
 	},
 /obj/floor_decal/corner/green/three_quarters,
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "iv" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/steel_reinforced,
@@ -3719,7 +3732,9 @@
 	id_tag = "food_serv_lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "iw" = (
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light,
@@ -4448,7 +4463,9 @@
 	desc = "A computer used to recieve orders and process them"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "kb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -4465,7 +4482,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "kc" = (
 /obj/structure/bed/chair/office/dark,
 /turf/simulated/floor/plating,
@@ -5408,8 +5427,14 @@
 /obj/floor_decal/corner/green/half{
 	dir = 4
 	},
+/obj/machinery/light_switch{
+	pixel_x = 22;
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "mv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6264,6 +6289,18 @@
 /obj/random/drinkbottle,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
+"oQ" = (
+/obj/machinery/computer/modular/preset/civilian{
+	dir = 8;
+	name = "Ordering Terminal";
+	desc = "A device used to place orders to the Kitchen"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "oT" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -6377,6 +6414,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "pc" = (
@@ -6455,7 +6493,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "pj" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6772,7 +6812,9 @@
 	id_tag = "food_serv_lockdown"
 	},
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "qc" = (
 /obj/machinery/door/airlock/multi_tile/glass/civilian{
 	name = "Holodeck"
@@ -7362,7 +7404,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "rP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -7989,6 +8033,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"sT" = (
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "sU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8911,10 +8960,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/floor_decal/borderfloorblack{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/wall/prepainted,
 /area/crew_quarters/mess)
 "vt" = (
 /turf/simulated/wall/r_wall/hull,
@@ -10655,7 +10701,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "AD" = (
 /obj/structure/table/standard,
 /obj/machinery/computer/cryopod{
@@ -16148,7 +16196,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Om" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17764,7 +17814,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "SU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -17808,7 +17860,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Td" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -18947,7 +19001,9 @@
 	desc = "A Designator Designating that a disposals filter is underneath this tile"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess)
+/area/crew_quarters/mess{
+	req_access = list("ACCESS_KITCHEN")
+	})
 "VU" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
@@ -19462,6 +19518,17 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/space)
+"Xs" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/floor_decal/borderfloorblack,
+/obj/machinery/light_switch{
+	pixel_x = 24;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "Xt" = (
 /obj/machinery/meter,
 /obj/floor_decal/industrial/warning{
@@ -20325,6 +20392,15 @@
 "ZL" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
+"ZM" = (
+/obj/machinery/computer/modular/preset/civilian{
+	dir = 8;
+	name = "Ordering Terminal";
+	desc = "A device used to place orders to the Kitchen"
+	},
+/obj/structure/railing,
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "ZR" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 1;
@@ -37846,7 +37922,7 @@ RX
 Aq
 XO
 Ko
-RN
+Xs
 yj
 fB
 le
@@ -38644,17 +38720,17 @@ Mx
 wn
 Qn
 bA
-fB
-fB
+sT
+sT
 gA
-fB
+sT
 jf
 YD
 nN
 Uh
 Xl
-nD
-nD
+ZM
+oQ
 nD
 fB
 HF
