@@ -94,6 +94,7 @@
 /obj/floor_decal/spline/plain/green{
 	dir = 4
 	},
+/obj/item/material/folder/envelope/preset/bio_ordering_station,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/service_break_room{
 	name = "\improper Communal Manager's Office";
@@ -5223,9 +5224,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/machinery/computer/modular/preset/civilian{
-	dir = 8
-	},
+/obj/machinery/computer/modular/preset/civilian,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/service_break_room{
 	name = "\improper Communal Manager's Office";
