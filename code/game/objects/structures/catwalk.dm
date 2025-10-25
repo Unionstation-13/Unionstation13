@@ -13,7 +13,7 @@
 
 /obj/structure/catwalk/Initialize()
 	. = ..()
-	DELETE_IF_DUPLICATE_OF(/obj/structure/catwalk)
+	//DELETE_IF_DUPLICATE_OF(/obj/structure/catwalk)
 	update_connections(1)
 	update_icon()
 

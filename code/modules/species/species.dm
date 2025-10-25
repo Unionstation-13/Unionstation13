@@ -519,6 +519,9 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 
 // Only used for alien plasma weeds atm, but could be used for Dionaea later.
 /singleton/species/proc/handle_environment_special(mob/living/carbon/human/H)
+	if(istype(src, /singleton/species/aquatic_mech))
+		var/singleton/species/aquatic_mech/M = src
+		M.handle_environment_special_aquatic(H)
 	return
 
 /singleton/species/proc/handle_movement_delay_special(mob/living/carbon/human/H)

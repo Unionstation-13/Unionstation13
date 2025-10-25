@@ -39,7 +39,7 @@
 
 
 
-/singleton/species/aquatic_mech/proc/handle_life_special(mob/living/carbon/human/H)
+/singleton/species/aquatic_mech/proc/handle_environment_special_aquatic(mob/living/carbon/human/H)
 	if(!has_valid_suit(H))
 		H.take_organ_damage(10)
 		H.visible_message(
@@ -56,19 +56,24 @@
 
 /singleton/species/aquatic_mech/proc/handle_post_spawn_aquatic(mob/living/carbon/human/H)
 	log_debug("DEBUG: aquatic_mech/handle_post_spawn_aquatic called.")
+	if(H.wear_suit)
+		log_debug("DEBUG: H.wear_suit is [H.wear_suit.name] ([H.wear_suit.type])")
+	else
+		log_debug("DEBUG: H.wear_suit is null.")
 	if(!has_valid_suit(H))
 		log_debug("DEBUG: has_valid_suit is FALSE.")
 		if(H.wear_suit)
-			log_debug("DEBUG: Trying to remove [H.wear_suit.name].")
-			qdel(H.wear_suit)
-		
+			log_debug("DEBUG: Trying to unequip [H.wear_suit.name].")
+			H.unequip_item(H.wear_suit, 1)
+
 		log_debug("DEBUG: Creating and equipping new suit.")
 		var/obj/item/clothing/suit/aquatic_mech/S = new()
 		if(S)
-			if(H.equip_to_slot_or_del(S, slot_wear_suit))
+			if(H.equip_to_slot(S, slot_wear_suit))
 				log_debug("DEBUG: Suit equipped successfully.")
 			else
 				log_debug("DEBUG: Suit equip FAILED.")
+				qdel(S)
 		else
 			log_debug("DEBUG: Suit creation FAILED.")
 	else
