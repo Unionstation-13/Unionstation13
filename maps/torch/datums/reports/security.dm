@@ -14,7 +14,7 @@
 
 /datum/computer_file/report/recipient/sec/incident/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "To be filled out by Security Personnel on duty responding to the Incident. Report must be signed and submitted before the end of the shift!")
 	add_field(/datum/report_field/people/from_manifest, "Reporting Security Personnel")
 	add_field(/datum/report_field/simple_text, "Offense/Incident Type")
@@ -37,7 +37,7 @@
 
 /datum/computer_file/report/recipient/sec/investigation/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "For internal use only.")
 	add_field(/datum/report_field/people/from_manifest, "Name")
 	add_field(/datum/report_field/date, "Date")
@@ -56,7 +56,7 @@
 /datum/computer_file/report/recipient/sec/evidence/generate_fields()
 	..()
 	var/datum/report_field/temp_field
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 	add_field(/datum/report_field/people/from_manifest, "Confiscated from")
@@ -74,7 +74,7 @@
 
 /datum/computer_file/report/recipient/sec/statement/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "To be filled out by crewmember involved to document their side of an incident.")
 	add_field(/datum/report_field/people/from_manifest, "Submitting Individual")
 	add_field(/datum/report_field/simple_text, "Offense/Incident Type")
@@ -97,7 +97,7 @@
 
 /datum/computer_file/report/recipient/sec/arrest/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "To be filled out by Arresting Security Personnel or Brig Chief. Report must be signed and submitted before the end of the shift!")
 	add_field(/datum/report_field/people/from_manifest, "Booking Security Personnel")
 	add_field(/datum/report_field/people/list_from_manifest, "Arresting Security Personnel")
@@ -129,7 +129,7 @@
 
 /datum/computer_file/report/recipient/sec/restraining/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "To be filled out by the Chief of Security, Executive Officer, or Commanding Officer. Report must be signed and submitted for the order to be considered valid. Any paper copies must be stamped.")
 	add_field(/datum/report_field/people/from_manifest, "Plantiff")
 	add_field(/datum/report_field/people/from_manifest, "Defendant(s)")
@@ -146,7 +146,7 @@
 
 /datum/computer_file/report/recipient/sec/ltc/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "UGN Titen Security Department")
+	add_field(/datum/report_field/text_label/header, "Peacekeeper Division")
 	add_field(/datum/report_field/text_label/instruction, "To be filled out by the Chief of Security, Executive Officer, or Commanding Officer. Report must be signed and submitted for the order to be considered valid. Any paper copies must be stamped.")
 	add_field(/datum/report_field/people/from_manifest, "Licensee")
 	add_field(/datum/report_field/date, "Date Effective")
@@ -154,5 +154,5 @@
 	add_field(/datum/report_field/simple_text, "Reason for License")
 	add_field(/datum/report_field/simple_text, "Authorized for Possession Of")
 	add_field(/datum/report_field/text_label/instruction, "THIS LICENSE IS ISSUED 'AT-WILL' AND MAY BE REVOKED AT ANY TIME FOR ANY REASON BY THE COMMANDING OFFICER, EXECUTIVE OFFICER, OR THE CHIEF OF SECURITY. IN THE EVENT OF ILLEGAL CONDUCT, THIS LICENSE MAY BE REVOKED BY ANY LAW ENFORCEMENT OFFICER ACTING IN THE COURSE OF THEIR NORMAL DUTIES. ALL LICENSEES ARE REQUIRED TO ABIDE BY LOCAL LAWS AND REGULATIONS AT ALL TIMES. OPEN CARRY OF LICENSED ITEMS IS GENERALLY NOT PERMITTED UNLESS EXPLICITLY DENOTED. THIS DOCUMENT MUST BE CARRIED BY THE LICENSED PARTY WHEN THEY ARE IN DIRECT OR CONSTRUCTIVE POSSESSION OF THE AFORMENTIONED ITEMS OR WEAPONS THAT THEY ARE AUTHORIZED FOR. COPIES OF THIS DOCUMENT WILL BE FORWARDED TO THE COMMANDING OFFICER, EXECUTIVE OFFICER, CHIEF OF SECURITY, AND BRIG OFFICER FOR REFERENCE.")
-	add_field(/datum/report_field/signature, "Submitting Officer's signature")
+	add_field(/datum/report_field/signature, "Submitting Peacekeeper's signature")
 	set_access(access_edit = access_hos)
