@@ -181,6 +181,51 @@
 	sealed = TRUE
 	seal_stamp = "\improper SCG Expeditionary Command rubber stamp"
 
+/obj/item/material/folder/envelope/preset/bio_ordering_station
+	name = "sealed B.I.O LLC envelope"
+	desc = "An official envelope with the B.I.O LLC corporate seal."
+	icon_state = "envelope_sealed"
+	sealed = TRUE
+	seal_stamp = "\improper B.I.O LLC corporate rubber stamp"
+
+/obj/item/material/folder/envelope/preset/bio_ordering_station/New()
+	..()
+	var/obj/item/paper/bio_memo = new(src)
+	bio_memo.name = "B.I.O LLC - Chat Channel Directive"
+	bio_memo.info = {"<center><b>B.I.O LLC CORPORATE MEMORANDUM</b></center><br>
+		<center><i>Official Communication</i></center><br><br>
+
+		<b>To:</b> Community Services Manager<br>
+		<b>From:</b> Leonard Clark, B.I.O LLC Operations Director<br>
+		<b>Date:</b> October 19, 2450" <br>
+		<b>Subject:</b> Establishment of Public Chat Channel<br><br>
+
+		<b>DIRECTIVE:</b><br>
+		You are hereby instructed to create a public NTNRC chat channel with the following specifications:<br><br>
+
+		<b>Channel Name:</b> "BIO Ordering Station"<br><br>
+
+		<b>Purpose:</b> This channel will serve as the primary communication hub for all B.I.O LLC ordering operations and customer service inquiries.<br><br>
+
+		<b>Responsibilities:</b><br>
+		• Monitor the channel continuously during your shift<br>
+		• Respond promptly to all ordering inquiries<br>
+		• Maintain professional communication standards<br>
+		• Stay on top of all incoming orders and ensure timely processing<br>
+		• Coordinate with other departments as needed to fulfill orders<br><br>
+
+		<b>Priority:</b> HIGH - This directive is to be implemented immediately upon receipt of this memorandum.<br><br>
+
+		<b>Additional Notes:</b> This channel will be monitored by B.I.O LLC corporate oversight. Failure to maintain proper channel management may result in disciplinary action.<br><br>
+
+		<center><i>This directive is authorized by B.I.O LLC corporate policy.</i></center><br><br>
+
+		Signed,<br>
+		<b>Leonard Clark</b><br>
+		Operations Director<br>
+		B.I.O LLC"}
+	bio_memo.update_icon()
+
 
 /obj/item/material/folder/envelope/on_update_icon()
 	if (sealed)
@@ -349,6 +394,10 @@
 	onclose(user, window_name)
 	add_fingerprint(usr)
 
+/obj/item/material/folder/clipboard/examine(mob/user, distance, is_adjacent)
+	. = ..()
+	if (top_paper && is_adjacent)
+		top_paper.show_content(user)
 
 /obj/item/material/folder/clipboard/Topic(href_text, list/href_list, datum/topic_state/state)
 	if (!CanPhysicallyInteractWith(usr, src))
@@ -419,6 +468,23 @@
 		)
 		stored_pen = pen
 		attack_self(usr)
+		update_icon()
+		return
+	if (href_list["remove"])
+		var/obj/item/removed_item = locate(href_list["remove"]) in contents
+		if (!removed_item)
+			to_chat(usr, SPAN_WARNING("That's no longer held by \the [src]."))
+			return
+		usr.put_in_hands(removed_item)
+		attack_hand(usr)
+		if (removed_item == top_paper)
+			top_paper = null
+			var/i = length(contents)
+			while (i > 0 && !top_paper)
+				var/obj/item/item = contents[i]
+				if (istype(item, /obj/item/paper))
+					top_paper = item
+				i--
 		update_icon()
 		return
 	..()

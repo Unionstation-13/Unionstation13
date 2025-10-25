@@ -15,7 +15,6 @@
 	var/obj/item/card/id/ID
 	var/list/uniforms = list()
 	var/list/selected_outfit = list()
-	var/static/list/issued_items = list()
 
 /obj/machinery/uniform_vendor/on_update_icon()
 	if(MACHINE_IS_BROKEN(src))
@@ -114,98 +113,11 @@
 		return TRUE
 	return ..()
 
-/*	Outfit structures
-	branch
-	branch/department
-	branch/department/officer
-	branch/department/officer/command
-
-	The one exception to the above is the command department, due to the fact that you have to be an officer to
-	be in command, and there are no variants as a result. Also no special CO uniform :(
-*/
-/obj/machinery/uniform_vendor/proc/find_uniforms(datum/mil_rank/user_rank, datum/mil_branch/user_branch, department) //returns 1 if found branch and thus has a base uniform, 2, branch and department, 0 if failed.
-	var/singleton/hierarchy/mil_uniform/user_outfit = GET_SINGLETON(/singleton/hierarchy/mil_uniform)
-	var/mil_uniforms = user_outfit
-	for(var/singleton/hierarchy/mil_uniform/child in user_outfit.children)
-		if(is_type_in_list(user_branch, child.branches))
-			user_outfit = child
-	if(user_outfit == mil_uniforms) //We haven't found a branch
-		return null //Return no uniforms, which will cause the machine to spit out an error.
-
-	// we have found a branch.
-	if(department == COM) //Command only has one variant and they have to be an officer
-		for(var/singleton/hierarchy/mil_uniform/child in user_outfit.children)
-			if(child.departments & COM)
-				user_outfit = child
-				for(var/singleton/hierarchy/mil_uniform/seniorchild in user_outfit.children) //Check for variants of command outfits
-					if(user_rank.sort_order >= seniorchild.min_rank && user_outfit.min_rank < seniorchild.min_rank)
-						user_outfit = seniorchild
-	else
-		var/tmp_department = department
-		tmp_department &= ~COM //Parse departments, with complete disconsideration to the command flag (so we don't flag 2 outfit trees)
-
-		for(var/singleton/hierarchy/mil_uniform/child in user_outfit.children) //find base department outfit
-			if(child.departments & tmp_department)
-				user_outfit = child
-				break
-		for(var/singleton/hierarchy/mil_uniform/child in user_outfit.children) //find highest applicable ranking department outfit
-			if(user_rank.sort_order >= child.min_rank && user_outfit.min_rank < child.min_rank)
-				user_outfit = child
-		if(department & COM) //user is in command of their department
-			if(user_outfit.children[1])// Command outfit exists
-				user_outfit = user_outfit.children[1]
-				for(var/singleton/hierarchy/mil_uniform/child in user_outfit.children) //Check for variants of command outfits
-					if(user_rank.sort_order >= child.min_rank && user_outfit.min_rank < child.min_rank)
-						user_outfit = child
-
-	return populate_uniforms(user_outfit) //Generate uniform lists.
-
-/obj/machinery/uniform_vendor/proc/populate_uniforms(singleton/hierarchy/mil_uniform/user_outfit)
-	var/list/res = list()
-	res["PT"] = list(
-		user_outfit.pt_under,
-		user_outfit.pt_shoes
-		)
-
-	res["Utility"] = list(
-		user_outfit.utility_under,
-		user_outfit.utility_shoes,
-		user_outfit.utility_hat
-		)
-	if (user_outfit.utility_extra)
-		res["Utility Extras"] = user_outfit.utility_extra
-
-	res["Service"] = list(
-		user_outfit.service_under,
-		user_outfit.service_skirt,
-		user_outfit.service_over,
-		user_outfit.service_shoes,
-		user_outfit.service_heels,
-		user_outfit.service_hat,
-		user_outfit.service_gloves
-		)
-	if(user_outfit.service_extra)
-		res["Service Extras"] = user_outfit.service_extra
-
-	res["Dress"] = list(
-		user_outfit.dress_under,
-		user_outfit.dress_skirt,
-		user_outfit.dress_over,
-		user_outfit.dress_shoes,
-		user_outfit.dress_heels,
-		user_outfit.dress_hat,
-		user_outfit.dress_gloves
-		)
-	if(user_outfit.dress_extra)
-		res["Dress Extras"] = user_outfit.dress_extra
-
-	return res
-
 /obj/machinery/uniform_vendor/proc/spawn_uniform(list/selected_outfit)
 	listclearnulls(selected_outfit)
-	if(!issued_items[user_id()])
-		issued_items[user_id()] = list()
-	var/list/checkedout = issued_items[user_id()]
+	if(!GLOB.uniform_issued_items[user_id()])
+		GLOB.uniform_issued_items[user_id()] = list()
+	var/list/checkedout = GLOB.uniform_issued_items[user_id()]
 	if(length(selected_outfit) > 1)
 		var/obj/item/clothingbag/bag = new /obj/item/clothingbag
 		for(var/item in selected_outfit)
@@ -224,7 +136,7 @@
 		return "[ID.registered_name], [ID.military_rank], [ID.military_branch]"
 
 /obj/machinery/uniform_vendor/proc/can_issue(gear)
-	var/list/issued = issued_items[user_id()]
+	var/list/issued = GLOB.uniform_issued_items[user_id()]
 	if(!issued || !length(issued))
 		return TRUE
 	return !(gear in issued)

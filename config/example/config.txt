@@ -1,11 +1,11 @@
 ## Server name: This appears at the top of the screen in-game and on hub listings.
-# SERVER_NAME Space Station 13
+SERVER_NAME Unionstation13
 
 ## Game Version: The archetype of the server for topic status requests. Unless significantly deviated, avoid changing this. Default Baystation12
-# GAME_VERSION Baystation12
+GAME_VERSION Baystation12
 
 ## Hub visibility: If you want to be visible on the hub, uncomment the below line and be sure that Dream Daemon is set to "Visible." This can be changed in-round as well with toggle-hub-visibility if Dream Daemon is set correctly.
-# HUB_VISIBLE
+HUB_VISIBLE
 
 ## Add a # infront of this if you want to use the SQL based admin system, the legacy system uses admins.txt. You need to set up your database to use the SQL based system.
 ADMIN_LEGACY_SYSTEM
@@ -14,8 +14,7 @@ ADMIN_LEGACY_SYSTEM
 BAN_LEGACY_SYSTEM
 
 ## Add a # here if you wish to use the setup where jobs have more access. This is intended for servers with low populations - where there are not enough players to fill all roles, so players need to do more than just one job. Also for servers where they don't want people to hide in their own departments.
-JOBS_HAVE_MINIMAL_ACCESS
-
+#JOBS_HAVE_MINIMAL_ACCESS
 ## Unhash this entry to have certain jobs require your account to be at least a certain number of days old to select. You can configure the exact age requirement for different jobs by editing
 ## the minimal_player_age variable in the files in folder /code/game/jobs/job/.. for the job you want to edit. Set minimal_player_age to 0 to disable age requirement for that job.
 ## REQUIRES the database set up to work. Keep it hashed if you don't have a database set up.
@@ -202,15 +201,15 @@ GUEST_BAN
 
 ## Wiki address
 ## Where your server's documentation lives
-# WIKI_URL https://example.com
+# WIKI_URL https://unionstation.miraheze.org/wiki/Main_Page
 
 ## Rules address
 ## Where your server's rules can be found
-# RULES_URL https://example.com
+# RULES_URL https://unionstation.miraheze.org/wiki/Rules
 
 ## Lore address
 ## Where your server's scintillating background material can be read
-# LORE_URL https://example.com
+# LORE_URL https://unionstation.miraheze.org/wiki/Lore_Primer
 
 ## Forum address
 ## Where your users can go to chat in the old fashion
@@ -218,7 +217,7 @@ GUEST_BAN
 
 ## Source address
 ## Where your users can go to stick their fingers in the code
-# SOURCE_URL https://example.com
+# SOURCE_URL https://github.com/Unionstation-13/Unionstation13
 
 ## GitHub new issue address
 ## Where your users can go to complain about problems with the code
@@ -226,11 +225,11 @@ GUEST_BAN
 
 ## Discord address
 ## Where your users can go to complain at each other in real time
-# DISCORD_URL https://example.com
+# DISCORD_URL https://discord.gg/HfAMcwJE
 
 ## Ban appeals URL
 ## Where your users can go to tell you they've changed
-# BANAPPEALS https://example.com
+# BANAPPEALS https://discord.gg/HfAMcwJE
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
@@ -465,3 +464,49 @@ RADIATION_LOWER_LIMIT 0.15
 ## Uncomment this to bypass empty z-level checks in certain subsystems. For testing and development purposes only.
 ## Not recommended for live use.
 #RUN_EMPTY_LEVELS
+
+## SKIP_CONN_WARN_CID_ALL
+## Bool. Default: Off
+## Whether we should skip warning staff and players about connections with CID collisions
+#SKIP_CONN_WARN_CID_ALL
+
+## SKIP_CONN_WARN_CID
+## Multi-List. Default: None Set
+## If SKIP_CONN_WARN_CID_ALL is not set, an optional list of CIDs to skip anyway
+## Add lines of 'SKIP_CONN_WARN_CID CID' to add entries, eg:
+#SKIP_CONN_WARN_CID 14138560
+#SKIP_CONN_WARN_CID 10964753
+
+## SKIP_CONN_WARN_ADDRESS_ALL
+## Bool. Default: Off
+## Whether we should skip warning about connections with address (IP) collisions
+#SKIP_CONN_WARN_ADDRESS_ALL
+
+## SKIP_CONN_WARN_ADDRESS
+## Multi-List. Default: Empty
+## If SKIP_CONN_WARN_ADDRESS_ALL is not set, an optional list of addresses (IPs) to skip anyway
+## Add lines of 'SKIP_CONN_WARN_ADDRESS ADDRESS' to add entries, eg:
+#SKIP_CONN_WARN_ADDRESS 3.33.130.190
+#SKIP_CONN_WARN_ADDRESS 213.186.33.5
+
+## SKIP_CONN_WARN_CKEY
+## Multi-List. Default: Empty
+## An optional list of ckeys to skip warning about connection detail collisions
+## Members of this list are mapped to ckey(entry) - you may use key here instead
+## Add lines of 'SKIP_CONN_WARN_CKEY ckeyable' to add entries, eg:
+#SKIP_CONN_WARN_CKEY exadv1
+#SKIP_CONN_WARN_CKEY Looming Wombat 99
+
+## SKIP_CONN_WARN_CLIENT
+## Bool. Default: Off
+## Whether we should warn the triggering client about connection detail collisions
+#SKIP_CONN_WARN_CLIENT
+
+## CONN_WARN_CLIENT_MESSAGE
+## Text. Default: Builtin
+## The message we should display to clients if they appear to be sharing an address or machine with
+## another client, after respecting SKIP_CONN_* rules. If not set, the default message is sent:
+## "You share some connection details with another connected player. Using more than one account at
+## a time is not allowed. If this is your first time seeing this message, please contact staff by
+## using the AdminHelp command."
+#CONN_WARN_CLIENT_MESSAGE It looks like you're multi-keying. Please stop that!

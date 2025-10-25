@@ -157,19 +157,19 @@
 	return "You are an engineering trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
 
 /datum/job/roboticist
-	title = "Roboticist"
-	department = "Engineering"
+	title = "Technical Repair Specalist"
+	department = "Technical Service"
 	department_flag = ENG|ROB
 
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	supervisors = "the Chief Engineer."
+	supervisors = "ABCDEFG Inc's software/hardware rules"
 	selection_color = "#5b4d20"
 	economic_power = 6
 	alt_titles = list(
-		"Mechsuit Technician")
+		"Technician")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
@@ -201,4 +201,6 @@
 	)
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Engineer."
+	return "You are a Technical Repair Specalist.\
+	you are responsible for managing the ship's hardware systems such as synthetic units or the artificial intelligence(to a degree), however, please remember that you\
+	are not required to follow orders from the Chief Engineer or any other engineering staff, as you are an employee of ABCDEFG inc."

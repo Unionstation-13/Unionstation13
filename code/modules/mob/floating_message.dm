@@ -15,7 +15,7 @@ var/global/list/floating_chat_colors = list()
 /// LAZYLIST of `/image`. Floating text message images being processed by this atom.
 /atom/movable/var/list/stored_chat_text
 
-/atom/movable/proc/animate_chat(message, datum/language/language, small, list/show_to, duration = CHAT_MESSAGE_LIFESPAN)
+/atom/movable/proc/animate_chat(message, datum/language/language, size, list/show_to, icon_state_override, duration = CHAT_MESSAGE_LIFESPAN)
 	set waitfor = FALSE
 
 	/// Get rid of any URL schemes that might cause BYOND to automatically wrap something in an anchor tag
@@ -24,23 +24,33 @@ var/global/list/floating_chat_colors = list()
 
 	var/static/regex/html_metachars = new(@"&[A-Za-z]{1,7};", "g")
 	message = replacetext(message, html_metachars, "")
+	var/original_message = message
 
 	//additional style params for the message
 	var/style
 	var/fontsize = 7
 	var/limit = 120
 
-	if (language && language.name == "Noise")
+	var/icon_prepend
+	if(language && language.name == "Noise" && !icon_state_override)
 		var/image/emote_icon = image(icon = 'icons/mob/floating_chat_icons.dmi', icon_state = "emote")
-		message = "\icon[emote_icon] [message]"
-		small = TRUE
+		icon_prepend = "\icon[emote_icon]"
+		size = RUNECHAT_SMALL
+	else if(icon_state_override)
+		var/image/emote_icon = image(icon = 'icons/mob/floating_chat_icons.dmi', icon_state = icon_state_override)
+		icon_prepend = "\icon[emote_icon]"
 
-	if(small)
+	if(icon_prepend)
+		message = "[icon_prepend] [message]"
+		limit += length_char(icon_prepend)
+	if(size == RUNECHAT_SMALL)
 		fontsize = 6
 
-	if(copytext_char(message, length_char(message) - 1) == "!!")
+	if(copytext_char(message, length_char(message) - 1) == "!!" || size == RUNECHAT_LARGE)
 		fontsize = 8
 		limit = 60
+		if(icon_prepend)
+			limit += length_char(icon_prepend)
 		style += "font-weight: bold;"
 
 	if(length_char(message) > limit)
@@ -57,7 +67,7 @@ var/global/list/floating_chat_colors = list()
 			if(C.mob.say_understands(src, language))
 				C.images += understood
 			else
-				var/image/gibberish = language ? generate_floating_text(src, language.scramble(message, C.mob.languages), style, fontsize, duration, show_to, 8) : understood
+				var/image/gibberish = language ? generate_floating_text(src, (icon_prepend ? "[icon_prepend] " : "") + language.scramble(original_message, C.mob.languages), style, fontsize, duration, show_to, 8) : understood
 				C.images += gibberish
 
 /proc/generate_floating_text(atom/movable/holder, message, style, size, duration, show_to, height_adjust)

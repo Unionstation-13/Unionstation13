@@ -34,8 +34,11 @@
 
 /obj/item/organ/internal/posibrain/Initialize()
 	. = ..()
-	if(!brainmob && iscarbon(loc))
-		init(loc)
+	if(!brainmob)
+		if(iscarbon(loc))
+			init(loc)
+		else
+			brainmob = new(src)
 	robotize()
 	unshackle()
 	update_icon()
@@ -161,7 +164,7 @@
 	if (brainmob.mind && brainmob.mind.special_role)
 		return
 	var/datum/ghosttrap/T = get_ghost_trap("positronic brain")
-	if (!T.assess_candidate(user))
+	if (!T.assess_candidate(user, brainmob))
 		return
 	var/possess = alert(user, "Do you wish to become \the [src]?", "Become [src]?", "Yes", "No")
 	if (possess != "Yes")
@@ -283,9 +286,9 @@
 			owner.slurring += 6
 		if (damage > min_broken_damage)
 			if (prob(2))
-				if (prob(15) && owner.sleeping < 1)
+				if (prob(15) && !owner.sleeping)
 					owner.visible_message(SPAN_ITALIC("\The [owner] suddenly halts all activity."))
-					owner.sleeping += 10
+					owner.Sleeping(5)
 				else if (owner.anchored || isspace(get_turf(owner)))
 					owner.visible_message(SPAN_ITALIC("\The [owner] seizes and twitches!"))
 					owner.Stun(2)

@@ -1,7 +1,7 @@
 /datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "The United Galatic Nations"
-	minimal_player_age = 14
+	minimal_player_age = 35
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
@@ -36,7 +36,7 @@
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
-	minimal_player_age = 14
+	minimal_player_age = 35
 	economic_power = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
@@ -86,7 +86,7 @@
 	supervisors = "The United Rocknall Corporation and the UGN"
 	department_flag = COM|MED|SCI
 	economic_power = 12
-	minimal_player_age = 14
+	minimal_player_age = 25
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
@@ -347,8 +347,8 @@
 	title = "Command Secretary"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Commanding Officer and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
@@ -387,5 +387,51 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 
-/datum/job/bridgeofficer/get_description_blurb()
+/datum/job/bridgesecretary/get_description_blurb()
 	return "You are a Bridge Secretary. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and First Lieutenant. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+/datum/job/bridgeofficer
+	title = "Bridge Officer"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Commanding Officer and heads of staff"
+	selection_color = "#2f2f7f"
+	minimal_player_age = 0
+	economic_power = 8
+	minimum_character_age = list(SPECIES_HUMAN = 28)
+	ideal_character_age = 32
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+	)
+	allowed_ranks = list(/datum/mil_rank/fleet/o1)
+	skill_points = 26
+	min_skill = list( // 9 points
+		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
+		SKILL_PILOT = SKILL_EXPERIENCED // 8 points
+	)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+
+	access = list(
+		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
+		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
+		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
+		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
+		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports,
+							 /datum/computer_file/program/deck_management)
+
+/datum/job/bridgeofficer/get_description_blurb()
+	return "You are a Bridge Officer. You are a skilled officer responsible for navigation and vessel operations. You work directly under the Commanding Officer and First Lieutenant, serving as the primary helmsman for the Titen and pilot for auxiliary craft. Your advanced piloting expertise makes you crucial for complex maneuvers and emergency situations. You monitor all bridge systems, communications, and navigation data, providing critical information to command staff during both routine operations and crisis scenarios"

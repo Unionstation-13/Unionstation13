@@ -111,6 +111,7 @@
 \tCtrl + Click = drag
 \tShift + Click = examine
 \tAlt + Click = show entities on turf
+\tAlt+x = cancel current timed action
 \tCtrl + Alt + Click = point"})
 
 	var/robot_hotkey_mode = SPAN_COLOR("purple", {"Hotkey-Mode: (hotkey-mode must be on)
@@ -156,6 +157,7 @@
 \tCtrl + Click = drag or bolt doors
 \tShift + Click = examine or open doors
 \tAlt + Click = show entities on turf
+\tAlt+e = cancel current timed action
 \tCtrl + Shift + Click = electrify doors
 \tCtrl + Alt + Click = point"})
 

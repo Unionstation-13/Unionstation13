@@ -27,18 +27,25 @@
 			previewJob = SSjobs.get_by_title(job_high)
 	else
 		return
+	var/list/loadout_taken_slots = list()
 	if(preview_job && previewJob)
 		mannequin.job = previewJob.title
 		var/datum/mil_branch/branch = GLOB.mil_branches.get_branch(branches[previewJob.title])
 		var/datum/mil_rank/rank = GLOB.mil_branches.get_rank(branches[previewJob.title], ranks[previewJob.title])
 		previewJob.equip_preview(mannequin, player_alt_titles[previewJob.title], branch, rank)
+		var/list/preview_gear = preview_job ? Uniform(previewJob) : list()
+		if(preview_gear)
+			for(var/thing in Uniform(previewJob))
+				var/item = new thing(mannequin.loc)
+				var/slot = mannequin.equip_to_appropriate_slot(item, TRUE, TRUE, TRUE, TRUE)
+				if(slot)
+					loadout_taken_slots |= slot
 		update_icon = TRUE
 	if(!(mannequin.species.appearance_flags && mannequin.species.appearance_flags & SPECIES_APPEARANCE_HAS_UNDERWEAR))
 		if(all_underwear)
 			all_underwear.Cut()
 	if(preview_gear && !(previewJob && preview_job && (previewJob.type == /datum/job/ai || previewJob.type == /datum/job/cyborg)))
 		// Equip custom gear loadout, replacing any job items
-		var/list/loadout_taken_slots = list()
 		for(var/thing in Gear())
 			var/datum/gear/G = gear_datums[thing]
 			if(G)
@@ -55,7 +62,7 @@
 				if(!permitted)
 					continue
 				if(G.slot && G.slot != slot_tie && !(G.slot in loadout_taken_slots) && G.spawn_on_mob(mannequin, gear_list[gear_slot][G.display_name]))
-					loadout_taken_slots.Add(G.slot)
+					loadout_taken_slots |= G.slot
 					update_icon = TRUE
 	if(update_icon)
 		mannequin.update_icons()

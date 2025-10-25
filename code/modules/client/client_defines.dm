@@ -37,7 +37,7 @@
 	var/received_irc_pm = -99999
 
 	/// Prevents people from being spammed about multikeying every time their mob changes
-	var/warned_about_multikeying = TRUE
+	var/warned_about_multikeying = FALSE
 
 	/// If the database is available, how old the account is in days
 	var/player_age = "Requires database"

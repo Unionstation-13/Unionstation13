@@ -265,7 +265,7 @@ GLOBAL_LIST_EMPTY(vox_artifact_spawners)
 
 /obj/structure/voxanalyzer
 	name = "oddity analyzer"
-	desc = "An old, dusty machine meant to analyze various bluespace anomalies and send research data directly to SCGEC Observatory."
+	desc = "An old, dusty machine meant to analyze various bluespace anomalies and send research data directly to a UGN Observatory."
 	icon = 'icons/obj/machines/research/xenoarcheology_scanner.dmi'
 	icon_state = "scanner"
 	anchored = FALSE

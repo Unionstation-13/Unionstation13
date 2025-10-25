@@ -18,7 +18,7 @@
 /obj/screen/borer/Click(location, control, params)
 	if(!istype(usr, /mob/living/simple_animal/borer))
 		return FALSE
-	if(usr.stat == DEAD)
+	if(usr.is_dead())
 		return FALSE
 	var/mob/living/simple_animal/borer/worm = usr
 	if(!worm.host)
@@ -52,29 +52,29 @@
 	worm.host.add_language(LANGUAGE_BORER_GLOBAL)
 
 	// host -> brain
-	var/h2b_id = worm.host.computer_id
-	var/h2b_ip=  worm.host.lastKnownIP
-	worm.host.computer_id = null
-	worm.host.lastKnownIP = null
+	var/h2b_id = worm.host.last_cid
+	var/h2b_ip=  worm.host.last_address
+	worm.host.last_cid = null
+	worm.host.last_address = null
 	qdel(worm.host_brain)
 	worm.host_brain = new(worm)
 	worm.host_brain.ckey = worm.host.ckey
 	worm.host_brain.SetName(worm.host.name)
-	if(!worm.host_brain.computer_id)
-		worm.host_brain.computer_id = h2b_id
-	if(!worm.host_brain.lastKnownIP)
-		worm.host_brain.lastKnownIP = h2b_ip
+	if(!worm.host_brain.last_cid)
+		worm.host_brain.last_cid = h2b_id
+	if(!worm.host_brain.last_address)
+		worm.host_brain.last_address = h2b_ip
 
 	// self -> host
-	var/s2h_id = worm.computer_id
-	var/s2h_ip= worm.lastKnownIP
-	worm.computer_id = null
-	worm.lastKnownIP = null
+	var/s2h_id = worm.last_cid
+	var/s2h_ip= worm.last_address
+	worm.last_cid = null
+	worm.last_address = null
 	worm.host.ckey = worm.ckey
-	if(!worm.host.computer_id)
-		worm.host.computer_id = s2h_id
-	if(!worm.host.lastKnownIP)
-		worm.host.lastKnownIP = s2h_ip
+	if(!worm.host.last_cid)
+		worm.host.last_cid = s2h_id
+	if(!worm.host.last_address)
+		worm.host.last_address = s2h_ip
 	worm.controlling = TRUE
 	worm.host.verbs += /mob/living/carbon/proc/release_control
 	worm.host.verbs += /mob/living/carbon/proc/punish_host

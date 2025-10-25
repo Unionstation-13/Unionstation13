@@ -54,7 +54,6 @@ GLOBAL_TYPED_NEW(debug_real_globals, /datum/debug_real_globals)
 		"sqlport",
 		"comms_password",
 		"ban_comms_password",
-		"login_export_addr",
 		"admin_verbs_default",
 		"admin_verbs_admin",
 		"admin_verbs_ban",

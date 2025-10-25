@@ -65,11 +65,11 @@
 		icon_state = "paper"
 
 
-/obj/item/paper/examine(mob/user, distance)
+/obj/item/paper/examine(mob/user, distance, is_adjacent)
 	. = ..()
 	if(!is_memo && name != "sheet of paper")
 		to_chat(user, "It's titled '[name]'.")
-	if(distance <= 1)
+	if(is_adjacent)
 		show_content(usr)
 	else
 		to_chat(user, SPAN_NOTICE("You have to go closer if you want to read it."))

@@ -38,7 +38,7 @@
 		else
 			return FALSE
 	width = bounds[MAP_MAXX] - bounds[MAP_MINX] + 1
-	height = bounds[MAP_MAXY] - bounds[MAP_MINX] + 1
+	height = bounds[MAP_MAXY] - bounds[MAP_MINY] + 1
 	tallness = bounds[MAP_MAXZ] - bounds[MAP_MINZ] + 1
 	return TRUE
 

@@ -395,6 +395,18 @@ SUBSYSTEM_DEF(jobs)
 	// Equip custom gear loadout, replacing any job items
 	var/list/spawn_in_storage = list()
 	var/list/loadout_taken_slots = list()
+
+	if(H.client.prefs.Uniform(job))
+		var/uniform_id = "[H.real_name], [H.char_rank], [H.char_branch]"
+		if(!GLOB.uniform_issued_items[uniform_id])
+			GLOB.uniform_issued_items[uniform_id] = list()
+		var/list/checkedout = GLOB.uniform_issued_items[uniform_id]
+		for(var/thing in H.client.prefs.Uniform(job))
+			var/item = new thing(H.loc)
+			if(!H.equip_to_appropriate_slot(item, TRUE, TRUE, TRUE, TRUE))
+				spawn_in_storage.Add(item)
+			checkedout += item
+
 	if(H.client.prefs.Gear() && job.loadout_allowed)
 		for(var/thing in H.client.prefs.Gear())
 			var/datum/gear/G = gear_datums[thing]

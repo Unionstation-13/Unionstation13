@@ -39,6 +39,9 @@
 	pref.branches = R.read("branches")
 	pref.ranks = R.read("ranks")
 	pref.hiding_maps = R.read("hiding_maps")
+	pref.uniforms_by_job = R.read("job_uniforms")
+	if(!pref.uniforms_by_job)
+		pref.uniforms_by_job = list()
 	load_skills()
 
 /datum/category_item/player_setup_item/occupation/save_character(datum/pref_record_writer/W)
@@ -52,6 +55,7 @@
 	W.write("branches", pref.branches)
 	W.write("ranks", pref.ranks)
 	W.write("hiding_maps", pref.hiding_maps)
+	W.write("job_uniforms", pref.uniforms_by_job)
 
 /datum/category_item/player_setup_item/occupation/load_slot(datum/pref_record_reader/R, datum/preferences_slot/slot)
 	slot.job_high = R.read("job_high")
@@ -188,6 +192,14 @@
 				else if(job.title in pref.job_low)
 					current_level = JOB_LEVEL_LOW
 
+				var/list/selected_uniform = pref.uniforms_by_job[job.title]
+				var/uniform_link
+				if(LAZYLEN(selected_uniform))
+					uniform_link = "<a class='linkOn' href='byond://?src=\ref[src];set_uniform=[title]'>&#128084;</a>"
+				else
+					uniform_link = "<a href='byond://?src=\ref[src];set_uniform=[title]'>&#128084;</a>"
+				uniform_link = "<td>[uniform_link]</td>"
+
 				var/skill_link
 				if(pref.points_by_job[job] && (!job.available_by_default || current_level != JOB_LEVEL_NEVER))
 					skill_link = "<a class = 'Points' href='byond://?src=\ref[src];set_skills=[title]'>Set Skills</a>"
@@ -212,13 +224,13 @@
 				. += "<td width='30%' align='left'>"
 
 				if(bad_message)
-					. += "<del>[title_link]</del>[help_link][skill_link]<td>[bad_message]</td></tr>"
+					. += "<del>[title_link]</del>[help_link][uniform_link][skill_link]<td>[bad_message]</td></tr>"
 					continue
 				else if((GLOB.using_map.default_assistant_title in pref.job_low) && (title != GLOB.using_map.default_assistant_title))
-					. += "[SPAN_COLOR("grey", title_link)][help_link][skill_link]<td></td></tr>"
+					. += "[SPAN_COLOR("grey", title_link)][help_link][uniform_link][skill_link]<td></td></tr>"
 					continue
 				else
-					. += "[title_link][help_link][skill_link]"
+					. += "[title_link][help_link][uniform_link][skill_link]"
 
 				. += "<td>"
 				if(title == GLOB.using_map.default_assistant_title)//Assistant is special
@@ -352,6 +364,7 @@
 				pref.branches[job.title] = choice
 				pref.ranks -= job.title
 				pref.skills_allocated = pref.sanitize_skills(pref.skills_allocated)		// Check our skillset is still valid
+				pref.uniforms_by_job -= job.title
 				validate_branch_and_rank()
 				return ((pref.preview_job || pref.preview_gear) ? TOPIC_REFRESH_UPDATE_PREVIEW : TOPIC_REFRESH)
 			return TOPIC_REFRESH
@@ -367,6 +380,7 @@
 			if(choice && CanUseTopic(user) && GLOB.mil_branches.is_spawn_rank(branch.name, choice, preference_species()))
 				pref.ranks[job.title] = choice
 				pref.skills_allocated = pref.sanitize_skills(pref.skills_allocated)		// Check our skillset is still valid
+				pref.uniforms_by_job -= job.title
 				validate_branch_and_rank()
 				return ((pref.preview_job || pref.preview_gear) ? TOPIC_REFRESH_UPDATE_PREVIEW : TOPIC_REFRESH)
 			return TOPIC_REFRESH
@@ -375,6 +389,11 @@
 		var/datum/job/job = SSjobs.get_by_title(rank, TRUE)
 		if(job)
 			open_skill_setup(user, job)
+	else if(href_list["set_uniform"])
+		var/rank = href_list["set_uniform"]
+		var/datum/job/job = SSjobs.get_by_title(rank, TRUE)
+		if(job)
+			open_uniform_setup(user, job)
 
 	//From the skills popup
 
@@ -445,6 +464,27 @@
 		if (!job)
 			return
 		send_link(user, join_url(config.wiki_url, "roles", ckey(rank)))
+
+	// from the uniform popup
+	else if(href_list["add_uniform"])
+		var/rank = href_list["uniform_job"]
+		var/datum/job/job = SSjobs.get_by_title(rank, TRUE)
+		if(job)
+			var/uniform_path = locate(href_list["add_uniform"])
+			if(ispath(uniform_path))
+				if(!islist(pref.uniforms_by_job[job.title]))
+					pref.uniforms_by_job[job.title] = list()
+				pref.uniforms_by_job[job.title] |= "[uniform_path]"
+				open_uniform_setup(user, job)
+				return TOPIC_REFRESH
+	else if(href_list["remove_uniform"])
+		var/rank = href_list["uniform_job"]
+		var/datum/job/job = SSjobs.get_by_title(rank, TRUE)
+		if(job && islist(pref.uniforms_by_job[job.title]))
+			var/uniform_path = locate(href_list["remove_uniform"])
+			pref.uniforms_by_job[job.title] -= "[uniform_path]"
+			open_uniform_setup(user, job)
+			return TOPIC_REFRESH
 
 	return ..()
 

@@ -1,4 +1,3 @@
-
 /datum/computer_file/report/recipient/medical
 	logo = "\[solcrest\]"
 	form_name = "SCG-MED-00"
@@ -73,6 +72,73 @@
 
 	add_field(/datum/report_field/text_label/instruction, "By signing below, I affirm that I have reviewed all of the above and affirm it is factually correct to the best of my knowledge. If there is no Chief Medical Officer available, this signature may be skipped.")
 	var/datum/report_field/cmofield = add_field(/datum/report_field/people/from_manifest, "Chief Medical Officer")
-	cmofield.set_access(access_morgue, access_cmo)	
+	cmofield.set_access(access_morgue, access_cmo)
 	cmofield = add_field(/datum/report_field/signature, "Chief Medical Officer's Signature")
 	cmofield.set_access(access_morgue, access_cmo)
+
+/datum/computer_file/report/recipient/medical/medicinerequest
+	title = "Medicine Request Form"
+	available_on_ntnet = TRUE
+
+/datum/computer_file/report/recipient/medical/medicinerequest/generate_fields()
+	..()
+	add_field(/datum/report_field/text_label/header, "Pharmaceutical Request Form")
+	add_field(/datum/report_field/text_label/header, "Under Applicable law of the URC Corporation")
+	add_field(/datum/report_field/text_label/header, "Questionnaire:")
+	add_field(/datum/report_field/simple_text, "What is your name?")
+	add_field(/datum/report_field/number, "What is your age?")
+	add_field(/datum/report_field/simple_text, "What is your biological sex?")
+	add_field(/datum/report_field/options/yes_no, "Are you alone?")
+	add_field(/datum/report_field/options/yes_no, "Do you like the URC?")
+	add_field(/datum/report_field/options/yes_no, "Are you a xeno?")
+	add_field(/datum/report_field/simple_text, "If so, which species?")
+	add_field(/datum/report_field/pencode_text, "List any medication allergies:")
+	add_field(/datum/report_field/options/yes_no, "Do you have a criminal record against the URC or any of its partner companies?")
+	add_field(/datum/report_field/pencode_text, "What medicine would you like?(Do not specify the exact dosage or type, only the objective of it)")
+	var/datum/report_field/options/reason = add_field(/datum/report_field/options, "Please choose out of the ten following options, why:")
+	reason.options = list("Drug withdraw", "Contraception", "Addiction", "Illness", "Infection Prevention", "XTD(Xeno Transmitted Diseases) Protection", "Vaccine", "Allergy prevention or alleviate symptoms", "Farclain withdraw", "Prescription")
+	add_field(/datum/report_field/text_label/header, "\"Remember! The URC takes your privacy very seriously\" -Corporate Review")
+	add_field(/datum/report_field/text_label/instruction, "Corporate review is sponsored by the URC")
+	add_field(/datum/report_field/signature, "Signature")
+	add_field(/datum/report_field/date, "Date")
+	add_field(/datum/report_field/text_label/instruction, "Upon submitting this form, you, the submitter, consent to unreasonable searches and confiscation of personal items if you are to be found using this pharmaceutical for any other reasons than that stated")
+	add_field(/datum/report_field/text_label/instruction, "The URC reserves the right to sell, process, or use your data for advertising purposes for clandestine purposes. Your data may be sold to third parties or given to the UGN.")
+
+/datum/computer_file/report/recipient/medical/routinecheckup
+	title = "Routine Medical Checkup Form"
+	available_on_ntnet = TRUE
+
+/datum/computer_file/report/recipient/medical/routinecheckup/generate_fields()
+	..()
+	add_field(/datum/report_field/text_label/header, "Routine Medical Checkup Form")
+	add_field(/datum/report_field/text_label/header, "Under Applicable law of the URC Corporation")
+	add_field(/datum/report_field/text_label/header, "Questionnaire:")
+	add_field(/datum/report_field/simple_text, "What is your name?")
+	add_field(/datum/report_field/number, "What is your age?")
+	add_field(/datum/report_field/simple_text, "What is your biological sex?")
+	add_field(/datum/report_field/options/yes_no, "Are you alone?")
+	add_field(/datum/report_field/options/yes_no, "Have you been feeling tired recently?")
+	add_field(/datum/report_field/options/yes_no, "Do you feel <b>watched</b>?")
+	add_field(/datum/report_field/options/yes_no, "Do you feel any continuous pain?")
+	add_field(/datum/report_field/options/yes_no, "Have you ever consciously believed that you would be better off dead?")
+	add_field(/datum/report_field/options/yes_no, "Have you ever attempted to kill yourself before informing your superiors?")
+	add_field(/datum/report_field/options/yes_no, "Are you depressed?")
+	add_field(/datum/report_field/options/yes_no, "Have you tried the mental health course? It's free!")
+	add_field(/datum/report_field/options/yes_no, "Do you feel in danger (if so, report to the nearest security checkpoint and an officer will give you instructions)?")
+	add_field(/datum/report_field/pencode_text, "Why do you believe you were meant to live?")
+	add_field(/datum/report_field/options/yes_no, "Have you ever been in a romantic relationship?")
+	add_field(/datum/report_field/pencode_text, "List their name(s):")
+	add_field(/datum/report_field/options/yes_no, "Do you like the URC?")
+	add_field(/datum/report_field/options/yes_no, "Are you a xeno?")
+	add_field(/datum/report_field/simple_text, "If so, which species?")
+	add_field(/datum/report_field/pencode_text, "List any medication allergies:")
+	add_field(/datum/report_field/options/yes_no, "Do you have a criminal record against the URC or any of its partner companies?")
+	add_field(/datum/report_field/pencode_text, "What is the purpose of your visit:")
+	var/datum/report_field/options/reason = add_field(/datum/report_field/options, "Please choose out of the ten following options, why:")
+	reason.options = list("Feel insane", "Feel suicidal", "Feel depressed", "Feel extremely ill", "Feel in need of surgery", "Feel unhappy", "Feel off", "Feel like you are being stalked", "Feel like you are being watched", "Feel as if the world is against you, or you weren't meant to live")
+	add_field(/datum/report_field/text_label/header, "\"Remember! The URC takes your privacy (especially your mental health) very seriously\" -Corporate Review")
+	add_field(/datum/report_field/text_label/instruction, "Corporate review is sponsored by the URC")
+	add_field(/datum/report_field/signature, "Signature")
+	add_field(/datum/report_field/date, "Date")
+	add_field(/datum/report_field/text_label/instruction, "Upon submitting this form, you, the submitter, consent to unreasonable searches and confiscation of personal items if you are to be found using this pharmaceutical for any other reasons than that stated")
+	add_field(/datum/report_field/text_label/instruction, "The URC reserves the right to sell, process, or use your data for advertising purposes for clandestine purposes. Your data may be sold to third parties or given to the UGN.")

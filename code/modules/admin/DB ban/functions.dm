@@ -86,8 +86,8 @@
 
 	if(ismob(banned_mob))
 		ckey = LAST_CKEY(banned_mob)
-		computerid = banned_mob.computer_id
-		ip = banned_mob.lastKnownIP
+		computerid = banned_mob.last_cid
+		ip = banned_mob.last_address
 		if(banned_mob.client)
 			computerid = banned_mob.client.computer_id
 			ip = banned_mob.client.address

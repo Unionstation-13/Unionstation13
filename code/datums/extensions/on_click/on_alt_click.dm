@@ -39,7 +39,7 @@
 	if(!living_holder.client)                 // And only if the target mob is currently possessed
 		to_chat(user, SPAN_NOTICE("\The [living_holder] is not currently possessed."))
 		return FALSE
-	if(living_holder.stat == DEAD)            // No point in killing the already dead
+	if(living_holder.is_real_dead())            // No point in killing the already dead
 		to_chat(user, SPAN_NOTICE("\The [living_holder] is already dead."))
 		return FALSE
 	return TRUE

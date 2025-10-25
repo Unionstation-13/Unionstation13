@@ -83,6 +83,15 @@
 	if(isadmin(user))
 		config.allow_vote_restart = !config.allow_vote_restart
 
+
+/datum/vote/transfer/get_allowed_voters()
+	return GLOB.living_players.Copy()
+
+
+/datum/vote/transfer/get_disallowed_reason()
+	return "You are not a living player."
+
+
 #undef CHOICE_TRANSFER
 #undef CHOICE_EXTEND
 #undef CHOICE_ADD_ANTAG

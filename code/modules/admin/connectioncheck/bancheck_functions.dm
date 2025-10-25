@@ -311,4 +311,4 @@
 		return
 	if (isnull(bans))
 		bans = fetch_bans()
-	_show_associated_bans(user, bans, ckey ? ckey : last_ckey, lastKnownIP, computer_id)
+	_show_associated_bans(user, bans, ckey ? ckey : last_ckey, last_address, last_cid)

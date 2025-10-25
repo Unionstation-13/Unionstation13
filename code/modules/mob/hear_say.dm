@@ -1,4 +1,4 @@
-/mob/proc/hear_say(message, verb = "says", datum/language/language, alt_name, italics, mob/speaker, sound/speech_sound, sound_vol)
+/mob/proc/hear_say(message, verb = "says", datum/language/language, alt_name, italics, mob/speaker, sound/speech_sound, sound_vol, large_text = FALSE)
 	if (!client && !teleop)
 		return
 
@@ -112,7 +112,10 @@
 		teleop.on_hear_say({"[SPAN_CLASS("game say", "[display_controls][SPAN_NOTICE(SPAN_BOLD("NEAR YOU: "))][SPAN_CLASS("name", display_name)][alt_name] [display_message]")]"})
 		return
 
-	on_hear_say({"[SPAN_CLASS("game say", "[display_controls][SPAN_CLASS("name", display_name)][alt_name] [display_message]")]"})
+	var/final_message = {"[SPAN_CLASS("game say", "[display_controls][SPAN_CLASS("name", display_name)][alt_name] [display_message]")]"}
+	if (large_text)
+		final_message = "[FONT_LARGE(final_message)]"
+	on_hear_say(final_message)
 
 
 /mob/proc/on_hear_say(message)

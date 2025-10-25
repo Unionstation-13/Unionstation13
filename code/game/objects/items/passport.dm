@@ -14,12 +14,14 @@
 	if(!istype(H))
 		return
 	var/singleton/cultural_info/culture = H.get_cultural_value(TAG_HOMEWORLD)
-	var/pob = culture ? culture.name : "Unset"
+	var/residence = culture
+	if (!culture.name || culture.name == HOME_SYSTEM_OTHER)
+		residence = "Unset"
 	if(H.dna)
 		fingerprint = md5(H.dna.uni_identity)
 	else
 		fingerprint = "N/A"
-	info = "\icon[src] [src]:\nName: [H.real_name]\nSpecies: [H.get_species()]\nPronouns: [H.pronouns]\nAge: [H.age]\nPlace of Birth: [pob]\nFingerprint: [fingerprint]"
+	info = "\icon[src] [src]:\nName: [H.real_name]\nSpecies: [H.get_species()]\nPronouns: [H.pronouns]\nAge: [H.age]\nResidence: [residence]\nFingerprint: [fingerprint]"
 
 /obj/item/passport/attack_self(mob/user as mob)
 	user.visible_message(
@@ -31,24 +33,14 @@
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
 /obj/item/passport/scg
-	name = "\improper SCG passport"
+	name = "\improper UGN passport"
 	icon_state = "passport_scg"
 	desc = "A passport from the Sol Central Government."
-
-/obj/item/passport/earth
-	name = "\improper Earth passport"
-	icon_state = "passport_scg2"
-	desc = "A passport from the Earth, within Sol Central Government space."
 
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
 	icon_state = "passport_scg2"
 	desc = "A passport from Venus, within Sol Central Government space."
-
-/obj/item/passport/luna
-	name = "\improper Luna passport"
-	icon_state = "passport_scg2"
-	desc = "A passport from Luna, within Sol Central Government space."
 
 /obj/item/passport/mars
 	name = "\improper Mars passport"

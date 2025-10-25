@@ -1,7 +1,9 @@
-dm:
+byond:
   - '**/*.dm'
   - '**/*.dmm'
   - '**/*.dmf'
   - '**/*.dme'
   - 'test/check-paths.sh'
   - 'test/run-test.sh'
+  - '.github/workflows/test.yml'
+  - '.github/workflow-config/preflight-filters.yml'

@@ -26,29 +26,6 @@
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
 	id_types = list(/obj/item/card/id/torch/merchant)
-
-/singleton/hierarchy/outfit/job/torch/ert
-	name = OUTFIT_JOB_NAME("ERT - Titen")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
-	head = /obj/item/clothing/head/beret/solgov/fleet
-	gloves = /obj/item/clothing/gloves/thick
-	id_types = list(/obj/item/card/id/centcom/ERT)
-	pda_type = /obj/item/modular_computer/pda/ert
-	l_ear = /obj/item/device/radio/headset/ert
-	shoes = /obj/item/clothing/shoes/dutyboots
-
-/singleton/hierarchy/outfit/job/torch/ert/leader
-	name = OUTFIT_JOB_NAME("ERT Leader - Titen")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/command
-	head = /obj/item/clothing/head/beret/solgov/fleet/command
-
-/singleton/hierarchy/outfit/job/torch/ert/suit
-	name = OUTFIT_JOB_NAME("ERT Heavy - Titen")
-	back = /obj/item/rig/ert/fleet
-	flags = OUTFIT_RESET_EQUIPMENT | OUTFIT_ADJUSTMENT_SKIP_BACKPACK
-	head = null
-	gloves = null
-
 /singleton/hierarchy/outfit/job/torch/ert/hostile
 	name = OUTFIT_JOB_NAME("Fleet - Hostile")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat

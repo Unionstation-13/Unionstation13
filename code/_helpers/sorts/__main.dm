@@ -225,7 +225,7 @@ reverse a descending sequence without violating stability.
 
 
 	//Find where the first element of run2 goes in run1.
-	//Prior elements in run1 can be ignored (because they're already in place)
+	//or elements in run1 can be ignored (because they're already in place)
 	var/k = gallopRight(fetchElement(L,base2), base1, len1, 0)
 	//ASSERT(k >= 0)
 	base1 += k

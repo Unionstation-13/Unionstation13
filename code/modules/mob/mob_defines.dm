@@ -32,8 +32,8 @@
 	var/list/client_images = list() // List of images applied to/removed from the client on login/logout
 	var/datum/mind/mind
 
-	var/lastKnownIP = null
-	var/computer_id = null
+	var/last_address
+	var/last_cid
 	var/last_ckey
 
 	var/stat = CONSCIOUS //Whether a mob is alive or dead. TODO: Move this to living - Nodrak

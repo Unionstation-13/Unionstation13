@@ -220,32 +220,32 @@
 		// computer_id and IP are not updated magically on their own in offline mobs -walter0o
 
 		// host -> self
-		var/h2s_id = host.computer_id
-		var/h2s_ip= host.lastKnownIP
-		host.computer_id = null
-		host.lastKnownIP = null
+		var/h2s_id = host.last_cid
+		var/h2s_ip= host.last_address
+		host.last_cid = null
+		host.last_address = null
 
 		src.ckey = host.ckey
 
-		if(!src.computer_id)
-			src.computer_id = h2s_id
+		if(!src.last_cid)
+			src.last_cid = h2s_id
 
-		if(!host_brain.lastKnownIP)
-			src.lastKnownIP = h2s_ip
+		if(!host_brain.last_address)
+			src.last_address = h2s_ip
 
 		// brain -> host
-		var/b2h_id = host_brain.computer_id
-		var/b2h_ip= host_brain.lastKnownIP
-		host_brain.computer_id = null
-		host_brain.lastKnownIP = null
+		var/b2h_id = host_brain.last_cid
+		var/b2h_ip= host_brain.last_address
+		host_brain.last_cid = null
+		host_brain.last_address = null
 
 		host.ckey = host_brain.ckey
 
-		if(!host.computer_id)
-			host.computer_id = b2h_id
+		if(!host.last_cid)
+			host.last_cid = b2h_id
 
-		if(!host.lastKnownIP)
-			host.lastKnownIP = b2h_ip
+		if(!host.last_address)
+			host.last_address = b2h_ip
 
 	qdel(host_brain)
 

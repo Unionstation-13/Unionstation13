@@ -9,7 +9,7 @@
 	req_access = list(list(access_atmospherics, access_engine_equip))
 	antag_slogans = {"\
 		Equipping you with the necessary tools to destroy Sol!;\
-		Remember, that catwalk you're trusting your life to was installed by an SCG Engineer! The horror!;\
+		Remember, that catwalk you're trusting your life to was installed by a UGN Engineer! The horror!;\
 		Our crowbars are great for hiding loot, breaking into offices, and bashing skulls in!;\
 		That can't call dibs on the RCD if they're already dead!;\
 		All of these tools look better embedded in a Solar's head!\

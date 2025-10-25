@@ -5,7 +5,7 @@
 	var/list/blacklisted_jobs =		list(/datum/job/submap)   // Jobs that can NEVER be this antagonist
 
 	// Strings.
-	var/welcome_text = "Cry havoc and let slip the dogs of war!"
+	var/welcome_text = "Follow the orders of The Glorius Leader. Make him proud."
 	var/leader_welcome_text                 // Text shown to the leader, if any.
 	var/victory_text                        // World output at roundend for victory.
 	var/loss_text                           // As above for loss.
@@ -14,7 +14,7 @@
 
 	// Role data.
 	var/id = "traitor"                      // Unique datum identifier. Also preferences option for this role.
-	var/role_text = "Traitor"               // special_role text.
+	var/role_text = "Divine Traitor"               // special_role text.
 	var/role_text_plural = "Traitors"       // As above but plural.
 
 	// Visual references.
@@ -53,9 +53,7 @@
 	var/show_objectives_on_creation = 1     // Whether or not objectives are shown when a player is added to this antag datum
 	var/datum/antag_skill_setter/skill_setter = /datum/antag_skill_setter/generic // Used to set up skills.
 	var/datum/language/required_language = null
-
-	// Used for setting appearance.
-	var/list/valid_species =       list(SPECIES_UNATHI,SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_VOX)
+	var/list/valid_species =       list(SPECIES_HUMAN,SPECIES_VATGROWN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_TRITONIAN,SPECIES_MULE,SPECIES_UNATHI,SPECIES_SKRELL,SPECIES_VOX) // Used for setting appearance.
 	var/min_player_age = 14
 
 	// Runtime vars.
@@ -269,3 +267,7 @@
 			player.assigned_role = null
 	pending_antagonists.Cut()
 	candidates.Cut()
+
+/// Antagonist specific logic sequence for exoplanet arrival
+/datum/antagonist/proc/arrive()
+	return

@@ -40,7 +40,7 @@
 
 //Performs functions relating to setting up the question and choices, if relevant.
 /datum/vote/proc/setup_vote(mob/creator, automatic)
-	initiator = (!automatic && istype(creator)) ? creator.ckey : "the server"
+	initiator = (!automatic && istype(creator)) ? creator.ckey : "The game"
 	for(var/choice in choices)
 		display_choices[choice] = choice // Default behavior is that the choice name is displayed directly.
 
@@ -48,15 +48,7 @@
 	start_time = world.time
 	status = VOTE_STATUS_ACTIVE
 	time_remaining = round(config.vote_period/10)
-
-	var/text = get_start_text()
-
-	log_vote(text)
-	to_world(SPAN_COLOR("purple", "<b>[text]</b>\nType <b>vote</b> or click <a href='byond://?src=\ref[SSvote];vote_panel=1'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote."))
-	sound_to(world, sound('sound/ui/vote-notify.ogg', repeat = 0, wait = 0, volume = 33, channel = GLOB.vote_sound_channel))
-
-/datum/vote/proc/get_start_text()
-	return "[capitalize(name)] vote started by [initiator]."
+	log_vote("[capitalize(name)] vote started by [initiator].")
 
 //Modifies the vote totals based on non-voting mobs.
 /datum/vote/proc/handle_default_votes()
@@ -240,3 +232,11 @@
 		return
 
 	submit_vote(user, choice)
+
+
+/datum/vote/proc/get_allowed_voters()
+	return GLOB.player_list.Copy()
+
+
+/datum/vote/proc/get_disallowed_reason()
+	return

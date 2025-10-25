@@ -167,7 +167,7 @@
 	desc = "A thick envelope. The UGN crest is stamped in the corner, along with 'TOP SECRET- URC PROTOCOL'."
 	seal_stamp = "General Secretary rubber stamp"
 
-/obj/item/paper/
+/obj/item/paper/united_rocknall_procedure
 	name = "United Rocknall Procedure"
 	info = {"
 	<tt><center><b><span style='color: red'>TOP SECRET- URC EMERGENCY CODE</span></b></tt>

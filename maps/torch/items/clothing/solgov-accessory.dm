@@ -243,6 +243,28 @@ ribbons
 /obj/item/clothing/accessory/ribbon
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 
+/obj/item/clothing/accessory/ribbon/get_mob_overlay(mob/user_mob, slot)
+	var/image/ret = ..()
+	if (parent)
+		var/order = 0
+		var/total = 0
+		var/found = FALSE
+		for(var/obj/item/clothing/accessory/ribbon/ribbon in parent.accessories)
+			if(ribbon == src)
+				found = TRUE
+			total += 1
+			if(!found)
+				order += 1
+			else if(total > 4)
+				break
+
+		var/per_row = total < 4 ? 1 : 2
+		var/row = floor(order / per_row)
+		var/column = (order - (row * per_row))
+		ret.pixel_x = column - (per_row - 1)
+		ret.pixel_y = (total > 1) - row
+	return ret
+
 /obj/item/clothing/accessory/ribbon/solgov
 	name = "ribbon"
 	desc = "A simple military decoration."
@@ -534,7 +556,7 @@ department tags
 	name = "department insignia"
 	desc = "Insignia denoting assignment to a department. These appear blank."
 	icon_state = "dept_exped"
-	on_rolled_down = ACCESSORY_ROLLED_NONE
+	on_rolled_down = "dept_exped_rolled"
 	on_rolled_sleeves = "dept_exped_sleeves"
 	slot = ACCESSORY_SLOT_FLASH
 	accessory_flags = FLAGS_OFF
@@ -550,6 +572,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/command/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the command department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -564,6 +587,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/engineering/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the engineering department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -578,6 +602,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/security/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the security department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -593,6 +618,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/medical/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the medical department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -607,6 +633,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/supply/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the supply department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -621,6 +648,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/service/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the service department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 
@@ -635,6 +663,7 @@ department tags
 /obj/item/clothing/accessory/solgov/department/exploration/fleet
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the exploration department. These fit Fleet uniforms."
+	on_rolled_down = "dept_fleet_rolled"
 	on_rolled_sleeves = "dept_fleet_sleeves"
 
 

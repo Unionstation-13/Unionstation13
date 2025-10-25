@@ -93,7 +93,7 @@
 	RETURN_TYPE(/list)
 	if (client)
 		return client.fetch_connections()
-	return _fetch_connections(ckey ? ckey : last_ckey, lastKnownIP, computer_id)
+	return _fetch_connections(ckey ? ckey : last_ckey, last_address, last_cid)
 
 
 /**
@@ -275,4 +275,4 @@
 		return
 	if (isnull(connections))
 		connections = fetch_connections()
-	_show_associated_connections(user, connections, ckey ? ckey : last_ckey, lastKnownIP, computer_id)
+	_show_associated_connections(user, connections, ckey ? ckey : last_ckey, last_address, last_cid)

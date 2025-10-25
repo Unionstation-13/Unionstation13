@@ -41,7 +41,7 @@
 
 	H.add_language(LANGUAGE_BORER_GLOBAL)
 
-	if(host.stat == DEAD)
+	if(host.is_dead())
 		H.verbs |= /mob/living/carbon/human/proc/jumpstart
 
 	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
@@ -66,14 +66,14 @@
 	var/obj/item/organ/external/affecting = H.get_organ(BP_HEAD)
 	affecting.implants -= src
 
-	var/s2h_id = src.computer_id
-	var/s2h_ip= src.lastKnownIP
-	src.computer_id = null
-	src.lastKnownIP = null
-	if(!H.computer_id)
-		H.computer_id = s2h_id
-	if(!H.lastKnownIP)
-		H.lastKnownIP = s2h_ip
+	var/s2h_id = src.last_cid
+	var/s2h_ip= src.last_address
+	src.last_cid = null
+	src.last_address = null
+	if(!H.last_cid)
+		H.last_cid = s2h_id
+	if(!H.last_address)
+		H.last_address = s2h_ip
 
 /mob/living/carbon/human/proc/jumpstart()
 	set category = "Abilities"

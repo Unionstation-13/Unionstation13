@@ -129,11 +129,11 @@
 	healed_threshold = 0
 	to_chat(owner, SPAN_NOTICE(FONT_GIANT("<B>Where am I...?</B>")))
 	sleep(5 SECONDS)
-	if (!owner || owner.stat == DEAD || (status & ORGAN_DEAD))
+	if (!owner || owner.is_real_dead() || (status & ORGAN_DEAD))
 		return
 	to_chat(owner, SPAN_NOTICE(FONT_GIANT("<B>What's going on...?</B>")))
 	sleep(10 SECONDS)
-	if (!owner || owner.stat == DEAD || (status & ORGAN_DEAD))
+	if (!owner || owner.is_real_dead() || (status & ORGAN_DEAD))
 		return
 	to_chat(owner, SPAN_NOTICE(FONT_GIANT("<B>What happened...?</B>")))
 	alert(owner, "You have taken massive brain damage! This could affect speech, memory, or any other skill, but provided you've been treated, it shouldn't be permanent.", "Brain Damaged")
@@ -217,7 +217,7 @@
 				addtimer(new Callback(src, PROC_REF(brain_damage_callback), damage), rand(6, 20) SECONDS, TIMER_UNIQUE)
 
 /obj/item/organ/internal/brain/proc/brain_damage_callback(damage) //Confuse them as a somewhat uncommon aftershock. Side note: Only here so a spawn isn't used. Also, for the sake of a unique timer.
-	if (!owner || owner.stat == DEAD || (status & ORGAN_DEAD))
+	if (!owner || owner.is_real_dead() || (status & ORGAN_DEAD))
 		return
 
 	to_chat(owner, SPAN_NOTICE(SPAN_STYLE("font-size: 10", "<B>I can't remember which way is forward...</B>")))

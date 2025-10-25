@@ -186,6 +186,9 @@ macro "borghotkeymode"
 		name = "Numpad8"
 		command = "body-toggle-head"
 	elem
+		name = "ALT+X"
+		command = "Cancel-Current-Action"
+	elem
 		name = "F1"
 		command = "adminhelp"
 	elem
@@ -370,6 +373,9 @@ macro "macro"
 	elem
 		name = "CTRL+Subtract"
 		command = "move-down"
+	elem
+		name = "ALT+X"
+		command = "Cancel-Current-Action"
 	elem
 		name = "F1"
 		command = "adminhelp"
@@ -607,6 +613,9 @@ macro "hotkeymode"
 		name = "Numpad8"
 		command = "body-toggle-head"
 	elem
+		name = "ESCAPE"
+		command = "Cancel-Current-Action"
+	elem
 		name = "F1"
 		command = "adminhelp"
 	elem
@@ -791,6 +800,9 @@ macro "borgmacro"
 	elem
 		name = "CTRL+Subtract"
 		command = "move-down"
+	elem
+		name = "ESCAPE"
+		command = "Cancel-Current-Action"
 	elem
 		name = "F1"
 		command = "adminhelp"
@@ -1049,6 +1061,7 @@ window "mapwindow"
 		saved-params = "icon-size"
 		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
 		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
+		style = "img.icon { width: auto; height: auto; }"
 	elem "lobbybrowser"
 		type = BROWSER
 		pos = 0,0

@@ -190,6 +190,8 @@
 	<br><br>---END OF TRANSMISSION---")
 
 /obj/overmap/radio/proc/set_origin(obj/overmap/origin)
+	GLOB.moved_event.unregister(source, src)
+	GLOB.destroyed_event.unregister(source, src)
 	GLOB.moved_event.register(origin, src, PROC_REF(follow))
 	GLOB.destroyed_event.register(origin, src, TYPE_PROC_REF(/datum, qdel_self))
 	forceMove(origin.loc)

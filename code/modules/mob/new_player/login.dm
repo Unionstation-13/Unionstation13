@@ -1,5 +1,5 @@
 /mob/new_player/Login()
-	update_Login_details()	//handles setting lastKnownIP and computer_id for use by the ban systems as well as checking for multikeying
+	update_login_details()
 	if (config.motd)
 		to_chat(src, "<div class=\"motd\">[config.motd]</div>", handle_whitespace=FALSE)
 	to_chat(src, "<div class='info'>Game ID: <div class='danger'>[game_id]</div></div>")
