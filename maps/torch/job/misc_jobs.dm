@@ -24,10 +24,10 @@ Civilian
 *******/
 
 /datum/job/assistant
-	title = "Prisoner of war"
+	title = "Drifter"
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "the Executive Officer"
+	supervisors = "Whoever pays you the most"
 	economic_power = 6
 	announced = FALSE
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
@@ -38,6 +38,8 @@ Civilian
 	)
 	min_goals = 2
 	max_goals = 7
+/datum/job/assistant/get_description_blurb()
+		return "You were just another cog in the machine, until your boss fired you on a whim and you lost everything. Now you've boarded the Titen in hopes of getting a job. "
 
 /datum/job/merchant
 	title = "Diplomatic Merchant"

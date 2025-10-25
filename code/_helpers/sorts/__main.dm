@@ -1,4 +1,4 @@
-	//These are macros used to reduce on proc calls
+%	//These are macros used to reduce on proc calls
 #define fetchElement(L, i) (associative) ? L[L[i]] : L[i]
 
 	//Minimum sized sequence that will be merged. Anything smaller than this will use binary-insertion sort.
