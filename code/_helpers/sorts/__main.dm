@@ -1,4 +1,4 @@
-%	//These are macros used to reduce on proc calls
+	//These are macros used to reduce on proc calls
 #define fetchElement(L, i) (associative) ? L[L[i]] : L[i]
 
 	//Minimum sized sequence that will be merged. Anything smaller than this will use binary-insertion sort.
@@ -225,7 +225,7 @@ reverse a descending sequence without violating stability.
 
 
 	//Find where the first element of run2 goes in run1.
-	//Prior elements in run1 can be ignored (because they're already in place)
+	//or elements in run1 can be ignored (because they're already in place)
 	var/k = gallopRight(fetchElement(L,base2), base1, len1, 0)
 	//ASSERT(k >= 0)
 	base1 += k

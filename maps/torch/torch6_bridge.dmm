@@ -1609,11 +1609,6 @@
 /area/maintenance/bridge/forestarboard)
 "cS" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/research{
-	id_tag = "csodoor";
-	name = "Rocknall Lead Administrator";
-	secured_wires = 1
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -1875,7 +1870,10 @@
 /area/bridge/disciplinary_board_room)
 "dk" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "dl" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -3903,7 +3901,10 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "id" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -4493,7 +4494,10 @@
 	id = "sec_front_win"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "jR" = (
 /obj/floor_decal/corner/blue{
 	dir = 9
@@ -5653,7 +5657,10 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "nE" = (
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -5943,7 +5950,10 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southleft,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "oF" = (
 /obj/machinery/hologram/holopad,
 /obj/floor_decal/industrial/outline/yellow,
@@ -6599,7 +6609,10 @@
 /obj/item/clothing/head/helmet,
 /obj/item/clothing/glasses/aviators_black,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "qo" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
@@ -7874,7 +7887,10 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "ub" = (
 /obj/structure/bed/chair/padded/blue{
 	dir = 4
@@ -10749,7 +10765,10 @@
 /obj/item/pen,
 /obj/item/pen,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Dq" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -11332,7 +11351,10 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Gy" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -11367,7 +11389,10 @@
 /obj/item/material/folder/red,
 /obj/item/material/folder/white,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "GB" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 8;
@@ -12435,7 +12460,10 @@
 	},
 /obj/floor_decal/industrial/warning/full,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "KB" = (
 /obj/structure/largecrate,
 /turf/simulated/floor/plating,
@@ -12718,7 +12746,10 @@
 	},
 /obj/structure/safe/floor,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "LY" = (
 /obj/structure/sign/double/solgovflag/right{
 	dir = 4;
@@ -13034,7 +13065,10 @@
 /area/crew_quarters/heads/office/cl)
 "NC" = (
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "ND" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/alarm{
@@ -13217,7 +13251,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Oi" = (
 /obj/structure/hygiene/sink{
 	dir = 4;
@@ -13286,7 +13323,10 @@
 	id_tag = "sec_front_win"
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Oy" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/device/flashlight/lamp,
@@ -13456,7 +13496,10 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Pn" = (
 /obj/machinery/light{
 	dir = 4;
@@ -13467,7 +13510,10 @@
 	},
 /obj/machinery/papershredder,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
@@ -13554,7 +13600,10 @@
 	pixel_x = -37
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/heads/office/cl/backroom)
+/area/crew_quarters/heads/office/cl/backroom{
+	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
+	name = "\improper Bridge Secretary's Office"
+	})
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
