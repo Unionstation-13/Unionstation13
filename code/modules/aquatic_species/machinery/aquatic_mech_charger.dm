@@ -1,11 +1,14 @@
+#include "../../../__defines/machinery.dm"
+
 /obj/machinery/aquatic_mech_charger
 	name = "Aquatic Mech Charging Station"
 	desc = "A specialized charging station for aquatic environment suits."
 	icon = 'code/modules/aquatic_species/icons/aquatic_charger.dmi'
 	icon_state = "charger"
+	init_flags = INIT_MACHINERY_START_PROCESSING
 
 	density = TRUE
-	use_power = IDLE_POWER_USE
+	use_power = POWER_USE_IDLE
 	idle_power_usage = 100
 	active_power_usage = 5000
 
@@ -14,8 +17,8 @@
 	var/charge_rate = 2.0
 	var/water_refill_rate = 1.5
 
-	process()
-		if(machine_stat & NOPOWER)
+	Process()
+		if(stat & MACHINE_STAT_NOPOWER)
 			charging = FALSE
 			update_icon()
 			return
@@ -24,7 +27,7 @@
 		var/obj/item/clothing/suit/aquatic_mech/suit = find_suit()
 		if(suit && suit.systems)
 			charging = TRUE
-			use_power(active_power_usage)
+			update_use_power(POWER_USE_ACTIVE)
 
 			// Charge systems
 			suit.systems.recharge_power(charge_rate)
@@ -35,7 +38,7 @@
 				visible_message("[src] hums as it charges the aquatic suit.")
 		else
 			charging = FALSE
-			use_power(idle_power_usage)
+			update_use_power(POWER_USE_IDLE)
 
 		update_icon()
 
@@ -57,13 +60,14 @@
 		else
 			icon_state = "charger"
 
-	attackby(obj/item/W, mob/user)
+	use_tool(obj/item/W, mob/user, list/click_params)
 		if(istype(W, /obj/item/clothing/suit/aquatic_mech))
 			// Place suit on charger
 			user.drop_from_inventory(W, get_turf(src))
 			to_chat(user, SPAN_NOTICE("You place the aquatic suit on the charger."))
+			return TRUE
 		else
-			..()
+			return ..()
 
 	attack_hand(mob/user)
 		if(charging)

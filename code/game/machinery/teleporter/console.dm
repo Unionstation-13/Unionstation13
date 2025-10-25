@@ -191,7 +191,6 @@
 		if (QDELETED(T) || !T.implanted || !ismob(T.loc))
 			continue
 		var/mob/M = T.loc
-		var/turf/TT = get_turf(M)
 		if (M.is_dead() && world.time > M.timeofdeath + 15 MINUTES)
 			continue
 		if (!isPlayerLevel(M.z))

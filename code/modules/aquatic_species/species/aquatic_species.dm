@@ -37,31 +37,39 @@
 	// Movement
 	slowdown = 0.5
 
-	// Override life processes
-	proc/handle_life_special(mob/living/carbon/human/H)
-		if(!has_valid_suit(H))
-			H.take_organ_damage(10)
-			H.visible_message(
-				SPAN_DANGER("[H]'s aquatic body begins to dry out!"),
-				SPAN_DANGER("You feel your body drying out! You need your suit!")
-			)
-			return FALSE
-		return TRUE
 
-	proc/has_valid_suit(mob/living/carbon/human/H)
-		if(!H.wear_suit)
-			return FALSE
-		return H.wear_suit.name == "Aquatic Environment Suit"
 
-	// Handle spawning with suit
-	handle_post_spawn(mob/living/carbon/human/H)
-		..()
-		if(!H.wear_suit)
-			// Create suit using our unified path
-			var/obj/item/clothing/suit/aquatic_mech/S = new()
-			if(S)
-				H.equip_to_slot_or_del(S, slot_wear_suit)
-				H.visible_message(
-					SPAN_NOTICE("[H] materializes in their aquatic environment suit."),
-					SPAN_NOTICE("You materialize in your aquatic environment suit.")
-				)
+/singleton/species/aquatic_mech/proc/handle_life_special(mob/living/carbon/human/H)
+	if(!has_valid_suit(H))
+		H.take_organ_damage(10)
+		H.visible_message(
+			SPAN_DANGER("[H]'s aquatic body begins to dry out!"),
+			SPAN_DANGER("You feel your body drying out! You need your suit!")
+		)
+		return FALSE
+	return TRUE
+
+/singleton/species/aquatic_mech/proc/has_valid_suit(mob/living/carbon/human/H)
+	if(!H.wear_suit)
+		return FALSE
+	return istype(H.wear_suit, /obj/item/clothing/suit/aquatic_mech)
+
+/singleton/species/aquatic_mech/proc/handle_post_spawn_aquatic(mob/living/carbon/human/H)
+	log_debug("DEBUG: aquatic_mech/handle_post_spawn_aquatic called.")
+	if(!has_valid_suit(H))
+		log_debug("DEBUG: has_valid_suit is FALSE.")
+		if(H.wear_suit)
+			log_debug("DEBUG: Trying to remove [H.wear_suit.name].")
+			qdel(H.wear_suit)
+		
+		log_debug("DEBUG: Creating and equipping new suit.")
+		var/obj/item/clothing/suit/aquatic_mech/S = new()
+		if(S)
+			if(H.equip_to_slot_or_del(S, slot_wear_suit))
+				log_debug("DEBUG: Suit equipped successfully.")
+			else
+				log_debug("DEBUG: Suit equip FAILED.")
+		else
+			log_debug("DEBUG: Suit creation FAILED.")
+	else
+		log_debug("DEBUG: has_valid_suit is TRUE.")

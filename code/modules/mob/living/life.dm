@@ -74,20 +74,6 @@
 		if(get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_NO)
 			return
 
-		var/mob_ref = weakref(src)
-		var/singleton/state/weather/weather_state = weather.weather_system.current_state
-		if(istype(weather_state))
-			var/ambient_sounds = !is_outside() ? weather_state.ambient_indoors_sounds : weather_state.ambient_sounds
-			var/ambient_sound = length(ambient_sounds) && pick(ambient_sounds)
-			if(global.current_mob_ambience[mob_ref] == ambient_sound)
-				return
-			send_sound = ambient_sound
-			global.current_mob_ambience[mob_ref] = send_sound
-		else if(mob_ref in global.current_mob_ambience)
-			global.current_mob_ambience -= mob_ref
-		else
-			return
-
 	// Push sound to client. Pipe dream TODO: crossfade between the new and old weather ambience.
 	sound_to(src, sound(null, repeat = 0, wait = 0, volume = 0, channel = GLOB.weather_channel))
 	if(send_sound)

@@ -56,7 +56,6 @@ var/global/list/speak_emote = list("says")
     if(!message)
         return
 
-    var/rendered = say_quote(message, speaking)
     var/range = whisper_range
     for(var/mob/M in hearers(range, src))
         M << "[src.name] whispers, \"[message]\""

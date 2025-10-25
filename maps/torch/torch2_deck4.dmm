@@ -2700,7 +2700,7 @@
 "js" = (
 /obj/structure/catwalk,
 /obj/machinery/light,
-/turf/simulated/floor/shuttle_ceiling/torch/air,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "ju" = (
 /obj/structure/railing/mapped{
@@ -2794,7 +2794,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/shuttle_ceiling/torch/air,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "kc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3154,7 +3154,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "lf" = (
 /obj/machinery/door/airlock/science{
-	name = "Pathfinder's Office"
+	name = "Senior Rocknall Associate's Office"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -6073,7 +6073,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
 	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "vb" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -7637,7 +7637,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "At" = (
 /obj/structure/table/standard{
@@ -12013,7 +12013,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/shuttle_ceiling/torch/air,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "Pu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12267,11 +12267,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage/upper)
-"Qf" = (
-/obj/structure/catwalk,
-/obj/machinery/light,
-/turf/simulated/open,
-/area/quartermaster/hangar/catwalks)
 "Qg" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Emergency Storage"
@@ -14489,7 +14484,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "Wo" = (
 /obj/structure/catwalk,
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/quartermaster/hangar/catwalks)
 "Wp" = (
 /obj/structure/disposalpipe/segment{
@@ -14637,10 +14632,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
-"WI" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/shuttle_ceiling/torch/air,
-/area/quartermaster/hangar/catwalks)
 "WJ" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -31821,7 +31812,7 @@ pI
 wn
 wn
 Wf
-WI
+Wo
 Mp
 Wp
 Vd
@@ -32023,7 +32014,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Mp
 Yl
 Yr
@@ -32225,7 +32216,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 Sd
 Sd
@@ -32427,7 +32418,7 @@ wS
 wS
 wS
 Cg
-WI
+Wo
 Yd
 WD
 hr
@@ -32615,21 +32606,21 @@ Xm
 Mp
 MF
 ko
-WI
-WI
-WI
+Wo
+Wo
+Wo
 kb
-WI
-WI
-WI
-WI
-WI
-WI
-WI
-WI
-WI
-WI
-WI
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
+Wo
 Yd
 XZ
 XZ
@@ -32817,7 +32808,7 @@ Xh
 Pf
 Tm
 uB
-WI
+Wo
 Pn
 qc
 qc
@@ -33019,7 +33010,7 @@ pW
 Mp
 Sf
 Mb
-WI
+Wo
 Ga
 wn
 wn
@@ -33033,7 +33024,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 XZ
 XZ
@@ -33235,7 +33226,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 ER
 XZ
@@ -33422,8 +33413,8 @@ gr
 Uo
 ij
 jn
-WI
-WI
+Wo
+Wo
 Ga
 wn
 wn
@@ -33437,7 +33428,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 ES
 UD
@@ -33624,7 +33615,7 @@ Wx
 Xg
 dS
 jn
-WI
+Wo
 Pn
 wn
 wn
@@ -33639,7 +33630,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 ET
 XZ
@@ -33826,7 +33817,7 @@ gs
 hm
 dS
 jn
-WI
+Wo
 Ga
 wn
 wn
@@ -33841,7 +33832,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 XZ
 XZ
@@ -34028,7 +34019,7 @@ XG
 hn
 dS
 jn
-WI
+Wo
 Cm
 wn
 wn
@@ -34043,7 +34034,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 XZ
 XZ
@@ -34230,8 +34221,8 @@ Yu
 ho
 dS
 jn
-WI
-WI
+Wo
+Wo
 Ga
 wn
 wn
@@ -34245,7 +34236,7 @@ wn
 wn
 wn
 Wf
-WI
+Wo
 Sd
 XZ
 XZ
@@ -35445,7 +35436,7 @@ NM
 NM
 NM
 VW
-WI
+Wo
 Ga
 wn
 wn
@@ -35647,7 +35638,7 @@ NM
 NM
 NM
 VW
-WI
+Wo
 Ga
 wn
 wn
@@ -35849,7 +35840,7 @@ Zy
 Zy
 Zy
 VW
-WI
+Wo
 Ga
 wn
 wn
@@ -35859,7 +35850,7 @@ pI
 pI
 pI
 mG
-Qf
+js
 vQ
 uq
 Dq
@@ -36051,7 +36042,7 @@ Ng
 Lw
 YC
 VW
-WI
+Wo
 Ga
 wn
 wn
@@ -36253,7 +36244,7 @@ Fi
 Vh
 oG
 mJ
-WI
+Wo
 Ga
 wn
 wn

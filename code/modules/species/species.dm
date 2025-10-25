@@ -494,6 +494,9 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 	H.mob_push_flags = push_flags
 	H.pass_flags = pass_flags
 	handle_limbs_setup(H)
+	if(istype(src, /singleton/species/aquatic_mech))
+		var/singleton/species/aquatic_mech/M = src
+		M.handle_post_spawn_aquatic(H)
 
 /singleton/species/proc/handle_pre_spawn(mob/living/carbon/human/H)
 	// Changing species can change NPC behaviour, so delete the holder if there is one

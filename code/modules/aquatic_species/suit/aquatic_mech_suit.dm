@@ -50,7 +50,7 @@
 		if(systems)
 			systems.show_ui(user)
 
-	process()
+	proc/process_suit()
 		if(systems)
 			systems.process()
 

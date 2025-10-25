@@ -669,12 +669,18 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "bT" = (
 /obj/structure/table/standard,
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "bY" = (
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
@@ -947,7 +953,10 @@
 /obj/structure/table/standard,
 /obj/machinery/chemical_dispenser/bar_soft/full,
 /turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "cB" = (
 /obj/structure/closet/jcloset_torch,
 /obj/item/reagent_containers/spray/cleaner,
@@ -2099,10 +2108,16 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "fb" = (
 /turf/simulated/wall/r_wall/hull,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "fc" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/floor_decal/industrial/outline/grey,
@@ -2141,7 +2156,10 @@
 	name = "Service Break Room"
 	},
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "fg" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -2803,9 +2821,7 @@
 	name = "Officer Mess Staff Entrance"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "gx" = (
 /obj/structure/lattice,
 /obj/structure/disposalpipe/down{
@@ -2855,9 +2871,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "gB" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/gym)
@@ -3271,9 +3285,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "hx" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/cable/green{
@@ -3717,9 +3729,7 @@
 	},
 /obj/floor_decal/corner/green/three_quarters,
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "iv" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/steel_reinforced,
@@ -3733,9 +3743,7 @@
 	id_tag = "food_serv_lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "iw" = (
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light,
@@ -4060,8 +4068,9 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/obj/floor_decal/corner/green/half,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "jg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
@@ -4129,7 +4138,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "jp" = (
 /obj/machinery/button/windowtint{
 	pixel_x = 28
@@ -4464,9 +4476,7 @@
 	desc = "A computer used to recieve orders and process them"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "kb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -4483,9 +4493,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "kc" = (
 /obj/structure/bed/chair/office/dark,
 /turf/simulated/floor/plating,
@@ -4627,11 +4635,21 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "kx" = (
 /obj/structure/closet/l3closet/janitor,
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
+"ky" = (
+/obj/structure/window/boron_reinforced{
+	dir = 8
+	},
+/obj/floor_decal/corner/green/half,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "kB" = (
 /obj/machinery/disposal,
 /obj/floor_decal/corner/green,
@@ -5433,9 +5451,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "mv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -5638,6 +5654,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/floor_decal/corner/black/border{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "nj" = (
@@ -5837,7 +5856,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "nO" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -6413,13 +6432,8 @@
 /area/crew_quarters/galley)
 "pb" = (
 /obj/floor_decal/corner/black/mono,
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/fancy,
-/obj/item/pen/fancy,
+/obj/machinery/chemical_dispenser/bar_soft/full,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "pc" = (
@@ -6498,9 +6512,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "pj" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6817,9 +6829,7 @@
 	id_tag = "food_serv_lockdown"
 	},
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "qc" = (
 /obj/machinery/door/airlock/multi_tile/glass/civilian{
 	name = "Holodeck"
@@ -7417,9 +7427,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "rP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -7498,6 +7506,9 @@
 /obj/floor_decal/corner/black/mono,
 /obj/machinery/vending/dinnerware,
 /obj/structure/railing,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "rZ" = (
@@ -8056,10 +8067,21 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "sT" = (
-/turf/simulated/wall/prepainted,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/floor_decal/corner/black/mono,
+/obj/structure/railing,
+/obj/floor_decal/corner/black/border{
+	dir = 4;
+	pixel_x = -20
+	},
+/obj/floor_decal/corner/black/border{
+	dir = 4;
+	pixel_x = -10
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/crew_quarters/mess)
 "sU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8353,6 +8375,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
+"tM" = (
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor/lino,
+/area/crew_quarters/galley)
 "tN" = (
 /obj/structure/bed/chair/pew/left/mahogany,
 /obj/machinery/light{
@@ -8838,7 +8864,10 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "vc" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -9554,8 +9583,13 @@
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "xf" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -9809,7 +9843,10 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "xQ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10325,6 +10362,11 @@
 /obj/structure/closet/secure_closet/medical_torchsenior,
 /turf/simulated/wall/prepainted,
 /area/security/habcheck)
+"zd" = (
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_coffee/full,
+/turf/simulated/floor/lino,
+/area/crew_quarters/galley)
 "ze" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -10643,6 +10685,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/structure/railing,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "Ar" = (
@@ -10734,9 +10777,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "AD" = (
 /obj/structure/table/standard,
 /obj/machinery/computer/cryopod{
@@ -11220,7 +11261,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "BX" = (
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
@@ -12237,7 +12281,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Et" = (
 /obj/machinery/vending/coffee{
 	dir = 4
@@ -12374,7 +12421,10 @@
 	pixel_y = 35
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "EL" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -13195,7 +13245,10 @@
 	name = "Chief Steward Office Shutters"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "GW" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/floor_decal/industrial/outline/grey,
@@ -14238,8 +14291,13 @@
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "Jw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14443,7 +14501,10 @@
 	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "JO" = (
 /obj/catwalk_plated,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -14586,7 +14647,10 @@
 	id = "chief_steward_office"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Ke" = (
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -15269,7 +15333,10 @@
 /area/hallway/primary/thirddeck/fore)
 "LG" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "LH" = (
 /obj/machinery/atmospherics/unary/vent_pump/tank{
 	dir = 8;
@@ -15887,6 +15954,11 @@
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftport)
+"Nr" = (
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_alc/full,
+/turf/simulated/floor/lino,
+/area/crew_quarters/galley)
 "Ns" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -16231,9 +16303,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "Om" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16691,7 +16761,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "PE" = (
 /obj/floor_decal/techfloor{
 	dir = 9
@@ -16779,6 +16852,8 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
+/obj/machinery/hologram/holopad,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "PP" = (
@@ -17486,9 +17561,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
 /obj/floor_decal/corner/black/mono,
-/obj/structure/railing{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "Sb" = (
@@ -17697,11 +17769,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/hologram/holopad,
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/wall/prepainted,
 /area/crew_quarters/mess)
 "Sw" = (
 /obj/structure/sign/hydro,
@@ -17861,9 +17929,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "SU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -17907,9 +17973,7 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "Td" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17941,7 +18005,8 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/chief_steward{
-	name = "\improper Service Break Room"
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
 	})
 "Tf" = (
 /obj/structure/table/rack,
@@ -18274,8 +18339,13 @@
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "Ui" = (
 /obj/machinery/meter/turf,
 /turf/simulated/floor,
@@ -18367,7 +18437,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Uu" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -18502,7 +18575,10 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "UJ" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
@@ -18793,6 +18869,11 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/port)
+"Vs" = (
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_soft/full,
+/turf/simulated/floor/lino,
+/area/crew_quarters/galley)
 "Vt" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -19048,9 +19129,7 @@
 	desc = "A Designator Designating that a disposals filter is underneath this tile"
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "VU" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
@@ -19522,6 +19601,12 @@
 /obj/floor_decal/corner/b_green/half{
 	dir = 1
 	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
 "Xm" = (
@@ -19621,8 +19706,16 @@
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/floor_decal/borderfloorblack{
+	dir = 1
+	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "Xy" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/access_button{
@@ -19749,9 +19842,6 @@
 "XO" = (
 /obj/floor_decal/corner/black/mono,
 /obj/structure/table/reinforced,
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/item/storage/box/condimentbottles,
 /turf/simulated/floor/tiled/steel_grid,
 /area/crew_quarters/mess)
@@ -19877,7 +19967,10 @@
 /obj/structure/table/standard,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
 /turf/simulated/floor/tiled,
-/area/crew_quarters/chief_steward)
+/area/crew_quarters/chief_steward{
+	name = "\improper Service Break Room";
+	req_access = list("ACCESS_KITCHEN")
+	})
 "Yd" = (
 /obj/floor_decal/corner/green{
 	dir = 4
@@ -20023,8 +20116,11 @@
 	pixel_y = 4
 	},
 /obj/floor_decal/industrial/warning/corner,
+/obj/floor_decal/borderfloorblack{
+	dir = 1
+	},
 /turf/simulated/floor/wood,
-/area/crew_quarters/mess)
+/area/crew_quarters/galley)
 "YF" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/firealarm{
@@ -36358,10 +36454,10 @@ ww
 cT
 yI
 Fx
-mo
-mo
-mo
-mo
+zd
+tM
+Vs
+Nr
 mo
 oZ
 pV
@@ -37573,7 +37669,7 @@ jW
 RX
 Aq
 XO
-Ko
+sT
 RN
 yj
 pZ
@@ -38578,7 +38674,7 @@ pf
 ka
 mp
 gw
-xc
+ky
 Xw
 xc
 Jv
@@ -38776,10 +38872,10 @@ Mx
 wn
 Qn
 bA
-sT
-sT
+ev
+ev
 gA
-sT
+ev
 jf
 YD
 nN

@@ -55,6 +55,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker{
 	name = "\improper Reception"
@@ -221,6 +226,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/closet/medical_wall{
+	pixel_x = 32;
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker{
 	name = "\improper Medical Storage"
@@ -278,10 +287,17 @@
 	name = "\improper Reception"
 	})
 "aax" = (
-/obj/structure/closet/medical_wall,
-/turf/simulated/wall/r_wall/prepainted,
-/area/medical/locker{
-	name = "\improper Medical Storage"
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
 	})
 "aay" = (
 /obj/structure/closet/crate/secure{
@@ -548,6 +564,10 @@
 	use_power = 1
 	},
 /obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/closet/medical_wall{
+	pixel_x = 32;
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -3728,6 +3748,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "agt" = (
@@ -3811,6 +3836,15 @@
 /obj/floor_decal/corner/paleblue/border,
 /obj/floor_decal/corner/paleblue/border{
 	dir = 1
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -3896,6 +3930,11 @@
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 9
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -4079,6 +4118,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "agY" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "agZ" = (
@@ -9624,6 +9668,11 @@
 	dir = 1
 	},
 /obj/floor_decal/corner/paleblue/border,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "aGE" = (
@@ -14542,6 +14591,9 @@
 	dir = 4;
 	id_tag = "PT_4"
 	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Paitent Room 4"
@@ -17776,6 +17828,9 @@
 	id_tag = "PT_2";
 	name = "Lockdown Shutters"
 	},
+/obj/floor_decal/industrial/warning{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Paitent Room 2"
@@ -18977,12 +19032,25 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
+"hQK" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "hTJ" = (
 /obj/structure/iv_stand,
 /obj/machinery/door/blast/shutters/open{
 	dir = 4;
 	id_tag = "PT_1";
 	name = "Lockdown Shutters"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
@@ -20878,6 +20946,11 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Long Term Main"
@@ -21443,10 +21516,17 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
 "kJe" = (
-/obj/machinery/light_switch,
-/turf/simulated/wall/r_wall/prepainted,
-/area/medical/locker{
-	name = "\improper Staff room 2"
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
 	})
 "kKb" = (
 /obj/structure/bed/chair,
@@ -21988,6 +22068,9 @@
 	dir = 4;
 	id_tag = "PT_3";
 	name = "Lockdown Shutters"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
@@ -24567,6 +24650,9 @@
 	id_tag = "PT_4";
 	name = "Lockdown Shutters"
 	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Paitent Room 4"
@@ -24707,6 +24793,9 @@
 	dir = 4;
 	id_tag = "PT_2";
 	name = "Lockdown Shutters"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
@@ -25300,15 +25389,18 @@
 /obj/floor_decal/corner/blue/border{
 	dir = 8
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -23
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/newscaster{
+	dir = 1;
+	pixel_y = -30
+	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker{
 	name = "\improper Staff room 2"
@@ -26545,6 +26637,10 @@
 	pixel_y = 24
 	},
 /obj/machinery/rotating_alarm/security_alarm,
+/obj/machinery/light_switch{
+	pixel_y = 21;
+	pixel_x = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "qGG" = (
@@ -27935,9 +28031,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "shh" = (
-/obj/machinery/newscaster{
-	dir = 1
-	},
 /obj/machinery/light_switch{
 	pixel_x = -12
 	},
@@ -28384,6 +28477,11 @@
 	},
 /obj/machinery/door/window/westleft,
 /obj/machinery/door/window/eastleft,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "sAz" = (
@@ -29044,6 +29142,11 @@
 	name = "Restroom 2"
 	},
 /obj/structure/curtain/open,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Long Term Main"
@@ -29084,6 +29187,11 @@
 /obj/machinery/door/blast/regular/open{
 	dir = 4;
 	id_tag = "ward_Lockdown"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker{
@@ -30101,6 +30209,10 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump,
+/obj/machinery/light_switch{
+	pixel_x = -32;
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker{
 	name = "\improper Staff room 2"
@@ -30281,6 +30393,9 @@
 	id_tag = "PT_3";
 	name = "Lockdown Shutters"
 	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Paitent Room 3"
@@ -30313,6 +30428,24 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
+"vnI" = (
+/obj/structure/hygiene/toilet,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "vpA" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
@@ -30775,6 +30908,11 @@
 /obj/structure/table/reinforced,
 /obj/floor_decal/corner/paleblue/bordercee{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging{
@@ -31306,6 +31444,9 @@
 /area/assembly/robotics/office)
 "xMn" = (
 /obj/structure/hygiene/toilet,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Long Term Main"
@@ -31319,6 +31460,9 @@
 	dir = 4;
 	id_tag = "PT_1";
 	name = "Lockdown Shutters"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
@@ -52022,13 +52166,13 @@ aaa
 aaa
 aaa
 aaH
-xMn
+vnI
 tit
 jYs
-aaG
-aaG
-aaG
-enH
+hQK
+kJe
+hQK
+aax
 aaG
 dTG
 aaC
@@ -52224,7 +52368,7 @@ aaa
 aaa
 aaa
 aaH
-kJe
+aam
 aam
 aam
 aav
@@ -52833,8 +52977,8 @@ aaH
 aam
 aam
 aam
-aax
-aax
+aav
+aav
 aaD
 uVy
 aat
@@ -53036,7 +53180,7 @@ xMn
 agg
 aaA
 aaG
-aaG
+enH
 lKi
 jns
 aaG
