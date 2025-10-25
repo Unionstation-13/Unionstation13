@@ -142,3 +142,12 @@
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/text_label/instruction, "Upon submitting this form, you, the submitter, consent to unreasonable searches and confiscation of personal items if you are to be found using this pharmaceutical for any other reasons than that stated")
 	add_field(/datum/report_field/text_label/instruction, "The URC reserves the right to sell, process, or use your data for advertising purposes for clandestine purposes. Your data may be sold to third parties or given to the UGN.")
+
+/datum/computer_file/report/recipient/medical/psycheval
+
+/datum/computer_file/report/recipient/medical/routinecheckup/generate_fields()
+	..()
+	add_field(/datum/report_field/text_label/header, "Routine Psychological Examination")
+	add_field(/datum/report_field/text_label/header, "This is a routine psychological examination mandated by the Counseler to be taken every 6 months to prevent deterioration of psychological status.")
+	add_field(/datum/report_field/simple_text, "How have you been feeling recently?")
+	add_field(/datum/report_field/options/yes_no, "")

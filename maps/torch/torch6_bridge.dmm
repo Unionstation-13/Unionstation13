@@ -3148,6 +3148,10 @@
 	dir = 4
 	},
 /obj/floor_decal/corner/blue/three_quarters,
+/obj/structure/sign/warning/engineering_access{
+	pixel_y = -30;
+	desc = "DO NOT ENTER: MAITNENCE"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fN" = (
@@ -3192,6 +3196,10 @@
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
+/obj/structure/sign/warning/engineering_access{
+	pixel_y = -30;
+	desc = "DO NOT ENTER: MAITNENCE"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fQ" = (
@@ -3209,6 +3217,10 @@
 	},
 /obj/floor_decal/corner/blue{
 	dir = 10
+	},
+/obj/structure/sign/warning/engineering_access{
+	pixel_y = -30;
+	desc = "DO NOT ENTER: MAITNENCE"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
@@ -3862,17 +3874,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/crew)
-"hU" = (
-/obj/structure/bed/chair/padded/blue,
-/obj/floor_decal/corner/blue{
-	dir = 6
-	},
-/obj/structure/sign/double/solgovflag/left{
-	dir = 8;
-	pixel_x = 32
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
 "hV" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/sol{
@@ -4660,8 +4661,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "kw" = (
 /obj/floor_decal/corner/blue{
 	dir = 6
@@ -5247,27 +5250,6 @@
 	},
 /turf/simulated/wall/titanium,
 /area/aquila/storage)
-"mz" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/floor_decal/corner/blue/mono,
-/obj/item/stamp/sea,
-/obj/machinery/button/alternate/door{
-	desc = "A remote control-switch for the office door.";
-	id_tag = "seaforedoor";
-	name = "SEA's Office Door Control";
-	pixel_x = -6;
-	pixel_y = -25;
-	req_access = list("ACCESS_TORCH_SENIOR_ADVISOR")
-	},
-/obj/machinery/button/windowtint{
-	id = "sea_windows";
-	pixel_x = 9;
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
 "mA" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -6770,7 +6752,9 @@
 /area/aquila/power)
 "qH" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/heads/office/sea)
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "qI" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -7411,18 +7395,22 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "sea_windows"
+/obj/machinery/door/blast/shutters{
+	name = "Maitnence Shutters";
+	desc = "It seems the shipyard is doing some work here. You better not cross."
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sea)
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "sz" = (
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
 	name = "UGN Commisioned Advisor";
 	secured_wires = 1
 	},
-/obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -7436,11 +7424,19 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/blast/shutters{
+	name = "Maitnence Shutters";
+	desc = "It seems the shipyard is doing some work here. You better not cross."
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "sB" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/sea)
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "sC" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/solgov_law,
@@ -7655,13 +7651,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/air)
-"tm" = (
-/obj/floor_decal/corner/blue{
-	dir = 6
-	},
-/obj/structure/flora/pottedplant/unusual,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
 "to" = (
 /obj/structure/sign/warning/nosmoking_1{
 	dir = 4;
@@ -7849,40 +7838,38 @@
 /area/crew_quarters/heads/office/co)
 "tW" = (
 /obj/machinery/disposal,
-/obj/floor_decal/corner/blue/mono,
-/obj/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/obj/floor_decal/industrial/warning/fulltile,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "tX" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "tZ" = (
-/obj/floor_decal/corner/blue{
-	dir = 6
+/obj/machinery/light/small/emergency{
+	dir = 4
 	},
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/machinery/camera/network/bridge{
+	c_tag = "Command Hallway - Center Port";
+	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "ua" = (
 /obj/machinery/door/airlock/corporate{
 	id_tag = "liaisondoor";
-	name = "Bridge Secretary";
+	name = "Archive";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -8146,10 +8133,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
-"uG" = (
-/obj/structure/bed/chair/padded/blue,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
 "uH" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -8318,9 +8301,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "vj" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "west bump";
@@ -8333,12 +8313,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "vk" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -8347,30 +8326,19 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "vm" = (
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
 	},
-/obj/item/material/folder/blue,
-/obj/item/material/folder/red,
-/obj/item/material/folder,
-/obj/item/material/folder/nt,
-/obj/item/material/folder/yellow,
-/obj/item/material/folder/white,
-/obj/floor_decal/corner/blue/mono,
-/obj/floor_decal/industrial/outline/yellow,
-/obj/item/material/folder/clipboard,
-/obj/item/material/folder/envelope,
-/obj/item/material/folder/envelope,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "vn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -8511,34 +8479,24 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/floor_decal/corner/blue/three_quarters,
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -23
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
-"vP" = (
-/obj/floor_decal/corner/blue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/obj/floor_decal/industrial/warning/fulltile,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "vQ" = (
-/obj/machinery/computer/modular/preset/cardslot/command{
-	dir = 8;
-	icon_state = "console"
-	},
-/obj/item/modular_computer/tablet/lease/preset/command,
-/obj/floor_decal/corner/blue/three_quarters{
-	dir = 4
-	},
 /obj/item/device/radio/intercom{
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "vS" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -8588,8 +8546,11 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/obj/floor_decal/industrial/warning/fulltile,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "wb" = (
 /obj/structure/bed/chair/padded/beige{
 	dir = 4
@@ -8884,31 +8845,15 @@
 	},
 /turf/simulated/floor,
 /area/solar/bridge)
-"ww" = (
-/obj/structure/closet/secure_closet/sea,
-/obj/floor_decal/corner/blue/mono,
-/obj/floor_decal/industrial/outline/grey,
-/obj/structure/noticeboard{
-	pixel_x = -32
-	},
-/obj/machinery/keycard_auth/torch{
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
 "wx" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/floor_decal/corner/blue/mono,
-/obj/item/toy/bosunwhistle,
-/obj/item/sticky_pad/random,
 /obj/machinery/newscaster/security_unit{
 	pixel_x = 32
 	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/obj/machinery/light/small/emergency,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "wz" = (
 /obj/random/maintenance/solgov,
 /obj/machinery/firealarm{
@@ -9567,20 +9512,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/aquila/storage)
-"yp" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/floor_decal/corner/blue{
-	dir = 6
-	},
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/structure/sign/double/solgovflag/right{
-	dir = 8;
-	pixel_x = 32
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
 "yw" = (
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -10540,15 +10471,6 @@
 /obj/machinery/suit_storage_unit/medical/alt/sol,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
-"Ck" = (
-/obj/floor_decal/corner/blue{
-	dir = 10
-	},
-/obj/structure/bed/chair/comfy/blue{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
 "Cl" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -10937,12 +10859,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/aft)
-"En" = (
-/obj/floor_decal/corner/blue{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
 "Eq" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -11993,26 +11909,35 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 23;
+	pixel_y = 24
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "Iq" = (
-/obj/structure/bookcase,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
-/obj/item/book/manual/military_law,
-/obj/floor_decal/corner/blue/mono,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
+/obj/machinery/light/small/emergency,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "Is" = (
-/obj/structure/bed/chair/padded/blue,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "Iv" = (
 /obj/machinery/door/airlock/sol{
 	name = "CO's Quarters";
@@ -12074,23 +11999,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/aquila/power)
-"IE" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/machinery/photocopier/faxmachine{
-	department = "Titen - Senior Enlisted Advisor"
-	},
-/obj/floor_decal/corner/blue/mono,
-/obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Senior Enlisted Advisor's Desk";
-	departmentType = 6;
-	name = "Senior Enlisted Advisor RC";
-	pixel_y = -34
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/sea)
 "IF" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8;
@@ -13013,13 +12921,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Nn" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/pawn,
-/obj/item/reagent_containers/food/condiment/small/packet/coffee,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "Np" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -14160,11 +14065,15 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "sea_windows"
+/obj/machinery/door/blast/shutters{
+	name = "Maitnence Shutters";
+	desc = "It seems the shipyard is doing some work here. You better not cross."
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sea)
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "RU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -15840,14 +15749,16 @@
 /area/hallway/primary/bridge/fore)
 "ZR" = (
 /obj/machinery/firealarm{
-	pixel_y = 24
+	pixel_y = 24;
+	pixel_x = 2
 	},
-/obj/machinery/light_switch{
-	pixel_x = 23;
-	pixel_y = 24
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/sea)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea{
+	name = "\improper Maitnence Zone"
+	})
 "ZT" = (
 /obj/structure/dogbed,
 /obj/floor_decal/corner/blue{
@@ -25060,12 +24971,12 @@ eW
 fw
 fP
 sy
-En
+vm
 tX
-En
+Nn
 vj
 vO
-ww
+Nn
 qH
 Oi
 lT
@@ -25266,8 +25177,8 @@ Ip
 kv
 Is
 vk
-vP
-IE
+Nn
+Nn
 qH
 aK
 aK
@@ -25466,10 +25377,10 @@ fR
 qH
 ZR
 vZ
-uG
 Nn
-Ck
-mz
+Nn
+Nn
+Nn
 qH
 xc
 xc
@@ -25666,10 +25577,10 @@ fc
 fC
 fS
 qH
-tm
+Nn
 tZ
-hU
-yp
+Nn
+Nn
 vQ
 wx
 sB

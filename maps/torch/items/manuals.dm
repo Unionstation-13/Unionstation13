@@ -77,7 +77,7 @@
 /obj/item/material/folder/envelope/preset/captain/LateInitialize(mapload)
 	var/obj/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
-	<tt><center><b>[SPAN_COLOR("red", "SECRET - CODE WORDS: TORCH")]</b>
+	<tt><center><b>[SPAN_COLOR("red", "SECRET - CODE WORDS: TITEN")]</b>
 	<h3>UNITED GALACTIC NATIONS COMMAND</h3>
 	<img src = sollogo.png>
 	</center>
@@ -112,7 +112,7 @@
 
 /obj/item/material/folder/envelope/preset/rep
 	desc = "A thick envelope. The UGN crest is stamped in the corner, along with 'TOP SECRET - TITEN GAMMA'."
-	seal_stamp = "General Secretary rubber stamp"
+	seal_stamp = "Department of Information Safety rubber stamp"
 
 /obj/item/material/folder/envelope/preset/rep/Initialize()
 	. = ..()
@@ -137,12 +137,12 @@
 	<li>Thirdly, deploy an emergency distress beacon
 	<li>Finally, guide all personeel to safe bunkers across the ship, stay put and make sure to set the self destruct to at least 20 minutes to allow ample time for the crew to board a rescue boat.
 	I do understand that you may not want to lose the Titen, but the Galactic Nations safety is more important than a ship.
-	This contingency protocol will be activated when a UGN representative says so.
+	This contingency protocol will be activated when a UGN representative orders a GAMMA contingency to be invoked.
 	Violators of this protocol may and should be shot on sight by peacekeepers.
 	If this code is initiated immedietly change the alert level to Delta by contacting your nearest UGN representative.
 	The UGN takes information safety VERY seriously, any confidental information will be your responsibility to contain and destroy.
 	Finally, do NOT share this document with anyone else, and ensure the crew have no knowledge of the initiation of Protocol GAMMA.
-	If staff attempt to leak this information, terminate them immedietly.
+	If staff attempt to leak this information, terminate them immedietly with lethal force.
 
 
 	<i>Regards, Edward.</i></tt>

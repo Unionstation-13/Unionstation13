@@ -226,6 +226,50 @@
 		B.I.O LLC"}
 	bio_memo.update_icon()
 
+/obj/item/material/folder/envelope/preset/explorationbriefing
+	name = "Sealed URC Exploration Envelope"
+	desc = "An official envelope with the URC corporate seal."
+	icon_state = "envelope_sealed"
+	sealed = TRUE
+	seal_stamp = "\improper URC E&E corporate rubber stamp"
+
+/obj/item/material/folder/envelope/preset/explorationrbriefing/New()
+	..()
+	var/obj/item/paper/URC_memo = new(src)
+	bio_memo.name = "United Rocknall Corporation - E&E Affairs Memorandum"
+	bio_memo.info = {"<center><b>URC EXPLORATORY INFORMATION</b></center><br>
+		<center><i>Official Communication</i></center><br><br>
+
+		<b>To:</b> Senior Rocknall Associate<br>
+		<b>From:</b> Arnold Benton, E&E Division Head of Operations<br>
+		<b>Date:</b> October 19, 2450" <br>
+		<b>Subject:</b> E&E Affairs<br><br>
+
+		<b>DIRECTIVE:</b><br>
+		You are hereby instructed to create a public NTNRC chat channel with the following specifications:<br><br>
+
+		<b>Channel Name:</b> "BIO Ordering Station"<br><br>
+
+		<b>Purpose:</b> This channel will serve as the primary communication hub for all B.I.O LLC ordering operations and customer service inquiries.<br><br>
+
+		<b>Responsibilities:</b><br>
+		• Monitor the channel continuously during your shift<br>
+		• Respond promptly to all ordering inquiries<br>
+		• Maintain professional communication standards<br>
+		• Stay on top of all incoming orders and ensure timely processing<br>
+		• Coordinate with other departments as needed to fulfill orders<br><br>
+
+		<b>Priority:</b> HIGH - This directive is to be implemented immediately upon receipt of this memorandum.<br><br>
+
+		<b>Additional Notes:</b> This channel will be monitored by B.I.O LLC corporate oversight. Failure to maintain proper channel management may result in disciplinary action.<br><br>
+
+		<center><i>This directive is authorized by B.I.O LLC corporate policy.</i></center><br><br>
+
+		Signed,<br>
+		<b>Arnold Benton</b><br>
+		Exploration and Ecology Division Head of Operations<br>
+		United Rocknall Corporation"}
+	bio_memo.update_icon()
 
 /obj/item/material/folder/envelope/on_update_icon()
 	if (sealed)

@@ -79,11 +79,11 @@ This module is designed to be easily portable between different Baystation12 ins
      Uses standard Baystation12 APIs and frameworks
      Modular structure allows for easy customization
      Tab indentation ensures compatibility across different development environments
-     
+
 
 Credits 
 
-Chief Creator: Chickenking1234 
+Chief Creator and Artist: Chickenking1234 
 Lead Developer/Coder: LegateJulius/lordofmen
 Lead developer and designer of the aquatic mech species module, responsible for the complete implementation including species mechanics, protective equipment systems, and charging infrastructure. 
 

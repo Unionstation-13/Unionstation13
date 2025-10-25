@@ -27413,7 +27413,7 @@
 /area/rnd/misc_lab)
 "rxK" = (
 /obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
+	name = "Holding Cell";
 	secured_wires = 1
 	},
 /turf/simulated/floor/tiled/dark,
