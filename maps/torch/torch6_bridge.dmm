@@ -3213,9 +3213,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fR" = (
-/obj/machinery/light,
 /obj/floor_decal/corner/blue{
 	dir = 10
+	},
+/obj/machinery/button/blast_door{
+	pixel_y = -20;
+	id_tag = "construct";
+	name = "Maitnence Shutters";
+	req_access = list("ACCESS_ENGINEERING")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
@@ -3227,6 +3232,7 @@
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fT" = (
@@ -7412,11 +7418,12 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/grille,
 /obj/machinery/door/blast/shutters{
 	name = "Maitnence Shutters";
-	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross."
+	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
+	id_tag = "construct"
 	},
-/obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
@@ -7439,7 +7446,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/blast/shutters{
 	name = "Maitnence Shutters";
-	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross."
+	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
+	id_tag = "construct"
 	},
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
@@ -14238,11 +14246,12 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/grille,
 /obj/machinery/door/blast/shutters{
 	name = "Maitnence Shutters";
-	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross."
+	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
+	id_tag = "construct"
 	},
-/obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
