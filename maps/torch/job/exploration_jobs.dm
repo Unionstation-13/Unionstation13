@@ -44,7 +44,7 @@
 	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
-	title = "Contracter Pilot"
+	title = "Contractor Pilot"
 	supervisors = "Whoever pays you the most"
 	department = "Contractor"
 	department_flag = EXP
@@ -56,8 +56,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 35
 		alt_titles = list(
-		"Contractor ",
-
+		"Contractor "
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(/datum/mil_branch/civilian,)
@@ -81,8 +80,7 @@
 		SKILL_SCIENCE = SKILL_MAX
 	)
 /datum/job/nt_pilot/get_description_blurb()
-return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measely job as a contracter, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
-
+return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
 /datum/job/explorer
 	title = "Junior Rocknall Associate"
 	department = "Exploration"
