@@ -11,7 +11,7 @@
 	alt_titles = list(
 		"EVA Technician"
 		"Engineer"
-		)
+	)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
 		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
