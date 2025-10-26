@@ -41,7 +41,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
+	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
 	title = "Contracter Pilot"
