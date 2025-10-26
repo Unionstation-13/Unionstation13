@@ -56,7 +56,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 35
 	alt_titles = list(
-		"Contractor "
+		"Contractor"
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(/datum/mil_branch/civilian,)
@@ -70,14 +70,15 @@
 		access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer, access_research,
 		access_radio_exp, access_radio_sci, access_radio_sup, access_maint_tunnels, access_emergency_storage
 	)
-	min_skill = list( // 5 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_TRAINED // 4 points
+	min_skill = list(
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_BUERACRACY = SKILL_BASIC
 	)
 
 	max_skill = list(
 		SKILL_PILOT = SKILL_MAX,
-		SKILL_SCIENCE = SKILL_MAX
+		SKILL_SCIENCE = SKILL_TRAINED
 	)
 /datum/job/nt_pilot/get_description_blurb()
 	return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
@@ -101,7 +102,8 @@
 
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_TRAINED
+		SKILL_PILOT = SKILL_TRAINED,
+
 	)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
