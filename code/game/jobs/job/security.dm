@@ -67,3 +67,4 @@
 	outfit_type = /singleton/hierarchy/outfit/job/security/officer
 
 /datum/job/sec_physician
+	outfit_type = /singleton/hierarchy/outfit/job/assistant
