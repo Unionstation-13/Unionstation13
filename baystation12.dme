@@ -3447,7 +3447,6 @@
 #include "maps\_map_include.dm"
 #include "maps\_maps.dm"
 #include "maps\away\asteriod_signal\asteriodsignal.dm"
-#include "maps\torch\torch4_deck2.dmm"
 #include "packs\event_e14b\_pack.dm"
 #include "packs\legion\_pack.dm"
 #include "~code\global_init.dm"
