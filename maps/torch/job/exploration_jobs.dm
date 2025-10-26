@@ -55,7 +55,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 35
-		alt_titles = list(
+	alt_titles = list(
 		"Contractor "
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
