@@ -66,8 +66,8 @@
 	var/water_consumption_rate = 0.1
 	var/power_consumption_rate = 0.2
 
-	New(obj/item/clothing/suit/aquatic_mech/S)
-		suit = S
+/datum/aquatic_mech_systems/New(obj/item/clothing/suit/aquatic_mech/S)
+	suit = S
 
 /datum/aquatic_mech_systems/Destroy()
 	suit = null
