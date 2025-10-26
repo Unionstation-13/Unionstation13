@@ -100,7 +100,7 @@
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	min_skill = list( // 1 point
-		SKILL_EVA = SKILL_BASIC // 1 point
+		SKILL_EVA = SKILL_BASIC, // 1 point
 		SKILL_PILOT = SKILL_TRAINED
 	)
 
