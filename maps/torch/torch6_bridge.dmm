@@ -3547,6 +3547,7 @@
 "gN" = (
 /obj/structure/bed/chair/office/comfy/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/safe/floor,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "gO" = (
@@ -12745,6 +12746,19 @@
 	dir = 4
 	},
 /obj/structure/safe/floor,
+/obj/random/memo_scgr,
+/obj/random/memo_scgr,
+/obj/random/memo_scgr,
+/obj/random/memo_security,
+/obj/random/memo_security,
+/obj/random/memo_security,
+/obj/random/memo_supply,
+/obj/random/memo_supply,
+/obj/random/memo_supply,
+/obj/random/memo_corporate,
+/obj/random/memo_corporate,
+/obj/random/memo_corporate,
+/obj/random/memo_command,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cl/backroom{
 	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
