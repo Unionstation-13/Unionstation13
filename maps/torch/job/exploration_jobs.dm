@@ -80,14 +80,15 @@
 		SKILL_SCIENCE = SKILL_MAX
 	)
 /datum/job/nt_pilot/get_description_blurb()
-return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
+	return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
+
 /datum/job/explorer
 	title = "Junior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate, except in the case of being a contracted pilot, in which case you follow whoever pays you the most"
+	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
