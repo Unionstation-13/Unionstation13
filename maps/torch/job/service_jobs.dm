@@ -59,7 +59,7 @@
 	)
 
 /datum/job/janitor
-	title = "B.I.O Junior Associate"
+	title = "B.I.O Sanitation Officer"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
@@ -82,7 +82,7 @@
 
 
 /datum/job/chef
-	title = "B.I.O Senior Serviceman"
+	title = "B.I.O Mess Technician"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2

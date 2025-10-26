@@ -41,58 +41,28 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
-
-/datum/job/nt_pilot
-	title = "Shuttle Pilot"
-	supervisors = "Senior Rocknall Associate"
-	department = "Exploration"
-	department_flag = EXP
-	total_positions = 1
-	spawn_positions = 1
-	selection_color = "#68099e"
-	economic_power = 8
-	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 24)
-	ideal_character_age = 25
-	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
-	allowed_branches = list(/datum/mil_branch/civilian,)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-	)
-
-	access = list(
-		access_mining_office, access_petrov, access_petrov_helm, access_petrov_maint, access_mining_station,
-		access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm,
-		access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer, access_research,
-		access_radio_exp, access_radio_sci, access_radio_sup, access_maint_tunnels, access_emergency_storage
-	)
-	min_skill = list( // 5 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_TRAINED // 4 points
-	)
-
-	max_skill = list(
-		SKILL_PILOT = SKILL_MAX,
-		SKILL_SCIENCE = SKILL_MAX
-	)
 
 /datum/job/explorer
 	title = "Junior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
-	total_positions = 5
-	spawn_positions = 5
-	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate"
+	total_positions = 6
+	spawn_positions = 6
+	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate, except in the case of being a contracted pilot, in which case you follow whoever pays you the most"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
+	ideal_character_age = 24
+	alt_titles = list(
+		"Contracted Pilot"
+		"Field Researcher"
+		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC // 1 point
+		SKILL_PILOT = SKILL_TRAINED
 	)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
