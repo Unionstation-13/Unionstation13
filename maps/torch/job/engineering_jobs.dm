@@ -1,25 +1,23 @@
-/datum/job/senior_engineer
-	title = "Engineer"
-	department = "Engineering"
-	department_flag = ENG
-	total_positions = 1
-	spawn_positions = 1
+/datum/job/engineer
+	title = "Technician"
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Chief Engineer"
 	selection_color = "#5b4d20"
-	economic_power = 7
-	minimal_player_age = 3
-	minimum_character_age = list(SPECIES_HUMAN = 27)
-	ideal_character_age = 40
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
+	economic_power = 5
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 19)
+	ideal_character_age = 30
+	alt_titles = list(
+		"EVA Technician",
+		"Engineer"
+		)
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
+		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/civ/contractor
 	)
 	skill_points = 26
 	min_skill = list( // 22 points
@@ -32,9 +30,9 @@
 	)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-						SKILL_ELECTRICAL   = SKILL_MAX,
-						SKILL_ATMOS        = SKILL_MAX,
-						SKILL_ENGINES      = SKILL_MAX)
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX)
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -50,67 +48,16 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
 
-/datum/job/senior_engineer/get_description_blurb()
-	return "You are the Engineer. You are a veteran of your trade. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
-
-/datum/job/engineer
-	title = "Maintenance Technician"
-	total_positions = 6
-	spawn_positions = 6
-	supervisors = "the Chief Engineer"
-	economic_power = 5
-	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 19)
-	ideal_character_age = 30
-	alt_titles = list(
-		"EVA Technician"
-		)
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
-	allowed_branches = list(
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
-	)
-	skill_points = 26
-	min_skill = list( // 12 points
-		SKILL_COMPUTER = SKILL_BASIC, // 1 point
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_CONSTRUCTION = SKILL_TRAINED, // 2 points
-		SKILL_ELECTRICAL = SKILL_BASIC, // 2 points
-		SKILL_ATMOS = SKILL_BASIC, // 2 points
-		SKILL_ENGINES = SKILL_BASIC // 4 points
-	)
-
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
-
-	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-		access_solgov_crew, access_hangar, access_network, access_radio_eng
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/power_monitor,
-							 /datum/computer_file/program/supermatter_monitor,
-							 /datum/computer_file/program/alarm_monitor,
-							 /datum/computer_file/program/atmos_control,
-							 /datum/computer_file/program/rcon_console,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/shields_monitor)
-
 /datum/job/engineer/get_description_blurb()
-	return "You are a maintenance technician. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
+	return "You are the Technician, a jack of all trades of engineering, however you do not excell at one in particular."
 
 /datum/job/engineer_trainee
-	title = "Maintenance Technician Trainee"
+	title = "Technician Trainee"
 	department = "Engineering"
 	department_flag = ENG
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Engineer and Engineering Personnel"
+	supervisors = "Technicians"
 	selection_color = "#5b4d20"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20

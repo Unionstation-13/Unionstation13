@@ -20,7 +20,7 @@
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
 		SKILL_EVA = SKILL_TRAINED, // 2 points
 		SKILL_SCIENCE = SKILL_TRAINED, // 4 points
-		SKILL_PILOT = SKILL_BASIC // 2 points
+		SKILL_PILOT = SKILL_TRAINED // 2 points
 	)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
@@ -44,17 +44,20 @@
 	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
-	title = "Shuttle Pilot"
-	supervisors = "Senior Rocknall Associate"
-	department = "Exploration"
+	title = "Contractor Pilot"
+	supervisors = "Whoever pays you the most"
+	department = "Contractor"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = "#68099e"
+	selection_color = "#3f3d41"
 	economic_power = 8
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 24)
-	ideal_character_age = 25
+	ideal_character_age = 35
+	alt_titles = list(
+		"Contractor"
+		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(/datum/mil_branch/civilian,)
 	allowed_ranks = list(
@@ -67,32 +70,40 @@
 		access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer, access_research,
 		access_radio_exp, access_radio_sci, access_radio_sup, access_maint_tunnels, access_emergency_storage
 	)
-	min_skill = list( // 5 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_TRAINED // 4 points
+	min_skill = list(
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_BUERACRACY = SKILL_BASIC
 	)
 
 	max_skill = list(
 		SKILL_PILOT = SKILL_MAX,
-		SKILL_SCIENCE = SKILL_MAX
+		SKILL_SCIENCE = SKILL_TRAINED
 	)
+/datum/job/nt_pilot/get_description_blurb()
+	return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
 
 /datum/job/explorer
 	title = "Junior Rocknall Associate"
 	department = "Exploration"
 	department_flag = EXP
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
+	ideal_character_age = 24
+	alt_titles = list(
+		"Field Researcher"
+		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	min_skill = list( // 1 point
-		SKILL_EVA = SKILL_BASIC // 1 point
+		SKILL_EVA = SKILL_BASIC, // 1 point
+		SKILL_PILOT = SKILL_TRAINED,
+
 	)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,

@@ -295,54 +295,6 @@
 /datum/job/representative/get_description_blurb()
 	return "You are the United Galactic Nations Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to the UGN on mission progress and important events."
 
-/datum/job/sea
-	title = "United Galatic Nations Commissioned Advisor"
-	department = "Support"
-	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "Directives from the UGN"
-	selection_color = "#2f2f7f"
-	minimal_player_age = 14
-	economic_power = 11
-	minimum_character_age = list(SPECIES_HUMAN = 35)
-	ideal_character_age = 45
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	allowed_branches = list(/datum/mil_branch/fleet)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/fleet/e9_alt1,
-		/datum/mil_rank/fleet/e9
-	)
-	skill_points = 34
-	min_skill = list( // 5 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_COMBAT = SKILL_BASIC, // 2 points
-		SKILL_WEAPONS = SKILL_BASIC // 2 points
-	)
-
-	max_skill = list(	SKILL_PILOT        = SKILL_TRAINED,
-	                    SKILL_COMBAT       = SKILL_EXPERIENCED,
-	                    SKILL_WEAPONS      = SKILL_EXPERIENCED,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX)
-
-
-	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
-		access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_aquila, access_guppy_helm,
-		access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_eng, access_radio_med, access_radio_sec, access_radio_serv, access_radio_sup, access_radio_exp
-		)
-
-	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/reports)
-
-/datum/job/sea/get_description_blurb()
-	return "You are United Galactic Nations Commissioned Advisor. You are responsible for maintaining conformity to the UGN Code. Any and all violations should be reported to the Peacekeeper Division of the ship."
 /datum/job/bridgeofficer
 	title = "Command Secretary"
 	department = "Support"

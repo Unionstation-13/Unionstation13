@@ -98,25 +98,13 @@
 	backpack_contents = list(/obj/item/clothing/accessory/badge/nanotrasen = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/representative
-	name = OUTFIT_JOB_NAME("SolGov Representative")
+	name = OUTFIT_JOB_NAME("UGN Representative")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
 	id_types = list(/obj/item/card/id/torch/crew/representative)
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
-
-/singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-	l_ear = /obj/item/device/radio/headset/sea
-	id_types = list(/obj/item/card/id/torch/crew/sea)
-	pda_type = /obj/item/modular_computer/pda/heads
-
-/singleton/hierarchy/outfit/job/torch/crew/command/sea/New()
-	..()
-	BACKPACK_OVERRIDE_COMMAND
 
 /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	name = OUTFIT_JOB_NAME("Bridge Officer")
