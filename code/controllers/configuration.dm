@@ -141,7 +141,7 @@
 	var/static/hostedby
 
 	/// An observer must wait this many minutes before being able to return to the main menu
-	var/static/respawn_delay = 30
+	var/static/respawn_delay = 5
 
 	/// An observer that has returned to the main menu must wait this many minutes before rejoining
 	var/static/respawn_menu_delay = FALSE
