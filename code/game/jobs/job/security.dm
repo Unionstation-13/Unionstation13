@@ -65,3 +65,6 @@
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_player_age = 7
 	outfit_type = /singleton/hierarchy/outfit/job/security/officer
+
+/datum/job/sec_physician
+	outfit_type = /singleton/hierarchy/outfit/job/assistant
