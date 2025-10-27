@@ -16,12 +16,9 @@
 		LANGUAGE_SIGN
 	)
 
-/singleton/cultural_info/culture/human/martian_surfacer
+/singleton/cultural_info/culture/human/martian_surfacer //delete!
 	name = CULTURE_HUMAN_MARTIAN
-	description = "You are from the surface of Mars. Raised in one of the many farming communities or one of the great cities such as Olympus. Most of the surfacers \
-	are known as Monsians, the largest cultural group on the planet. Most Surfacers have had a decent upbringing and represent the \
-	average level of comfort expected in Sol space. Most surfacers are like many across the galaxy, though a few harbour rivalries with other Martian cultural \
-	groups or are generally overly proud of their heritage, as is the case with the Gideons, to the point that they constantly refer to it."
+	description = "DO NOT CHOOSE"
 	economic_power = 1
 
 /singleton/cultural_info/culture/human/martian_tunneller
@@ -63,22 +60,13 @@
 
 /singleton/cultural_info/culture/human/belter
 	name = CULTURE_HUMAN_BELTER
-	description = "You are from Ceres. The people of Ceres and the wider asteroid belt are colloquially known as 'Belters.' Traditionally a people rooted in the mining industry, \
-	the belters of today are primarily engaged in the mechanical services, engineering, shipbuilding and maintenance industries. Belters are quite varied, and something of a melting \
-	pot owing to the sheer number of transient workers, hauler crews and government and corporate employees basing themselves around the great shipyards of Ceres. This has led to belter \
-	culture being mainly about embracing change, new people and new experiences, as well as a sense of pride in their work, as the reputation of Ceres shipbuilding is widely known across \
-	human space."
+	description = "You are from Ceres. You were a former prisoner, warden, or guard. You escaped by some whim of the UGN, and now you've found your way aboard the Titen in hopes of surviving. If your time on Ceres has taught you anything, its that power always breeds corruption."
 	economic_power = 1
 
 
-/singleton/cultural_info/culture/human/kuiper_insider
+/singleton/cultural_info/culture/human/kuiper_insider //delete
 	name = CULTURE_HUMAN_KUIPERI
-	description = "You are from one of many habitations of the Kuiper belt. The eventual economic and social decay of Pluto, and its surroundings, has resulted in much of the zone's infrastructure \
-	being unstable or outright falling apart. Coupled with rampant corruption and the growing mold of organised (and unorganised) crime across much of the region has left the people of the \
-	Kuiper belt with something of a seedy reputation, with citizens often being viewed with disrepute. The people themselves, too, may not be unanimous at all times with a core community centered around \
-	the descendents of the original colonists. While having a stronger foothold due to their lengthy ties to the SEZ's society and economy, they are often less diverse than the 'Outsiders'. \
-	More often than not being able to trace their lineage directly back to Earth. This can often cause caustic, dissonant ideals, as compared to the rest of their Solar comrades. \
-	While some may monotonously belong to the zone's stagnant class, other 'Insiders' may have roots to corporate backgrounds, owing to the initial colonisation and exploitation of Kuiper."
+	description = "DO NOT CHOOSE"
 	economic_power = 0.8
 	secondary_langs = list (LANGUAGE_HUMAN_EURO,
 		LANGUAGE_HUMAN_CHINESE,
@@ -90,12 +78,9 @@
 		LANGUAGE_GUTTER,
 		LANGUAGE_SIGN)
 
-/singleton/cultural_info/culture/human/kuiper_outsider
+/singleton/cultural_info/culture/human/kuiper_outsider //delete
 	name = CULTURE_HUMAN_KUIPERO
-	description = "You are from one of the many habitations of the Kuiper belt. While you were not a part of the initial collapse of the Zone, the effects of it are still felt all the same. \
-	The stagnancy and neglect of the Zone has brought with it many opportunities for cheaper housing, and has made for an excellent haven for refugees looking for work. \
-	Outsiders tend to be a more diverse demographic as compared to the Insiders, with many of them being descendents of employees on long-term tenures, or of families looking for cheap residence. \
-	Most Outsiders tend to have a similar outlook of their home as that of the Insiders - with the Expeditionary Corps and Fleet being lucrative and comparitively easy ways to source a life outside the Kuiper belt."
+	description = "DO NOT CHOOSE"
 	economic_power = 0.7
 	secondary_langs = list (LANGUAGE_HUMAN_EURO,
 		LANGUAGE_HUMAN_CHINESE,
@@ -113,26 +98,18 @@
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/ceti_north
-	name = CULTURE_HUMAN_CETIN
-	description = "You are from the northern pole of Ceti Epsilon. Likely living in one of the claustrophobic concrete jungles like the city of Icon, \
-	Solar citizens hailing from the North generally enjoy higher opportunities for better jobs, and lead a more comfortable lifestyle \
-	compared to those from the Interstates and South. \
-	Icon is also the technological capital of Ceti Epsilon, with education and the latest tech easily available to Northern Cetites."
+	name = CULTURE_HUMAN_CETIN //change to nitros-6
+	description = "You are from the Northern pole of Nitros-6, the only habitable place on Nitros-6. You worked for Cooran supply as a miner for many years, but now you're free from your contract."
 	economic_power = 1.3
 
 /singleton/cultural_info/culture/human/ceti_south
-	name = CULTURE_HUMAN_CETIS
-	description = "You are from the southern pole of Ceti Epsilon. Likely living in one of the smog-ridden cities like the region's capital, Scadde, or in one of the outer townships. \
-	Solar citizens hailing from the South live a less comfortable and connected lifestyle compared to those from the North, but still have plenty of opportunities to make something of their lives. \
-	Scadde is a hub for specialised and unspecialised blue collar labour, and the site for the Tau Ceti system's Hephaestus Industries headquarters."
+	name = CULTURE_HUMAN_CETIS //change to nitros-6IPC
+	description = "#IPC ONLY# You were constructed on the south pole of Nitros-6, abused by your creators, and left to rot in a magma pit for weeks. After the riots broke out, you were found and recruited into the Nitros-6 People's Front. It didn't last long. You're free now. What will you do?  #IPC ONLY#"
 	economic_power = 1.2
 
-/singleton/cultural_info/culture/human/ceti_interstate
+/singleton/cultural_info/culture/human/ceti_interstate //remove
 	name = CULTURE_HUMAN_CETII
-	description = "The stretch between the north and south poles of Ceti Epsilon is collectively referred to as the Ceti Interstate Municipal Region. Those living across this sweltering desert usually do so out of necessity rather than choice. \
-	The majority of industry in the region is made up of mining operations, hydroponic farms, and independent businesses \
-	between the two poles. \
-	The region is sparsely populated both by hopeful entrepreneurs and those who benefit from the lack of coverage by settlement police authorities or planetary defense forces."
+	description = "DO NOT CHOOSE"
 	economic_power = 1.0
 
 /singleton/cultural_info/culture/human/foster

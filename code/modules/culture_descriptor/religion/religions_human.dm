@@ -65,3 +65,13 @@
 /singleton/cultural_info/religion/taoist
 	name = RELIGION_TAOISM
 	description = "A traditional Chinese religion that emphasizes living in harmony with the Tao. Someone who practices Taoism is called a Taoist."
+
+/singleton/cultural_info/religion/union
+
+	name = RELIGION_UNION
+	description = "A cult like religion dedicated to worshipping The Glorius Leader"
+
+/singleton/cultural_info/religion/union/benedict
+
+	name = RELIGION_UNIONBENIDICT
+	description = "A schism of the Union's religion dedicated to worshipping the Blaphemous Binary"
