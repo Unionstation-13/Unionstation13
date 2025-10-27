@@ -315,7 +315,7 @@ var/global/list/_client_preferences_by_type
 	description = "Floating chat messages"
 	key = "FLOATING_CHAT"
 	options = list(GLOB.PREF_HIDE, GLOB.PREF_SHOW)
-	default_value = GLOB.PREF_HIDE
+	default_value = GLOB.PREF_SHOW
 
 
 GLOBAL_CONST(PREF_VA_NOTIFY, "Start Notify")
