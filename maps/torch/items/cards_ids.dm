@@ -88,10 +88,6 @@
 	job_access_type = /datum/job/engineer
 	detail_color = COLOR_SUN
 
-/obj/item/card/id/torch/crew/engineering/senior
-	job_access_type = /datum/job/senior_engineer
-	extra_details = list("onegoldstripe")
-
 /obj/item/card/id/torch/contractor/engineering
 	job_access_type = /datum/job/engineer
 	detail_color = COLOR_SUN
