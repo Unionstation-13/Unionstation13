@@ -19,7 +19,7 @@
 	icon_state = "stamp-brig"
 
 /obj/item/stamp/solgov
-	name = "\improper Sol Central Government rubber stamp"
+	name = "\improper United Galactic Nations rubber stamp"
 	icon_state = "stamp-solgov"
 
 /obj/item/stamp/nt
@@ -37,3 +37,18 @@
 /obj/item/stamp/path
 	name = "pathfinder's rubber stamp"
 	icon_state = "stamp-pf"
+
+/obj/item/stamp/rep
+
+	name = "UGN Representative's Rubber Stamp"
+	icon_state = "stamp-solgov"
+
+/obj/item/stamp/rep/approved
+
+	name = "UGN Representative's Approved Rubber Stamp"
+	icon_state = "stamp-solgov"
+
+/obj/item/stamp/rep/denied
+
+	name = "UGN Representative's Denied Rubber Stamp"
+	icon_state = "stamp-solgov"
