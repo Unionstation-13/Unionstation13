@@ -65,9 +65,9 @@
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
-		/obj/item/stamp/rep
-		/obj/item/stamp/rep/approved
-		/obj/item/stamp/rep/denied
+		/obj/item/stamp/rep,
+		/obj/item/stamp/rep/approved,
+		/obj/item/stamp/rep/denied,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel, /obj/item/storage/backpack/messenger)),
 	)
 
