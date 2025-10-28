@@ -3406,6 +3406,11 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -3522,6 +3527,11 @@
 /obj/machinery/light_switch{
 	pixel_x = -24;
 	pixel_y = -24
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -6741,6 +6751,16 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"pC" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/wood/maple,
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "pE" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8353,6 +8373,19 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"tB" = (
+/obj/structure/table/rack/dark,
+/obj/random_multi/single_item/poppy,
+/obj/item/storage/box/bodybags,
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/machinery/light,
+/turf/simulated/floor/wood/maple,
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "tC" = (
 /obj/machinery/light,
 /obj/floor_decal/corner/green{
@@ -9450,6 +9483,11 @@
 /area/crew_quarters/galley)
 "wx" = (
 /obj/floor_decal/industrial/warning/corner,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -12203,11 +12241,12 @@
 	id_tag = "Funeral"
 	},
 /obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+	dir = 1
 	},
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "DW" = (
 /obj/decal/cleanable/cobweb2,
 /obj/structure/table/woodentable_reinforced/mahogany,
@@ -12216,7 +12255,9 @@
 	id_tag = "Funeral_door"
 	},
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "DX" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
@@ -12478,8 +12519,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "EC" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "ED" = (
 /turf/simulated/floor/plating,
 /area/vacant/cabin)
@@ -12607,7 +12655,9 @@
 "ER" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "ES" = (
 /obj/random/trash,
 /obj/structure/catwalk,
@@ -12712,15 +12762,32 @@
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -24;
+	pixel_y = -24
+	},
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "Fh" = (
 /obj/structure/table/woodentable_reinforced/mahogany,
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/pen,
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "Fi" = (
 /obj/machinery/light{
 	dir = 8
@@ -13104,15 +13171,24 @@
 /obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
 /turf/simulated/floor/wood/maple,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "Gn" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/chaplain{
 	name = "Chapel";
 	id_tag = "Chapel_back"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "Go" = (
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -13504,7 +13580,9 @@
 /area/vacant/cabin)
 "Hk" = (
 /turf/simulated/wall/walnut,
-/area/chapel/main)
+/area/chapel/main{
+	name = "\improper Funeral Control"
+	})
 "Hl" = (
 /obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
 /obj/floor_decal/industrial/outline/grey,
@@ -43171,8 +43249,8 @@ CU
 Hk
 DV
 Fg
-EC
-Gm
+pC
+tB
 Hk
 Hz
 jZ
