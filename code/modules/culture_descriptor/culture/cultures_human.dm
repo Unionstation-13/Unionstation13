@@ -15,34 +15,15 @@
 		LANGUAGE_SPACER,
 		LANGUAGE_SIGN
 	)
-
-/singleton/cultural_info/culture/human/martian_surfacer //delete!
-	name = CULTURE_HUMAN_MARTIAN
-	description = "DO NOT CHOOSE"
-	economic_power = 1
-
 /singleton/cultural_info/culture/human/martian_tunneller
-	name = CULTURE_HUMAN_MARSTUN
+	name = CULTURE_HUMAN_MARS
 	description = "You were born on Mars, a planet scarred by a harrowing war, an oppresive\
-	 autocracy, and a failing economy. For your early years, you lived in scorched\
-	 huts, destroyed structures, and refugee camps. Your whole life has been under\
-	 the thumb of the Peacekeepers. However, your fate changed one day.\
+	autocracy, and a failing economy. For your early years, you lived in scorched\
+	huts, destroyed structures, and refugee camps. Your whole life has been under\
+	the thumb of the Peacekeepers. However, your fate changed one day.\
 	The UGN arrived, they took you, they took you to the stars. To your dreams.\
 	Or that is what you thought."
 	economic_power = 0.9
-
-/singleton/cultural_info/culture/human/luna_poor
-	name = CULTURE_HUMAN_LUNAPOOR
-	description = "DO NOT CHOOSE THIS OPTION" //Coders delete luna as an option
-	economic_power = 1
-	language = LANGUAGE_HUMAN_SELENIAN
-
-/singleton/cultural_info/culture/human/luna_rich
-	name = CULTURE_HUMAN_LUNARICH
-	description = "DO NOT CHOOSE THIS OPTION" //Coders delete luna as an option
-	economic_power = 1.3
-	language = LANGUAGE_HUMAN_SELENIAN
-
 /singleton/cultural_info/culture/human/venusian_upper
 	name = CULTURE_HUMAN_VENUSIAN
 	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
@@ -62,35 +43,6 @@
 	name = CULTURE_HUMAN_BELTER
 	description = "You are from Ceres. You were a former prisoner, warden, or guard. You escaped by some whim of the UGN, and now you've found your way aboard the Titen in hopes of surviving. If your time on Ceres has taught you anything, its that power always breeds corruption."
 	economic_power = 1
-
-
-/singleton/cultural_info/culture/human/kuiper_insider //delete
-	name = CULTURE_HUMAN_KUIPERI
-	description = "DO NOT CHOOSE"
-	economic_power = 0.8
-	secondary_langs = list (LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
-		LANGUAGE_GUTTER,
-		LANGUAGE_SIGN)
-
-/singleton/cultural_info/culture/human/kuiper_outsider //delete
-	name = CULTURE_HUMAN_KUIPERO
-	description = "DO NOT CHOOSE"
-	economic_power = 0.7
-	secondary_langs = list (LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
-		LANGUAGE_GUTTER,
-		LANGUAGE_SIGN)
 
 /singleton/cultural_info/culture/human/earthling
 	name = CULTURE_HUMAN_EARTH

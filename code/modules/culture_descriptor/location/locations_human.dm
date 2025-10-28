@@ -1,51 +1,12 @@
 /singleton/cultural_info/location/human
 	name = HOME_SYSTEM_MARS
-	description = "Mars, the current capital of the SCG, known by its nickname the Red Planet, is one of the most populous centres of Humanity. \
-	Since the founding of the first colony by Jimmy Gideon many years ago, Mars has been an important player on the Human stage. Terraforming on \
-	Mars has only been partially successful thus far, and today much of the population lives either in huge domed cities/agri-zones, or within a vast underground \
-	tunnel network connecting large underground cities. Often seen as the primary divide on the planet, the rich surfacers versus the poor \
-	tunnellers, Mars is rife with dissent, crime, and continuous unrest, especially underground.<br><br>The people of Mars vary, from the poor, \
-	downtrodden tunnellers, to the cosmopolitan urbanites of Olympus, to the hardy farmers of the agri-domes, though they all share a strong sense \
-	of Martian pride. The Martian people have not had an easy history as the new seat of humanity, its citizens having seen great struggles \
-	over the centuries, ranging from revolutions, political upheaval, and regular riots. The people of Mars consider themselves somewhat tougher \
-	than most, with a fierce pride that often clashes not just with those from other planets, but those from other parts of Mars."
+	description = "Mars is a war torn planet, slick with war and bloodshed, held together by sheer will under the iron fist of the Peacekeepers.\
+	Before the times of occupation, it was recovering after The Great War, preparing its secession from the UGN along with the rest of the disgruntled Sol.\
+	However, fate was not so merciful. The Peacekeepers saw right through the scheme and occupied the world. Millions were deported, and years of work was lost.\
+	Now Mars stands on the precipice of utter annihalation."
 	distance = "1.5AU"
-	capital = "Olympus"
+	capital = "New Washington"
 	economic_power = 1.1
-
-
-/singleton/cultural_info/location/human/earth
-	name = HOME_SYSTEM_EARTH
-	description = "Earth, the original home of humankind, has long been in a state of recovery following centuries of pollution and exploitation. Today, much of \
-	the Earth exists as a nature reserve dedicated to preserving the history of humanity. The humans that remain live mostly in large urban zones \
-	across the globe. These urban zones are huge, planned cities that consist of numerous arcologies with a focus on being eco-friendly. No longer the political power of \
-	Humanity, Earth is content with being considered a backwater and tourist destination for those looking to discover their heritage.<br><br>People from \
-	Earth are often wealthier on average, though they are still comparable with those of Mars. Remarkably average, the people of Earth are \
-	much as they have been for thousands of years, and are generally content with their lot in life. From a variety of ancient cultures, the people of \
-	Earth are as diverse as they have always been."
-	distance = "1AU"
-	capital = "Geneva"
-	economic_power = 1.2
-
-/singleton/cultural_info/location/human/luna
-	name = HOME_SYSTEM_LUNA
-	distance = "1AU"
-	description = "Luna, the moon of the planet Earth, had long been a goal for humanity and symbol of space exploration. \
-	Today Luna sits as one of the oldest homes of Humanity. It is the home of the rich, the powerful, and the corporate. \
-	Divided into a series of interconnected domes which are scattered across the surface, each contains its own unique city \
-	known as a \"prefecture\". Luna is home to a diverse and rich culture that varies between prefectures. Its capital, Selene, \
-	is a centre of culture, the arts, trade, and politics. It is from here the people of Luna take the name of their language 'Selenian'. \
-	Despite its status, Luna is not without its own issues, with much of the population \
-	being upper and upper middle class, these problems typically manifest themselves in political machinations and elaborate plots. \
-	The people of Luna continue to exert influence across human space, and corporations flock to Luna to build their own prefecture and \
-	establish their headquarters there as a symbol of success, power, and accomplishment.<br><br>The people of Luna are often considered the \
-	'old money' of humanity, with many of them having distinct, traceable lineages to the first settlers, old Earth dynasties, and heavy corporate \
-	ties. Most of the people of Luna are considered rich, cultured, and refined. Not all are, however, and many of the people of the city of New Vegas are on \
-	the poverty line, often holding feelings of resentment against the other people of Luna."
-	capital = "Selene"
-	economic_power = 1.3
-	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN)
-
 /singleton/cultural_info/location/human/venus
 	name = HOME_SYSTEM_VENUS
 	distance = "0.7AU"
@@ -74,31 +35,6 @@
 	employed in shipbuilding, manufacturing, vessel services, and hospitality. Belters generally regard themselves as adaptive, proud members of the SCG, \
 	and some of the best engineers Humanity has to offer."
 	capital = "Government Zone, Ceres Station"
-
-/singleton/cultural_info/location/human/kuiper_belt
-	name = HOME_SYSTEM_KUIPERB
-	distance = "45AU"
-	description = "The Kuiper Special Economic Zone used to be at the forefront of human exploration before the advent of proper FTL travel. With the emergence \
-	of Alden-Saraspova drives for long-range transit, and eventually gateways, the Zone saw a sharp decline in utility. Nowadays treated as an economic afterthought \
-	with little more than a defensive station in Sol, it is home to a diverse cast of residents. \
-	Most inhabitants of the inner Belt tend to live on orbitals surrounding the capital, Pluto, and its moon, Charon. \
-	Pluto is dotted with water-ice and gas extraction plants, as many abandoned as there are operational. Many can often find traces of abandoned gas refineries, worker hovels, and labyrinthine \
-	networks of pump-houses and causeways, sometimes repurposed for more nefarious needs. Orbitals carry most of the economic and residential brunt, \
-	with administrative services being concentrated around Pluto, primarily."
-	capital = "Kuiper Administrative Zone, Pluto"
-	economic_power = 0.8
-	secondary_langs = list(LANGUAGE_GUTTER)
-
-/singleton/cultural_info/location/human/kuiper_interdust
-	name = HOME_SYSTEM_KUIPERD
-	distance = "45AU"
-	description = "The Kuiper Special Economic Zone's region beyond the confines of administration's population centers contains the Interdust, with a variety of industrial, military and economic \
-	infrastructure still kept in function. While residential slots are lesser than those in the Belt, a fair amount of inhabitants call it their home in isolated asteroid settlements. \
-	With policing actions being scarce and less stringent in this sector of the SEZ, crime has found much success in certain hotspots of the interdust regions of the Kuiper belt."
-	capital = "Kuiper Administrative Zone, Pluto"
-	economic_power = 0.7
-	secondary_langs = list(LANGUAGE_GUTTER)
-
 /singleton/cultural_info/location/human/cetiepsilon
 	name = HOME_SYSTEM_TAU_CETI
 	distance = "11.9 light years"
