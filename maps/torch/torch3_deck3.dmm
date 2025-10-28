@@ -17393,7 +17393,8 @@
 /obj/machinery/button/blast_door{
 	dir = 1;
 	pixel_y = -20;
-	name = "Chapel Shutters"
+	name = "Chapel Shutters";
+	id_tag = "Chapel_shut"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
