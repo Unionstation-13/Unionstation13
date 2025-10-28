@@ -697,8 +697,7 @@
 	})
 "bV" = (
 /obj/machinery/door/airlock/chaplain{
-	name = "Funeral Chamber";
-	id_tag = "Chapel_back"
+	name = "Funeral Chamber"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13026,6 +13025,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -13177,8 +13179,7 @@
 "Gn" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/chaplain{
-	name = "Chapel";
-	id_tag = "Chapel_back"
+	name = "Chapel"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
