@@ -32,7 +32,7 @@
 
 /singleton/cultural_info/religion/christian
 	name = RELIGION_CHRISTIANITY
-	description = "An Abrahamic, monotheistic religion based on the life and teachings of Jesus of Nazareth. Someone who practices Christianity is called a Christian."
+	description = "An Abrahamic, monotheistic religion based on the life and teachings of Jesus of Nazareth. Someone who practices Christianity is called a Christian. The only remaining official organization which practices Christianity is the NCGO."
 
 /singleton/cultural_info/religion/bahai
 	name = RELIGION_BAHAI_FAITH

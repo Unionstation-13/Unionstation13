@@ -29,12 +29,13 @@
 /singleton/cultural_info/location/human/cetiepsilon
 	name = HOME_SYSTEM_TAU_CETI
 	distance = "11.9 light years"
-	description = "Ceti Epsilon, the only habitable planet in the Tau Ceti system, is home to its largest population centre. \
-	Ceti Epsilon is home to the Ceti Institute of Technology, a distinguished public university that offers free tuition to \
-	all, although placement is competitive, and preference is given to natives to the Tau Ceti system.<br><br> Being from a \
-	near-Sol colony with a focus on the cutting edge, most Epsioloners are tech-savvy, and are usually \
-	well educated with a focus on the sciences."
-	capital = "Icon"
+	description = "Ceti Epsilon is the largest population center in the Core Worlds beyond Pax,\
+	and is home to the New Christ Galactic Orthodox Church, or NCGO, the last\
+	remaining major city-state that is predominantly Christian, particularly\
+	Orthodox. It is mostly composed of snow-covered deserts and propane lakes,\
+	and thus a majority of the population lives in the South Pole, where\
+	temperatures reach around 45 degrees during peak summers."
+	capital = "The New Vatican City"
 	economic_power = 1.2
 
 /singleton/cultural_info/location/human/eos

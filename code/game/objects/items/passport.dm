@@ -186,3 +186,9 @@
 	name = "\improper Mohranda passport"
 	icon_state = "passport"
 	desc = "A passport from the Empire of Mohranda, a frontier empire established on Lohrene and Mohranda, in the Luggust system."
+
+/obj/item/passport/NCGO
+
+	name = "\improper NCGO Passport"
+	icon_state = "NCGO_passport"
+	desc = "A passport from the New Christ Galactic Orthodox Church, a religous city state inside the UGN."
