@@ -1365,7 +1365,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "acz" = (
 /turf/simulated/wall/prepainted,
 /area/medical/medicalhallway)
@@ -3427,12 +3429,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
-"agc" = (
-/obj/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
 "agd" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -3521,7 +3517,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "agp" = (
 /obj/machinery/computer/operating,
 /obj/floor_decal/corner/blue{
@@ -3573,7 +3571,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "agt" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -3746,7 +3746,9 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "agJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -3932,7 +3934,9 @@
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "aha" = (
 /obj/machinery/door/firedoor,
 /obj/floor_decal/industrial/hatch/blue,
@@ -3945,7 +3949,9 @@
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "ahb" = (
 /obj/structure/ladder,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -6078,8 +6084,13 @@
 	icon_state = "0-2"
 	},
 /obj/structure/bed/chair,
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "aql" = (
 /obj/machinery/button/blast_door{
 	id_tag = "Cybersec_lockdown";
@@ -7418,7 +7429,9 @@
 	},
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/white/monotile,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "axh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -16014,7 +16027,9 @@
 "dNb" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/white/monotile,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "dPr" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -18380,7 +18395,9 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "htq" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -18746,7 +18763,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "hQb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -20241,7 +20260,9 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "juG" = (
 /obj/floor_decal/industrial/warning{
 	dir = 9
@@ -21553,7 +21574,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "kQJ" = (
 /obj/catwalk_plated,
 /obj/structure/cable/green{
@@ -21590,7 +21613,9 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "kSb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -21604,7 +21629,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "kSi" = (
 /obj/structure/sign/warning/high_voltage{
 	dir = 8
@@ -21633,7 +21660,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "kTl" = (
 /obj/item/device/radio/intercom/department/medbay{
 	dir = 8;
@@ -21711,15 +21740,18 @@
 /turf/simulated/wall/prepainted,
 /area/medical/foyer/storeroom)
 "lab" = (
-/obj/machinery/button/windowtint{
-	id = "postop_window";
-	pixel_y = -24
-	},
 /obj/structure/bed/chair{
 	dir = 1
 	},
+/obj/machinery/button/windowtint{
+	id = "ER_2";
+	pixel_x = -6;
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "laQ" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -21753,7 +21785,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "lcb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -21762,7 +21796,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "lcq" = (
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
@@ -22469,7 +22505,9 @@
 "lVk" = (
 /obj/floor_decal/sign/d,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "lVZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -25532,7 +25570,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "pkb" = (
 /turf/simulated/wall/prepainted,
 /area/rnd/research)
@@ -28698,7 +28738,9 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/white,
-/area/assembly/robotics/laboratory)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "sHu" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31331,7 +31373,9 @@
 	},
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "xhX" = (
 /obj/structure/table/steel,
 /obj/random/clipboard,
@@ -31803,7 +31847,9 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/medicalhallway{
+	req_access = list("")
+	})
 "yfH" = (
 /obj/structure/fireaxecabinet{
 	pixel_y = -32
@@ -51547,9 +51593,9 @@ ads
 ewb
 fEb
 aga
-agc
+tgg
 ago
-agc
+tgg
 agZ
 hcb
 heb

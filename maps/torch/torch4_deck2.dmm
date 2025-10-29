@@ -12042,12 +12042,12 @@
 /turf/simulated/floor/reinforced,
 /area/engineering/wastetank)
 "El" = (
+/obj/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular{
 	dir = 4;
-	id_tag = "SupermatterPort";
-	name = "Reactor Blast Door"
+	id_tag = "EngineAccess";
+	name = "Engine Access Hatch"
 	},
-/obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "Eo" = (
