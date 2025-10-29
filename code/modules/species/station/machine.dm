@@ -3,7 +3,7 @@
 	name_plural = "machines"
 
 	description = "Positronic intelligence was first developed in the 23rd century, and it is not uncommon to see both owned and \
-	independent	robots in many human stations and settlements across Sol Central Government space. Positronics are a loose category \
+	independent	robots in many human stations and settlements across United Galactic Nations space. Positronics are a loose category \
 	of robots capable of true intelligence and self-directed learning, often occupying a robotic humanoid body (called an Integrated \
 	Positronic Chassis, or IPC) or acting as an intelligent controller for vehicles, buildings, and even starships. <br/><br/>While created by \
 	humans and \"born\" into servitude, some positronics have been able to become their own owners - provided they lack a \"shackle\", \

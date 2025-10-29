@@ -1,5 +1,5 @@
 /datum/mil_branch/UGNa
-	name = "Sol Central Government Army"
+	name = "United Galactic Nations Army"
 	name_short = "UGNA"
 	email_domain = "army.mil.UGN"
 	assistant_job = null

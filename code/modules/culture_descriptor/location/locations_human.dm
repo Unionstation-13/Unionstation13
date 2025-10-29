@@ -79,7 +79,7 @@
 /singleton/cultural_info/location/human/tadmor
 	name = HOME_SYSTEM_TADMOR
 	distance = "45 light years"
-	description = "Tadmor is a desert planet about twice the size of Earth, located in the Gamma Cephei system. Tadmor has been a member state of the Sol Central Government since the \
+	description = "Tadmor is a desert planet about twice the size of Earth, located in the Gamma Cephei system. Tadmor has been a member state of the United Galactic Nations since the \
 	latter's formation. First settled in 2176 by a group of Martian colonists, Tadmor's economy is based on both industrial-scale agriculture, and the fabrication of various electronic goods. \
 	Tadmorans have prided themselves on their pacifism, with few found in Sol's defense forces. However, this lead to some conflict during the Gaia Conflict between Tadmoran senators and those \
 	of the core worlds."
@@ -100,7 +100,7 @@
 	name = HOME_SYSTEM_BRAHE
 	distance = "41 light years"
 	description = "Brahe is an ocean planet in the Copernicus system. First colonized alongside Iolaus by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
-	and the Ares Confederation. Since contact was reestablished during the formation of the Sol Central Government, Brahe has been a strong supporter of the UGN, and an advocate for further expansion into \
+	and the Ares Confederation. Since contact was reestablished during the formation of the United Galactic Nations, Brahe has been a strong supporter of the UGN, and an advocate for further expansion into \
 	unexplored space. With only 12% of the planet's surface being usable landmass, Brahe's economy is mostly founded on the tourism that the extensive coasts attract, and research done \
 	in surface and underwater labs. The Zeng-Hu corporation in particular has strong ties to Brahe's genetic research labs, and many Brahese government officials hold positions within the company."
 	capital = "New Aarhus"
@@ -111,7 +111,7 @@
 	distance = "41 light years"
 	description = "Iolaus is a super-earth in the Copernicus system. First colonized alongside Brahe by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
 	and the Ares Confederation. During this period of time, Iolaus kept the two fledgling colonies alive, producing enough food and supplies for the two planets to scrape by. Since contact was reestablished \
-	during the formation of the Sol Central Government, Iolaus has taken efforts to retain some independence while taking advantage of the reintroduction of trade to the system. As a result, Iolaus imports \
+	during the formation of the United Galactic Nations, Iolaus has taken efforts to retain some independence while taking advantage of the reintroduction of trade to the system. As a result, Iolaus imports \
 	tend to be restricted to only what they cannot produce themselves, while Iolan exports are shipped across the entirety of UGN space."
 	capital = "Nemea"
 	economic_power = 1.0

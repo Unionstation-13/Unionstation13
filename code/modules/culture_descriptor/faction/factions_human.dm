@@ -49,7 +49,7 @@
 /singleton/cultural_info/faction/police
 // Merge  this into Peacekeepers
 	name = FACTION_SPACECOPS
-	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
+	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing United Galactic Nations law, \
 	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
 	Some agents embedded with other organizations (e.g. an <l>Expeditionary Corps</l> ship) and are expected to answer to their superiours from those organizations. \
 	Notable units are: Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \

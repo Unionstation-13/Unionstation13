@@ -578,9 +578,9 @@
 
 /obj/item/paper/workvisa
 	name = "Sol Work Visa"
-	desc = "A flimsy piece of laminated cardboard issued by the Sol Central Government."
+	desc = "A flimsy piece of laminated cardboard issued by the United Galactic Nations."
 	icon_state = "workvisa"
-	info = "<center><b><large>Work Visa of the Sol Central Government</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of work and labor."
+	info = "<center><b><large>Work Visa of the United Galactic Nations</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of work and labor."
 
 
 /obj/item/paper/workvisa/on_update_icon()
@@ -589,9 +589,9 @@
 
 /obj/item/paper/travelvisa
 	name = "Sol Travel Visa"
-	desc = "A flimsy piece of laminated cardboard issued by the Sol Central Government."
+	desc = "A flimsy piece of laminated cardboard issued by the United Galactic Nations."
 	icon_state = "travelvisa"
-	info = "<center><b><large>Travel Visa of the Sol Central Government</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of pleasure and recreation."
+	info = "<center><b><large>Travel Visa of the United Galactic Nations</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of pleasure and recreation."
 
 
 /obj/item/paper/travelvisa/on_update_icon()

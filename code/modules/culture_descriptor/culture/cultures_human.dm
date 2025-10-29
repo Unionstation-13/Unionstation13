@@ -129,7 +129,7 @@
 
 /singleton/cultural_info/culture/human/theia
 	name = CULTURE_HUMAN_THEIA
-	description = "Theia is an inhabited system on the borders of the Sol Central Government known primarily for being the headquarters of the Third Fleet. \
+	description = "Theia is an inhabited system on the borders of the United Galactic Nations known primarily for being the headquarters of the Third Fleet. \
 	Located strategically at the gateway closest to several key frontier systems, Theia became known early on as a strategic chokepoint worth defending. \
 	Today, military and civilian personnel alike call the Theia system home and work tirelessly to maintain it as the Fortress of Sol. "
 	economic_power = 1.1
@@ -232,7 +232,7 @@
 
 /singleton/cultural_info/culture/human/gaia
 	name = CULTURE_HUMAN_GAIAN
-	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the Sol Central Government and the Independent Colonial Confederation of Gilgamesh. \
+	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the United Galactic Nations and the Independent Colonial Confederation of Gilgamesh. \
 	It is an agricultural world, though various conflicts across the planet's surface have left it scarred. The planet is divided into Sol-Controlled Gaian Administrative Area \
 	and Independent-Guided Protectorate of Gaia, with the International City of New Venice remaining a neutral zone inside the DMZ that circles the planet's equator. \
 	The planet's population remain divided even more then 10 years after the Gaia Conflict. While Gaia is divided, the current Mayor of New Venice serves as a vital mediator \

@@ -9706,7 +9706,7 @@
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
-	desc = "U.G.N Titen  - Mako Class - United Galactic Nations Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = "U.G.N Titen  - Mako Class - United Galactic Nations Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - United Galactic Nations - 'Never was anything great achieved without danger.'"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)

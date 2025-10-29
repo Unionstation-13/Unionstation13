@@ -61,7 +61,7 @@
 
 /obj/item/rig/ert/fleet/leader
 	name = "\improper UGNF-ERT command hardsuit control module"
-	desc = "A hardsuit utilized by Fleet combat teams. This one has blue highlights with SOL CENTRAL GOVERNMENT FLEET printed in gold lettering on the chest and displaying a UGN crest on the back."
+	desc = "A hardsuit utilized by Fleet combat teams. This one has blue highlights with United Galactic Nations FLEET printed in gold lettering on the chest and displaying a UGN crest on the back."
 	suit_type = "\improper UGNF-ERT command hardsuit"
 	icon_state = "ert_commander_rig"
 
@@ -86,7 +86,7 @@
 
 /obj/item/rig/ert/fleet/combat
 	name = "\improper UGNF-ERT combat hardsuit control module"
-	desc = "A hardsuit utilized by Fleet combat teams. This one has red highlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
+	desc = "A hardsuit utilized by Fleet combat teams. This one has red highlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF emergency response combat hardsuit"
 	icon_state = "ert_security_rig"
 
@@ -117,7 +117,7 @@
 
 /obj/item/rig/ert/fleet/engineer
 	name = "emergency response technical hardsuit control module"
-	desc = "A hardsuit utilized by Fleet combat teams. This one has orange hightlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
+	desc = "A hardsuit utilized by Fleet combat teams. This one has orange hightlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF emergency response engineering hardsuit"
 	icon_state = "ert_engineer_rig"
 
@@ -150,7 +150,7 @@
 
 /obj/item/rig/ert/fleet/medical
 	name = "\improper UGNF-ERT rescue hardsuit control module"
-	desc = "A hardsuit utilized by Fleet combat teams. This one has white highlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
+	desc = "A hardsuit utilized by Fleet combat teams. This one has white highlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF rescue hardsuit"
 	icon_state = "ert_medical_rig"
 

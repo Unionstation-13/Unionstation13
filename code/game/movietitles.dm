@@ -189,7 +189,7 @@ GLOBAL_LIST(end_titles)
 		titles += "<center>STAFF'S GOOD BOYS:<br>[english_list(goodboys)]</center><br>"
 
 	var/disclaimer = "<br>Sponsored by [GLOB.using_map.company_name].<br>All rights reserved.<br>\
-					 This motion picture is protected under the copyright laws of the Sol Central Government<br> and other nations throughout the galaxy.<br>\
+					 This motion picture is protected under the copyright laws of the United Galactic Nations<br> and other nations throughout the galaxy.<br>\
 					 Colony of First Publication: [pick("Mars", "Luna", "Earth", "Venus", "Phobos", "Ceres", "Tiamat", "Ceti Epsilon", "Eos", "Pluto", "Ouere",\
 					 "Tadmor", "Brahe", "Pirx", "Iolaus", "Saffar", "Gaia")].<br>"
 	disclaimer += pick("Use for parody prohibited. PROHIBITED.",

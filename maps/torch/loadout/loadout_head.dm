@@ -24,7 +24,7 @@
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/head/solhat
-	display_name = "sol central government hat"
+	display_name = "United Galactic Nations hat"
 	path = /obj/item/clothing/head/soft/solgov
 	allowed_branches = SOLGOV_BRANCHES
 	flags = GEAR_HAS_NO_CUSTOMIZATION

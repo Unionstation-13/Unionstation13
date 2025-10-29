@@ -276,7 +276,7 @@
 
 
 /obj/item/material/folder/envelope/preset/cmdorder
-	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR UGNR/CO EYES ONLY.'"
+	desc = "A thick envelope. The United Galactic Nations crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR UGNR/CO EYES ONLY.'"
 	seal_stamp = "\improper Bureau of Emergency Operations rubber stamp"
 
 
@@ -288,7 +288,7 @@
 /obj/item/paper/cmdorder
 	name = "Guidelines on Emergency Reponsibilities"
 	info = {"\
-<center><h3>SOL CENTRAL GOVERNMENT</h3>
+<center><h3>United Galactic Nations</h3>
 <img src="sollogo.png" /></center>
 <p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
 <hr />
@@ -304,6 +304,6 @@
 <p>Ensure regular interviews and personnel reviews to keep loyalty and performance consistent across the board. Once your vessel reaches E-14b, further instructions will be given, and regular expeditionary journeys will continue.</p>
 <p>Funerary and aid services will be properly provided at that time.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the Sol Central Government.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the United Galactic Nations.</em></p>
 <hr /><center><img src="sollogo.png" /></center>
 "}
