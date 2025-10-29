@@ -155,21 +155,12 @@
 	item_state = "coffeecup_heart"
 	base_name = "heart cup"
 
-<<<<<<< HEAD
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN
 	name = "\improper UGN coffee cup"
 	desc = "A blue coffee cup emblazoned with the crest of the United Galactic Nations."
 	icon_state = "coffeecup_UGN"
 	item_state = "coffeecup_UGN"
 	base_name = "\improper UGN cup"
-=======
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG
-	name = "\improper SCG coffee cup"
-	desc = "A blue coffee cup emblazoned with the crest of the Sol Central Government."
-	icon_state = "coffeecup_SCG"
-	item_state = "coffeecup_SCG"
-	base_name = "\improper SCG cup"
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/NT
 	name = "\improper NT coffee cup"

@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 /datum/mil_branch/UGNa
 	name = "United Galactic Nations Army"
 	name_short = "UGNA"
 	email_domain = "army.mil.UGN"
-=======
-/datum/mil_branch/scga
-	name = "Sol Central Government Army"
-	name_short = "SCGA"
-	email_domain = "army.mil.scg"
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	assistant_job = null
 	min_skill = list( // 6 points
 		SKILL_HAULING = SKILL_TRAINED, // 2 points

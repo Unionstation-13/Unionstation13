@@ -609,11 +609,11 @@
 	icon_state = "confed"
 	worn_state = "confed"
 
-/obj/item/clothing/under/saare
-	name = "\improper SAARE uniform"
+/obj/item/clothing/under/waldo
+	name = "\improper WALDO uniform"
 	desc = "A uniform belonging to Strategic Assault and Asset Retention Enterprises, a minor private military corporation."
-	icon_state = "saare"
-	worn_state = "saare"
+	icon_state = "waldo"
+	worn_state = "waldo"
 	gender_icons = 1
 
 /obj/item/clothing/under/frontier

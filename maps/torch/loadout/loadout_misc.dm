@@ -39,7 +39,7 @@
 	..()
 	var/list/options = list()
 	options["PCRC"] = /obj/item/material/coin/challenge/misc/pcrc
-	options["SAARE"] = /obj/item/material/coin/challenge/misc/saare
+	options["WALDO"] = /obj/item/material/coin/challenge/misc/waldo
 	options["Maxim"] = /obj/item/material/coin/challenge/misc/maxim
 	gear_tweaks += new /datum/gear_tweak/path (options)
 

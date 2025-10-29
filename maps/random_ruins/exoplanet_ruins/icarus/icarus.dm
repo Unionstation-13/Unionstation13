@@ -116,13 +116,8 @@
 	icon_state = "ecplaque"
 
 /obj/structure/sign/double/icarus_solgovflag
-<<<<<<< HEAD
 	name = "United Galactic Nations Flag"
 	desc = "A faded UGN flag. It appears to have been radiation bleached."
-=======
-	name = "Sol Central Government Flag"
-	desc = "A faded SCG flag. It appears to have been radiation bleached."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 
 /obj/structure/sign/double/icarus_solgovflag/left
@@ -132,7 +127,7 @@
 	icon_state = "solgovflag-right"
 
 /obj/structure/sign/icarus_solgov
-	name = "\improper Faded SCG seal"
+	name = "\improper Faded UGN seal"
 	desc = "A sign which signifies who this vessel belongs to. This one is faded."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "solgovseal"

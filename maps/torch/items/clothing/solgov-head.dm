@@ -9,13 +9,8 @@
 
 //Utility
 /obj/item/clothing/head/soft/solgov
-<<<<<<< HEAD
 	name = "\improper United Galactic Nations cap"
 	desc = "It's a ballcap in UGN colors."
-=======
-	name = "\improper Sol Central Government cap"
-	desc = "It's a ballcap in SCG colors."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "solsoft"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -358,13 +353,8 @@
 	accessories = null
 
 /obj/item/clothing/head/helmet/solgov/defense_forces
-<<<<<<< HEAD
 	name = "\improper UGNDF helmet"
 	desc = "A robust helmet utilized by United Galactic Nations Defense Forces."
-=======
-	name = "\improper SCGDF helmet"
-	desc = "A robust helmet utilized by Sol Central Government Defense Forces."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	accessories = null
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,

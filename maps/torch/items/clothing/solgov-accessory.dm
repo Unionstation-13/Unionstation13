@@ -62,11 +62,7 @@ medals
 //Civilian medals
 /obj/item/clothing/accessory/medal/solgov/civ/expeditionary
 	name = "\improper Expeditionary Medal"
-<<<<<<< HEAD
 	desc = "An iron medal awarded by the UGN for individuals who have participated in missions outside the borders of the United Galactic Nations."
-=======
-	desc = "An iron medal awarded by the SCG for individuals who have participated in missions outside the borders of the Sol Central Government."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "medal_expeditionary"
 
 /obj/item/clothing/accessory/medal/solgov/civ/sapientarian
@@ -76,11 +72,7 @@ medals
 
 /obj/item/clothing/accessory/medal/solgov/civ/service
 	name = "\improper Distinguished Service Medal"
-<<<<<<< HEAD
 	desc = "A golden sun medal awarded by the UGN to nonmilitary individuals who have made exceptional contributions to the United Galactic Nations."
-=======
-	desc = "A golden sun medal awarded by the SCG to nonmilitary individuals who have made exceptional contributions to the Sol Central Government."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "medal_service"
 
 //medal boxes
@@ -173,11 +165,7 @@ patches
 
 /obj/item/clothing/accessory/solgov/ec_patch
 	name = "\improper Observatory patch"
-<<<<<<< HEAD
 	desc = "A laminated shoulder patch, carrying the symbol of the United Galactic Nations Expeditionary Corpss Observatory, or UGNEO for short, the eyes and ears of the Expeditionary Corps' missions."
-=======
-	desc = "A laminated shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corpss Observatory, or SCGEO for short, the eyes and ears of the Expeditionary Corps' missions."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ecpatch1"
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 	slot = ACCESSORY_SLOT_INSIGNIA
@@ -185,11 +173,7 @@ patches
 
 /obj/item/clothing/accessory/solgov/ec_patch/fieldops
 	name = "\improper Field Operations patch"
-<<<<<<< HEAD
 	desc = "A radiation-shielded shoulder patch, carrying the symbol of the United Galactic Nations Expeditionary Corps Field Operations, or UGNECFO for short, the hands-on workers of every Expeditionary Corps mission."
-=======
-	desc = "A radiation-shielded shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corps Field Operations, or SCGECFO for short, the hands-on workers of every Expeditionary Corps mission."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ecpatch2"
 
 /obj/item/clothing/accessory/solgov/cultex_patch
@@ -514,13 +498,8 @@ armbands
 armour attachments
 *****************/
 /obj/item/clothing/accessory/armor_tag/solgov
-<<<<<<< HEAD
 	name = "\improper UGN Flag"
 	desc = "An emblem depicting the United Galactic Nations's flag."
-=======
-	name = "\improper SCG Flag"
-	desc = "An emblem depicting the Sol Central Government's flag."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_override = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
 	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
@@ -553,13 +532,8 @@ armour attachments
 	icon_state = "agenttag"
 
 /obj/item/clothing/accessory/armor_tag/solgov/com
-<<<<<<< HEAD
 	name = "\improper UGN tag"
 	desc = "An armor tag with the words United Galactic Nations printed in gold lettering on it."
-=======
-	name = "\improper SCG tag"
-	desc = "An armor tag with the words SOL CENTRAL GOVERNMENT printed in gold lettering on it."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "comtag"
 
 /obj/item/clothing/accessory/armor_tag/solgov/com/sec

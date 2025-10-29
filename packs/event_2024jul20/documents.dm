@@ -276,11 +276,7 @@
 
 
 /obj/item/material/folder/envelope/preset/cmdorder
-<<<<<<< HEAD
 	desc = "A thick envelope. The United Galactic Nations crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR UGNR/CO EYES ONLY.'"
-=======
-	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR SCGR/CO EYES ONLY.'"
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	seal_stamp = "\improper Bureau of Emergency Operations rubber stamp"
 
 

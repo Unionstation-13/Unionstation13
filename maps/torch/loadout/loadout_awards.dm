@@ -1,10 +1,6 @@
 /datum/gear/award/solgov_award_civilian
 	display_name = "SolGov civilian award, Expeditionary"
-<<<<<<< HEAD
 	description = "An iron medal awarded by the UGN for individuals who have participated in missions outside the borders of the United Galactic Nations."
-=======
-	description = "An iron medal awarded by the SCG for individuals who have participated in missions outside the borders of the Sol Central Government."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	path = /obj/item/storage/medalbox/sol/expeditionary
 	cost = 3
 	flags = GEAR_HAS_NO_CUSTOMIZATION | GEAR_HAS_EXTENDED_DESCRIPTION
@@ -16,11 +12,7 @@
 
 /datum/gear/award/solgov_award_civilian/service
 	display_name = "SolGov civilian award, Distinguished Service Medal"
-<<<<<<< HEAD
 	description = "A golden sun medal awarded by the UGN to nonmilitary individuals who have made exceptional contributions to the United Galactic Nations."
-=======
-	description = "A golden sun medal awarded by the SCG to nonmilitary individuals who have made exceptional contributions to the Sol Central Government."
->>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	path = /obj/item/storage/medalbox/sol/service
 
 /datum/gear/award/solgov_award_military

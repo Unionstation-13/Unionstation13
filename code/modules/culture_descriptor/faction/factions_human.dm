@@ -121,7 +121,7 @@ they used to silence dissenters."
 
 
 
-/singleton/cultural_info/faction/saare
+/singleton/cultural_info/faction/waldo
 // merge into Peacekeeper
 	name = FACTION_WALDO
 	description = "WALDO (Weaponized Antido Liberation Defensive Organization)\
