@@ -60,7 +60,7 @@
 	capital = "Zamen"
 	distance = "22.5 light years."
 	economic_power = 0.9
-	ruling_body = "Nitros Federated Republic"
+	ruling_body = "Federated Republic of Nitros"
 	language = LANGUAGE_HUMAN_RUSSIAN
 
 /singleton/cultural_info/location/human/saffar
@@ -73,7 +73,7 @@
 	retreated to the North Pole of the planet to this day. Antido is covered in deep,\
 	sticky oil puddles, making cars extremely unsafe. It is one of the only UGN\
 	planets to be entirely void of all phoron or fossil fuels. It also serves as the HQ\
-	of Waldo"
+	of WALDO."
 	economic_power = 1.2
 
 /singleton/cultural_info/location/human/tadmor
