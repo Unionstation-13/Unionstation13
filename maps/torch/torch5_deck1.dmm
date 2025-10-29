@@ -12921,10 +12921,11 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 9
 	},
-/obj/structure/sign/warning/hot_exhaust{
+/obj/structure/catwalk,
+/obj/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "aTi" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
@@ -17958,6 +17959,12 @@
 /obj/structure/iv_stand,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
+"gjV" = (
+/obj/structure/sign/warning/hot_exhaust{
+	dir = 1
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/maintenance/firstdeck/aftport)
 "gkb" = (
 /obj/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "ER_2"
@@ -56972,7 +56979,7 @@ iyG
 aRe
 aSe
 aTh
-aDB
+gjV
 dJY
 xPU
 xPU
