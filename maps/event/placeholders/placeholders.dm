@@ -210,89 +210,89 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 	simple_speed = 0.3
 
 
-/obj/overmap/visitable/placeholder/UGN_arrow
+/obj/overmap/visitable/placeholder/scg_arrow
 	name = "Arrow-Class Corvette"
 	desc = "A small, aging missile warship built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "cv-arrow"
 	pixel_x = -16
 	pixel_y = -16
 	simple_speed = 1.2
 
 
-/obj/overmap/visitable/placeholder/UGN_lexington
+/obj/overmap/visitable/placeholder/scg_lexington
 	name = "Lexington-Class Corvette"
 	desc = "A small hunter-killer and picketing warship built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "cv-lexington"
 	pixel_x = -16
 	pixel_y = -16
 
 
-/obj/overmap/visitable/placeholder/UGN_scorpion
+/obj/overmap/visitable/placeholder/scg_scorpion
 	name = "Scorpion-Class Corvette"
 	desc = "A small, fairly modern missile-carrying warship built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "cv-scorpion"
 	pixel_x = -16
 	pixel_y = -16
 
 
-/obj/overmap/visitable/placeholder/UGN_rockfish
+/obj/overmap/visitable/placeholder/scg_rockfish
 	name = "Rockfish-Class Corvette"
 	desc = "A small, top of the line stealth warship built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "cv-rockfish"
 	pixel_x = -16
 	pixel_y = -16
 	simple_speed = 0.8
 
 
-/obj/overmap/visitable/placeholder/UGN_nuum
+/obj/overmap/visitable/placeholder/scg_nuum
 	name = "Nuum-Class Missile Frigate"
 	desc = "An aging medium sized frigate with a heavy focus on missiles, built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "fr-nuum"
 	pixel_x = -16
 	pixel_y = -16
 
 
-/obj/overmap/visitable/placeholder/UGN_somme
+/obj/overmap/visitable/placeholder/scg_somme
 	name = "Somme-Class Frigate"
 	desc = "A fairly modern medium sized frigate of the line, built for the Solar Assembly Fleets."
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "fr-somme"
 	pixel_x = -16
 	pixel_y = -16
 
 
-/obj/overmap/visitable/placeholder/UGN_kestrel
+/obj/overmap/visitable/placeholder/scg_kestrel
 	name = "Kestrel-Model Starfighter"
 	desc = "An aging model of space fighter built for the Solar Assembly Fleets but now common in private ownership."
-	icon = 'UGN-32.dmi'
+	icon = 'scg-32.dmi'
 	icon_state = "sf-kestrel"
 	simple_speed = 0.2
 
 
-/obj/overmap/visitable/placeholder/UGN_eagle_ii
+/obj/overmap/visitable/placeholder/scg_eagle_ii
 	name = "Eagle-II-Model Strike Fighter"
 	desc = "A modernized take on a venerable payload-carrying platform, built for the Solar Assembly Fleets."
-	icon = 'UGN-32.dmi'
+	icon = 'scg-32.dmi'
 	icon_state = "sf-eagle-ii"
 	simple_speed = 0.2
 
 
-/obj/overmap/visitable/placeholder/UGN_shikra
+/obj/overmap/visitable/placeholder/scg_shikra
 	name = "Shikra-Model Recon Fighter"
 	desc = "A strike craft made to fill in the gap between the Kestrel, and the Eagle-II. It has since been shifted into a recon role, with its mini-AWACS suite and EM stealth capabilities, sacrificing some of its payload."
-	icon = 'UGN-32.dmi'
+	icon = 'scg-32.dmi'
 	icon_state = "sf-shikra"
 	simple_speed = 0.1
 
-/obj/overmap/visitable/placeholder/UGN_hermes
+/obj/overmap/visitable/placeholder/scg_hermes
 	name = "Hermes-Model Utility Pod"
 	desc = "A tiny workhorse found across human space, able to carry a pilot and some cargo a short distance."
-	icon = 'UGN-32.dmi'
+	icon = 'scg-32.dmi'
 	icon_state = "uv-hermes"
 	simple_speed = 0.4
 
@@ -317,7 +317,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 /obj/overmap/visitable/placeholder/ec_komarov
 	name = "SEV Komarov"
 	desc = "A hulking mass of redundant systems and extensive electromagnetic shielding. The hull is tattered with a myriad of warped and charred paneling, this ship looks like it just tore out from hell itself, most likely because it has. The Transponder reads, 'SEV Komarov, HSC-2-07-X'"
-	icon = 'UGN-64.dmi'
+	icon = 'scg-64.dmi'
 	icon_state = "ec-komarov"
 	pixel_x = -17
 	pixel_y = -12

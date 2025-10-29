@@ -175,7 +175,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
 	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the UGNDF. Despite its age, it still remains the de-facto rifle of the UGN Army, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
+	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the SCGDF. Despite its age, it still remains the de-facto rifle of the SCG Army, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"
@@ -264,7 +264,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle/light
 	name = "light bullpup assault rifle"
-	desc = "The standard-issue rifle of the UGNDF. The Z9 Pitbull is the modern answer to violence's question. It has been given a blued finish with a Sol yellow stripe for easy identification of its owner. It's slightly more accurate than its larger cousin, the Z8."
+	desc = "The standard-issue rifle of the SCGDF. The Z9 Pitbull is the modern answer to violence's question. It has been given a blued finish with a Sol yellow stripe for easy identification of its owner. It's slightly more accurate than its larger cousin, the Z8."
 	icon = 'icons/obj/guns/bullpup_rifle_light.dmi'
 	item_state = "z9carbine"
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/light

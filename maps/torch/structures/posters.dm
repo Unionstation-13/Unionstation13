@@ -23,7 +23,7 @@
 /singleton/poster/torch/event2
 	icon_state="bsposter_event2"
 	name = "Captain for Senate"
-	desc = "A poster loudly advertising the SEV Torch's captain's upcoming bid for UGN Senate. The fine print lightly suggests that failing to vote in their favor will result in an NJP."
+	desc = "A poster loudly advertising the SEV Torch's captain's upcoming bid for SCG Senate. The fine print lightly suggests that failing to vote in their favor will result in an NJP."
 
 /singleton/poster/torch/event3
 	icon_state="bsposter_event3"

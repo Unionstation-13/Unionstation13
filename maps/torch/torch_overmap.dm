@@ -1,6 +1,6 @@
 /obj/overmap/visitable/ship/torch
 	name = "UGN Titen"
-	desc = "A frankensteined HNS Mako-class corvette, broadcasting UGNEC codes and the designation \"UGN Titen, HSC-4-13-X\"."
+	desc = "A frankensteined HNS Mako-class corvette, broadcasting SCGEC codes and the designation \"UGN Titen, HSC-4-13-X\"."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
@@ -78,7 +78,7 @@
 
 /obj/overmap/visitable/ship/landable/exploration_shuttle
 	name = "Charon"
-	desc = "An SSE-U11 long range shuttle, broadcasting UGNEC codes and the callsign \"Titen-2 Charon\"."
+	desc = "An SSE-U11 long range shuttle, broadcasting SCGEC codes and the callsign \"Titen-2 Charon\"."
 	shuttle = "Charon"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
@@ -94,7 +94,7 @@
 
 /obj/overmap/visitable/ship/landable/aquila
 	name = "Aquila"
-	desc = "A PM-24 modular transport, broadcasting UGNEC codes and the callsign \"Titen-1 Aquila\"."
+	desc = "A PM-24 modular transport, broadcasting SCGEC codes and the callsign \"Titen-1 Aquila\"."
 	shuttle = "Aquila"
 	vessel_mass = 10000
 	max_speed = 1/(1 SECONDS)
@@ -109,7 +109,7 @@
 
 /obj/overmap/visitable/ship/landable/guppy
 	name = "Guppy"
-	desc = "An SSE-U3 utility pod, broadcasting UGNEC codes and the callsign \"Titen-3 Guppy\"."
+	desc = "An SSE-U3 utility pod, broadcasting SCGEC codes and the callsign \"Titen-3 Guppy\"."
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS

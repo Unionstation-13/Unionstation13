@@ -697,7 +697,7 @@
 /area/spy_station/dock)
 "jK" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG,
 /turf/simulated/floor/tiled/dark,
 /area/spy_station/barrack)
 "jM" = (
@@ -969,7 +969,7 @@
 "ms" = (
 /obj/structure/table/reinforced,
 /obj/item/tableflag,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG,
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -1248,7 +1248,7 @@
 /area/spy_station/barrack)
 "qw" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG,
 /obj/machinery/light{
 	dir = 8
 	},

@@ -1,14 +1,14 @@
 //random memo spawners
 
-/obj/random/memo_UGNr
-	name = "random UGNr memo"
-	desc = "This may spawn one of the UGNR Memos."
+/obj/random/memo_scgr
+	name = "random scgr memo"
+	desc = "This may spawn one of the SCGR Memos."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"
 	spawn_nothing_percentage = 15
 
-/obj/random/memo_UGNr/spawn_choices()
-	return subtypesof(/obj/item/paper/memo/UGNr) + subtypesof(/obj/item/paper/memo/generic)
+/obj/random/memo_scgr/spawn_choices()
+	return subtypesof(/obj/item/paper/memo/scgr) + subtypesof(/obj/item/paper/memo/generic)
 
 /obj/random/memo_command
 	name = "random command memo"
@@ -92,10 +92,10 @@
 
 
 
-/obj/random_multi/single_item/memo_UGNr
-	name = "Multi Point - UGNR Memos"
-	id = "UGNR Memos"
-	item_path = /obj/random/memo_UGNr
+/obj/random_multi/single_item/memo_scgr
+	name = "Multi Point - SCGR Memos"
+	id = "SCGR Memos"
+	item_path = /obj/random/memo_scgr
 
 /obj/random_multi/single_item/memo_command
 	name = "Multi Point - Command Memos"
@@ -186,53 +186,53 @@
 	info = {"An at-length article with multiple images of well-meaning charts and comparing images on how to respectfully refer to xeno crewmembers, and that the expectations on what gender they may be will be different from human expectations. It is seemingly bulletproof, up until you reach the lines regarding increasingly esoteric (and invasive) methods of deciding what pronouns to use for them, when it would be easier to just ask or look for them on their IDs cards."}
 
 
-// UGNr memos
+// scgr memos
 
-/obj/item/paper/memo/UGNr/skrelljokes
+/obj/item/paper/memo/scgr/skrelljokes
 	name = "internal conversation record"
 	info = {"A "confidential" discussion between several Sol Government Representatives, including some crass jokes on if Skrell being squished would burst like a water balloon or squish like a jam sandwich."}
 
-/obj/item/paper/memo/UGNr/spicypolitics
+/obj/item/paper/memo/scgr/spicypolitics
 	name = "internal conversation record"
 	info = {"A "confidential" discussion between several Sol Government Representatives, including some interesting political tidbits. Seems like most of them are going to be supporting more conservative, Sol-centric parties next election, voicing annoyance at having to deal with hissing lizards and warbling frogs."}
 
-/obj/item/paper/memo/UGNr/deskfires
+/obj/item/paper/memo/scgr/deskfires
 	name = "important notice"
 	info = {"A "confidential" notice issued to Sol Government Representatives, informing them of an office fire caused by improper cigarette ash management."}
 
-/obj/item/paper/memo/UGNr/boringreports
+/obj/item/paper/memo/scgr/boringreports
 	name = "\improper Titen project status update #132"
 	info = {"A "confidential" report containing nothing you'd like to read, featuring updates that you knew about three weeks ago."}
 
-/obj/item/paper/memo/UGNr/documentdamage
+/obj/item/paper/memo/scgr/documentdamage
 	name = "important notice"
 	info = {"A "confidential" notice issued to Sol Government Representatives, informing them that many documents were damaged last week due to "inappropriate sleep management". It urges all diplomatic staff to self-monitor their sleeping schedule and to regulate their caffeine intake."}
 
-/obj/item/paper/memo/UGNr/documentdisposal
+/obj/item/paper/memo/scgr/documentdisposal
 	name = "proper document disposal"
 	info = {"Some "internal use only" documents, showing several pictures of reconstructed shredded documents. It highlights that shredding is not acceptable for any documents that are above Confidental, going on to recommend incineration as a primary method."}
 
-/obj/item/paper/memo/UGNr/yourjob
-	name = "\improper UGN and you"
-	info = {"Some "confidential" briefing documents, detailing the job of the UGNR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the UGN Titen. They also should advise the Commanding Officer, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations. At the bottom, underlined several times and in bold is "YOU ARE NOT A LAWYER"."}
+/obj/item/paper/memo/scgr/yourjob
+	name = "\improper SCG and you"
+	info = {"Some "confidential" briefing documents, detailing the job of the SCGR in brief. It highlights they are a civilian, first and foremost, who functions as a general-purpose civil servant aboard the UGN Titen. They also should advise the Commanding Officer, assisting with bureaucratic affairs where required, and spearheading diplomatic negotations. At the bottom, underlined several times and in bold is "YOU ARE NOT A LAWYER"."}
 
-/obj/item/paper/memo/UGNr/perdiemdeny
+/obj/item/paper/memo/scgr/perdiemdeny
 	name = "per diem denials"
-	info = {"An "internal use only" document, explaining what not to file per diem reimbursement requests on. It lists examples of many per diem requests UGN representatives have filed in the past that have been denied. Some of the more interesting ones include casino debts, a request for per diem to cover the increased tax on alcohol on a station, and one odd case involving a possum, engineering PPE, and two injuries."}
+	info = {"An "internal use only" document, explaining what not to file per diem reimbursement requests on. It lists examples of many per diem requests SCG representatives have filed in the past that have been denied. Some of the more interesting ones include casino debts, a request for per diem to cover the increased tax on alcohol on a station, and one odd case involving a possum, engineering PPE, and two injuries."}
 
-/obj/item/paper/memo/UGNr/execution
+/obj/item/paper/memo/scgr/execution
 	name = "formal complaint"
 	info = {"A confidential memo from Rear Admiral Lambert of the SFV Bismarck issuing a formal complaint on behalf of Fleet regarding the execution of SLT Kristen Rohtin aboard a Corps vessel. The tone is furious and suggests significant consequences for the Expeditionary Corps."}
 
-/obj/item/paper/memo/UGNr/floritstatement
+/obj/item/paper/memo/scgr/floritstatement
 	name = "undersecretary statement"
-	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the UGN Titen. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the UGN Fleet under Florit's leadership in the interest of preventing any further incidents."}
+	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the UGN Titen. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the SCG Fleet under Florit's leadership in the interest of preventing any further incidents."}
 
-/obj/item/paper/memo/UGNr/senateminutes
+/obj/item/paper/memo/scgr/senateminutes
 	name = "assembly floor proceedings"
-	info = {"A copy of the minutes from the Sol Assembly hearing over an emergency bill giving the UGN Defense Forces jurisdiction over the Expeditionary Corps (and by extension, the UGN Titen). The debate is vicious and devolves into angry bickering at points. The bill appears to have gotten uncomfortably close to being passed."}
+	info = {"A copy of the minutes from the Sol Assembly hearing over an emergency bill giving the SCG Defense Forces jurisdiction over the Expeditionary Corps (and by extension, the UGN Titen). The debate is vicious and devolves into angry bickering at points. The bill appears to have gotten uncomfortably close to being passed."}
 
-/obj/item/paper/memo/UGNr/radicals
+/obj/item/paper/memo/scgr/radicals
 	name = "radicalization investigation report"
 	info = {"A summary of a Senate investigation into the radicalization of government employees. The findings appear somewhat grim, with long lists of reports of politics seeping its way into the everyday functions of the Fleet, Diplomatic Service, SFP, and Expeditionary Corps. While the report clarifies that no major incidents have occurred thus far, the intertwining of politics and governmental operations will likely have grave consequences if let run rampant."}
 
@@ -301,7 +301,7 @@
 
 /obj/item/paper/memo/command/confedsightings
 	name = "confederate naval protocols"
-	info = {"An "internal use only" memo sent from the Government Representative to the bridge crew reminding them that the UGN is, and will for the foreseeable future, be a peace with the GCC. As such, it is entirely unneeded to 'batten down the hatches' and prepare the ship for hostilities at the mere sighting of a Confederate Naval Vessel, and that such preparations implies Xenophobic tendencies and increases the probability of diplomatic incidents."}
+	info = {"An "internal use only" memo sent from the Government Representative to the bridge crew reminding them that the SCG is, and will for the foreseeable future, be a peace with the GCC. As such, it is entirely unneeded to 'batten down the hatches' and prepare the ship for hostilities at the mere sighting of a Confederate Naval Vessel, and that such preparations implies Xenophobic tendencies and increases the probability of diplomatic incidents."}
 
 /obj/item/paper/memo/command/pioneerpranks
 	name = "pioneer prank reports"
@@ -506,7 +506,7 @@
 
 /obj/item/paper/memo/exploration/survivors
 	name = "interactions with survivors"
-	info = {"Some "internal use only" reports discussing the process of dealing with survivors, off-ship personnel, or in-distress civilians. This one details three points that all explorers, Fleet servicemembers, or contractor personnel should attempt to follow when dealing with off-ship persons: First, treat them with the utmost respect at all times, as they are the ones who need aid. Second, do not directly order them around, unless they happen to be getting in the way of UGN objectives. Third, remind them of their rights - they are requiring aid and are to be treated with the best handling, but remind them that they are still on UGN property, and are subject to UGN law at all times."}
+	info = {"Some "internal use only" reports discussing the process of dealing with survivors, off-ship personnel, or in-distress civilians. This one details three points that all explorers, Fleet servicemembers, or contractor personnel should attempt to follow when dealing with off-ship persons: First, treat them with the utmost respect at all times, as they are the ones who need aid. Second, do not directly order them around, unless they happen to be getting in the way of SCG objectives. Third, remind them of their rights - they are requiring aid and are to be treated with the best handling, but remind them that they are still on SCG property, and are subject to SCG law at all times."}
 
 /obj/item/paper/memo/exploration/cigarettes
 	name = "cigarettes with helmets"
@@ -592,7 +592,7 @@
 
 /obj/item/paper/memo/corporate/legion
 	name = "internal communications"
-	info = {"A stack of "confidential" communications inside the EXO pertaining to the recent encounter with the 'Legion'. The almost unregulated panic among some of the discussions is quite clear, with the overall worry more focused on possible financial losses then danger to the UGN or UGN personnel."}
+	info = {"A stack of "confidential" communications inside the EXO pertaining to the recent encounter with the 'Legion'. The almost unregulated panic among some of the discussions is quite clear, with the overall worry more focused on possible financial losses then danger to the SCG or SCG personnel."}
 
 /obj/item/paper/memo/corporate/miranda
 	name = "miranda line memo"
@@ -642,7 +642,7 @@
 
 /obj/item/paper/memo/security/extremism
 	name = "anti-radicalization pamphlet"
-	info = {"An "internal use only" document detailing strategies for identifying signs and risk factors for radicalization, created in light of perceived extremism in the UGNF. It discusses low self-esteem, stress, marginalization, repeat disciplinary issues, and excessive interest in weaponry."}
+	info = {"An "internal use only" document detailing strategies for identifying signs and risk factors for radicalization, created in light of perceived extremism in the SCGF. It discusses low self-esteem, stress, marginalization, repeat disciplinary issues, and excessive interest in weaponry."}
 
 /obj/item/paper/memo/security/useofforce
 	name = "use of force complaint"

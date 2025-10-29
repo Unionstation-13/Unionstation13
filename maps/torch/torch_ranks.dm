@@ -14,7 +14,7 @@
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
-		/datum/mil_branch/UGNa,
+		/datum/mil_branch/scga,
 		/datum/mil_branch/auf
 	)
 
@@ -26,7 +26,7 @@
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
-		/datum/mil_branch/UGNa,
+		/datum/mil_branch/scga,
 		/datum/mil_branch/auf
 	)
 
@@ -92,8 +92,8 @@
 
 /datum/mil_branch/expeditionary_corps
 	name = "Expeditionary Corps"
-	name_short = "UGNEC"
-	email_domain = "torch.ec.UGN"
+	name_short = "SCGEC"
+	email_domain = "torch.ec.scg"
 
 	rank_types = list(
 		/datum/mil_rank/ec/e3,
@@ -127,7 +127,7 @@
 
 /datum/mil_branch/fleet
 	name = "Fleet"
-	name_short = "UGNF"
+	name_short = "SCGF"
 	email_domain = "torch.fleet.mil"
 
 	rank_types = list(
@@ -202,8 +202,8 @@
 
 /datum/mil_branch/solgov
 	name = "SolGov Employee"
-	name_short = "UGN"
-	email_domain = "torch.UGN"
+	name_short = "SCG"
+	email_domain = "torch.scg"
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,

@@ -179,7 +179,7 @@
 /obj/item/material/folder/envelope/preset
 	icon_state = "envelope_sealed"
 	sealed = TRUE
-	seal_stamp = "\improper UGN Expeditionary Command rubber stamp"
+	seal_stamp = "\improper SCG Expeditionary Command rubber stamp"
 
 /obj/item/material/folder/envelope/preset/bio_ordering_station
 	name = "sealed B.I.O LLC envelope"

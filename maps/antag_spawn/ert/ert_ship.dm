@@ -21,7 +21,7 @@
 
 /obj/overmap/visitable/sector/ert_ship
 	name = "SFV Trident"
-	desc = "An Orca-Class Escort Carrier, broadcasting UGNF codes.\n<span class='bad'>Its weapons systems appears to be active.</span>"
+	desc = "An Orca-Class Escort Carrier, broadcasting SCGF codes.\n<span class='bad'>Its weapons systems appears to be active.</span>"
 	color = COLOR_SKY_BLUE
 	icon_state = "ship"
 	place_near_main = list(1,2)

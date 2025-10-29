@@ -2,7 +2,7 @@
 	display_name = "Cuchulain Foundation"
 	associated_strings = list("Cuchulain", "Foundation")
 	associated_paths = list(
-		/obj/item/storage/briefcase/foundation,
+		/obj/item/storage/briefcase/foundation, 
 		/obj/item/gun/projectile/revolver/foundation,
 		/obj/item/card/id/foundation,
 		/obj/item/card/id/foundation_civilian,
@@ -21,7 +21,7 @@
 	nullglass weapons that can disrupt or destroy psi-powers, and have their own moderately powerful \
 	psionic abilities. They make heavy use of psionic influence to cloud and disrupt efforts at \
 	researching or understanding them, and the depth and nature of their connections to political \
-	bodies like the UGN are unclear."
+	bodies like the SCG are unclear."
 
 /datum/codex_entry/psionics
 	display_name = "Psionics"
@@ -34,7 +34,7 @@
 	lore_text = "Psionics are a relatively new phenomenon theorized to be linked to long-term exposure \
 	to deep, uninhabited space. A tiny, tiny subset of people exposed to such conditions can develop the \
 	ability to perform small feats like levitating coins or removing a headache with nothing but their mind. \
-	A decade of study has resulted in the UGN determining that these psionics, mild as they are, don't pose \
+	A decade of study has resulted in the SCG determining that these psionics, mild as they are, don't pose \
 	an operational or health risk, but they do encourage operants to register with a psionic regulation body \
 	like the Cuchulain Foundation. \
 	<br><br> \

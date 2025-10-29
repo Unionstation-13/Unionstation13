@@ -186,14 +186,14 @@
 // ERT Variant of the program
 /datum/computer_file/program/camera_monitor/ert
 	filename = "ertcammon"
-	filedesc = "UGNDF Camera Monitoring"
-	extended_desc = "A special version of the camera monitoring system tailored for UGN's security and defense forces. Has expanded access to a broad encryption key database and is compatible with PDAs."
+	filedesc = "SCGDF Camera Monitoring"
+	extended_desc = "A special version of the camera monitoring system tailored for SCG's security and defense forces. Has expanded access to a broad encryption key database and is compatible with PDAs."
 	nanomodule_path = /datum/nano_module/camera_monitor/ert
 	required_access = access_ert_responder
 	usage_flags = PROGRAM_ALL
 
 /datum/nano_module/camera_monitor/ert
-	name = "UGNDF Camera Monitoring Program"
+	name = "SCGDF Camera Monitoring Program"
 	available_to_ai = FALSE
 
 // The ERT variant has access to ERT and crescent cams, but still checks for accesses. ERT members should be able to use it.

@@ -1427,16 +1427,16 @@
 /area/map_template/ert/shuttle/cockpit)
 "jg" = (
 /obj/structure/table/rack,
-/obj/item/clothing/under/UGNa/utility,
-/obj/item/clothing/under/UGNa/utility,
-/obj/item/clothing/under/UGNa/utility,
-/obj/item/clothing/under/UGNa/utility,
-/obj/item/clothing/under/UGNa/utility,
-/obj/item/clothing/shoes/UGNa/utility,
-/obj/item/clothing/shoes/UGNa/utility,
-/obj/item/clothing/shoes/UGNa/utility,
-/obj/item/clothing/shoes/UGNa/utility,
-/obj/item/clothing/shoes/UGNa/utility,
+/obj/item/clothing/under/scga/utility,
+/obj/item/clothing/under/scga/utility,
+/obj/item/clothing/under/scga/utility,
+/obj/item/clothing/under/scga/utility,
+/obj/item/clothing/under/scga/utility,
+/obj/item/clothing/shoes/scga/utility,
+/obj/item/clothing/shoes/scga/utility,
+/obj/item/clothing/shoes/scga/utility,
+/obj/item/clothing/shoes/scga/utility,
+/obj/item/clothing/shoes/scga/utility,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/ert/ship/armory)
 "jm" = (
@@ -1943,16 +1943,16 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/clothing/under/UGNa/utility/tan,
-/obj/item/clothing/under/UGNa/utility/tan,
-/obj/item/clothing/under/UGNa/utility/tan,
-/obj/item/clothing/under/UGNa/utility/tan,
-/obj/item/clothing/under/UGNa/utility/tan,
-/obj/item/clothing/shoes/UGNa/utility/tan,
-/obj/item/clothing/shoes/UGNa/utility/tan,
-/obj/item/clothing/shoes/UGNa/utility/tan,
-/obj/item/clothing/shoes/UGNa/utility/tan,
-/obj/item/clothing/shoes/UGNa/utility/tan,
+/obj/item/clothing/under/scga/utility/tan,
+/obj/item/clothing/under/scga/utility/tan,
+/obj/item/clothing/under/scga/utility/tan,
+/obj/item/clothing/under/scga/utility/tan,
+/obj/item/clothing/under/scga/utility/tan,
+/obj/item/clothing/shoes/scga/utility/tan,
+/obj/item/clothing/shoes/scga/utility/tan,
+/obj/item/clothing/shoes/scga/utility/tan,
+/obj/item/clothing/shoes/scga/utility/tan,
+/obj/item/clothing/shoes/scga/utility/tan,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/ert/ship/armory)
 "mg" = (
@@ -2231,12 +2231,12 @@
 /obj/item/clothing/accessory/helmet_cover/green,
 /obj/item/clothing/accessory/helmet_cover/green,
 /obj/item/clothing/accessory/helmet_cover/green,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf/officer,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf/officer,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/ert/ship/armory)
 "oe" = (
@@ -4890,12 +4890,12 @@
 /obj/item/clothing/accessory/helmet_cover/tan,
 /obj/item/clothing/accessory/helmet_cover/tan,
 /obj/item/clothing/accessory/helmet_cover/tan,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf/officer,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf,
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf/officer,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf,
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/ert/ship/armory)
 "Ev" = (
@@ -8046,11 +8046,11 @@
 /area/map_template/ert/ship/armory)
 "YO" = (
 /obj/structure/table/rack,
-/obj/item/clothing/under/UGNa/utility/urban,
-/obj/item/clothing/under/UGNa/utility/urban,
-/obj/item/clothing/under/UGNa/utility/urban,
-/obj/item/clothing/under/UGNa/utility/urban,
-/obj/item/clothing/under/UGNa/utility/urban,
+/obj/item/clothing/under/scga/utility/urban,
+/obj/item/clothing/under/scga/utility/urban,
+/obj/item/clothing/under/scga/utility/urban,
+/obj/item/clothing/under/scga/utility/urban,
+/obj/item/clothing/under/scga/utility/urban,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/ert/ship/armory)
 "YP" = (

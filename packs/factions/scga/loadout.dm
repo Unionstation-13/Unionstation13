@@ -1,5 +1,5 @@
-/datum/gear/shoes/boots/UGNa/New()
+/datum/gear/shoes/boots/scga/New()
 	var/boots = list()
-	boots += /obj/item/clothing/shoes/UGNa/utility
-	boots += /obj/item/clothing/shoes/UGNa/utility/tan
+	boots += /obj/item/clothing/shoes/scga/utility
+	boots += /obj/item/clothing/shoes/scga/utility/tan
 	..(boots)

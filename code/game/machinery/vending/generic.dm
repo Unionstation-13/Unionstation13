@@ -9,7 +9,7 @@
 	antag_slogans = {"\
 		Everything you need for an explosive day at work!;\
 		Our products are the bomb! Because they're bombs. Actual bombs.;\
-		We groan under the weight of UGN bombs at Gaia. Time to return the favor.\
+		We groan under the weight of SCG bombs at Gaia. Time to return the favor.\
 	"}
 	products = list(
 		/obj/item/device/assembly/prox_sensor = 5,

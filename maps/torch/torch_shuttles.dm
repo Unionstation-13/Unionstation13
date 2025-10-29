@@ -289,7 +289,7 @@ TORCH_ESCAPE_POD(17)
 /obj/shuttle_landmark/ert/bridge/secondary
 	landmark_tag = "nav_ert_bridge_2"
 
-//UGNMC Assault Pod
+//SCGMC Assault Pod
 
 /datum/shuttle/autodock/ferry/specops/ert
 	name = "Special Operations"

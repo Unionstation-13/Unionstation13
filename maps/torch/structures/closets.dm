@@ -80,9 +80,9 @@
 		/obj/item/rig/light/ninja/sol,
 		/obj/item/gun/projectile/pistol/m22f,
 		/obj/item/ammo_magazine/pistol/double = 2,
-		/obj/item/clothing/under/UGNa/utility/urban,
+		/obj/item/clothing/under/scga/utility/urban,
 		/obj/item/clothing/shoes/swat,
-		/obj/item/clothing/accessory/UGNa_rank/e6
+		/obj/item/clothing/accessory/scga_rank/e6
 	)
 
 /obj/structure/closet/crate/ninja/gcc

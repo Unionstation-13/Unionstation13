@@ -1149,11 +1149,11 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 8;
 	pixel_y = -3
 	},
@@ -2124,7 +2124,7 @@
 /area/hallway/primary/bridge/fore)
 "dP" = (
 /obj/structure/table/woodentable/walnut,
-/obj/random_multi/single_item/memo_UGNr,
+/obj/random_multi/single_item/memo_scgr,
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_corporate,
 /obj/random_multi/single_item/punitelli,
@@ -3497,7 +3497,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "repdoor";
-	name = "UGNR's Office Door Control";
+	name = "SCGR's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
 	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
@@ -4917,7 +4917,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -8050,7 +8050,7 @@
 	pixel_x = 36
 	},
 /obj/item/material/folder/envelope/preset/rep,
-/obj/item/documents/UGNr,
+/obj/item/documents/scgr,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "uo" = (
@@ -8260,7 +8260,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 11;
 	pixel_y = 1
 	},
@@ -11204,7 +11204,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 3
 	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
@@ -11843,7 +11843,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/obj/random_multi/single_item/memo_UGNr,
+/obj/random_multi/single_item/memo_scgr,
 /obj/structure/sign/double/solgovflag/left{
 	dir = 1;
 	pixel_y = -32
@@ -12815,9 +12815,9 @@
 	dir = 4
 	},
 /obj/structure/safe/floor,
-/obj/random/memo_UGNr,
-/obj/random/memo_UGNr,
-/obj/random/memo_UGNr,
+/obj/random/memo_scgr,
+/obj/random/memo_scgr,
+/obj/random/memo_scgr,
 /obj/random/memo_security,
 /obj/random/memo_security,
 /obj/random/memo_security,

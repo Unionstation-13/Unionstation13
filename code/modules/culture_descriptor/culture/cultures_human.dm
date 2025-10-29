@@ -39,7 +39,7 @@
 /singleton/cultural_info/culture/human/venusian_upper
 	name = CULTURE_HUMAN_PAXLOWER
 	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
-	UGN. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
+	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy: being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
 
@@ -80,7 +80,7 @@
 
 /singleton/cultural_info/culture/human/tadmor
 	name = CULTURE_HUMAN_TADMOR
-	description = "Tadmor is one of the UGN's more successful colonial projects, and its culture is rich and dignified as a result. \
+	description = "Tadmor is one of the SCG's more successful colonial projects, and its culture is rich and dignified as a result. \
 	Mostly living in the fissures of the desert world, Tadmorians are most famous for their cultural Pacifism, with their aversion to participation in \
 	the Gaia Conflict being seen by all residents as either a proud moment or a stain in the planets rich, Mars-rooted history. "
 	economic_power = 1.2
@@ -143,7 +143,7 @@
 	economic_power = 0.9
 	language = LANGUAGE_SPACER
 
-// NON UGN BELOW
+// NON SCG BELOW
 
 /singleton/cultural_info/culture/human/magnitka
 	name = CULTURE_HUMAN_MAGNITKA
@@ -181,8 +181,8 @@
 /singleton/cultural_info/culture/human/confederate_putkari
 	name = CULTURE_HUMAN_CONFED_PUTKARI
 	description = "You are from Putkari in the Baroda system. Settled in the wake of the Terran Commonwealth's exploration Boom, Putkari was abandoned by \
-	the UGN following its founding and left to die. Embracing the newly founded GCC, Putkari has been a loyal and devoted member of the Confederation \
-	ever since. Extremely hostile to the UGN ever since its abandonment, Putkarians are some of the most vocal within the Confederation in terms of \
+	the SCG following its founding and left to die. Embracing the newly founded GCC, Putkari has been a loyal and devoted member of the Confederation \
+	ever since. Extremely hostile to the SCG ever since its abandonment, Putkarians are some of the most vocal within the Confederation in terms of \
 	resentment of the loss in the Gaia Conflict, many beat the war drums and fan the fires of jingoism in hopes of one day enacting a form of vengance. "
 	language = LANGUAGE_HUMAN_INDIAN
 	economic_power = 0.7
@@ -199,7 +199,7 @@
 	name = CULTURE_HUMAN_CONFED_PENGLAI
 	description = "You are from Penglai, a traditionalist world within the Gilgamesh Colonial Confederation. A small world with a marginal atmosphere  \
 	breathable by its inhabitants, its main economic contribution to the confederation is in its abundant rare earth element deposits. Another \
-	colony that was in need of support following the founding of the UGN, Pengali is a content member of the Confederation while keeping their own traditions alive. "
+	colony that was in need of support following the founding of the SCG, Pengali is a content member of the Confederation while keeping their own traditions alive. "
 	language = LANGUAGE_HUMAN_CHINESE
 	economic_power = 0.8
 

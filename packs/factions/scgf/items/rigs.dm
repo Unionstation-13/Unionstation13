@@ -60,9 +60,15 @@
 	force = 5
 
 /obj/item/rig/ert/fleet/leader
+<<<<<<< HEAD
 	name = "\improper UGNF-ERT command hardsuit control module"
 	desc = "A hardsuit utilized by Fleet combat teams. This one has blue highlights with United Galactic Nations FLEET printed in gold lettering on the chest and displaying a UGN crest on the back."
 	suit_type = "\improper UGNF-ERT command hardsuit"
+=======
+	name = "\improper SCGF-ERT command hardsuit control module"
+	desc = "A hardsuit utilized by Fleet combat teams. This one has blue highlights with SOL CENTRAL GOVERNMENT FLEET printed in gold lettering on the chest and displaying a SCG crest on the back."
+	suit_type = "\improper SCGF-ERT command hardsuit"
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ert_commander_rig"
 
 	req_access = list(access_ert_leader)
@@ -85,9 +91,15 @@
 		)
 
 /obj/item/rig/ert/fleet/combat
+<<<<<<< HEAD
 	name = "\improper UGNF-ERT combat hardsuit control module"
 	desc = "A hardsuit utilized by Fleet combat teams. This one has red highlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF emergency response combat hardsuit"
+=======
+	name = "\improper SCGF-ERT combat hardsuit control module"
+	desc = "A hardsuit utilized by Fleet combat teams. This one has red highlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a SCG crest displaying on the back."
+	suit_type = "\improper SCGF emergency response combat hardsuit"
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ert_security_rig"
 
 	initial_modules = list(
@@ -117,8 +129,13 @@
 
 /obj/item/rig/ert/fleet/engineer
 	name = "emergency response technical hardsuit control module"
+<<<<<<< HEAD
 	desc = "A hardsuit utilized by Fleet combat teams. This one has orange hightlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF emergency response engineering hardsuit"
+=======
+	desc = "A hardsuit utilized by Fleet combat teams. This one has orange hightlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a SCG crest displaying on the back."
+	suit_type = "\improper SCGF emergency response engineering hardsuit"
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ert_engineer_rig"
 
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -149,9 +166,15 @@
 		)
 
 /obj/item/rig/ert/fleet/medical
+<<<<<<< HEAD
 	name = "\improper UGNF-ERT rescue hardsuit control module"
 	desc = "A hardsuit utilized by Fleet combat teams. This one has white highlights with United Galactic Nations FLEET written in silver lettering on the chest and a UGN crest displaying on the back."
 	suit_type = "\improper UGNF rescue hardsuit"
+=======
+	name = "\improper SCGF-ERT rescue hardsuit control module"
+	desc = "A hardsuit utilized by Fleet combat teams. This one has white highlights with SOL CENTRAL GOVERNMENT FLEET written in silver lettering on the chest and a SCG crest displaying on the back."
+	suit_type = "\improper SCGF rescue hardsuit"
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon_state = "ert_medical_rig"
 
 	initial_modules = list(
@@ -181,11 +204,11 @@
 		/obj/item/rig_module/grenade_launcher
 		)
 
-// Non-standard issue FERT suits for admemery and extraordinary missions (like silently killing the Deck Chief who keeps sending butt faxes to the UGNR)
+// Non-standard issue FERT suits for admemery and extraordinary missions (like silently killing the Deck Chief who keeps sending butt faxes to the SCGR)
 /obj/item/rig/ert/fleet/combat/stealth
-	name = "experimental UGNF combat hardsuit control module"
+	name = "experimental SCGF combat hardsuit control module"
 	desc = "A hardsuit utilized by Fleet combat teams."
-	suit_type = "\improper UGNF stealth hardsuit prototype"
+	suit_type = "\improper SCGF stealth hardsuit prototype"
 	icon_state = "solop_rig"
 
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE

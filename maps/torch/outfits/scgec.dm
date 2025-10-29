@@ -1,82 +1,82 @@
-/singleton/hierarchy/outfit/UGNec
-	hierarchy_type = /singleton/hierarchy/outfit/UGNec
+/singleton/hierarchy/outfit/scgec
+	hierarchy_type = /singleton/hierarchy/outfit/scgec
 	flags = OUTFIT_RESET_EQUIPMENT | OUTFIT_ADJUSTMENT_ALL_SKIPS
 	l_ear = /obj/item/device/radio/headset
-	l_hand = /obj/item/storage/backpack/dufflebag/UGNec_accessories
+	l_hand = /obj/item/storage/backpack/dufflebag/scgec_accessories
 	back = /obj/item/storage/backpack/satchel/grey
 
 
 // Utility
-/singleton/hierarchy/outfit/UGNec/utility_enlisted
-	name = "UGNEC - Enlisted Utility"
+/singleton/hierarchy/outfit/scgec/utility_enlisted
+	name = "SCGEC - Enlisted Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
-/singleton/hierarchy/outfit/UGNec/utility_command
-	name = "UGNEC - Command Utility"
+/singleton/hierarchy/outfit/scgec/utility_command
+	name = "SCGEC - Command Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
-/singleton/hierarchy/outfit/UGNec/utility_senior_command
-	name = "UGNEC - Senior Command Utility"
+/singleton/hierarchy/outfit/scgec/utility_senior_command
+	name = "SCGEC - Senior Command Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
-/singleton/hierarchy/outfit/UGNec/utility_captain
-	name = "UGNEC - Captain Utility"
+/singleton/hierarchy/outfit/scgec/utility_captain
+	name = "SCGEC - Captain Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
 
 
-/singleton/hierarchy/outfit/UGNec/utility_admiral
-	name = "UGNEC - Admiral Utility"
+/singleton/hierarchy/outfit/scgec/utility_admiral
+	name = "SCGEC - Admiral Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
 
 
 // Service
-/singleton/hierarchy/outfit/UGNec/service
-	name = "UGNEC - Enlisted Service"
+/singleton/hierarchy/outfit/scgec/service
+	name = "SCGEC - Enlisted Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition
 
 
-/singleton/hierarchy/outfit/UGNec/service_command
-	name = "UGNEC - Command Service"
+/singleton/hierarchy/outfit/scgec/service_command
+	name = "SCGEC - Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/command
 
 
-/singleton/hierarchy/outfit/UGNec/service_senior_command
-	name = "UGNEC - Senior Command Service"
+/singleton/hierarchy/outfit/scgec/service_senior_command
+	name = "SCGEC - Senior Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/senior_command
 
 
-/singleton/hierarchy/outfit/UGNec/service_captain
-	name = "UGNEC - Captain Service"
+/singleton/hierarchy/outfit/scgec/service_captain
+	name = "SCGEC - Captain Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 
 
-/singleton/hierarchy/outfit/UGNec/service_admiral
-	name = "UGNEC - Admiral Service"
+/singleton/hierarchy/outfit/scgec/service_admiral
+	name = "SCGEC - Admiral Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -84,8 +84,8 @@
 
 
 // Dress
-/singleton/hierarchy/outfit/UGNec/dress_enlisted
-	name = "UGNEC - Enlisted Dress"
+/singleton/hierarchy/outfit/scgec/dress_enlisted
+	name = "SCGEC - Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
@@ -93,8 +93,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_enlisted
-	name = "UGNEC - Enlisted Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_enlisted
+	name = "SCGEC - Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
@@ -102,8 +102,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_senior_enlisted
-	name = "UGNEC - Senior Enlisted Dress"
+/singleton/hierarchy/outfit/scgec/dress_senior_enlisted
+	name = "SCGEC - Senior Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
@@ -111,8 +111,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_senior_enlisted
-	name = "UGNEC - Senior Enlisted Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_senior_enlisted
+	name = "SCGEC - Senior Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
@@ -120,8 +120,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_chief_enlisted
-	name = "UGNEC - Chief Enlisted Dress"
+/singleton/hierarchy/outfit/scgec/dress_chief_enlisted
+	name = "SCGEC - Chief Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
@@ -129,8 +129,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_chief_enlisted
-	name = "UGNEC - Chief Enlisted Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_chief_enlisted
+	name = "SCGEC - Chief Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
@@ -138,8 +138,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_command
-	name = "UGNEC - Command Dress"
+/singleton/hierarchy/outfit/scgec/dress_command
+	name = "SCGEC - Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
@@ -147,8 +147,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_command
-	name = "UGNEC - Command Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_command
+	name = "SCGEC - Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
@@ -156,8 +156,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_senior_command
-	name = "UGNEC - Senior Command Dress"
+/singleton/hierarchy/outfit/scgec/dress_senior_command
+	name = "SCGEC - Senior Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
@@ -165,8 +165,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_senior_command
-	name = "UGNEC - Senior Command Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_senior_command
+	name = "SCGEC - Senior Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
@@ -174,8 +174,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_captain
-	name = "UGNEC - Captain Dress"
+/singleton/hierarchy/outfit/scgec/dress_captain
+	name = "SCGEC - Captain Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
@@ -183,8 +183,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_captain
-	name = "UGNEC - Captain Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_captain
+	name = "SCGEC - Captain Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
@@ -192,8 +192,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_admiral
-	name = "UGNEC - Admiral Dress"
+/singleton/hierarchy/outfit/scgec/dress_admiral
+	name = "SCGEC - Admiral Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
@@ -201,8 +201,8 @@
 	gloves = /obj/item/clothing/gloves/white
 
 
-/singleton/hierarchy/outfit/UGNec/dress_skirt_admiral
-	name = "UGNEC - Admiral Dress (Skirt)"
+/singleton/hierarchy/outfit/scgec/dress_skirt_admiral
+	name = "SCGEC - Admiral Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
@@ -211,30 +211,30 @@
 
 
 // PT
-/singleton/hierarchy/outfit/UGNec/pt
-	name = "UGNEC - PT"
+/singleton/hierarchy/outfit/scgec/pt
+	name = "SCGEC - PT"
 	uniform = /obj/item/clothing/under/solgov/pt/expeditionary
 	shoes = /obj/item/clothing/shoes/black
 
 
 // Accessory boxes
-/obj/item/storage/backpack/dufflebag/UGNec_accessories
-	name = "dressup accessories, UGNEC"
+/obj/item/storage/backpack/dufflebag/scgec_accessories
+	name = "dressup accessories, SCGEC"
 	startswith = list(
-		/obj/item/storage/box/large/UGNec_ranks,
-		/obj/item/storage/box/UGNec_patches,
-		/obj/item/storage/box/UGNec_badges,
-		/obj/item/storage/box/UGNec_scarves,
-		/obj/item/storage/box/large/UGNec_berets,
-		/obj/item/storage/box/large/UGNec_gloves,
-		/obj/item/storage/box/UGNec_department,
-		/obj/item/storage/box/UGNec_department_service
+		/obj/item/storage/box/large/scgec_ranks,
+		/obj/item/storage/box/scgec_patches,
+		/obj/item/storage/box/scgec_badges,
+		/obj/item/storage/box/scgec_scarves,
+		/obj/item/storage/box/large/scgec_berets,
+		/obj/item/storage/box/large/scgec_gloves,
+		/obj/item/storage/box/scgec_department,
+		/obj/item/storage/box/scgec_department_service
 	)
 	max_storage_space = 44 // Special snowflake for tests and UI scaling sanity. 40 is the exact size taken up by the contained boxes.
 
 
-/obj/item/storage/box/large/UGNec_ranks
-	name = "rank box, UGNEC"
+/obj/item/storage/box/large/scgec_ranks
+	name = "rank box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted,
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted,
@@ -257,8 +257,8 @@
 	)
 
 
-/obj/item/storage/box/UGNec_patches
-	name = "patch box, UGNEC"
+/obj/item/storage/box/scgec_patches
+	name = "patch box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/torch_patch,
 		/obj/item/clothing/accessory/solgov/torch_patch,
@@ -271,8 +271,8 @@
 	)
 
 
-/obj/item/storage/box/UGNec_badges
-	name = "badge box, UGNEC"
+/obj/item/storage/box/scgec_badges
+	name = "badge box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/skillbadge/botany,
 		/obj/item/clothing/accessory/solgov/skillbadge/netgun,
@@ -289,8 +289,8 @@
 	)
 
 
-/obj/item/storage/box/UGNec_scarves
-	name = "scarf box, UGNEC"
+/obj/item/storage/box/scgec_scarves
+	name = "scarf box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/ec_scarf,
 		/obj/item/clothing/accessory/solgov/ec_scarf/observatory,
@@ -298,8 +298,8 @@
 	)
 
 
-/obj/item/storage/box/large/UGNec_berets
-	name = "berets box, UGNEC"
+/obj/item/storage/box/large/scgec_berets
+	name = "berets box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/head/beret/solgov/expedition,
 		/obj/item/clothing/head/beret/solgov/expedition/security,
@@ -314,8 +314,8 @@
 	)
 
 
-/obj/item/storage/box/large/UGNec_gloves
-	name = "gloves box, UGNEC"
+/obj/item/storage/box/large/scgec_gloves
+	name = "gloves box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/gloves/thick/duty/solgov/eng,
 		/obj/item/clothing/gloves/thick/duty/solgov/cmd,
@@ -328,8 +328,8 @@
 	)
 
 
-/obj/item/storage/box/UGNec_department
-	name = "department utility accessories box, UGNEC"
+/obj/item/storage/box/scgec_department
+	name = "department utility accessories box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/department/command,
 		/obj/item/clothing/accessory/solgov/department/engineering,
@@ -342,8 +342,8 @@
 	)
 
 
-/obj/item/storage/box/UGNec_department_service
-	name = "department service accessories box, UGNEC"
+/obj/item/storage/box/scgec_department_service
+	name = "department service accessories box, SCGEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/department/command/service,
 		/obj/item/clothing/accessory/solgov/department/engineering/service,

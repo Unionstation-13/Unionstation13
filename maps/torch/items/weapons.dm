@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/pistol/m22f
 	name = "military pistol"
-	desc = "A Hephaestus Industries M22F. A large pistol issued as an UGNDF service weapon."
+	desc = "A Hephaestus Industries M22F. A large pistol issued as an SCGDF service weapon."
 	magazine_type = /obj/item/ammo_magazine/pistol/double
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'maps/torch/icons/obj/weapons.dmi'
@@ -16,7 +16,7 @@
 
 /obj/item/gun/projectile/pistol/m19
 	name = "military pistol"
-	desc = "A Hephaestus Industries M19. A light pistol issued as an UGNDF service weapon."
+	desc = "A Hephaestus Industries M19. A light pistol issued as an SCGDF service weapon."
 	magazine_type = /obj/item/ammo_magazine/pistol
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	banned_magazines = list(

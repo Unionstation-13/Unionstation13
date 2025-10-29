@@ -98,7 +98,7 @@
 	<li>[generate_system_name()]</li>
 	<br>
 	Priority targets are artifacts of uncontacted alien species and signal sources of unknown origin.<br>
-	None of these systems are claimed by any entity recognized by the UGN, so you have full salvage rights on any derelicts discovered.<br>
+	None of these systems are claimed by any entity recognized by the SCG, so you have full salvage rights on any derelicts discovered.<br>
 	Investigate and mark any prospective colony worlds as per usual procedures.<br>
 	There is no UGN presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
 	The current docking code is: [torch.docking_codes]<br>

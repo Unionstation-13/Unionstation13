@@ -8,7 +8,7 @@
 	set_access(access_heads, override = 0)
 
 /datum/computer_file/report/recipient/sec/incident
-	form_name = "UGN-SEC-01"
+	form_name = "SCG-SEC-01"
 	title = "Security Incident Report"
 	available_on_ntnet = TRUE
 
@@ -31,7 +31,7 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/investigation
-	form_name = "UGN-SEC-02"
+	form_name = "SCG-SEC-02"
 	title = "Investigation Report"
 	available_on_ntnet = TRUE
 
@@ -49,7 +49,7 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/evidence
-	form_name = "UGN-SEC-02b"
+	form_name = "SCG-SEC-02b"
 	title = "Evidence and Property Form"
 	available_on_ntnet = TRUE
 
@@ -68,7 +68,7 @@
 	temp_field.set_access(access_edit = list(access_brig, access_forensics_lockers))
 
 /datum/computer_file/report/recipient/sec/statement
-	form_name = "UGN-SEC-02c"
+	form_name = "SCG-SEC-02c"
 	title = "Written Statement"
 	available_on_ntnet = TRUE
 
@@ -91,7 +91,7 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/arrest
-	form_name = "UGN-SEC-03"
+	form_name = "SCG-SEC-03"
 	title = "Arrest Report"
 	available_on_ntnet = TRUE
 
@@ -123,7 +123,7 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/restraining
-	form_name = "UGN-SEC-04"
+	form_name = "SCG-SEC-04"
 	title = "Restraining Order"
 	available_on_ntnet = TRUE
 
@@ -140,7 +140,7 @@
 	set_access(access_edit = access_hos)
 
 /datum/computer_file/report/recipient/sec/ltc
-	form_name = "UGN-SEC-05"
+	form_name = "SCG-SEC-05"
 	title = "License to Carry"
 	available_on_ntnet = TRUE
 

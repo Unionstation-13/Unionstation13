@@ -8,7 +8,7 @@
 /obj/structure/closet/secure_closet/ert/WillContain()
 	return list(
 		/obj/item/storage/backpack/dufflebag,
-		/obj/item/clothing/under/UGNa/utility/urban,
+		/obj/item/clothing/under/scga/utility/urban,
 		/obj/item/storage/wallet/poly,
 		/obj/item/device/radio/headset/ert/alt,
 		/obj/item/device/radio/headset/ert,
@@ -34,7 +34,7 @@
 /obj/structure/closet/secure_closet/ert/leader/WillContain()
 	return list(
 		/obj/item/storage/backpack/dufflebag,
-		/obj/item/clothing/under/UGNa/utility/urban,
+		/obj/item/clothing/under/scga/utility/urban,
 		/obj/item/storage/wallet/poly,
 		/obj/item/device/radio/headset/ert/alt,
 		/obj/item/device/radio/headset/ert,

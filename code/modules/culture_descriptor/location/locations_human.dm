@@ -92,7 +92,7 @@
 	description = "Pirx Prime is a colonized super-earth planet, located in the Pirx system. Covered in a jungle of towering, exotic plantlife, Pirx is closer to unexplored \
 	space compared to most other colonies. Pirx has suffered from this disconnect, with few corporate investors and fewer immigrants. As such, most of the planet remains \
 	unexplored. With the recent resurgence of the Expeditionary Corps, Pirx has found itself rapidly thrust into a position as both a sort of supply and fuel stop for EC vessels. \
-	as well as a training ground for prospective explorers. The long-term neglect and sudden exploitation has fostered a bitter attitude towards the UGN and the EC in many Pirxans."
+	as well as a training ground for prospective explorers. The long-term neglect and sudden exploitation has fostered a bitter attitude towards the SCG and the EC in many Pirxans."
 	capital = "Yuodu"
 	economic_power = 0.7
 
@@ -100,7 +100,11 @@
 	name = HOME_SYSTEM_BRAHE
 	distance = "41 light years"
 	description = "Brahe is an ocean planet in the Copernicus system. First colonized alongside Iolaus by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
+<<<<<<< HEAD
 	and the Ares Confederation. Since contact was reestablished during the formation of the United Galactic Nations, Brahe has been a strong supporter of the UGN, and an advocate for further expansion into \
+=======
+	and the Ares Confederation. Since contact was reestablished during the formation of the Sol Central Government, Brahe has been a strong supporter of the SCG, and an advocate for further expansion into \
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	unexplored space. With only 12% of the planet's surface being usable landmass, Brahe's economy is mostly founded on the tourism that the extensive coasts attract, and research done \
 	in surface and underwater labs. The Zeng-Hu corporation in particular has strong ties to Brahe's genetic research labs, and many Brahese government officials hold positions within the company."
 	capital = "New Aarhus"
@@ -111,15 +115,20 @@
 	distance = "41 light years"
 	description = "Iolaus is a super-earth in the Copernicus system. First colonized alongside Brahe by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
 	and the Ares Confederation. During this period of time, Iolaus kept the two fledgling colonies alive, producing enough food and supplies for the two planets to scrape by. Since contact was reestablished \
+<<<<<<< HEAD
 	during the formation of the United Galactic Nations, Iolaus has taken efforts to retain some independence while taking advantage of the reintroduction of trade to the system. As a result, Iolaus imports \
 	tend to be restricted to only what they cannot produce themselves, while Iolan exports are shipped across the entirety of UGN space."
+=======
+	during the formation of the Sol Central Government, Iolaus has taken efforts to retain some independence while taking advantage of the reintroduction of trade to the system. As a result, Iolaus imports \
+	tend to be restricted to only what they cannot produce themselves, while Iolan exports are shipped across the entirety of SCG space."
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	capital = "Nemea"
 	economic_power = 1.0
 
 /singleton/cultural_info/location/human/gaia
 	name = HOME_SYSTEM_GAIA
 	distance = "14 light years"
-	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the UGN and the GCC. \
+	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the SCG and the GCC. \
 	It is an agricultural world, though the recent Gaia Conflict has left the planet's surface scarred. The planet is divided into the \
 	Sol-Controlled <b>Gaian Administrative Area</b> and Independent-Backed <b>Protectorate of Gaia</b>, with the International City of New Venice remaining a neutral zone inside the DMZ. \
 	The planet's population remains divided even 10 years after the Gaian Conflict. While Gaia is divided, the current Mayor of New Venice serves as a vital mediator between both sides. \

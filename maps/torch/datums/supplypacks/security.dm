@@ -2,7 +2,7 @@
 	name = "Security"
 
 /singleton/hierarchy/supply_pack/security/lightarmorsol
-	name = "Armor - UGN light"
+	name = "Armor - SCG light"
 	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/sol = 4,
 					/obj/item/clothing/head/helmet/solgov =4)
 	cost = 30

@@ -11596,10 +11596,10 @@
 "Oh" = (
 /obj/structure/table/standard,
 /obj/machinery/light,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 4
 	},
 /obj/floor_decal/corner/paleblue{

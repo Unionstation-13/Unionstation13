@@ -9,9 +9,9 @@
 	name = "fleet challenge coin"
 	icon_state = "fleet"
 	desc = {"\
-		A challenge coin distributed by the UGN Fleet. On \
+		A challenge coin distributed by the SCG Fleet. On \
 		the front is the insignia of the Fleet, and on the back \
-		is the emblem of the UGN inscribed with various dates.\
+		is the emblem of the SCG inscribed with various dates.\
 	"}
 
 
@@ -20,7 +20,7 @@
 	name = "armsmen challenge coin"
 	icon_state = "armsmen"
 	desc = {"\
-		A challenge coin distributed by the UGNF Naval \
+		A challenge coin distributed by the SCGF Naval \
 		Armsmen. On the front is an austere emblem of the Naval Armsmen, \
 		and on the back is a saluting naval armsman with the text, \
 		"WE GO WHERE WE'RE NEEDED.\
@@ -32,7 +32,7 @@
 	name = "gaia conflict challenge coin"
 	icon_state = "gaia"
 	desc = {"\
-		A challenge coin distributed by the UGN Defense Forces \
+		A challenge coin distributed by the SCG Defense Forces \
 		to commemorate the Gaia Conflict. On the front is the roman \
 		numeral IV in front of a roundel of Gaian national colors, \
 		and on the back is a dove with an olive branch.\

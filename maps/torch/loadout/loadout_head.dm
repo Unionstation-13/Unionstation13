@@ -96,7 +96,7 @@
 
 /datum/gear/head/fleetberet
 	display_name = "Fleet branch beret selection"
-	description = "A beret denoting service in one of the fleets within the UGN Fleet."
+	description = "A beret denoting service in one of the fleets within the SCG Fleet."
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
 	allowed_branches = list(
 		/datum/mil_branch/fleet
@@ -115,7 +115,7 @@
 
 /datum/gear/head/ECberet
 	display_name = "EC sections beret selection"
-	description = "A beret denoting service in one of the branches within the UGN EC."
+	description = "A beret denoting service in one of the branches within the SCG EC."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -145,7 +145,7 @@
 /datum/gear/tactical/armor_tag_flag/New()
 	..()
 	var/list/options = list()
-	options["UGN flag"] = /obj/item/clothing/accessory/armor_tag/solgov
+	options["SCG flag"] = /obj/item/clothing/accessory/armor_tag/solgov
 	options["EC flag"] = /obj/item/clothing/accessory/armor_tag/solgov/ec
 	options["Fleet flag"] =  /obj/item/clothing/accessory/armor_tag/solgov/fleet
 	gear_tweaks += new /datum/gear_tweak/path (options)

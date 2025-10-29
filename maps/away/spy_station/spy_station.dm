@@ -71,7 +71,7 @@
 /datum/map_template/ruin/away_site/spy_station
 	name = "Spy Station"
 	id = "awaysite_spy_station"
-	description = "UGNDF station that investigates sensor contacts in deep space."
+	description = "SCGDF station that investigates sensor contacts in deep space."
 	suffixes = list("spy_station/spy_station.dmm")
 	spawn_cost = 1
 	area_usage_test_exempted_root_areas = list(/area/spy_station)
@@ -99,7 +99,7 @@
 
 /obj/item/spy_station_disk1
 	name = "disk"
-	desc = "A dusty disk. Its label says: \"Deliver to UGN Fleet Command!\". Its content is encrypted with quantum cryptography methods."
+	desc = "A dusty disk. Its label says: \"Deliver to SCG Fleet Command!\". Its content is encrypted with quantum cryptography methods."
 	icon = 'icons/obj/datadisks.dmi'
 	icon_state = "nucleardisk"
 	item_state = "card-id"

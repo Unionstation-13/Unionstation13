@@ -1,4 +1,4 @@
-/singleton/cultural_info/faction/UGN
+/singleton/cultural_info/faction/scg
 	name = FACTION_UNITED_GALACTIC_NATIONS
 	description = "The United Galactic Nations, abbreviated the UGN, is a collection of independant councillers founded on Pax. \
 	They rule the sole democracy in this grim time. It is the commanding force of the Peacekeeper Division, as well as a managment for the many overreaching conglomerates of this galaxy. \
@@ -9,7 +9,7 @@
 
 
 
-/singleton/cultural_info/faction/UGN/fleet
+/singleton/cultural_info/faction/scg/fleet
 	name = FACTION_UGNFLEET
 	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
 	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
@@ -35,13 +35,13 @@
 	economic_power = 1.4
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
-	description = "The Expeditionary Corps is an UGN agency tasked with exploration of uncharted space, uncharted worlds, \
+	description = "The Expeditionary Corps is an SCG agency tasked with exploration of uncharted space, uncharted worlds, \
 	mineralogy surveys, xenoarchaeological studies, and more recently, the discovery of new alien life. \
 	The EC performs a variety of tasks: discovering and cataloging stellar objects in Observatory, \
 	initial surveys of prospective colony sites, in-depth exploration of uncharted worlds, staffing \
 	long-term scientific outposts, and studying anomalies and xenoarcheological sites. \
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
-	Any UGN citizen of age (18 and older) with no outstanding UGN-wide warrants can sign up for a 2-year contract. \
+	Any SCG citizen of age (18 and older) with no outstanding SCG-wide warrants can sign up for a 2-year contract. \
 	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc).  "
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 

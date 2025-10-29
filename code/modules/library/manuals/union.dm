@@ -15,7 +15,7 @@
 	<p>All workers have the right to join a genuine trade union. Union organised workplaces are safer workplaces.</p>
 	<h2>2. Security Levels</h2>
 	<hr>
-	<p>On stations or vessels employing the standard UGN Alert Level protocol, the following conditions apply:</p>
+	<p>On stations or vessels employing the standard SCG Alert Level protocol, the following conditions apply:</p>
 	<ul>
 	<li>On green alert, all particulars of this charter are considered valid and applicable.</li>
 	<li>Above green alert, union representatives are not permitted to conduct workplace inspections and are advised, but not required, to cease all union meetings or strike proceedings.</li>

@@ -20,7 +20,7 @@
 	"}
 	antag_slogans = {"\
 		Don't believe the rumors. SweatMAX absolutely employs sweatshop workers.;\
-		The only reason to build muscle is to use them against the capitalist UGN scum!;\
+		The only reason to build muscle is to use them against the capitalist SCG scum!;\
 		Want to hide from the Solarian authorities? Don't worry, they don't know what the inside of a gym looks like.\
 	"}
 	prices = list(

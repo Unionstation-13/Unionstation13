@@ -32,84 +32,84 @@
 	)
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
-/obj/item/passport/UGN
+/obj/item/passport/scg
 	name = "\improper UGN passport"
-	icon_state = "passport_UGN"
+	icon_state = "passport_scg"
 	desc = "A passport from the United Galactic Nations."
 
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Venus, within United Galactic Nations space."
 
 /obj/item/passport/mars
 	name = "\improper Mars passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Mars, within United Galactic Nations space."
 
 /obj/item/passport/phobos
 	name = "\improper Phobos passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Phobos, within United Galactic Nations space."
 
 /obj/item/passport/ceres
 	name = "\improper Ceres passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Ceres, within United Galactic Nations space."
 
 /obj/item/passport/pluto
 	name = "\improper Pluto passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Pluto, within United Galactic Nations space."
 
 /obj/item/passport/tiamat
 	name = "\improper Tiamat passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Tiamat, within United Galactic Nations space."
 
 /obj/item/passport/eos
 	name = "\improper Eos passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Eos, within United Galactic Nations space."
 
 /obj/item/passport/ceti_epsilon
 	name = "\improper Ceti Epsilon passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Ceti Epsilon, within United Galactic Nations space."
 
 /obj/item/passport/iolaus
 	name = "\improper Iolaus passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Iolaus, within United Galactic Nations space."
 
 /obj/item/passport/pirx
 	name = "\improper Pirx passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Pirx, within United Galactic Nations space."
 
 /obj/item/passport/tadmor
 	name = "\improper Tadmor passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Tadmor, within United Galactic Nations space."
 
 /obj/item/passport/brahe
 	name = "\improper Brahe passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Brahe, within United Galactic Nations space."
 
 /obj/item/passport/saffar
 	name = "\improper Saffar passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Saffar, within United Galactic Nations space."
 
 /obj/item/passport/theia
 	name = "\improper Theia passport"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "A passport from Theia, within United Galactic Nations space."
 
 /obj/item/passport/south_gaia
 	name = "\improper Gaia deleted port"
-	icon_state = "passport_UGN2"
+	icon_state = "passport_scg2"
 	desc = "NULL"
 
 /obj/item/passport/iccg

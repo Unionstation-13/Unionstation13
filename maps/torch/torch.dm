@@ -7,9 +7,9 @@
 	#include "../../packs/factions/commonwealth/_pack.dm"
 	#include "../../packs/factions/fa/_pack.dm"
 	#include "../../packs/factions/iccgn/_pack.dm"
-	#include "../../packs/factions/UGNa/_pack.dm"
-	#include "../../packs/factions/UGNec/_pack.dm"
-	#include "../../packs/factions/UGNf/_pack.dm"
+	#include "../../packs/factions/scga/_pack.dm"
+	#include "../../packs/factions/scgec/_pack.dm"
+	#include "../../packs/factions/scgf/_pack.dm"
 
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
@@ -125,7 +125,7 @@
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/suit_storage.dm"
 
-	#include "outfits/UGNec.dm"
+	#include "outfits/scgec.dm"
 
 	#include "robot/module_flying_surveyor.dm"
 

@@ -8,18 +8,18 @@
 	description = "Token photograph from E-14b."
 	path = /obj/item/photomaxim
 
-/datum/gear/trinket/UGN_challenge_coin
+/datum/gear/trinket/scg_challenge_coin
 	display_name = "sol challenge coin selection"
 	description = "A selection of challenge coins for identification, collection or simply bragging rights."
 	path = /obj/item/material/coin/challenge
 	cost = 1
 
 
-/datum/gear/trinket/UGN_challenge_coin/New()
+/datum/gear/trinket/scg_challenge_coin/New()
 	..()
 	var/list/options = list()
 	options["fleet"] = /obj/item/material/coin/challenge/sol/fleet
-	options["army"] = /obj/item/material/coin/challenge/UGNa/army
+	options["army"] = /obj/item/material/coin/challenge/scga/army
 	options["armsmen"] = /obj/item/material/coin/challenge/sol/armsmen
 	options["gaia conflict"] = /obj/item/material/coin/challenge/sol/gaia
 	options["observatory"] = /obj/item/material/coin/challenge/sol/observatory

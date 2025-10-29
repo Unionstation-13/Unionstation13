@@ -977,17 +977,17 @@ GLOBAL_LIST_AS(random_backpacks, list(
 				/obj/item/spacecash/bundle/c100 = 2,
 				/obj/item/spacecash/bundle/c1000 = 1)
 
-/obj/random/documents // top secret documents for UGN eyes only
+/obj/random/documents // top secret documents for SCG eyes only
 	name = "random secret documents"
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"
 
 /obj/random/documents/spawn_choices()
 	return list (
-		/obj/item/documents/UGN/verified = 7,
-		/obj/item/documents/UGN/red =      7,
-		/obj/item/documents/UGN/blue =     7,
-		/obj/item/documents/UGN/brains =   7
+		/obj/item/documents/scg/verified = 7,
+		/obj/item/documents/scg/red =      7,
+		/obj/item/documents/scg/blue =     7,
+		/obj/item/documents/scg/brains =   7
 	)
 
 /obj/random/maintenance //Clutter and loot for maintenance and away missions

@@ -7,7 +7,7 @@
 	desc = "U.G.N. Titen - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - United Galactic Nations - 'Never was anything great achieved without danger.'"
 
 
-/obj/floor_decal/UGNlogo
+/obj/floor_decal/scglogo
 	alpha = 230
 	icon = 'maps/torch/icons/obj/solgov_floor.dmi'
 	icon_state = "center"

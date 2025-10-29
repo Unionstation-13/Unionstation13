@@ -12069,7 +12069,7 @@
 /area/command/disperser)
 "DI" = (
 /obj/structure/table/standard,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG,
 /obj/item/deck/cards,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)

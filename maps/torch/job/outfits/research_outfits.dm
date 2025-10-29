@@ -28,9 +28,9 @@
 	id_types = list(/obj/item/card/id/torch/crew/research/scientist)
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/assist/solgov
-	name = OUTFIT_JOB_NAME("Research Assistant - UGN")
+	name = OUTFIT_JOB_NAME("Research Assistant - SCG")
 	head = /obj/item/clothing/head/beret/solgov/research
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
-	name = OUTFIT_JOB_NAME("Scientist - UGN")
+	name = OUTFIT_JOB_NAME("Scientist - SCG")
 	head = /obj/item/clothing/head/beret/solgov/research

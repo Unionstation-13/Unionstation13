@@ -1,5 +1,5 @@
 /proc/generate_system_name()
-	return "[pick("Gilese","GSC", "Luyten", "GJ", "HD", "UGNECO")][prob(10) ? " Eridani" : ""] [rand(100,999)]"
+	return "[pick("Gilese","GSC", "Luyten", "GJ", "HD", "SCGECO")][prob(10) ? " Eridani" : ""] [rand(100,999)]"
 
 /proc/generate_planet_name()
 	return "[capitalize(pick(GLOB.last_names))]-[pick(GLOB.greek_letters)]"

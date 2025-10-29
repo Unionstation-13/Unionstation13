@@ -1,9 +1,9 @@
 /datum/computer_file/report/recipient/medical
 	logo = "\[solcrest\]"
-	form_name = "UGN-MED-00"
+	form_name = "SCG-MED-00"
 
 /datum/computer_file/report/recipient/medical/incidentreport
-	form_name = "UGN-MED-04"
+	form_name = "SCG-MED-04"
 	title = "Medical Incident Report"
 	available_on_ntnet = TRUE
 
@@ -22,7 +22,7 @@
 	set_access(access_surgery)
 
 /datum/computer_file/report/recipient/medical/checkup
-	form_name = "UGN-MED-013b"
+	form_name = "SCG-MED-013b"
 	title = "Regular Health Checkup Checklist"
 	available_on_ntnet = TRUE
 
@@ -46,7 +46,7 @@
 	set_access(access_edit = access_medical_equip)
 
 /datum/computer_file/report/recipient/medical/autopsy
-	form_name = "UGN-MED-015"
+	form_name = "SCG-MED-015"
 	title = "Autopsy Report"
 	available_on_ntnet = TRUE
 

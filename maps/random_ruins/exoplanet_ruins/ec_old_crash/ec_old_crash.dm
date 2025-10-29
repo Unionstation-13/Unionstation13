@@ -1,4 +1,4 @@
-#include "../../../../packs/factions/UGNec/_pack.dm"
+#include "../../../../packs/factions/scgec/_pack.dm"
 
 /datum/map_template/ruin/exoplanet/ec_old_crash
 	name = "Expeditionary Ship"

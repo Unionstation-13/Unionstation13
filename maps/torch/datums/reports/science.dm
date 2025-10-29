@@ -1,5 +1,5 @@
 /datum/computer_file/report/recipient/sci/anomaly
-	form_name = "UGN-SCI-1546"
+	form_name = "SCG-SCI-1546"
 	title = "Anomalistic Object Report"
 	logo = "\[eclogo\]\[logo\]"
 	available_on_ntnet = TRUE
@@ -21,3 +21,4 @@
 	add_field(/datum/report_field/pencode_text, "Generalized Overview")
 	add_field(/datum/report_field/simple_text, "Approximate Age of AO")
 	add_field(/datum/report_field/simple_text, "Threat Level of AO")
+

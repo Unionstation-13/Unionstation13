@@ -40,7 +40,7 @@
 	name = "ancient Expeditionary Corps patch"
 	desc = {"\
 		A shield shaped blue and green patch with a purple chevron, signifying service \
-		in the bygone Expeditionary Corps from before the foundation of the UGN.\
+		in the bygone Expeditionary Corps from before the foundation of the SCG.\
 	"}
 	icon_state = "explorer"
 	overlay_state = "explorer_worn"

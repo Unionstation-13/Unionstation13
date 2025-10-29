@@ -15,7 +15,7 @@
 	antag_slogans = {"\
 		Why you'd wear Solarian clothes is beyond me, you look ridiculous.;\
 		Forcing others to stare at that solarian outfit is an act of terrorism!;\
-		Dress your best as you bring down the UGN, make history in style!;\
+		Dress your best as you bring down the SCG, make history in style!;\
 		Our clothes are 100% sweatshop guaranteed, for your convienience!\
 	"}
 	prices = list(

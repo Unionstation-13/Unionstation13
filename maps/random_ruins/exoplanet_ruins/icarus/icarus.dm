@@ -86,7 +86,7 @@
 
 /obj/item/icarus_disk
 	name = "disk"
-	desc = "A dusty disk. Its label says: \"Deliver to UGN Expeditionary Corps Command!\". Its content is encrypted with quantum cryptography methods."
+	desc = "A dusty disk. Its label says: \"Deliver to SCG Expeditionary Corps Command!\". Its content is encrypted with quantum cryptography methods."
 	icon = 'icons/obj/datadisks.dmi'
 	icon_state = "nucleardisk"
 	item_state = "card-id"
@@ -100,9 +100,9 @@
 
 /obj/item/gun/projectile/pistol/m22f/icarus
 	name = "rusty military pistol"
-	desc = "A Hephaestus Industries M22F. A large pistol issued as an UGNDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
+	desc = "A Hephaestus Industries M22F. A large pistol issued as an SCGDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
 
-//UGN deco
+//SCG deco
 
 /obj/structure/sign/icarus_dedicationplaque
 	name = "\improper SEV Icarus dedication plaque"
@@ -116,8 +116,13 @@
 	icon_state = "ecplaque"
 
 /obj/structure/sign/double/icarus_solgovflag
+<<<<<<< HEAD
 	name = "United Galactic Nations Flag"
 	desc = "A faded UGN flag. It appears to have been radiation bleached."
+=======
+	name = "Sol Central Government Flag"
+	desc = "A faded SCG flag. It appears to have been radiation bleached."
+>>>>>>> parent of 9d2908a695c (changed all SCG to UGN)
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 
 /obj/structure/sign/double/icarus_solgovflag/left
@@ -127,14 +132,14 @@
 	icon_state = "solgovflag-right"
 
 /obj/structure/sign/icarus_solgov
-	name = "\improper Faded UGN seal"
+	name = "\improper Faded SCG seal"
 	desc = "A sign which signifies who this vessel belongs to. This one is faded."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "solgovseal"
 
-/obj/floor_decal/icarus_UGNlogo
+/obj/floor_decal/icarus_scglogo
 	alpha = 230
-	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus_UGNlogo.dmi'
+	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus_scglogo.dmi'
 	icon_state = "center"
 
 //Paper

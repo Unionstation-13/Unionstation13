@@ -1601,7 +1601,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/item/clothing/head/beret/mininghome_UGN,
+/obj/item/clothing/head/beret/mininghome_scg,
 /turf/simulated/floor/steel_dirty,
 /area/map_template/mininghome_living_north)
 "nG" = (

@@ -181,7 +181,7 @@
 /area/map_template/oldlab2/recandlockers)
 "bk" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 7;
 	pixel_y = 5
 	},
@@ -337,15 +337,15 @@
 /area/map_template/oldlab2/living2)
 "cq" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 7;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = -1;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = -5;
 	pixel_y = 9
 	},
@@ -5567,7 +5567,7 @@
 /area/map_template/oldlab2/engineerhall)
 "DB" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/UGN{
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = 7;
 	pixel_y = 5
 	},

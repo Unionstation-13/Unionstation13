@@ -275,15 +275,15 @@ AI MODULES
 	origin_tech = list(TECH_DATA = 3, TECH_MATERIAL = 4)
 	laws = new/datum/ai_laws/nanotrasen
 
-/******************** UGN ********************/
+/******************** SCG ********************/
 
 /obj/item/aiModule/solgov // aka Torch default
-	name = "\improper'UGN Expeditionary' Core AI Module"
-	desc = "An 'UGN Expeditionary' Core AI Module: 'Reconfigures the AI's core laws.'."
+	name = "\improper'SCG Expeditionary' Core AI Module"
+	desc = "An 'SCG Expeditionary' Core AI Module: 'Reconfigures the AI's core laws.'."
 	origin_tech = list(TECH_DATA = 3, TECH_MATERIAL = 4)
 	laws = new/datum/ai_laws/solgov
 
-/******************** UGN Aggressive ********************/
+/******************** SCG Aggressive ********************/
 
 /obj/item/aiModule/solgov_aggressive
 	name = "\improper 'Military' Core AI Module"
