@@ -60,8 +60,8 @@
 
 
 
-/singleton/cultural_info/faction/remote/nanotrasen
-	name = FACTION_NANOTRASEN
+/singleton/cultural_info/faction/remote/neotrasen
+	name = FACTION_NEOTRASEN
 	description = "The NeoTrasen Corporation is a megaconglomerate entity that controls a\ majority of the management industry. Its employees are almost always\
 members of command or heads of departments, as it prides itself\
 on a capable workforce that is both ingenious and industrious\
@@ -123,8 +123,8 @@ they used to silence dissenters."
 
 /singleton/cultural_info/faction/saare
 // merge into Peacekeeper
-	name = FACTION_SAARE
-	description = "WALDO (Weaponized Antindo Liberation Defensive Organization)\
+	name = FACTION_WALDO
+	description = "WALDO (Weaponized Antido Liberation Defensive Organization)\
 is an initiative founded in 2449 by Dr. Edward Waldo in spite of the Antido\ dictatorship. It is known for recruiting sleeper agents to its cause, and thus\
 all members of WALDO are genuinely benign unless the words Where is WALDO? Are spoken; then they activate into a trance and will do the bidding of all WALDO higher-ups. All WALDO members carry an unlicensed firearm on\ them at all times. Their identity as WALDO conspirators cannot be known\
 to the general public, lest the UGN execute them for terrorism."
@@ -132,7 +132,7 @@ to the general public, lest the UGN execute them for terrorism."
 
 
 /singleton/cultural_info/faction/dais
-	name = FACTION_DAIS
+	name = FACTION_ABCDEFG
 	description = "ABCDEFG, or Algebraic Boolean Coordinated Distribution Effort for Frontier Grounds, is a hyper advanced anonymously owned tech conglomerate.\
 	Founded in an unknown year, it quickly rose to the top with its inventions of hi-tech consoles, tablets, and PDAs.\
 	All electronics on the station, including the cybersecurity network, are owned and processed through ABCDEFG's servers.\
