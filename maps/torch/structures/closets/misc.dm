@@ -47,7 +47,7 @@
 	)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper Sol Central Government representative's locker"
+	name = "\improper United Galactic Nations representative's locker"
 	req_access = list(access_representative)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/sol/rep
 
@@ -65,6 +65,9 @@
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
+		/obj/item/stamp/rep,
+		/obj/item/stamp/rep/approved,
+		/obj/item/stamp/rep/denied,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel, /obj/item/storage/backpack/messenger)),
 	)
 
