@@ -25,7 +25,6 @@
 #define FACTION_ABCDEFG           "Algebraic Boolean Coordinated Distribution Effort for Frontier Grounds"
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
-#define FACTION_SPACECOPS  "UGN Peacekeeper Corps"
 #define FACTION_UNION  "The Union"
 #define FACTION_FORMERUNION "Former Union Citizen"
 

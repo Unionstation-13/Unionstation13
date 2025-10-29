@@ -46,17 +46,6 @@
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
-/singleton/cultural_info/faction/police
-// Merge  this into Peacekeepers
-	name = FACTION_SPACECOPS
-	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing United Galactic Nations law, \
-	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
-	Some agents embedded with other organizations (e.g. an <l>Expeditionary Corps</l> ship) and are expected to answer to their superiours from those organizations. \
-	Notable units are: Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
-	Special Investigations (sensitive and urgent cases) and the Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
-	The contractor SFP \"Trackers\" are also used find and arrest low-profile fugitives."
-
-
 
 
 
