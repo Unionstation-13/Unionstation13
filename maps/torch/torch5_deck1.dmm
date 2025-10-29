@@ -4147,7 +4147,7 @@
 /obj/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	id_tag = "inf_stage";
-	name = "Reception"
+	name = "Emergency Care Reception"
 	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -6393,6 +6393,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/structure/bed/chair{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "aqM" = (
@@ -7281,7 +7284,9 @@
 /area/medical/chemistry)
 "avq" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor/northright,
+/obj/machinery/door/window/brigdoor/northright{
+	dir = 2
+	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -7290,7 +7295,13 @@
 	name = "Infirmary Window Lockdown";
 	opacity = 0
 	},
-/turf/space,
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access = list("ACCESS_CHEMISTRY");
+	name = "Chemistry Reception";
+	dir = 1
+	},
+/obj/item/material/bell,
+/turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "avs" = (
 /obj/structure/table/rack{
@@ -16575,6 +16586,9 @@
 	dir = 8;
 	pixel_x = 21
 	},
+/obj/structure/bed/chair{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "dYb" = (
@@ -18224,6 +18238,9 @@
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 10
+	},
+/obj/structure/bed/chair/office/comfy{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -20698,6 +20715,9 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 10
 	},
+/obj/structure/bed/chair/office/comfy{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "jDX" = (
@@ -21267,7 +21287,10 @@
 	id_tag = "Brig_Shutters_2"
 	},
 /obj/machinery/door/window/brigdoor/westleft,
-/obj/machinery/door/window/brigdoor/eastright,
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access = list("ACCESS_MEDICAL");
+	name = "Smart Fridge Access"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig)
 "koX" = (
@@ -21599,6 +21622,7 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 5
 	},
+/obj/structure/bed/chair/office/comfy,
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "kNb" = (
@@ -24662,9 +24686,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "ovb" = (
-/obj/wallframe_spawn/reinforced/polarized/no_grille{
-	id = "Reception_medical"
-	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 4;
@@ -24673,7 +24694,11 @@
 	name = "Infirmary Public Hallway Lockdown";
 	opacity = 0
 	},
-/turf/space,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/eastleft,
+/obj/machinery/door/window/westleft,
+/obj/item/material/bell,
+/turf/simulated/floor/tiled/white,
 /area/medical/staging)
 "ovZ" = (
 /obj/structure/sign/warning/nosmoking_1{
@@ -25739,7 +25764,7 @@
 /area/security/detectives_office)
 "pzZ" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/prepainted,
+/turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "pAb" = (
 /obj/machinery/newscaster{
@@ -25835,6 +25860,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
+"pFB" = (
+/obj/machinery/light_switch{
+	pixel_x = -22;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway)
 "pGb" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -26265,6 +26297,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
+"qgz" = (
+/obj/floor_decal/corner/paleblue{
+	dir = 6
+	},
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway)
 "qib" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/brig)
@@ -26379,9 +26420,6 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "qrq" = (
-/obj/structure/bed/chair/office/comfy{
-	dir = 1
-	},
 /obj/floor_decal/corner/paleblue{
 	dir = 10
 	},
@@ -29083,6 +29121,9 @@
 /obj/item/modular_computer/telescreen/preset/medical{
 	pixel_x = 32
 	},
+/obj/structure/bed/chair{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "tgs" = (
@@ -30668,7 +30709,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/wall/prepainted,
+/obj/machinery/door/airlock/multi_tile/glass/medical{
+	id_tag = "inf_stage";
+	name = "Lobby"
+	},
+/turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "vIP" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -31279,6 +31324,19 @@
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
 /area/security/brig)
+"xpZ" = (
+/obj/floor_decal/corner/paleblue{
+	dir = 6
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access = list("ACCESS_MEDICAL");
+	name = "Smart Fridge Access"
+	},
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway)
 "xqk" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/firealarm{
@@ -53252,7 +53310,7 @@ aed
 afe
 agd
 uKs
-owb
+pFB
 owb
 owb
 acz
@@ -53859,8 +53917,8 @@ afh
 aqL
 dXM
 tgg
-agc
-agc
+xpZ
+qgz
 acz
 hdb
 igp
