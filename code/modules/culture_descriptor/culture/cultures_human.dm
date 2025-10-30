@@ -119,16 +119,7 @@
 	economic_power = 0.9
 	language = LANGUAGE_SPACER
 
-// NON SCG BELOW
-
-/singleton/cultural_info/culture/human/magnitka
-	name = CULTURE_HUMAN_MAGNITKA
-	description = "Magnitka often gives birth to rough-hewn, sturdy citizens with its austere political and environmental climate, and many are often well-sought for the \
-	independent (and government) economic and production sectors of the two larger human nations. While it is difficult to acquire residency for a Magnitkan in Solar space due to the hazy political environment, \
-	those who have been a part of the volunteer military force have no chance at all. Employees with Magnitkan blood may belong to the planet's Spacer culture, often at the lower rung of the social ladder - or the more \
-	well connected, upper rung, with outsourcing and in-house job opportunities varying in quality and quantity for both."
-	economic_power = 0.8
-
+// NON UGN BELOW
 /singleton/cultural_info/culture/human/spacer
 	name = CULTURE_HUMAN_SPACER
 	description = "Across all political lines in human space, there are people who are born and raised in the void between worlds. You are from one of the myriad space stations, orbital platforms, long haul freighters, \

@@ -106,20 +106,6 @@
 	capital = "Aeturnis"
 	economic_power = 1.1
 
-/singleton/cultural_info/location/human/magnitka
-	name = HOME_SYSTEM_MAGNITKA
-	distance = "24 light years"
-	description = "Once an independent, industrialized mining and ore processing colony located in the Ursa system, Magnitka is now its own nation-state with various, albeit limited, sectors of economy and product. \
-	Ruled by an oligarchic administrative body, with politicians often being freshly retired service members, Magnitka's history \
-	is marked by civil war up until the 2260s, wherein the civil environment has stabilized for the sake of the planet's cohesion. Even today, a number of rebel groups populate the planet. \
-	Founded by corporations in the 2200s, the overwhelming majority of Magnitka's population is descended from the settlers of a joint-corporate colonization effort from Earth. \
-	Having been on a slow recovery from its economy downturn, Magnitka tends to have a strict domestic economy \
-	specializing in ore processing, arms manufacturing, and skilled outsourced labour. While Magnitka has been historically isolationist, with a tendency towards the culture of the Gilgameshi - \
-	more recently a new, uniquely Magnitkan identity has arisen: severe, pragmatic, and unified in their newfound independence."
-	capital = "Neueifel"
-	economic_power = 0.9
-	ruling_body = "Magnitkan Independence Coalition"
-
 /singleton/cultural_info/location/human/Vindosh
 
 	name = HOME_SYSTEM_VINDOSH
