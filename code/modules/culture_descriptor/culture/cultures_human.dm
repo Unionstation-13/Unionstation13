@@ -31,13 +31,13 @@
 	economic_power = 1.4
 
 /singleton/cultural_info/culture/human/venusian_surfacer
-	name = CULTURE_HUMAN_VENUSLOW
+	name = CULTURE_HUMAN_PAXLOWER
 	description = "You are from the paradise planet of Pax. Wealth inequality has run rampant on the UGN’s capital, and you are certainly one of its products.\
 	You are from the slums or shanty towns that underlook the towering corporate buildings."
 	economic_power = 0.9
 
 /singleton/cultural_info/culture/human/venusian_upper
-	name = CULTURE_HUMAN_PAXLOWER
+	name = CULTURE_HUMAN_VENUSIAN
 	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy: being hotel, casino, resort owners, politicians, bankers or rich retirees."
@@ -62,10 +62,13 @@
 	economic_power = 1.2
 
 /singleton/cultural_info/culture/human/tadmor
-	name = CULTURE_HUMAN_TADMOR
-	description = "Tadmor is one of the SCG's more successful colonial projects, and its culture is rich and dignified as a result. \
-	Mostly living in the fissures of the desert world, Tadmorians are most famous for their cultural Pacifism, with their aversion to participation in \
-	the Gaia Conflict being seen by all residents as either a proud moment or a stain in the planets rich, Mars-rooted history. "
+	name = CULTURE_HUMAN_ANTIDO
+	description = "The Antido people are stuck in a cataclysmic schism between the autocratic\
+	and oppressive Antidian Eighth Reich with their extremist policies and the\
+	corrupt, bloated, so-called egalitarian, and morally ambiguous WALDO\
+	Initiative, both seeking to restore order to the now fractured state. Due to the\
+	state of Antido being an ecologically protected planet, the UGN cannot bomb\
+	the Pole to eradicate the Eighth Reich, and thus the tyranny still continues."
 	economic_power = 1.2
 
 /singleton/cultural_info/culture/human/brahe
@@ -83,25 +86,19 @@
 	economic_power = 0.8
 
 /singleton/cultural_info/culture/human/pirx_high
-	name = CULTURE_HUMAN_PIRXL
-	description = "The owning classes of the Yuodu City Administrative District are often called 'the Lords of Pirx' due to their domination of the cities property, government, utilities \
-	and institutions. Disconnect from the Solar Core and years of unchallenged ownership has led them to become largely conservative and reactionary, with emphasis placed on \
-	traditional ways of life and family legacy."
-	economic_power = 1.1
+	name = CULTURE_HUMAN_PIRXABC
+	description = "The ABCDEFG Corporation workers on Pirx, better known as The Storks due to\
+	their tendency to abandon their children to the lower levels of the cities are the\
+	ruling class of the Pirx Planetary Administration, and control the planets laws\
+	almost completely due to a lack of UGN presence."
+	economic_power = 1.9
 
 /singleton/cultural_info/culture/human/pirx_bug
-	name = CULTURE_HUMAN_PIRXB
-	description = "The Bugeaters, named for the prevalence of insect protien within the Yuodu City Administrative District, make up the majority of the population of Pirx Prime. \
-	Renting and working the real estate within the tented canyon, they are known for speaking in a slurred, exotic dialect that makes them incredibly distinct. Their domestic diets and \
-	fashion make them recognizable as outsiders to the majority of Solar citizens."
-	economic_power = 0.8
-
-/singleton/cultural_info/culture/human/pirx_frontier
-	name = CULTURE_HUMAN_PIRXF
-	description = "The Pirx Frontier Coalition is often considered the last frontier of Sol space. Known for a rugged sense of adventure and a connection to nature, the people who inhabit \
-	the uncharted jungles of Pirx Prime are often considered backwater in terms of technology, education, and customs. Their existence is shaped by the warm air of the Basking Tree rainforest that \
-	dominates the green planet, and the myriad of exotic life found in its freshwater system."
-	economic_power = 0.7
+	name = CULTURE_HUMAN_PIRXS
+	description = "The Solus are an organized crime group living on Pirx, ruled by a clan nearly a\
+	century old. They conduct seasonal raids on cities and are the main rivals to\
+	the ABCDEFG Corporation's presence on Pirx."
+	economic_power = 1.6
 
 /singleton/cultural_info/culture/human/theia
 	name = CULTURE_HUMAN_THEIA
@@ -136,76 +133,6 @@
 	Your people are known for their resilience, and hatred towards outsiders."
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 1.1
-
-/singleton/cultural_info/culture/human/confederate_sestris
-	name = CULTURE_HUMAN_CONFED_SESTRIS
-	description = " You are from the Union of Sestris and Bratis - second only to Gilgamesh in terms of political and economic power within the GCC, \
-	citizens of Sestris enjoy a generally high standard of living and many can be found within the ranks of the ICCG Defense Forces. Those from Amelie, \
-	within Sestris itself are immensely proud of their Franco heratige, with many holding on to some of their cultural roots. "
-	language = LANGUAGE_HUMAN_RUSSIAN
-	economic_power = 1.3
-
-/singleton/cultural_info/culture/human/confederate_putkari
-	name = CULTURE_HUMAN_CONFED_PUTKARI
-	description = "You are from Putkari in the Baroda system. Settled in the wake of the Terran Commonwealth's exploration Boom, Putkari was abandoned by \
-	the SCG following its founding and left to die. Embracing the newly founded GCC, Putkari has been a loyal and devoted member of the Confederation \
-	ever since. Extremely hostile to the SCG ever since its abandonment, Putkarians are some of the most vocal within the Confederation in terms of \
-	resentment of the loss in the Gaia Conflict, many beat the war drums and fan the fires of jingoism in hopes of one day enacting a form of vengance. "
-	language = LANGUAGE_HUMAN_INDIAN
-	economic_power = 0.7
-
-/singleton/cultural_info/culture/human/confederate_altair
-	name = CULTURE_HUMAN_CONFED_ALTAIR
-	description = "You are from Altair. Once a free economic zone, the breaking of the moon of Qabil brought sweeping and more authoritarian change to Altair. \
-	One of the more materially wealthy members of the Confederation outside of the Founders, Altarians are not overly interested in the Confederation as a whole, \
-	with most choosing to be public workers such as paramedics or infastructure maintainers for the duration of their mandatory state service."
-	language = LANGUAGE_HUMAN_ARABIC
-	economic_power = 1.0
-
-/singleton/cultural_info/culture/human/confederate_penglai
-	name = CULTURE_HUMAN_CONFED_PENGLAI
-	description = "You are from Penglai, a traditionalist world within the Gilgamesh Colonial Confederation. A small world with a marginal atmosphere  \
-	breathable by its inhabitants, its main economic contribution to the confederation is in its abundant rare earth element deposits. Another \
-	colony that was in need of support following the founding of the SCG, Pengali is a content member of the Confederation while keeping their own traditions alive. "
-	language = LANGUAGE_HUMAN_CHINESE
-	economic_power = 0.8
-
-/singleton/cultural_info/culture/human/confederate_providence
-	name = CULTURE_HUMAN_CONFED_PROVIDENCE
-	description = "You are from Providence, settled originally by private ventures. Providence's planet of Atlanticus developed a booming space station industry, \
-	resulting in the construction of three mega-space-complexes within the system. Bolstered by a flood of working class immigrants and research funding following \
-	their entry to the Confederation, those from Providence are typically quite pleased with their position within the Confederation, though many still choose to \
-	emigrate elsewhere in hopes of finding work outside of the industrial or scientific sectors. "
-	language = LANGUAGE_HUMAN_RUSSIAN
-	economic_power = 1.0
-
-/singleton/cultural_info/culture/human/confederate_valy
-	name = CULTURE_HUMAN_CONFED_VALY
-	description = "You are from Valy, the 'black sheep' of the Confederation. Brought into the Confederation when Valy's civil war was ended by the GCN's intervention \
-	Valy has possessed a resistance to the Confederation ever since. The emergence of the Frontier Alliance has emboldened these resistance actions, with \
-	public desires to join the Alliance only being held back by the Confederation's continued presence. Those from Valy are typically quite bitter about their present \
-	situation, with many who choose to emigrate continuing to support efforts to bring about the Alliance's agenda in 'freeing Valy from its shackles'. "
-	language = LANGUAGE_HUMAN_RUSSIAN
-	economic_power = 0.6
-
-/singleton/cultural_info/culture/human/confederate_colony
-	name = CULTURE_HUMAN_CONFEDO
-	description = "You are from the outskirts of the Gilgamesh Colonial Confederation. Confederates have a mixed view of their nation state, raging from strong nationalism to resentment for the state, but \
-	they all have the legacy of resource extraction and mandatory conscription in common. Being from a nation of conscripts means that Confederates are often resourceful and experienced, \
-	having grown to cope with the horrors of dysfunctional economics and mandatory military service. Confederates today are generally poor, bitter and somewhat broken people, angry and \
-	resentful about their loss in the Gaia Conflict. Colonial Confederation education emphasizes service to the state, liberalism and militarism."
-	language = LANGUAGE_HUMAN_RUSSIAN
-	economic_power = 0.7
-
-/singleton/cultural_info/culture/human/gaia
-	name = CULTURE_HUMAN_GAIAN
-	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the United Galactic Nations and the Independent Colonial Confederation of Gilgamesh. \
-	It is an agricultural world, though various conflicts across the planet's surface have left it scarred. The planet is divided into Sol-Controlled Gaian Administrative Area \
-	and Independent-Guided Protectorate of Gaia, with the International City of New Venice remaining a neutral zone inside the DMZ that circles the planet's equator. \
-	The planet's population remain divided even more then 10 years after the Gaia Conflict. While Gaia is divided, the current Mayor of New Venice serves as a vital mediator \
-	between the galactic superpowers. The Gaian People are tired of war, and long to see their families once again; They suffered hard twenty years prior, and will not let themselves suffer again."
-	language = LANGUAGE_HUMAN_IBERIAN
-	economic_power = 1.0
 
 /singleton/cultural_info/culture/human/other
 	name = CULTURE_HUMAN_OTHER
