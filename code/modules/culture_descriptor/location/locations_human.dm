@@ -65,7 +65,7 @@
 
 /singleton/cultural_info/location/human/saffar
 	name = HOME_SYSTEM_ANTIDO
-	distance = "44 light years"
+	distance = "2 light years"
 	description = "Antido is a terrestrial giant in the Upsilon Andromedae system, about the size\
 	of Jupiter, with over 1 billion people living on it, it stands as one of the lowest\
 	density planets in the UGN. After Dr. Waldo was murdered during the Antido\

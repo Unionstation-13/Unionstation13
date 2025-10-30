@@ -73,9 +73,9 @@
 
 /singleton/cultural_info/culture/human/brahe
 	name = CULTURE_HUMAN_BRAHE
-	description = "Hailing from the ocean world of Brahe, Brahite culture is one of corporate dominance and academic prowess. Valuing research and education as well as  \
-	an exploratory spirit, Brahites find themselves cut off from their homeworld by the Copernican Blockade, and their relationship to the fledgeling Frontier Alliance  \
-	is equal parts strained and symbiotic."
+	description = "The people of Brahe are extremely hostile to outsiders, and by a whim of fate,\
+	you were able to escape. With a dying ecosystem, it is unlikely that the Brahe's\
+	isolation will last long."
 	economic_power = 1.0
 
 /singleton/cultural_info/culture/human/eos
@@ -100,21 +100,16 @@
 	the ABCDEFG Corporation's presence on Pirx."
 	economic_power = 1.6
 
-/singleton/cultural_info/culture/human/theia
-	name = CULTURE_HUMAN_THEIA
-	description = "Theia is an inhabited system on the borders of the United Galactic Nations known primarily for being the headquarters of the Third Fleet. \
-	Located strategically at the gateway closest to several key frontier systems, Theia became known early on as a strategic chokepoint worth defending. \
-	Today, military and civilian personnel alike call the Theia system home and work tirelessly to maintain it as the Fortress of Sol. "
+/singleton/cultural_info/culture/human/stationeer
+	name = CULTURE_HUMAN_STATION
+	description = "You are from a station or other artificial habitat spread across Humanities reach. You are well adapted to the harsh lights and cramped spaces. Station-life acts like a melting pot of cultures across the galaxy."
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/offworld
 	name = CULTURE_HUMAN_OFFWORLD
-	description =  "You are from one of many far flung and outlying settlements that aren't notable enough to be on standard Solar maps. Raised out of touch and out of connection with the galaxy at large, \
-	those who live so far from anything only look to their close family and friends rather than any larger group. Whether it's a fueling station, an agriculutral dome, or a planet that is far removed from \
-	the luxuries of the gateway network, such people are raised in small, confined environments with few others, and tend to be most familiar with older, reliable but outdated \
-	technology. An independent sort, Offworlders are more likely to be isolationist and self-driven."
+	description =  "You are from one of the many worlds that the UGN controls. "
 	economic_power = 0.9
-	language = LANGUAGE_SPACER
+	language = LANGUAGE_HUMAN_EURO
 
 // NON UGN BELOW
 /singleton/cultural_info/culture/human/spacer
@@ -135,8 +130,8 @@
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/other
-	name = CULTURE_HUMAN_OTHER
-	description = "Some people are from places no one has ever heard of or places too wild and fantastical to make it into Encyclopedia Galactica. You are one of these. "
+	name = CULTURE_HUMAN_OTHERS
+	description = "You are from the Sol system generally, from the inner solar system or outer rim of planets, stations, and colonized asteroids. People from Sol are known for their depressive and nihilistic attitude due to the ravaged state of the Sol System."
 	economic_power = 1
 	secondary_langs = list (LANGUAGE_HUMAN_EURO,
 		LANGUAGE_HUMAN_CHINESE,
