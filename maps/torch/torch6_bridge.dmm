@@ -1149,14 +1149,6 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 8;
-	pixel_y = -3
-	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
@@ -4917,10 +4909,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -5;
-	pixel_y = 5
-	},
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_supply,
 /obj/random_multi/single_item/memo_medical,
@@ -7424,6 +7412,7 @@
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
 	},
+/obj/structure/wall_frame,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
@@ -8259,10 +8248,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 11;
-	pixel_y = 1
 	},
 /obj/item/tableflag,
 /turf/simulated/floor/carpet/blue2,
@@ -11203,9 +11188,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 3
 	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /obj/structure/cable/green{
@@ -14252,6 +14234,7 @@
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
 	},
+/obj/structure/wall_frame,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
