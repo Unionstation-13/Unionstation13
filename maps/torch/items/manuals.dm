@@ -22,11 +22,11 @@
 
 
 /obj/item/book/manual/military_law
-	name = "The Sol Code of Military Justice"
-	desc = "A brief overview of military law."
+	name = "Space Law"
+	desc = "A brief overview of UGN law."
 	icon_state = "bookSolGovLaw"
 	author = "The United Galactic Nations"
-	title = "The Sol Code of Military Justice"
+	title = "Space Law"
 
 /obj/item/book/manual/military_law/Initialize()
 	. = ..()
