@@ -5,7 +5,7 @@
 	language = LANGUAGE_ROOTLOCAL
 	additional_langs = list(LANGUAGE_ROOTGLOBAL)
 	secondary_langs = list(
-		LANGUAGE_HUMAN_EURO,
+		LANGUAGE_HUMAN_PAX,
 		LANGUAGE_SPACER,
 		LANGUAGE_SIGN
 	)

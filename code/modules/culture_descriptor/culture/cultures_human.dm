@@ -6,12 +6,12 @@
 	name = CULTURE_HUMAN
 	description = "You are from one of various planetary cultures of humankind."
 	secondary_langs = list(
-		LANGUAGE_HUMAN_EURO,
+		LANGUAGE_HUMAN_PAX,
 		LANGUAGE_HUMAN_CHINESE,
 		LANGUAGE_HUMAN_ARABIC,
 		LANGUAGE_HUMAN_INDIAN,
 		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
+		LANGUAGE_HUMAN_NITROS,
 		LANGUAGE_SPACER,
 		LANGUAGE_SIGN
 	)
@@ -104,20 +104,18 @@
 	name = CULTURE_HUMAN_STATION
 	description = "You are from a station or other artificial habitat spread across Humanities reach. You are well adapted to the harsh lights and cramped spaces. Station-life acts like a melting pot of cultures across the galaxy."
 	economic_power = 1.1
+	language = LANGUAGE_SPACER
 
 /singleton/cultural_info/culture/human/offworld
 	name = CULTURE_HUMAN_OFFWORLD
 	description =  "You are from one of the many worlds that the UGN controls. "
 	economic_power = 0.9
-	language = LANGUAGE_HUMAN_EURO
+	language = LANGUAGE_HUMAN_PAX
 
 // NON UGN BELOW
 /singleton/cultural_info/culture/human/spacer
 	name = CULTURE_HUMAN_SPACER
-	description = "Across all political lines in human space, there are people who are born and raised in the void between worlds. You are from one of the myriad space stations, orbital platforms, long haul freighters, \
-	gateway installations or other facilities that occupy the vastness of space. Spacers are accustomed to life in the fast lane, constantly moving between \
-	places, meeting a myriad of people and experiencing many of the cultures and worlds humanity calls home. As such, Spacers tend to be busy, sociable and \
-	mobile, rarely satisfied with settled life. They almost universally know how to live and work in the void and take to such jobs more readily than their planet-bound counterparts."
+	description = "You are not from any specific region, planet, or habitat. You drift through the stars on your journey through life. "
 	economic_power = 1
 	language = LANGUAGE_SPACER
 
@@ -126,19 +124,19 @@
 	description = "You are from the Nitros system, hailing from the scarred landmasses of Nitros-11 or the stations surrounding Nitros-6.\
 	Your once prosperous federated democracy has been in a state of disarray for nearly over a century.\
 	Your people are known for their resilience, and hatred towards outsiders."
-	language = LANGUAGE_HUMAN_RUSSIAN
+	language = LANGUAGE_HUMAN_NITROS
 	economic_power = 1.1
 
 /singleton/cultural_info/culture/human/other
 	name = CULTURE_HUMAN_OTHERS
 	description = "You are from the Sol system generally, from the inner solar system or outer rim of planets, stations, and colonized asteroids. People from Sol are known for their depressive and nihilistic attitude due to the ravaged state of the Sol System."
 	economic_power = 1
-	secondary_langs = list (LANGUAGE_HUMAN_EURO,
+	secondary_langs = list (LANGUAGE_HUMAN_PAX,
 		LANGUAGE_HUMAN_CHINESE,
 		LANGUAGE_HUMAN_ARABIC,
 		LANGUAGE_HUMAN_INDIAN,
 		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
+		LANGUAGE_HUMAN_NITROS,
 		LANGUAGE_SPACER,
 		LANGUAGE_GUTTER,
 		LANGUAGE_SIGN)

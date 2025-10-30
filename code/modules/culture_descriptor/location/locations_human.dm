@@ -61,7 +61,7 @@
 	distance = "22.5 light years."
 	economic_power = 0.9
 	ruling_body = "Federated Republic of Nitros"
-	language = LANGUAGE_HUMAN_RUSSIAN
+	language = LANGUAGE_HUMAN_NITROS
 
 /singleton/cultural_info/location/human/saffar
 	name = HOME_SYSTEM_ANTIDO

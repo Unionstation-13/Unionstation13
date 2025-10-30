@@ -6,12 +6,12 @@
 	shorthand = "Sel"
 	space_chance = 100
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 85,
+		LANGUAGE_HUMAN_PAX = 85,
 		LANGUAGE_HUMAN_CHINESE = 15,
 		LANGUAGE_HUMAN_ARABIC = 5,
 		LANGUAGE_HUMAN_INDIAN = 25,
 		LANGUAGE_HUMAN_IBERIAN = 15,
-		LANGUAGE_HUMAN_RUSSIAN = 5,
+		LANGUAGE_HUMAN_NITROS = 5,
 		LANGUAGE_SPACER = 20
 	)
 	syllables = list(

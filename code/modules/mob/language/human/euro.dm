@@ -6,7 +6,7 @@
 *///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /datum/language/human/euro
-	name = LANGUAGE_HUMAN_EURO
+	name = LANGUAGE_HUMAN_PAX
 	desc = "A language created by Pax citizens following Earth's demise."
 	speech_verb = "says"
 	whisper_verb = "whispers"
@@ -19,7 +19,7 @@
 		LANGUAGE_HUMAN_ARABIC = 5,
 		LANGUAGE_HUMAN_INDIAN = 5,
 		LANGUAGE_HUMAN_IBERIAN = 30,
-		LANGUAGE_HUMAN_RUSSIAN = 5,
+		LANGUAGE_HUMAN_NITROS = 5,
 		LANGUAGE_HUMAN_SELENIAN = 85,
 		LANGUAGE_SPACER = 20
 	)

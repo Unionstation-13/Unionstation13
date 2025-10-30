@@ -1,11 +1,11 @@
 //Human
-#define LANGUAGE_HUMAN_EURO      "Pax Common"
+#define LANGUAGE_HUMAN_PAX      "Pax Common"
 #define LANGUAGE_HUMAN_BRAHE   "Brahe Common"
 #define LANGUAGE_HUMAN_CHINESE   "Yangyu"
 #define LANGUAGE_HUMAN_ARABIC    "Prototype Standard Arabic"
 #define LANGUAGE_HUMAN_INDIAN    "New Dehlavi"
 #define LANGUAGE_HUMAN_IBERIAN   "Iberian"
-#define LANGUAGE_HUMAN_RUSSIAN   "Nitron"
+#define LANGUAGE_HUMAN_NITROS   "Nitron"
 #define LANGUAGE_HUMAN_SELENIAN  "Selenian"
 
 //Human misc

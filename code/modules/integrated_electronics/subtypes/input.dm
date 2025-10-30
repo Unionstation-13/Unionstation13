@@ -868,8 +868,8 @@
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 	power_draw_per_use = 5
 
-	var/language_preferred = LANGUAGE_HUMAN_EURO
-	var/languages_understood = list(LANGUAGE_HUMAN_EURO, LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_ARABIC, LANGUAGE_HUMAN_INDIAN, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_SPACER)
+	var/language_preferred = LANGUAGE_HUMAN_PAX
+	var/languages_understood = list(LANGUAGE_HUMAN_PAX, LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_ARABIC, LANGUAGE_HUMAN_INDIAN, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_NITROS, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_SPACER)
 	var/invalid_flags = NONVERBAL | SIGNLANG | HIVEMIND | ALT_TRANSMIT
 
 /obj/item/integrated_circuit/input/microphone/Initialize()
@@ -900,21 +900,21 @@
 
 /obj/item/integrated_circuit/input/microphone/modem
 	name = "machine modulating microphone"
-	languages_understood = list(LANGUAGE_HUMAN_EURO, LANGUAGE_EAL)
+	languages_understood = list(LANGUAGE_HUMAN_PAX, LANGUAGE_EAL)
 	spawn_flags = IC_SPAWN_RESEARCH
 	extended_desc = "A microphone combined with repurposed fax machine circuitry, this will translate Encoded Audio Language used by some synthetics into ZAC."
 
 /obj/item/integrated_circuit/input/microphone/exo
 	name = "interspecies exchange microphone"
-	languages_understood = list(LANGUAGE_HUMAN_EURO, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_UNATHI_SINTA, LANGUAGE_SKRELLIAN)
+	languages_understood = list(LANGUAGE_HUMAN_PAX, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_UNATHI_SINTA, LANGUAGE_SKRELLIAN)
 	spawn_flags = IC_SPAWN_RESEARCH
 	extended_desc = "A microphone with a xenolinguistic database to facilitate EXO missions with mixed species. It translates the most common Skrellian and Unathi dialects to ZAC."
 	//Selenian is an in-character undocumented feature demanded by a corp exec
 
 /obj/item/integrated_circuit/input/microphone/fringe
 	name = "gray market microphone"
-	languages_understood = list(LANGUAGE_SPACER, LANGUAGE_GUTTER, LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_ARABIC, LANGUAGE_HUMAN_INDIAN, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_RUSSIAN)
-	language_preferred = LANGUAGE_HUMAN_RUSSIAN
+	languages_understood = list(LANGUAGE_SPACER, LANGUAGE_GUTTER, LANGUAGE_HUMAN_CHINESE, LANGUAGE_HUMAN_ARABIC, LANGUAGE_HUMAN_INDIAN, LANGUAGE_HUMAN_IBERIAN, LANGUAGE_HUMAN_NITROS)
+	language_preferred = LANGUAGE_HUMAN_NITROS
 	spawn_flags = 0
 	extended_desc = "This microphone did not come with any documentation."
 

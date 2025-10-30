@@ -14,7 +14,7 @@
 	var/list/last_scan
 	var/muted = FALSE
 	var/sound_off = FALSE
-	var/print_language = LANGUAGE_HUMAN_EURO
+	var/print_language = LANGUAGE_HUMAN_PAX
 	var/working_sound = 'sound/machines/sensors/sensorloop.ogg'
 	var/datum/sound_token/sound_token
 	var/sound_id
