@@ -7412,9 +7412,7 @@
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
 	},
-/obj/structure/window/boron_reinforced{
-	dir = 1
-	},
+/obj/structure/wall_frame,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
@@ -14236,9 +14234,7 @@
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
 	},
-/obj/structure/window/boron_reinforced{
-	dir = 1
-	},
+/obj/structure/wall_frame,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
