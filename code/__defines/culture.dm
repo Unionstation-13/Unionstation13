@@ -54,6 +54,7 @@
 #define CULTURE_HUMAN_PIRXABC    			"Pirxish, Corporate"
 #define CULTURE_HUMAN_PIRXS    			"Pirxish, Solus"
 #define CULTURE_HUMAN_ANTIDO   			"Antidian"
+#define CULTURE_HUMAN_IOLAUS   			"Iolan"
 #define CULTURE_HUMAN_BRAHE    			"Brahite"
 #define CULTURE_HUMAN_EOS      			"Eosic"
 #define CULTURE_HUMAN_SPACER   			"Spacer"
