@@ -7149,18 +7149,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/security/wing)
-"avO" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel,
-/obj/structure/catwalk,
-/turf/space,
-/area/maintenance/firstdeck/aftstarboard)
 "avS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -15009,7 +14997,7 @@
 	pixel_y = 24;
 	pixel_x = 25
 	},
-/turf/space,
+/turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "csb" = (
 /obj/structure/bed/padded,
@@ -30539,11 +30527,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/conference)
-"vig" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/maintenance/firstdeck/centralstarboard)
 "vii" = (
 /obj/floor_decal/corner/b_green/border{
 	dir = 8
@@ -46763,7 +46746,7 @@ wNX
 aeg
 amn
 anm
-vig
+anm
 auN
 aqn
 aqn
@@ -58276,9 +58259,9 @@ hMC
 agv
 nuE
 erb
-avO
+nuE
 cqc
-avO
+nuE
 sFb
 ask
 ato
