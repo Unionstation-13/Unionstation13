@@ -5884,6 +5884,15 @@
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3port)
+"nF" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
+/turf/simulated/wall/prepainted,
+/area/maintenance/thirddeck/starboard)
 "nG" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -6901,7 +6910,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/mess)
 "qb" = (
-/obj/wallframe_spawn/reinforced/titanium,
 /obj/wallframe_spawn/reinforced/titanium,
 /obj/floor_decal/corner/green/half,
 /obj/machinery/door/blast/shutters/open{
@@ -8563,6 +8571,12 @@
 "tX" = (
 /obj/decal/cleanable/dirt,
 /obj/item/taperoll/engineering,
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "tZ" = (
@@ -11665,6 +11679,12 @@
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/recreation)
 "CH" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/maintenance/thirddeck/starboard)
 "CI" = (
@@ -17256,6 +17276,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Ql" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/sleep/cryo)
 "Qm" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -18642,7 +18671,8 @@
 /obj/machinery/door/window/brigdoor/eastleft{
 	name = "Officer Mess";
 	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
 	},
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -38591,7 +38621,7 @@ Nw
 qQ
 sk
 tI
-Fd
+Ql
 vV
 vV
 yg
@@ -40202,7 +40232,7 @@ RB
 RB
 dI
 kY
-cl
+nF
 cl
 Xn
 sj

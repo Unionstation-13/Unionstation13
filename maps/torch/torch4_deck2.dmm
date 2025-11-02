@@ -6523,6 +6523,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
+"ps" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
+/turf/space,
+/area/space)
 "pv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -14002,8 +14011,8 @@
 /turf/simulated/floor/plating,
 /area/synth/borg_upload)
 "Kb" = (
-/obj/shuttle_landmark/ert/deck2{
-	name = "Deck 2, Starboard"
+/obj/shuttle_landmark/ert/deck3{
+	name = "Deck 3 Starboard"
 	},
 /turf/space,
 /area/space)
@@ -44104,7 +44113,7 @@ aa
 aa
 aa
 aa
-aa
+ps
 aa
 aa
 aa
@@ -44305,7 +44314,7 @@ aa
 aa
 aa
 aa
-aa
+ps
 aa
 aa
 aa
@@ -44506,7 +44515,7 @@ aa
 aa
 aa
 aa
-aa
+ps
 aa
 aa
 aa

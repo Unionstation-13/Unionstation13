@@ -11497,7 +11497,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPL" = (
-/obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
@@ -16480,6 +16479,15 @@
 "enM" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
+"enP" = (
+/obj/floor_decal/corner/research/half,
+/obj/machinery/door/window/brigdoor/westleft{
+	name = "Control Chamber";
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/rnd/misc_lab)
 "eob" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -17774,7 +17782,8 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northright{
-	req_access = list("ACCESS_SEC_DOORS")
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/xenobiology/xenoflora)
@@ -19338,7 +19347,6 @@
 "iBb" = (
 /obj/machinery/smartfridge/chemistry,
 /obj/machinery/door/window/brigdoor/eastright{
-	req_access = list("ACCESS_MEDICAL");
 	name = "Smart Fridge Access"
 	},
 /turf/simulated/floor/tiled/white,
@@ -20883,6 +20891,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "kdb" = (
@@ -21894,9 +21906,6 @@
 "lgb" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 10
-	},
-/obj/wallframe_spawn/reinforced/polarized/no_grille{
-	id = "counselor_therapy"
 	},
 /obj/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "counselor_therapy"
@@ -25675,6 +25684,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "ptb" = (
@@ -28486,7 +28499,8 @@
 	},
 /obj/machinery/door/window/brigdoor/westleft{
 	name = "Control Chamber";
-	req_access = list("ACCESS_SEC_DOORS")
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -30246,6 +30260,14 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"uQu" = (
+/obj/machinery/door/window/brigdoor/westleft{
+	name = "Control Chamber";
+	req_access = list("ACCESS_SEC_DOORS");
+	autoset_access = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/misc_lab)
 "uRO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -57267,8 +57289,8 @@ pjb
 pEb
 iqb
 jAb
-aLo
-ycp
+uQu
+enP
 rnb
 aHi
 aPL
