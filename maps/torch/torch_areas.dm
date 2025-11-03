@@ -1195,6 +1195,16 @@
 	icon_state = "patients"
 	req_access = list(access_medical)
 
+/area/medical/reception
+	name = "\improper Primary Reception"
+	icon_state = "locker"
+	req_access = list(access_medical)
+
+/area/medical/reception2
+	name = "\improper Secondary Reception"
+	icon_state = "locker"
+	req_access = list(access_medical)
+
 /area/medical/recovery
 	name = "\improper Patient Recovery Room 1"
 	icon_state = "patients"

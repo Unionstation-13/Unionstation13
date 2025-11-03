@@ -2669,7 +2669,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "fm" = (
-/obj/structure/cable,
 /obj/structure/cable{
 	d1 = 16;
 	d2 = 0;
@@ -2682,6 +2681,7 @@
 	dir = 1
 	},
 /obj/floor_decal/industrial/warning/full,
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fn" = (
