@@ -1186,12 +1186,7 @@
 	icon_state = "exam_room"
 
 /area/medical/surgery
-	name = "\improper Operating Theatre 1"
-	icon_state = "surgery"
-	req_access = list(access_surgery)
-
-/area/medical/surgery2
-	name = "\improper Operating Theatre 2"
+	name = "\improper Operating Theatre"
 	icon_state = "surgery"
 	req_access = list(access_surgery)
 
@@ -1199,6 +1194,14 @@
 	name = "\improper Infirmary Staging"
 	icon_state = "patients"
 	req_access = list(access_medical)
+
+/area/medical/recovery
+	name = "\improper Patient Recovery Room 1"
+	icon_state = "patients"
+
+/area/medical/recovery2
+	name = "\improper Patient Recovery Room 2"
+	icon_state = "patients"
 
 /area/medical/chemistry
 	name = "\improper Chemistry"
@@ -1218,6 +1221,11 @@
 /area/medical/morgue/autopsy
 	name = "\improper Autopsy"
 	icon_state = "autopsy"
+
+/area/medical/seniorofficer
+	name = "\improper Senior Medical Office"
+	icon_state = "exam_room"
+	req_access = list(access_medical)
 
 // Shield Rooms
 

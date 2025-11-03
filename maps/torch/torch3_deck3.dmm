@@ -2878,9 +2878,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/crew_quarters/mess{
-	req_access = list("ACCESS_KITCHEN")
-	})
+/area/crew_quarters/galley)
 "gz" = (
 /obj/structure/disposalpipe/junction,
 /obj/catwalk_plated,
@@ -4118,15 +4116,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "jf" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24
@@ -4690,6 +4679,15 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
+"kv" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/sleep/cryo)
 "kw" = (
 /obj/machinery/light{
 	dir = 8
@@ -5884,15 +5882,6 @@
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3port)
-"nF" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
-	},
-/turf/simulated/wall/prepainted,
-/area/maintenance/thirddeck/starboard)
 "nG" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -11475,6 +11464,15 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Ce" = (
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Officer Mess";
+	dir = 2;
+	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
+	autoset_access = 0
+	},
+/turf/simulated/wall/prepainted,
+/area/maintenance/thirddeck/starboard)
 "Cf" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -17276,15 +17274,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
-"Ql" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
-	},
-/turf/simulated/wall/prepainted,
-/area/crew_quarters/sleep/cryo)
 "Qm" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -20027,11 +20016,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
 "Xw" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -20444,11 +20428,6 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
 "YD" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/item/device/radio/intercom{
 	dir = 8;
 	pixel_x = 22;
@@ -38621,7 +38600,7 @@ Nw
 qQ
 sk
 tI
-Ql
+kv
 vV
 vV
 yg
@@ -40232,7 +40211,7 @@ RB
 RB
 dI
 kY
-nF
+Ce
 cl
 Xn
 sj
