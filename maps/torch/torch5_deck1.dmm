@@ -124,7 +124,6 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/blast/regular/open{
 	id_tag = "ward_Lockdown"
@@ -543,7 +542,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/regular/open{
@@ -1820,28 +1818,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
-"adw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/decal/cleanable/dirt,
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "adx" = (
@@ -7898,6 +7874,24 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
+"azc" = (
+/obj/machinery/atmospherics/pipe/zpipe/up/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
 "azi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -11883,12 +11877,6 @@
 	dir = 9
 	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aRz" = (
@@ -11940,9 +11928,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aRC" = (
@@ -14114,9 +14100,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "bGh" = (
@@ -14168,9 +14151,7 @@
 "bIb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/white,
-/area/rnd/xenobiology/xenoflora{
-	name = "\improper Containment Cell"
-	})
+/area/rnd/xenobiology/xenoflora)
 "bJA" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14804,24 +14785,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/recovery)
-"cur" = (
-/obj/machinery/atmospherics/pipe/zpipe/up/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
-	dir = 8
-	},
-/obj/structure/cable{
-	d1 = 16;
-	d2 = 0;
-	icon_state = "16-0"
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "cuE" = (
 /obj/floor_decal/corner/paleblue/three_quarters{
 	dir = 1
@@ -17017,25 +16980,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
-"fKb" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "processwindow"
-	},
-/obj/machinery/door/blast/shutters/open{
-	id_tag = "hall_down";
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/security/processing)
 "fKJ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -20285,24 +20229,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
-"jJb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
 "jMb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -21115,9 +21041,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
-"kGb" = (
-/turf/simulated/wall/prepainted,
-/area/medical/reception)
 "kGX" = (
 /obj/machinery/access_button{
 	command = "cycle_interior";
@@ -24224,14 +24147,14 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/floor_decal/corner/research{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -26349,7 +26272,6 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/blast/regular/open{
 	id_tag = "ward_Lockdown"
@@ -28056,6 +27978,9 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
+"srx" = (
+/turf/simulated/wall/prepainted,
+/area/medical/reception)
 "srR" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -30792,6 +30717,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"wAK" = (
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/wallframe_spawn/reinforced/polarized{
+	id = "processwindow"
+	},
+/obj/machinery/door/blast/shutters/open{
+	id_tag = "hall_down";
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/security/processing)
 "wDm" = (
 /obj/structure/table/glass,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -41060,7 +41004,7 @@ wyb
 sxG
 xRh
 awY
-fKb
+wAK
 nmb
 xRh
 aeo
@@ -47712,7 +47656,7 @@ abP
 agR
 tGe
 acD
-cur
+azc
 alk
 ams
 xcW
@@ -51561,7 +51505,7 @@ gzb
 gML
 sAb
 agK
-kGb
+srx
 kHb
 ayp
 fnu
@@ -51965,7 +51909,7 @@ lHO
 vTY
 agY
 agB
-kGb
+srx
 bWA
 hfb
 oox
@@ -52571,7 +52515,7 @@ lHO
 aaJ
 agx
 jCU
-kGb
+srx
 sMh
 hYM
 iUb
@@ -52771,9 +52715,9 @@ afb
 afZ
 lHO
 iBb
-kGb
+srx
 ovb
-kGb
+srx
 aTQ
 xmO
 mpq
@@ -53159,7 +53103,7 @@ adA
 mpy
 mpy
 uXe
-adw
+adt
 hwb
 xuW
 xuW
@@ -53361,7 +53305,7 @@ aqc
 mpy
 mpy
 acJ
-adw
+adt
 kZb
 axl
 hlb
@@ -53563,7 +53507,7 @@ aaa
 mpy
 mpy
 acK
-adw
+adt
 kZb
 xuW
 xuW
@@ -54169,7 +54113,7 @@ aaa
 mpy
 mpy
 acN
-adw
+adt
 kZb
 cVb
 xuW
@@ -54371,7 +54315,7 @@ mpy
 mpy
 mpy
 chb
-adw
+adt
 kZb
 cWb
 xuW
@@ -54573,7 +54517,7 @@ mpy
 mpy
 acP
 uXe
-adw
+adt
 kZb
 cXb
 hzT
@@ -54977,7 +54921,7 @@ mpy
 mpy
 acS
 uXe
-adw
+adt
 kZb
 afn
 agn
@@ -55179,7 +55123,7 @@ mpy
 mpy
 acT
 uXe
-adw
+adt
 kZb
 ivT
 cIb
@@ -55381,7 +55325,7 @@ mpy
 mpy
 mpy
 acR
-adw
+adt
 kZb
 xql
 cxb
@@ -55987,7 +55931,7 @@ mpy
 mpy
 mpy
 acV
-adw
+adt
 pZE
 jCM
 agq
@@ -56189,7 +56133,7 @@ abN
 abN
 abN
 mEV
-jJb
+adv
 acL
 jCM
 jCM

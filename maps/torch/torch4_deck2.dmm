@@ -1147,10 +1147,10 @@
 	dir = 6
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 1;
+/obj/structure/cable{
+	d1 = 4;
 	d2 = 8;
-	icon_state = "1-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -1953,11 +1953,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "dT" = (
@@ -2329,12 +2324,19 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod11/station)
 "eC" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+/obj/floor_decal/industrial/warning/full,
+/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
+	dir = 1
 	},
-/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/zpipe/up/supply{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "eD" = (
@@ -3402,41 +3404,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "gS" = (
-/obj/floor_decal/industrial/warning/full,
-/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/zpipe/up/supply{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 16;
-	d2 = 0;
-	icon_state = "16-0"
-	},
-/obj/structure/cable,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
-"gT" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable{
+/obj/structure/catwalk,
+/obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -6481,19 +6453,24 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -9051,7 +9028,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/synth/borg_upload)
 "vH" = (
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
@@ -9094,7 +9071,7 @@
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
 "vR" = (
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -9287,15 +9264,16 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "wx" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "wz" = (
@@ -9574,10 +9552,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "xr" = (
-/obj/structure/cable/green{
-	d1 = 2;
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 1;
 	d2 = 8;
-	icon_state = "2-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -12348,10 +12336,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "EY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/catwalk,
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -12368,15 +12360,6 @@
 /obj/structure/railing/mapped,
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/machinery/atmospherics/valve/shutoff/scrubbers,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
-"Fa" = (
-/obj/structure/railing/mapped,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Fb" = (
@@ -13487,7 +13470,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -14891,15 +14874,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/engineering/bluespace)
-"NA" = (
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
 "NB" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14985,7 +14959,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "NS" = (
-/obj/structure/cable/green{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -15116,11 +15090,6 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
@@ -15131,11 +15100,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -15145,13 +15109,8 @@
 /obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -15456,15 +15415,15 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Pg" = (
@@ -16931,13 +16890,13 @@
 "Ue" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/catwalk,
+/obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Uf" = (
@@ -18227,30 +18186,11 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/seconddeck)
 "Yz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -33661,12 +33601,12 @@ Lt
 vH
 Ip
 NS
-XJ
-XJ
-NA
-NA
-NA
-gT
+Yz
+Yz
+Yz
+Yz
+Yz
+xr
 OV
 jp
 jp
@@ -33868,7 +33808,7 @@ bI
 bI
 bI
 bI
-po
+wx
 OV
 OV
 OV
@@ -34061,14 +34001,14 @@ JX
 JX
 JX
 bc
-vH
+NQ
 ch
 cL
 cN
 Rm
 cN
 fm
-gS
+eC
 bI
 Of
 XJ
@@ -34263,7 +34203,7 @@ JX
 JX
 JX
 NW
-vR
+NQ
 ci
 bI
 Xy
@@ -34272,7 +34212,7 @@ bI
 bI
 bI
 bI
-Yz
+po
 bd
 bd
 hM
@@ -34465,12 +34405,12 @@ JX
 JX
 JX
 Zr
-wx
+Zr
 cj
 EX
 EZ
 Oe
-Ue
+EY
 Ue
 Ue
 Ue
@@ -34667,12 +34607,12 @@ JX
 JX
 JX
 bd
-xr
-EY
-EY
-Fa
+bd
+bd
+bd
+Kv
 dS
-eC
+gS
 Xl
 Xl
 XP

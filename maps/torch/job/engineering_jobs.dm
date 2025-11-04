@@ -1,5 +1,5 @@
 /datum/job/engineer
-	title = "Technician"
+	title = "Engineering Technician"
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief Engineer"

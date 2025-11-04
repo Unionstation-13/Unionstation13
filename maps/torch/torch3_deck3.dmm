@@ -705,6 +705,12 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -893,11 +899,6 @@
 /obj/machinery/door/airlock/civilian{
 	locked = 1;
 	name = "Old Mess"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -1348,16 +1349,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "dh" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24;
-	req_access = list()
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
@@ -1367,18 +1358,6 @@
 "di" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
-"dj" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
@@ -1674,48 +1653,32 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"dU" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
 "dV" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/wood/maple,
+/area/chapel/main{
+	name = "\improper Funeral Chamber"
+	})
 "dW" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/aftport)
 "dX" = (
 /obj/machinery/light{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
@@ -1890,12 +1853,6 @@
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/fore)
-"eA" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/brig{
-	name = "Contingency Hub"
-	})
 "eB" = (
 /obj/machinery/light{
 	dir = 1;
@@ -2571,23 +2528,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"fO" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
-"fP" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
 "fS" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3408,6 +3348,9 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -3529,6 +3472,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -5770,19 +5719,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
+/obj/structure/disposalpipe/junction/yjunction,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "nq" = (
@@ -6753,6 +6691,9 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -8378,6 +8319,10 @@
 	pixel_y = -22
 	},
 /obj/machinery/light,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
 	name = "\improper Funeral Control"
@@ -8813,6 +8758,12 @@
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -9489,6 +9440,10 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
@@ -10814,6 +10769,12 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -11075,6 +11036,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
@@ -12379,7 +12346,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "Eh" = (
@@ -12540,6 +12506,12 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -13190,6 +13162,9 @@
 /obj/structure/table/rack/dark,
 /obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
 	name = "\improper Funeral Control"
@@ -13204,11 +13179,23 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
 	name = "\improper Funeral Control"
 	})
 "Go" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -13480,6 +13467,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
 	name = "\improper Funeral Chamber"
@@ -13489,6 +13479,9 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main{
@@ -14880,12 +14873,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "JX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 6
 	},
@@ -14894,6 +14881,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
@@ -16409,14 +16402,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
-"NO" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
 "NQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 0;
@@ -16480,8 +16465,12 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/maple,
+/area/chapel/main{
+	name = "\improper Funeral Chamber"
+	})
 "NY" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/thirddeck)
@@ -16691,6 +16680,12 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -20270,6 +20265,12 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main{
@@ -42006,7 +42007,7 @@ aE
 aE
 aE
 Il
-eA
+aE
 aE
 aE
 aK
@@ -43028,7 +43029,7 @@ nC
 nC
 nC
 nC
-fO
+Tr
 Eg
 hB
 eI
@@ -43228,9 +43229,9 @@ aT
 bK
 nC
 dh
-dU
+gG
 PF
-fP
+gG
 gG
 hC
 eI
@@ -43430,9 +43431,9 @@ aT
 fJ
 vy
 di
-dV
 Tr
-dV
+Tr
+Tr
 Tr
 Tr
 WP
@@ -43631,10 +43632,10 @@ aT
 mG
 np
 cn
-dj
-dW
-NW
-NO
+hC
+Tr
+Tr
+Tr
 Tr
 Tr
 nA
@@ -44270,7 +44271,7 @@ DZ
 Gl
 Fk
 FM
-Go
+dV
 GO
 uJ
 xG
@@ -44471,7 +44472,7 @@ RG
 CU
 Gl
 Ox
-Ai
+NW
 Ai
 GP
 Gl
@@ -45479,7 +45480,7 @@ LM
 SW
 RG
 JX
-Kb
+dW
 AU
 Kb
 Kb
