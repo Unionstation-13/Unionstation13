@@ -7369,11 +7369,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/reception2)
 "axl" = (
@@ -13255,10 +13250,6 @@
 /obj/machinery/computer/atmoscontrol/laptop/research{
 	monitored_alarm_ids = list("xenobio1_alarm","xenobio2_alarm","xenobio3_alarm","xenobio4_alarm")
 	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology)
 "aUP" = (
@@ -13381,7 +13372,8 @@
 "aVf" = (
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio1_alarm";
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"));
+	pixel_y = 22
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_1)
@@ -13562,6 +13554,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology)
 "aVP" = (
@@ -17478,8 +17471,9 @@
 /area/hallway/primary/firstdeck/center)
 "ghU" = (
 /obj/machinery/alarm/monitor{
-	alarm_id = "xenobio4_alarm";
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	alarm_id = "xenobio1_alarm";
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"));
+	pixel_y = 22
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_4)
@@ -20407,9 +20401,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
-"jKc" = (
-/turf/simulated/wall/prepainted,
-/area/medical/reception)
 "jMb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -28960,14 +28951,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
-"tgb" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/rnd/xenobiology)
 "tgg" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 6
@@ -29101,7 +29084,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/machinery/power/apc,
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -28
+	},
+/obj/structure/cable/green,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_1)
 "tkp" = (
@@ -29200,7 +29187,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/machinery/power/apc,
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -28
+	},
+/obj/structure/cable/green,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_4)
 "tnV" = (
@@ -29332,6 +29323,7 @@
 	name = "east bump";
 	pixel_x = 24
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_2)
 "twz" = (
@@ -29350,6 +29342,7 @@
 	name = "west bump";
 	pixel_x = -24
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_3)
 "tyy" = (
@@ -30099,19 +30092,9 @@
 	name = "Reception"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
-	},
 /obj/machinery/door/blast/regular/open{
 	dir = 4;
 	id_tag = "ward_Lockdown"
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/reception2)
@@ -30445,18 +30428,8 @@
 	name = "\improper Paitent Room 2"
 	})
 "vxR" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/white,
-/area/rnd/xenobiology)
+/turf/simulated/wall/prepainted,
+/area/medical/reception)
 "vzp" = (
 /obj/catwalk_plated,
 /obj/structure/disposalpipe/sortjunction/flipped{
@@ -51736,7 +51709,7 @@ gzb
 gML
 sAb
 agK
-jKc
+vxR
 kHb
 ayp
 fnu
@@ -51967,9 +51940,9 @@ jjh
 aaa
 sRV
 aUJ
-tgb
-tgb
-vxR
+aUW
+aUW
+vgr
 aQz
 aVW
 tub
@@ -52140,7 +52113,7 @@ lHO
 vTY
 agY
 agB
-jKc
+vxR
 bWA
 hfb
 oox
@@ -52746,7 +52719,7 @@ lHO
 aaJ
 agx
 jCU
-jKc
+vxR
 sMh
 hYM
 iUb
@@ -52946,9 +52919,9 @@ afb
 afZ
 lHO
 iBb
-jKc
+vxR
 ovb
-jKc
+vxR
 aTQ
 xmO
 mpq
