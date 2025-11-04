@@ -1149,6 +1149,14 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = 8;
+	pixel_y = -3
+	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
@@ -4648,11 +4656,6 @@
 /turf/simulated/floor/plating,
 /area/aquila/air)
 "kv" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
@@ -4661,6 +4664,7 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
@@ -4909,6 +4913,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = -5;
+	pixel_y = 5
 	},
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_supply,
@@ -5653,14 +5661,6 @@
 	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
 	name = "\improper Bridge Secretary's Office"
 	})
-"nx" = (
-/obj/structure/lattice,
-/obj/structure/cable{
-	d1 = 32;
-	icon_state = "32-1"
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/aftport)
 "nE" = (
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -6586,9 +6586,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 5
 	},
 /obj/structure/bed/chair/office/comfy/teal{
 	dir = 1
@@ -8257,6 +8254,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = 11;
+	pixel_y = 1
 	},
 /obj/item/tableflag,
 /turf/simulated/floor/carpet/blue2,
@@ -11199,6 +11200,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = 3
+	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -12517,15 +12521,20 @@
 	name = "Bridge Archive";
 	desc = "A machine containing archives of the Bridge's data"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "cap"
-	},
 /obj/floor_decal/industrial/warning/full,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cl/backroom{
 	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
 	name = "\improper Bridge Secretary's Office"
 	})
+"KA" = (
+/obj/structure/lattice,
+/obj/structure/cable{
+	d1 = 32;
+	icon_state = "32-1"
+	},
+/turf/simulated/open,
+/area/maintenance/bridge/aftport)
 "KB" = (
 /obj/structure/largecrate,
 /turf/simulated/floor/plating,
@@ -12799,9 +12808,6 @@
 	pixel_y = 24
 	},
 /obj/machinery/computer/modular/preset/civilian,
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "cap"
-	},
 /obj/floor_decal/corner/grey/border,
 /obj/floor_decal/corner/grey/border{
 	dir = 4
@@ -13324,9 +13330,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cl/backroom{
 	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
@@ -13553,9 +13556,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
 "Pl" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9
-	},
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 8
 	},
@@ -14244,7 +14244,6 @@
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
 	},
-/obj/structure/wall_frame,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
 	name = "\improper Abandonded Construction Site";
@@ -31222,7 +31221,7 @@ wR
 wR
 XJ
 xv
-nx
+KA
 wP
 CN
 CN
