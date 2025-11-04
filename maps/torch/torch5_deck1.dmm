@@ -241,11 +241,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/reception2)
 "aaz" = (
@@ -480,6 +475,7 @@
 	pixel_x = 32;
 	dir = 4
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/medical/reception2)
 "aaT" = (
@@ -1523,6 +1519,7 @@
 /obj/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "acZ" = (
@@ -3075,6 +3072,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
 "afw" = (
@@ -4287,10 +4285,6 @@
 /area/maintenance/substation/firstdeck)
 "ahR" = (
 /obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
 	},
@@ -4300,6 +4294,11 @@
 	},
 /obj/floor_decal/industrial/warning,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/maintenance/substation/firstdeck)
 "ahS" = (
@@ -4788,10 +4787,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "aje" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -4799,6 +4794,7 @@
 /obj/machinery/power/smes/buildable/preset/torch/substation{
 	RCon_tag = "Substation - 1st Deck"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/maintenance/substation/firstdeck)
 "ajf" = (
@@ -5442,6 +5438,7 @@
 	name = "south bump";
 	pixel_y = -24
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "alO" = (
@@ -9247,6 +9244,7 @@
 /obj/wallframe_spawn/reinforced/polarized{
 	id = "bo_windows"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/security/bo)
 "aFR" = (
@@ -10002,6 +10000,7 @@
 	pixel_y = -28
 	},
 /obj/item/crowbar/prybar,
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
 "aJp" = (
@@ -12164,17 +12163,17 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -12426,6 +12425,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aSE" = (
@@ -13613,6 +13613,7 @@
 	opacity = 0
 	},
 /obj/wallframe_spawn/reinforced,
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology/cell_2)
 "aWa" = (
@@ -13624,6 +13625,7 @@
 	opacity = 0
 	},
 /obj/wallframe_spawn/reinforced,
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology/cell_3)
 "aWb" = (
@@ -13658,6 +13660,7 @@
 /obj/structure/table/rack,
 /obj/item/storage/box/ammo/smg,
 /obj/item/storage/box/ammo/smg,
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aXb" = (
@@ -15277,6 +15280,23 @@
 "cQo" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
+"cQy" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/tiled/white,
+/area/medical/medicalhallway{
+	name = "\improper Long Term Main"
+	})
 "cRb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/white,
@@ -16025,6 +16045,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Long Term Main"
@@ -16933,10 +16954,6 @@
 /area/hallway/primary/firstdeck/center)
 "fmb" = (
 /obj/structure/table/rack,
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/item/storage/box/autoinjectors,
 /obj/item/storage/box/beakers,
 /obj/item/storage/box/syringes,
@@ -19265,6 +19282,7 @@
 	opacity = 0
 	},
 /obj/wallframe_spawn/reinforced/no_grille,
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/rnd/development)
 "iJQ" = (
@@ -20017,6 +20035,7 @@
 	id_tag = "hall_down";
 	dir = 4
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/security/detectives_office)
 "jqF" = (
@@ -20482,6 +20501,7 @@
 	name = "west bump";
 	pixel_x = -24
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/command/armoury)
 "jQY" = (
@@ -20563,6 +20583,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
 	name = "\improper Long Term Main"
@@ -20727,6 +20748,7 @@
 /obj/floor_decal/corner/yellow{
 	dir = 6
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/laboratory)
 "kdd" = (
@@ -21997,6 +22019,7 @@
 	name = "Hallway Lockdown";
 	id_tag = "hall_down"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "lxb" = (
@@ -22432,6 +22455,11 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plating,
 /area/security/processing)
 "mer" = (
@@ -22630,6 +22658,7 @@
 /obj/floor_decal/corner/paleblue{
 	dir = 9
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry{
 	name = "\improper Chemistry Synthesis"
@@ -23360,6 +23389,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "neb" = (
@@ -23584,6 +23614,11 @@
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "hall_down";
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
 /area/security/processing)
@@ -25412,6 +25447,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
 "prb" = (
@@ -28951,6 +28987,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
+"tgb" = (
+/turf/simulated/wall/prepainted,
+/area/medical/reception)
 "tgg" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 6
@@ -29285,7 +29324,8 @@
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio3_alarm";
 	dir = 8;
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"));
+	pixel_x = 22
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_3)
@@ -29860,6 +29900,11 @@
 	id_tag = "hall_down";
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/security/questioning)
 "uFk" = (
@@ -29916,7 +29961,8 @@
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio2_alarm";
 	dir = 4;
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"));
+	pixel_x = -22
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_2)
@@ -30428,8 +30474,24 @@
 	name = "\improper Paitent Room 2"
 	})
 "vxR" = (
-/turf/simulated/wall/prepainted,
-/area/medical/reception)
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/wallframe_spawn/reinforced/polarized{
+	id = "processwindow"
+	},
+/obj/machinery/door/blast/shutters/open{
+	id_tag = "hall_down";
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/security/processing)
 "vzp" = (
 /obj/catwalk_plated,
 /obj/structure/disposalpipe/sortjunction/flipped{
@@ -31323,6 +31385,7 @@
 /obj/item/storage/box/teargas,
 /obj/item/storage/box/flashbangs,
 /obj/item/storage/box/flashbangs,
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/security/secure_storage)
 "xFL" = (
@@ -41208,7 +41271,7 @@ wyb
 sxG
 xRh
 awY
-awY
+vxR
 nmb
 xRh
 aeo
@@ -51709,7 +51772,7 @@ gzb
 gML
 sAb
 agK
-vxR
+tgb
 kHb
 ayp
 fnu
@@ -52113,7 +52176,7 @@ lHO
 vTY
 agY
 agB
-vxR
+tgb
 bWA
 hfb
 oox
@@ -52695,7 +52758,7 @@ aaS
 qJR
 axi
 aap
-aaM
+cQy
 aaP
 owb
 owb
@@ -52719,7 +52782,7 @@ lHO
 aaJ
 agx
 jCU
-vxR
+tgb
 sMh
 hYM
 iUb
@@ -52897,7 +52960,7 @@ adO
 adO
 uVy
 aat
-aaM
+cQy
 aaC
 anp
 owb
@@ -52919,9 +52982,9 @@ afb
 afZ
 lHO
 iBb
-vxR
+tgb
 ovb
-vxR
+tgb
 aTQ
 xmO
 mpq

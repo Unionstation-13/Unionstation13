@@ -1525,54 +1525,41 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
-/obj/floor_decal/industrial/warning{
-	dir = 1
-	},
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/substation/bridge)
-"cM" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/floor_decal/industrial/warning{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
-"cN" = (
-/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/zpipe/down/supply{
-	dir = 8
-	},
+"cM" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
+/obj/machinery/atmospherics/pipe/zpipe/down/supply,
 /obj/structure/cable{
 	d1 = 32;
 	d2 = 8;
 	icon_state = "32-8"
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/substation/bridge)
+"cN" = (
+/obj/structure/lattice,
+/obj/structure/cable{
+	d1 = 32;
+	icon_state = "32-1"
+	},
+/turf/simulated/open,
+/area/maintenance/bridge/aftport)
 "cO" = (
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -1977,6 +1964,10 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers{
 	dir = 4
 	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4;
+	icon_state = "warningcorner"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "dw" = (
@@ -1985,14 +1976,14 @@
 	pixel_x = 24
 	},
 /obj/machinery/light/small,
-/obj/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
@@ -7410,10 +7401,6 @@
 /area/maintenance/bridge/foreport)
 "sy" = (
 /obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
 	},
@@ -7423,6 +7410,11 @@
 	name = "Maitnence Shutters";
 	desc = "It seems the shipyard has been doing a renovation in here for a while, you better not cross.";
 	id_tag = "construct"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea{
@@ -9355,14 +9347,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
 "xv" = (
-/obj/structure/cable{
-	d1 = 32;
-	icon_state = "32-1"
-	},
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
@@ -15449,16 +15442,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "XJ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/floor_decal/industrial/warning{
 	dir = 10;
 	icon_state = "warning"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
 "XN" = (
@@ -31229,7 +31222,7 @@ wR
 wR
 XJ
 xv
-wP
+cN
 wP
 CN
 CN
@@ -32208,7 +32201,7 @@ ad
 gz
 bD
 bD
-cN
+bD
 bD
 bD
 gz
