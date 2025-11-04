@@ -1531,35 +1531,48 @@
 	},
 /obj/structure/catwalk,
 /obj/floor_decal/industrial/warning{
-	dir = 5
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "cM" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
-/obj/machinery/atmospherics/pipe/zpipe/down/supply,
-/obj/structure/cable{
-	d1 = 32;
-	d2 = 8;
-	icon_state = "32-8"
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/lattice,
-/turf/simulated/open,
+/obj/floor_decal/industrial/warning{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "cN" = (
 /obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
+	dir = 8
+	},
 /obj/structure/cable{
 	d1 = 32;
-	icon_state = "32-1"
+	d2 = 8;
+	icon_state = "32-8"
+	},
+/obj/machinery/atmospherics/pipe/zpipe/down/supply{
+	dir = 8
 	},
 /turf/simulated/open,
-/area/maintenance/bridge/aftport)
+/area/maintenance/substation/bridge)
 "cO" = (
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -1964,10 +1977,6 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers{
 	dir = 4
 	},
-/obj/floor_decal/industrial/warning/corner{
-	dir = 4;
-	icon_state = "warningcorner"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "dw" = (
@@ -1982,8 +1991,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/obj/floor_decal/industrial/warning{
-	dir = 1
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4;
+	icon_state = "warningcorner"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
@@ -5655,6 +5665,14 @@
 	req_access = list("ACCESS_BRIDGE","ACCESS_KEYCARD_AUTH");
 	name = "\improper Bridge Secretary's Office"
 	})
+"nx" = (
+/obj/structure/lattice,
+/obj/structure/cable{
+	d1 = 32;
+	icon_state = "32-1"
+	},
+/turf/simulated/open,
+/area/maintenance/bridge/aftport)
 "nE" = (
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -31222,7 +31240,7 @@ wR
 wR
 XJ
 xv
-cN
+nx
 wP
 CN
 CN
@@ -32201,7 +32219,7 @@ ad
 gz
 bD
 bD
-bD
+cN
 bD
 bD
 gz
