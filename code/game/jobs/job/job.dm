@@ -67,7 +67,7 @@ var/global/list/job_name_mapping = list(
 	"First Lieutenant" = "First Lieutenant %s",
 	"Sci-Med Officer" = "Administrator %s",
 	"Medical Administrator" = "Junior Administrator %s",
-	"Seinor Medical Officer" = "Doctor %s",
+	"Senior Medical Officer" = "Doctor %s",
 	"Standard Medical Officer" = "Doctor %s",
 	"Emergency Response Unit" = "Emergency Response Unit %s",
 	"Counselor" = "Doctor %s",
@@ -81,22 +81,22 @@ var/global/list/job_name_mapping = list(
 	"Bridge Secretary" = "Archive Manager %s",
 	"Intelligence Officer" = "Intelligence Officer %s",
 	"Maintenance Technician" = "Technician %s",
-	"Pharmacist" = "Biomedical Systems Seinor Officer %s"
+	"Pharmacist" = "Biomedical Systems Senior Officer %s"
 )
 
 // Main proc to apply job-based name changes
 /mob/living/carbon/human/proc/apply_job_name(job_title)
 	if(!job_title)
 		return
-		
+
 	var/format = job_name_mapping[job_title]
-	
+
 	if(format)
 		var/old_name = real_name
 		var/surname = extract_surname(old_name)
 		real_name = replacetext(format, "%s", surname)
 		name = real_name
-		
+
 		// Debug output
 		world.log << "Applied job name: [old_name] -> [real_name] (Job: [job_title])"
 
@@ -104,7 +104,7 @@ var/global/list/job_name_mapping = list(
 /mob/living/carbon/human/proc/extract_surname(full_name)
 	if(!full_name)
 		return "Doe"
-		
+
 	var/list/name_parts = splittext(full_name, " ")
 	if(name_parts.len >= 2)
 		return name_parts[name_parts.len]
@@ -160,7 +160,7 @@ var/global/list/job_name_mapping = list(
 
 	var/singleton/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(outfit) . = outfit.equip(H, title, alt_title)
-	
+
 	// ============================================================================
 	// JOB NAME REPLACEMENT HOOK - ADDED HERE
 	// ============================================================================

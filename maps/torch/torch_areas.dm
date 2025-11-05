@@ -726,6 +726,11 @@
 	name = "\improper Command - SEA's Office"
 	req_access = list(access_senadv)
 
+/area/crew_quarters/heads/office/bridgesec
+	icon_state = "heads_cl"
+	name = "\improper Bridge Secretary's Office"
+	req_access = list(access_liaison)
+
 // Engineering
 /area/engineering/shieldbay
 	name = "Shield Bay"
@@ -1017,6 +1022,12 @@
 	sound_env = SMALL_ENCLOSED
 	lighting_tone = AREA_LIGHTING_WARM
 
+/area/crew_quarters/community_manager
+	name = "\improper Community Manager's Office"
+	icon_state = "crew_quarters"
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_WARM
+
 /area/crew_quarters/service_break_room
 	name = "\improper Service Break Room"
 	icon_state = "fitness"
@@ -1153,11 +1164,6 @@
 	name = "\improper Medical Storeroom"
 	icon_state = "medbay"
 
-/area/medical/locker
-	name = "\improper Medical Locker Room"
-	icon_state = "locker"
-	req_access = list(access_medical_equip)
-
 /area/medical/medpaperworkoffice
 	name = "\improper Medical Paperwork Office"
 	icon_state = "locker"
@@ -1212,6 +1218,35 @@
 /area/medical/recovery2
 	name = "\improper Patient Recovery Room 2"
 	icon_state = "patients"
+
+/area/medical/longterm/hallway
+	name = "\improper Long Term Hallway"
+	icon_state = "patients"
+	lighting_tone = AREA_LIGHTING_COOL
+
+/area/medical/longterm/room1
+	name = "\improper Long-term Patient Room 1"
+	icon_state = "patients"
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_COOL
+
+/area/medical/longterm/room2
+	name = "\improper Long-term Patient Room 2"
+	icon_state = "patients"
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_COOL
+
+/area/medical/longterm/room3
+	name = "\improper Long-term Patient Room 3"
+	icon_state = "patients"
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_COOL
+
+/area/medical/longterm/room4
+	name = "\improper Long-term Patient Room 4"
+	icon_state = "patients"
+	sound_env = SMALL_ENCLOSED
+	lighting_tone = AREA_LIGHTING_COOL
 
 /area/medical/chemistry
 	name = "\improper Chemistry"
@@ -1298,11 +1333,6 @@
 
 /area/engineering/fuelbay
 	name = "\improper Fuel Bay"
-	icon_state = "engineering"
-	req_access = list(access_construction)
-
-/area/engineering/fuelbay/aux
-	name = "\improper Auxiliary Fuel Bay"
 	icon_state = "engineering"
 	req_access = list(access_construction)
 
@@ -1713,6 +1743,16 @@
 	name = "\improper Memorial Room"
 	color = COLOR_GRAY80
 	sound_env = SMALL_SOFTFLOOR
+
+/area/chapel/funchamber
+	name = "\improper Funeral Chamber"
+	color = COLOR_GRAY80
+	sound_env = AREA_LIGHTING_WARM
+
+/area/chapel/funcontrol
+	name = "\improper Funeral Chamber Control"
+	color = COLOR_GRAY80
+	sound_env = SMALL_ENCLOSED
 
 // Merchant
 

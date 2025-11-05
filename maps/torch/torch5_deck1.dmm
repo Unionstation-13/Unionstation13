@@ -36,9 +36,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aag" = (
 /obj/structure/bed/chair/office/comfy/teal,
 /obj/structure/cable/green{
@@ -130,14 +128,10 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "aao" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aap" = (
 /obj/structure/window/boron_reinforced,
 /obj/machinery/computer/modular/preset/medical{
@@ -252,9 +246,7 @@
 	pixel_y = -26
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aaA" = (
 /obj/structure/hygiene/sink{
 	dir = 4;
@@ -262,9 +254,7 @@
 	pixel_y = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "aaB" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -277,7 +267,7 @@
 /area/space)
 "aaC" = (
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaD" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -306,14 +296,19 @@
 /area/hallway/primary/firstdeck/center)
 "aaG" = (
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "aaH" = (
-/turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/medical/longterm/hallway)
 "aaI" = (
 /obj/structure/table/standard,
 /obj/structure/flora/pottedplant,
@@ -326,9 +321,7 @@
 	id_tag = "PT_1"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "aaJ" = (
 /obj/machinery/button/alternate/door{
 	id_tag = "inf_stage";
@@ -394,9 +387,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "aaN" = (
 /obj/structure/bed/chair/wheelchair,
 /obj/machinery/power/apc{
@@ -409,9 +400,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "aaP" = (
 /obj/machinery/door/airlock/medical{
 	name = "Long-Term Check-In"
@@ -421,7 +410,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaQ" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -431,17 +420,11 @@
 	pixel_x = -22
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaR" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaS" = (
 /obj/item/storage/firstaid,
 /obj/item/storage/firstaid/adv,
@@ -480,9 +463,7 @@
 "aaT" = (
 /obj/machinery/newscaster,
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aaU" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -494,7 +475,7 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaV" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -509,7 +490,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaW" = (
 /obj/wingrille_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -518,9 +499,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/plating,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aaX" = (
 /obj/wingrille_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -529,9 +508,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/plating,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "aaY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/medical{
@@ -548,7 +525,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "aaZ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -557,9 +534,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "aba" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/bo)
@@ -717,9 +692,7 @@
 "abr" = (
 /obj/machinery/vitals_monitor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "abs" = (
 /obj/machinery/light{
 	dir = 1
@@ -870,9 +843,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "abD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2782,9 +2753,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "afe" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -2936,9 +2905,7 @@
 	},
 /obj/structure/bed/chair/wheelchair,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "afr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -2974,9 +2941,7 @@
 	},
 /obj/machinery/light_switch,
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "aft" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -2993,9 +2958,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/kafel_full,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "afu" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 10
@@ -3352,9 +3315,7 @@
 	name = "Restroom 1"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "agh" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 9
@@ -3418,9 +3379,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "agq" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -3757,9 +3716,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "agV" = (
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4;
@@ -4796,9 +4753,7 @@
 	dir = 5
 	},
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "ajH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -5165,9 +5120,7 @@
 	dir = 5
 	},
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "akL" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5423,9 +5376,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "ami" = (
 /obj/structure/hygiene/toilet{
 	dir = 4
@@ -5586,7 +5537,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "anq" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
@@ -6114,7 +6065,7 @@
 	},
 /obj/machinery/door/airlock/medical{
 	id_tag = "examdoor";
-	name = "Seinor Medical Officer's Office"
+	name = "Senior Medical Officer's Office"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/seniorofficer)
@@ -6367,9 +6318,7 @@
 	dir = 4
 	},
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "asx" = (
 /obj/structure/table/standard,
 /obj/item/book/manual/solgov_law,
@@ -6477,18 +6426,14 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "atg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "atm" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -6935,9 +6880,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "avu" = (
 /obj/item/device/radio/intercom/department/medbay{
 	dir = 1;
@@ -6951,9 +6894,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "avx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -7359,16 +7300,14 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "axD" = (
 /obj/wallframe_spawn/reinforced/no_grille,
 /obj/machinery/door/blast/regular/open{
 	id_tag = "Em_Lockdown"
 	},
 /turf/simulated/floor/plating,
-/area/security/brig)
+/area/rnd/xenobiology/xenoflora)
 "axF" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -9129,16 +9068,9 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "aFl" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/security/processing{
-	req_access = null;
-	name = "\improper Security - Waiting Room"
-	})
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/medical/longterm/hallway)
 "aFo" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4
@@ -11138,9 +11070,6 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/firstdeck/foreport)
-"aOP" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/brig)
 "aPb" = (
 /obj/floor_decal/corner/yellow/mono,
 /obj/machinery/computer/modular{
@@ -12238,9 +12167,7 @@
 	name = "Autopsy Chamber"
 	},
 /turf/simulated/floor/tiled/kafel_full,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "aSt" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 5
@@ -13629,9 +13556,7 @@
 /obj/structure/curtain/open/shower,
 /obj/structure/hygiene/shower,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "bhb" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "cChamber1sV";
@@ -14049,9 +13974,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "bEQ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14163,9 +14086,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "bKv" = (
 /obj/machinery/atmospherics/unary/vent_pump/tank{
 	external_pressure_bound = 0;
@@ -14219,9 +14140,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "bMb" = (
 /turf/simulated/wall/prepainted,
 /area/engineering/hardstorage/aux)
@@ -14336,9 +14255,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "bSD" = (
 /obj/structure/table/standard,
 /obj/machinery/newscaster{
@@ -14553,9 +14470,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "cbb" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -14601,9 +14516,7 @@
 /area/shuttle/escape_pod16/station)
 "cdQ" = (
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "ceb" = (
 /obj/shuttle_landmark/escape_pod/start/pod17,
 /obj/wallframe_spawn/reinforced/titanium,
@@ -14614,9 +14527,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "cfn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14886,7 +14797,7 @@
 	department = "Research- Specimin Control"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/brig)
+/area/rnd/xenobiology/xenoflora)
 "czb" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 23
@@ -15391,9 +15302,7 @@
 "dib" = (
 /obj/machinery/vitals_monitor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "diz" = (
 /obj/structure/lattice,
 /turf/simulated/floor/reinforced/hydrogen,
@@ -15604,9 +15513,7 @@
 	pixel_y = -26
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "dBF" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
@@ -15838,7 +15745,7 @@
 "dRC" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "exam_room";
-	name = "Seinor Medical Officer's Office"
+	name = "Senior Medical Officer's Office"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
@@ -15894,21 +15801,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -28
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "dUb" = (
 /obj/machinery/door/window/westleft{
 	name = "Autopsy"
@@ -15947,9 +15842,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "dXM" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 6
@@ -16093,9 +15986,7 @@
 /obj/item/shield/riot,
 /obj/item/shield/riot,
 /turf/simulated/floor/tiled/dark,
-/area/security/brig{
-	name = "/improper XenoFlora Checkpoint"
-	})
+/area/rnd/xenobiology/xenoflora)
 "edT" = (
 /obj/structure/sign/warning/high_voltage{
 	dir = 4
@@ -16160,9 +16051,7 @@
 /area/medical/washroom)
 "ekj" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "elT" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -16211,9 +16100,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "enM" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -16246,9 +16133,7 @@
 /obj/machinery/reagent_temperature,
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "epb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -16445,9 +16330,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "eGb" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 5
@@ -16712,15 +16595,14 @@
 	},
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "eXF" = (
 /obj/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4
@@ -16848,9 +16730,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "frA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -16884,9 +16764,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "fxe" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/recovery)
@@ -17268,9 +17146,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "gcY" = (
 /obj/structure/table/standard,
 /obj/structure/window/reinforced,
@@ -17400,9 +17276,7 @@
 /obj/structure/curtain/open/shower,
 /obj/structure/hygiene/shower,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "grI" = (
 /obj/machinery/light{
 	dir = 4
@@ -17449,9 +17323,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "gxX" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17533,9 +17405,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/medical/counselor/therapy{
-	name = "\improper Holding Cell"
-	})
+/area/maintenance/firstdeck/aftport)
 "gAU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -17618,9 +17488,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "gFb" = (
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "gGO" = (
 /obj/item/device/radio/intercom/department/security{
 	pixel_y = 23
@@ -18346,9 +18214,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "hEU" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 9
@@ -18445,9 +18311,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "hOb" = (
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/grey,
@@ -18499,9 +18363,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "hUb" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -18822,7 +18684,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/brig)
+/area/rnd/xenobiology/xenoflora)
 "iqb" = (
 /obj/structure/bed/chair/comfy/lime,
 /turf/simulated/floor/tiled/dark,
@@ -18842,9 +18704,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "irb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -19035,9 +18895,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "iBb" = (
 /obj/machinery/smartfridge/chemistry,
 /obj/machinery/door/window/brigdoor/eastright{
@@ -19161,9 +19019,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "iMo" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19183,9 +19039,7 @@
 	id_tag = "PT_4"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "iMW" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19230,9 +19084,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "iPb" = (
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -19334,9 +19186,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "iSb" = (
 /obj/structure/table/standard,
 /obj/structure/window/reinforced{
@@ -19546,9 +19396,7 @@
 /area/maintenance/firstdeck/foreport)
 "jeO" = (
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "jfb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19752,9 +19600,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "jnu" = (
 /obj/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/firedoor,
@@ -19790,9 +19636,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "job" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -19997,9 +19841,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "jxG" = (
 /obj/floor_decal/corner/paleblue/half{
 	dir = 4
@@ -20393,9 +20235,7 @@
 	pixel_y = -22
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "jWU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -20443,9 +20283,7 @@
 	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "jYD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -20519,9 +20357,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "kcb" = (
 /obj/floor_decal/sign/or1,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -20962,9 +20798,7 @@
 	},
 /obj/structure/bed/chair/wheelchair,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "kCb" = (
 /turf/simulated/wall/prepainted,
 /area/medical/surgery)
@@ -21644,9 +21478,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "lob" = (
 /obj/machinery/computer/modular/preset/security,
 /obj/structure/cable/green{
@@ -21670,7 +21502,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/modular_computer/laptop/preset,
 /turf/simulated/floor/tiled/dark,
-/area/security/brig)
+/area/rnd/xenobiology/xenoflora)
 "lpb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -21962,9 +21794,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "lGw" = (
 /obj/floor_decal/techfloor{
 	dir = 4
@@ -22020,9 +21850,7 @@
 	pixel_x = 20
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "lMb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -22445,9 +22273,7 @@
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "mmP" = (
 /obj/catwalk_plated,
 /obj/structure/cable/green{
@@ -22496,9 +22322,7 @@
 /area/medical/reception2)
 "moB" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "mpq" = (
 /obj/floor_decal/corner/research{
 	dir = 8
@@ -22911,7 +22735,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
 	id_tag = "exam_room";
-	name = "Seinor Medical Officer's Office"
+	name = "Senior Medical Officer's Office"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
@@ -23096,9 +22920,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "mXb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
@@ -23111,16 +22933,12 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "mZB" = (
 /obj/machinery/optable,
 /obj/floor_decal/corner/blue/mono,
 /turf/simulated/floor/plating,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "naR" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -23226,9 +23044,7 @@
 /obj/item/bedsheet,
 /obj/machinery/rotating_alarm/security_alarm,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "nib" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -23595,9 +23411,7 @@
 	dir = 10
 	},
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "nCb" = (
 /turf/simulated/wall/prepainted,
 /area/medical/exam_room)
@@ -23617,9 +23431,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "nDx" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -23934,9 +23746,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "nWl" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -23952,9 +23762,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/kafel_full,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "nWP" = (
 /obj/floor_decal/techfloor{
 	dir = 4
@@ -24240,7 +24048,7 @@
 	pixel_y = 7
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/brig)
+/area/rnd/xenobiology/xenoflora)
 "omb" = (
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/gloves/latex,
@@ -24385,12 +24193,20 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "owb" = (
-/turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/prepainted,
+/area/medical/morgue/autopsy)
 "oxa" = (
 /obj/floor_decal/floordetail/edgedrain{
 	dir = 10
@@ -24471,9 +24287,7 @@
 	id_tag = "PT_3"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "oAp" = (
 /obj/floor_decal/corner/research{
 	dir = 10
@@ -24512,9 +24326,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "oBZ" = (
 /obj/floor_decal/techfloor{
 	dir = 9
@@ -24645,10 +24457,9 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
 "oNW" = (
-/turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
+/area/medical/morgue/autopsy)
 "oOb" = (
 /obj/machinery/disposal,
 /obj/floor_decal/corner/red{
@@ -24799,9 +24610,7 @@
 /obj/item/autopsy_scanner,
 /obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/kafel_full,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "oTb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -24862,9 +24671,7 @@
 	},
 /obj/machinery/rotating_alarm/security_alarm,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "oWb" = (
 /obj/machinery/light_switch{
 	pixel_x = 24;
@@ -24962,7 +24769,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "paT" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -24970,10 +24776,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "pbb" = (
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
@@ -25005,9 +24812,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/plating,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "pdb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -25169,9 +24974,7 @@
 "pkN" = (
 /obj/machinery/newscaster,
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "pmb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -25668,9 +25471,7 @@
 /area/rnd/xenobiology/xenoflora)
 "pMN" = (
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "pOL" = (
 /obj/floor_decal/corner/research{
 	dir = 5
@@ -25828,9 +25629,7 @@
 	name = "Lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "pZb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -26278,9 +26077,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "qCb" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/white,
@@ -26422,9 +26219,7 @@
 	dir = 4
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "qHb" = (
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
@@ -27012,9 +26807,7 @@
 	name = "Chemistry Synthesis"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "rsV" = (
 /obj/floor_decal/techfloor{
 	dir = 1
@@ -27387,9 +27180,7 @@
 	},
 /obj/machinery/vitals_monitor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "rOE" = (
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -27798,9 +27589,7 @@
 /area/rnd/xenobiology/xenoflora)
 "sjC" = (
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "skb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -28134,7 +27923,7 @@
 "sxJ" = (
 /obj/structure/lattice,
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "sxT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -28415,9 +28204,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "sOb" = (
 /obj/structure/hygiene/sink{
 	dir = 1;
@@ -28531,9 +28318,7 @@
 /area/rnd/xenobiology)
 "sTz" = (
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "sTK" = (
 /obj/machinery/door/airlock/security{
 	name = "Security Interview Room"
@@ -28854,9 +28639,7 @@
 	},
 /obj/structure/curtain/open,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "tiz" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 10
@@ -29614,9 +29397,7 @@
 	dir = 4
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "uCe" = (
 /obj/floor_decal/techfloor{
 	dir = 8
@@ -29692,9 +29473,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/plating,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "uJL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -30107,9 +29886,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 3"
-	})
+/area/medical/longterm/room3)
 "vlw" = (
 /obj/floor_decal/techfloor,
 /obj/floor_decal/techfloor{
@@ -30211,9 +29988,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "vzp" = (
 /obj/catwalk_plated,
 /obj/structure/disposalpipe/sortjunction/flipped{
@@ -30264,7 +30039,7 @@
 	name = "Empty Room"
 	},
 /turf/simulated/floor/plating,
-/area/medical/counselor/therapy)
+/area/maintenance/firstdeck/aftport)
 "vDD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -30338,10 +30113,11 @@
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "vJi" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
-/area/medical/morgue/autopsy{
-	name = "\improper Autopsy prep"
-	})
+/area/medical/morgue/autopsy)
 "vJO" = (
 /obj/floor_decal/corner/red{
 	dir = 5
@@ -30655,9 +30431,7 @@
 	},
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "wrt" = (
 /obj/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "counselor_office"
@@ -30874,9 +30648,7 @@
 /area/assembly/robotics/office)
 "xeC" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "xgi" = (
 /obj/machinery/light{
 	dir = 1
@@ -30982,9 +30754,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
-"xxB" = (
-/turf/simulated/floor/plating,
-/area/medical/counselor/therapy)
 "xxY" = (
 /obj/floor_decal/corner/research{
 	dir = 10
@@ -31017,9 +30786,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "xBj" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/seniorofficer)
@@ -31035,9 +30802,7 @@
 	},
 /obj/machinery/vitals_monitor,
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "xCf" = (
 /obj/floor_decal/corner/research{
 	dir = 10
@@ -31147,9 +30912,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Long Term Main"
-	})
+/area/medical/longterm/hallway)
 "xMq" = (
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -31164,9 +30927,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 1"
-	})
+/area/medical/longterm/room1)
 "xMx" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -31223,7 +30984,7 @@
 	id_tag = "ward_Lockdown"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/area/medical/longterm/hallway)
 "xSd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5
@@ -31277,9 +31038,7 @@
 /area/rnd/office)
 "xYM" = (
 /turf/simulated/wall/prepainted,
-/area/medical/chemistry{
-	name = "\improper Chemistry Synthesis"
-	})
+/area/medical/chemistry)
 "yap" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack,
@@ -31329,9 +31088,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 2"
-	})
+/area/medical/longterm/room2)
 "yeI" = (
 /obj/structure/bed/chair/office/comfy/red,
 /obj/structure/disposalpipe/segment{
@@ -31403,9 +31160,7 @@
 /area/medical/medpaperworkoffice)
 "yjN" = (
 /turf/simulated/wall/r_wall/hull,
-/area/medical/medicalhallway{
-	name = "\improper Paitent Room 4"
-	})
+/area/medical/longterm/room4)
 "ykr" = (
 /obj/structure/closet/toolcloset,
 /turf/simulated/floor/tiled/techfloor,
@@ -41410,7 +41165,7 @@ ovZ
 eyY
 eyY
 eyY
-aFl
+aBd
 aIB
 aaj
 aeq
@@ -49889,7 +49644,7 @@ bGZ
 htb
 acy
 sGs
-oJb
+leb
 jZb
 aym
 jsk
@@ -50091,7 +49846,7 @@ bGZ
 axe
 kQb
 hPt
-oJb
+leb
 aLH
 dkJ
 knu
@@ -50293,7 +50048,7 @@ bGZ
 aqk
 kRb
 lab
-oJb
+leb
 pwb
 ayg
 ure
@@ -50495,7 +50250,7 @@ bGZ
 dNb
 kSb
 lbb
-oJb
+leb
 lsT
 sHu
 vqF
@@ -50669,7 +50424,7 @@ sTz
 pcV
 pcV
 sTz
-aaH
+aaC
 cdQ
 aaX
 aaX
@@ -51876,7 +51631,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 xMn
 tit
 jYs
@@ -51884,7 +51639,7 @@ aaG
 jns
 aaG
 enH
-aaG
+aaR
 dTG
 aaC
 sxJ
@@ -52078,7 +51833,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 adO
 adO
 adO
@@ -52280,7 +52035,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 dMb
 pio
 shh
@@ -52291,7 +52046,7 @@ aag
 mni
 gxo
 xRu
-aaR
+sNL
 aaV
 aaY
 dFH
@@ -52482,7 +52237,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 deo
 aaK
 aak
@@ -52493,8 +52248,8 @@ axi
 aap
 aaM
 aaP
-owb
-owb
+aaG
+aaG
 aaP
 aEU
 jgZ
@@ -52684,7 +52439,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 adO
 adO
 adO
@@ -52696,7 +52451,7 @@ aat
 aaM
 aaC
 anp
-owb
+aaG
 aaC
 yeW
 anN
@@ -52886,7 +52641,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 xMn
 agg
 aaA
@@ -52894,8 +52649,8 @@ aaG
 enH
 lKi
 jns
-aaG
-aaM
+aFl
+aaH
 aaC
 aaC
 aaC
@@ -54103,7 +53858,7 @@ pMN
 aaW
 aaW
 pMN
-aaH
+aaC
 yjN
 uHV
 uHV
@@ -55155,7 +54910,7 @@ lsl
 oXb
 axD
 edj
-aOP
+rJb
 gyY
 rkb
 pvb
@@ -56537,15 +56292,15 @@ abN
 abN
 ach
 mEV
-oNW
-oNW
+jCM
+jCM
 afs
 acL
 eXk
-eXF
-vJi
-eXF
 oNW
+jxa
+oNW
+jCM
 uiY
 wlG
 aQx
@@ -56743,10 +56498,10 @@ iAZ
 lFv
 aft
 aSs
-vJi
-vJi
-vJi
-vJi
+jxa
+jxa
+jxa
+jxa
 uiY
 nga
 nLo
@@ -56948,7 +56703,7 @@ asv
 vJi
 eXF
 cfl
-eXF
+oNW
 uiY
 uiY
 nLo
@@ -57147,7 +56902,7 @@ agp
 hMJ
 nWo
 nAN
-paT
+owb
 paT
 ajG
 akK
@@ -57976,9 +57731,9 @@ awJ
 aAW
 vtY
 auk
-ahd
+aTK
 vBV
-ahd
+aTK
 bDK
 bDK
 bDK
@@ -58177,10 +57932,10 @@ ayJ
 ayJ
 mwJ
 snG
-ahd
-xxB
-xxB
-xxB
+aTK
+aSd
+aSd
+aSd
 bDK
 bDK
 bDK
@@ -58379,10 +58134,10 @@ ayK
 jrH
 aAX
 aGN
-xxB
-xxB
+aSd
+aSd
 gzP
-xxB
+aSd
 bDK
 bDK
 bDK
