@@ -266,8 +266,7 @@
 /turf/space,
 /area/space)
 "aaC" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/wall/r_wall/hull,
 /area/medical/longterm/hallway)
 "aaD" = (
 /obj/machinery/alarm{
@@ -296,12 +295,22 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/firstdeck/center)
 "aaG" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
 /area/medical/longterm/hallway)
 "aaH" = (
-/turf/simulated/wall/r_wall/hull,
-/area/medical/longterm/hallway)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/prepainted,
+/area/medical/morgue/autopsy)
 "aaI" = (
 /obj/structure/table/standard,
 /obj/structure/flora/pottedplant,
@@ -373,12 +382,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/longterm/hallway)
 "aaN" = (
@@ -415,10 +422,19 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/longterm/hallway)
 "aaR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/longterm/hallway)
 "aaS" = (
 /obj/item/storage/firstaid,
 /obj/item/storage/firstaid/adv,
@@ -9065,17 +9081,10 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "aFl" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
-/area/medical/longterm/hallway)
+/area/medical/sleeper)
 "aFo" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4
@@ -13803,19 +13812,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
-"bss" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/wall/prepainted,
-/area/medical/morgue/autopsy)
 "bta" = (
 /obj/floor_decal/corner/research{
 	dir = 1
@@ -16333,6 +16329,10 @@
 /obj/floor_decal/sign/or1,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"eAB" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/medical/longterm/hallway)
 "eCb" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -16621,6 +16621,9 @@
 /area/medical/morgue/autopsy)
 "eXF" = (
 /obj/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
 "eZQ" = (
@@ -17675,6 +17678,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/reception)
 "haV" = (
@@ -22958,13 +22962,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/longterm/room2)
-"mYl" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/morgue/autopsy)
 "mZB" = (
 /obj/machinery/optable,
 /obj/floor_decal/corner/blue/mono,
@@ -24478,13 +24475,9 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/office)
 "oNW" = (
-/obj/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
+/area/medical/morgue/autopsy)
 "oOb" = (
 /obj/machinery/disposal,
 /obj/floor_decal/corner/red{
@@ -28912,6 +28905,14 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_2)
+"tvv" = (
+/obj/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/medical/sleeper)
 "tvV" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/reagent_dispensers/fueltank,
@@ -50459,7 +50460,7 @@ sTz
 pcV
 pcV
 sTz
-aaH
+aaC
 cdQ
 aaX
 aaX
@@ -51666,7 +51667,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 xMn
 tit
 jYs
@@ -51674,12 +51675,12 @@ owb
 jns
 owb
 enH
-aaG
+eAB
 dTG
-aaH
+aaC
 sxJ
-aaH
-aaH
+aaC
+aaC
 wol
 ckb
 poS
@@ -51868,7 +51869,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 adO
 adO
 adO
@@ -51878,10 +51879,10 @@ adO
 tkp
 tRa
 jWb
-aaH
+aaC
 aaQ
 aaU
-aaH
+aaC
 bDD
 anN
 poS
@@ -51895,8 +51896,8 @@ pPa
 tAT
 ezb
 adL
-oNW
-aaR
+tvv
+aFl
 rPz
 eGb
 haT
@@ -52070,7 +52071,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 dMb
 pio
 shh
@@ -52272,7 +52273,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 deo
 aaK
 aak
@@ -52281,7 +52282,7 @@ aaS
 qJR
 axi
 aap
-aaM
+aaR
 aaP
 owb
 owb
@@ -52474,7 +52475,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 adO
 adO
 adO
@@ -52483,11 +52484,11 @@ adO
 adO
 uVy
 aat
-aaM
-aaH
+aaR
+aaC
 anp
 owb
-aaH
+aaC
 yeW
 anN
 uwo
@@ -52676,7 +52677,7 @@ aaa
 aaa
 aaa
 aaa
-aaH
+aaC
 xMn
 agg
 aaA
@@ -52684,12 +52685,12 @@ owb
 enH
 lKi
 jns
+aaG
+aaM
 aaC
-aFl
-aaH
-aaH
-aaH
-aaH
+aaC
+aaC
+aaC
 thD
 adt
 kZb
@@ -53893,7 +53894,7 @@ pMN
 aaW
 aaW
 pMN
-aaH
+aaC
 yjN
 uHV
 uHV
@@ -56332,9 +56333,9 @@ jCM
 afs
 acL
 eXk
-eXF
+oNW
 jxa
-eXF
+oNW
 jCM
 uiY
 wlG
@@ -56736,9 +56737,9 @@ caG
 oSF
 asv
 vJi
-mYl
-cfl
 eXF
+cfl
+oNW
 uiY
 uiY
 nLo
@@ -56937,7 +56938,7 @@ agp
 hMJ
 nWo
 nAN
-bss
+aaH
 paT
 ajG
 akK

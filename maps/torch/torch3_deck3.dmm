@@ -808,7 +808,6 @@
 	locked = 1;
 	name = "Old Mess"
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/vacant/mess)
 "co" = (
@@ -1250,19 +1249,6 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"dh" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
-"di" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
 "dk" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -2772,10 +2758,6 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
-"gG" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
 "gJ" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -3206,16 +3188,6 @@
 /area/holodeck/alphadeck)
 "hB" = (
 /obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/vacant/mess)
-"hC" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "hF" = (
@@ -5571,24 +5543,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
-"np" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/structure/disposalpipe/junction{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/aftstarboard)
 "nq" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -16814,7 +16768,6 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "PG" = (
@@ -42939,12 +42892,12 @@ aT
 aT
 bK
 nC
-dh
-gG
+Tr
+Tr
 PF
-gG
-gG
-hC
+Tr
+Tr
+Tr
 eI
 gP
 xv
@@ -43141,7 +43094,7 @@ aT
 aT
 fJ
 vy
-di
+Tr
 Tr
 Tr
 Tr
@@ -43341,9 +43294,9 @@ aI
 aT
 aT
 mG
-np
+fJ
 cn
-hC
+Tr
 Tr
 Tr
 Tr
