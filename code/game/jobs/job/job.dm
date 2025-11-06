@@ -97,17 +97,14 @@ var/global/list/job_name_mapping = list(
 		real_name = replacetext(format, "%s", surname)
 		name = real_name
 
-		// Debug output
-		world.log << "Applied job name: [old_name] -> [real_name] (Job: [job_title])"
-
 // Helper proc to extract surname from full name
 /mob/living/carbon/human/proc/extract_surname(full_name)
 	if(!full_name)
 		return "Doe"
 
 	var/list/name_parts = splittext(full_name, " ")
-	if(name_parts.len >= 2)
-		return name_parts[name_parts.len]
+	if(length(name_parts >= 2))
+		return name_parts[length(name_parts)]
 	else
 		return full_name
 

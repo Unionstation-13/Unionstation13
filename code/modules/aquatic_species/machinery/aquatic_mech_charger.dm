@@ -52,7 +52,7 @@
 
 	return null
 
-/obj/machinery/aquatic_mech_charger/update_icon()
+/obj/machinery/aquatic_mech_charger/on_update_icon()
 	if(charging)
 		icon_state = "charger_active"
 	else
