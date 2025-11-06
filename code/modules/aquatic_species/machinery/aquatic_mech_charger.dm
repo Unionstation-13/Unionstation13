@@ -1,7 +1,7 @@
 /obj/machinery/aquatic_mech_charger
 	name = "Aquatic Mech Charging Station"
 	desc = "A specialized charging station for aquatic environment suits."
-	icon = 'code/modules/aquatic_species/icons/aquatic_charger.dmi'
+	icon = 'icons/obj/machines/robot_charger.dmi' //temporary icon
 	icon_state = "charger"
 	init_flags = INIT_MACHINERY_START_PROCESSING
 
