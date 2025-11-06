@@ -7,7 +7,7 @@ var/global/say_disabled = 0
 	set name = "Whisper"
 	set category = "IC"
 	if(!say_disabled)
-		to_chat(user, SPAN_WARNING("Speech is currently disabled."))
+		to_chat(usr, SPAN_WARNING("Speech is currently disabled."))
 	return
 
 
@@ -15,7 +15,7 @@ var/global/say_disabled = 0
 	set name = "Say"
 	set category = "IC"
 	if(!say_disabled)
-		to_chat(user, SPAN_WARNING("Speech is currently disabled."))
+		to_chat(usr, SPAN_WARNING("Speech is currently disabled."))
 	usr.say(message)
 
 
