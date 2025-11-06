@@ -482,8 +482,6 @@ var/global/const/enterloopsanity = 100
 		var/turf/top_of_stack = src
 		while(HasAbove(top_of_stack.z))
 			var/turf/next_turf = GetAbove(top_of_stack)
-			if(!next_turf)
-				return OUTSIDE_NO
 			if(!next_turf.is_open())
 				return OUTSIDE_NO
 			top_of_stack = next_turf
