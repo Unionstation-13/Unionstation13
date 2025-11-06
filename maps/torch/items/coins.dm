@@ -98,7 +98,7 @@
 /obj/item/material/coin/challenge/misc/waldo
 	default_material = MATERIAL_SILVER
 	name = "\improper WALDO challenge coin"
-	icon_state = "waldo"
+	icon_state = "saare"
 	desc = {"\
 		A challenge coin issued by WALDO to its operatives. \
 		On the front is a golden scale of justice, and on the back \
