@@ -6,9 +6,8 @@
 *///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /datum/language/human/euro
-	name = LANGUAGE_HUMAN_EURO
-	desc = "A constructed language established by a conference of European and African research universities convening in Zurich, Switzerland starting in 2119, \
-			later adopted with little controversy as the lingua franca of the entirety of Sol space following the establishment of the SCG."
+	name = LANGUAGE_HUMAN_PAX
+	desc = "A language created by Pax citizens following Earth's demise."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	colour = ""
@@ -20,7 +19,7 @@
 		LANGUAGE_HUMAN_ARABIC = 5,
 		LANGUAGE_HUMAN_INDIAN = 5,
 		LANGUAGE_HUMAN_IBERIAN = 30,
-		LANGUAGE_HUMAN_RUSSIAN = 5,
+		LANGUAGE_HUMAN_NITROS = 5,
 		LANGUAGE_HUMAN_SELENIAN = 85,
 		LANGUAGE_SPACER = 20
 	)

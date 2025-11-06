@@ -46,22 +46,11 @@
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
 
-/singleton/cultural_info/faction/police
-// Merge  this into Peacekeepers
-	name = FACTION_SPACECOPS
-	description = "The Sol Federal Police (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
-	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
-	Some agents embedded with other organizations (e.g. an <l>Expeditionary Corps</l> ship) and are expected to answer to their superiours from those organizations. \
-	Notable units are: Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
-	Special Investigations (sensitive and urgent cases) and the Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
-	The contractor SFP \"Trackers\" are also used find and arrest low-profile fugitives."
 
 
 
-
-
-/singleton/cultural_info/faction/remote/nanotrasen
-	name = FACTION_NANOTRASEN
+/singleton/cultural_info/faction/remote/neotrasen
+	name = FACTION_NEOTRASEN
 	description = "The NeoTrasen Corporation is a megaconglomerate entity that controls a\ majority of the management industry. Its employees are almost always\
 members of command or heads of departments, as it prides itself\
 on a capable workforce that is both ingenious and industrious\
@@ -87,12 +76,12 @@ At the present day, NeoTrasen is the wealthiest of the megacorps, valued at\
 
 
 /singleton/cultural_info/faction/remote/hephaestus
-	name = FACTION_HEPHAESTUS
+	name = FACTION_NITROSENGINEERING
 	description = "Nitros Engineering, known simply as NE or Nitros, is one of the largest megacorporations of the modern day. \
 	They are the leading manufacturer of military grade personal weapons, assault vehicles, defence systems, and security measures. \
-	Hephaestus has a somewhat controversial reputation as a participant in blatant war profiteering, compounded by their attempts to \
-	exploit Unathi equipment and assets for their own gains. In spite of this, Hephaestus maintains a reputation for the quality and \
-	reliability of their equipment, as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
+	Nitros Engineering has a somewhat controversial reputation as a participant in blatant war profiteering, compounded by their attempts to \
+	exploit Unathi equipment and assets for their own gains. In spite of this, Nitros Engineering maintains a reputation for the quality and \
+	reliability of their equipment, as well as its general affordability. Internally, Nitros Engineering is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
@@ -121,10 +110,10 @@ they used to silence dissenters."
 
 
 
-/singleton/cultural_info/faction/saare
+/singleton/cultural_info/faction/waldo
 // merge into Peacekeeper
-	name = FACTION_SAARE
-	description = "WALDO (Weaponized Antindo Liberation Defensive Organization)\
+	name = FACTION_WALDO
+	description = "WALDO (Weaponized Antido Liberation Defensive Organization)\
 is an initiative founded in 2449 by Dr. Edward Waldo in spite of the Antido\ dictatorship. It is known for recruiting sleeper agents to its cause, and thus\
 all members of WALDO are genuinely benign unless the words Where is WALDO? Are spoken; then they activate into a trance and will do the bidding of all WALDO higher-ups. All WALDO members carry an unlicensed firearm on\ them at all times. Their identity as WALDO conspirators cannot be known\
 to the general public, lest the UGN execute them for terrorism."
@@ -132,7 +121,7 @@ to the general public, lest the UGN execute them for terrorism."
 
 
 /singleton/cultural_info/faction/dais
-	name = FACTION_DAIS
+	name = FACTION_ABCDEFG
 	description = "ABCDEFG, or Algebraic Boolean Coordinated Distribution Effort for Frontier Grounds, is a hyper advanced anonymously owned tech conglomerate.\
 	Founded in an unknown year, it quickly rose to the top with its inventions of hi-tech consoles, tablets, and PDAs.\
 	All electronics on the station, including the cybersecurity network, are owned and processed through ABCDEFG's servers.\

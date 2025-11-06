@@ -55,26 +55,26 @@ var/global/datum/robolimb/basic_robolimb
 	has_screen = TRUE
 
 /datum/robolimb/hephaestus
-	company = "Hephaestus Industries"
+	company = "Nitros Engineering Industries"
 	desc = "This limb has a militaristic black and green casing with gold stripes."
 	icon = 'icons/mob/human_races/cyberlimbs/hephaestus/hephaestus_main.dmi'
 	unavailable_at_fab = 1
 
 /datum/robolimb/hephaestus/alt
-	company = "Hephaestus Alt."
+	company = "Nitros Engineering Alt."
 	icon = 'icons/mob/human_races/cyberlimbs/hephaestus/hephaestus_alt.dmi'
 	applies_to_part = list(BP_HEAD)
 	unavailable_at_fab = 1
 
 /datum/robolimb/hephaestus/titan
-	company = "Hephaestus Titan"
+	company = "Nitros Engineering Titan"
 	desc = "This limb has a casing of an olive drab finish, providing a reinforced housing look."
 	icon = 'icons/mob/human_races/cyberlimbs/hephaestus/hephaestus_titan.dmi'
 	has_eyes = FALSE
 	unavailable_at_fab = 1
 
 /datum/robolimb/hephaestus/alt/monitor
-	company = "Hephaestus Monitor."
+	company = "Nitros Engineering Monitor."
 	icon = 'icons/mob/human_races/cyberlimbs/hephaestus/hephaestus_monitor.dmi'
 	allowed_bodytypes = list(SPECIES_IPC)
 	can_eat = null

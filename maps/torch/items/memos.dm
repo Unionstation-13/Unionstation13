@@ -560,7 +560,7 @@
 
 /obj/item/paper/memo/corporate/stipendcut
 	name = "corporate spending records"
-	info = {"A "confidential" memo on the current usage of funds provided to SEV Torch corporate liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
+	info = {"A "confidential" memo on the current usage of funds provided to SEV Torch human resources managers; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
 
 /obj/item/paper/memo/corporate/uniondues
 	name = "union dues reminder"
@@ -580,15 +580,15 @@
 
 /obj/item/paper/memo/corporate/kiareport
 	name = "deceased and missing staff reports"
-	info = {"A "confidential" memo reminding corporate liaisons to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
+	info = {"A "confidential" memo reminding human resources managers to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
 
 /obj/item/paper/memo/corporate/spellchecker
 	name = "spellchecking and you"
-	info = {"Some "internal use only" corporate memos reminding corporate liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
+	info = {"Some "internal use only" corporate memos reminding human resources managers to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
 
 /obj/item/paper/memo/corporate/safetyfirst
 	name = "contractor safety and you"
-	info = {"An "internal use only" corporate document reminding corporate liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
+	info = {"An "internal use only" corporate document reminding human resources managers to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
 
 /obj/item/paper/memo/corporate/legion
 	name = "internal communications"

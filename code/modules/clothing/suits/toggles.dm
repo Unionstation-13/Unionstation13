@@ -138,7 +138,7 @@
 	icon_state = "coatatmos"
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/dais
-	name = "\improper DAIS winter coat"
+	name = "\improper ABCDEFG winter coat"
 	icon_state = "coat_dais"
 	siemens_coefficient = 0.5
 	armor = list(

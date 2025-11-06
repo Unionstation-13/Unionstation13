@@ -1,9 +1,9 @@
 /obj/item/book/manual/solgov_law
-	name = "Sol Central Government Law"
+	name = "United Galactic Nations Law"
 	desc = "A brief overview of SolGov Law."
 	icon_state = "bookSolGovLaw"
-	author = "The Sol Central Government"
-	title = "Sol Central Government Law"
+	author = "The United Galactic Nations"
+	title = "United Galactic Nations Law"
 
 /obj/item/book/manual/solgov_law/Initialize()
 	. = ..()
@@ -22,11 +22,11 @@
 
 
 /obj/item/book/manual/military_law
-	name = "The Sol Code of Military Justice"
-	desc = "A brief overview of military law."
+	name = "Space Law"
+	desc = "A brief overview of UGN law."
 	icon_state = "bookSolGovLaw"
-	author = "The Sol Central Government"
-	title = "The Sol Code of Military Justice"
+	author = "The United Galactic Nations"
+	title = "Space Law"
 
 /obj/item/book/manual/military_law/Initialize()
 	. = ..()

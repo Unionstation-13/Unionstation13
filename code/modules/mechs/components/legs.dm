@@ -112,7 +112,7 @@
 /obj/item/mech_component/propulsion/tracks
 	name = "tracks"
 	exosuit_desc_string = "armored tracks"
-	desc = "A classic brought back. The Hephaestus' Landmaster class tracks are impervious to most damage and can maintain top speed regardless of load. Watch out for corners."
+	desc = "A classic brought back. The Nitros Engineering' Landmaster class tracks are impervious to most damage and can maintain top speed regardless of load. Watch out for corners."
 	icon_state = "tracks"
 	max_damage = 150
 	move_delay = 2 //It´s fast

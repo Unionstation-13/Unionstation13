@@ -12,9 +12,9 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /singleton/hierarchy/outfit/nanotrasen/representative
-	name = "Corporate Representative"
+	name = "Human Resources Manager"
 	belt = /obj/item/material/folder/clipboard
-	id_pda_assignment = "Corporate Representative"
+	id_pda_assignment = "Human Resources Manager"
 
 /singleton/hierarchy/outfit/nanotrasen/officer
 	name = "Corporate Officer"

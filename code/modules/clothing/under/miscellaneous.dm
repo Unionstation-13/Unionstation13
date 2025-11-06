@@ -609,9 +609,9 @@
 	icon_state = "confed"
 	worn_state = "confed"
 
-/obj/item/clothing/under/saare
-	name = "\improper SAARE uniform"
-	desc = "A uniform belonging to Strategic Assault and Asset Retention Enterprises, a minor private military corporation."
+/obj/item/clothing/under/waldo
+	name = "\improper WALDO uniform"
+	desc = "A uniform belonging to West Antido Liberation Defensive Operation, a revolutionary front on the planet of Antido."
 	icon_state = "saare"
 	worn_state = "saare"
 	gender_icons = 1
@@ -636,8 +636,8 @@
 	worn_state = "focal"
 
 /obj/item/clothing/under/hephaestus
-	name = "\improper Hephaestus jumpsuit"
-	desc = "A jumpsuit belonging to Hephaestus Industries, a megacorp best known for its arms production."
+	name = "\improper Nitros Engineering jumpsuit"
+	desc = "A jumpsuit belonging to Nitros Engineering Industries, a megacorp best known for its arms production."
 	icon_state = "heph"
 	worn_state = "heph"
 	gender_icons = 1

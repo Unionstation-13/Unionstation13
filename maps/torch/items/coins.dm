@@ -95,12 +95,12 @@
 	"}
 
 
-/obj/item/material/coin/challenge/misc/saare
+/obj/item/material/coin/challenge/misc/waldo
 	default_material = MATERIAL_SILVER
-	name = "\improper SAARE challenge coin"
+	name = "\improper WALDO challenge coin"
 	icon_state = "saare"
 	desc = {"\
-		A challenge coin issued by SAARE to its operatives. \
+		A challenge coin issued by WALDO to its operatives. \
 		On the front is a golden scale of justice, and on the back \
-		is a stalwart SAARE operative standing guard.\
+		is a stalwart WALDO operative standing guard.\
 	"}

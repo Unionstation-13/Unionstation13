@@ -151,7 +151,7 @@
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/suit/wintercoat_dais
-	display_name = "winter coat, DAIS"
+	display_name = "winter coat, ABCDEFG"
 	allowed_roles = list(
 		/datum/job/engineer,
 		/datum/job/roboticist,

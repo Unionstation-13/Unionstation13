@@ -2,3 +2,11 @@
 	name = RELIGION_VOX
 	description = "Obey and revere the auralis, those who came before, for they will open the way."
 	hidden_from_codex = TRUE
+/singleton/cultural_info/religion/union
+	name = RELIGION_UNION
+	description = "A cult like religion dedicated to worshipping The Glorius Leader"
+
+/singleton/cultural_info/religion/union/benedict
+
+	name = RELIGION_UNIONBENEDICT
+	description = "A schism of the Union's religion dedicated to worshipping the Blaphemous Binary"

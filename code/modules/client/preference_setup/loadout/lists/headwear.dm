@@ -176,7 +176,7 @@
 	..()
 	var/list/options = list()
 	options += /obj/item/clothing/head/beret/pcrc
-	options += /obj/item/clothing/head/beret/saare
+	options += /obj/item/clothing/head/beret/waldo
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(options)
 
 /datum/gear/head/deckcrew

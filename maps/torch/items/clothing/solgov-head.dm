@@ -9,8 +9,8 @@
 
 //Utility
 /obj/item/clothing/head/soft/solgov
-	name = "\improper Sol Central Government cap"
-	desc = "It's a ballcap in SCG colors."
+	name = "\improper United Galactic Nations cap"
+	desc = "It's a ballcap in UGN colors."
 	icon_state = "solsoft"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -118,7 +118,7 @@
 
 /obj/item/clothing/head/beret/solgov
 	name = "peacekeeper beret"
-	desc = "A beret in Sol Central Government colors. For peacekeepers that are more inclined towards style than safety."
+	desc = "A beret in United Galactic Nations colors. For peacekeepers that are more inclined towards style than safety."
 	icon_state = "beret_lightblue"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -346,15 +346,15 @@
 
 /obj/item/clothing/head/helmet/solgov/command
 	name = "command helmet"
-	desc = "A helmet with 'SOL CENTRAL GOVERNMENT' printed on the back in gold lettering."
+	desc = "A helmet with 'United Galactic Nations' printed on the back in gold lettering."
 	icon_state = "helmet_command"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	accessories = null
 
 /obj/item/clothing/head/helmet/solgov/defense_forces
-	name = "\improper SCGDF helmet"
-	desc = "A robust helmet utilized by Sol Central Government Defense Forces."
+	name = "\improper UGNDF helmet"
+	desc = "A robust helmet utilized by United Galactic Nations Defense Forces."
 	accessories = null
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
