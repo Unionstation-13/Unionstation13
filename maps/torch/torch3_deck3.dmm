@@ -22,13 +22,6 @@
 "ad" = (
 /turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
-"ae" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/brig)
 "af" = (
 /obj/wallframe_spawn/reinforced_phoron/titanium,
 /turf/simulated/wall/r_wall/hull,
@@ -63,16 +56,6 @@
 /obj/wallframe_spawn/reinforced_phoron/titanium,
 /turf/simulated/floor/reinforced,
 /area/vacant/brig)
-"ar" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall/hull,
-/area/vacant/brig)
-"av" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/brig)
 "ax" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/window/brigdoor/eastleft{
@@ -104,14 +87,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/brig)
 "aD" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
 /obj/machinery/disposal,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/brig)
-"aE" = (
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/brig)
 "aF" = (
@@ -146,7 +122,6 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/brig)
 "aL" = (
@@ -210,7 +185,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/brig)
 "aT" = (
@@ -241,7 +215,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
 /obj/floor_decal/industrial/warning{
 	dir = 4
@@ -474,26 +447,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
-"bH" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/floor_decal/industrial/warning{
-	dir = 1
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "bI" = (
@@ -508,39 +462,15 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
-"bJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
@@ -557,9 +487,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -650,7 +577,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
-/area/chapel/funchamber)
+/area/maintenance/thirddeck/aftport)
 "bR" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -2413,9 +2340,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -5660,7 +5584,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/structure/disposalpipe/junction/yjunction,
+/obj/structure/disposalpipe/junction{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "nq" = (
@@ -8949,7 +8875,6 @@
 /obj/machinery/disposal/deliveryChute{
 	dir = 1
 	},
-/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "vm" = (
@@ -9591,7 +9516,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
-/area/chapel/funchamber)
+/area/maintenance/thirddeck/aftport)
 "xf" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -12257,7 +12182,7 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/chapel/main)
 "Ej" = (
 /obj/machinery/door/morgue{
 	name = "Confession Booth (Chaplain)"
@@ -13832,10 +13757,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
-"Il" = (
-/obj/structure/disposalpipe/junction/mirrored,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/brig)
 "Im" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/door/blast/regular{
@@ -41790,16 +41711,16 @@ aa
 aa
 Ms
 vl
-ar
-aE
-aE
-aE
-aE
-aE
-Il
-aE
-aE
-aE
+ad
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
+ap
 aK
 aS
 aZ
@@ -41998,7 +41919,7 @@ ap
 ap
 ap
 ap
-av
+ap
 ap
 aF
 aH
@@ -42006,7 +41927,7 @@ aL
 aq
 ze
 gJ
-bH
+bF
 cl
 aX
 dS
@@ -42200,7 +42121,7 @@ ap
 ap
 ap
 ap
-av
+ap
 ap
 ad
 af
@@ -42208,7 +42129,7 @@ af
 ad
 aQ
 ck
-bH
+bF
 cl
 cl
 cl
@@ -42402,7 +42323,7 @@ ap
 ap
 ap
 ap
-av
+ap
 ap
 ad
 aa
@@ -42604,7 +42525,7 @@ ap
 ap
 ap
 ap
-ae
+ap
 aD
 ad
 aa
@@ -42612,7 +42533,7 @@ aI
 aQ
 aQ
 aQ
-bJ
+fG
 cl
 dg
 dT
@@ -42814,7 +42735,7 @@ aI
 aQ
 aQ
 aQ
-bJ
+fG
 nC
 nC
 nC
@@ -44451,7 +44372,7 @@ qd
 wB
 sJ
 QB
-TE
+RG
 wt
 xs
 yv

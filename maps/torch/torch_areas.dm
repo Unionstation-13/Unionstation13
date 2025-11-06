@@ -710,11 +710,6 @@
 	req_access = list(access_liaison)
 	lighting_tone = AREA_LIGHTING_WARM
 
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
-
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
 	name = "\improper Command - SCGR's Office"
@@ -1014,13 +1009,6 @@
 	name = "\improper Diplomatic Meeting Room"
 	icon_state = "crew_quarters"
 	lighting_tone = AREA_LIGHTING_COOL
-
-/area/crew_quarters/chief_steward
-	name = "\improper Chief Steward's Office"
-	icon_state = "kitchen"
-	req_access = list(access_chief_steward)
-	sound_env = SMALL_ENCLOSED
-	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/community_manager
 	name = "\improper Community Manager's Office"
