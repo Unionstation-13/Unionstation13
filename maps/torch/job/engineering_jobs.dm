@@ -1,5 +1,5 @@
 /datum/job/engineer
-	title = "Technician"
+	title = "Engineering Technician"
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief Engineer"
@@ -104,7 +104,7 @@
 	return "You are an engineering trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
 
 /datum/job/roboticist
-	title = "Technical Repair Specalist"
+	title = "Technical Repair Specialist"
 	department = "Technical Service"
 	department_flag = ENG|ROB
 
@@ -148,6 +148,6 @@
 	)
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are a Technical Repair Specalist.\
+	return "You are a Technical Repair Specialist.\
 	you are responsible for managing the ship's hardware systems such as synthetic units or the artificial intelligence(to a degree), however, please remember that you\
 	are not required to follow orders from the Chief Engineer or any other engineering staff, as you are an employee of ABCDEFG inc."

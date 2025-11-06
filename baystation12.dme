@@ -3381,6 +3381,7 @@
 #include "code\modules\xenoarcheaology\triggers\gas.dm"
 #include "code\modules\xenoarcheaology\triggers\temperature.dm"
 #include "code\modules\xenoarcheaology\triggers\touch.dm"
+#include "code\modules\aquatic_species\__init.dm"
 #include "code\modules\xgm\gases.dm"
 #include "code\modules\xgm\xgm_gas_data.dm"
 #include "code\modules\xgm\xgm_gas_mixture.dm"
@@ -3446,9 +3447,7 @@
 #include "interface\skin.dmf"
 #include "maps\_map_include.dm"
 #include "maps\_maps.dm"
-#include "maps\away\asteriod_signal\asteriodsignal.dm"
 #include "packs\event_e14b\_pack.dm"
 #include "packs\legion\_pack.dm"
 #include "~code\global_init.dm"
-// END_INCLUDE
-#include "code\modules\aquatic_species\__init.dm"
+//END INCLUDE

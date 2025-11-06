@@ -24,7 +24,7 @@
 
 //Used for preprocessing entered text
 //Added in an additional check to alert players if input is too long
-/proc/sanitize(input, max_length = MAX_MESSAGE_LEN, encode = 1, trim = 1, extra = 1)
+/proc/sanitize(input, max_length = MAX_MESSAGE_LEN, encode = 0, trim = 1, extra = 1)
 	if(!input)
 		return
 
