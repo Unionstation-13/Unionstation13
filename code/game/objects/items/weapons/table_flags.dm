@@ -6,7 +6,7 @@
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'
-	desc = "The iconic flag of the United Galactic Nations, a symbol with many different meanings."
+	desc = "The iconic flag of the Sol Central Government, a symbol with many different meanings."
 
 /obj/item/tableflag/rainbow
 	name = "rainbow table flag"

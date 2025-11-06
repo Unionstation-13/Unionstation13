@@ -201,10 +201,10 @@
 
 /obj/item/stock_parts/power/battery/buildable/stock
 	name = "battery backup (standard)"
-	desc = "The Nitros Engineering 3006915, or, as this part is colloquially known, model 15, is the workhorse battery backup solution of populated space."
+	desc = "The Hephaestus 3006915, or, as this part is colloquially known, model 15, is the workhorse battery backup solution of populated space."
 
 /obj/item/stock_parts/power/battery/buildable/stock/get_lore_info()
-	return "After several failed attempts, Nitros Engineering hit a best-selling component in the model 15. \
+	return "After several failed attempts, Hephaestus hit a best-selling component in the model 15. \
 	Combining tolerable recharge rate and high durability into a conveniently shaped package, it has dominated the market for over three decades."
 
 /obj/item/stock_parts/power/battery/buildable/turbo

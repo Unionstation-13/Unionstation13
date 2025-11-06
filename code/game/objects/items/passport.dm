@@ -35,102 +35,102 @@
 /obj/item/passport/scg
 	name = "\improper UGN passport"
 	icon_state = "passport_scg"
-	desc = "A passport from the United Galactic Nations."
+	desc = "A passport from the Sol Central Government."
 
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Venus, within United Galactic Nations space."
+	desc = "A passport from Venus, within Sol Central Government space."
 
 /obj/item/passport/mars
 	name = "\improper Mars passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Mars, within United Galactic Nations space."
+	desc = "A passport from Mars, within Sol Central Government space."
 
 /obj/item/passport/phobos
 	name = "\improper Phobos passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Phobos, within United Galactic Nations space."
+	desc = "A passport from Phobos, within Sol Central Government space."
 
 /obj/item/passport/ceres
 	name = "\improper Ceres passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Ceres, within United Galactic Nations space."
+	desc = "A passport from Ceres, within Sol Central Government space."
 
 /obj/item/passport/pluto
 	name = "\improper Pluto passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Pluto, within United Galactic Nations space."
+	desc = "A passport from Pluto, within Sol Central Government space."
 
 /obj/item/passport/tiamat
 	name = "\improper Tiamat passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Tiamat, within United Galactic Nations space."
+	desc = "A passport from Tiamat, within Sol Central Government space."
 
 /obj/item/passport/eos
 	name = "\improper Eos passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Eos, within United Galactic Nations space."
+	desc = "A passport from Eos, within Sol Central Government space."
 
 /obj/item/passport/ceti_epsilon
 	name = "\improper Ceti Epsilon passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Ceti Epsilon, within United Galactic Nations space."
+	desc = "A passport from Ceti Epsilon, within Sol Central Government space."
 
 /obj/item/passport/iolaus
 	name = "\improper Iolaus passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Iolaus, within United Galactic Nations space."
+	desc = "A passport from Iolaus, within Sol Central Government space."
 
 /obj/item/passport/pirx
 	name = "\improper Pirx passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Pirx, within United Galactic Nations space."
+	desc = "A passport from Pirx, within Sol Central Government space."
 
 /obj/item/passport/tadmor
 	name = "\improper Tadmor passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Tadmor, within United Galactic Nations space."
+	desc = "A passport from Tadmor, within Sol Central Government space."
 
 /obj/item/passport/brahe
 	name = "\improper Brahe passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Brahe, within United Galactic Nations space."
+	desc = "A passport from Brahe, within Sol Central Government space."
 
 /obj/item/passport/saffar
 	name = "\improper Saffar passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Saffar, within United Galactic Nations space."
+	desc = "A passport from Saffar, within Sol Central Government space."
 
 /obj/item/passport/theia
 	name = "\improper Theia passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Theia, within United Galactic Nations space."
+	desc = "A passport from Theia, within Sol Central Government space."
 
 /obj/item/passport/south_gaia
-	name = "\improper Gaia deleted port"
+	name = "\improper Gaian Administrative Area passport"
 	icon_state = "passport_scg2"
-	desc = "NULL"
+	desc = "A passport from the southern part of Gaia, under military occupation of the Sol Central Government."
 
 /obj/item/passport/iccg
-	name = "\improper FRN passport"
+	name = "\improper ICCG passport"
 	icon_state = "passport_iccg"
-	desc = "A passport from the Federated Republic of Nitros."
+	desc = "A passport from the Independent Colonial Confederation of Gilgamesh."
 
 /obj/item/passport/north_gaia
-	name = "\improper Gaia Deleted Port"
+	name = "\improper Protectorate of Gaia passport"
 	icon_state = "passport_iccg2"
-	desc = "NULL"
+	desc = "A passport from the northern part of Gaia, under the control of the GCC supervised Protectorate of Gaia."
 
 /obj/item/passport/old_gaia
-	name = "\improper Gaia deleted Port"
+	name = "\improper Republic of Gaia passport"
 	icon_state = "passport"
-	desc = "NULL"
+	desc = "A passport from the Republic of Gaia. Issued before it's de-facto dissolusion in 2292, it is today backed by the International City of New Venice."
 
 /obj/item/passport/terra
-	name = "\improper Nitros-11 passport"
+	name = "\improper Terra passport"
 	icon_state = "passport_iccg2"
-	desc = "A passport from Nitros-11, within FRN space."
+	desc = "A passport from Terra, within ICCG space."
 
 /obj/item/passport/novayazemlya
 	name = "\improper Zemlya passport"
@@ -186,9 +186,3 @@
 	name = "\improper Mohranda passport"
 	icon_state = "passport"
 	desc = "A passport from the Empire of Mohranda, a frontier empire established on Lohrene and Mohranda, in the Luggust system."
-
-/obj/item/passport/NCGO
-
-	name = "\improper NCGO Passport"
-	icon_state = "NCGO_passport"
-	desc = "A passport from the New Christ Galactic Orthodox Church, a religous city state inside the UGN."

@@ -134,7 +134,7 @@
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat
 
 /datum/gear/suit/wintercoat_dais
-	display_name = "winter coat, ABCDEFG"
+	display_name = "winter coat, DAIS"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
 
 /datum/gear/suit/track

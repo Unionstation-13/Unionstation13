@@ -100,14 +100,14 @@
 
 /obj/item/gun/projectile/pistol/m22f/icarus
 	name = "rusty military pistol"
-	desc = "A Nitros Engineering Industries M22F. A large pistol issued as an SCGDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
+	desc = "A Hephaestus Industries M22F. A large pistol issued as an SCGDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
 
 //SCG deco
 
 /obj/structure/sign/icarus_dedicationplaque
 	name = "\improper SEV Icarus dedication plaque"
 	icon_state = "lightplaque"
-	desc = "S.E.V. Icarus - Lexington Class - Sol Expeditionary Corps Registry 95498 - Tennessee Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - United Galactic Nations - 'Never was anything great achieved without danger.'"
+	desc = "S.E.V. Icarus - Lexington Class - Sol Expeditionary Corps Registry 95498 - Tennessee Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
 
 /obj/structure/sign/icarus_ecplaque
 	name = "\improper Expeditionary Directives"
@@ -116,8 +116,8 @@
 	icon_state = "ecplaque"
 
 /obj/structure/sign/double/icarus_solgovflag
-	name = "United Galactic Nations Flag"
-	desc = "A faded UGN flag. It appears to have been radiation bleached."
+	name = "Sol Central Government Flag"
+	desc = "A faded SCG flag. It appears to have been radiation bleached."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 
 /obj/structure/sign/double/icarus_solgovflag/left
@@ -127,7 +127,7 @@
 	icon_state = "solgovflag-right"
 
 /obj/structure/sign/icarus_solgov
-	name = "\improper Faded UGN seal"
+	name = "\improper Faded SCG seal"
 	desc = "A sign which signifies who this vessel belongs to. This one is faded."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "solgovseal"

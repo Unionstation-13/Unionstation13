@@ -110,7 +110,7 @@
 
 
 /datum/gear/accessory/ftu_pin
-	display_name = "Cooran Supply pin"
+	display_name = "Free Trade Union pin"
 	path = /obj/item/clothing/accessory/ftu_pin
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 

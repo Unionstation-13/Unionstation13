@@ -4,7 +4,7 @@
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "U.G.N. Titen - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - United Galactic Nations - 'Never was anything great achieved without danger.'"
+	desc = "U.G.N. Titen - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - Sol Central Government - 'Never was anything great achieved without danger.'"
 
 
 /obj/floor_decal/scglogo
@@ -19,8 +19,8 @@
 	icon_state = "solgovseal"
 
 /obj/structure/sign/double/solgovflag
-	name = "\improper United Galactic Nations Flag"
-	desc = "The flag of the United Galactic Nations, a symbol of many things to many people."
+	name = "\improper Sol Central Government Flag"
+	desc = "The flag of the Sol Central Government, a symbol of many things to many people."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 
 /obj/structure/sign/double/solgovflag/left

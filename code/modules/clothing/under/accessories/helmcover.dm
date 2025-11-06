@@ -52,9 +52,9 @@
 	icon_state = "helmcover_pcrc"
 
 
-/obj/item/clothing/accessory/helmet_cover/waldo
-	name = "\improper WALDO helmet cover"
-	desc = "A fabric cover for armored helmets. This one has WALDO's colors."
+/obj/item/clothing/accessory/helmet_cover/saare
+	name = "\improper SAARE helmet cover"
+	desc = "A fabric cover for armored helmets. This one has SAARE's colors."
 	icon_state = "helmcover_saare"
 
 /obj/item/clothing/accessory/helmet_cover/lead

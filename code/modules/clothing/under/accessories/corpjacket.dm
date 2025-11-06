@@ -5,8 +5,8 @@
 
 
 /obj/item/clothing/accessory/toggleable/corpjacket/heph
-	name = "\improper Nitros Engineering Industries suit jacket"
-	desc = "A jacket that Nitros Engineering Industries has their executives wear."
+	name = "\improper Hephaestus Industries suit jacket"
+	desc = "A jacket that Hephaestus Industries has their executives wear."
 	icon_state = "jacket_heph"
 
 

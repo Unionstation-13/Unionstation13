@@ -3,7 +3,7 @@
 	name_plural = "machines"
 
 	description = "Positronic intelligence was first developed in the 23rd century, and it is not uncommon to see both owned and \
-	independent	robots in many human stations and settlements across United Galactic Nations space. Positronics are a loose category \
+	independent	robots in many human stations and settlements across Sol Central Government space. Positronics are a loose category \
 	of robots capable of true intelligence and self-directed learning, often occupying a robotic humanoid body (called an Integrated \
 	Positronic Chassis, or IPC) or acting as an intelligent controller for vehicles, buildings, and even starships. <br/><br/>While created by \
 	humans and \"born\" into servitude, some positronics have been able to become their own owners - provided they lack a \"shackle\", \
@@ -60,20 +60,28 @@
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_MARS,
+			HOME_SYSTEM_EARTH,
+			HOME_SYSTEM_LUNA,
 			HOME_SYSTEM_VENUS,
 			HOME_SYSTEM_CERES,
+			HOME_SYSTEM_KUIPERB,
+			HOME_SYSTEM_KUIPERD,
+			HOME_SYSTEM_MAGNITKA,
 			HOME_SYSTEM_TAU_CETI,
 			HOME_SYSTEM_HELIOS,
-			HOME_SYSTEM_ANTIDO,
+			HOME_SYSTEM_SAFFAR,
 			HOME_SYSTEM_PIRX,
-			HOME_SYSTEM_NITROSSMALL,
+			HOME_SYSTEM_TADMOR,
 			HOME_SYSTEM_BRAHE,
+			HOME_SYSTEM_IOLAUS,
+			HOME_SYSTEM_FOSTER,
+			HOME_SYSTEM_CASTILLA,
 			HOME_SYSTEM_OTHER
 		),
 		TAG_FACTION = list(
 			FACTION_UNITED_GALACTIC_NATIONS,
 			FACTION_INDIE_CONFED,
-			FACTION_NEOTRASEN,
+			FACTION_NANOTRASEN,
 			FACTION_FREETRADE,
 			FACTION_URC,
 			FACTION_EXPEDITIONARY,

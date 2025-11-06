@@ -52,7 +52,7 @@ var/global/const/access_emergency_armory = "ACCESS_TORCH_ARMORY" //83
 var/global/const/access_liaison = "ACCESS_TORCH_CORPORATE_LIAISON" //84
 /datum/access/liaison
 	id = access_liaison
-	desc = "Human Resources Manager"
+	desc = "Corporate Liaison"
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
 

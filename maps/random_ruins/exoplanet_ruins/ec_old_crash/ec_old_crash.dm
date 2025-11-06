@@ -66,8 +66,8 @@
 
 /obj/item/paper/ecrashlog/Initialize()
 	. = ..()
-	var/shipname = "UGN [pick("Magellan", "Gagarin", "Drake", "Horizon", "Aurora")]"
-	var/singleton/cultural_info/S = SSculture.get_culture(CULTURE_HUMAN_PAXUPPER)
+	var/shipname = "TEV [pick("Magellan", "Gagarin", "Drake", "Horizon", "Aurora")]"
+	var/singleton/cultural_info/S = SSculture.get_culture(CULTURE_HUMAN_EARTH)
 	var/new_info = {"
 	I am Lieutenant Hao Ru, captain of [shipname], of the Terran Commonwealth Expeditionary Corps.<br>
 	We are dying. The Ran Mission has failed.<br>

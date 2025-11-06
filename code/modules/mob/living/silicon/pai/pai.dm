@@ -90,7 +90,7 @@ GLOBAL_LIST_AS(possible_say_verbs, list(
 /mob/living/silicon/pai/Initialize(mapload, obj/item/device/paicard)
 	. = ..()
 	status_flags |= NO_ANTAG
-	add_language(LANGUAGE_HUMAN_PAX, TRUE)
+	add_language(LANGUAGE_HUMAN_EURO, TRUE)
 	verbs -= /mob/living/verb/ghost
 	software = default_pai_software.Copy()
 	card = paicard

@@ -52,7 +52,7 @@
 
 /obj/item/mech_equipment/shields
 	name = "exosuit shield droid"
-	desc = "The Nitros Engineering Armature system is a well liked energy deflector system designed to stop any projectile before it has a chance to become a threat."
+	desc = "The Hephaestus Armature system is a well liked energy deflector system designed to stop any projectile before it has a chance to become a threat."
 	icon_state = "shield_droid"
 	var/obj/aura/mechshield/aura = null
 	var/max_charge = 150
@@ -264,7 +264,7 @@
 //Ballistic shield
 /obj/item/mech_equipment/ballistic_shield
 	name = "exosuit ballistic shield"
-	desc = "The Nitros Engineering Bulwark is a formidable line of defense that sees widespread use in planetary peacekeeping operations and military formations alike."
+	desc = "The Hephaestus Bulwark is a formidable line of defense that sees widespread use in planetary peacekeeping operations and military formations alike."
 	icon_state = "mech_shield" //Rendering is handled by aura due to layering issues: TODO, figure out a better way to do this
 	var/obj/aura/mech_ballistic/aura = null
 	var/last_push = 0
@@ -523,7 +523,7 @@
 /obj/item/flamethrower/full/mech
 	max_beaker = ITEM_SIZE_NORMAL
 	range = 5
-	desc = "A Nitros Engineering brand 'Prometheus' flamethrower. Bigger and better."
+	desc = "A Hephaestus brand 'Prometheus' flamethrower. Bigger and better."
 
 /obj/item/flamethrower/full/mech/Initialize()
 	. = ..()

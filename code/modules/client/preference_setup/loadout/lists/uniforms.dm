@@ -164,7 +164,7 @@
 	corps += /obj/item/clothing/under/rank/scientist/heph
 	corps += /obj/item/clothing/under/rank/scientist/zeng
 	corps += /obj/item/clothing/under/mbill
-	corps += /obj/item/clothing/under/waldo
+	corps += /obj/item/clothing/under/saare
 	corps += /obj/item/clothing/under/aether
 	corps += /obj/item/clothing/under/hephaestus
 	corps += /obj/item/clothing/under/pcrc

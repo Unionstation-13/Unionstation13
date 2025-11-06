@@ -156,11 +156,11 @@
 	base_name = "heart cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG
-	name = "\improper UGN coffee cup"
-	desc = "A blue coffee cup emblazoned with the crest of the United Galactic Nations."
+	name = "\improper SCG coffee cup"
+	desc = "A blue coffee cup emblazoned with the crest of the Sol Central Government."
 	icon_state = "coffeecup_SCG"
 	item_state = "coffeecup_SCG"
-	base_name = "\improper UGN cup"
+	base_name = "\improper SCG cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/NT
 	name = "\improper NT coffee cup"
@@ -240,11 +240,11 @@
 	base_name = "british cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/dais
-	name = "\improper ABCDEFG coffee cup"
+	name = "\improper DAIS coffee cup"
 	desc = "A coffee cup imprinted with the stylish logo of Deimos Advanced Information Systems."
 	icon_state = "coffeecup_dais"
 	item_state = "coffeecup_dais"
-	base_name = "\improper ABCDEFG cup"
+	base_name = "\improper DAIS cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/teacup
 	name = "teacup"

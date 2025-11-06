@@ -73,7 +73,7 @@
 	name = "heavy arms"
 	exosuit_desc_string = "super-heavy reinforced manipulators"
 	icon_state = "heavy_arms"
-	desc = "Designed to function where any other piece of equipment would have long fallen apart, the Nitros Engineering Superheavy Lifter series can take a beating and excel at delivering it."
+	desc = "Designed to function where any other piece of equipment would have long fallen apart, the Hephaestus Superheavy Lifter series can take a beating and excel at delivering it."
 	punch_sound = 'sound/mecha/mech_punch_slow.ogg'
 	action_delay = 20
 	melee_damage = 30

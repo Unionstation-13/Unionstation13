@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/armor/vest/solgov
-	name = "\improper United Galactic Nations armored vest"
-	desc = "A synthetic armor vest. This one is marked with the crest of the United Galactic Nations."
+	name = "\improper Sol Central Government armored vest"
+	desc = "A synthetic armor vest. This one is marked with the crest of the Sol Central Government."
 	icon_state = "solvest"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
@@ -9,7 +9,7 @@
 	)
 
 /obj/item/clothing/suit/storage/vest/solgov
-	name = "\improper United Galactic Nations heavy armored vest"
+	name = "\improper Sol Central Government heavy armored vest"
 	desc = "A synthetic armor vest with PEACEKEEPER printed in distinctive blue lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "solwebvest"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
@@ -25,7 +25,7 @@
 
 /obj/item/clothing/suit/storage/vest/solgov/command
 	name = "command heavy armored vest"
-	desc = "A synthetic armor vest with United Galactic Nations printed in gold lettering on the chest. This one has added webbing and ballistic plates."
+	desc = "A synthetic armor vest with SOL CENTRAL GOVERNMENT printed in gold lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "comwebvest"
 
 /obj/item/clothing/suit/armor/pcarrier/blue/sol
@@ -48,39 +48,39 @@
 /obj/item/clothing/suit/armor/pcarrier/medium/command/security
 	accessories = list(/obj/item/clothing/accessory/armor_plate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor_tag/solgov/com/sec)
 
-// UGNDF Combat Plate Carriers -- Non-standard issue for Torch, provides roughly the same protection as merc armor
+// SCGDF Combat Plate Carriers -- Non-standard issue for Torch, provides roughly the same protection as merc armor
 /obj/item/clothing/suit/armor/pcarrier/fleet
-	name = "\improper UGNF Plate Carrier"
-	desc = "A black plate carrier with United Galactic Nations FLEET printed in silver lettering on the chest."
+	name = "\improper SCGF Plate Carrier"
+	desc = "A black plate carrier with SOL CENTRAL GOVERNMENT FLEET printed in silver lettering on the chest."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/storage/pouches/navy, /obj/item/clothing/accessory/leg_guards/heavy, /obj/item/clothing/accessory/arm_guards/heavy, /obj/item/clothing/accessory/armor_tag/solgov)
 
 /obj/item/clothing/suit/armor/pcarrier/fleet/officer
-	name = "\improper UGNF Officer's Plate Carrier"
-	desc = "A black plate carrier with United Galactic Nations FLEET printed in gold lettering on the chest."
+	name = "\improper SCGF Officer's Plate Carrier"
+	desc = "A black plate carrier with SOL CENTRAL GOVERNMENT FLEET printed in gold lettering on the chest."
 
 /obj/item/clothing/suit/armor/pcarrier/navy/fleet
-	name = "\improper UGNF Plate Carrier"
-	desc = "A navy blue plate carrier with United Galactic Nations FLEET printed in silver lettering on the chest."
+	name = "\improper SCGF Plate Carrier"
+	desc = "A navy blue plate carrier with SOL CENTRAL GOVERNMENT FLEET printed in silver lettering on the chest."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/storage/pouches/navy, /obj/item/clothing/accessory/leg_guards/heavy/navy, /obj/item/clothing/accessory/arm_guards/heavy/navy, /obj/item/clothing/accessory/armor_tag/solgov)
 
 /obj/item/clothing/suit/armor/pcarrier/navy/fleet/officer
-	name = "\improper UGNF Officer's Plate Carrier"
-	desc = "A navy blue plate carrier with United Galactic Nations FLEET printed in gold lettering on the chest."
+	name = "\improper SCGF Officer's Plate Carrier"
+	desc = "A navy blue plate carrier with SOL CENTRAL GOVERNMENT FLEET printed in gold lettering on the chest."
 
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf
-	name = "\improper UGNDF Plate Carrier"
-	desc = "A tan plate carrier with United Galactic Nations DEFENSE FORCES printed in silver lettering on the chest."
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf
+	name = "\improper SCGDF Plate Carrier"
+	desc = "A tan plate carrier with SOL CENTRAL GOVERNMENT DEFENSE FORCES printed in silver lettering on the chest."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/storage/pouches/tan, /obj/item/clothing/accessory/leg_guards/heavy/tan, /obj/item/clothing/accessory/arm_guards/heavy/tan, /obj/item/clothing/accessory/armor_tag/solgov)
 
-/obj/item/clothing/suit/armor/pcarrier/tan/UGNdf/officer
-	name = "\improper UGNDF Officer's Plate Carrier"
-	desc = "A tan plate carrier with United Galactic Nations DEFENSE FORCES printed in gold lettering on the chest."
+/obj/item/clothing/suit/armor/pcarrier/tan/scgdf/officer
+	name = "\improper SCGDF Officer's Plate Carrier"
+	desc = "A tan plate carrier with SOL CENTRAL GOVERNMENT DEFENSE FORCES printed in gold lettering on the chest."
 
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf
-	name = "\improper UGNDF Plate Carrier"
-	desc = "A green plate carrier with United Galactic Nations DEFENSE FORCES printed in silver lettering on the chest."
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf
+	name = "\improper SCGDF Plate Carrier"
+	desc = "A green plate carrier with SOL CENTRAL GOVERNMENT DEFENSE FORCES printed in silver lettering on the chest."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/storage/pouches/green, /obj/item/clothing/accessory/leg_guards/heavy/green, /obj/item/clothing/accessory/arm_guards/heavy/green, /obj/item/clothing/accessory/armor_tag/solgov)
 
-/obj/item/clothing/suit/armor/pcarrier/green/UGNdf/officer
-	name = "\improper UGNDF Officer's Plate Carrier"
-	desc = "A green plate carrier with United Galactic Nations DEFENSE FORCES printed in gold lettering on the chest."
+/obj/item/clothing/suit/armor/pcarrier/green/scgdf/officer
+	name = "\improper SCGDF Officer's Plate Carrier"
+	desc = "A green plate carrier with SOL CENTRAL GOVERNMENT DEFENSE FORCES printed in gold lettering on the chest."

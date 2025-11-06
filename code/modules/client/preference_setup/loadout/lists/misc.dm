@@ -154,12 +154,12 @@
 
 /datum/gear/workvisa
 	display_name = "work visa"
-	description = "A work visa issued by the United Galactic Nations for the purpose of work."
+	description = "A work visa issued by the Sol Central Government for the purpose of work."
 	path = /obj/item/paper/workvisa
 
 /datum/gear/travelvisa
 	display_name = "travel visa"
-	description = "A travel visa issued by the United Galactic Nations for the purpose of recreation."
+	description = "A travel visa issued by the Sol Central Government for the purpose of recreation."
 	path = /obj/item/paper/travelvisa
 
 

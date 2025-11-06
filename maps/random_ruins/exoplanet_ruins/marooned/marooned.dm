@@ -51,7 +51,7 @@
 
 /obj/item/paper/marooned
 	name = "diary page"
-	language = LANGUAGE_HUMAN_NITROS
+	language = LANGUAGE_HUMAN_RUSSIAN
 /obj/item/paper/marooned/note01
 	info = "Horacy Warda, Captain First Rank of Magnitka Defence Forces, Special Observation Flotilia. I have been betrayed by my crew and illegally marooned.<br>Main conspirators were Lieutenant Igor Pytlak, Lieutenant Hans Kovac and Captain Third Rank Dragomir Mladic.<br>If you find this, please make sure those dogs face justice."
 /obj/item/paper/marooned/note02

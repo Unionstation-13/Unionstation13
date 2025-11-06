@@ -395,10 +395,10 @@ AI MODULES
 	origin_tech = list(TECH_DATA = 4)
 	laws = new/datum/ai_laws/antimov()
 
-/******************** ABCDEFG ********************/
+/******************** DAIS ********************/
 
 /obj/item/aiModule/dais
-	name = "\improper 'ABCDEFG Experimental' core AI module"
-	desc = "A 'ABCDEFG Experimental' Core AI Module: 'Reconfigures the AI's core laws.'."
+	name = "\improper 'DAIS Experimental' core AI module"
+	desc = "A 'DAIS Experimental' Core AI Module: 'Reconfigures the AI's core laws.'."
 	origin_tech = list(TECH_DATA = 4)
 	laws = new/datum/ai_laws/dais()

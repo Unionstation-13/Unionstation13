@@ -68,7 +68,7 @@
 
 	species = GLOB.species_by_name[SPECIES_DIONA]
 	add_language(LANGUAGE_ROOTGLOBAL)
-	add_language(LANGUAGE_HUMAN_PAX, 0)
+	add_language(LANGUAGE_HUMAN_EURO, 0)
 
 	eyes = image(icon = icon, icon_state = "eyes_[icon_state]")
 	eyes.layer = EYE_GLOW_LAYER

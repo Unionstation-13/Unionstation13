@@ -82,8 +82,8 @@
 	icon_state = "labcoat_nt"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/heph
-	name = "\improper Nitros Engineering Industries labcoat"
-	desc = "A suit that protects against minor chemical spills. It has a cyan stripe on the shoulder and cyan trim on the sleeves, denoting it as a Nitros Engineering Industries labcoat."
+	name = "\improper Hephaestus Industries labcoat"
+	desc = "A suit that protects against minor chemical spills. It has a cyan stripe on the shoulder and cyan trim on the sleeves, denoting it as a Hephaestus Industries labcoat."
 	icon_state = "labcoat_heph"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/zeng
@@ -102,14 +102,14 @@
 	icon_state = "labcoat_xynergy"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/dais
-	name = "\improper ABCDEFG labcoat"
+	name = "\improper DAIS labcoat"
 	desc = "A labcoat with a the logo of Deimos Advanced Information Systems emblazoned on the back. It has a stylish blue \
 	trim and the pockets are reinforced to hold tools. It seems to have an insulated material woven in to prevent static shocks."
 	icon_state = "labcoat_dais"
 	armor = list(
 		melee = ARMOR_MELEE_MINOR
 	)//They don't need to protect against the environment very much.
-	siemens_coefficient = 0.5 //These guys work with electronics. ABCDEFG's labcoats shouldn't conduct very well.
+	siemens_coefficient = 0.5 //These guys work with electronics. DAIS's labcoats shouldn't conduct very well.
 
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/bishop
@@ -130,7 +130,7 @@
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/heph
 	name = "\improper HI research director's labcoat"
-	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Nitros Engineering Industries management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
+	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Hephaestus Industries management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_heph"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/zeng

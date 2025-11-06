@@ -19,7 +19,7 @@
 	channels = list("Service" = 1)
 
 /obj/item/device/encryptionkey/headset_torchcl
-	name = "human resources manager radio encryption key"
+	name = "corporate liaison radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("Service" = 1, "Command" = 1, "Hailing" = 1)
 

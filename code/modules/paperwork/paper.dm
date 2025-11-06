@@ -39,7 +39,7 @@
 	var/list/metadata
 	var/readable = TRUE //Paper will not be able to be written on and will not bring up a window upon examine if FALSE
 	var/is_memo = FALSE //If TRUE, paper will act the same as readable = FALSE, but will also be unrenameable.
-	var/datum/language/language = LANGUAGE_HUMAN_PAX //Language the paper was written in. Editable by users up until something's actually written
+	var/datum/language/language = LANGUAGE_HUMAN_EURO //Language the paper was written in. Editable by users up until something's actually written
 	var/scan_file_type = /datum/computer_file/data/text
 	var/is_copy = TRUE
 
@@ -53,7 +53,7 @@
 		src.language = language
 	if (!set_language(src.language, TRUE))
 		log_debug("[src] ([type]) initialized with invalid or missing language `[src.language]` defined.")
-		set_language(LANGUAGE_HUMAN_PAX, TRUE)
+		set_language(LANGUAGE_HUMAN_EURO, TRUE)
 
 
 /obj/item/paper/on_update_icon()
@@ -578,9 +578,9 @@
 
 /obj/item/paper/workvisa
 	name = "Sol Work Visa"
-	desc = "A flimsy piece of laminated cardboard issued by the United Galactic Nations."
+	desc = "A flimsy piece of laminated cardboard issued by the Sol Central Government."
 	icon_state = "workvisa"
-	info = "<center><b><large>Work Visa of the United Galactic Nations</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of work and labor."
+	info = "<center><b><large>Work Visa of the Sol Central Government</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of work and labor."
 
 
 /obj/item/paper/workvisa/on_update_icon()
@@ -589,9 +589,9 @@
 
 /obj/item/paper/travelvisa
 	name = "Sol Travel Visa"
-	desc = "A flimsy piece of laminated cardboard issued by the United Galactic Nations."
+	desc = "A flimsy piece of laminated cardboard issued by the Sol Central Government."
 	icon_state = "travelvisa"
-	info = "<center><b><large>Travel Visa of the United Galactic Nations</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of pleasure and recreation."
+	info = "<center><b><large>Travel Visa of the Sol Central Government</large></b></center><br><center><img src = sollogo.png><br><br><i><small>Issued on behalf of the Secretary-General.</small></i></center><hr><BR>This paper hereby permits the carrier to travel unhindered through Sol territories, colonies, and space for the purpose of pleasure and recreation."
 
 
 /obj/item/paper/travelvisa/on_update_icon()

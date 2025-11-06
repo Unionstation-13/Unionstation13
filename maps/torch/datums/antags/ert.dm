@@ -1,5 +1,5 @@
 /datum/antagonist/ert
-	required_language = LANGUAGE_HUMAN_PAX
+	required_language = LANGUAGE_HUMAN_EURO
 	leader_welcome_text = "<b>You are the <span class='notice'>leader</span> of the ERT!</b>\n \
 	You're an officer of the Fifth Fleet, tasked with leading your team to restore order to the SEV Torch and/or accomplish the mission given by Fleet Command. You answer \
 	directly to Fleet Command and have been granted authority over the crew of the SEV Torch where nescessary to accomplish your mission."

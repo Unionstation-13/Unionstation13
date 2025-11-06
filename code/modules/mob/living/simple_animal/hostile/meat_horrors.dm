@@ -147,7 +147,7 @@
 
 /mob/living/simple_animal/hostile/meat/humansecurity
 	name = "turned security"
-	desc = "What's left of a WALDO security guard. The only way you can tell is by the tatters of their uniform. That armor they wore in life now gives them a bit of hardiness in death..."
+	desc = "What's left of a SAARE security guard. The only way you can tell is by the tatters of their uniform. That armor they wore in life now gives them a bit of hardiness in death..."
 	icon = 'icons/mob/simple_animal/nightmaremonsters.dmi'
 	icon_state = "horror_security"
 	icon_living = "horror_security"

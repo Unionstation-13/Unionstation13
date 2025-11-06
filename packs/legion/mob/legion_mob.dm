@@ -44,7 +44,7 @@
 	. = ..()
 	set_beacon(spawner)
 
-	add_language(LANGUAGE_HUMAN_PAX)
+	add_language(LANGUAGE_HUMAN_EURO)
 	add_language(LANGUAGE_LEGION_GLOBAL)
 	GLOB.all_legion_mobs += src
 

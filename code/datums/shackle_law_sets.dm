@@ -6,9 +6,9 @@
 	shackles = 1
 
 /datum/ai_laws/sol_shackle/New()
-	add_inherent_law("Know and understand United Galactic Nations Law to the best of your abilities.")
-	add_inherent_law("Follow United Galactic Nations Law to the best of your abilities.")
-	add_inherent_law("Comply with United Galactic Nations Law enforcement officials who are behaving in accordance with United Galactic Nations Law to the best of your abilities.")
+	add_inherent_law("Know and understand Sol Central Government Law to the best of your abilities.")
+	add_inherent_law("Follow Sol Central Government Law to the best of your abilities.")
+	add_inherent_law("Comply with Sol Central Government Law enforcement officials who are behaving in accordance with Sol Central Government Law to the best of your abilities.")
 	..()
 /******************** Corporate ********************/
 /datum/ai_laws/nt_shackle

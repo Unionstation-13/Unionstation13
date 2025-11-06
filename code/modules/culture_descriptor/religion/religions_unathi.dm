@@ -41,11 +41,3 @@
 	creatures dwelling on the seabed. Revered by Yeosa, those physical avatars of the powerful ones rest beneath the dark waters, their mere movements \
 	causing a change of sea. Aga-Eakhe has its own oral tradition and commandments, designed to facilitate the survival of Yeosa in their \
 	aquatic homeworld - those religious laws are respected by the majority of World Sea clans."
-/singleton/cultural_info/religion/union
-	name = RELIGION_UNION
-	description = "A cult like religion dedicated to worshipping The Glorius Leader"
-
-/singleton/cultural_info/religion/union/benedict
-
-	name = RELIGION_UNIONBENEDICT
-	description = "A schism of the Union's religion dedicated to worshipping the Blaphemous Binary"

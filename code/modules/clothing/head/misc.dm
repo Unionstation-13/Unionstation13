@@ -357,8 +357,8 @@
 	desc = "A navy beret with the emblem of Proxima Centauri Risk Control, a private security firm. For agents that are more inclined towards style than safety."
 	icon_state = "beret_corporate_pcrc"
 
-/obj/item/clothing/head/beret/waldo
-	name = "\improper WALDO beret"
+/obj/item/clothing/head/beret/saare
+	name = "\improper SAARE beret"
 	desc = "A gray beret with the emblem of Strategic Assault and Asset Retention Enterprises, a private military corporation. For mercenaries that are more inclined towards style than safety."
 	icon_state = "beret_corporate_saare"
 
