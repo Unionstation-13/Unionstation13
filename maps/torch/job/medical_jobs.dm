@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Seinor Medical Officer"
+	title = "Senior Medical Officer"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -48,7 +48,7 @@
 	ideal_character_age = 45
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "Your seinor officer"
+	supervisors = "Your senior officer"
 	selection_color = "#013d3b"
 	economic_power = 6
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
@@ -116,7 +116,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee
-	title = "Juinor Officer"
+	title = "Junior Officer"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
@@ -155,10 +155,10 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee/get_description_blurb()
-	return "You are a Juinor "
+	return "You are a Junior "
 
 /datum/job/chemist
-	title = "Biomedical Systems Seinor Officer"
+	title = "Biomedical Systems Senior Officer"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1

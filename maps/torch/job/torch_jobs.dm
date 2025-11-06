@@ -6,8 +6,8 @@
 		/singleton/species/vox = list(/datum/job/ai, /datum/job/cyborg),
 		/singleton/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 	)
-	var/faction_to_job_blacklist = list(CULTURE_FORMERUNION = list(/datum/job/officer, /datum/job/warden, /datum/job/hos))
-#define HUMAN_ONLY_JOBS /datum/job/rd, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/cmo, /datum/job/doctor, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/chemist, /datum/job/pathfinder, /datum/job/explorer
+	var/faction_to_job_blacklist = list(CULTURE_FORMERUNION = list(/datum/job/officer, /datum/job/warden, /datum/job/hos, /datum/job/captain ))
+#define HUMAN_ONLY_JOBS /datum/job/rd, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/cmo, /datum/job/doctor, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/chemist, /datum/job/pathfinder, /datum/job/explorer, /datum/job/captain
 	species_to_job_blacklist = list(
 		/singleton/species/machine = list(HUMAN_ONLY_JOBS),
 		/singleton/species/diona   = list(HUMAN_ONLY_JOBS),
