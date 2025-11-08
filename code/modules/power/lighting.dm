@@ -520,7 +520,7 @@
 	to_chat(user, SPAN_NOTICE("You cause \the [src] to flick on and off."))
 	flicker(1)
 
-// attack with hand - remove tube/bulb
+// attack with hand - remove tube/bul
 // if hands aren't protected and the light is on, burn the player
 /obj/machinery/light/physical_attack_hand(mob/living/user)
 	if(!lightbulb)
