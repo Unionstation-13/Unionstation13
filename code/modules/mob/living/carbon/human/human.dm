@@ -235,7 +235,7 @@
 // ============================================================================
 
 // Job-based name replacement system
-var/list/rank_prefix = list(
+var/global/list/rank_prefix = list(
 	"Marshall" = "Marshall", \
 	"Commanding Officer" = "Commanding Officer", \
 	"First Lieutenant" = "First Lieutenant", \
