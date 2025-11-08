@@ -192,6 +192,7 @@
 	var/current_mode = null
 
 /// Handles flickering
+	// Haunted lights — pure light code, no events
 	var/next_flicker = 0
 
 /obj/machinery/light/Initialize(mapload, obj/machinery/light_construct/construct = null)
@@ -200,28 +201,49 @@
 		schedule_flicker()
 
 /obj/machinery/light/proc/schedule_flicker()
-	next_flicker = world.time + rand(1200, 4800)
-	SSprocessing |= src
+	next_flicker = world.time + rand(1200, 4800) // 2–8 min
+	set_extension(src, /datum/extension/process, /datum/extension/process, "haunted_light")
+	SSprocessing.processing[src] = src
+
+/obj/machinery/light/proc/stop_flicker()
+	SSprocessing.processing -= src
+	remove_extension(src, /datum/extension/process)
 
 /obj/machinery/light/process()
 	if(world.time < next_flicker || !on || get_status() != LIGHT_OK)
 		return
 
 	var/roll = rand(1, 5000)
-	if(roll <= 1)
+	if(roll <= 1)          // 1 in 5000 → SHATTER
 		broken()
 		visible_message(SPAN_DANGER("\The [src] explodes in a shower of glass!"))
 		playsound(loc, 'sound/effects/Glassbr1.ogg', 65, TRUE)
-	else if(roll <= 25)
+	else if(roll <= 25)    // 1 in 200 → SPARK
 		s.set_up(2, 1, src)
 		s.start()
 		flicker(1)
-	else if(roll <= 250)
+	else if(roll <= 250)   // 1 in 20 → STUTTER
 		flicker(rand(1,3))
 	else
 		flicker(1)
 
 	schedule_flicker()
+
+/obj/machinery/light/seton(state)
+	..(state)
+	if(!state)
+		stop_flicker()
+	else if(get_status() == LIGHT_OK)
+		schedule_flicker()
+
+/obj/machinery/light/broken()
+	..()
+	stop_flicker()
+
+/obj/machinery/light/fix()
+	..()
+	if(on)
+		schedule_flicker()
 
 /obj/machinery/light/get_color()
 	return lightbulb ? lightbulb.get_color() : null
