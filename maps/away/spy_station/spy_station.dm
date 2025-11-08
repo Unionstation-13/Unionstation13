@@ -139,7 +139,7 @@
 	<b>Transponder signal</b> was intercepted; however, its original readings were corrupted by interference. Sent the corrupted file to the IT specialist.
 	Engines heat trace is not present, but the vessel is moving.
 	<hr>Send drones for a recon mission?
-	<i>This is not our concern. Transponder data indicates that it's a Free Trade Union vessel.</i>
+	<i>This is not our concern. Transponder data indicates that it's a Cooran Supply vessel.</i>
 	"}
 
 

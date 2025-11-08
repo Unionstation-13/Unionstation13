@@ -24,7 +24,7 @@
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/head/solhat
-	display_name = "sol central government hat"
+	display_name = "United Galactic Nations hat"
 	path = /obj/item/clothing/head/soft/solgov
 	allowed_branches = SOLGOV_BRANCHES
 	flags = GEAR_HAS_NO_CUSTOMIZATION
@@ -180,7 +180,7 @@
 /datum/gear/tactical/armor_tag_corporate/New()
 	..()
 	var/list/options = list()
-	options["SAARE tag"] = /obj/item/clothing/accessory/armor_tag/saare
+	options["WALDO tag"] = /obj/item/clothing/accessory/armor_tag/waldo
 	options["PCRC tag"] =  /obj/item/clothing/accessory/armor_tag/pcrc
 	options["SFP tag"] = /obj/item/clothing/accessory/armor_tag/sfp
 	gear_tweaks += new /datum/gear_tweak/path (options)

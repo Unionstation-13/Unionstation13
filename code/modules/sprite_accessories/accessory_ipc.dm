@@ -158,50 +158,50 @@
 	name = "Bishop Rook Legs Color Accents"
 	icon_state = "bishop_rook"
 
-//HEPHAESTUS
+//NITROSENGINEERING
 /datum/sprite_accessory/marking/ipc/head/hephaestus
-	name = "Hephaestus Colored Head"
+	name = "Nitros Engineering Colored Head"
 	icon_state = "hephaestus"
 
 /datum/sprite_accessory/marking/ipc/head/hephaestus_alt
-	name = "Hephaestus Colored Alt. Head"
+	name = "Nitros Engineering Colored Alt. Head"
 	icon_state = "hephaestus_alt"
 
 /datum/sprite_accessory/marking/ipc/head/hephaestus_monitor
-	name = "Hephaestus Colored Monitor"
+	name = "Nitros Engineering Colored Monitor"
 	icon_state = "hephaestus_monitor"
 
 /datum/sprite_accessory/marking/ipc/head/hephaestus_eyes
-	name = "Hephaestus Alt. Optics"
+	name = "Nitros Engineering Alt. Optics"
 	icon_state = "hephaestus_alt_optics"
 
 /datum/sprite_accessory/marking/ipc/torso/hephaestus
-	name = "Hephaestus Colored Torso"
+	name = "Nitros Engineering Colored Torso"
 	icon_state = "hephaestus"
 
 /datum/sprite_accessory/marking/ipc/arms/hephaestus
-	name = "Hephaestus Colored Arms"
+	name = "Nitros Engineering Colored Arms"
 	icon_state = "hephaestus"
 
 /datum/sprite_accessory/marking/ipc/legs/hephaestus
-	name = "Hephaestus Colored Legs"
+	name = "Nitros Engineering Colored Legs"
 	icon_state = "hephaestus"
 
 //TITAN
 /datum/sprite_accessory/marking/ipc/head/titan
-	name = "Hephaestus Titan Colored Head"
+	name = "Nitros Engineering Titan Colored Head"
 	icon_state = "titan"
 
 /datum/sprite_accessory/marking/ipc/torso/titan
-	name = "Hephaestus Titan Colored Torso"
+	name = "Nitros Engineering Titan Colored Torso"
 	icon_state = "titan"
 
 /datum/sprite_accessory/marking/ipc/arms/titan
-	name = "Hephaestus Titan Colored Arms"
+	name = "Nitros Engineering Titan Colored Arms"
 	icon_state = "titan"
 
 /datum/sprite_accessory/marking/ipc/legs/titan
-	name = "Hephaestus Titan Colored Legs"
+	name = "Nitros Engineering Titan Colored Legs"
 	icon_state = "titan"
 
 //MORPHEUS

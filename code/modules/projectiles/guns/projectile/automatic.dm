@@ -28,7 +28,7 @@
 
 /obj/item/gun/projectile/automatic/machine_pistol
 	name = "machine pistol"
-	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol based off a mid 20th century design. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
+	desc = "The Nitros Engineering Industries MP6 Vesper, A fairly common machine pistol based off a mid 20th century design. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
 	safety_icon = "safety"
@@ -175,7 +175,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
 	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the SCGDF. Despite its age, it still remains the de-facto rifle of the SCG Army, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
+	desc = "The Nitros Engineering Industries Z8 is one of the oldest weapons currently in service with the SCGDF. Despite its age, it still remains the de-facto rifle of the SCG Army, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"

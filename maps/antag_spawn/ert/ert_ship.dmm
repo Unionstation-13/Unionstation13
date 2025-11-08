@@ -8072,7 +8072,7 @@
 	pixel_x = -4
 	},
 /obj/item/stamp/solgov{
-	name = "\improper Sol Central Government Fleet rubber stamp";
+	name = "\improper United Galactic Nations Fleet rubber stamp";
 	pixel_y = 1;
 	pixel_x = 9
 	},

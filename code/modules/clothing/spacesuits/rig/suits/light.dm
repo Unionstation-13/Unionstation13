@@ -233,7 +233,7 @@
 
 /obj/item/rig/light/ninja/corpo
 	name = "corporate mercenary suit control module"
-	desc = "A light hardsuit with minimal armor plating. The control panel marks it as a Hephaestus X-11 Lightweight, a mobile combat suit commonly issued to corporate security teams."
+	desc = "A light hardsuit with minimal armor plating. The control panel marks it as a Nitros Engineering X-11 Lightweight, a mobile combat suit commonly issued to corporate security teams."
 	suit_type = "corporate"
 	icon_state = "corpo_rig"
 	online_slowdown = -1 ///speedster suit

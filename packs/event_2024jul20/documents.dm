@@ -140,7 +140,7 @@
 <p>As such, as the Chief Engineer of your vessel. You are <strong>strongly encouraged</strong> to conduct regular diagnostics and maintenance of automated drones, positronics and other on-board robotic systems.</p>
 <p>Ensure that your roboticist is well versed with standard positronic biped platforms. As well as electronic security of said units.</p>
 <p>Firmware update packages and security suites for NTNet and automated units will be sent via secure transmission from designated Fleet crafts, or via physical deliveries.</p>
-<p>Ensure all SHA-512 encryption sets are well maintained, and kept up-to-date with provided, latest DAIS software specifications. Only accept update packages from verified parties.</p>
+<p>Ensure all SHA-512 encryption sets are well maintained, and kept up-to-date with provided, latest ABCDEFG software specifications. Only accept update packages from verified parties.</p>
 <p>Regular reports of psychiatric and physical evaluations of synthetic units is <strong>encouraged</strong>, in co-operation with the <strong>Chief Medical Officer</strong>. These reports must be sent to EXCOM when possible.</p>
 <p>EXCOM has enacted a general order of caution, due to the high likelihood of electronic warfare from hostile parties. Any affected units must be isolated, and kept for research and evaluation.</p>
 <p>In case of danger to the vessel, units affected by electronic warfare from unknown sources may be terminated per consideration from you, and the <strong>Chief of Security</strong>, or above.</p>
@@ -276,7 +276,7 @@
 
 
 /obj/item/material/folder/envelope/preset/cmdorder
-	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR SCGR/CO EYES ONLY.'"
+	desc = "A thick envelope. The United Galactic Nations crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR UGNR/CO EYES ONLY.'"
 	seal_stamp = "\improper Bureau of Emergency Operations rubber stamp"
 
 
@@ -288,7 +288,7 @@
 /obj/item/paper/cmdorder
 	name = "Guidelines on Emergency Reponsibilities"
 	info = {"\
-<center><h3>SOL CENTRAL GOVERNMENT</h3>
+<center><h3>United Galactic Nations</h3>
 <img src="sollogo.png" /></center>
 <p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
 <hr />
@@ -304,6 +304,6 @@
 <p>Ensure regular interviews and personnel reviews to keep loyalty and performance consistent across the board. Once your vessel reaches E-14b, further instructions will be given, and regular expeditionary journeys will continue.</p>
 <p>Funerary and aid services will be properly provided at that time.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the Sol Central Government.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the United Galactic Nations.</em></p>
 <hr /><center><img src="sollogo.png" /></center>
 "}

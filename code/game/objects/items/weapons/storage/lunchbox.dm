@@ -70,7 +70,7 @@
 
 
 /obj/item/storage/lunchbox/dais
-	name = "\improper DAIS brand lunchbox"
+	name = "\improper ABCDEFG brand lunchbox"
 	icon_state = "lunchbox_dais"
 	item_state = "toolbox_blue"
 	desc = "A little lunchbox. This one is branded with the Deimos Advanced Information Systems logo!"

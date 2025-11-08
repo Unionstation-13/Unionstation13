@@ -53,7 +53,7 @@
 
 /obj/item/gun/energy/stunrevolver
 	name = "stun revolver"
-	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Free Trade Union. Industry spies have been trying to get a hold of the blueprints for half a decade."
+	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Cooran Supply. Industry spies have been trying to get a hold of the blueprints for half a decade."
 	icon = 'icons/obj/guns/stunrevolver.dmi'
 	icon_state = "stunrevolver"
 	item_state = "stunrevolver"

@@ -28,7 +28,7 @@
 #DOCK_NAME TBD
 #BOSS_NAME Expeditionary Command
 #BOSS_SHORT Command
-#COMPANY_NAME Sol Central Government
+#COMPANY_NAME United Galactic Nations
 #COMPANY_SHORT SolGov
 
 ## Other fluff options

@@ -5,10 +5,9 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	description = "Humanity originated in the Sol system, and over the last three centuries has spread \
 	colonies across a wide swathe of space. They hold a wide range of forms and creeds.<br/><br/> \
-	The two largest human governments are the Sol Central Government and the Gilgamesh Colonial Confederation, \
-	which are currently locked in a cold war. Many other human states exist, however - these include the Frontier \
-	Alliance, a loose collection of planets which has recently seceded from the Sol Central Government; \
-	Magnitka, an independent authoritarian planet; and many other minor colonies."
+	The two largest human governments are the United Galactic Nations and The Union, \
+	which are currently locked in a cold war. Not many other human states exist, however the ones which do include Federated Republic of Nitros\
+	, a newly independant nation in control of the Nitros system."
 	assisted_langs = list(LANGUAGE_NABBER)
 	min_age = 18
 	max_age = 100
@@ -24,42 +23,20 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_HUMAN_MARTIAN,
-			CULTURE_HUMAN_MARSTUN,
-			CULTURE_HUMAN_LUNAPOOR,
-			CULTURE_HUMAN_LUNARICH,
+			CULTURE_HUMAN_MARS,
 			CULTURE_HUMAN_VENUSIAN,
 			CULTURE_HUMAN_VENUSLOW,
 			CULTURE_HUMAN_BELTER,
-			CULTURE_HUMAN_KUIPERI,
-			CULTURE_HUMAN_KUIPERO,
-			CULTURE_HUMAN_MAGNITKA,
-			CULTURE_HUMAN_EARTH,
-			CULTURE_HUMAN_CETIN,
 			CULTURE_HUMAN_CETIS,
-			CULTURE_HUMAN_CETII,
 			CULTURE_HUMAN_SPACER,
 			CULTURE_HUMAN_OFFWORLD,
-			CULTURE_HUMAN_THEIA,
-			CULTURE_HUMAN_CONFED_TERRA,
-			CULTURE_HUMAN_CONFED_ZEMLYA,
-			CULTURE_HUMAN_CONFED_SESTRIS,
-			CULTURE_HUMAN_CONFED_PUTKARI,
-			CULTURE_HUMAN_CONFED_ALTAIR,
-			CULTURE_HUMAN_CONFED_PENGLAI,
-			CULTURE_HUMAN_CONFED_PROVIDENCE,
-			CULTURE_HUMAN_CONFED_VALY,
-			CULTURE_HUMAN_CONFEDO,
-			CULTURE_HUMAN_FOSTER,
-			CULTURE_HUMAN_PIRXL,
-			CULTURE_HUMAN_PIRXB,
-			CULTURE_HUMAN_PIRXF,
-			CULTURE_HUMAN_TADMOR,
-			CULTURE_HUMAN_IOLAUS,
+			CULTURE_HUMAN_NITROS,
+			CULTURE_HUMAN_PIRXABC,
+			CULTURE_HUMAN_PIRXS,
+			CULTURE_HUMAN_ANTIDO,
 			CULTURE_HUMAN_BRAHE,
 			CULTURE_HUMAN_EOS,
-			CULTURE_HUMAN_GAIAN,
-			CULTURE_HUMAN_OTHER
+			CULTURE_HUMAN_OTHERS
 		)
 	)
 
@@ -182,10 +159,10 @@
 		TAG_FACTION = list(
 			FACTION_EXPEDITIONARY,
 			FACTION_URC_EXP,
-			FACTION_NANOTRASEN,
+			FACTION_NEOTRASEN,
 			FACTION_PEACEKEEPER,
-			FACTION_HEPHAESTUS,
-			FACTION_DAIS,
+			FACTION_NITROSENGINEERING,
+			FACTION_ABCDEFG,
 			FACTION_SKRELL_QERRVOAL,
 			FACTION_SKRELL_QALAOA,
 			FACTION_SKRELL_YIITALANA,
