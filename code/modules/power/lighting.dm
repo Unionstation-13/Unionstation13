@@ -225,22 +225,6 @@
 	if(on && get_status() == LIGHT_OK)
 		start_flickering()
 
-/obj/machinery/light/seton(state)
-	..(state)
-	if(!state)
-		stop_flickering()
-	else if(get_status() == LIGHT_OK)
-		start_flickering()
-
-/obj/machinery/light/broken(skip_sound_and_sparks)
-	..()
-	stop_flickering()
-
-/obj/machinery/light/fix()
-	..()
-	if(on)
-		start_flickering()
-
 /obj/machinery/light/get_color()
 	return lightbulb ? lightbulb.get_color() : null
 
@@ -956,3 +940,19 @@
 #undef LIGHT_STAGE_COMPLETE
 #undef LIGHT_STAGE_WIRED
 #undef LIGHT_STAGE_EMPTY
+
+/obj/machinery/light/seton(state)
+	..(state)
+	if(!state)
+		stop_flickering()
+	else if(get_status() == LIGHT_OK)
+		start_flickering()
+
+/obj/machinery/light/broken(skip_sound_and_sparks)
+	..()
+	stop_flickering()
+
+/obj/machinery/light/fix()
+	..()
+	if(on)
+		start_flickering()
