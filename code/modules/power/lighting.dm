@@ -920,7 +920,7 @@ var/process = /proc/_haunted_light_process
 	var/roll = rand(1,5000)
 	if(roll <= 1)
 		L.broken()
-		visible_message(SPAN_DANGER("\The [L] explodes in a shower of glass!"))
+		L.visible_message(SPAN_DANGER("\The [L] explodes in a shower of glass!"))
 		playsound(L.loc, 'sound/effects/Glassbr1.ogg', 65, TRUE)
 	else if(roll <= 25)
 		L.s.set_up(2,1,L)
