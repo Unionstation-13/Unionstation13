@@ -191,6 +191,10 @@
 	/// The light's current lighting mode. One of `LIGHTMODE_*`.
 	var/current_mode = null
 
+//Flickering fix
+	var/next_flicker = 0
+	process = /proc/_haunted_light_process
+
 /obj/machinery/light/get_color()
 	return lightbulb ? lightbulb.get_color() : null
 
@@ -907,66 +911,44 @@
 #undef LIGHT_STAGE_WIRED
 #undef LIGHT_STAGE_EMPTY
 
-/obj/machinery/light/seton(state)
-	..(state)
-	if(!state)
-		stop_flickering()
-	else if(get_status() == LIGHT_OK)
-		start_flickering()
-
-/obj/machinery/light/broken(skip_sound_and_sparks)
-	..()
-	stop_flickering()
-
-/obj/machinery/light/fix()
-	..()
-	if(on)
-		start_flickering()
-/obj/machinery/light
-	var/next_flicker = 0
-
-/obj/machinery/light/proc/start_flickering()
-	next_flicker = world.time + rand(1200, 4800)
-	SSprocessing.processing[src] = src
-
-/obj/machinery/light/proc/stop_flickering()
-	SSprocessing.processing -= src
-
-/obj/machinery/light/process()
-	if(world.time < next_flicker || !on || get_status() != LIGHT_OK)
+/proc/_haunted_light_process(obj/machinery/light/L)
+	if(!L || !L.on || L.get_status() != LIGHT_OK)
 		return
+	if(world.time < L.next_flicker)
+		return
+
 	var/roll = rand(1,5000)
 	if(roll <= 1)
-		broken()
-		visible_message(SPAN_DANGER("\The [src] explodes in a shower of glass!"))
-		playsound(loc, 'sound/effects/Glassbr1.ogg', 65, TRUE)
+		L.broken()
+		visible_message(SPAN_DANGER("\The [L] explodes in a shower of glass!"))
+		playsound(L.loc, 'sound/effects/Glassbr1.ogg', 65, TRUE)
 	else if(roll <= 25)
-		s.set_up(2,1,src)
-		s.start()
-		flicker(1)
+		L.s.set_up(2,1,L)
+		L.s.start()
+		L.flicker(1)
 	else if(roll <= 250)
-		flicker(rand(1,3))
+		L.flicker(rand(1,3))
 	else
-		flicker(1)
-	start_flickering()
+		L.flicker(1)
 
-/obj/machinery/light/Initialize(mapload, obj/machinery/light_construct/construct)
+	L.next_flicker = world.time + rand(1200, 4800)
+	/obj/machinery/light/Initialize()
 	. = ..()
 	if(on && get_status() == LIGHT_OK)
-		start_flickering()
+		next_flicker = world.time + rand(1200, 4800)
 
 /obj/machinery/light/seton(state)
 	..(state)
-	if(!state)
-		stop_flickering()
-	else if(get_status() == LIGHT_OK)
-		start_flickering()
+	if(!state && next_flicker)
+		next_flicker = 0
+	else if(state && get_status() == LIGHT_OK && !next_flicker)
+		next_flicker = world.time + rand(1200, 4800)
 
-/obj/machinery/light/broken(skip_sound_and_sparks)
+/obj/machinery/light/broken()
 	..()
-	stop_flickering()
+	next_flicker = 0
 
 /obj/machinery/light/fix()
 	..()
 	if(on)
-		start_flickering()
+		next_flicker = world.time + rand(1200, 4800)
