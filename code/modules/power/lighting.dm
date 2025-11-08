@@ -911,7 +911,7 @@ var/process = /proc/_haunted_light_process
 #undef LIGHT_STAGE_WIRED
 #undef LIGHT_STAGE_EMPTY
 
-/proc/_haunted_light_process(obj/machinery/light/L)
+/proc/_haunted_light_process(obj/machinery/light/L) {
 	if(!L || !L.on || L.get_status() != LIGHT_OK)
 		return
 	if(world.time < L.next_flicker)
@@ -952,3 +952,4 @@ var/process = /proc/_haunted_light_process
 	..()
 	if(on)
 		next_flicker = world.time + rand(1200, 4800)
+}
