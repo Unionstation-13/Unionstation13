@@ -931,8 +931,7 @@ var/process = /proc/_haunted_light_process
 	else
 		L.flicker(1)
 
-	L.next_flicker = world.time + rand(1200, 4800)
-	/obj/machinery/light/Initialize()
+/obj/machinery/light/Initialize(mapload)
 	. = ..()
 	if(on && get_status() == LIGHT_OK)
 		next_flicker = world.time + rand(1200, 4800)
