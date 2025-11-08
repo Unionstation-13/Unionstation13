@@ -34,7 +34,7 @@
 	var/display_name = "Unknown"
 	if (ishuman(speaker))
 		var/mob/living/carbon/human/human = speaker
-		display_name = human.GetVoice()
+		display_name = human.rank_prefix_name(human.GetVoice(TRUE))
 	else if (speaker)
 		display_name = speaker.name
 

@@ -56,62 +56,6 @@
 
 	var/faction = MOB_FACTION_CREW
 
-// ============================================================================
-// JOB NAME REPLACEMENT SYSTEM - ADDED HERE
-// ============================================================================
-
-// Job-based name replacement system
-var/global/list/job_name_mapping = list(
-	"Marshall" = "Marshall %s",
-	"Commanding Officer" = "Commanding Officer %s",
-	"First Lieutenant" = "First Lieutenant %s",
-	"Sci-Med Officer" = "Administrator %s",
-	"Medical Administrator" = "Junior Administrator %s",
-	"Senior Medical Officer" = "Doctor %s",
-	"Standard Medical Officer" = "Doctor %s",
-	"Emergency Response Unit" = "Emergency Response Unit %s",
-	"Counselor" = "Doctor %s",
-	"Psychologist" = "Counselor %s",
-	"Peacekeeper" = "Sergeant %s",
-	"Chief Engineer" = "Systems Director %s",
-	"Community Services Director" = "Domestic Affairs Manager %s",
-	"B.I.O Junior Associate" = "Service Specialist %s",
-	"B.I.O Senior Serviceman" = "Service Specialist %s",
-	"Junior Kitchen Assistant" = "Service Specialist %s",
-	"Bridge Secretary" = "Archive Manager %s",
-	"Intelligence Officer" = "Intelligence Officer %s",
-	"Maintenance Technician" = "Technician %s",
-	"Pharmacist" = "Biomedical Systems Senior Officer %s"
-)
-
-// Main proc to apply job-based name changes
-/mob/living/carbon/human/proc/apply_job_name(job_title)
-	if(!job_title)
-		return
-
-	var/format = job_name_mapping[job_title]
-
-	if(format)
-		var/old_name = real_name
-		var/surname = extract_surname(old_name)
-		real_name = replacetext(format, "%s", surname)
-		name = real_name
-
-// Helper proc to extract surname from full name
-/mob/living/carbon/human/proc/extract_surname(full_name)
-	if(!full_name)
-		return "Doe"
-
-	var/list/name_parts = splittext(full_name, " ")
-	if(length(name_parts >= 2))
-		return name_parts[length(name_parts)]
-	else
-		return full_name
-
-// ============================================================================
-// END JOB NAME REPLACEMENT SYSTEM
-// ============================================================================
-
 /datum/job/New()
 
 	if(prob(100-availablity_chance))	//Close positions, blah blah.
@@ -157,13 +101,6 @@ var/global/list/job_name_mapping = list(
 
 	var/singleton/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(outfit) . = outfit.equip(H, title, alt_title)
-
-	// ============================================================================
-	// JOB NAME REPLACEMENT HOOK - ADDED HERE
-	// ============================================================================
-	H.apply_job_name(title)
-	// ============================================================================
-
 	if(faction)
 		H.faction = faction
 		H.last_faction = faction
