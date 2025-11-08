@@ -192,8 +192,8 @@
 	var/current_mode = null
 
 //Flickering fix
-	var/next_flicker = 0
-	process = /proc/_haunted_light_process
+var/next_flicker = 0
+var/process = /proc/_haunted_light_process
 
 /obj/machinery/light/get_color()
 	return lightbulb ? lightbulb.get_color() : null
