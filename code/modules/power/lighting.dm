@@ -191,6 +191,36 @@
 	/// The light's current lighting mode. One of `LIGHTMODE_*`.
 	var/current_mode = null
 
+/// Handles flickering
+	var/next_flicker = 0
+
+
+/obj/machinery/light/Initialize(mapload, obj/machinery/light_construct/construct = null)
+	. = ..()
+	if(on && get_status() == LIGHT_OK)
+		schedule_flicker()
+
+/obj/machinery/light/proc/schedule_flicker()
+	next_flicker = world.time + rand(2400, 7200) // 4–12 minutes
+	SSprocessing |= src
+
+/obj/machinery/light/process()
+	if(world.time < next_flicker || !on || get_status() != LIGHT_OK)
+		return
+	var/roll = rand(1, 5000)
+	if(roll <= 1)          // 1 in 5000 → SHATTER
+		broken()
+		visible_message(SPAN_DANGER("\The [src] explodes in a shower of glass!"))
+		playsound(loc, 'sound/effects/Glassbr1.ogg', 65, TRUE)
+	else if(roll <= 25)    // 1 in 200 → SPARK
+		s.set_up(2, 1, src)
+		s.start()
+		flicker(1)
+	else if(roll <= 250)   // 1 in 20 → 1–3 STUTTERS
+		flicker(rand(1,3))
+	else                   // normal single flicker
+		flicker(1)
+	schedule_flicker()
 /obj/machinery/light/get_color()
 	return lightbulb ? lightbulb.get_color() : null
 
