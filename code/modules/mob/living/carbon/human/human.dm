@@ -229,6 +229,66 @@
 		var/mob/living/bot/mulebot/MB = AM
 		MB.runOver(src)
 
+
+// ============================================================================
+// JOB NAME REPLACEMENT SYSTEM - ADDED HERE
+// ============================================================================
+
+// Job-based name replacement system
+var/list/rank_prefix = list(
+	"Marshall" = "Marshall", \
+	"Commanding Officer" = "Commanding Officer", \
+	"First Lieutenant" = "First Lieutenant", \
+	"Sci-Med Officer" = "Administrator", \
+	"Medical Administrator" = "Junior Administrator", \
+	"Senior Medical Officer" = "Doctor", \
+	"Standard Medical Officer" = "Doctor", \
+	"Emergency Response Unit" = "Emergency Response Unit", \
+	"Counselor" = "Doctor", \
+	"Psychologist" = "Counselor", \
+	"Peacekeeper" = "Sergeant", \
+	"Chief Engineer" = "Systems Director", \
+	"Community Services Director" = "Domestic Affairs Manager", \
+	"B.I.O Junior Associate" = "Service Specialist", \
+	"B.I.O Senior Serviceman" = "Service Specialist", \
+	"Junior Kitchen Assistant" = "Service Specialist", \
+	"Bridge Secretary" = "Archive Manager", \
+	"Intelligence Officer" = "Intelligence Officer", \
+	"Maintenance Technician" = "Technician", \
+	"Pharmacist" = "Biomedical Systems Senior Officer" \
+)
+
+// Main proc to apply job-based name changes
+/mob/living/carbon/human/proc/rank_prefix_name(name)
+	if(get_id_rank())
+		if(findtext(name, " "))
+			name = copytext(name, findtext(name, " "))
+		name = get_id_rank() + name
+	return name
+
+//Retrieves name from ID (if wearing) and superimposes the rank name onto it.
+/mob/living/carbon/human/proc/get_id_rank()
+	var/rank
+	var/obj/item/card/id/id
+	if(istype(wear_id, /obj/item/modular_computer/pda))
+		id = wear_id.GetIdCard()
+	if(!id)
+		id = get_idcard()
+	if(id)
+		rank = id.rank
+		if(rank_prefix[rank])
+			return rank_prefix[rank]
+	return ""
+
+//Retrieves ID card from (probably) the ID slot/PDA.
+/mob/living/carbon/human/proc/get_idcard()
+	if(wear_id)
+		return wear_id.GetIdCard()
+
+// ============================================================================
+// END JOB NAME REPLACEMENT SYSTEM
+// ============================================================================
+
 // Get rank from ID, ID inside PDA, PDA, ID in wallet, etc.
 /mob/living/carbon/human/proc/get_authentification_rank(if_no_id = "No id", if_no_job = "No job")
 	var/obj/item/card/id/id = GetIdCard()
@@ -260,7 +320,9 @@
 	var/face_name = get_face_name()
 	var/id_name = get_id_name("")
 	if((face_name == "Unknown") && id_name && (id_name != face_name))
-		return "[face_name] (as [id_name])"
+		return "[face_name] (as [rank_prefix_name(id_name)])"
+	if(id_name)
+		return "[rank_prefix_name(id_name)]"
 	return face_name
 
 //Returns "Unknown" if facially disfigured and real_name if not. Useful for setting name when polyacided or when updating a human's name variable
