@@ -1,5 +1,5 @@
 // Global variables
-var/global/say_disabled = 0
+var/global/say_disabled = 1
 /mob/proc/say()
 	return
 

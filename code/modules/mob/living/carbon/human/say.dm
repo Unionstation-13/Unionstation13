@@ -14,6 +14,8 @@
 				to_chat(src, SPAN_WARNING("You don't know a language and cannot speak."))
 				emote("me", AUDIBLE_MESSAGE, "[pick("grunts", "babbles", "gibbers", "jabbers", "burbles")] aimlessly.")
 				return
+	if(name != rank_prefix_name(GetVoice()))
+		SetName("(as [rank_prefix_name(get_id_name())])")
 
 	if(has_chem_effect(CE_VOICELOSS, 1))
 		whispering = TRUE

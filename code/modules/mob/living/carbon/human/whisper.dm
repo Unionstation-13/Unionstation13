@@ -16,6 +16,9 @@
 	if(get_id_name("Unknown") == GetVoice())
 		SetName(get_id_name("Unknown"))
 
+	if(name != rank_prefix_name(GetVoice()))
+		SetName("(as [rank_prefix_name(get_id_name())])")
+
 	whisper_say(message)
 
 
