@@ -100,13 +100,37 @@ function linkify(parent, insertBefore, text) {
 		parent.insertBefore(document.createTextNode(text.substring(start, match.index)), insertBefore);
 
 		var href = match[0];
-		if (!/^https?:\/\//i.test(match[0])) {
+		if (/^https?:\/\//i.test(match[0])) {
+			// Safe, do not modify
+		} else if (/^www\./i.test(match[0])) {
 			href = "http://" + match[0];
+		} else {
+			// Unsafe protocol, insert plain text instead of a link
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
 		}
 
+		// Final protocol validation: Only allow strictly http/https links
+		var safeHref = href.trim();
+		let url;
+		try {
+			url = new URL(safeHref, window.location.origin);
+		} catch (e) {
+			// Invalid URL, insert plain text
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
+		}
+		if (url.protocol !== "http:" && url.protocol !== "https:") {
+			// Unsafe or disallowed protocol, insert plain text
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
+		}
 		// add the link
 		var link = document.createElement("a");
-		link.href = href;
+		link.href = url.href;
 		link.textContent = match[0];
 		parent.insertBefore(link, insertBefore);
 
@@ -211,13 +235,13 @@ function highlightTerms(el) {
 					var newWord = null;
 					for (var i = 0; i < opts.highlightTerms.length; i++) { //Each highlight term
 						if (opts.highlightTerms[i] && words[w].toLowerCase().indexOf(opts.highlightTerms[i].toLowerCase()) > -1) { //If a match is found
-							newWord = words[w].replace("<", "&lt;").replace(new RegExp(opts.highlightTerms[i], 'gi'), addHighlightMarkup);
+							newWord = words[w].replace(/</g, "&lt;").replace(new RegExp(opts.highlightTerms[i], 'gi'), addHighlightMarkup);
 							break;
 						}
 						if (window.console)
 							console.log(newWord)
 					}
-					newText += newWord || words[w].replace("<", "&lt;");
+					newText += newWord || words[w].replace(/</g, "&lt;");
 					newText += w >= words.length ? '' : ' ';
 				}
 			} else { //Every other type of element

@@ -1175,7 +1175,11 @@ $.fn.position = function( options ) {
 	options = $.extend( {}, options );
 
 	var atOffset, targetWidth, targetHeight, targetOffset, basePosition, dimensions,
-		target = $( options.of ),
+		// Important: If options.of is a string, use .find for safe CSS selector resolution,
+		// never interpret it as HTML. This avoids XSS vulnerabilities if untrusted input passed.
+		target = (typeof options.of === "string")
+			? $(document).find(options.of)
+			: $(options.of),
 		within = $.position.getWithinInfo( options.within ),
 		scrollInfo = $.position.getScrollInfo( within ),
 		collision = ( options.collision || "flip" ).split( " " ),

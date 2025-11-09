@@ -5597,7 +5597,9 @@ jQuery.extend({
 					tag = (rtagName.exec( elem ) || [ "", "" ])[ 1 ].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 
-					tmp.innerHTML = wrap[1] + elem.replace( rxhtmlTag, "<$1></$2>" ) + wrap[2];
+					// Avoid unsafe expansion of self-closing tags to prevent invalidating sanitization and possible XSS attacks.
+					// Always insert elem as is—browser will handle tag expansion if needed.
+					tmp.innerHTML = wrap[1] + elem + wrap[2];
 
 					// Descend through wrappers to the right content
 					j = wrap[0];
@@ -8513,7 +8515,7 @@ var rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g;
 var rvalidescape = /\\(?:["\\\/bfnrt]|u[\da-fA-F]{4})/g;
 var rvalidtokens = /"[^"\\\r\n]*"|true|false|null|-?(?:\d+\.|)\d+(?:[eE][+-]?\d+|)/g;
 
-jQuery.parseJSON: function( data ) {
+jQuery.parseJSON = function( data ) {
 		// Attempt to parse using the native JSON parser first
 		if ( window.JSON && window.JSON.parse ) {
 			return window.JSON.parse( data );
