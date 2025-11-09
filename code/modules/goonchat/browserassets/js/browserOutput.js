@@ -113,15 +113,24 @@ function linkify(parent, insertBefore, text) {
 
 		// Final protocol validation: Only allow strictly http/https links
 		var safeHref = href.trim();
-		if (!/^https?:\/\//i.test(safeHref)) {
-			// Unsafe protocol, downgrade to plain text
+		let url;
+		try {
+			url = new URL(safeHref, window.location.origin);
+		} catch (e) {
+			// Invalid URL, insert plain text
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
+		}
+		if (url.protocol !== "http:" && url.protocol !== "https:") {
+			// Unsafe or disallowed protocol, insert plain text
 			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
 			start = regex.lastIndex;
 			continue;
 		}
 		// add the link
 		var link = document.createElement("a");
-		link.href = safeHref;
+		link.href = url.href;
 		link.textContent = match[0];
 		parent.insertBefore(link, insertBefore);
 
