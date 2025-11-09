@@ -245,7 +245,6 @@ var/global/list/rank_prefix = list(
 	"Standard Medical Officer" = "Doctor", \
 	"Counselor" = "Doctor", \
 	"Psychologist" = "Counselor", \
-	"Peacekeeper" = "Peacekeeper", \
 	"Chief Engineer" = "Systems Director", \
 	"Community Services Director" = "Community Director", \
 	"B.I.O Junior Associate" = "Service Specialist", \
