@@ -243,19 +243,17 @@ var/global/list/rank_prefix = list(
 	"Medical Administrator" = "Junior Administrator", \
 	"Senior Medical Officer" = "Doctor", \
 	"Standard Medical Officer" = "Doctor", \
-	"Emergency Response Unit" = "Emergency Response Unit", \
 	"Counselor" = "Doctor", \
 	"Psychologist" = "Counselor", \
-	"Peacekeeper" = "Sergeant", \
+	"Peacekeeper" = "Peacekeeper", \
 	"Chief Engineer" = "Systems Director", \
-	"Community Services Director" = "Domestic Affairs Manager", \
+	"Community Services Director" = "Community Director", \
 	"B.I.O Junior Associate" = "Service Specialist", \
 	"B.I.O Senior Serviceman" = "Service Specialist", \
 	"Junior Kitchen Assistant" = "Service Specialist", \
-	"Bridge Secretary" = "Archive Manager", \
 	"Intelligence Officer" = "Intelligence Officer", \
 	"Maintenance Technician" = "Technician", \
-	"Pharmacist" = "Biomedical Systems Senior Officer" \
+	"Pharmacist" = "Doctor" \
 )
 
 // Main proc to apply job-based name changes
