@@ -5597,8 +5597,8 @@ jQuery.extend({
 					tag = (rtagName.exec( elem ) || [ "", "" ])[ 1 ].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 
-					// Avoid unsafe expansion of self-closing tags if elem contains quotes or angle brackets in attribute values.
-					if (/["'<]/.test(elem)) {
+					// Avoid unsafe expansion of self-closing tags if elem contains quotes, angle brackets, or slashes in attribute values.
+					if (/["'<>\//]/.test(elem)) {
 						// Insert elem as is to avoid breaking attributes—browser will handle tag expansion if needed.
 						tmp.innerHTML = wrap[1] + elem + wrap[2];
 					} else {
