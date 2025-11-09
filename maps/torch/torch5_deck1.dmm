@@ -15753,12 +15753,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue/autopsy)
-"dTp" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/safe_room/medical)
 "dTG" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16154,6 +16148,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"erz" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology)
 "etb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -23374,8 +23374,10 @@
 	req_access = list("")
 	})
 "nAN" = (
-/obj/machinery/atmospherics/unary/tank/air,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "nCb" = (
@@ -24068,6 +24070,20 @@
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1port)
+"opv" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "oqp" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -27429,8 +27445,10 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/tank/air,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
 "seb" = (
@@ -28348,12 +28366,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/binary/pump{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/rnd/xenobiology)
-"sWJ" = (
-/obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -29351,20 +29363,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
-"uux" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel,
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
 "uuS" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 6
@@ -29819,6 +29817,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
+"vfl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/safe_room/medical)
 "vfK" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Safe Room"
@@ -51707,7 +51711,7 @@ aUp
 sRV
 sOb
 sTb
-sWJ
+erz
 teb
 aLE
 aVX
@@ -57525,7 +57529,7 @@ yap
 yap
 hMC
 agv
-uux
+opv
 erb
 nuE
 cqc
@@ -57727,7 +57731,7 @@ mid
 mid
 mid
 mid
-dTp
+vfl
 gDb
 mid
 mid
