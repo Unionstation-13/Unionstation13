@@ -1177,6 +1177,7 @@ $.fn.position = function( options ) {
 	var atOffset, targetWidth, targetHeight, targetOffset, basePosition, dimensions,
 		// Important: If options.of is a string, use .find for safe CSS selector resolution,
 		// never interpret it as HTML. This avoids XSS vulnerabilities if untrusted input passed.
+		// See: https://github.com/jquery/jquery-ui/security/advisories/GHSA-j4hg-gmfj-c2jj
 		target = (typeof options.of === "string")
 			? $(document).find(options.of)
 			: $(options.of),
