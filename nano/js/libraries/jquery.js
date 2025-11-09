@@ -5597,13 +5597,9 @@ jQuery.extend({
 					tag = (rtagName.exec( elem ) || [ "", "" ])[ 1 ].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 
-					// Avoid unsafe expansion of self-closing tags if elem contains quotes, angle brackets, or slashes in attribute values.
-					if (/["'<>\//]/.test(elem)) {
-						// Insert elem as is to avoid breaking attributes—browser will handle tag expansion if needed.
-						tmp.innerHTML = wrap[1] + elem + wrap[2];
-					} else {
-						tmp.innerHTML = wrap[1] + elem.replace( rxhtmlTag, "<$1></$2>" ) + wrap[2];
-					}
+					// Avoid unsafe expansion of self-closing tags to prevent invalidating sanitization and possible XSS attacks.
+					// Always insert elem as is—browser will handle tag expansion if needed.
+					tmp.innerHTML = wrap[1] + elem + wrap[2];
 
 					// Descend through wrappers to the right content
 					j = wrap[0];
