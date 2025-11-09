@@ -211,13 +211,13 @@ function highlightTerms(el) {
 					var newWord = null;
 					for (var i = 0; i < opts.highlightTerms.length; i++) { //Each highlight term
 						if (opts.highlightTerms[i] && words[w].toLowerCase().indexOf(opts.highlightTerms[i].toLowerCase()) > -1) { //If a match is found
-							newWord = words[w].replace("<", "&lt;").replace(new RegExp(opts.highlightTerms[i], 'gi'), addHighlightMarkup);
+							newWord = words[w].replace(/</g, "&lt;").replace(new RegExp(opts.highlightTerms[i], 'gi'), addHighlightMarkup);
 							break;
 						}
 						if (window.console)
 							console.log(newWord)
 					}
-					newText += newWord || words[w].replace("<", "&lt;");
+					newText += newWord || words[w].replace(/</g, "&lt;");
 					newText += w >= words.length ? '' : ' ';
 				}
 			} else { //Every other type of element
