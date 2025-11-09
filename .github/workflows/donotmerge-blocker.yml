@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [synchronize, opened, labeled, unlabeled]
 
+permissions:
+  contents: read
+
 jobs:
   donotmerge-blocker:
     name: Enforce Do Not Merge Labels
