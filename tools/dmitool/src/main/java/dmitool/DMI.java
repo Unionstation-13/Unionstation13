@@ -27,7 +27,7 @@ import java.util.List;
 public class DMI implements Comparator<IconState> {
     int w, h;
     List<IconState> images;
-    int totalImages = 0;
+    long totalImages = 0;
     RGBA[] palette;
     boolean isPaletted;
     
