@@ -100,8 +100,15 @@ function linkify(parent, insertBefore, text) {
 		parent.insertBefore(document.createTextNode(text.substring(start, match.index)), insertBefore);
 
 		var href = match[0];
-		if (!/^https?:\/\//i.test(match[0])) {
+		if (/^https?:\/\//i.test(match[0])) {
+			// Safe, do not modify
+		} else if (/^www\./i.test(match[0])) {
 			href = "http://" + match[0];
+		} else {
+			// Unsafe protocol, insert plain text instead of a link
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
 		}
 
 		// add the link
