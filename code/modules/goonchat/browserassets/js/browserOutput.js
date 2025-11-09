@@ -111,9 +111,17 @@ function linkify(parent, insertBefore, text) {
 			continue;
 		}
 
+		// Final protocol validation: Only allow strictly http/https links
+		var safeHref = href.trim();
+		if (!/^https?:\/\//i.test(safeHref)) {
+			// Unsafe protocol, downgrade to plain text
+			parent.insertBefore(document.createTextNode(match[0]), insertBefore);
+			start = regex.lastIndex;
+			continue;
+		}
 		// add the link
 		var link = document.createElement("a");
-		link.href = href;
+		link.href = safeHref;
 		link.textContent = match[0];
 		parent.insertBefore(link, insertBefore);
 
