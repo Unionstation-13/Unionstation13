@@ -209,3 +209,9 @@
 	job_access_type = /datum/job/merchant
 	color = COLOR_OFF_WHITE
 	detail_color = COLOR_BEIGE
+
+//WALDO Id's
+/obj/item/card/id/waldo_ship/operative
+	job_access_type = /datum/job/waldo_operative
+	color = COLOR_BLUE
+	detail_color = COLOR_OFF_WHITE
