@@ -1,5 +1,3 @@
-#include "waldo_areas.dm"
-
 /obj/overmap/visitable/ship/waldo_ship
 	name = "waldo ship"
 	desc = "A strange distress beacon is eminating from this WALDO ship"
