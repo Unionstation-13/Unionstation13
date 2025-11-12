@@ -111,7 +111,6 @@ they used to silence dissenters."
 
 
 /singleton/cultural_info/faction/waldo
-// merge into Peacekeeper
 	name = FACTION_WALDO
 	description = "WALDO (Weaponized Antido Liberation Defensive Organization)\
 is an initiative founded in 2449 by Dr. Edward Waldo in spite of the Antido\ dictatorship. It is known for recruiting sleeper agents to its cause, and thus\
