@@ -10244,9 +10244,17 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "zc" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /obj/structure/closet/secure_closet/medical_torchsenior,
-/turf/simulated/wall/prepainted,
-/area/security/habcheck)
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/sleep/cryo)
 "zd" = (
 /obj/structure/table/marble,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -19829,7 +19837,9 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/structure/closet/secure_closet/medical_torchsenior{
+	req_access = list("ACCESS_MEDICAL")
+	},
 /obj/item/gun/projectile/pistol/m19/empty,
 /obj/item/clothing/suit/armor/pcarrier/medium/security,
 /obj/item/clothing/accessory/armor_tag/solgov/medic,
@@ -34864,7 +34874,7 @@ LV
 Qx
 Kc
 KS
-zc
+Vx
 Px
 AB
 Bp
@@ -37493,7 +37503,7 @@ yd
 yW
 vW
 IJ
-vW
+zc
 vW
 Dd
 DR

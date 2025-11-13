@@ -1516,6 +1516,7 @@
 #include "code\modules\alarm\fire_alarm.dm"
 #include "code\modules\alarm\motion_alarm.dm"
 #include "code\modules\alarm\power_alarm.dm"
+#include "code\modules\aquatic_species\__init.dm"
 #include "code\modules\assembly\assembly.dm"
 #include "code\modules\assembly\helpers.dm"
 #include "code\modules\assembly\holder.dm"
@@ -3381,7 +3382,6 @@
 #include "code\modules\xenoarcheaology\triggers\gas.dm"
 #include "code\modules\xenoarcheaology\triggers\temperature.dm"
 #include "code\modules\xenoarcheaology\triggers\touch.dm"
-#include "code\modules\aquatic_species\__init.dm"
 #include "code\modules\xgm\gases.dm"
 #include "code\modules\xgm\xgm_gas_data.dm"
 #include "code\modules\xgm\xgm_gas_mixture.dm"
@@ -3450,4 +3450,4 @@
 #include "packs\event_e14b\_pack.dm"
 #include "packs\legion\_pack.dm"
 #include "~code\global_init.dm"
-//END INCLUDE
+// END_INCLUDE
