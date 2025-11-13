@@ -10243,18 +10243,6 @@
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"zc" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/structure/closet/secure_closet/medical_torchsenior,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "zd" = (
 /obj/structure/table/marble,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -37503,7 +37491,7 @@ yd
 yW
 vW
 IJ
-zc
+vW
 vW
 Dd
 DR
