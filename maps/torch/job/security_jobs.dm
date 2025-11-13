@@ -151,19 +151,19 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3
 	)
-	min_skill = list( // 49 points
+	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
+		SKILL_MEDICAL = SKILL_TRAINED, // 16 points
+		SKILL_ANATOMY = SKILL_TRAINED, // 8 points
 		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
 		SKILL_DEVICES = SKILL_TRAINED, // 4 points
 		SKILL_COMBAT = SKILL_TRAINED, // 4 points
 		SKILL_WEAPONS = SKILL_TRAINED // 4 points
 	)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX,
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERIENCED,
+	                    SKILL_ANATOMY     = SKILL_TRAINED,
+	                    SKILL_CHEMISTRY   = SKILL_TRAINED,
 						SKILL_COMBAT      = SKILL_EXPERIENCED,
 						SKILL_WEAPONS     = SKILL_EXPERIENCED
 	)
@@ -172,7 +172,7 @@
 		access_security, access_brig, access_maint_tunnels,
 		access_external_airlocks, access_emergency_storage,
 		access_eva, access_sec_doors, access_solgov_crew,
-		access_radio_sec, access_medical, access_surgery, access_medical_equip
+		access_radio_sec, access_medical
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
