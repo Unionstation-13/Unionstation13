@@ -211,7 +211,7 @@
 	. = ..()
 	var/obj/item/paper/R = new(src)
 	R.set_content("\
-	<b>Warning: Classified<br>Contingency - Instructions</b></center><br><br>\
+	<b><center>Warning: Classified<br>Contingency - Instructions</b></center><br><br>\
 	In the event of Anomaly Cheznov being compromised by outside forces, follow these instructions to initiate the intruder protocol. \
 	Please read carefully.<br><br>\
 	1) (Optional) Inform your partner and do NOT tell the intruders of your intent<br>\
