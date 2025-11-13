@@ -89,14 +89,14 @@ Civilian
 	outfit_type = /obj/item/clothing/under/waldo
 	skill_points = 21
 	min_skill = list(
-		SKILL_COMBAT = SKILL_MAX
-		SKILL_MEDICAL = SKILL_EXPERIENCED
+		SKILL_COMBAT = SKILL_MAX,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
 		SKILL_DEVICES = SKILL_TRAINED
 	)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-						SKILL_ANATOMY	  = SKILL_MAX
-						SKILL_DEVICES = SKILL_MAX
+						SKILL_ANATOMY	  = SKILL_MAX,
+						SKILL_DEVICES = SKILL_MAX,
 						SKILL_COMBAT = SKILL_MAX)
 
 	access = list(
