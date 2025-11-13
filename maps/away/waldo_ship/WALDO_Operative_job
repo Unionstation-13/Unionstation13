@@ -26,5 +26,5 @@
 		access_waldo
 	)
 
-/datum/job/chemist/get_description_blurb()
+/datum/job/waldo_operative/get_description_blurb()
 	return "You are a WALDO Operative. DO NOT CHOOSE THIS unless an admin has granted you permission through EVENT SIGNUP. "
