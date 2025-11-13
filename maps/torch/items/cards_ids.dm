@@ -212,6 +212,7 @@
 
 //WALDO Id's
 /obj/item/card/id/waldo_ship/operative
+	desc = "An identification card issued to WALDO Operatives, allowing them access to secure facilities."
 	job_access_type = /datum/job/waldo_operative
-	color = COLOR_BLUE
-	detail_color = COLOR_OFF_WHITE
+	color = COLOR_OFF_WHITE
+	detail_color = COLOR_GREEN_LIGHT
