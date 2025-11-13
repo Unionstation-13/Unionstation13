@@ -202,3 +202,26 @@
 	<i>Regards, Forn.</i></tt>
 	<i>This paper has been stamped with the stamp of The United Rocknall Corporation.</i>
 	"}
+
+/obj/item/material/folder/envelope/preset/waldo_nuke
+	name = "instructions envelope"
+	desc = "A small envelope. The label reads 'open only in event of high emergency'."
+
+/obj/item/material/folder/envelope/preset/nuke_instructions/Initialize()
+	. = ..()
+	var/obj/item/paper/R = new(src)
+	R.set_content("\
+	<b>Warning: Classified<br>Contingency - Instructions</b></center><br><br>\
+	In the event of Anomaly Cheznov being compromised by outside forces, follow these instructions to initiate the intruder protocol. \
+	Please read carefully.<br><br>\
+	1) (Optional) Inform your partner and do NOT tell the intruders of your intent<br>\
+	2) MEMORIZE THE CODE 48567 for the self destruct and press the contingency button in the storage room.<br>\
+	3) Use the provided nuclear disk to input it into the self destruct unit near the anomaly and then input the memorized code.<br>\
+	4) You and your partner are to discreetly, if possible, grab the two nuclear cylinders stored in the contingency locker where this envelope is also stored.<br>\
+	5) Place the cylinders into the slots<br>\
+	6) Activate the inserters<br>\
+	7) Enter the countdown duration of 1:00 minutes<br>\
+	8) Disable the safety switch<br>\
+	9) Seal the Cheznov Containment module. As long as no intruders have a WALDO operative ID, they will not be able to stop the countdown<br>\
+	10) Have you and your partner ingest the provided cyanide pills to avoid agony during the detonation<br><br>\
+	If you have any issues with the intruders, do not hesistate to use the provided weapons.""
