@@ -207,7 +207,7 @@
 	name = "instructions envelope"
 	desc = "A small envelope. The label reads 'open only in event of high emergency'."
 
-/obj/item/material/folder/envelope/preset/nuke_instructions/Initialize()
+/obj/item/material/folder/envelope/preset/waldo_nuke/Initialize()
 	. = ..()
 	var/obj/item/paper/R = new(src)
 	R.set_content("\
