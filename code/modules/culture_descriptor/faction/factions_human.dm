@@ -115,7 +115,7 @@ they used to silence dissenters."
 	description = "WALDO (Weaponized Antido Liberation Defensive Organization)\
 is an initiative founded in 2449 by Dr. Edward Waldo in spite of the Antido\ dictatorship. It is known for recruiting sleeper agents to its cause, and thus\
 all members of WALDO are genuinely benign unless the words Where is WALDO? Are spoken; then they activate into a trance and will do the bidding of all WALDO higher-ups. All WALDO members carry an unlicensed firearm on\ them at all times. Their identity as WALDO conspirators cannot be known\
-to the general public, lest the UGN execute them for terrorism."
+to the general public, lest the UGN execute them for terrorism. It has become more than just an Antido symbol of liberation, as it is now a widespread movement of liberation from authoritarian regimes."
 
 
 
