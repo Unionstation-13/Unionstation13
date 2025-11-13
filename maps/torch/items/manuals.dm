@@ -224,5 +224,5 @@
 	8) Disable the safety switch<br>\
 	9) Seal the Cheznov Containment module. As long as no intruders have a WALDO operative ID, they will not be able to stop the countdown<br>\
 	10) Have you and your partner ingest the provided cyanide pills to avoid agony during the detonation<br><br>\
-	If you have any issues with the intruders, do not hesistate to use the provided weapons.""
+	If you have any issues with the intruders, do not hesistate to use the provided weapons."
 	)
