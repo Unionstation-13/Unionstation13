@@ -59,15 +59,15 @@
 	skill_points = 22
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
+		SKILL_MEDICAL = SKILL_TRAINED, // 16 points
+		SKILL_ANATOMY = SKILL_TRAINED, // 16 points
 		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
 		SKILL_DEVICES = SKILL_TRAINED // 4 points
 	)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERIENCED,
+	                    SKILL_ANATOMY     = SKILL_TRAINED,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERIENCED)
 
 	access = list(
 		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
