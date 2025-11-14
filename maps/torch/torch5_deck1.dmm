@@ -4693,6 +4693,10 @@
 	RCon_tag = "Substation - 1st Deck"
 	},
 /obj/structure/cable/green,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/firstdeck)
 "ajf" = (

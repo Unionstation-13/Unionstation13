@@ -10243,10 +10243,6 @@
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"zc" = (
-/obj/structure/closet/secure_closet/medical_torchsenior,
-/turf/simulated/wall/prepainted,
-/area/security/habcheck)
 "zd" = (
 /obj/structure/table/marble,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -19829,7 +19825,9 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/structure/closet/secure_closet/medical_torchsenior{
+	req_access = list("ACCESS_MEDICAL")
+	},
 /obj/item/gun/projectile/pistol/m19/empty,
 /obj/item/clothing/suit/armor/pcarrier/medium/security,
 /obj/item/clothing/accessory/armor_tag/solgov/medic,
@@ -34864,7 +34862,7 @@ LV
 Qx
 Kc
 KS
-zc
+Vx
 Px
 AB
 Bp
