@@ -493,10 +493,3 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	id = access_skrellscoutship
 	desc = "SSV Crewman"
 	region = ACCESS_REGION_NONE
-
-//WALDO Access
-var/global/const/access_waldo = "ACCESS_WALDO"
-/datum/access/waldo
-	id = access_waldo
-	desc = "WALDO Operative Access"
-	region = ACCESS_REGION_WALDO
