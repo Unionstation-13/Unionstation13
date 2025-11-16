@@ -1,5 +1,4 @@
 //Initializes parts
-#include maps/event/waldo_ship/WALDO_areas.dm
 #include maps/event/waldo_ship/WALDO_ship.dmm
 
 /obj/overmap/visitable/ship/waldo_ship
