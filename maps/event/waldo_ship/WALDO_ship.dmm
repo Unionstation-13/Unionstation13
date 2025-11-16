@@ -1,0 +1,405 @@
+"ah" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 9},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"ao" = (/turf/simulated/floor/selfestructgrid,/area/space)
+"as" = (/obj/wallframe_spawn/reinforced_phoron/hull,/obj/wallframe_spawn/reinforced_phoron/hull,/obj/machinery/door/blast/regular{name = "Lockdown Seal"; id_tag = "WALDO_lockdown"; dir = 4},/turf/space,/area/ship/waldo_ship/cheznovmod)
+"aA" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal{dir = 4},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"aO" = (/obj/machinery/power/solar,/obj/floor_decal/solarpanel,/obj/structure/cable,/turf/space,/area/space)
+"bw" = (/obj/machinery/nuclearbomb/station{code = "48567"},/turf/simulated/floor/selfestructgrid,/area/space)
+"by" = (/obj/machinery/door/blast/regular,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"bC" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"bM" = (/obj/structure/inflatable/wall,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"cG" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 4; external_pressure_bound = 0; external_pressure_bound_default = 0; icon_state = "map_vent_in"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/waldo_ship/engine)
+"cT" = (/obj/structure/lattice,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor/plating,/area/space)
+"cU" = (/obj/machinery/door/window/brigdoor/southleft,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"dc" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/item/storage/toolbox/syndicate,/turf/simulated/floor{map_airless = 1})
+"dk" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/item/plastique,/turf/simulated/floor{map_airless = 1})
+"dG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"dL" = (/obj/machinery/atmospherics/unary/tank/air,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"dQ" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/structure/bed/padded,/obj/item/bedsheet/blue,/turf/simulated/floor/carpet/blue2,/area/ship/waldo_ship/barracks)
+"ev" = (/obj/structure/bed/chair{dir = 8},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"eE" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"eH" = (/obj/structure/lattice,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/space,/area/space)
+"eN" = (/obj/machinery/vending/wallmed1,/turf/simulated/wall/titanium,/area/ship/waldo_ship/barracks)
+"eV" = (/obj/machinery/light/small/emergency,/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"eX" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"fb" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/visible/supply,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"fi" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"ft" = (/obj/machinery/door/airlock/external/bolted{frequency = 1440; id_tag = "waldo_inner"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"fF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/door/airlock/external/bolted{frequency = 1440; id_tag = "waldo_outer"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"fJ" = (/obj/structure/railing{dir = 4},/obj/structure/railing{dir = 8},/obj/catwalk_plated,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/space)
+"fO" = (/obj/structure/hygiene/shower{pixel_y = 20},/turf/simulated/floor/tiled/freezer,/area/ship/waldo_ship/barracks)
+"fY" = (/obj/decal/cleanable/dirt,/obj/machinery/atmospherics/pipe/simple/visible/black,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"gc" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"gi" = (/turf/simulated/wall/ocp_wall,/area/space)
+"gj" = (/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/waldo_ship/engine)
+"go" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/floor_decal/carpet/blue2{dir = 8},/obj/floor_decal/carpet/blue2,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"gu" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"gL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/airlock/hatch,/obj/machinery/door/blast/regular{id_tag = "silver_seal"},/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"gO" = (/obj/structure/lattice,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/space,/area/space)
+"gP" = (/obj/item/towel/random,/turf/simulated/floor/tiled/freezer,/area/ship/waldo_ship/barracks)
+"gT" = (/obj/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"gV" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 2},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"hb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"hc" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 1},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/ocp_wall,/area/ship/waldo_ship/cheznovmod)
+"hj" = (/obj/structure/hygiene/toilet{dir = 8},/turf/simulated/floor/tiled/freezer,/area/ship/waldo_ship/barracks)
+"hw" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"hx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/machinery/door/blast/shutters,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"hD" = (/obj/structure/broken_door,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"hE" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"hG" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/bed/chair/comfy{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"hY" = (/turf/space,/area/space)
+"ia" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 1},/obj/machinery/light{dir = 1},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/obj/item/gun/energy/taser,/obj/item/material/folder/envelope/preset/waldo_orientation,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"ii" = (/obj/catwalk_plated,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/space)
+"io" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/constructable_frame/computerframe,/obj/machinery/access_button/airlock_interior{frequency = 1439; master_tag = "yacht_airlock"; pixel_x = -24},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"iw" = (/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/simulated/wall/walnut,/area/ship/waldo_ship/bridge)
+"ix" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 4},/obj/structure/grille,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"iY" = (/obj/structure/lattice,/turf/simulated/floor/plating,/area/space)
+"jd" = (/obj/structure/sign/warning/lethal_turrets,/turf/simulated/wall/ocp_wall,/area/space)
+"jk" = (/obj/structure/closet/fridge,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"js" = (/obj/structure/table/steel_reinforced,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/access_button/airlock_exterior{frequency = 1439; master_tag = "chez_airlock"; pixel_x = 24},/obj/machinery/photocopier/faxmachine,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"jt" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"jC" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"jL" = (/obj/machinery/floodlight,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"jQ" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/wall/titanium,/area/ship/waldo_ship/barracks)
+"kd" = (/obj/structure/lattice,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"kj" = (/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"kk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/blast/shutters,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"kl" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light{dir = 8},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"km" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"kq" = (/obj/structure/lattice,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/space,/area/space)
+"ks" = (/obj/machinery/power/solar,/obj/floor_decal/solarpanel,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/turf/space,/area/space)
+"kI" = (/obj/machinery/door/airlock/external/bolted,/obj/machinery/door/blast/regular{name = "Lockdown Seal"; id_tag = "WALDO_lockdown"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"kJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"kL" = (/obj/structure/cable,/obj/machinery/power/solar,/obj/floor_decal/solarpanel,/turf/simulated/floor{map_airless = 1})
+"lj" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/item/storage/toolbox/electrical,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"ll" = (/obj/machinery/light{dir = 1},/obj/structure/table/marble,/obj/item/trash/snack_bowl,/obj/machinery/reagentgrinder/juicer,/obj/item/reagent_containers/glass/beaker/large,/obj/item/paper{info = "Tonight I woke up to a sound I hoped to have never heard, a small explosion. I rushed to the bridge to diagnose the damage and saw the worst possible news. My solar tracker is gone, and so is the fucking computer. No way to override the settings now, because the assholes EMPd  the computer. No way to charge my SMES reliably, and no way to heat the fuel. I am stuck in the water! Unheated, this gas will not be enough to get absolutely anywhere near a port. This is bad. Real bad. The current charge on SMES is 20 percent, so I'll just try and orient the ship to hit the current star at maximum efficiency so we will charge at 100, and maybe make it to the next solar system. The next port is in the orbit of a Gas giant named Duma. Maybe I can dock there and repair my array. I freaking knew I needed to get a generator. I spent all of the money the Terrans gave me, and this piece of shit is all I could get.  "},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"lr" = (/obj/structure/lattice,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/space,/area/space)
+"lu" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; use_power = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"lw" = (/obj/structure/closet/fridge/meat,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"lz" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; id_tag = "chez_pump"},/obj/machinery/airlock_sensor{frequency = 1439; id_tag = "chez_sensor"; pixel_y = -24},/obj/machinery/embedded_controller/radio/airlock/airlock_controller{frequency = 1440; id_tag = "chez_airlock"; pixel_y = 24; tag_airpump = "chez_pump"; tag_chamber_sensor = "chez_sensor"; tag_exterior_door = "waldo_outer"; tag_interior_door = "waldo_inner"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"lL" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/black,/obj/machinery/light/small{dir = 4; pixel_y = 8},/obj/machinery/meter,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"lS" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/porta_turret{id_tag = "anomaly_protection"},/turf/simulated/floor/plating,/area/space)
+"lV" = (/obj/machinery/light/small/emergency,/turf/unsimulated/floor/techfloor,/area/ship/waldo_ship/barracks)
+"mi" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/table/marble,/obj/item/book/manual/chef_recipes,/obj/item/reagent_containers/food/drinks/pitcher,/obj/random/drinkbottle,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"mB" = (/obj/structure/table/marble,/obj/item/pizzabox/vegetable,/obj/item/reagent_containers/glass/rag,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"mH" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/red,/turf/space,/area/space)
+"mJ" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 10},/obj/structure/grille,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"mO" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/machinery/atmospherics/portables_connector{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"mP" = (/obj/machinery/light,/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"nd" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/engine)
+"nl" = (/obj/machinery/computer/ship/engines,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"nF" = (/obj/structure/table/reinforced,/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"nG" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 2},/obj/machinery/space_heater,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"nI" = (/obj/overmap/visitable/ship/yacht,/obj/structure/lattice,/turf/space,/area/space)
+"nL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"nU" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 5},/turf/space,/area/space)
+"og" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"oC" = (/obj/structure/bookcase,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"oJ" = (/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"oN" = (/obj/wallframe_spawn/reinforced,/turf/space,/area/ship/waldo_ship/bridge)
+"pp" = (/obj/structure/closet/toolcloset,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"ps" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"pJ" = (/obj/decal/cleanable/dirt,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{map_airless = 1})
+"pZ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/decal/cleanable/dirt,/obj/machinery/door/airlock/external/bolted{frequency = 1439; id_tag = "yacht_outer"},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/engine)
+"qh" = (/obj/structure/lattice,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/space,/area/space)
+"qq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/closet/walllocker/emerglocker/north,/obj/decal/cleanable/blood/drip,/obj/machinery/door/airlock/silver,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"qy" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/binary/pump{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"qW" = (/obj/machinery/disposal,/obj/structure/disposalpipe/trunk{dir = 1},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"qY" = (/obj/machinery/door/blast/regular{id_tag = "Contingency"},/turf/simulated/floor/reinforced,/area/space)
+"qZ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"re" = (/obj/structure/closet/secure_closet/ert/empty{req_access = list("ACCESS_WALDO")},/obj/item/clothing/under/waldo,/obj/item/clothing/under/waldo,/obj/item/clothing/head/beret/waldo,/obj/item/clothing/head/beret/waldo,/obj/item/clothing/accessory/armor_tag/waldo,/obj/item/clothing/accessory/armor_tag/waldo,/obj/item/storage/belt/holster,/obj/item/storage/belt/holster,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"rm" = (/obj/structure/cable,/obj/machinery/power/apc{dir = 8; name = "Yacht living"; pixel_x = -24},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"ro" = (/obj/machinery/door/airlock/vault,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"ru" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/item/stock_parts/circuitboard/broken,/turf/simulated/floor{map_airless = 1})
+"rB" = (/obj/structure/window/reinforced,/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/obj/machinery/radio_beacon,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"rG" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"rL" = (/obj/structure/lattice,/turf/space,/area/space)
+"sc" = (/obj/machinery/light{dir = 8},/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"sj" = (/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"sk" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 9},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"sp" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 8},/obj/structure/lattice,/turf/space,/area/space)
+"sy" = (/obj/wallframe_spawn/reinforced_phoron/hull,/obj/wallframe_spawn/reinforced_phoron/hull,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"sQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 5},/obj/machinery/access_button/airlock_interior{frequency = 1439; master_tag = "chez_airlock"; pixel_x = -24},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"sS" = (/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"sT" = (/obj/decal/cleanable/dirt,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"tm" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/floor_decal/carpet/blue2,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"tw" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 9},/obj/structure/grille,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"tA" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 6},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/space,/area/space)
+"tN" = (/obj/structure/lattice,/turf/space,/area/ship/waldo_ship/barracks)
+"ui" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"uv" = (/obj/machinery/portable_atmospherics/powered/pump,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"uy" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"vh" = (/obj/item/bedsheet,/obj/structure/curtain/open/bed,/obj/structure/bed,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"vj" = (/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/power/apc{dir = 1; name = "Yacht engine"; pixel_y = 24},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"wo" = (/obj/machinery/button/blast_door{dir = 4; pixel_x = -32},/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"wq" = (/obj/machinery/button/blast_door{pixel_y = 20; id_tag = "Contingency"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"wu" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar,/obj/floor_decal/solarpanel,/turf/simulated/floor{map_airless = 1})
+"wD" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"wJ" = (/obj/shuttle_landmark/nav_waldo/nav1,/turf/space,/area/space)
+"wL" = (/obj/machinery/alarm{dir = 1; pixel_y = -22},/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"wQ" = (/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"wR" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 4},/obj/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"wT" = (/obj/structure/table/steel_reinforced,/obj/item/modular_computer/laptop/preset,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"wV" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 10},/turf/space,/area/space)
+"xk" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/porta_turret{id_tag = "anomaly_protection"},/turf/simulated/floor/plating,/area/space)
+"xx" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor{map_airless = 1},/area/space)
+"xA" = (/obj/wallframe_spawn/reinforced_phoron/hull,/obj/machinery/door/blast/regular{name = "Lockdown Seal"; id_tag = "WALDO_lockdown"; dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"xC" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 4},/turf/simulated/wall/titanium,/area/ship/waldo_ship/engine)
+"xD" = (/obj/structure/curtain/open/bed,/obj/structure/bed,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"xN" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/lattice,/turf/space,/area/space)
+"yd" = (/obj/machinery/atmospherics/unary/vent_pump/on,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"ye" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"yh" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/machinery/vending/dinnerware,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"ym" = (/obj/machinery/power/port_gen/pacman/mrs,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"yr" = (/obj/machinery/atmospherics/unary/heater{dir = 1},/obj/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"yE" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 5},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"yG" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/item/stock_parts/circuitboard/broken,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"yS" = (/obj/machinery/atmospherics/unary/tank/air{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"yV" = (/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"za" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 8; external_pressure_bound = 0; external_pressure_bound_default = 0; icon_state = "map_vent_in"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/waldo_ship/engine)
+"zo" = (/obj/machinery/door/airlock/vault/bolted,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"zt" = (/turf/simulated/wall/titanium,/area/ship/waldo_ship/engine)
+"zw" = (/obj/machinery/door/airlock/silver,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"zG" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"zN" = (/turf/simulated/floor/carpet/blue2,/area/ship/waldo_ship/barracks)
+"zQ" = (/obj/catwalk_plated,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/space)
+"zU" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Ac" = (/obj/decal/cleanable/cobweb2,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"Ah" = (/obj/floor_decal/solarpanel,/obj/machinery/power/solar,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/turf/space,/area/space)
+"Aw" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor{map_airless = 1},/area/space)
+"AA" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"AC" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/computer/modular/preset/civilian{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Bi" = (/obj/structure/closet/firecloset,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Bm" = (/obj/item/cell/hyper,/obj/item/book/manual/engineering_guide,/obj/item/rcd,/obj/machinery/computer/ship/engines,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Bq" = (/obj/machinery/light_switch{pixel_y = 20},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Bu" = (/obj/structure/table/marble,/obj/item/deck/cards,/obj/item/dice,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Bx" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/decal/cleanable/dirt,/obj/machinery/embedded_controller/radio/airlock/airlock_controller{frequency = 1439; id_tag = "yacht_airlock"; pixel_y = 24; tag_airpump = "yacht_pump"; tag_chamber_sensor = "yacht_sensor"; tag_exterior_door = "yacht_outer"; tag_interior_door = "yacht_inner"},/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; id_tag = "yacht_pump"},/obj/machinery/airlock_sensor{frequency = 1439; id_tag = "yacht_sensor"; pixel_y = -24},/turf/simulated/floor,/area/ship/waldo_ship/engine)
+"By" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/wall/titanium,/area/ship/waldo_ship/engine)
+"BH" = (/obj/structure/closet/kitchen,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Cx" = (/obj/machinery/atmospherics/binary/pump,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"CJ" = (/obj/machinery/computer/ship/helm,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"CN" = (/obj/structure/disposalpipe/trunk{dir = 8},/obj/structure/disposaloutlet{dir = 4},/turf/simulated/floor{map_airless = 1})
+"Dc" = (/turf/simulated/wall/walnut,/area/ship/waldo_ship/bridge)
+"Dt" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"DB" = (/obj/structure/closet/crate{name = "Emergency Supplies"},/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/tank/oxygen/full,/obj/item/tank/oxygen/full,/obj/item/storage/mre/menu2,/obj/item/storage/mre/menu3,/obj/item/storage/mre/menu4,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"DJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 2},/obj/structure/lattice,/turf/space,/area/space)
+"DX" = (/obj/machinery/light/small{dir = 8},/obj/structure/hygiene/sink{pixel_y = 20},/obj/item/bikehorn/rubberducky,/obj/random/soap,/turf/simulated/floor/tiled/freezer,/area/ship/waldo_ship/barracks)
+"El" = (/obj/wallframe_spawn/reinforced,/obj/machinery/door/blast/regular{dir = 4; id_tag = "silver_seal"},/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"Er" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor{map_airless = 1})
+"Ey" = (/turf/simulated/wall/walnut,/area/ship/waldo_ship/engine)
+"EI" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 2},/obj/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"ER" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Fq" = (/obj/machinery/light/small/emergency,/obj/structure/catwalk,/obj/structure/lattice,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"Fw" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"Fz" = (/obj/structure/lattice,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"FO" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 10},/obj/structure/lattice,/turf/space,/area/space)
+"FZ" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Gk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Gz" = (/obj/item/taperoll/engineering,/obj/item/paper/memo/security/burntout,/obj/item/paper/memo/security/laepuse,/obj/item/paper/memo/security/goodcomms,/obj/item/paper/memo/security/extremism,/obj/item/storage/secure/safe{dir = 8; pixel_x = 28; code = "7657"},/obj/item/gun/energy/pulse_rifle/destroyer,/obj/item/gun/energy/pulse_rifle/destroyer,/turf/unsimulated/floor/techfloor,/area/ship/waldo_ship/barracks)
+"GW" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Hd" = (/obj/machinery/atmospherics/binary/pump{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"Hi" = (/turf/simulated/wall/ocp_wall,/area/ship/waldo_ship/cheznovmod)
+"Hj" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"Hy" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"HM" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 8; name = null; pixel_x = -24},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"HP" = (/obj/shuttle_landmark/nav_waldo/nav2,/turf/space,/area/space)
+"Ic" = (/obj/machinery/atmospherics/pipe/manifold/visible/black{dir = 8},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Im" = (/obj/structure/table/marble,/obj/machinery/appliance/cooker/microwave,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Is" = (/obj/machinery/power/supermatter,/turf/simulated/floor/reinforced,/area/space)
+"IS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/decal/cleanable/dirt,/obj/machinery/door/blast/shutters,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Jc" = (/obj/machinery/light{dir = 8},/obj/machinery/alarm{dir = 4; pixel_x = -23},/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"Je" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"Jm" = (/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Jn" = (/obj/catwalk_plated,/obj/catwalk_plated,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/space)
+"Jp" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/floor_decal/corner_techfloor_grid,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"JC" = (/obj/structure/lattice,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"Kg" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/airlock/silver,/turf/simulated/floor/holofloor/tiled/dark,/area/ship/waldo_ship/bridge)
+"Kr" = (/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/apc{name = "Yacht bridge"; pixel_y = -24},/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"Ku" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"KF" = (/obj/structure/cable{d1 = 16; d2 = 0; dir = 4; icon_state = "0-2"},/obj/decal/cleanable/ash,/obj/decal/cleanable/blood/oil/streak,/obj/decal/cleanable/generic,/obj/decal/cleanable/molten_item,/turf/simulated/floor{map_airless = 1})
+"KM" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"KU" = (/obj/machinery/atmospherics/unary/tank/air,/obj/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"KZ" = (/turf/simulated/wall/walnut,/area/ship/waldo_ship/barracks)
+"Lu" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Lz" = (/obj/structure/closet/fridge/meat,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"LD" = (/obj/catwalk_plated,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{map_airless = 1},/area/space)
+"Mj" = (/obj/item/nuclear_cylinder,/obj/item/nuclear_cylinder,/obj/structure/closet/secure_closet/guncabinet{req_access = list("ACCESS_WALDO"); name = "Contingency Safe"},/obj/item/reagent_containers/pill/cyanide,/obj/item/reagent_containers/pill/cyanide,/obj/item/material/folder/envelope/preset/waldo_nuke,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Mq" = (/obj/structure/window/reinforced,/obj/machinery/atmospherics/pipe/manifold/visible/black{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Ms" = (/obj/machinery/atmospherics/unary/heater{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Mt" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"MC" = (/obj/machinery/atmospherics/unary/vent_pump/on,/obj/structure/bed/chair/comfy/blue{dir = 1},/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"MJ" = (/obj/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/ship/waldo_ship/bridge)
+"Ni" = (/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 6},/obj/structure/lattice,/turf/space,/area/space)
+"Nk" = (/obj/structure/lattice,/obj/structure/cable{icon_state = "2-8"},/turf/space,/area/space)
+"Nn" = (/obj/structure/lattice,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/space,/area/space)
+"Ns" = (/obj/item/gun/energy/pulse_rifle/pistol,/obj/structure/catwalk,/obj/structure/lattice,/obj/structure/closet/secure_closet/guncabinet{req_access = list("ACCESS_WALDO")},/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"NG" = (/obj/structure/railing{dir = 4},/obj/structure/railing{dir = 8},/obj/catwalk_plated,/turf/simulated/floor/plating,/area/space)
+"NK" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"NN" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"NZ" = (/turf/simulated/wall/titanium,/area/ship/waldo_ship/bridge)
+"Ob" = (/obj/machinery/atmospherics/binary/pump,/obj/machinery/space_heater,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Oc" = (/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"Oh" = (/obj/machinery/door/airlock/external,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"Ok" = (/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"OM" = (/obj/machinery/porta_turret{id_tag = "anomaly_protection"},/turf/simulated/floor/plating,/area/space)
+"OT" = (/obj/structure/lattice,/obj/structure/railing,/turf/simulated/floor/plating,/area/space)
+"OV" = (/obj/machinery/shipsensors,/obj/structure/lattice,/turf/space,/area/space)
+"Pg" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/structure/bed/chair/comfy/captain,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"Pp" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 6},/obj/structure/catwalk,/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"Qb" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Qe" = (/obj/structure/lattice,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/space,/area/space)
+"Qf" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"Ql" = (/obj/machinery/alarm{dir = 8; pixel_x = 24},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"QD" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"QH" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/decal/cleanable/dirt,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/door/airlock/external/bolted{frequency = 1439; id_tag = "yacht_inner"},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"QQ" = (/obj/structure/lattice,/obj/structure/catwalk,/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"QT" = (/turf/simulated/wall/titanium,/area/ship/waldo_ship/barracks)
+"Rd" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"RY" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; use_power = 1},/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/engine)
+"RZ" = (/obj/shuttle_landmark/nav_waldo/nav4,/turf/space,/area/space)
+"Sj" = (/obj/machinery/access_button/airlock_exterior{frequency = 1439; master_tag = "chez_airlock"; pixel_x = 24},/obj/structure/lattice,/turf/space)
+"Sk" = (/obj/machinery/computer/ship/sensors,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
+"Sm" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/porta_turret{id_tag = "anomaly_protection"},/turf/simulated/floor/plating,/area/space)
+"Sw" = (/obj/item/storage/mirror,/turf/simulated/wall/walnut,/area/ship/waldo_ship/bridge)
+"SA" = (/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"SN" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/decal/cleanable/blood/gibs/robot/down,/obj/machinery/door/airlock/silver,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"SO" = (/obj/machinery/atmospherics/pipe/manifold/hidden/red{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"SR" = (/obj/structure/catwalk,/obj/structure/lattice,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"SS" = (/obj/structure/lattice,/obj/structure/grille,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"SZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/door/airlock/silver,/obj/machinery/door/blast/regular{dir = 4; id_tag = "silver_seal"},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Tf" = (/obj/machinery/atmospherics/unary/heater,/obj/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"To" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 4},/turf/simulated/wall/ocp_wall,/area/space)
+"Tv" = (/obj/machinery/door/airlock/silver,/turf/simulated/floor/wood,/area/ship/waldo_ship/barracks)
+"Tx" = (/obj/machinery/door/window/brigdoor/northleft,/obj/machinery/alarm{dir = 4; pixel_x = -23},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"Tz" = (/obj/item/storage/mirror{pixel_x = 32},/obj/structure/hygiene/sink{dir = 4; pixel_x = 18},/obj/structure/hygiene/toilet{dir = 4},/obj/structure/curtain/open/privacy,/obj/machinery/turretid{pixel_x = -32; id_tag = "anomaly_protection"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"TQ" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 6},/obj/structure/grille,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"TU" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/catwalk,/turf/simulated/floor{map_airless = 1},/area/ship/waldo_ship/cheznovmod)
+"Ue" = (/obj/random/junk,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Uo" = (/obj/shuttle_landmark/nav_waldo/nav3,/turf/space,/area/space)
+"UH" = (/obj/machinery/power/smes/buildable,/obj/structure/cable{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"UJ" = (/obj/structure/inflatable/door,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"UO" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"Vg" = (/obj/structure/bed/chair/wood/wings{dir = 4},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"VI" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 4},/obj/machinery/portable_atmospherics/powered/pump,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Wg" = (/obj/machinery/self_destruct,/turf/simulated/floor/selfestructgrid,/area/space)
+"Wj" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/black,/obj/decal/cleanable/dirt,/obj/machinery/meter,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"WG" = (/obj/machinery/atmospherics/binary/pump{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 4},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"WH" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 10},/obj/structure/window/reinforced,/obj/machinery/recharge_station,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"WV" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 8},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/ship/waldo_ship/cheznovmod)
+"WZ" = (/obj/decal/cleanable/dirt,/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 10},/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"Xd" = (/obj/structure/grille,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/waldo_ship/barracks)
+"Xi" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/door_assembly/multi_tile{dir = 1},/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
+"Xn" = (/obj/structure/lattice,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/space,/area/space)
+"Xo" = (/obj/structure/lattice,/obj/structure/railing{dir = 1},/turf/simulated/floor/plating,/area/space)
+"Xt" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"XF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/decal/cleanable/dirt,/obj/machinery/door/blast/shutters,/obj/machinery/door/blast/shutters,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
+"XI" = (/obj/structure/bed/padded,/obj/item/bedsheet/blue,/turf/simulated/floor/carpet/blue2,/area/ship/waldo_ship/barracks)
+"Yl" = (/obj/machinery/door/airlock/vault/bolted,/turf/unsimulated/floor/techfloor,/area/ship/waldo_ship/barracks)
+"YI" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"YZ" = (/obj/structure/lattice,/turf/space)
+"Zc" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/decal/cleanable/blood,/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
+"Zf" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/obj/structure/table/reinforced,/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
+"Zo" = (/obj/structure/lattice,/turf/space,/area/ship/waldo_ship/cheznovmod)
+"ZO" = (/obj/structure/closet/secure_closet/guncabinet{req_access = list("ACCESS_WALDO")},/obj/item/gun/projectile/automatic/battlerifle,/obj/item/gun/projectile/automatic/battlerifle,/obj/item/ammobox/rifle/military,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+
+(1,1,1) = {"
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYgigigihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYxkgOgiIsgiNnOMhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYQeeHgigigiqhNkhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYkqgigibwgigikqhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYjdkqgiWgaoWggikqjdhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYkqgigiaogigikqhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYqhNkgiqYgirLxNhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYSmXnlrlrlrcTlShYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYgirLrLrLrLxNgihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYjdrLrLrLrLxNjdhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYgirLrLrLrLxNgihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLgirLHisyHitATowVhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHiHiHiTzHihcHimHhYhYhYhYNispspspFOrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLrLrLrLhYrLasvhHioJFZiaasmHrLrLrLrLDJHiHiHiEIHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHiHiHiHirLrLrLasoJHiHMhGACasnUixmJZoTQtwHiuvdLnGHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHiDBZOHiHiHiHiHiTxBqrGyEjsHiHiHisQaAahHiHiscCxgVHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHiXtoJrowqyeoJzwcUJmQbuykjftlzfFTUQQPpWVOhRdHjSOwRluhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHireMjHiHiHiHiHioJHizoHifiHiHiHikJaAskHiHiOkHdUOHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLHiHiHiHirLrLrLxAxDHikIHiymxArLSSSSSSSSSSHiLzmOuiHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLrLrLrLhYhYHiHiHibyHiHiHirLrLrLrLrLrLHiHiHiHiHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLhYHiHikIHiHihYrLrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLAhksksrLgiOTfJOTgirLksksksrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLxxAwAwzGLDiizQJnLDJCkdDtgurLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLaOaOaOrLgiXoNGXogirLaOaOaOrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLhYgiiYNGiYgihYrLrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLnIrLrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLoNMJMJMJoNrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYHPhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYwJhYhYhYhYhYhYhYhYhYhYhYhYrLrLNZSkCJnlNZrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLNZNZsSPgsSNZNZrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLNZsSsSydsSAcNZrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLNZNZhEwLHyKrJpNZQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLNZSwDcDcKgDcDciwjQCNhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLQTDXfOKZeEVgllqWQTtNrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLQTQTgPhjKZklSAmBUeeNQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLQTKZTvKZKZeESABuSAImQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLOVQTXIgotmqqERnLmiwDyhQTrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLQTQTXIzNdQKZeESASASAjkQTQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLQTQTKZKZKZKZAAyVKZKZKZQTQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLXdFzFzSRSRbMXiSAKZoCwToCQTrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLhDFzNsNsSRUJeENKKZwoMCOcElrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLQTYlQTQTSRbMGWnLSZFwZcjCElrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztQTlVGzQTFqbMeEjLKZeVJeQTQTztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztztztztztztEySNKZKZKZgLQTKUztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztjtBmUHvjQTwQYIwQwQKZfbBHObztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYYZwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuwuSjztztztioyGljpsQDsjogqZwQKZzUeXVIztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYKFrudcdkErErErErErErErErErErErErErErErErErpJpZBxQHgcqyMtQlQTrmKuwQwQhwdGeXWGxCRYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYYZkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLkLYZztztztySppGkBiQTJcZfevmPKZhblwKMztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYYZztztztXFztQTQfnFevztztISztztztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYYZztztztkkztQTwQwQwQztzthxztztztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLztztkmbCztgTgTgTztTfsTztztrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztztNNlLByzagjcGByWjWZztztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLztLuMsztgjgjgjztyrfYztrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztIcWHztgjgjgjztrBMqztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLztndndztztztztztndndztrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYUohYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYRZhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+"}

@@ -22,6 +22,7 @@
 	#include "../away/scavver/scavver_gantry.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/abandoned_hotel/abandoned_hotel.dm"
+	#include "maps/event/waldo_ship/WALDO_ship.dm"
 
 	#define using_map_DATUM /datum/map/away_sites_testing
 

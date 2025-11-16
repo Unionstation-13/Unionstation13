@@ -1,8 +1,6 @@
 //Initializes parts
-#include maps/away/waldo_ship/WALDO_areas.dm
-#include maps/away/waldo_ship/WALDO_icons.dmi
-#include maps/away/waldo_ship/WALDO_ship.dm
-#include maps/away/waldo_ship/WALDO_ship.dmm
+#include maps/event/waldo_ship/WALDO_areas.dm
+#include maps/event/waldo_ship/WALDO_ship.dmm
 
 /obj/overmap/visitable/ship/waldo_ship
 	name = "waldo ship"
@@ -50,7 +48,7 @@ var/global/const/access_waldo = "ACCESS_WALDO"
 /datum/access/waldo
 	id = access_waldo
 	desc = "WALDO Operative Access"
-	region = ACCESS_REGION_WALDO
+	region = ACCESS_REGION_NONE
 
 //WALDO Id's
 /obj/item/card/id/waldo_ship/operative
@@ -60,7 +58,7 @@ var/global/const/access_waldo = "ACCESS_WALDO"
 	detail_color = COLOR_GREEN_LIGHT
 
 /obj/item/material/folder/envelope/preset/waldo_nuke
-	name = "instructions envelope"
+	name = "contingency envelope"
 	desc = "A small envelope. The label reads 'open only in event of high emergency'."
 
 /obj/item/material/folder/envelope/preset/waldo_nuke/Initialize()
@@ -71,7 +69,7 @@ var/global/const/access_waldo = "ACCESS_WALDO"
 	In the event of Anomaly Cheznov being compromised by outside forces, follow these instructions to initiate the intruder protocol. \
 	Please read carefully.<br><br>\
 	1) (Optional) Inform your partner and do NOT tell the intruders of your intent<br>\
-	2) MEMORIZE THE CODE 48567 for the self destruct and press the contingency button in the storage room.<br>\
+	2) MEMORIZE THE CODE 48567 for the self destruct and press the contingency button in the storage room hallway as well as disarming the turrets and putting on a spacesuit.<br>\
 	3) Use the provided nuclear disk to input it into the self destruct unit near the anomaly and then input the memorized code.<br>\
 	4) You and your partner are to discreetly, if possible, grab the two nuclear cylinders stored in the contingency locker where this envelope is also stored.<br>\
 	5) Place the cylinders into the slots<br>\
@@ -114,3 +112,45 @@ var/global/const/access_waldo = "ACCESS_WALDO"
 
 /datum/job/waldo_operative/get_description_blurb()
 	return "You are a WALDO Operative. DO NOT CHOOSE THIS unless an admin has granted you permission through EVENT SIGNUP."
+
+/area/ship/waldo_ship/bridge
+	name = "\improper WALDO Command Center"
+	icon_state = "command_center"
+	icon = 'WALDO_icons.dmi'
+	req_access = list(access_waldo)
+
+/area/ship/waldo_ship/barracks
+	name = "\improper WALDO Barracks"
+	icon_state = "barracks"
+	icon = 'WALDO_icons.dmi'
+	req_access = list(access_waldo)
+
+/area/ship/waldo_ship/engine
+	name = "\improper Winston Engine Bay"
+	icon_state = "engineering"
+	icon = 'WALDO_icons.dmi'
+	req_access = list(access_waldo)
+
+/area/ship/waldo_ship/cheznovmod
+
+	name = "\improper Cheznov Module"
+	icon_state = "engineering"
+	icon = 'WALDO_icons.dmi'
+	req_access = list(access_waldo)
+
+/obj/item/material/folder/envelope/preset/waldo_orientation
+	name = "instructions envelope"
+	desc = "A small envelope. The label reads 'WALDO Operative Orientation, OPEN IMMEDIETLY UPON AWAKENING'."
+
+/obj/item/material/folder/envelope/preset/waldo_orientation/Initialize()
+	. = ..()
+	var/obj/item/paper/R = new(src)
+	R.set_content("\
+	<b><center>Warning: Classified<br>Orientation - Instructions</b></center><br><br>\
+	Welcome to the WALDO Exploratory Initiative, responsible for recovering what little democracy our galaxy has left!\
+	We send you this letter not as orientation, but as a warning.\
+	For 57 months, the United Rocknall corporation has funded the WALDOEI, a cornerstone of WALDO's revolution against the opressive powers of the UGN\
+	Today, on October 8th, we have been betrayed.\
+	Remain steadfast, operatives.\
+	Do not hesistate to shoot the URC on sight if they have the nerve to come to the Cheznov Module."
+	)
