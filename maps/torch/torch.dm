@@ -194,7 +194,7 @@
 	#include "../event/iccgn_ship/icgnv_hound.dm"
 	#include "../event/sfv_arbiter/sfv_arbiter.dm"
 	#include "../event/placeholders/placeholders.dm"
-	#include "maps/event/waldo_ship/WALDO_ship.dm"
+	#include "../event/waldo_ship/WALDO_ship.dm"
 	#include "../event/empty/empty.dm"
 
 	#include "../bluespace_interlude/bluespace_interlude.dm"
