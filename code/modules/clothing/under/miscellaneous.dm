@@ -611,7 +611,7 @@
 
 /obj/item/clothing/under/waldo
 	name = "\improper WALDO uniform"
-	desc = "A uniform belonging to West Antido Liberation Defensive Operation, a revolutionary front on the planet of Antido."
+	desc = "A uniform belonging to Weaponized Antido Liberation Defensive Organization, a revolutionary front on the planet of Antido."
 	icon_state = "saare"
 	worn_state = "saare"
 	gender_icons = 1
