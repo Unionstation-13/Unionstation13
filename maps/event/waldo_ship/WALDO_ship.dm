@@ -1,5 +1,5 @@
 //Initializes parts
-#include "../event/waldo_ship/WALDO_ship.dmm"
+#include "maps/event/waldo_ship/WALDO_ship.dmm"
 
 /obj/overmap/visitable/ship/waldo_ship
 	name = "waldo ship"
