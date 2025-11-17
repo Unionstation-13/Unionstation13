@@ -55,7 +55,7 @@
 "iY" = (/obj/structure/lattice,/turf/simulated/floor/plating,/area/space)
 "jd" = (/obj/structure/sign/warning/lethal_turrets,/turf/simulated/wall/ocp_wall,/area/space)
 "jk" = (/obj/structure/closet/fridge,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
-"js" = (/obj/structure/table/steel_reinforced,/obj/machinery/access_button/airlock_exterior{frequency = 1439; master_tag = "chez_airlock"; pixel_x = 24},/obj/machinery/photocopier/faxmachine,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
+"js" = (/obj/structure/table/steel_reinforced,/obj/machinery/access_button/airlock_exterior{frequency = 1439; master_tag = "chez_airlock"; pixel_x = 24},/obj/machinery/photocopier/faxmachine{department = "WALDO Cheznov"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
 "jt" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor/plating,/area/ship/waldo_ship/engine)
 "jC" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
 "jL" = (/obj/machinery/floodlight,/turf/simulated/floor/wood/yew,/area/ship/waldo_ship/barracks)
@@ -209,7 +209,6 @@
 "Jc" = (/obj/machinery/light{dir = 8},/obj/machinery/alarm{dir = 4; pixel_x = -23},/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/steel_dirty,/area/ship/waldo_ship/barracks)
 "Je" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/decal/cleanable/blood,/turf/simulated/floor/carpet/purple,/area/ship/waldo_ship/barracks)
 "Jm" = (/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/waldo_ship/cheznovmod)
-"Jn" = (/obj/catwalk_plated,/obj/catwalk_plated,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/space)
 "Jp" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/floor_decal/corner_techfloor_grid,/turf/simulated/floor/tiled/techfloor,/area/ship/waldo_ship/bridge)
 "JC" = (/obj/structure/lattice,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{map_airless = 1},/area/space)
 "Kg" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/airlock/silver,/turf/simulated/floor/holofloor/tiled/dark,/area/ship/waldo_ship/bridge)
@@ -328,7 +327,7 @@ hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrL
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLrLrLrLhYhYHiHiHibyHiHiHirLrLrLrLrLrLHiHiHiHiHihYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLhYHiHikIHiHihYrLrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLAhksksrLgiOTfJOTgirLksksksrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
-hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLxxAwAwzGLDiizQJnLDJCkdDtgurLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
+hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLxxAwAwzGLDiizQiiLDJCkdDtgurLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLaOaOaOrLgiXoNGXogirLaOaOaOrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYrLrLrLhYgiiYNGiYgihYrLrLrLhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
 hYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhYhY
