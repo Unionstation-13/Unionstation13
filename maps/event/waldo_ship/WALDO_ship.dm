@@ -24,7 +24,6 @@
 	description = "Tiny moveable abandonded(or not) WALDO ship"
 	suffixes = list("waldo/WALDO_ship.dmm")
 	spawn_cost = 0.5
-	area_usage_test_exempted_root_areas = list(/area/waldo_ship)
 
 /obj/shuttle_landmark/nav_waldo/nav1
 	name = "Small WALDO Ship Navpoint #1"
