@@ -13968,6 +13968,10 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/atmos)
+"JS" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/assembly/robotics)
 "JW" = (
 /obj/structure/railing/mapped,
 /obj/machinery/atmospherics/pipe/zpipe/up/fuel{
@@ -35227,7 +35231,7 @@ dk
 dk
 eR
 QA
-su
+JS
 fy
 ee
 XP
