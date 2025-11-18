@@ -79,7 +79,9 @@
 	},
 /obj/item/material/folder/envelope/preset/bio_ordering_station,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "aB" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
@@ -303,7 +305,9 @@
 	department = "Communal_Manager_Office"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "br" = (
 /obj/structure/hygiene/toilet{
 	pixel_y = 8
@@ -643,7 +647,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "cb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -998,7 +1004,9 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "cN" = (
 /obj/machinery/smartfridge,
 /obj/machinery/door/firedoor,
@@ -2524,7 +2532,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "gi" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2928,7 +2938,9 @@
 "hc" = (
 /obj/floor_decal/spline/plain/green,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "hd" = (
 /obj/decal/cleanable/dirt,
 /obj/item/stack/cable_coil/single,
@@ -3364,7 +3376,9 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "ib" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/floor_decal/industrial/outline/grey,
@@ -3852,6 +3866,7 @@
 	icon_state = "0-4"
 	},
 /obj/floor_decal/industrial/warning/full,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/galley)
 "iY" = (
@@ -3860,6 +3875,7 @@
 	name = "Bar Shutters";
 	pixel_x = 32
 	},
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "iZ" = (
@@ -3978,6 +3994,7 @@
 	pixel_x = 64;
 	pixel_y = -8
 	},
+/obj/machinery/door/window/southright,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "jo" = (
@@ -5115,7 +5132,9 @@
 	},
 /obj/machinery/computer/modular/preset/civilian,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "mc" = (
 /obj/floor_decal/corner/green/half{
 	dir = 1
@@ -6453,7 +6472,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/floor_decal/corner/green/bordercorner,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "pw" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -6724,7 +6745,9 @@
 /area/crew_quarters/galleybackroom)
 "qo" = (
 /turf/simulated/floor/reinforced,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "qp" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -6922,7 +6945,9 @@
 	},
 /obj/floor_decal/spline/plain/green,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "qU" = (
 /obj/floor_decal/corner/green{
 	dir = 1
@@ -7341,7 +7366,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "sa" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -8896,7 +8923,9 @@
 /area/hallway/primary/thirddeck/aft)
 "vw" = (
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "vx" = (
 /obj/floor_decal/corner/b_green/half{
 	dir = 8
@@ -9096,6 +9125,10 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
+"wc" = (
+/obj/machinery/door/window,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "wf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -9678,7 +9711,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "xM" = (
 /obj/structure/janitorialcart,
 /obj/item/mop,
@@ -10872,7 +10907,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Bg" = (
 /obj/floor_decal/corner/green{
 	dir = 5
@@ -11982,7 +12019,9 @@
 	},
 /obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "DU" = (
 /obj/machinery/camera/network/bridge{
 	c_tag = "Fire Control - Munitions";
@@ -13006,7 +13045,9 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Gw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -13828,8 +13869,12 @@
 /turf/simulated/floor/plating,
 /area/command/disperser)
 "IC" = (
-/obj/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/blast/regular/open,
+/obj/machinery/button/blast_door{
+	id_tag = "armory_hab";
+	pixel_y = 20;
+	name = "Armory";
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/thirddeck/fore)
 "ID" = (
@@ -15272,7 +15317,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "LC" = (
 /obj/floor_decal/corner/green{
 	dir = 8
@@ -15509,10 +15556,13 @@
 	name = "Armory Shutters"
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Md" = (
-/obj/machinery/door/airlock/vault,
-/obj/machinery/door/blast/regular/open,
+/obj/machinery/door/blast/regular{
+	id_tag = "armory_hab"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/thirddeck/fore)
 "Mf" = (
@@ -15757,7 +15807,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "MM" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/thirddeck/aft)
@@ -15928,7 +15980,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Nq" = (
 /obj/structure/closet/crate/trashcart,
 /obj/random/junk,
@@ -17295,7 +17349,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Ri" = (
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
@@ -19840,7 +19896,9 @@
 /area/security/habcheck)
 "XK" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "XM" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -20470,6 +20528,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ZC" = (
@@ -20616,7 +20675,9 @@
 /area/chapel/main)
 "ZY" = (
 /turf/simulated/wall/r_wall/hull,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 
 (1,1,1) = {"
 aa
@@ -30227,9 +30288,9 @@ LA
 XK
 XK
 XK
-Nt
-Nt
 IC
+Nt
+Md
 nJ
 qg
 qg
@@ -30431,7 +30492,7 @@ zM
 Oo
 Nt
 Nt
-IC
+Md
 Nt
 qg
 qg
@@ -36462,7 +36523,7 @@ dG
 rI
 ww
 cT
-yI
+wc
 Fx
 zd
 tM
