@@ -16069,15 +16069,6 @@
 "enM" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
-"enP" = (
-/obj/floor_decal/corner/research/half,
-/obj/machinery/door/window/brigdoor/westleft{
-	name = "Control Chamber";
-	req_access = list("ACCESS_SEC_DOORS");
-	autoset_access = 0
-	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/rnd/misc_lab)
 "eob" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -29571,14 +29562,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
-"uQu" = (
-/obj/machinery/door/window/brigdoor/westleft{
-	name = "Control Chamber";
-	req_access = list("ACCESS_SEC_DOORS");
-	autoset_access = 0
-	},
-/turf/simulated/floor/tiled/white,
-/area/rnd/misc_lab)
 "uRO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -56548,8 +56531,8 @@ pjb
 pEb
 iqb
 jAb
-uQu
-enP
+aLo
+ycp
 rnb
 aHi
 aPL
