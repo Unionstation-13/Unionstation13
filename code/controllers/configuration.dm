@@ -231,6 +231,10 @@
 
 	var/static/organs_decay
 
+	var/static/jobs_have_minimal_access
+
+	var/static/minimal_access_threshold
+
 	/// Modifier for shock stage contribution from organ damage amount
 	var/static/organ_damage_spillover_multiplier = 0.5
 
@@ -1001,6 +1005,10 @@
 				maximum_mushrooms = value
 			if ("use_loyalty_implants")
 				use_loyalty_implants = TRUE
+			if("minimal_access_threshold")
+				minimal_access_threshold = value
+			if("jobs_have_minimal_access")
+				jobs_have_minimal_access = TRUE
 			else
 				log_misc("Unknown setting in config/game_options.txt: '[name]'")
 
