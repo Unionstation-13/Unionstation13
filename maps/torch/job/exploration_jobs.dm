@@ -116,6 +116,7 @@
 		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
 		access_petrov, access_petrov_maint, access_research, access_radio_exp
 	)
+	extra_access = list(access_research, access_research_storage, access_medical)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 

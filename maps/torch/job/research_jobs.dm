@@ -82,6 +82,7 @@
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control, access_torch_fax,
 		access_petrov_maint, access_radio_sci, access_radio_exp, access_research_storage, access_fabrication
 	)
+	extra_access = list(access_medical, access_chemistry)
 	possible_goals = list(/datum/goal/achievement/notslimefodder)
 
 /datum/job/scientist_assistant
@@ -117,4 +118,5 @@
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control,
 		access_radio_sci, access_radio_exp, access_research_storage, access_fabrication
 	)
+	extra_access = list(access_medical, access_chemistry)
 	possible_goals = list(/datum/goal/achievement/notslimefodder)
