@@ -29,18 +29,7 @@ ORGAN_REGENERATION_MULTIPLIER 25
 ## amount of time (in hundredths of seconds) for which a brain retains the "spark of life" after the person's death (set to -1 for infinite)
 REVIVAL_BRAIN_LIFE -1
 
-### ADDITIONAL JOB ACCESS ###
 
-## If the number of players ready at round starts exceeds this threshold, JOBS_HAVE_MINIMAL_ACCESS will automatically be enabled. Otherwise, it will be disabled.
-## This is useful for accommodating both low and high population rounds on the same server.
-## Comment this out or set to 0 to disable this automatic toggle.
-MINIMAL_ACCESS_THRESHOLD 0
-
-## Comment this out this if you wish to use the setup where jobs have more access.
-## This is intended for servers with low populations - where there are not enough
-## players to fill all roles, so players need to do more than just one job.
-## This option is ignored if MINIMAL_ACCESS_THRESHOLD is used.
-#JOBS_HAVE_MINIMAL_ACCESS
 
 ### MOB MOVEMENT ###
 
@@ -49,7 +38,7 @@ MINIMAL_ACCESS_THRESHOLD 0
 ## These values get directly added to values and totals in-game. To speed things up make the number negative, to slow things down, make the number positive.
 
 
-## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
+## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied. 
 RUN_DELAY 2
 WALK_DELAY 4
 CREEP_DELAY 6

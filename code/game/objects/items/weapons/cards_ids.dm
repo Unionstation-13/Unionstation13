@@ -277,7 +277,6 @@ var/global/const/NO_EMAG_ACT = -50
 				detail_color = j.selection_color
 	update_icon()
 
-
 /obj/item/card/id/get_mob_overlay(mob/user_mob, slot)
 	var/image/ret = ..()
 	var/overlay = overlay_image(ret.icon, "[ret.icon_state]_colors", detail_color, RESET_COLOR)

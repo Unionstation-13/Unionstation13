@@ -35,7 +35,6 @@
 		access_crematorium, access_chemistry, access_surgery,
 		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
 	)
-	extra_access = list(access_research, access_research_storage)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -75,7 +74,6 @@
 		access_crematorium, access_chemistry, access_surgery,
 		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
 	)
-	extra_access = list(access_research, access_research_storage)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -113,7 +111,6 @@
 		access_eva, access_surgery, access_medical_equip,
 		access_solgov_crew, access_hangar, access_radio_med
 	)
-	extra_access = list(access_chemistry)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -153,7 +150,6 @@
 		access_surgery, access_medical_equip, access_solgov_crew,
 		access_radio_med
 	)
-	extra_access = list(access_hangar, access_chemistry)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -194,7 +190,6 @@
 		access_medical_equip, access_solgov_crew, access_chemistry,
 	 	access_virology, access_morgue, access_crematorium, access_radio_med
 	)
-	extra_access = list(access_surgery)
 
 /datum/job/chemist/get_description_blurb()
 	return "You are the Pharmacist. You make medicine and other useful substances. You are not a doctor or medic; you should not be treating patients, but rather providing the medicine to do so. You are subordinate to Physicians and Medical Technicians."
