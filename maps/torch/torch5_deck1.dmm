@@ -16078,6 +16078,13 @@
 "enM" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
+"enP" = (
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/computer/rdconsole/core{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/rnd/development)
 "eob" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -54159,6 +54166,7 @@ iZb
 ahe
 lmb
 lqb
+enP
 uQu
 aGE
 aUH
