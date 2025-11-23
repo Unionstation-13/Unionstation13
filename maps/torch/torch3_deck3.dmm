@@ -4472,15 +4472,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
-"kv" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
-	},
-/turf/simulated/wall/prepainted,
-/area/crew_quarters/sleep/cryo)
 "kw" = (
 /obj/machinery/light{
 	dir = 8
@@ -38292,7 +38283,7 @@ Nw
 qQ
 sk
 tI
-kv
+Fd
 vV
 vV
 yg
