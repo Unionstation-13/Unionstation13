@@ -18257,9 +18257,10 @@
 	name = "plastic table frame"
 	},
 /obj/item/stack/nanopaste,
-/obj/item/cell,
-/obj/item/cell,
 /obj/item/stock_parts/capacitor,
+/obj/item/cell/device/standard,
+/obj/item/cell/standard,
+/obj/item/cell/standard,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "hJq" = (
