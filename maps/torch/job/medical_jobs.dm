@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Senior Medical Officer"
+	title = "Physician"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -40,7 +40,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/junior_doctor
-	title = "Standard Medical Officer"
+	title = "Nurse"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -59,15 +59,15 @@
 	skill_points = 22
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
+		SKILL_MEDICAL = SKILL_TRAINED, // 16 points
+		SKILL_ANATOMY = SKILL_TRAINED, // 16 points
 		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
 		SKILL_DEVICES = SKILL_TRAINED // 4 points
 	)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(   SKILL_MEDICAL     = SKILL_EXPERIENCED,
+	                    SKILL_ANATOMY     = SKILL_TRAINED,
+	                    SKILL_CHEMISTRY   = SKILL_EXPERIENCED)
 
 	access = list(
 		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
@@ -79,7 +79,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/doctor
-	title = "Emergency Response Unit"
+	title = "Emergency Medical Technician"
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Your intuition, ethics, and commanding officers"
@@ -116,7 +116,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee
-	title = "Junior Officer"
+	title = "Trainee EMT"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
@@ -155,10 +155,10 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/medical_trainee/get_description_blurb()
-	return "You are a Junior "
+	return "You are an EMT Trainee; Learn from your superiors, and you may one day be promoted."
 
 /datum/job/chemist
-	title = "Biomedical Systems Senior Officer"
+	title = "Pharmacist"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
