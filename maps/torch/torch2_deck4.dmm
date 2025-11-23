@@ -1945,7 +1945,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/starboard)
 "gD" = (
-/obj/machinery/r_n_d/server/robotics,
+/obj/machinery/r_n_d/server/robotics{
+	id_with_download_string = "0;1;2;3";
+	id_with_upload_string = "0;1;2;3"
+	},
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "gL" = (
@@ -3768,7 +3771,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "mT" = (
-/obj/machinery/r_n_d/server/core,
+/obj/machinery/r_n_d/server/core{
+	id_with_download_string = "0;1;3";
+	id_with_upload_string = "0;1;3"
+	},
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "mV" = (

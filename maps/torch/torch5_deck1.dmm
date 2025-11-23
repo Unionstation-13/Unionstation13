@@ -896,8 +896,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/r_n_d/protolathe,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "abK" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1018,11 +1017,9 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/machinery/r_n_d/circuit_imprinter,
-/obj/floor_decal/corner/white/half{
-	dir = 1
-	},
-/turf/unsimulated/floor/steeldirty,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/r_n_d/destructive_analyzer,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "abY" = (
 /obj/machinery/door/airlock/atmos{
@@ -3517,7 +3514,9 @@
 /obj/structure/closet/secure_closet/wall{
 	dir = 1;
 	name = "Emergency Medical Supplies";
-	pixel_y = -32
+	pixel_y = -32;
+	anchored = 1;
+	density = 0
 	},
 /obj/random/medical,
 /obj/random/medical,
@@ -15216,6 +15215,9 @@
 /area/thruster/d1port)
 "deb" = (
 /obj/machinery/light,
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/seniorofficer)
 "deo" = (
@@ -15261,6 +15263,9 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/seniorofficer)
@@ -15370,6 +15375,10 @@
 /area/security/detectives_office)
 "dob" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/stack/material/plastic/fifty,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "doR" = (
@@ -18237,6 +18246,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/stack/nanopaste,
+/obj/item/stock_parts/capacitor,
+/obj/item/cell/device/standard,
+/obj/item/cell/standard,
+/obj/item/cell/standard,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "hJq" = (
@@ -18247,6 +18264,12 @@
 /area/command/conference)
 "hKb" = (
 /obj/structure/disposalpipe/segment,
+/obj/structure/bed/chair/comfy/green{
+	dir = 1
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "hLf" = (
@@ -18472,6 +18495,9 @@
 "ibb" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "iej" = (
@@ -18676,6 +18702,15 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/disk/tech_disk,
+/obj/item/disk/tech_disk,
+/obj/item/disk/survey,
+/obj/item/stock_parts/capacitor,
+/obj/item/stock_parts/capacitor,
+/obj/item/stock_parts/matter_bin,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "irX" = (
@@ -18701,6 +18736,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "isR" = (
@@ -18737,7 +18775,9 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/machinery/computer/rdconsole,
+/obj/floor_decal/industrial/warning{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "itr" = (
@@ -18856,7 +18896,9 @@
 "iBb" = (
 /obj/machinery/smartfridge/chemistry,
 /obj/machinery/door/window/brigdoor/eastright{
-	name = "Smart Fridge Access"
+	name = "Smart Fridge Access";
+	autoset_access = 0;
+	req_access = list(access_medical)
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/reception)
@@ -18958,6 +19000,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
@@ -20339,10 +20384,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/window/brigdoor/northright{
-	req_access = list("ACCESS_SEC_DOORS");
-	autoset_access = 0
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/recovery2)
 "kdb" = (
@@ -21404,7 +21445,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/fabricator,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "llM" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -21417,7 +21460,8 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "lmb" = (
-/turf/simulated/floor/tiled/white,
+/obj/machinery/r_n_d/protolathe,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lnb" = (
 /obj/structure/reagent_dispensers/acid{
@@ -21430,8 +21474,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/obj/floor_decal/corner/white/half,
-/turf/unsimulated/floor/steeldirty,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/r_n_d/circuit_imprinter,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lnI" = (
 /obj/structure/closet/secure_closet/personal/patient,
@@ -21484,8 +21529,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/r_n_d/destructive_analyzer,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lqb" = (
 /obj/structure/cable/green{
@@ -21493,7 +21537,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lsb" = (
 /obj/item/handcuffs,
@@ -22512,7 +22556,8 @@
 	},
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	id_tag = "inf_stage";
-	name = "Lobby"
+	name = "Lobby";
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway{
@@ -24144,7 +24189,9 @@
 	opacity = 0
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/eastleft,
+/obj/machinery/door/window/eastleft{
+	autoset_access = 0
+	},
 /obj/machinery/door/window/westleft,
 /obj/item/material/bell,
 /turf/simulated/floor/tiled/white,
@@ -24480,6 +24527,9 @@
 	pixel_x = 26
 	},
 /obj/machinery/light,
+/obj/floor_decal/industrial/warning{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "oPD" = (
@@ -24888,7 +24938,7 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/dropper,
 /turf/simulated/floor/tiled/dark,
-/area/medical/counselor/therapy)
+/area/rnd/misc_lab)
 "pio" = (
 /obj/structure/bed/chair/office/comfy/teal{
 	dir = 1
@@ -27820,9 +27870,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/westleft{
-	name = "Control Chamber";
-	req_access = list("ACCESS_SEC_DOORS");
-	autoset_access = 0
+	name = "Control Chamber"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -29562,6 +29610,12 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"uQu" = (
+/obj/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/development)
 "uRO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -29579,6 +29633,12 @@
 "uSl" = (
 /turf/simulated/wall/prepainted,
 /area/assembly/chargebay)
+"uSI" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/seniorofficer)
 "uUi" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 5
@@ -51654,7 +51714,7 @@ ckb
 poS
 akp
 cQb
-xBj
+uSI
 poS
 cGd
 dZb
@@ -54099,8 +54159,8 @@ iZb
 ahe
 lmb
 lqb
-lmb
-lmb
+enP
+uQu
 aGE
 aUH
 oQb
