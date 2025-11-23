@@ -2,36 +2,37 @@
 
 	//The name of the job
 	var/title = "NOPE"
-	var/list/access = list()              // The job's default access tokens
-	var/list/software_on_spawn = list()   // Defines the software files that spawn on tablets and labtops
+	var/list/access = list()			  // The job's default access tokens
+	var/list/extra_access = list()		  // Extra access, used during lowpop to ensure most jobs are capable of fulfilling basic ship functions.
+	var/list/software_on_spawn = list()	  // Defines the software files that spawn on tablets and labtops
 	var/department_flag = 0
-	var/total_positions = 0               // How many players can be this job. Set to -1 for unlimited.
-	var/spawn_positions = 0               // How many players can spawn in as this job. Set to -1 for unlimited.
-	var/current_positions = 0             // How many players have this job
-	var/availablity_chance = 100          // Percentage chance job is available each round
+	var/total_positions = 0				  // How many players can be this job. Set to -1 for unlimited.
+	var/spawn_positions = 0				  // How many players can spawn in as this job. Set to -1 for unlimited.
+	var/current_positions = 0			  // How many players have this job
+	var/availablity_chance = 100		  // Percentage chance job is available each round
 
-	var/supervisors = null                // Supervisors, who this person answers to directly
-	var/selection_color = "#515151"       // Selection screen color
-	var/list/alt_titles                   // List of alternate titles, if any and any potential alt. outfits as assoc values.
-	var/req_admin_notify                  // If this is set to 1, a text is printed to the player when jobs are assigned, telling him that he should let admins know that he has to disconnect.
-	var/minimal_player_age = 0            // If you have use_age_restriction_for_jobs config option enabled and the database set up, this option will add a requirement for players to be at least minimal_player_age days old. (meaning they first signed in at least that many days before.)
-	var/department = null                 // Does this position have a department tag?
-	var/head_position = 0                 // Is this position Command?
+	var/supervisors = null				  // Supervisors, who this person answers to directly
+	var/selection_color = "#515151"	 // Selection screen color
+	var/list/alt_titles					  // List of alternate titles, if any and any potential alt. outfits as assoc values.
+	var/req_admin_notify				  // If this is set to 1, a text is printed to the player when jobs are assigned, telling him that he should let admins know that he has to disconnect.
+	var/minimal_player_age = 0			  // If you have use_age_restriction_for_jobs config option enabled and the database set up, this option will add a requirement for players to be at least minimal_player_age days old. (meaning they first signed in at least that many days before.)
+	var/department = null				  // Does this position have a department tag?
+	var/head_position = 0				  // Is this position Command?
 	var/minimum_character_age			  // List of species = age, if species is not here, it's auto-pass
 	var/ideal_character_age = 30
-	var/create_record = 1                 // Do we announce/make records for people who spawn on this job?
-	var/is_semi_antagonist = FALSE        // Whether or not this job is given semi-antagonist status.
-	var/account_allowed = 1               // Does this job type come with a station account?
-	var/economic_power = 2             // With how much does this job modify the initial account amount?
+	var/create_record = 1				  // Do we announce/make records for people who spawn on this job?
+	var/is_semi_antagonist = FALSE		  // Whether or not this job is given semi-antagonist status.
+	var/account_allowed = 1				  // Does this job type come with a station account?
+	var/economic_power = 2				  // With how much does this job modify the initial account amount?
 
-	var/outfit_type                       // The outfit the employee will be dressed in, if any
+	var/outfit_type						  // The outfit the employee will be dressed in, if any
 
-	var/loadout_allowed = TRUE            // Whether or not loadout equipment is allowed and to be created when joining.
-	var/list/allowed_branches             // For maps using branches and ranks, also expandable for other purposes
-	var/list/allowed_ranks                // Ditto
+	var/loadout_allowed = TRUE			  // Whether or not loadout equipment is allowed and to be created when joining.
+	var/list/allowed_branches			  // For maps using branches and ranks, also expandable for other purposes
+	var/list/allowed_ranks				  // Ditto
 
-	var/announced = TRUE                  //If their arrival is announced on radio
-	var/latejoin_at_spawnpoints           //If this job should use roundstart spawnpoints for latejoin (offstation jobs etc)
+	var/announced = TRUE				  //If their arrival is announced on radio
+	var/latejoin_at_spawnpoints			  //If this job should use roundstart spawnpoints for latejoin (offstation jobs etc)
 
 	var/hud_icon						  //icon used for Sec HUD overlay
 
@@ -164,7 +165,12 @@
 	. = outfit.equip(H, title, alt_title, OUTFIT_ADJUSTMENT_SKIP_POST_EQUIP|OUTFIT_ADJUSTMENT_SKIP_ID_PDA|additional_skips)
 
 /datum/job/proc/get_access()
-	return access.Copy()
+	if(!config.jobs_have_minimal_access)
+		var/a
+		a = access.Copy()+extra_access.Copy()
+		return a
+	else
+		return access.Copy()
 
 //If the configuration option is set to require players to be logged as old enough to play certain jobs, then this proc checks that they are, otherwise it just returns 1
 /datum/job/proc/player_old_enough(client/C)
