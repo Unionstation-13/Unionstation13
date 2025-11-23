@@ -255,7 +255,6 @@ var/global/const/NO_EMAG_ACT = -50
 	var/dorm = 0			// determines if this ID has claimed a dorm already
 
 	var/job_access_type     // Job type to acquire access rights from, if any
-	var/extra_access = list()//Extra access, used during lowpop to ensure most jobs are capable
 
 	var/datum/mil_branch/military_branch = null //Vars for tracking branches and ranks on multi-crewtype maps
 	var/datum/mil_rank/military_rank = null
@@ -276,8 +275,6 @@ var/global/const/NO_EMAG_ACT = -50
 			access |= j.get_access()
 			if(!detail_color)
 				detail_color = j.selection_color
-	if(!config.jobs_have_minimal_access)
-		access = access+extra_access
 	update_icon()
 
 

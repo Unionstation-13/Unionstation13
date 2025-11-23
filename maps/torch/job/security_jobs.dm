@@ -122,6 +122,7 @@
 		access_eva, access_sec_doors, access_solgov_crew,
 		access_radio_sec
 	)
+	extra_access = list(access_forensics_lockers, access_engine, access_engine_equip)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
@@ -141,7 +142,7 @@
 	department_flag = SEC
 	economic_power = 5
 	minimal_player_age = 7
-	minimum_character_age = list(SPECIES_HUMAN = 18)
+	minimum_character_age = list(SPECIES_HUMAN = 28)
 	ideal_character_age = 30
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/sec_physician
 	allowed_branches = list(

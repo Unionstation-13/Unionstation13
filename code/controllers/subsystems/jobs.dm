@@ -589,7 +589,7 @@ SUBSYSTEM_DEF(jobs)
 		to_chat(H, "<b>As the [alt_title ? alt_title : rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
 
 	if(!config.jobs_have_minimal_access)
-		to_chat(H, "<i>As this ship was initially staffed with a skeleton crew, more access may or may not have been added to your ID card.</i>")
+		to_chat(H, "<b>As this ship was initially staffed with a skeleton crew, more access may or may not have been added to your ID card.</b>")
 
 	to_chat(H, "<b>To speak on your department's radio channel use :h. For the use of other channels, examine your headset.</b>")
 
