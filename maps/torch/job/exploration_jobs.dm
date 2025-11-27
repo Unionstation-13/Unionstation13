@@ -11,9 +11,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/ec/o10
 	)
 	skill_points = 28
 	min_skill = list( // 9 points
@@ -97,8 +97,8 @@
 		"Field Researcher"
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_ranks = list(/datum/mil_rank/ec/e3)
 
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC, // 1 point

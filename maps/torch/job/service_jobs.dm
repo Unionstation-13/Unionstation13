@@ -88,7 +88,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	alt_titles = list(
-		"B.I.O Commisioned Barista"
+		"B.I.O Commisioned Barista",
 		"B.I.O Commisioned Bartender"
 	)
 	minimum_character_age = list(SPECIES_HUMAN = 20)

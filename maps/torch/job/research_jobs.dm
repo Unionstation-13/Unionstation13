@@ -70,7 +70,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
-	allowed_branches = list(/datum/mil_branch/civilian,)
+	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
 		)

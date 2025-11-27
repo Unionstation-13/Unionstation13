@@ -693,54 +693,14 @@ ranks - ec
 	desc = "Insignia denoting rank of some kind. These appear blank."
 	icon_state = "ecrank_e1"
 
-/obj/item/clothing/accessory/solgov/rank/ec/enlisted
-	name = "ranks (E-1 apprentice explorer)"
-	desc = "Insignia denoting the rank of Apprentice Explorer."
-	icon_state = "ecrank_e1"
-
 /obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3
 	name = "ranks (E-3 explorer)"
 	desc = "Insignia denoting the rank of Explorer."
 	icon_state = "ecrank_e3"
 
-/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5
-	name = "ranks (E-5 senior explorer)"
-	desc = "Insignia denoting the rank of Senior Explorer."
-	icon_state = "ecrank_e5"
-
-/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7
-	name = "ranks (E-7 chief explorer)"
-	desc = "Insignia denoting the rank of Chief Explorer."
-	icon_state = "ecrank_e7"
-
-/obj/item/clothing/accessory/solgov/rank/ec/officer
-	name = "ranks (O-1 ensign)"
-	desc = "Insignia denoting the rank of Ensign."
-	icon_state = "ecrank_o1"
-
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o3
-	name = "ranks (O-3 lieutenant)"
-	desc = "Insignia denoting the rank of Lieutenant."
-	icon_state = "ecrank_o3"
-
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o5
-	name = "ranks (O-5 commander)"
-	desc = "Insignia denoting the rank of Commander."
-	icon_state = "ecrank_o5"
-
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o6
-	name = "ranks (O-6 captain)"
-	desc = "Insignia denoting the rank of Captain."
-	icon_state = "ecrank_o6"
-
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o8
-	name = "ranks (O-8 admiral)"
-	desc = "Insignia denoting the rank of Admiral."
-	icon_state = "ecrank_o8"
-
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o10
-	name = "ranks (O-10 commandant of the expeditionary corps)"
-	desc = "Insignia denoting the rank of Commandant of the Expeditonary Corps."
+	name = "ranks (O-10 expidition commander)"
+	desc = "Insignia denoting the rank of Expedition Commander."
 	icon_state = "ecrank_o10"
 
 /************
@@ -752,126 +712,30 @@ ranks - fleet
 	icon_state = "fleetrank"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted
-	name = "ranks (E-1 crewman recruit)"
-	desc = "Insignia denoting the rank of Crewman Recruit."
+	name = "ranks (E-1 sergeant)"
+	desc = "Insignia denoting the rank of Sergeant."
 	icon_state = "fleetrank_e1"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e2
-	name = "ranks (E-2 crewman apprentice)"
-	desc = "Insignia denoting the rank of Crewman Apprentice."
+	name = "ranks (E-2 staff sergeant)"
+	desc = "Insignia denoting the rank of Staff Sergeant."
 	icon_state = "fleetrank_e2"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e3
-	name = "ranks (E-3 crewman)"
-	desc = "Insignia denoting the rank of Crewman."
+	name = "ranks (E-3 master sergeant)"
+	desc = "Insignia denoting the rank of Master Sergeant."
 	icon_state = "fleetrank_e3"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4
-	name = "ranks (E-4 petty officer third class)"
-	desc = "Insignia denoting the rank of Petty Officer Third Class."
+	name = "ranks (E-4 vice-commander)"
+	desc = "Insignia denoting the rank of Vice-Commander."
 	icon_state = "fleetrank_e4"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e5
-	name = "ranks (E-5 petty officer second class)"
-	desc = "Insignia denoting the rank of Petty Officer Second Class."
-	icon_state = "fleetrank_e5"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e6
-	name = "ranks (E-6 petty officer first class)"
-	desc = "Insignia denoting the rank of Petty Officer First Class."
-	icon_state = "fleetrank_e6"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e7
-	name = "ranks (E-7 chief petty officer)"
-	desc = "Insignia denoting the rank of Chief Petty Officer."
-	icon_state = "fleetrank_e7"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e8
-	name = "ranks (E-8 senior chief petty officer)"
-	desc = "Insignia denoting the rank of Senior Chief Petty Officer."
-	icon_state = "fleetrank_e8"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9
-	name = "ranks (E-9 master chief petty officer)"
-	desc = "Insignia denoting the rank of Master Chief Petty Officer."
-	icon_state = "fleetrank_e9"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt1
-	name = "ranks (E-9 command master chief petty officer)"
-	desc = "Insignia denoting the rank of Command Master Chief Petty Officer."
-	icon_state = "fleetrank_e9"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt2
-	name = "ranks (E-9 fleet master chief petty officer)"
-	desc = "Insignia denoting the rank of Fleet Master Chief Petty Officer."
-	icon_state = "fleetrank_e9"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt3
-	name = "ranks (E-9 force master chief petty officer)"
-	desc = "Insignia denoting the rank of Force Master Chief Petty Officer."
-	icon_state = "fleetrank_e9"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt4
-	name = "ranks (E-9 master chief petty officer of the Fleet)"
-	desc = "Insignia denoting the rank of Master Chief Petty Officer of the Fleet."
-	icon_state = "fleetrank_e9"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer
-	name = "ranks (O-1 ensign)"
-	desc = "Insignia denoting the rank of Ensign."
-	icon_state = "fleetrank_o1"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey
-	name = "makeshift ranks (WO-1 warrant officer 1)"
-	desc = "Insignia denoting the mythical rank of Warrant Officer. Too bad it's obviously fake."
-	icon_state = "fleetrank_o1"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
-	name = "ranks (O-2 sub-lieutenant)"
-	desc = "Insignia denoting the rank of Sub-lieutenant."
-	icon_state = "fleetrank_o2"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/o3
-	name = "ranks (O-3 lieutenant)"
-	desc = "Insignia denoting the rank of Lieutenant."
-	icon_state = "fleetrank_o3"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/o4
-	name = "ranks (O-4 lieutenant commander)"
-	desc = "Insignia denoting the rank of Lieutenant Commander."
-	icon_state = "fleetrank_o4"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/o5
-	name = "ranks (O-5 commander)"
-	desc = "Insignia denoting the rank of Commander."
-	icon_state = "fleetrank_o5"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/officer/o6
-	name = "ranks (O-6 captain)"
-	desc = "Insignia denoting the rank of Captain."
-	icon_state = "fleetrank_o6"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/flag
-	name = "ranks (O-7 commodore)"
-	desc = "Insignia denoting the rank of Commodore."
-	icon_state = "fleetrank_o7"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8
-	name = "ranks (O-8 rear admiral)"
-	desc = "Insignia denoting the rank of Rear Admiral."
-	icon_state = "fleetrank_o8"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9
-	name = "ranks (O-9 vice admiral)"
-	desc = "Insignia denoting the rank of Vice Admiral."
-	icon_state = "fleetrank_o9"
-
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10
 	name = "ranks (O-10 admiral)"
-	desc = "Insignia denoting the rank of Admiral."
+	desc = "Insignia denoting the rank of Marshall."
 	icon_state = "fleetrank_o10"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt
 	name = "ranks (O-10 fleet admiral)"
-	desc = "Insignia denoting the rank of Fleet Admiral."
+	desc = "Insignia denoting the rank of Marshall."
 	icon_state = "fleetrank_o10"
