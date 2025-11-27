@@ -69,6 +69,7 @@
 				/datum/mil_rank/fleet/e2,
 				/datum/mil_rank/fleet/e3,
 				/datum/mil_rank/fleet/e4,
+				/datum/mil_rank/fleet/o9
 				/datum/mil_rank/fleet/o10
 			)
 		),
@@ -87,7 +88,7 @@
 /datum/mil_branch/expeditionary_corps
 	name = "URC Exploration and Ecology Division"
 	name_short = "URCE&E"
-	email_domain = "torch.ec.scg"
+	email_domain = "titen.ec.scg"
 
 	rank_types = list(
 		/datum/mil_rank/ec/e3,
@@ -109,8 +110,8 @@
 
 /datum/mil_branch/fleet
 	name = "Fleet"
-	name_short = "SCGF"
-	email_domain = "torch.fleet.mil"
+	name_short = "UGNGF"
+	email_domain = "titen.fleet.mil"
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
@@ -118,6 +119,8 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/o8
+		/datum/mil_rank/fleet/o9
 		/datum/mil_rank/fleet/o10,
 	)
 
@@ -127,6 +130,8 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/o8
+		/datum/mil_rank/fleet/o9
 		/datum/mil_rank/fleet/o10
 	)
 
@@ -225,10 +230,22 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
 
-/datum/mil_rank/fleet/o10
+/datum/mil_rank/fleet/o8
 	name = "Marshall"
 	name_short = "ML"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o10, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	sort_order = 50
+
+/datum/mil_rank/fleet/o9
+	name = "Staff Commander"
+	name_short = "SC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	sort_order = 50
+
+/datum/mil_rank/fleet/o10
+	name = "Commanding Officer"
+	name_short = "CO"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 50
 
 

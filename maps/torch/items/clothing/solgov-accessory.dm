@@ -730,12 +730,23 @@ ranks - fleet
 	name = "ranks (E-4 vice-commander)"
 	desc = "Insignia denoting the rank of Vice-Commander."
 	icon_state = "fleetrank_e4"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8
+	name = "ranks (O-8 rear admiral)"
+	desc = "Insignia denoting the rank of Marshall."
+	icon_state = "fleetrank_o8"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9
+	name = "ranks (O-9 vice admiral)"
+	desc = "Insignia denoting the rank of Staff Commander."
+	icon_state = "fleetrank_o9"
+
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10
 	name = "ranks (O-10 admiral)"
-	desc = "Insignia denoting the rank of Marshall."
+	desc = "Insignia denoting the rank of Commanding Officer."
 	icon_state = "fleetrank_o10"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt
 	name = "ranks (O-10 fleet admiral)"
-	desc = "Insignia denoting the rank of Marshall."
+	desc = "Insignia denoting the rank of Commanding Officer."
 	icon_state = "fleetrank_o10"

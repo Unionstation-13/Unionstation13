@@ -7,7 +7,7 @@
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(/datum/mil_branch/fleet)
-	allowed_ranks = list(/datum/mil_rank/fleet/o6)
+	allowed_ranks = list(/datum/mil_rank/fleet/o10)
 	skill_points = 36
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -43,8 +43,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5
+		/datum/mil_rank/fleet/o9
 	)
 	skill_points = 36
 	min_skill = list( // 5 points
@@ -230,9 +229,7 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4
+		/datum/mil_rank/fleet/o8
 	)
 	skill_points = 34
 	min_skill = list( // 15 points
