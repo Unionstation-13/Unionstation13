@@ -91,30 +91,18 @@
  */
 
 /datum/mil_branch/expeditionary_corps
-	name = "Expeditionary Corps"
-	name_short = "SCGEC"
+	name = "URC Exploration and Ecology Division"
+	name_short = "URCE&E"
 	email_domain = "torch.ec.scg"
 
 	rank_types = list(
 		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/ec/o6,
-		/datum/mil_rank/ec/o8,
 		/datum/mil_rank/ec/o10
 	)
 
 	spawn_rank_types = list(
 		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/ec/o3,
-		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/ec/o6
+		/datum/mil_rank/ec/o10
 	)
 
 	assistant_job = /datum/job/crew
@@ -136,43 +124,16 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/fleet/e9,
-		/datum/mil_rank/fleet/e9_alt1,
-		/datum/mil_rank/fleet/e9_alt2,
-		/datum/mil_rank/fleet/e9_alt3,
-		/datum/mil_rank/fleet/e9_alt4,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5,
-		/datum/mil_rank/fleet/o6,
-		/datum/mil_rank/fleet/o7,
-		/datum/mil_rank/fleet/o8,
-		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10,
-		/datum/mil_rank/fleet/o10_alt
 	)
 
 	spawn_rank_types = list(
+		/datum/mil_rank/fleet/e1,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/fleet/e9,
-		/datum/mil_rank/fleet/e9_alt1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5,
-		/datum/mil_rank/fleet/o6
+		/datum/mil_rank/fleet/o10
 	)
 
 	assistant_job = /datum/job/crew

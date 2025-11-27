@@ -12,9 +12,7 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/brig_chief/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/fleet/e4
 	)
 	skill_points = 26
 	min_skill = list( // 15 points
@@ -50,15 +48,9 @@
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
 		/datum/mil_branch/solgov = /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/sol/agent
 	)
 	skill_points = 26
@@ -89,7 +81,7 @@
 	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "Marshall and your reasoning"
+	supervisors = "The Marshall and your reasoning"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -100,9 +92,7 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/maa/fleet,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5
+		/datum/mil_rank/fleet/e1
 	)
 	min_skill = list( // 14 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -149,8 +139,7 @@
 		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/fleet/o3
+		/datum/mil_rank/fleet/e3
 	)
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
