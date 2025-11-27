@@ -229,7 +229,7 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o8
+		/datum/mil_rank/fleet/o9
 	)
 	skill_points = 34
 	min_skill = list( // 15 points

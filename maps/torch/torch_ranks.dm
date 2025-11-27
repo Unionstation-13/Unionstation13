@@ -119,8 +119,7 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/o8
-		/datum/mil_rank/fleet/o9
+		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10,
 	)
 
@@ -229,12 +228,6 @@
 	name_short = "SC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
-
-/datum/mil_rank/fleet/o8
-	name = "Marshall"
-	name_short = "ML"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 50
 
 /datum/mil_rank/fleet/o9
 	name = "Staff Commander"
