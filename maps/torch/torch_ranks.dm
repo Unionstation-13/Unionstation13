@@ -62,20 +62,14 @@
 	species_to_rank_whitelist = list(
 		/singleton/species/machine = list(
 			/datum/mil_branch/expeditionary_corps = list(
-				/datum/mil_rank/ec/e3,
-				/datum/mil_rank/ec/e5,
-				/datum/mil_rank/ec/e7,
-				/datum/mil_rank/ec/o1
+				/datum/mil_rank/ec/e3
 			),
 			/datum/mil_branch/fleet = list(
 				/datum/mil_rank/fleet/e1,
 				/datum/mil_rank/fleet/e2,
 				/datum/mil_rank/fleet/e3,
 				/datum/mil_rank/fleet/e4,
-				/datum/mil_rank/fleet/e5,
-				/datum/mil_rank/fleet/e6,
-				/datum/mil_rank/fleet/e7,
-				/datum/mil_rank/fleet/o1
+				/datum/mil_rank/fleet/o10
 			)
 		),
 		/singleton/species/vox = list(
