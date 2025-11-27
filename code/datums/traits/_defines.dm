@@ -7,3 +7,4 @@
 #define GET_TRAIT_LEVEL(MOB, TRAIT) M.GetTraitLevel(TRAIT)
 #define IS_METABOLICALLY_INERT(MOB) HAS_TRAIT(MOB, /singleton/trait/general/metabolically_inert) // This define exists only due to how common this check is
 #define METABOLIC_INERTNESS(MOB) GET_TRAIT_LEVEL(MOB, /singleton/trait/general/metabolically_inert) // See above
+#define IS_NITROS_ACCENTED(MOB) HAS_TRAIT(MOB, /singleton/trait/general/nitros_accented) // Base of Accent System
