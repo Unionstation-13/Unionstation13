@@ -93,6 +93,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e1
+		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/fleet/e3
 	)
 	min_skill = list( // 14 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
