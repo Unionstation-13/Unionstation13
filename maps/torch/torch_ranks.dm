@@ -129,8 +129,8 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/o8
-		/datum/mil_rank/fleet/o9
+		/datum/mil_rank/fleet/o8,
+		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10
 	)
 
