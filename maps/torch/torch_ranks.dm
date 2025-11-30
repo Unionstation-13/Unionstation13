@@ -14,7 +14,7 @@
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
-		/datum/mil_branch/scga,
+		// /datum/mil_branch/scga,
 		/datum/mil_branch/auf
 	)
 
@@ -26,7 +26,7 @@
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
-		/datum/mil_branch/scga,
+		// /datum/mil_branch/scga,
 		/datum/mil_branch/auf
 	)
 
@@ -118,7 +118,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10,
 	)
@@ -128,7 +127,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/o8,
 		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10
@@ -227,6 +225,12 @@
 	name = "Vice-Commander"
 	name_short = "SC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	sort_order = 40
+
+/datum/mil_rank/fleet/o1
+	name = "Colonel"
+	name_short = "CL"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
 
 /datum/mil_rank/fleet/o9

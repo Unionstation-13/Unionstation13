@@ -306,9 +306,9 @@
 	ideal_character_age = 24
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+		/datum/mil_branch/civilian/contractor = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
 	)
-	allowed_ranks = list(/datum/mil_rank/fleet/o1)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	skill_points = 26
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
