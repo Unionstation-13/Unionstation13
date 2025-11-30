@@ -23,18 +23,21 @@
 	the thumb of the Peacekeepers. However, your fate changed one day.\
 	The UGN arrived, they took you, they took you to the stars. To your dreams.\
 	Or that is what you thought."
+	possible_accents = list(ACCENT_SOL)
 	economic_power = 0.9
 /singleton/cultural_info/culture/human/paxupper
 	name = CULTURE_HUMAN_PAXUPPER
 	description = "You are from the paradise planet of Pax. Wealth inequality has run rampant on the UGN’s capital, and you are certainly one of its products.\
 	You are from one of the Upper class districts or privileged skylines overlooking the slums."
 	economic_power = 1.4
+	possible_accents = list(ACCENT_PAX)
 
 /singleton/cultural_info/culture/human/venusian_surfacer
 	name = CULTURE_HUMAN_PAXLOWER
 	description = "You are from the paradise planet of Pax. Wealth inequality has run rampant on the UGN’s capital, and you are certainly one of its products.\
 	You are from the slums or shanty towns that underlook the towering corporate buildings."
 	economic_power = 0.9
+	possible_accents = list(ACCENT_PAX)
 
 /singleton/cultural_info/culture/human/venusian_upper
 	name = CULTURE_HUMAN_VENUSIAN
@@ -42,6 +45,7 @@
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy: being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
+	possible_accents = list(ACCENT_SOL)
 
 /singleton/cultural_info/culture/human/paxlower
 	name = CULTURE_HUMAN_VENUSLOW
@@ -50,16 +54,19 @@
 	surfacers are a people who value hard work, solidarity, unity and democracy. Unfortunately, while they support noble ideals, the reality of their situation does not always \
 	match them, and much of the surface of Venus finds itself rife with organised crime, separatist groups and other criminal organisations."
 	economic_power = 0.9
+	possible_accents = list(ACCENT_SOL)
 
 /singleton/cultural_info/culture/human/belter
 	name = CULTURE_HUMAN_BELTER
 	description = "You are from Ceres. You were a former prisoner, warden, or guard. You escaped by some whim of the UGN, and now you've found your way aboard the Titen in hopes of surviving. If your time on Ceres has taught you anything, its that power always breeds corruption."
 	economic_power = 1
+	possible_accents = list(ACCENT_SPACER)
 
 /singleton/cultural_info/culture/human/ceti_south
 	name = CULTURE_HUMAN_CETIS //change to nitros-6IPC
 	description = "#IPC ONLY# You were constructed on the south pole of Nitros-6, abused by your creators, and left to rot in a magma pit for weeks. After the riots broke out, you were found and recruited into the Nitros-6 People's Front. It didn't last long. You're free now. What will you do?  #IPC ONLY#"
 	economic_power = 1.2
+	possible_accents = list(ACCENT_NITROS)
 
 /singleton/cultural_info/culture/human/tadmor
 	name = CULTURE_HUMAN_ANTIDO
@@ -70,6 +77,7 @@
 	state of Antido being an ecologically protected planet, the UGN cannot bomb\
 	the Pole to eradicate the Eighth Reich, and thus the tyranny still continues."
 	economic_power = 1.2
+	possible_accents = list(ACCENT_OUTER)
 
 /singleton/cultural_info/culture/human/brahe
 	name = CULTURE_HUMAN_BRAHE
@@ -77,12 +85,14 @@
 	you were able to escape. With a dying ecosystem, it is unlikely that the Brahe's\
 	isolation will last long."
 	economic_power = 1.0
+	possible_accents = list(ACCENT_TRIBAL)
 
 /singleton/cultural_info/culture/human/eos
 	name = CULTURE_HUMAN_EOS
 	description = "You come from the dying planet of Eos, scarred by your past.\
 	Your people fear the sun, which is why you have boarded the Titen in hopes of escaping its wrath."
 	economic_power = 0.8
+	possible_accents = list(ACCENT_OUTER)
 
 /singleton/cultural_info/culture/human/pirx_high
 	name = CULTURE_HUMAN_PIRXABC
@@ -91,6 +101,7 @@
 	ruling class of the Pirx Planetary Administration, and control the planets laws\
 	almost completely due to a lack of UGN presence."
 	economic_power = 1.9
+	possible_accents = list(ACCENT_PIRX)
 
 /singleton/cultural_info/culture/human/pirx_bug
 	name = CULTURE_HUMAN_PIRXS
@@ -98,18 +109,21 @@
 	century old. They conduct seasonal raids on cities and are the main rivals to\
 	the ABCDEFG Corporation's presence on Pirx."
 	economic_power = 1.6
+	possible_accents = list(ACCENT_PIRX)
 
 /singleton/cultural_info/culture/human/stationeer
 	name = CULTURE_HUMAN_STATION
 	description = "You are from a station or other artificial habitat spread across Humanities reach. You are well adapted to the harsh lights and cramped spaces. Station-life acts like a melting pot of cultures across the galaxy."
 	economic_power = 1.1
 	language = LANGUAGE_SPACER
+	possible_accents = list(ACCENT_SPACER)
 
 /singleton/cultural_info/culture/human/offworld
 	name = CULTURE_HUMAN_OFFWORLD
 	description =  "You are from one of the many worlds that the UGN controls. "
 	economic_power = 0.9
 	language = LANGUAGE_HUMAN_PAX
+	possible_accents = list(ACCENT_SPACER)
 
 // NON UGN BELOW
 /singleton/cultural_info/culture/human/spacer
@@ -117,6 +131,7 @@
 	description = "You are not from any specific region, planet, or habitat. You drift through the stars on your journey through life. "
 	economic_power = 1
 	language = LANGUAGE_SPACER
+	possible_accents = list(ACCENT_SPACER)
 
 /singleton/cultural_info/culture/human/confederate_terra
 	name = CULTURE_HUMAN_NITROS
@@ -125,6 +140,7 @@
 	Your people are known for their resilience, and hatred towards outsiders."
 	language = LANGUAGE_HUMAN_NITROS
 	economic_power = 1.1
+	possible_accents = list(ACCENT_NITROS)
 
 /singleton/cultural_info/culture/human/other
 	name = CULTURE_HUMAN_OTHERS
@@ -139,10 +155,12 @@
 		LANGUAGE_SPACER,
 		LANGUAGE_GUTTER,
 		LANGUAGE_SIGN)
+	possible_accents = list(ACCENT_SPACER)
 
 /singleton/cultural_info/culture/human/vatgrown
 	name = CULTURE_HUMAN_VATGROWN
 	description = "You were grown in a vat, either as clone or as a gene-adapt, and you must hide your identity to avoid being criminalized for your existence."
+	possible_accents = list(ACCENT_SPACER)
 
 /singleton/cultural_info/culture/human/vatgrown/sanitize_name(name)
 	return sanitizeName(name, allow_numbers=TRUE)
