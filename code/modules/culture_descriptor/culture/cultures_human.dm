@@ -1,3 +1,6 @@
+// Establish a variable to keep track of accents
+var/accent_backround = ""
+
 /singleton/cultural_info/culture/generic
 	name = CULTURE_OTHER
 	description = "You are from one of the many small, relatively unknown cultures scattered across the galaxy."
@@ -23,7 +26,7 @@
 	the thumb of the Peacekeepers. However, your fate changed one day.\
 	The UGN arrived, they took you, they took you to the stars. To your dreams.\
 	Or that is what you thought."
-	accent_backround = list(ACCENT_SOL)
+	accent_backround = list(ACCENT_MSD)
 	economic_power = 0.9
 /singleton/cultural_info/culture/human/paxupper
 	name = CULTURE_HUMAN_PAXUPPER
@@ -45,7 +48,7 @@
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy: being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
-	accent_backround = list(ACCENT_SOL)
+	accent_backround = list(ACCENT_NSD)
 
 /singleton/cultural_info/culture/human/paxlower
 	name = CULTURE_HUMAN_VENUSLOW
@@ -54,7 +57,7 @@
 	surfacers are a people who value hard work, solidarity, unity and democracy. Unfortunately, while they support noble ideals, the reality of their situation does not always \
 	match them, and much of the surface of Venus finds itself rife with organised crime, separatist groups and other criminal organisations."
 	economic_power = 0.9
-	accent_backround = list(ACCENT_SOL)
+	accent_backround = list(ACCENT_MSD)
 
 /singleton/cultural_info/culture/human/belter
 	name = CULTURE_HUMAN_BELTER
