@@ -3142,7 +3142,6 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/canister)
 "hh" = (
@@ -10565,7 +10564,6 @@
 	dir = 1;
 	target_pressure = 2533.13
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "yC" = (
@@ -12319,10 +12317,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
-"Ge" = (
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
 "Gg" = (
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -14621,10 +14615,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/toxins)
-"Pd" = (
-/obj/random_multi/single_item/runtime,
-/turf/simulated/floor/tiled,
-/area/quartermaster/exploration)
 "Pe" = (
 /obj/floor_decal/industrial/warning{
 	dir = 1
@@ -16756,7 +16746,6 @@
 	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Yp" = (
@@ -31891,7 +31880,7 @@ oU
 iT
 hw
 kg
-Pd
+hz
 ki
 kL
 hl
@@ -36719,7 +36708,7 @@ vm
 Za
 aW
 gT
-Ge
+Ea
 aJ
 ih
 ee
