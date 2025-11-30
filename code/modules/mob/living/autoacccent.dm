@@ -1,12 +1,4 @@
-// WIP
-// BELOW IS FOR CONTEXT + EDITING
-// Accent List
-//Mars Standard Dialect
-//Pax Standard Dialect
-//Nitros accent
-//Outer accent
-//Spacer accent
-// Tribal accent
+// Autoaccent
 #define AUTOACCENT_NUM 3
 
 
@@ -29,42 +21,41 @@
 
 /singleton/species/human/autoaccent_map_mars = list(
 	"moon" = "luna"
-
 )
 /singleton/species/human/autoaccent_map_pax = list(
-	"moon" = "luna"
+	"moon" = "luna",
 	"nitros" = "nitron"
 )
 /singleton/species/human/autoaccent_map_nitros = list(
-	"credits" = "crэvs"
-	"money" = "crэvs"
-	"phoron" = "plásmium"
+	"credits" = "crэvs",
+	"money" = "crэvs",
+	"phoron" = "plásmium",
 	"peacekeeper" = "soldár"
 )
 /singleton/species/human/autoaccent_map_outer = list(
 	"peacekeeper" = "militiaman"
 )
 /singleton/species/human/autoaccent_map_spacer = list(
-	"EVA" = "spacewalk"
+	"EVA" = "spacewalk",
 	"supermatter" = "engine"
 )
 /singleton/species/human/autoaccent_map_tribal = list(
-	"earth" = "terra"
+	"earth" = "terra",
 	"space" = "the void"
 
 )
 /singleton/species/human/autoaccent_map_pirx = list(
-	"storks" = "corporate"
+	"storks" = "corporate",
 	"pax" = "the capitol"
 )
 
 /singleton/species/human/autoaccent_exempt = list(
-	LANGUAGE_HUMAN_BRAHE
-	LANGUAGE_HUMAN_ARABIC
-	LANGUAGE_HUMAN_CHINESE
-	LANGUAGE_HUMAN_INDIAN
-	LANGUAGE_HUMAN_IBERIAN
-	LANGUAGE_HUMAN_NITROS
+	LANGUAGE_HUMAN_BRAHE,
+	LANGUAGE_HUMAN_ARABIC,
+	LANGUAGE_HUMAN_CHINESE,
+	LANGUAGE_HUMAN_INDIAN,
+	LANGUAGE_HUMAN_IBERIAN,
+	LANGUAGE_HUMAN_NITROS,
 	LANGUAGE_HUMAN_SELENIAN
 )
 
