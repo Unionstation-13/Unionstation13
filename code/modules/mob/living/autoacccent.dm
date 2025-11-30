@@ -1,1 +1,1 @@
-var/global/global/accent_backround = ""
+var/global/accent_backround = ""
