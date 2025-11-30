@@ -1,5 +1,5 @@
 // Establish a variable to keep track of accents
-var/accent_backround = ""
+var/global/accent_backround = ""
 
 /singleton/cultural_info/culture/generic
 	name = CULTURE_OTHER
