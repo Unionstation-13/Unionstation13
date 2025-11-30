@@ -1,67 +1,111 @@
 // WIP
 // BELOW IS FOR CONTEXT + EDITING
-// #define AUTOHISS_NUM 3
+// Accent List
+//Mars Standard Dialect
+//Pax Standard Dialect
+//Nitros accent
+//Outer accent
+//Spacer accent
+// Tribal accent
+#define AUTOACCENT_NUM 3
 
 
-// /mob/living/proc/handle_autohiss(message, datum/language/L)
-// 	return message // no autohiss at this level
+/mob/living/proc/handle_auto_accent(message, datum/language/L)
+	return message // no autoaccent at this level
 
-// /mob/living/carbon/human/handle_autohiss(message, datum/language/L)
-// 	if(!client || get_preference_value(/datum/client_preference/autohiss) == GLOB.PREF_OFF) // no need to process if there's no client or they have autohiss off
-// 		return message
-// 	return species.handle_autohiss(message, L, get_preference_value(/datum/client_preference/autohiss))
+/mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
+	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off
+		return message
+	return species.handle_auto_accent(message, L, get_preference_value(/datum/client_preference/autoaccent))
 
-// /singleton/species/var/list/autohiss_basic_map = null
-// /singleton/species/var/list/autohiss_extra_map = null
-// /singleton/species/var/list/autohiss_exempt = null
+/singleton/species/var/list/autoaccent_map_mars = null
+/singleton/species/var/list/autoaccent_map_pax = null
+/singleton/species/var/list/autoaccent_map_nitros = null
+/singleton/species/var/list/autoaccent_map_outer = null
+/singleton/species/var/list/autoaccent_map_spacer = null
+/singleton/species/var/list/autoaccent_map_tribal = null
+/singleton/species/var/list/autoaccent_map_pirx = null
+/singleton/species/var/list/autoaccent_exempt = null
 
-// /singleton/species/unathi/autohiss_basic_map = list(
-// 	"s" = list("ss", "sss", "ssss")
-// )
-// /singleton/species/unathi/autohiss_extra_map = list(
-// 	"x" = list("ks", "kss", "ksss")
-// )
-// /singleton/species/unathi/autohiss_exempt = list(
-// 	LANGUAGE_UNATHI_SINTA,
-// 	LANGUAGE_UNATHI_YEOSA
-// )
+/singleton/species/human/autoaccent_map_mars = list(
+	"moon" = "luna"
 
-// /singleton/species/proc/handle_autohiss(message, datum/language/lang, mode)
-// 	if(!autohiss_basic_map)
-// 		return message
-// 	if(lang.flags & NO_STUTTER)	// Currently prevents EAL, Sign language, and emotes from autohissing
-// 		return message
-// 	if(autohiss_exempt && (lang.name in autohiss_exempt))
-// 		return message
+)
+/singleton/species/human/autoaccent_map_pax = list(
+	"moon" = "luna"
+	"nitros" = "nitron"
+)
+/singleton/species/human/autoaccent_map_nitros = list(
+	"credits" = "crэvs"
+	"money" = "crэvs"
+	"phoron" = "plásmium"
+	"peacekeeper" = "soldár"
+)
+/singleton/species/human/autoaccent_map_outer = list(
+	"peacekeeper" = "militiaman"
+)
+/singleton/species/human/autoaccent_map_spacer = list(
+	"EVA" = "spacewalk"
+	"supermatter" = "engine"
+)
+/singleton/species/human/autoaccent_map_tribal = list(
+	"earth" = "terra"
+	"space" = "the void"
 
-// 	var/map = autohiss_basic_map.Copy()
-// 	if(mode == GLOB.PREF_FULL && autohiss_extra_map)
-// 		map |= autohiss_extra_map
+)
+/singleton/species/human/autoaccent_map_pirx = list(
+	"storks" = "corporate"
+	"pax" = "the capitol"
+)
 
-// 	. = list()
+/singleton/species/human/autoaccent_exempt = list(
+	LANGUAGE_HUMAN_BRAHE
+	LANGUAGE_HUMAN_ARABIC
+	LANGUAGE_HUMAN_CHINESE
+	LANGUAGE_HUMAN_INDIAN
+	LANGUAGE_HUMAN_IBERIAN
+	LANGUAGE_HUMAN_NITROS
+	LANGUAGE_HUMAN_SELENIAN
+)
 
-// 	while(length(message))
-// 		var/min_index = 10000 // if the message is longer than this, the autohiss is the least of your problems
-// 		var/min_char = null
-// 		for(var/char in map)
-// 			var/i = findtext_char(message, char)
-// 			if(!i) // no more of this character anywhere in the string, don't even bother searching next time
-// 				map -= char
-// 			else if(i < min_index)
-// 				min_index = i
-// 				min_char = char
-// 		if(!min_char) // we didn't find any of the mapping characters
-// 			. += message
-// 			break
-// 		. += copytext_char(message, 1, min_index)
-// 		if(copytext_char(message, min_index, min_index+1) == uppertext(min_char))
-// 			switch(text2ascii(message, min_index+1))
-// 				if(65 to 90) // A-Z, uppercase; uppercase R/S followed by another uppercase letter, uppercase the entire replacement string
-// 					. += uppertext(pick(map[min_char]))
-// 				else
-// 					. += capitalize(pick(map[min_char]))
-// 		else
-// 			. += pick(map[min_char])
-// 		message = copytext_char(message, min_index + 1)
+/singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode)
+	if(!autoaccent_map_pax)
+		return message
+	if(lang.flags & NO_STUTTER)	// Currently prevents EAL, Sign language, and emotes from autoaccenting
+		return message
+	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
+		return message
 
-// 	return jointext(., null)
+	var/map_mars = autoaccent_map_mars.Copy()
+	var/map_pax = autoaccent_map_pax.Copy()
+	var/map_nitros = autoaccent_map_nitros.Copy()
+	var/map_spacer = autoaccent_map_spacer.Copy()
+	var/map_pirx = autoaccent_map_pirx.Copy()
+	var/map_outer = autoaccent_map_outer.Copy()
+	var/map_tribal = autoaccent_map_tribal.Copy()
+
+	// while(length(message))
+	// 	var/min_index = 10000 // if the message is longer than this, the autoaccent is the least of your problems
+	// 	var/min_char = null
+	// 	for(var/char in map)
+	// 		var/i = findtext_char(message, char)
+	// 		if(!i) // no more of this word anywhere in the string, don't even bother searching next time
+	// 			map -= char
+	// 		else if(i < min_index)
+	// 			min_index = i
+	// 			min_char = char
+	// 	if(!min_char) // we didn't find any of the mapping words
+	// 		. += message
+	// 		break
+	// 	. += copytext_char(message, 1, min_index)
+	// 	if(copytext_char(message, min_index, min_index+1) == uppertext(min_char))
+	// 		switch(text2ascii(message, min_index+1))
+	// 			if(65 to 90) // A-Z, uppercase; uppercase R/S followed by another uppercase letter, uppercase the entire replacement string
+	// 				. += uppertext(pick(map[min_char]))
+	// 			else
+	// 				. += capitalize(pick(map[min_char]))
+	// 	else
+	// 		. += pick(map[min_char])
+	// 	message = copytext_char(message, min_index + 1)
+
+	// return jointext(., null)

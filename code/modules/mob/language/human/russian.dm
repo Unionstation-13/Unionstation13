@@ -1,6 +1,6 @@
 /datum/language/human/russian
 	name = LANGUAGE_HUMAN_NITROS
-	desc = "The official language of the Independent Colonial Confederation of Gilgamesh, originally established in 2122 by the short-lived United Slavic Confederation on Earth."
+	desc = "The official language of the Federated Republic of Nitros. It has strong accents and derives itself from russian, german, and spanish."
 	colour = "russian"
 	key = "r"
 	shorthand = "Slav"
@@ -10,9 +10,6 @@
 		LANGUAGE_SPACER = 20
 	)
 	syllables = list(
-		"rus", "zem", "ave", "groz", "ski", "ska", "ven", "konst", "pol", "lin", "svy",
-		"danya", "da", "mied", "zan", "das", "krem", "myka", "to", "st", "no", "na", "ni",
-		"ko", "ne", "en", "po", "ra", "li", "on", "byl", "cto", "eni", "ost", "ol", "ego",
-		"ver", "stv", "pro"
+		"ка", "па", "ми", "ла", "во", "si", "не", "ga", "be", "to", "za", "lu", "ку", "ре", "че", "нэ", "ра", "ми", "да", "ли",
 	)
 	has_written_form = TRUE
