@@ -1075,7 +1075,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/deck4)
 "dI" = (
@@ -1675,11 +1674,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/storage/upper)
-"fB" = (
-/obj/structure/table/woodentable/walnut,
-/obj/random_multi/single_item/runtime,
-/turf/simulated/floor/carpet/blue2,
-/area/command/captainmess)
 "fC" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -3295,10 +3289,6 @@
 /obj/machinery/vending/snix,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/aft)
-"lE" = (
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/plating,
-/area/vacant/monitoring)
 "lG" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -4011,7 +4001,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "nT" = (
@@ -4029,7 +4018,6 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/laundry)
 "nZ" = (
@@ -4314,11 +4302,6 @@
 /obj/random/soap,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/laundry)
-"pj" = (
-/obj/structure/table/standard,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/diplomatic_office)
 "pl" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -5117,7 +5100,6 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/catwalk_plated,
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/plating,
 /area/storage/primary)
 "sw" = (
@@ -11523,13 +11505,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod8/station)
-"NU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "NV" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -28589,7 +28564,7 @@ BU
 CV
 CV
 EJ
-lE
+CV
 Gc
 GD
 Hp
@@ -28769,7 +28744,7 @@ tv
 tv
 LZ
 PY
-pj
+PY
 PY
 Ct
 Oh
@@ -33205,7 +33180,7 @@ aa
 aa
 ak
 ak
-NU
+Os
 bu
 uY
 fd
@@ -33818,7 +33793,7 @@ fd
 Tz
 dS
 OI
-fB
+gs
 gs
 hm
 dS

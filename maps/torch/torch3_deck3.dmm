@@ -345,7 +345,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
 "bx" = (
@@ -996,7 +995,6 @@
 "cL" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/table/marble,
-/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "cM" = (
@@ -2052,7 +2050,6 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
 "fh" = (
@@ -4961,7 +4958,6 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad,
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "lE" = (
@@ -7274,7 +7270,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "rL" = (
@@ -7839,7 +7834,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
 "sI" = (
@@ -8162,7 +8156,6 @@
 /area/hallway/primary/thirddeck/aft)
 "tB" = (
 /obj/structure/table/rack/dark,
-/obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
 /obj/machinery/alarm{
 	dir = 1;
@@ -9476,7 +9469,6 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/sleep/bunk)
 "wY" = (
@@ -10310,21 +10302,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
-"zg" = (
-/obj/random_multi/single_item/runtime,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/floor_decal/corner/green/mono,
-/obj/floor_decal/industrial/hatch/yellow,
-/obj/machinery/portable_atmospherics/hydroponics{
-	name = "Food Reconstituter";
-	desc = "A deep water filled tray used for reconstituting food from dna packets"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hydroponics)
 "zh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -12035,7 +12012,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/community_manager{
 	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
@@ -12947,7 +12923,6 @@
 /obj/item/storage/secure/safe{
 	pixel_x = -22
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
 "Gj" = (
@@ -12963,7 +12938,6 @@
 /area/chapel/funchamber)
 "Gm" = (
 /obj/structure/table/rack/dark,
-/obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -13901,53 +13875,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/thirddeck/fore)
-"ID" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/gym)
-"IE" = (
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/recreation)
 "IF" = (
 /obj/structure/sign/poster/torch,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/recreation)
-"IH" = (
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
-"II" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/dark,
-/area/chapel/main)
-"IJ" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "IK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -31304,7 +31235,7 @@ mS
 pF
 zj
 pH
-ID
+jb
 Wb
 jb
 ur
@@ -32732,7 +32663,7 @@ CF
 CF
 My
 qu
-IE
+qu
 qu
 uC
 IF
@@ -37588,7 +37519,7 @@ vW
 yd
 yW
 vW
-IJ
+vW
 vW
 vW
 Dd
@@ -38369,7 +38300,7 @@ aa
 CS
 be
 TX
-zg
+Td
 TX
 wn
 nZ
@@ -39807,7 +39738,7 @@ cV
 uU
 fo
 YK
-IH
+YK
 gK
 TZ
 hL
@@ -44858,7 +44789,7 @@ vn
 Eh
 Mj
 uq
-II
+Mj
 XY
 WA
 ZW

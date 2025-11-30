@@ -522,10 +522,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
-"aW" = (
-/obj/random_multi/single_item/runtime,
-/turf/simulated/floor/tiled/dark,
-/area/medical/morgue)
 "aX" = (
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
@@ -6701,10 +6697,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
-"pN" = (
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
 "pO" = (
 /obj/floor_decal/industrial/warning{
 	dir = 4
@@ -12997,10 +12989,6 @@
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
-"GZ" = (
-/obj/random_multi/single_item/poppy,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/foreport)
 "Ha" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -14065,7 +14053,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
 "Kl" = (
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
 "Km" = (
@@ -31410,7 +31397,7 @@ Zp
 cF
 aK
 nc
-GZ
+pi
 Bf
 Wp
 Wp
@@ -35453,7 +35440,7 @@ zO
 Tg
 mT
 BT
-pN
+Cr
 CY
 mT
 yq
@@ -41276,7 +41263,7 @@ GW
 GW
 GW
 aH
-aW
+oK
 bz
 Lk
 NN
