@@ -127,7 +127,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/o8,
 		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10
 	)
@@ -230,7 +229,7 @@
 /datum/mil_rank/fleet/o1
 	name = "Colonel"
 	name_short = "CL"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	accessory = list(/obj/item/clothing/accesory/solgov/rank/fleet/enlisted/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
 
 /datum/mil_rank/fleet/o9
