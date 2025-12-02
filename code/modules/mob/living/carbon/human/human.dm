@@ -12,7 +12,7 @@
 	var/list/grasp_limbs
 	var/step_count
 	var/dream_timer
-	var/accent_background
+	var/global/accent_background
 
 /mob/living/carbon/human/Initialize(mapload, new_species = null)
 	grasp_limbs = list()
