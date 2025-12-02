@@ -2,13 +2,13 @@
 #define AUTOACCENT_NUM 3
 
 
-/mob/living/proc/handle_auto_accent(message, datum/language/L){
+/mob/living/proc/handle_auto_accent(message, datum/language/L)
 	return message // no autoaccent at this level
-}
-/mob/living/carbon/human/handle_auto_accent(message, datum/language/L){
+
+/mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
 	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
-}
+
 /singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
 /singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
 /singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
