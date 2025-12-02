@@ -1,4 +1,11 @@
 // Autoaccent
+var/global/list/auto_accent_map_mars = list( "moon" = "luna")
+var/global/list/auto_accent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
+var/global/list/auto_accent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
+var/global/list/auto_accent_map_outer = list( "peacekeeper" = "militiaman")
+var/global/list/auto_accent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
+var/global/list/auto_accent_map_tribal = list( "earth" = "terra", "space" = "the void")
+var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
 #define AUTOACCENT_NUM 3
 
 
@@ -9,13 +16,7 @@
 	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
 
-var/global/list/auto_accent_map_mars = list( "moon" = "luna")
-var/global/list/auto_accent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
-var/global/list/auto_accent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
-var/global/list/auto_accent_map_outer = list( "peacekeeper" = "militiaman")
-var/global/list/auto_accent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
-var/global/list/auto_accent_map_tribal = list( "earth" = "terra", "space" = "the void")
-var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
+
 
 // Temporary until other language accents come into play
 /singleton/species/var/list/autoaccent_exempt = list(
