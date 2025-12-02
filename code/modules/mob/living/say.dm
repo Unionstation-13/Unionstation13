@@ -244,8 +244,8 @@ var/global/list/channel_to_radio_key = new
 		message = speaking.muddle(message)
 
 // Calls autoaccent
-message = src.handle_auto_accent(message, speaking)
-message = src.initiate_accent(message)
+message = src.handle_auto_accent(message, speaking);
+message = src.initiate_accent(message);
 
 	if(!(speaking && (speaking.flags & NO_STUTTER)))
 		var/list/message_data = list(message, verb, 0)
