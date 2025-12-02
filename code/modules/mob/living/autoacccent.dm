@@ -11,7 +11,7 @@
 
 /singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
 /singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
-/singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár", "a" = "á")
+/singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
 /singleton/species/var/list/autoaccent_map_outer = list( "peacekeeper" = "militiaman")
 /singleton/species/var/list/autoaccent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
 /singleton/species/var/list/autoaccent_map_tribal = list( "earth" = "terra", "space" = "the void")
@@ -43,31 +43,50 @@
 	var/map_outer = autoaccent_map_outer.Copy()
 	var/map_tribal = autoaccent_map_tribal.Copy()
 
-// // Manages Nitros accent
-// 	while(length(message))
-// 		var/min_index = 10000 // if the message is longer than this, the autoaccent is the least of your problems
-// 		var/min_char = null
-// 		for(var/char in map)
-// 			var/i = findtext_char(message, char)
-// 			if(!i) // no more of this word anywhere in the string, don't even bother searching next time
-// 				map -= char
-// 			else if(i < min_index)
-// 				min_index = i
-// 				min_char = char
-// 		if(!min_char) // we didn't find any of the mapping words
-// 			. += message
-// 			break
-// 		. += copytext_char(message, 1, min_index)
-// 		if(copytext_char(message, min_index, min_index+1) == uppertext(min_char))
-// 			switch(text2ascii(message, min_index+1))
-// 				if(65 to 90) // A-Z, uppercase; uppercase R/S followed by another uppercase letter, uppercase the entire replacement string
-// 					. += uppertext(pick(map[min_char]))
-// 				else
-// 					. += capitalize(pick(map[min_char]))
-// 		else
-// 			. += pick(map[min_char])
-// 		message = copytext_char(message, min_index + 1)
-
-// 	return jointext(., null)
-
-//Below is for word replacement
+// Handles accent management
+/mob/proc/initiate_accent(raw_message as text){
+	var/processed_message = raw_message
+	if(accent_backround == "MSD"){
+		for(var/word in /singleton/species/autoaccent_map_mars){
+		var/value = /singleton/species/autoaccent_map_mars[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "PSD"){
+		for(var/word in /singleton/species/autoaccent_map_pax){
+		var/value = /singleton/species/autoaccent_map_pax[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "SPACER"){
+		for(var/word in /singleton/species/autoaccent_map_spacer){
+		var/value = autoaccent_map_spacer[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "NITROS"){
+		for(var/word in /singleton/species/autoaccent_map_nitros){
+		var/value = autoaccent_map_nitros[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "OUTER"){
+		for(var/word in /singleton/species/autoaccent_map_outer){
+		var/value = autoaccent_map_outer[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "TRIBAL"){
+		for(var/word in /singleton/species/autoaccent_map_tribal){
+		var/value = /singleton/species/autoaccent_map_tribal[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	if(accent_backround == "PIRX"){
+		for(var/word in /singleton/species/autoaccent_map_pirx){
+		var/value = /singleton/species/autoaccent_map_pirx[word]
+		processed_message = replacetext( processed_message, word, value)
+	}
+	}
+	return processed_message
+}
