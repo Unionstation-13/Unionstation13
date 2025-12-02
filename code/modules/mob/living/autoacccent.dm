@@ -6,7 +6,7 @@
 	return message // no autoaccent at this level
 
 /mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
-	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off
+	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF || accent_backround = null) // no need to process if there's no client, they have autoaccent off, or they don't have an accent as an option
 		return message
 	return species.handle_auto_accent(message, L, get_preference_value(/datum/client_preference/autoaccent))
 
@@ -19,37 +19,15 @@
 /singleton/species/var/list/autoaccent_map_pirx = null
 /singleton/species/var/list/autoaccent_exempt = null
 
-/singleton/species/human/autoaccent_map_mars = list(
-	"moon" = "luna"
-)
-/singleton/species/human/autoaccent_map_pax = list(
-	"moon" = "luna",
-	"nitros" = "nitron"
-)
-/singleton/species/human/autoaccent_map_nitros = list(
-	"credits" = "crэvs",
-	"money" = "crэvs",
-	"phoron" = "plásmium",
-	"peacekeeper" = "soldár"
-)
-/singleton/species/human/autoaccent_map_outer = list(
-	"peacekeeper" = "militiaman"
-)
-/singleton/species/human/autoaccent_map_spacer = list(
-	"EVA" = "spacewalk",
-	"supermatter" = "engine"
-)
-/singleton/species/human/autoaccent_map_tribal = list(
-	"earth" = "terra",
-	"space" = "the void"
+/singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
+/singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
+/singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár" "a" = "á")
+/singleton/species/var/list/autoaccent_map_outer = list( "peacekeeper" = "militiaman")
+/singleton/species/var/list/autoaccent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
+/singleton/species/var/list/autoaccent_map_tribal = list( "earth" = "terra", "space" = "the void")
+/singleton/species/var/list/autoaccent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
 
-)
-/singleton/species/human/autoaccent_map_pirx = list(
-	"storks" = "corporate",
-	"pax" = "the capitol"
-)
-
-/singleton/species/human/autoaccent_exempt = list(
+/singleton/species/var/list/autoaccent_exempt = list(
 	LANGUAGE_HUMAN_BRAHE,
 	LANGUAGE_HUMAN_ARABIC,
 	LANGUAGE_HUMAN_CHINESE,
@@ -75,28 +53,31 @@
 	var/map_outer = autoaccent_map_outer.Copy()
 	var/map_tribal = autoaccent_map_tribal.Copy()
 
-	// while(length(message))
-	// 	var/min_index = 10000 // if the message is longer than this, the autoaccent is the least of your problems
-	// 	var/min_char = null
-	// 	for(var/char in map)
-	// 		var/i = findtext_char(message, char)
-	// 		if(!i) // no more of this word anywhere in the string, don't even bother searching next time
-	// 			map -= char
-	// 		else if(i < min_index)
-	// 			min_index = i
-	// 			min_char = char
-	// 	if(!min_char) // we didn't find any of the mapping words
-	// 		. += message
-	// 		break
-	// 	. += copytext_char(message, 1, min_index)
-	// 	if(copytext_char(message, min_index, min_index+1) == uppertext(min_char))
-	// 		switch(text2ascii(message, min_index+1))
-	// 			if(65 to 90) // A-Z, uppercase; uppercase R/S followed by another uppercase letter, uppercase the entire replacement string
-	// 				. += uppertext(pick(map[min_char]))
-	// 			else
-	// 				. += capitalize(pick(map[min_char]))
-	// 	else
-	// 		. += pick(map[min_char])
-	// 	message = copytext_char(message, min_index + 1)
+// // Manages Nitros accent
+// 	while(length(message))
+// 		var/min_index = 10000 // if the message is longer than this, the autoaccent is the least of your problems
+// 		var/min_char = null
+// 		for(var/char in map)
+// 			var/i = findtext_char(message, char)
+// 			if(!i) // no more of this word anywhere in the string, don't even bother searching next time
+// 				map -= char
+// 			else if(i < min_index)
+// 				min_index = i
+// 				min_char = char
+// 		if(!min_char) // we didn't find any of the mapping words
+// 			. += message
+// 			break
+// 		. += copytext_char(message, 1, min_index)
+// 		if(copytext_char(message, min_index, min_index+1) == uppertext(min_char))
+// 			switch(text2ascii(message, min_index+1))
+// 				if(65 to 90) // A-Z, uppercase; uppercase R/S followed by another uppercase letter, uppercase the entire replacement string
+// 					. += uppertext(pick(map[min_char]))
+// 				else
+// 					. += capitalize(pick(map[min_char]))
+// 		else
+// 			. += pick(map[min_char])
+// 		message = copytext_char(message, min_index + 1)
 
-	// return jointext(., null)
+// 	return jointext(., null)
+
+//Below is for word replacement
