@@ -35,13 +35,6 @@
 		return message
 	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
 		return message
-	var/map_mars = autoaccent_map_mars.Copy()
-	var/map_pax = autoaccent_map_pax.Copy()
-	var/map_nitros = autoaccent_map_nitros.Copy()
-	var/map_spacer = autoaccent_map_spacer.Copy()
-	var/map_pirx = autoaccent_map_pirx.Copy()
-	var/map_outer = autoaccent_map_outer.Copy()
-	var/map_tribal = autoaccent_map_tribal.Copy()
 }
 // Handles accent management
 /mob/proc/initiate_accent(raw_message as text) {
