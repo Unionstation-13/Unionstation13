@@ -5,10 +5,10 @@
 /mob/living/proc/handle_auto_accent(message, datum/language/L){
 	return message // no autoaccent at this level
 }
-/mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
+/mob/living/carbon/human/handle_auto_accent(message, datum/language/L){
 	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
-
+}
 /singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
 /singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
 /singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
@@ -30,12 +30,11 @@
 
 /singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode) {
 	if(!autoaccent_map_pax)
-		return message
-	if(lang.flags & NO_STUTTER)	// Currently prevents EAL, Sign language, and emotes from autoaccenting
+		return message // (Also, 'message' is undefined, should be 'raw_message')
+	if(lang.flags & NO_STUTTER) // CRITICAL: 'lang' is undefined here.
 		return message
 	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
 		return message
-}
 	var/map_mars = autoaccent_map_mars.Copy()
 	var/map_pax = autoaccent_map_pax.Copy()
 	var/map_nitros = autoaccent_map_nitros.Copy()
@@ -43,7 +42,7 @@
 	var/map_pirx = autoaccent_map_pirx.Copy()
 	var/map_outer = autoaccent_map_outer.Copy()
 	var/map_tribal = autoaccent_map_tribal.Copy()
-
+}
 // Handles accent management
 /mob/proc/initiate_accent(raw_message as text){
 	var/processed_message = raw_message
