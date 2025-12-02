@@ -923,4 +923,4 @@ default behaviour is:
 /mob/living/proc/audible_emote(act_desc)
 	custom_emote(2, act_desc)
 
-	var/accent_background
+	/mob/living/var/accent_background
