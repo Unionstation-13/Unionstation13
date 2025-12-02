@@ -21,7 +21,7 @@
 
 /singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
 /singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
-/singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár" "a" = "á")
+/singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár", "a" = "á")
 /singleton/species/var/list/autoaccent_map_outer = list( "peacekeeper" = "militiaman")
 /singleton/species/var/list/autoaccent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
 /singleton/species/var/list/autoaccent_map_tribal = list( "earth" = "terra", "space" = "the void")
