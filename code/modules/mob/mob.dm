@@ -1303,3 +1303,5 @@
 
 /mob/get_overhead_text_y_offset()
 	return offset_overhead_text_y
+
+/mob/var/accent_background = "SPACER"   // a fallback default
