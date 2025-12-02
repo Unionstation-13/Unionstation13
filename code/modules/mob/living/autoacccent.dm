@@ -9,15 +9,6 @@
 	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
 
-/singleton/species/var/list/autoaccent_map_mars = null
-/singleton/species/var/list/autoaccent_map_pax = null
-/singleton/species/var/list/autoaccent_map_nitros = null
-/singleton/species/var/list/autoaccent_map_outer = null
-/singleton/species/var/list/autoaccent_map_spacer = null
-/singleton/species/var/list/autoaccent_map_tribal = null
-/singleton/species/var/list/autoaccent_map_pirx = null
-/singleton/species/var/list/autoaccent_exempt = null
-
 /singleton/species/var/list/autoaccent_map_mars = list( "moon" = "luna")
 /singleton/species/var/list/autoaccent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
 /singleton/species/var/list/autoaccent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár", "a" = "á")
