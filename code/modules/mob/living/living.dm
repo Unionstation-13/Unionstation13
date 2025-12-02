@@ -1,3 +1,5 @@
+/mob/living
+	var/accent_background = null
 /mob/living/Initialize(mapload)
 	. = ..()
 	if(stat == DEAD)
@@ -922,5 +924,3 @@ default behaviour is:
 
 /mob/living/proc/audible_emote(act_desc)
 	custom_emote(2, act_desc)
-
-	/mob/living/var/accent_background
