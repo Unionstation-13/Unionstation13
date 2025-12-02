@@ -17,6 +17,7 @@
 /singleton/species/var/list/autoaccent_map_tribal = list( "earth" = "terra", "space" = "the void")
 /singleton/species/var/list/autoaccent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
 
+// Temporary until other language accents come into play
 /singleton/species/var/list/autoaccent_exempt = list(
 	LANGUAGE_HUMAN_BRAHE,
 	LANGUAGE_HUMAN_ARABIC,
@@ -50,43 +51,43 @@
 		for(var/word in /singleton/species/autoaccent_map_mars){
 		var/value = /singleton/species/autoaccent_map_mars[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "PSD"){
 		for(var/word in /singleton/species/autoaccent_map_pax){
 		var/value = /singleton/species/autoaccent_map_pax[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "SPACER"){
 		for(var/word in /singleton/species/autoaccent_map_spacer){
 		var/value = autoaccent_map_spacer[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "NITROS"){
 		for(var/word in /singleton/species/autoaccent_map_nitros){
 		var/value = autoaccent_map_nitros[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "OUTER"){
 		for(var/word in /singleton/species/autoaccent_map_outer){
 		var/value = autoaccent_map_outer[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "TRIBAL"){
 		for(var/word in /singleton/species/autoaccent_map_tribal){
 		var/value = /singleton/species/autoaccent_map_tribal[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	if(accent_backround == "PIRX"){
 		for(var/word in /singleton/species/autoaccent_map_pirx){
 		var/value = /singleton/species/autoaccent_map_pirx[word]
 		processed_message = replacetext( processed_message, word, value)
-	}
+		}
 	}
 	return processed_message
 }
