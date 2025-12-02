@@ -243,10 +243,6 @@ var/global/list/channel_to_radio_key = new
 	if(speaking && !speaking.can_be_spoken_properly_by(src))
 		message = speaking.muddle(message)
 
-	// Calls Autoaccent
-	message = handle_auto_accent(message, speaking)
-	message = initiate_accent(message)
-
 	if(!(speaking && (speaking.flags & NO_STUTTER)))
 		var/list/message_data = list(message, verb, 0)
 		if(handle_speech_problems(message_data))

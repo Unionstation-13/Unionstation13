@@ -1,4 +1,5 @@
 // Autoaccent
+#define AUTOACCENT_NUM 3
 var/global/list/auto_accent_map_mars = list( "moon" = "luna")
 var/global/list/auto_accent_map_pax = list( "moon" = "luna", "nitros" = "nitroñ")
 var/global/list/auto_accent_map_nitros = list( "credits" = "crэvs", "money" = "crэvs", "phoron" = "plásmium", "peacekeeper" = "soldár")
@@ -6,15 +7,16 @@ var/global/list/auto_accent_map_outer = list( "peacekeeper" = "militiaman")
 var/global/list/auto_accent_map_spacer = list( "EVA" = "spacewalk", "supermatter" = "engine")
 var/global/list/auto_accent_map_tribal = list( "earth" = "terra", "space" = "the void")
 var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
-#define AUTOACCENT_NUM 3
+/mob/living/carbon/human/say(message, datum/language/speaking = null, whispering = 0){
+	if(message && client && get_preference_value(/datum/client_preference/autoaccent) != GLOB.PREF_OFF)
+		message = handle_auto_accent(message, speaking)
+		message = initiate_accent(message)
+	return ..(message, speaking, whispering)
+}
 
 
 /mob/living/proc/handle_auto_accent(message, datum/language/L)
 	return message // no autoaccent at this level
-
-/mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
-	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
-		return message
 
 
 
