@@ -12,7 +12,7 @@
 	var/list/grasp_limbs
 	var/step_count
 	var/dream_timer
-
+	var/accent_background
 
 /mob/living/carbon/human/Initialize(mapload, new_species = null)
 	grasp_limbs = list()
@@ -34,6 +34,25 @@
 		name = real_name
 		if(mind)
 			mind.name = real_name
+// Autoaccent checks
+	if(cultural_info && cultural_info[TAG_CULTURE])
+		switch(cultural_info[TAG_CULTURE])
+			if(CULTURE_HUMAN_MARS, CULTURE_HUMAN_VENUSLOW, CULTURE_HUMAN_VENUSIAN)
+				accent_background = "MSD"
+			if(CULTURE_HUMAN_PAXUPPER, CULTURE_HUMAN_PAXLOWER)
+				accent_background = "PSD"
+			if(CULTURE_HUMAN_BELTER, CULTURE_HUMAN_STATION, CULTURE_HUMAN_OFFWORLD, CULTURE_HUMAN_SPACER, CULTURE_HUMAN_VATGROWN)
+				accent_background = "SPACER"
+			if(CULTURE_HUMAN_CETIS, CULTURE_HUMAN_NITROS)
+				accent_background = "NITROS"
+			if(CULTURE_HUMAN_ANTIDO, CULTURE_HUMAN_EOS)
+				accent_background = "OUTER"
+			if(CULTURE_HUMAN_BRAHE)
+				accent_background = "TRIBAL"
+			if(CULTURE_HUMAN_PIRXABC, CULTURE_HUMAN_PIRXS)
+				accent_background = "PIRX"
+			else
+				accent_background = "SPACER"
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealthy")
