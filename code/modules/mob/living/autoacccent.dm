@@ -6,9 +6,8 @@
 	return message // no autoaccent at this level
 
 /mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
-	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF || accent_backround = null) // no need to process if there's no client, they have autoaccent off, or they don't have an accent as an option
+	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
-	return species.handle_auto_accent(message, L, get_preference_value(/datum/client_preference/autoaccent))
 
 /singleton/species/var/list/autoaccent_map_mars = null
 /singleton/species/var/list/autoaccent_map_pax = null
