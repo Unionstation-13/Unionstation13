@@ -43,32 +43,32 @@ var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "th
 
 	switch(accent_background)
 		if("MSD")
-			for(var/word in global.accent_map_mars)
-				var/replacement = global.accent_map_mars[word]
+			for(var/word in accent_map_mars)
+				var/replacement = accent_map_mars[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("PSD")
-			for(var/word in global.accent_map_pax)
-				var/replacement = global.accent_map_pax[word]
+			for(var/word in accent_map_pax)
+				var/replacement = accent_map_pax[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("SPACER")
-			for(var/word in global.accent_map_spacer)
-				var/replacement = global.accent_map_spacer[word]
+			for(var/word in accent_map_spacer)
+				var/replacement = accent_map_spacer[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("NITROS")
-			for(var/word in global.accent_map_nitros)
-				var/replacement = global.accent_map_nitros[word]
+			for(var/word in accent_map_nitros)
+				var/replacement = accent_map_nitros[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("OUTER")
-			for(var/word in global.accent_map_outer)
-				var/replacement = global.accent_map_outer[word]
+			for(var/word in accent_map_outer)
+				var/replacement = accent_map_outer[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("TRIBAL")
-			for(var/word in global.accent_map_tribal)
-				var/replacement = global.accent_map_tribal[word]
+			for(var/word in accent_map_tribal)
+				var/replacement = accent_map_tribal[word]
 				processed_message = replacetext(processed_message, word, replacement)
 		if("PIRX")
-			for(var/word in global.accent_map_pirx)
-				var/replacement = global.accent_map_pirx[word]
+			for(var/word in accent_map_pirx)
+				var/replacement = accent_map_pirx[word]
 				processed_message = replacetext(processed_message, word, replacement)
 	return processed_message
 }
