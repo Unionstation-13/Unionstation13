@@ -2,9 +2,9 @@
 #define AUTOACCENT_NUM 3
 
 
-/mob/living/proc/handle_auto_accent(message, datum/language/L)
+/mob/living/proc/handle_auto_accent(message, datum/language/L){
 	return message // no autoaccent at this level
-
+}
 /mob/living/carbon/human/handle_auto_accent(message, datum/language/L)
 	if(!client || get_preference_value(/datum/client_preference/autoaccent) == GLOB.PREF_OFF) // no need to process if there's no client or they have autoaccent off.
 		return message
@@ -28,14 +28,14 @@
 	LANGUAGE_HUMAN_SELENIAN
 )
 
-/singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode)
+/singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode) {
 	if(!autoaccent_map_pax)
 		return message
 	if(lang.flags & NO_STUTTER)	// Currently prevents EAL, Sign language, and emotes from autoaccenting
 		return message
 	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
 		return message
-
+}
 	var/map_mars = autoaccent_map_mars.Copy()
 	var/map_pax = autoaccent_map_pax.Copy()
 	var/map_nitros = autoaccent_map_nitros.Copy()
