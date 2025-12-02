@@ -30,8 +30,8 @@
 
 /singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode) {
 	if(!autoaccent_map_pax)
-		return message // (Also, 'message' is undefined, should be 'raw_message')
-	if(lang.flags & NO_STUTTER) // CRITICAL: 'lang' is undefined here.
+		return message
+	if(lang.flags & NO_STUTTER)
 		return message
 	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
 		return message
@@ -44,49 +44,36 @@
 	var/map_tribal = autoaccent_map_tribal.Copy()
 }
 // Handles accent management
-/mob/proc/initiate_accent(raw_message as text){
+/mob/proc/initiate_accent(raw_message as text) {
 	var/processed_message = raw_message
-	if(accent_backround == "MSD"){
+	if(accent_backround == "MSD")
 		for(var/word in /singleton/species/autoaccent_map_mars){
 		var/value = /singleton/species/autoaccent_map_mars[word]
 		processed_message = replacetext( processed_message, word, value)
 		}
-	}
-	if(accent_backround == "PSD"){
-		for(var/word in /singleton/species/autoaccent_map_pax){
-		var/value = /singleton/species/autoaccent_map_pax[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
-	if(accent_backround == "SPACER"){
-		for(var/word in /singleton/species/autoaccent_map_spacer){
-		var/value = autoaccent_map_spacer[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
-	if(accent_backround == "NITROS"){
-		for(var/word in /singleton/species/autoaccent_map_nitros){
-		var/value = autoaccent_map_nitros[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
-	if(accent_backround == "OUTER"){
-		for(var/word in /singleton/species/autoaccent_map_outer){
-		var/value = autoaccent_map_outer[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
-	if(accent_backround == "TRIBAL"){
-		for(var/word in /singleton/species/autoaccent_map_tribal){
-		var/value = /singleton/species/autoaccent_map_tribal[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
-	if(accent_backround == "PIRX"){
-		for(var/word in /singleton/species/autoaccent_map_pirx){
-		var/value = /singleton/species/autoaccent_map_pirx[word]
-		processed_message = replacetext( processed_message, word, value)
-		}
-	}
+	if(accent_backround == "PSD")
+		for(var/word in /singleton/species/autoaccent_map_pax)
+			var/value = /singleton/species/autoaccent_map_pax[word]
+			processed_message = replacetext( processed_message, word, value)
+	if(accent_backround == "SPACER")
+		for(var/word in /singleton/species/autoaccent_map_spacer)
+			var/value = autoaccent_map_spacer[word]
+			processed_message = replacetext( processed_message, word, value)
+	if(accent_backround == "NITROS")
+		for(var/word in /singleton/species/autoaccent_map_nitros)
+			var/value = autoaccent_map_nitros[word]
+			processed_message = replacetext( processed_message, word, value)
+	if(accent_backround == "OUTER")
+		for(var/word in /singleton/species/autoaccent_map_outer)
+			var/value = autoaccent_map_outer[word]
+			processed_message = replacetext( processed_message, word, value)
+	if(accent_backround == "TRIBAL")
+		for(var/word in /singleton/species/autoaccent_map_tribal)
+			var/value = /singleton/species/autoaccent_map_tribal[word]
+			processed_message = replacetext( processed_message, word, value)
+	if(accent_backround == "PIRX")
+		for(var/word in /singleton/species/autoaccent_map_pirx)
+			var/value = /singleton/species/autoaccent_map_pirx[word]
+			processed_message = replacetext( processed_message, word, value)
 	return processed_message
 }
