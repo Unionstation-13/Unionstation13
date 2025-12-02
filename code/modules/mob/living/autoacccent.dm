@@ -26,7 +26,7 @@
 	LANGUAGE_HUMAN_IBERIAN,
 	LANGUAGE_HUMAN_NITROS,
 	LANGUAGE_HUMAN_SELENIAN
-)
+);
 
 /singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode) {
 	if(!autoaccent_map_pax)
