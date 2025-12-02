@@ -15,10 +15,6 @@ var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "th
 }
 
 
-/mob/living/proc/handle_auto_accent(message, datum/language/L)
-	return message // no autoaccent at this level
-
-
 
 // Temporary until other language accents come into play
 /singleton/species/var/list/autoaccent_exempt = list(
@@ -30,15 +26,6 @@ var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "th
 	LANGUAGE_HUMAN_NITROS,
 	LANGUAGE_HUMAN_SELENIAN
 );
-
-/mob/living/proc/handle_auto_accent(message, datum/language/lang, mode) {
-	if(!auto_accent_map_pax)
-		return message
-	if(lang.flags & NO_STUTTER)
-		return message
-	if(autoaccent_exempt && (lang.name in autoaccent_exempt))
-		return message
-}
 // Handles accent management
 /mob/living/proc/initiate_accent(raw_message as text) {
 	var/processed_message = raw_message
