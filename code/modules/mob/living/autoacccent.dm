@@ -39,33 +39,34 @@ var/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "the capit
 // Handles accent management
 /mob/proc/initiate_accent(raw_message as text) {
 	var/processed_message = raw_message
+	var/singleton/species/S = ishuman(src) ? get_species_singleton(src) : null
 	if(accent_background == "MSD")
-		for(var/word in autoaccent_map_mars)
-			var/value = singleton/species/autoaccent_map_mars[word]
+		for(var/word in S?.autoaccent_map_mars)
+			var/value = S.singleton/species/autoaccent_map_mars[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "PSD")
-		for(var/word in autoaccent_map_pax)
-			var/value = autoaccent_map_pax[word]
+		for(var/word in S?.autoaccent_map_pax)
+			var/value = S.autoaccent_map_pax[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "SPACER")
-		for(var/word in autoaccent_map_spacer)
-			var/value = autoaccent_map_spacer[word]
+		for(var/word in S?.autoaccent_map_spacer)
+			var/value = S.autoaccent_map_spacer[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "NITROS")
-		for(var/word in autoaccent_map_nitros)
-			var/value = autoaccent_map_nitros[word]
+		for(var/word in S?.autoaccent_map_nitros)
+			var/value = S.autoaccent_map_nitros[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "OUTER")
-		for(var/word in autoaccent_map_outer)
-			var/value = autoaccent_map_outer[word]
+		for(var/word in S?.autoaccent_map_outer)
+			var/value = S.autoaccent_map_outer[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "TRIBAL")
-		for(var/word in autoaccent_map_tribal)
-			var/value = autoaccent_map_tribal[word]
+		for(var/word in S?.autoaccent_map_tribal)
+			var/value = S.autoaccent_map_tribal[word]
 			processed_message = replacetext( processed_message, word, value)
 	if(accent_background == "PIRX")
-		for(var/word in autoaccent_map_pirx)
-			var/value = autoaccent_map_pirx[word]
+		for(var/word in S?.autoaccent_map_pirx)
+			var/value = S.autoaccent_map_pirx[word]
 			processed_message = replacetext( processed_message, word, value)
 	return processed_message
 }
