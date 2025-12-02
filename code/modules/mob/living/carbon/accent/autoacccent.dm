@@ -29,7 +29,7 @@ var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "th
 	LANGUAGE_HUMAN_SELENIAN
 );
 
-/singleton/species/proc/handle_autoaccent(message, datum/language/lang, mode) {
+/mob/living/proc/handle_auto_accent(message, datum/language/lang, mode) {
 	if(!auto_accent_map_pax)
 		return message
 	if(lang.flags & NO_STUTTER)
@@ -38,7 +38,7 @@ var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "th
 		return message
 }
 // Handles accent management
-/mob/proc/initiate_accent(raw_message as text) {
+/mob/living/proc/initiate_accent(raw_message as text) {
 	var/processed_message = raw_message
 
 	switch(accent_background)
