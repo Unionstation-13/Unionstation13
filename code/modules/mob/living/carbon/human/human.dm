@@ -34,22 +34,24 @@
 		if(mind)
 			mind.name = real_name
 // Autoaccent checks
+
 if(cultural_info && cultural_info["culture"])
-	switch(cultural_info["culture"])
-		if("mars", "venuslow", "venusian")
-			accent_background = "MSD"
-		if("paxupper", "paxlower")
-			accent_background = "PSD"
-		if("cetis", "nitros")
-			accent_background = "NITROS"
-		if("antido", "eos")
-			accent_background = "OUTER"
-		if("brahe")
-			accent_background = "TRIBAL"
-		if("pirxabc", "pirxs")
-			accent_background = "PIRX"
-		else
-			accent_background = "SPACER"
+	var/culture_key = cultural_info["culture"]
+
+	if(culture_key in list("mars", "venuslow", "venusian"))
+		accent_background = "MSD"
+	else if(culture_key in list("paxupper", "paxlower"))
+		accent_background = "PSD"
+	else if(culture_key in list("cetis", "nitros"))
+		accent_background = "NITROS"
+	else if(culture_key in list("antido", "eos"))
+		accent_background = "OUTER"
+	else if(culture_key == "brahe")
+		accent_background = "TRIBAL"
+	else if(culture_key in list("pirxabc", "pirxs"))
+		accent_background = "PIRX"
+	else
+		accent_background = "SPACER"
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealthy")
