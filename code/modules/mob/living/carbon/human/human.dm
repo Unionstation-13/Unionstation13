@@ -39,7 +39,7 @@
 
 	if(cultural_info && cultural_info.name)
 
-	world.log << "ACCENT DEBUG LINE: Checking value of cultural_info.name: '[cultural_info.name]'"
+		world.log << "ACCENT DEBUG LINE: Checking value of cultural_info.name: '[cultural_info.name]'"
 
 		// MSD Group: Martian Tunneller, Venusian Zoner, Venusian Surfacer
 		if(cultural_info.name == CULTURE_HUMAN_MARS || cultural_info.name == CULTURE_HUMAN_VENUSIAN || cultural_info.name == CULTURE_HUMAN_PAXLOWER)
