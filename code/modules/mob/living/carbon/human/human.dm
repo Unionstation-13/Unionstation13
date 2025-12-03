@@ -34,37 +34,34 @@
 		if(mind)
 			mind.name = real_name
 // Autoaccent checks
-	// Default
+// Default
 	accent_background = "SPACER"
-	// Check for valid cultural data before proceeding.
-	if(cultural_info && cultural_info["culture"])
-		var/culture_tag = cultural_info["culture"]
-		world.log << "ACCENT DEBUG: culture_tag is '[culture_tag]' (Type: [istype(culture_tag)])"
+
+	if(cultural_info && /singleton/cultural_info/var/name)
 
 		// MSD Group: Martian Tunneller, Venusian Zoner, Venusian Surfacer
-		if(culture_tag == CULTURE_HUMAN_MARS || culture_tag == CULTURE_HUMAN_VENUSIAN || culture_tag == CULTURE_HUMAN_PAXLOWER)
+		if(/singleton/cultural_info/var/name == CULTURE_HUMAN_MARS || /singleton/cultural_info/var/name == CULTURE_HUMAN_VENUSIAN || /singleton/cultural_info/var/name == CULTURE_HUMAN_PAXLOWER)
 			accent_background = "MSD"
 
 		// PSD Group: Pax Upper, Pax Lower
-		else if(culture_tag == CULTURE_HUMAN_PAXUPPER || culture_tag == CULTURE_HUMAN_VENUSLOW)
+		else if(/singleton/cultural_info/var/name == CULTURE_HUMAN_PAXUPPER || /singleton/cultural_info/var/name == CULTURE_HUMAN_VENUSLOW)
 			accent_background = "PSD"
 
 		// NITROS Group: Cetite, Nitros
-		else if(culture_tag == CULTURE_HUMAN_CETIS || culture_tag == CULTURE_HUMAN_NITROS)
+		else if(/singleton/cultural_info/var/name == CULTURE_HUMAN_CETIS || /singleton/cultural_info/var/name == CULTURE_HUMAN_NITROS)
 			accent_background = "NITROS"
 
 		// OUTER Group: Antidian, Eosic
-		else if(culture_tag == CULTURE_HUMAN_ANTIDO || culture_tag == CULTURE_HUMAN_EOS)
+		else if(/singleton/cultural_info/var/name == CULTURE_HUMAN_ANTIDO || /singleton/cultural_info/var/name == CULTURE_HUMAN_EOS)
 			accent_background = "OUTER"
 
 		// TRIBAL Group: Brahite
-		else if(culture_tag == CULTURE_HUMAN_BRAHE)
+		else if(/singleton/cultural_info/var/name == CULTURE_HUMAN_BRAHE)
 			accent_background = "TRIBAL"
 
 		// PIRX Group: Pirxish Corporate, Pirxish Solus
-		else if(culture_tag == CULTURE_HUMAN_PIRXABC || culture_tag == CULTURE_HUMAN_PIRXS)
+		else if(/singleton/cultural_info/var/name == CULTURE_HUMAN_PIRXABC || /singleton/cultural_info/var/name == CULTURE_HUMAN_PIRXS)
 			accent_background = "PIRX"
-
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealthy")
