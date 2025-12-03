@@ -36,7 +36,7 @@
 // Autoaccent checks
 
 	if(cultural_info && cultural_info["culture"])
-		var culture = cultural_info["culture"]
+		culture = cultural_info["culture"]
 
 		if(culture == "Martian Survivor" || culture == "Venusian, Zoner" || culture == "Venusian, Surfacer")
 			accent_background = "MSD"
