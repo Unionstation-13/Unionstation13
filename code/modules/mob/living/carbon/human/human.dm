@@ -34,35 +34,35 @@
 		if(mind)
 			mind.name = real_name
 // Autoaccent checks
-// Default
+	// Default
 	accent_background = "SPACER"
 
-	if(cultural_info && cultural_info.name)
+	if(culture && culture.name)
 
-		world.log << "ACCENT DEBUG LINE: Checking value of cultural_info.name: '[cultural_info.name]'"
+		world.log << "ACCENT DEBUG LINE(hopefully the final): Checking value of culture.name: '[culture.name]'"
 
 		// MSD Group: Martian Tunneller, Venusian Zoner, Venusian Surfacer
-		if(cultural_info.name == CULTURE_HUMAN_MARS || cultural_info.name == CULTURE_HUMAN_VENUSIAN || cultural_info.name == CULTURE_HUMAN_PAXLOWER)
+		if(culture.name == CULTURE_HUMAN_MARS || culture.name == CULTURE_HUMAN_VENUSIAN || culture.name == CULTURE_HUMAN_PAXLOWER)
 			accent_background = "MSD"
 
 		// PSD Group: Pax Upper, Pax Lower
-		else if(cultural_info.name == CULTURE_HUMAN_PAXUPPER || cultural_info.name == CULTURE_HUMAN_VENUSLOW)
+		else if(culture.name == CULTURE_HUMAN_PAXUPPER || culture.name == CULTURE_HUMAN_VENUSLOW)
 			accent_background = "PSD"
 
 		// NITROS Group: Cetite, Nitros
-		else if(cultural_info.name == CULTURE_HUMAN_CETIS || cultural_info.name == CULTURE_HUMAN_NITROS)
+		else if(culture.name == CULTURE_HUMAN_CETIS || culture.name == CULTURE_HUMAN_NITROS)
 			accent_background = "NITROS"
 
 		// OUTER Group: Antidian, Eosic
-		else if(cultural_info.name == CULTURE_HUMAN_ANTIDO || cultural_info.name == CULTURE_HUMAN_EOS)
+		else if(culture.name == CULTURE_HUMAN_ANTIDO || culture.name == CULTURE_HUMAN_EOS)
 			accent_background = "OUTER"
 
 		// TRIBAL Group: Brahite
-		else if(cultural_info.name == CULTURE_HUMAN_BRAHE)
+		else if(culture.name == CULTURE_HUMAN_BRAHE)
 			accent_background = "TRIBAL"
 
 		// PIRX Group: Pirxish Corporate, Pirxish Solus
-		else if(cultural_info.name == CULTURE_HUMAN_PIRXABC || cultural_info.name == CULTURE_HUMAN_PIRXS)
+		else if(culture.name == CULTURE_HUMAN_PIRXABC || culture.name == CULTURE_HUMAN_PIRXS)
 			accent_background = "PIRX"
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
