@@ -34,18 +34,19 @@
 		if(mind)
 			mind.name = real_name
 // Autoaccent checks
-	if(cultural_info && cultural_info[TAG_CULTURE])
-		if(culture in list(CULTURE_HUMAN_MARS, CULTURE_HUMAN_VENUSLOW, CULTURE_HUMAN_VENUSIAN))
+if(cultural_info && cultural_info["culture"])
+	switch(cultural_info["culture"])
+		if("mars", "venuslow", "venusian")
 			accent_background = "MSD"
-		else if(culture in list(CULTURE_HUMAN_PAXUPPER, CULTURE_HUMAN_PAXLOWER))
+		if("paxupper", "paxlower")
 			accent_background = "PSD"
-		else if(culture in list(CULTURE_HUMAN_CETIS, CULTURE_HUMAN_NITROS))
+		if("cetis", "nitros")
 			accent_background = "NITROS"
-		else if(culture in list(CULTURE_HUMAN_ANTIDO, CULTURE_HUMAN_EOS))
+		if("antido", "eos")
 			accent_background = "OUTER"
-		else if(culture == CULTURE_HUMAN_BRAHE)
+		if("brahe")
 			accent_background = "TRIBAL"
-		else if(culture in list(CULTURE_HUMAN_PIRXABC, CULTURE_HUMAN_PIRXS))
+		if("pirxabc", "pirxs")
 			accent_background = "PIRX"
 		else
 			accent_background = "SPACER"
