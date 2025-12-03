@@ -9,7 +9,6 @@ var/global/list/auto_accent_map_tribal = list( "earth" = "terra", "space" = "the
 var/global/list/auto_accent_map_pirx = list( "storks" = "corporate", "pax" = "the capitol")
 /mob/living/carbon/human/say(message, datum/language/speaking = null, whispering = 0){
 	if(message && client && get_preference_value(/datum/client_preference/autoaccent) != GLOB.PREF_OFF)
-		message = handle_auto_accent(message, speaking)
 		message = initiate_accent(message)
 	return ..(message, speaking, whispering)
 }
