@@ -35,29 +35,29 @@
 			mind.name = real_name
 // Autoaccent checks
 
-if(cultural_info && cultural_info["culture"])
-	var culture = cultural_info["culture"]
+	if(cultural_info && cultural_info["culture"])
+		var culture = cultural_info["culture"]
 
-	if(culture == "Martian Survivor" || culture == "Venusian, Zoner" || culture == "Venusian, Surfacer")
-		accent_background = "MSD"
+		if(culture == "Martian Survivor" || culture == "Venusian, Zoner" || culture == "Venusian, Surfacer")
+			accent_background = "MSD"
 
-	else if(culture == "Pax Upper" || culture == "Pax Lower")
-		accent_background = "PSD"
+		else if(culture == "Pax Upper" || culture == "Pax Lower")
+			accent_background = "PSD"
 
-	else if(culture == "Cetite, IPC" || culture == "Nitros")
-		accent_background = "NITROS"
+		else if(culture == "Cetite, IPC" || culture == "Nitros")
+			accent_background = "NITROS"
 
-	else if(culture == "Antidian" || culture == "Eosic")
-		accent_background = "OUTER"
+		else if(culture == "Antidian" || culture == "Eosic")
+			accent_background = "OUTER"
 
-	else if(culture == "Brahite")
-		accent_background = "TRIBAL"
+		else if(culture == "Brahite")
+			accent_background = "TRIBAL"
 
-	else if(culture == "Pirxish, Corporate" || culture == "Pirxish, Solus")
-		accent_background = "PIRX"
+		else if(culture == "Pirxish, Corporate" || culture == "Pirxish, Solus")
+			accent_background = "PIRX"
 
-	else
-		accent_background = "SPACER"
+		else
+			accent_background = "SPACER"
 
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
