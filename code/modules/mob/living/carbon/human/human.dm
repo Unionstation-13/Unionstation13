@@ -35,39 +35,30 @@
 			mind.name = real_name
 // Autoaccent checks
 
-	if(cultural_info && cultural_info["culture"])
-		if(cultural_info["culture"] == "Martian Survivor")
-			accent_background = "MSD"
-		else if(cultural_info["culture"] == "Venusian, Zoner")
-			accent_background = "MSD"
-		else if(cultural_info["culture"] == "Venusian, Surfacer")
-			accent_background = "MSD"
+if(cultural_info && cultural_info["culture"])
+	var culture = cultural_info["culture"]
 
-		else if(cultural_info["culture"] == "Pax Upper")
-			accent_background = "PSD"
-		else if(cultural_info["culture"] == "Pax Lower")
-			accent_background = "PSD"
+	if(culture == "Martian Survivor" || culture == "Venusian, Zoner" || culture == "Venusian, Surfacer")
+		accent_background = "MSD"
 
-		else if(cultural_info["culture"] == "Cetite, IPC")
-			accent_background = "NITROS"
-		else if(cultural_info["culture"] == "Nitros")
-			accent_background = "NITROS"
+	else if(culture == "Pax Upper" || culture == "Pax Lower")
+		accent_background = "PSD"
 
-		else if(cultural_info["culture"] == "Antidian")
-			accent_background = "OUTER"
-		else if(cultural_info["culture"] == "Eosic")
-			accent_background = "OUTER"
+	else if(culture == "Cetite, IPC" || culture == "Nitros")
+		accent_background = "NITROS"
 
-		else if(cultural_info["culture"] == "Brahite")
-			accent_background = "TRIBAL"
+	else if(culture == "Antidian" || culture == "Eosic")
+		accent_background = "OUTER"
 
-		else if(cultural_info["culture"] == "Pirxish, Corporate")
-			accent_background = "PIRX"
-		else if(cultural_info["culture"] == "Pirxish, Solus")
-			accent_background = "PIRX"
+	else if(culture == "Brahite")
+		accent_background = "TRIBAL"
 
-		else
-			accent_background = "SPACER"
+	else if(culture == "Pirxish, Corporate" || culture == "Pirxish, Solus")
+		accent_background = "PIRX"
+
+	else
+		accent_background = "SPACER"
+
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealthy")
