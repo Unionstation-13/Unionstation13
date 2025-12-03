@@ -6,6 +6,7 @@
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
 	pda_slot = slot_l_store
+	r_pocket = /obj/item/passport/scg
 
 /singleton/hierarchy/outfit/job/torch/crew
 	name = OUTFIT_JOB_NAME("Titen Crew Outfit")
