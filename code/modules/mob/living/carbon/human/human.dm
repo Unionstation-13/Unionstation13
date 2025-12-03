@@ -36,34 +36,34 @@
 // Autoaccent checks
 
 	if(cultural_info)
-		if(cultural_info["culture"] == CULTURE_HUMAN_MARS)
+		if(cultural_info["name"] == CULTURE_HUMAN_MARS)
 			accent_background = "MSD"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSIAN)
+		else if(cultural_info["name"] == CULTURE_HUMAN_VENUSIAN)
 			accent_background = "MSD"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSLOW)
+		else if(cultural_info["name"] == CULTURE_HUMAN_VENUSLOW)
 			accent_background = "MSD"
 
-		else if(cultural_info["culture"] == CULTURE_HUMAN_PAXUPPER)
+		else if(cultural_info["name"] == CULTURE_HUMAN_PAXUPPER)
 			accent_background = "PSD"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_PAXLOWER)
+		else if(cultural_info["name"] == CULTURE_HUMAN_PAXLOWER)
 			accent_background = "PSD"
 
-		else if(cultural_info["culture"] == CULTURE_HUMAN_CETIS)
+		else if(cultural_info["name"] == CULTURE_HUMAN_CETIS)
 			accent_background = "NITROS"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_NITROS)
+		else if(cultural_info["name"] == CULTURE_HUMAN_NITROS)
 			accent_background = "NITROS"
 
-		else if(cultural_info["culture"] == CULTURE_HUMAN_ANTIDO)
+		else if(cultural_info["name"] == CULTURE_HUMAN_ANTIDO)
 			accent_background = "OUTER"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_EOS)
+		else if(cultural_info["name"] == CULTURE_HUMAN_EOS)
 			accent_background = "OUTER"
 
-		else if(cultural_info["culture"] == CULTURE_HUMAN_BRAHE)
+		else if(cultural_info["name"] == CULTURE_HUMAN_BRAHE)
 			accent_background = "TRIBAL"
 
-		else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXABC)
+		else if(cultural_info["name"] == CULTURE_HUMAN_PIRXABC)
 			accent_background = "PIRX"
-		else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXS)
+		else if(cultural_info["name"] == CULTURE_HUMAN_PIRXS)
 			accent_background = "PIRX"
 
 		else
