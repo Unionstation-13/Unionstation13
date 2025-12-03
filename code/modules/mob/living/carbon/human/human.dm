@@ -35,35 +35,35 @@
 			mind.name = real_name
 // Autoaccent checks
 
-	if(cultural_info)
-		if(cultural_info["name"] == CULTURE_HUMAN_MARS)
+	if(cultural_info && cultural_info["culture"])
+		if(cultural_info["culture"] == "Martian Survivor")
 			accent_background = "MSD"
-		else if(cultural_info["name"] == CULTURE_HUMAN_VENUSIAN)
+		else if(cultural_info["culture"] == "Venusian, Zoner")
 			accent_background = "MSD"
-		else if(cultural_info["name"] == CULTURE_HUMAN_VENUSLOW)
+		else if(cultural_info["culture"] == "Venusian, Surfacer")
 			accent_background = "MSD"
 
-		else if(cultural_info["name"] == CULTURE_HUMAN_PAXUPPER)
+		else if(cultural_info["culture"] == "Pax Upper")
 			accent_background = "PSD"
-		else if(cultural_info["name"] == CULTURE_HUMAN_PAXLOWER)
+		else if(cultural_info["culture"] == "Pax Lower")
 			accent_background = "PSD"
 
-		else if(cultural_info["name"] == CULTURE_HUMAN_CETIS)
+		else if(cultural_info["culture"] == "Cetite, IPC")
 			accent_background = "NITROS"
-		else if(cultural_info["name"] == CULTURE_HUMAN_NITROS)
+		else if(cultural_info["culture"] == "Nitros")
 			accent_background = "NITROS"
 
-		else if(cultural_info["name"] == CULTURE_HUMAN_ANTIDO)
+		else if(cultural_info["culture"] == "Antidian")
 			accent_background = "OUTER"
-		else if(cultural_info["name"] == CULTURE_HUMAN_EOS)
+		else if(cultural_info["culture"] == "Eosic")
 			accent_background = "OUTER"
 
-		else if(cultural_info["name"] == CULTURE_HUMAN_BRAHE)
+		else if(cultural_info["culture"] == "Brahite")
 			accent_background = "TRIBAL"
 
-		else if(cultural_info["name"] == CULTURE_HUMAN_PIRXABC)
+		else if(cultural_info["culture"] == "Pirxish, Corporate")
 			accent_background = "PIRX"
-		else if(cultural_info["name"] == CULTURE_HUMAN_PIRXS)
+		else if(cultural_info["culture"] == "Pirxish, Solus")
 			accent_background = "PIRX"
 
 		else
