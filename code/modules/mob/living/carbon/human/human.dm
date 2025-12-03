@@ -35,39 +35,39 @@
 			mind.name = real_name
 // Autoaccent checks
 
-if(cultural_info)
-	if(cultural_info["culture"] == CULTURE_HUMAN_MARS)
-		accent_background = "MSD"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSIAN)
-		accent_background = "MSD"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSLOW)
-		accent_background = "MSD"
+	if(cultural_info)
+		if(cultural_info["culture"] == CULTURE_HUMAN_MARS)
+			accent_background = "MSD"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSIAN)
+			accent_background = "MSD"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_VENUSLOW)
+			accent_background = "MSD"
 
-	else if(cultural_info["culture"] == CULTURE_HUMAN_PAXUPPER)
-		accent_background = "PSD"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_PAXLOWER)
-		accent_background = "PSD"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_PAXUPPER)
+			accent_background = "PSD"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_PAXLOWER)
+			accent_background = "PSD"
 
-	else if(cultural_info["culture"] == CULTURE_HUMAN_CETIS)
-		accent_background = "NITROS"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_NITROS)
-		accent_background = "NITROS"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_CETIS)
+			accent_background = "NITROS"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_NITROS)
+			accent_background = "NITROS"
 
-	else if(cultural_info["culture"] == CULTURE_HUMAN_ANTIDO)
-		accent_background = "OUTER"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_EOS)
-		accent_background = "OUTER"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_ANTIDO)
+			accent_background = "OUTER"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_EOS)
+			accent_background = "OUTER"
 
-	else if(cultural_info["culture"] == CULTURE_HUMAN_BRAHE)
-		accent_background = "TRIBAL"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_BRAHE)
+			accent_background = "TRIBAL"
 
-	else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXABC)
-		accent_background = "PIRX"
-	else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXS)
-		accent_background = "PIRX"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXABC)
+			accent_background = "PIRX"
+		else if(cultural_info["culture"] == CULTURE_HUMAN_PIRXS)
+			accent_background = "PIRX"
 
-	else
-		accent_background = "SPACER"
+		else
+			accent_background = "SPACER"
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealthy")
