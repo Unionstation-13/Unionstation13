@@ -34,10 +34,12 @@
 		if(mind)
 			mind.name = real_name
 // Autoaccent checks
-
+	// Default
+	accent_background = "SPACER"
 	// Check for valid cultural data before proceeding.
 	if(cultural_info && cultural_info["culture"])
 		var/culture_tag = cultural_info["culture"]
+		world.log << "ACCENT DEBUG: culture_tag is '[culture_tag]' (Type: [istype(culture_tag)])"
 
 		// MSD Group: Martian Tunneller, Venusian Zoner, Venusian Surfacer
 		if(culture_tag == CULTURE_HUMAN_MARS || culture_tag == CULTURE_HUMAN_VENUSIAN || culture_tag == CULTURE_HUMAN_PAXLOWER)
