@@ -35,29 +35,33 @@
 			mind.name = real_name
 // Autoaccent checks
 
+	// Check for valid cultural data before proceeding.
 	if(cultural_info && cultural_info["culture"])
-		culture = cultural_info["culture"]
+		var/culture_tag = cultural_info["culture"]
 
-		if(culture == "Martian Survivor" || culture == "Venusian, Zoner" || culture == "Venusian, Surfacer")
+		// MSD Group: Martian Tunneller, Venusian Zoner, Venusian Surfacer
+		if(culture_tag == CULTURE_HUMAN_MARS || culture_tag == CULTURE_HUMAN_VENUSIAN || culture_tag == CULTURE_HUMAN_PAXLOWER)
 			accent_background = "MSD"
 
-		else if(culture == "Pax Upper" || culture == "Pax Lower")
+		// PSD Group: Pax Upper, Pax Lower
+		else if(culture_tag == CULTURE_HUMAN_PAXUPPER || culture_tag == CULTURE_HUMAN_VENUSLOW)
 			accent_background = "PSD"
 
-		else if(culture == "Cetite, IPC" || culture == "Nitros")
+		// NITROS Group: Cetite, Nitros
+		else if(culture_tag == CULTURE_HUMAN_CETIS || culture_tag == CULTURE_HUMAN_NITROS)
 			accent_background = "NITROS"
 
-		else if(culture == "Antidian" || culture == "Eosic")
+		// OUTER Group: Antidian, Eosic
+		else if(culture_tag == CULTURE_HUMAN_ANTIDO || culture_tag == CULTURE_HUMAN_EOS)
 			accent_background = "OUTER"
 
-		else if(culture == "Brahite")
+		// TRIBAL Group: Brahite
+		else if(culture_tag == CULTURE_HUMAN_BRAHE)
 			accent_background = "TRIBAL"
 
-		else if(culture == "Pirxish, Corporate" || culture == "Pirxish, Solus")
+		// PIRX Group: Pirxish Corporate, Pirxish Solus
+		else if(culture_tag == CULTURE_HUMAN_PIRXABC || culture_tag == CULTURE_HUMAN_PIRXS)
 			accent_background = "PIRX"
-
-		else
-			accent_background = "SPACER"
 
 
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud_med.dmi', src, "100")
