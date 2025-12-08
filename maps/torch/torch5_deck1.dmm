@@ -910,6 +910,7 @@
 	pixel_x = 9;
 	pixel_y = -22
 	},
+/obj/machinery/organ_printer/flesh,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "abL" = (
@@ -984,7 +985,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/table/standard,
+/obj/machinery/organ_printer/robot,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "abV" = (
