@@ -1152,6 +1152,10 @@
 	name = "\improper Medical Storeroom"
 	icon_state = "medbay"
 
+/area/medical/rackroom
+	name = "\improper Medical Rackroom"
+	icon_state = "medbay"
+
 /area/medical/medpaperworkoffice
 	name = "\improper Medical Paperwork Office"
 	icon_state = "locker"
@@ -1179,8 +1183,13 @@
 	name = "\improper Emergency Treatment Centre"
 	icon_state = "exam_room"
 
-/area/medical/surgery
-	name = "\improper Operating Theatre"
+/area/medical/surgery/surgery1
+	name = "\improper Operating Theatre 1"
+	icon_state = "surgery"
+	req_access = list(access_surgery)
+
+/area/medical/surgery/surgery2
+	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
 	req_access = list(access_surgery)
 
