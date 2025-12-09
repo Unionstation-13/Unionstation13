@@ -18097,6 +18097,7 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Medical Maitnence"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/medical/foyer/storeroom)
 "hwx" = (
