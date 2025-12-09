@@ -14786,10 +14786,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
-"cAb" = (
-/obj/structure/cable/green,
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/firstdeck/centralstarboard)
 "cAh" = (
 /obj/floor_decal/techfloor{
 	dir = 4
@@ -14915,9 +14911,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "cHb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /obj/machinery/door/airlock/medical{
 	id_tag = "examdoor";
@@ -49909,7 +49904,7 @@ aaa
 aaa
 aaa
 aaa
-cAb
+abP
 abP
 abP
 rhO
