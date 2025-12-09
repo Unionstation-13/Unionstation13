@@ -1152,7 +1152,7 @@
 	name = "\improper Medical Storeroom"
 	icon_state = "medbay"
 
-	/area/medical/rackroom
+/area/medical/rackroom
 	name = "\improper Medical Rackroom"
 	icon_state = "medbay"
 
