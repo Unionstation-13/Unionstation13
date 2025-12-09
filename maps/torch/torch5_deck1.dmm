@@ -9054,7 +9054,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "aFo" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4
@@ -14500,7 +14500,7 @@
 /obj/item/clothing/accessory/stethoscope,
 /obj/item/storage/pill_bottle/assorted,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "cfn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14939,6 +14939,7 @@
 	dir = 4;
 	id_tag = "or2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery/surgery2)
 "cHj" = (
@@ -16634,7 +16635,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4
@@ -19033,7 +19034,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "iFb" = (
 /obj/structure/table/glass,
 /obj/machinery/firealarm{
@@ -24214,7 +24215,7 @@
 /obj/item/hand_labeler,
 /obj/item/storage/box/pillbottles,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "onM" = (
 /obj/floor_decal/corner/blue,
 /turf/simulated/floor/tiled/dark,
@@ -24681,7 +24682,7 @@
 /obj/item/storage/box/rxglasses,
 /obj/item/storage/box/rxglasses,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "oQb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -25492,7 +25493,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "pEr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -26506,7 +26507,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "qOb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
@@ -27119,7 +27120,7 @@
 /obj/item/cane/crutch,
 /obj/item/cane/crutch,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "rxK" = (
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -27453,7 +27454,7 @@
 /area/rnd/research)
 "rQU" = (
 /turf/simulated/wall/prepainted,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "rRb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
@@ -29843,6 +29844,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/medical/seniorofficer)
 "uUi" = (
@@ -30373,7 +30375,7 @@
 "vJi" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "vJO" = (
 /obj/floor_decal/corner/red{
 	dir = 5
@@ -31363,7 +31365,7 @@
 "yeW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
-/area/medical/foyer/rackroom)
+/area/medical/rackroom)
 "yfd" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 9
