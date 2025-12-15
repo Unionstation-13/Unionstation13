@@ -1,5 +1,5 @@
 /datum/job/pathfinder
-	title = "Senior Rocknall Associate"
+	title = "Exploration Commander"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 1
@@ -41,7 +41,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Senior Rocknall Associate. Your duty is to Explore. Research. Admire. The Rocknall way."
+	return "You are the Exploration Commander. You are loyal to Rocknall. Your duty is to Explore. Research. Admire. The Rocknall way."
 
 /datum/job/nt_pilot
 	title = "Contractor Pilot"
@@ -84,7 +84,7 @@
 	return "After spending 8 years at the URC academy on Pax just to flunk, you lost everything, your apartment, your loved ones, all to the iron fist of the UGN. Forced to the brink of death, you took up a measly job as a contractor, but today you board the UGN Titen in hopes of making a damn good wage and getting the fuck out of there before the corporate snakes kill you."
 
 /datum/job/explorer
-	title = "Junior Rocknall Associate"
+	title = "Field Scientist"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 6
@@ -121,4 +121,4 @@
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
 /datum/job/explorer/get_description_blurb()
-	return "You are a Junior Rocknall Associate. Your duty is to maintain your senior officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."
+	return "You are a Field Scientist. Your duty is to explore and maintain your senior officers goodwill and ensure cooperation of the exploration branch of Rocknall with the science division."
