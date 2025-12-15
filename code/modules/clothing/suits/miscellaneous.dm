@@ -338,20 +338,20 @@
 	body_parts_covered = UPPER_TORSO|ARMS
 
 /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
-	name = "\improper NanoTrasen leather jacket"
+	name = "\improper NeoTrasen leather jacket"
 	desc = "A brown leather coat. The NanoTrasen logo is proudly displayed on the back."
 	icon_state = "brown_jacket_nt"
 
 /obj/item/clothing/suit/storage/toggle/agent_jacket
-	name = "\improper SFP jacket"
-	desc = "A black leather jacket belonging to an agent of the Sol Federal Police."
+	name = "\improper PK jacket"
+	desc = "A black leather jacket belonging to an agent of the Peacekeeper Division."
 	icon_state = "agent_jacket"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	body_parts_covered = UPPER_TORSO|ARMS
 
 /obj/item/clothing/suit/storage/toggle/agent_jacket/formal
-	name = "formal SFP coat"
-	desc = "A black suit jacket belonging to an agent of the Sol Federal Police. It is of exceptional quality."
+	name = "formal PK coat"
+	desc = "A black suit jacket belonging to an agent of the Peacekeeper Divison. It is of exceptional quality."
 	icon_state = "agent_formal"
 
 /obj/item/clothing/suit/storage/toggle/hoodie
@@ -387,8 +387,8 @@
 	color = COLOR_DARK_GRAY
 
 /obj/item/clothing/suit/storage/agent_rain
-	name = "\improper SFP patrol cloak"
-	desc = "A black raincloak belonging to an agent of the Sol Federal Police. It is almost certainly wind and waterproof."
+	name = "\improper PK patrol cloak"
+	desc = "A black raincloak belonging to an agent of the Peacekeeper Divison. It is almost certainly wind and waterproof."
 	icon_state = "agent_raincloak"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	blood_overlay_type = "coatblood"

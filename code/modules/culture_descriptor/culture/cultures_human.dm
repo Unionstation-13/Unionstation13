@@ -1,3 +1,6 @@
+// Establish a variable to keep track of accents
+
+
 /singleton/cultural_info/culture/generic
 	name = CULTURE_OTHER
 	description = "You are from one of the many small, relatively unknown cultures scattered across the galaxy."
@@ -42,7 +45,6 @@
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy: being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
-
 /singleton/cultural_info/culture/human/paxlower
 	name = CULTURE_HUMAN_VENUSLOW
 	description = "You are from the surface of Venus, one of many employed in mining, industry and services industries. Venusian Surfacers are fairly poor, especially compared to Zoners and \
@@ -55,7 +57,6 @@
 	name = CULTURE_HUMAN_BELTER
 	description = "You are from Ceres. You were a former prisoner, warden, or guard. You escaped by some whim of the UGN, and now you've found your way aboard the Titen in hopes of surviving. If your time on Ceres has taught you anything, its that power always breeds corruption."
 	economic_power = 1
-
 /singleton/cultural_info/culture/human/ceti_south
 	name = CULTURE_HUMAN_CETIS //change to nitros-6IPC
 	description = "#IPC ONLY# You were constructed on the south pole of Nitros-6, abused by your creators, and left to rot in a magma pit for weeks. After the riots broke out, you were found and recruited into the Nitros-6 People's Front. It didn't last long. You're free now. What will you do?  #IPC ONLY#"
@@ -83,7 +84,6 @@
 	description = "You come from the dying planet of Eos, scarred by your past.\
 	Your people fear the sun, which is why you have boarded the Titen in hopes of escaping its wrath."
 	economic_power = 0.8
-
 /singleton/cultural_info/culture/human/pirx_high
 	name = CULTURE_HUMAN_PIRXABC
 	description = "The ABCDEFG Corporation workers on Pirx, better known as The Storks due to\

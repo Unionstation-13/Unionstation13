@@ -1001,9 +1001,9 @@
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/commissary
-	name = "\improper Commissary"
-	icon_state = "crew_quarters"
-	req_access = list(access_commissary)
+	name = "\improper Warehouse"
+	icon_state = "quart"
+	req_access = list(access_cargo)
 
 /area/crew_quarters/diplomatic_office
 	name = "\improper Diplomatic Meeting Room"

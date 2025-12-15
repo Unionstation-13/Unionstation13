@@ -79,7 +79,9 @@
 	},
 /obj/item/material/folder/envelope/preset/bio_ordering_station,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "aB" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
@@ -303,7 +305,9 @@
 	department = "Communal_Manager_Office"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "br" = (
 /obj/structure/hygiene/toilet{
 	pixel_y = 8
@@ -341,7 +345,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
 "bx" = (
@@ -643,7 +646,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "cb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -990,7 +995,6 @@
 "cL" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/table/marble,
-/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "cM" = (
@@ -998,7 +1002,9 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "cN" = (
 /obj/machinery/smartfridge,
 /obj/machinery/door/firedoor,
@@ -1280,9 +1286,9 @@
 "dp" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/civilian{
-	name = "Commissary"
+	name = "Sales Warehouse"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "dr" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1436,7 +1442,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "shop_shutters";
+	name = "Commissary Shutters"
+	},
+/obj/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "dK" = (
 /obj/machinery/door/firedoor,
@@ -1842,9 +1854,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "eL" = (
-/obj/floor_decal/corner/green{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "north bump";
@@ -1854,7 +1863,12 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "break"
+	},
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "eM" = (
 /obj/machinery/door/firedoor,
@@ -2036,7 +2050,6 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
 "fh" = (
@@ -2524,7 +2537,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "gi" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2928,7 +2943,9 @@
 "hc" = (
 /obj/floor_decal/spline/plain/green,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "hd" = (
 /obj/decal/cleanable/dirt,
 /obj/item/stack/cable_coil/single,
@@ -3190,6 +3207,13 @@
 /obj/machinery/disposal,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
+"hE" = (
+/obj/structure/table/woodentable/ebony,
+/obj/item/flora/pottedplantsmall{
+	pixel_y = 10
+	},
+/turf/simulated/floor/wood/ebony,
+/area/crew_quarters/commissary)
 "hF" = (
 /obj/floor_decal/industrial/warning,
 /obj/structure/cable/green{
@@ -3364,7 +3388,9 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "ib" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/floor_decal/industrial/outline/grey,
@@ -3852,6 +3878,7 @@
 	icon_state = "0-4"
 	},
 /obj/floor_decal/industrial/warning/full,
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/galley)
 "iY" = (
@@ -3860,6 +3887,7 @@
 	name = "Bar Shutters";
 	pixel_x = 32
 	},
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "iZ" = (
@@ -3978,6 +4006,7 @@
 	pixel_x = 64;
 	pixel_y = -8
 	},
+/obj/machinery/door/window/southright,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "jo" = (
@@ -4814,6 +4843,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
+"lo" = (
+/obj/machinery/computer/guestpass{
+	pixel_y = 24
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/crew_quarters/commissary)
 "lp" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -4923,7 +4958,6 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad,
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "lE" = (
@@ -5106,7 +5140,9 @@
 	},
 /obj/machinery/computer/modular/preset/civilian,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "mc" = (
 /obj/floor_decal/corner/green/half{
 	dir = 1
@@ -5300,9 +5336,13 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "mw" = (
-/obj/machinery/computer/arcade,
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable/ebony,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "break"
+	},
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "mx" = (
 /obj/machinery/light{
@@ -5546,10 +5586,10 @@
 /turf/simulated/wall/prepainted,
 /area/chapel/funchamber)
 "ns" = (
-/obj/structure/bed/chair/office/comfy/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/office/comfy/brown,
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "nt" = (
 /obj/floor_decal/industrial/warning/corner,
@@ -6444,7 +6484,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/floor_decal/corner/green/bordercorner,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "pw" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -6520,10 +6562,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/gym)
-"pG" = (
-/obj/floor_decal/corner/green/half,
-/turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/commissary)
 "pH" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -6715,7 +6753,9 @@
 /area/crew_quarters/galleybackroom)
 "qo" = (
 /turf/simulated/floor/reinforced,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "qp" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -6810,12 +6850,19 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/observation)
 "qA" = (
-/obj/random/vendor,
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -25
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/obj/machinery/button/windowtint{
+	id = "break";
+	dir = 1;
+	pixel_y = -20
+	},
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "qB" = (
 /obj/decal/cleanable/dirt,
@@ -6913,7 +6960,9 @@
 	},
 /obj/floor_decal/spline/plain/green,
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "qU" = (
 /obj/floor_decal/corner/green{
 	dir = 1
@@ -7221,7 +7270,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "rL" = (
@@ -7332,7 +7380,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "sa" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -7784,7 +7834,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
 "sI" = (
@@ -8107,7 +8156,6 @@
 /area/hallway/primary/thirddeck/aft)
 "tB" = (
 /obj/structure/table/rack/dark,
-/obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
 /obj/machinery/alarm{
 	dir = 1;
@@ -8252,7 +8300,10 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled,
+/obj/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "tU" = (
 /obj/structure/cable/green{
@@ -8561,13 +8612,12 @@
 /turf/simulated/floor/wood/maple,
 /area/chapel/funchamber)
 "uE" = (
-/obj/floor_decal/corner/green,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "uG" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -8710,7 +8760,8 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/table/rack,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "vb" = (
 /obj/structure/cable/green{
@@ -8887,7 +8938,9 @@
 /area/hallway/primary/thirddeck/aft)
 "vw" = (
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "vx" = (
 /obj/floor_decal/corner/b_green/half{
 	dir = 8
@@ -9087,6 +9140,10 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
+"wc" = (
+/obj/machinery/door/window,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "wf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -9412,7 +9469,6 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/sleep/bunk)
 "wY" = (
@@ -9615,7 +9671,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "xF" = (
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "xG" = (
 /obj/wallframe_spawn/reinforced_phoron,
@@ -9669,7 +9728,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "xM" = (
 /obj/structure/janitorialcart,
 /obj/item/mop,
@@ -9684,11 +9745,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
-"xN" = (
-/obj/structure/table/marble,
-/obj/machinery/recharger,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/commissary)
 "xO" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10246,21 +10302,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
-"zg" = (
-/obj/random_multi/single_item/runtime,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/floor_decal/corner/green/mono,
-/obj/floor_decal/industrial/hatch/yellow,
-/obj/machinery/portable_atmospherics/hydroponics{
-	name = "Food Reconstituter";
-	desc = "A deep water filled tray used for reconstituting food from dna packets"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hydroponics)
 "zh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -10410,7 +10451,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "shop_shutters";
+	name = "Commissary Shutters"
+	},
+/obj/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "zJ" = (
 /obj/item/device/radio/intercom{
@@ -10535,7 +10582,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/table/rack,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "Ai" = (
 /obj/structure/cable/green{
@@ -10863,7 +10911,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Bg" = (
 /obj/floor_decal/corner/green{
 	dir = 5
@@ -11024,14 +11074,11 @@
 /turf/simulated/floor/tiled,
 /area/storage/tools)
 "BD" = (
-/obj/floor_decal/corner/green/half{
-	dir = 1
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "BE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -11726,12 +11773,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "Dw" = (
-/obj/structure/table/marble,
-/obj/machinery/button/blast_door{
-	id_tag = "shop_shutters";
-	name = "Counter Shutters";
-	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
-	},
 /obj/machinery/light{
 	dir = 4
 	},
@@ -11739,7 +11780,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "Dx" = (
 /obj/structure/disposalpipe/segment{
@@ -11971,9 +12012,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/random_multi/single_item/punitelli,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "DU" = (
 /obj/machinery/camera/network/bridge{
 	c_tag = "Fire Control - Munitions";
@@ -12881,7 +12923,6 @@
 /obj/item/storage/secure/safe{
 	pixel_x = -22
 	},
-/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
 "Gj" = (
@@ -12897,7 +12938,6 @@
 /area/chapel/funchamber)
 "Gm" = (
 /obj/structure/table/rack/dark,
-/obj/random_multi/single_item/poppy,
 /obj/item/storage/box/bodybags,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -12997,7 +13037,9 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Gw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -13287,7 +13329,10 @@
 /obj/machinery/light_switch{
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled,
+/obj/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "Hh" = (
 /obj/structure/cable/green{
@@ -13763,6 +13808,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
+"Iu" = (
+/turf/simulated/floor/wood/ebony,
+/area/crew_quarters/commissary)
 "Iv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13819,57 +13867,18 @@
 /turf/simulated/floor/plating,
 /area/command/disperser)
 "IC" = (
-/obj/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/blast/regular/open,
+/obj/machinery/button/blast_door{
+	id_tag = "armory_hab";
+	pixel_y = 20;
+	name = "Armory";
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/thirddeck/fore)
-"ID" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/gym)
-"IE" = (
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/recreation)
 "IF" = (
 /obj/structure/sign/poster/torch,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/recreation)
-"IH" = (
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
-"II" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/dark,
-/area/chapel/main)
-"IJ" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "IK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14113,11 +14122,13 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "Jg" = (
-/obj/floor_decal/corner/green{
-	dir = 8
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "shop_shutters";
+	name = "Commissary Shutters"
 	},
-/obj/structure/flora/pottedplant/dead,
-/turf/simulated/floor/tiled,
+/obj/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -14943,9 +14954,6 @@
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d3starboard)
 "KQ" = (
-/obj/floor_decal/corner/green/half{
-	dir = 1
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 2;
 	icon_state = "pipe-c"
@@ -14956,6 +14964,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/floor_decal/corner/brown{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
@@ -15263,7 +15274,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "LC" = (
 /obj/floor_decal/corner/green{
 	dir = 8
@@ -15416,11 +15429,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/space)
-"LS" = (
-/obj/structure/table/rack,
-/obj/item/storage/box/lights/mixed,
-/turf/simulated/floor/tiled/steel_grid,
-/area/crew_quarters/commissary)
 "LT" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -15500,10 +15508,13 @@
 	name = "Armory Shutters"
 	},
 /turf/simulated/floor/carpet/green,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Md" = (
-/obj/machinery/door/airlock/vault,
-/obj/machinery/door/blast/regular/open,
+/obj/machinery/door/blast/regular{
+	id_tag = "armory_hab"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/thirddeck/fore)
 "Mf" = (
@@ -15707,7 +15718,10 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "MI" = (
 /obj/structure/cable/green{
@@ -15748,7 +15762,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "MM" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/thirddeck/aft)
@@ -15879,21 +15895,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"Ni" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/steel_grid,
-/area/crew_quarters/commissary)
 "Nj" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "Nl" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/button/blast_door{
+	id_tag = "shop_shutters";
+	name = "Counter Shutters";
+	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"));
+	pixel_y = 20
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "Nm" = (
 /obj/structure/table/woodentable/maple,
@@ -15919,7 +15933,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Nq" = (
 /obj/structure/closet/crate/trashcart,
 /obj/random/junk,
@@ -15959,7 +15975,7 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/mess)
 "Nx" = (
-/obj/wallframe_spawn/no_grille,
+/obj/wallframe_spawn,
 /turf/simulated/floor/plating,
 /area/crew_quarters/commissary)
 "Ny" = (
@@ -16015,15 +16031,10 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "NG" = (
-/obj/structure/table/marble,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "shop_shutters";
-	name = "Commissary Shutters"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable/ebony,
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "NH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -16084,10 +16095,10 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "NN" = (
-/obj/floor_decal/corner/green{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
+/obj/floor_decal/corner/brown{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -16190,7 +16201,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "Od" = (
 /obj/structure/table/marble,
@@ -16919,11 +16933,6 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/thirddeck/port)
-"Qd" = (
-/obj/structure/table/rack,
-/obj/item/storage/box/donkpocket_premium,
-/turf/simulated/floor/tiled/steel_grid,
-/area/crew_quarters/commissary)
 "Qi" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	dir = 1;
@@ -17286,7 +17295,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "Ri" = (
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
@@ -17354,7 +17365,6 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "Ro" = (
-/obj/floor_decal/corner/green/half,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -17362,7 +17372,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "Rr" = (
 /obj/structure/cable{
@@ -17468,6 +17478,12 @@
 /obj/structure/sign/warning/hot_exhaust,
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d3starboard)
+"RK" = (
+/obj/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/commissary)
 "RM" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
@@ -17544,13 +17560,10 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "RW" = (
-/obj/structure/table/marble,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "shop_shutters";
-	name = "Commissary Shutters"
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable/ebony,
+/obj/item/paper_bin,
+/obj/item/pen/fancy,
+/turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "RX" = (
 /obj/catwalk_plated,
@@ -17791,10 +17804,10 @@
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d3port)
 "Sz" = (
-/obj/floor_decal/corner/green{
+/obj/random/vendor,
+/obj/floor_decal/corner/brown{
 	dir = 1
 	},
-/obj/random/vendor,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "SA" = (
@@ -17937,7 +17950,14 @@
 /obj/machinery/light_switch{
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/table/rack,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "shop_shutters";
+	name = "Commissary Shutters"
+	},
+/obj/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "SW" = (
 /obj/floor_decal/spline/fancy/black{
@@ -18006,10 +18026,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/service_break_room)
 "Tf" = (
-/obj/structure/table/rack,
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "Th" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -18535,7 +18552,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/armchair{
+	dir = 1
+	},
+/obj/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "UE" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -19005,6 +19028,9 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
+/obj/structure/sign/directions/supply{
+	pixel_y = -4
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "VI" = (
@@ -19021,10 +19047,7 @@
 /area/security/habcheck)
 "VJ" = (
 /obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/crew_quarters/commissary)
 "VK" = (
 /obj/item/latexballon,
@@ -19831,7 +19854,9 @@
 /area/security/habcheck)
 "XK" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 "XM" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -20134,7 +20159,21 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
 "YG" = (
-/turf/simulated/floor/tiled,
+/obj/machinery/button/blast_door{
+	id_tag = "shop_shutters";
+	name = "Counter Shutters";
+	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"));
+	pixel_y = 35;
+	pixel_x = -20;
+	dir = 4
+	},
+/obj/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/obj/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "YH" = (
 /obj/structure/railing/mapped{
@@ -20378,15 +20417,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "Zq" = (
-/obj/floor_decal/corner/green{
-	dir = 8
-	},
-/obj/machinery/jukebox/old,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/carpet/orange,
 /area/crew_quarters/commissary)
 "Zt" = (
 /obj/machinery/computer/modular/preset/civilian{
@@ -20461,20 +20496,21 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/window/boron_reinforced,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ZC" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass/civilian{
-	autoset_access = 0;
-	name = "Commissary"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/civilian{
+	autoset_access = 0;
+	name = "Sales Warehouse"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/commissary)
@@ -20607,7 +20643,9 @@
 /area/chapel/main)
 "ZY" = (
 /turf/simulated/wall/r_wall/hull,
-/area/crew_quarters/community_manager)
+/area/crew_quarters/community_manager{
+	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
+	})
 
 (1,1,1) = {"
 aa
@@ -29174,9 +29212,9 @@ aa
 aa
 NB
 NB
-NB
+lo
 xF
-pG
+Tf
 dp
 BD
 qA
@@ -29376,9 +29414,9 @@ aa
 NB
 NB
 NB
-xF
-xF
-Jg
+Nl
+ut
+ut
 ut
 eL
 mw
@@ -29579,9 +29617,9 @@ NB
 NB
 VJ
 Tf
-xF
-xN
-RW
+Jg
+RK
+YG
 MH
 tT
 Nx
@@ -29779,11 +29817,11 @@ NB
 NB
 NB
 Ah
-xF
-xF
+VJ
+Tf
 dJ
-YG
-RW
+Iu
+hE
 Oc
 uE
 Nx
@@ -29979,10 +30017,10 @@ aa
 aa
 NB
 NB
-Ni
-Nl
-Qd
-LS
+VJ
+Tf
+Tf
+Tf
 zI
 ns
 NG
@@ -30181,10 +30219,10 @@ aa
 aa
 NB
 NB
-xF
-xF
+VJ
+VJ
 uZ
-xF
+VJ
 SU
 Dw
 RW
@@ -30218,9 +30256,9 @@ LA
 XK
 XK
 XK
-Nt
-Nt
 IC
+Nt
+Md
 nJ
 qg
 qg
@@ -30422,7 +30460,7 @@ zM
 Oo
 Nt
 Nt
-IC
+Md
 Nt
 qg
 qg
@@ -31197,7 +31235,7 @@ mS
 pF
 zj
 pH
-ID
+jb
 Wb
 jb
 ur
@@ -32625,7 +32663,7 @@ CF
 CF
 My
 qu
-IE
+qu
 qu
 uC
 IF
@@ -36453,7 +36491,7 @@ dG
 rI
 ww
 cT
-yI
+wc
 Fx
 zd
 tM
@@ -37481,7 +37519,7 @@ vW
 yd
 yW
 vW
-IJ
+vW
 vW
 vW
 Dd
@@ -38262,7 +38300,7 @@ aa
 CS
 be
 TX
-zg
+Td
 TX
 wn
 nZ
@@ -39700,7 +39738,7 @@ cV
 uU
 fo
 YK
-IH
+YK
 gK
 TZ
 hL
@@ -44751,7 +44789,7 @@ vn
 Eh
 Mj
 uq
-II
+Mj
 XY
 WA
 ZW

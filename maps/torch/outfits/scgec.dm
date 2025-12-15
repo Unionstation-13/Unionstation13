@@ -240,20 +240,8 @@
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted,
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3,
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3,
-		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5,
-		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5,
-		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7,
-		/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7,
 		/obj/item/clothing/accessory/solgov/rank/ec/officer,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o3,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o3,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o5,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o5,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o6,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o6,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o8,
-		/obj/item/clothing/accessory/solgov/rank/ec/officer/o8
+		/obj/item/clothing/accessory/solgov/rank/ec/officer
 	)
 
 

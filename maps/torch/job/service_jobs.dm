@@ -87,6 +87,10 @@
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
+	alt_titles = list(
+		"B.I.O Commisioned Barista",
+		"B.I.O Commisioned Bartender"
+	)
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	supervisors = "UGN Food regulations and the Community Services Director"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook

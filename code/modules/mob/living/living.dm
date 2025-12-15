@@ -1,3 +1,5 @@
+/mob/living
+	var/accent_background = null
 /mob/living/Initialize(mapload)
 	. = ..()
 	if(stat == DEAD)

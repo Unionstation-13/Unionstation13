@@ -2297,6 +2297,7 @@
 #include "code\modules\mob\living\carbon\alien\diona\gestalt\gestalt_verbs.dm"
 #include "code\modules\mob\living\carbon\alien\diona\gestalt\gestalt_vote.dm"
 #include "code\modules\mob\living\carbon\alien\diona\gestalt\gestalt_vote_types.dm"
+#include "code\modules\mob\living\carbon\accent\autoacccent.dm"
 #include "code\modules\mob\living\carbon\brain\brain.dm"
 #include "code\modules\mob\living\carbon\brain\death.dm"
 #include "code\modules\mob\living\carbon\brain\life.dm"

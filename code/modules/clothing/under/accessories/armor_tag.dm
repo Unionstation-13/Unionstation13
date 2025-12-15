@@ -34,8 +34,8 @@
 	icon_state = "saaretag"
 
 /obj/item/clothing/accessory/armor_tag/sfp
-	name = "\improper SFP tags"
-	desc = "A set of high-visibility armor tags made of reflective materials. The pale blue rectangle is a hallmark of the Sol Federal Police."
+	name = "\improper PK tags"
+	desc = "A set of high-visibility armor tags made of reflective materials. The pale blue rectangle is a hallmark of the Peacekeeper Divison."
 	icon_state = "sfptag"
 
 

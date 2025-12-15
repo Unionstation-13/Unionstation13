@@ -342,10 +342,3 @@
 	name = "formal outfit"
 	accessories = list(/obj/item/clothing/accessory/blue_clip)
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
-
-/obj/item/clothing/under/solgov/utility/expeditionary/monkey
-	name = "adjusted expeditionary uniform"
-	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has silver trim. It was also mangled to fit a monkey. This better be worth the NJP you'll get for making it."
-	species_restricted = list(SPECIES_MONKEY)
-	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/onmob_under_monkey.dmi')
-	accessories = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey)

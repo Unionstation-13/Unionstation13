@@ -220,9 +220,8 @@
 		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/ec/o1)
+		/datum/mil_rank/civ/contractor
+		)
 	min_skill = list( // 6 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
 		SKILL_MEDICAL = SKILL_BASIC // 4 points
