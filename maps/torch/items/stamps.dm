@@ -11,7 +11,7 @@
 	icon_state = "stamp-xo"
 
 /obj/item/stamp/cos
-	name = "marhall's rubber stamp"
+	name = "marshal's rubber stamp"
 	icon_state = "stamp-cos"
 
 /obj/item/stamp/brig
