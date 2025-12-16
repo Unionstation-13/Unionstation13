@@ -2,7 +2,7 @@
 	title = "Second Lieutenant"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Marshall"
+	supervisors = "Marshal"
 	economic_power = 5
 	minimal_player_age = 7
 	ideal_character_age = 35
@@ -81,7 +81,7 @@
 	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "The Marshall and your reasoning"
+	supervisors = "The Marshal and your reasoning"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -129,7 +129,7 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Marshall, and your duty"
+	supervisors = "the Marshal, and your duty"
 	selection_color = "#601c1c"
 	department_flag = SEC
 	economic_power = 5

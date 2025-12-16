@@ -218,7 +218,7 @@
 	return "You are the Chief Engineer. You manage the Engineering Department. You are responsible for the Senior engineer, who is your right hand and (should be) an experienced, skilled engineer. Delegate to and listen to them. Manage your engineers, ensure vessel power stays on, breaches are patched and problems are fixed. Advise the CO on engineering matters. You are also responsible for the maintenance and control of any vessel synthetics. You are an experienced engineer with a wealth of theoretical knowledge. You should also know vessel regulations to a reasonable degree."
 
 /datum/job/hos
-	title = "Marshall"
+	title = "Marshal"
 	supervisors = "The Security Code of Conduct and your own instincts"
 	economic_power = 10
 	minimal_player_age = 14
