@@ -156,9 +156,9 @@ medals
 /*****
 patches
 *****/
-/obj/item/clothing/accessory/solgov/torch_patch
-	name = "\improper Torch mission patch"
-	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Torch Project."
+/obj/item/clothing/accessory/solgov/titen_patch
+	name = "\improper titen mission patch"
+	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Titen Project, and the overall Operation Beacon."
 	icon_state = "torchpatch"
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 	slot = ACCESSORY_SLOT_INSIGNIA
@@ -577,8 +577,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/engineering
-	name = "engineering insignia"
-	desc = "Insignia denoting assignment to the engineering department. These fit Expeditionary Corps uniforms."
+	name = "nitros engineering insignia"
+	desc = "Insignia denoting employment in Nitros Engineering. These fit the standard Titen Uniform."
 	color = "#ff7f00"
 
 /obj/item/clothing/accessory/solgov/department/engineering/service
