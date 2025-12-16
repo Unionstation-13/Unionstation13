@@ -227,11 +227,11 @@
 	)
 
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/fleet)
+		/datum/mil_branch/rocknall = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/ec)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/rocknall/e3,
+		/datum/mil_rank/rocknall/e4,
+		/datum/mil_rank/rocknall/e5,
 		)
 	min_skill = list( // 6 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points

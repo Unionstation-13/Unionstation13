@@ -73,7 +73,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(/datum/mil_branch/rocknall)
 	allowed_ranks = list(
-		/datum/mil_rank/rocknall/e3, = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
+		/datum/mil_rank/rocknall/e3,
 		/datum/mil_rank/rocknall/e4,
 		/datum/mil_rank/rocknall/e5,
 		/datum/mil_rank/rocknall/e6)
@@ -108,7 +108,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research
 	allowed_branches = list(/datum/mil_branch/rocknall)
 	allowed_ranks = list(
-		/datum/mil_rank/rocknall/e1, = /singleton/hierarchy/outfit/job/torch/passenger/research/assist
+		/datum/mil_rank/rocknall/e1,
 		/datum/mil_rank/rocknall/e2)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
