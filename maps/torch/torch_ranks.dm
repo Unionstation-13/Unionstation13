@@ -393,7 +393,7 @@
 
 // Nitros Engineering Ranks
 /datum/mil_branch/nitros/e1
-	name = "Engineer Recruit
+	name = "Engineer Recruit"
 	name_short = "ER"
 	accessory = list()
 	sort_order = 10
