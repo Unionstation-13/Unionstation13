@@ -11,7 +11,7 @@
 	icon_state = "stamp-xo"
 
 /obj/item/stamp/cos
-	name = "chief of security's rubber stamp"
+	name = "marshal's rubber stamp"
 	icon_state = "stamp-cos"
 
 /obj/item/stamp/brig
@@ -27,7 +27,7 @@
 	icon_state = "stamp-corp"
 
 /obj/item/stamp/deckoff
-	name = "deck chief's rubber stamp"
+	name = "supply manager's rubber stamp"
 	icon_state = "stamp-deckchief"
 
 /obj/item/stamp/supply
@@ -35,7 +35,7 @@
 	icon_state = "stamp-cargo"
 
 /obj/item/stamp/path
-	name = "pathfinder's rubber stamp"
+	name = "exploration commander's rubber stamp"
 	icon_state = "stamp-pf"
 
 /obj/item/stamp/rep
