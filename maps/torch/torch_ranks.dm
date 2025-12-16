@@ -16,10 +16,10 @@
 		/datum/mil_branch/iccgn,
 		// /datum/mil_branch/scga,
 		/datum/mil_branch/auf,
-		/datum/mil_branch/nitros
-		/datum/mil_branch/rocknall
-		/datum/mil_branch/bio
-		/datum/mil_branch/abc
+		/datum/mil_branch/nitros,
+		/datum/mil_branch/rocknall,
+		/datum/mil_branch/bio,
+		/datum/mil_branch/abc,
 		/datum/mil_branch/cooran
 	)
 
@@ -32,11 +32,11 @@
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
 		// /datum/mil_branch/scga,
-		/datum/mil_branch/auf
-		/datum/mil_branch/nitros
-		/datum/mil_branch/rocknall
-		/datum/mil_branch/bio
-		/datum/mil_branch/abc
+		/datum/mil_branch/auf,
+		/datum/mil_branch/nitros,
+		/datum/mil_branch/rocknall,
+		/datum/mil_branch/bio,
+		/datum/mil_branch/abc,
 		/datum/mil_branch/cooran
 	)
 
