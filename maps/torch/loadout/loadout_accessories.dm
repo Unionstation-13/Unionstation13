@@ -22,9 +22,9 @@
 		/datum/mil_branch/expeditionary_corps
 	)
 
-/datum/gear/accessory/torch_patch
+/datum/gear/accessory/titen_patch
 	display_name = "Titen mission patch"
-	path = /obj/item/clothing/accessory/solgov/torch_patch
+	path = /obj/item/clothing/accessory/solgov/titen_patch
 	description = "A shoulder patch representing the UGN Titen and its mission. Given to all the oddjobs pulled from various branches to work on the Titen."
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
