@@ -195,7 +195,7 @@
 
 //Nitros Uniforms
 
-/obj/item/clothing/under/nitros
+/obj/item/clothing/under/solgov/nitros
 	name = "nitros uniform"
 	desc = "A sleek black uniform with orange accents."
 	icon_state = "ec_uniform"
