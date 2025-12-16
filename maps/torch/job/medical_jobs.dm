@@ -103,8 +103,7 @@
 		/datum/mil_branch/rocknall = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor
 	)
 	allowed_ranks = list(/datum/mil_rank/rocknall/e2,
-	/datum/mil_rank/rocknall/e3,
-	/datum/mil_rank/rocknall/e4,
+	/datum/mil_rank/rocknall/e3
 	)
 	skill_points = 28
 	min_skill = list( // 9 points
