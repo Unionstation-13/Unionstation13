@@ -3239,7 +3239,9 @@
 	pixel_y = 24
 	},
 /obj/floor_decal/corner/mauve/mono,
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/explorer{
+	name = "Field Scientist's locker"
+	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,
@@ -3325,7 +3327,9 @@
 "hO" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/explorer{
+	name = "Field Scientist's locker"
+	},
 /obj/item/material/hatchet/machete,
 /obj/machinery/light{
 	dir = 8
@@ -4424,7 +4428,9 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/explorer{
+	name = "Field Scientist's locker"
+	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,
@@ -4437,7 +4443,9 @@
 /area/quartermaster/exploration)
 "kj" = (
 /obj/floor_decal/corner/mauve/mono,
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/explorer{
+	name = "Field Scientist's locker"
+	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,

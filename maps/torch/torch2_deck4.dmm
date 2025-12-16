@@ -1794,7 +1794,9 @@
 "gc" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/pathfinder,
+/obj/structure/closet/secure_closet/pathfinder{
+	name = "exploration commander's locker"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
 "gd" = (
@@ -12236,7 +12238,9 @@
 /area/hallway/primary/fourthdeck/aft)
 "Qe" = (
 /obj/floor_decal/corner/brown/mono,
-/obj/structure/closet/secure_closet/decktech,
+/obj/structure/closet/secure_closet/decktech{
+	name = "Supply Agent's locker"
+	},
 /obj/item/material/coin/silver{
 	pixel_x = -3;
 	pixel_y = 3
@@ -13650,7 +13654,9 @@
 	dir = 9
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/deckofficer,
+/obj/structure/closet/secure_closet/deckofficer{
+	name = "Supply Manager's locker"
+	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
@@ -14698,7 +14704,7 @@
 /area/command/captainmess)
 "WW" = (
 /obj/machinery/door/airlock/mining{
-	name = "Deck Chief"
+	name = "Supply Manager"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{

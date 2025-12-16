@@ -5309,7 +5309,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mI" = (
-/obj/structure/closet/secure_closet/cos,
+/obj/structure/closet/secure_closet/cos{
+	name = "Marshal's locker"
+	},
 /obj/floor_decal/industrial/outline/grey,
 /obj/item/book/manual/sol_sop,
 /obj/machinery/light{
@@ -6585,7 +6587,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	id_tag = "cosdoor";
-	name = "Marshall";
+	name = "Marshal";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
