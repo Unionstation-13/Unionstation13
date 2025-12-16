@@ -392,122 +392,122 @@
 
 
 // Nitros Engineering Ranks
-/datum/mil_branch/nitros/e1
+/datum/mil_rank/nitros/e1
 	name = "Engineer Recruit"
 	name_short = "ER"
 	accessory = list()
 	sort_order = 10
 
-/datum/mil_branch/nitros/e2
+/datum/mil_rank/nitros/e2
 	name = "Apprentice Engineer"
 	name_short = "AE"
 	accessory = list()
 	sort_order = 20
 
-/datum/mil_branch/nitros/e3
+/datum/mil_rank/nitros/e3
 	name = "Engineer"
 	name_short = "ENG"
 	accessory = list()
 	sort_order = 30
 
-/datum/mil_branch/nitros/e4
+/datum/mil_rank/nitros/e4
 	name = "Specialist Engineer"
 	name_short = "SPE"
 	accessory = list()
 	sort_order = 40
 
-/datum/mil_branch/nitros/e5
+/datum/mil_rank/nitros/e5
 	name = "Senior Engineer"
 	name_short = "SEG"
 	accessory = list()
 	sort_order = 50
 
-/datum/mil_branch/nitros/e6
+/datum/mil_rank/nitros/e6
 	name = "Master Engineer"
 	name_short = "MEG"
 	accessory = list()
 	sort_order = 60
 
-/datum/mil_branch/nitros/o1
+/datum/mil_rank/nitros/o1
 	name = "Junior Foreman"
 	name_short = "JF"
 	accessory = list()
 	sort_order = 110
 
-/datum/mil_branch/nitros/o2
+/datum/mil_rank/nitros/o2
 	name = "Foreman"
 	name_short = "FM"
 	accessory = list()
 	sort_order = 120
 
-/datum/mil_branch/nitros/o3
+/datum/mil_rank/nitros/o3
 	name = "Senior Foreman"
 	name_short = "SF"
 	accessory = list()
 	sort_order = 130
 
-/datum/mil_branch/nitros/o4
+/datum/mil_rank/nitros/o4
 	name = "Master Foreman"
 	name_short = "MF"
 	accessory = list()
 	sort_order = 140
 
 // United Rocknall Corporation Ranks
-/datum/mil_branch/rocknall/e1
+/datum/mil_rank/rocknall/e1
 	name = "Intern"
 	name_short = "INT"
 	accessory = list()
 	sort_order = 10
 
-/datum/mil_branch/rocknall/e2
+/datum/mil_rank/rocknall/e2
 	name = "Junior Associate"
 	name_short = "JA"
 	accessory = list()
 	sort_order = 20
 
-/datum/mil_branch/rocknall/e3
+/datum/mil_rank/rocknall/e3
 	name = "Associate"
 	name_short = "AE"
 	accessory = list()
 	sort_order = 30
 
-/datum/mil_branch/rocknall/e4
+/datum/mil_rank/rocknall/e4
 	name = "Senior Associate"
 	name_short = "SE"
 	accessory = list()
 	sort_order = 40
 
-/datum/mil_branch/rocknall/e5
+/datum/mil_rank/rocknall/e5
 	name = "Junior Team Specialist"
 	name_short = "JTS"
 	accessory = list()
 	sort_order = 50
 
-/datum/mil_branch/rocknall/e6
+/datum/mil_rank/rocknall/e6
 	name = "Team Specialist"
 	name_short = "TS"
 	accessory = list()
 	sort_order = 60
 
-/datum/mil_branch/rocknall/o1
+/datum/mil_rank/rocknall/o1
 	name = "Junior Supervisor"
 	name_short = "JSV"
 	accessory = list()
 	sort_order = 110
 
-/datum/mil_branch/rocknall/o2
+/datum/mil_rank/rocknall/o2
 	name = "Supervisor"
 	name_short = "SV"
 	accessory = list()
 	sort_order = 120
 
-/datum/mil_branch/rocknall/o3
+/datum/mil_rank/rocknall/o3
 	name = "Junior Administrator"
 	name_short = "JAM"
 	accessory = list()
 	sort_order = 130
 
-/datum/mil_branch/rocknall/o4
+/datum/mil_rank/rocknall/o4
 	name = "Administrator"
 	name_short = "ADM"
 	accessory = list()
