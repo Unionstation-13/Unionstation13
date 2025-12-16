@@ -59,7 +59,7 @@
 		/singleton/species/nabber       = list(/datum/mil_branch/civilian),
 		/singleton/species/adherent     = list(/datum/mil_branch/civilian),
 		/singleton/species/vox          = list(/datum/mil_branch/alien),
-		/singleton/species/human      = list(/datum/mil_branch/nitros),(/datum/mil_branch/rocknall),( /datum/mil_branch/bio),( /datum/mil_branch/abc),( /datum/mil_branch/cooran)
+		/singleton/species/human      = list(/datum/mil_branch/nitros, /datum/mil_branch/rocknall, /datum/mil_branch/bio, /datum/mil_branch/abc, /datum/mil_branch/cooran)
 	)
 
 	species_to_rank_blacklist = list(
