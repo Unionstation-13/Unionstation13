@@ -4,16 +4,18 @@
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The United Rocknall Corporate representative"
+	supervisors = "The United Rocknall Corporate representative, and the Commanding Officer"
 	selection_color = "#68099e"
 	minimal_player_age = 1
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(/datum/mil_branch/rocknall)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o10
+		/datum/mil_rank/rocknall/o1,
+		/datum/mil_rank/rocknall/o2,
+		/datum/mil_rank/rocknall/o3
 	)
 	skill_points = 28
 	min_skill = list( // 9 points
@@ -97,8 +99,13 @@
 		"Field Researcher"
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
-	allowed_ranks = list(/datum/mil_rank/ec/e3)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/e2,
+	/datum/mil_rank/rocknall/e3,
+	/datum/mil_rank/rocknall/e4,
+	/datum/mil_rank/rocknall/e5,
+	/datum/mil_rank/rocknall/e6
+	)
 
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC, // 1 point

@@ -14,8 +14,9 @@
 	alt_titles = list(
 		"Server Manager")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/o1,
+	/datum/mil_rank/rocknall/o2)
 
 	access = list(
 		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
@@ -70,10 +71,12 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/scientist
-	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_branches = list(/datum/mil_branch/rocknall)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
-		)
+		/datum/mil_rank/rocknall/e3, = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
+		/datum/mil_rank/rocknall/e4,
+		/datum/mil_rank/rocknall/e5,
+		/datum/mil_rank/rocknall/e6)
 
 	access = list(
 		access_tox, access_tox_storage, access_research, access_petrov, access_petrov_helm,
@@ -103,10 +106,10 @@
 		"Field Assistant")
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research
-	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_branches = list(/datum/mil_branch/rocknall)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/assist
-	)
+		/datum/mil_rank/rocknall/e1, = /singleton/hierarchy/outfit/job/torch/passenger/research/assist
+		/datum/mil_rank/rocknall/e2)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)

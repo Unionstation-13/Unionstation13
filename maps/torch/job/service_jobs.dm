@@ -1,5 +1,5 @@
 /datum/job/chief_steward
-	title = "Community Services Director"
+	title = "Community Services Manager"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
@@ -10,8 +10,10 @@
 	minimal_player_age = 7
 	supervisors = "The UGN food safety regulations and recreational advisory"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/bio)
+	allowed_ranks = list(/datum/mil_rank/bio/o1,
+	/datum/mil_rank/bio/o2
+	)
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
 		SKILL_COOKING = SKILL_TRAINED, // 2 points
@@ -68,8 +70,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/bio)
+	allowed_ranks = list(/datum/mil_rank/bio/e2,
+	/datum/mil_rank/bio/e3,
+	/datum/mil_rank/bio/e4
+	)
 	min_skill = list( // 1 point
 		SKILL_HAULING = SKILL_BASIC // 1 point
 	)
@@ -94,8 +99,11 @@
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	supervisors = "UGN Food regulations and the Community Services Director"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/bio)
+	allowed_ranks = list(/datum/mil_rank/bio/e2,
+	/datum/mil_rank/bio/e3,
+	/datum/mil_rank/bio/e4
+	)
 	min_skill = list( // 7 points
 		SKILL_BOTANY = SKILL_BASIC, // 1 point
 		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
@@ -122,10 +130,10 @@
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
-		/datum/mil_branch/civilian
+		/datum/mil_branch/bio
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/bio/e1
 	)
 
 	access = list(
