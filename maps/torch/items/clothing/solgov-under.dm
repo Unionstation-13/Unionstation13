@@ -193,6 +193,15 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 
+//Nitros Uniforms
+
+/obj/item/clothing/under/nitros
+	name = "nitros uniform"
+	desc = "A sleek black uniform with orange accents."
+	icon_state = "ec_uniform"
+	worn_state = "ec_uniform"
+	siemens_coefficient = 0.9
+
 //Service
 
 /obj/item/clothing/under/solgov/service
