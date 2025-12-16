@@ -141,8 +141,7 @@
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(/datum/mil_branch/rocknall)
-	allowed_ranks = list(/datum/mil_rank/rocknall/e1,
-	/datum/mil_rank/rocknall/e2
+	allowed_ranks = list(/datum/mil_rank/rocknall/e1
 	)
 
 	skill_points = 10
