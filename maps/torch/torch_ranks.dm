@@ -58,7 +58,12 @@
 		/singleton/species/diona        = list(/datum/mil_branch/civilian),
 		/singleton/species/nabber       = list(/datum/mil_branch/civilian),
 		/singleton/species/adherent     = list(/datum/mil_branch/civilian),
-		/singleton/species/vox          = list(/datum/mil_branch/alien)
+		/singleton/species/vox          = list(/datum/mil_branch/alien),
+		/singleton/species/human      = list(/datum/mil_branch/nitros),
+		/singleton/species/human   = list(/datum/mil_branch/rocknall),
+		/singleton/species/human  = list(/datum/mil_branch/bio),
+		/singleton/species/human = list(/datum/mil_branch/abc),
+		/singleton/species/human = list(/datum/mil_branch/cooran)
 	)
 
 	species_to_rank_blacklist = list(
