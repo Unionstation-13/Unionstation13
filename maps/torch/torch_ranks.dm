@@ -201,12 +201,37 @@
 		/datum/mil_rank/nitros/o4
 	)
 
+	spawn_rank_types = list(
+		/datum/mil_rank/nitros/e1,
+		/datum/mil_rank/nitros/e2,
+		/datum/mil_rank/nitros/e3,
+		/datum/mil_rank/nitros/e4,
+		/datum/mil_rank/nitros/e5,
+		/datum/mil_rank/nitros/e6,
+		/datum/mil_rank/nitros/o1,
+		/datum/mil_rank/nitros/o2,
+		/datum/mil_rank/nitros/o3,
+		/datum/mil_rank/nitros/o4
+	)
+
 /datum/mil_branch/rocknall
 
 	name = "United Rocknall Employee"
 	name_short = "URC"
 	email_domain = "rocknall.corp"
 	rank_types = list(
+		/datum/mil_rank/rocknall/e1,
+		/datum/mil_rank/rocknall/e2,
+		/datum/mil_rank/rocknall/e3,
+		/datum/mil_rank/rocknall/e4,
+		/datum/mil_rank/rocknall/e5,
+		/datum/mil_rank/rocknall/e6,
+		/datum/mil_rank/rocknall/o1,
+		/datum/mil_rank/rocknall/o2,
+		/datum/mil_rank/rocknall/o3,
+		/datum/mil_rank/rocknall/o4
+	)
+	spawn_rank_types = list(
 		/datum/mil_rank/rocknall/e1,
 		/datum/mil_rank/rocknall/e2,
 		/datum/mil_rank/rocknall/e3,
@@ -233,6 +258,15 @@
 		/datum/mil_rank/bio/o2
 	)
 
+	spawn_rank_types = list(
+		/datum/mil_rank/bio/e1,
+		/datum/mil_rank/bio/e2,
+		/datum/mil_rank/bio/e3,
+		/datum/mil_rank/bio/e4,
+		/datum/mil_rank/bio/o1,
+		/datum/mil_rank/bio/o2
+	)
+
 /datum/mil_branch/abc
 
 	name = "ABCDEFG Employee"
@@ -249,12 +283,33 @@
 		/datum/mil_rank/abc/o3
 	)
 
+	spawn_rank_types = list(
+		/datum/mil_rank/abc/e1,
+		/datum/mil_rank/abc/e2,
+		/datum/mil_rank/abc/e3,
+		/datum/mil_rank/abc/e4,
+		/datum/mil_rank/abc/e5,
+		/datum/mil_rank/abc/o1,
+		/datum/mil_rank/abc/o2,
+		/datum/mil_rank/abc/o3
+	)
+
 /datum/mil_branch/cooran
 
 	name = "Cooran Supply Agent"
 	name_short = "COR"
 	email_domain = "cooran.supply.corp"
 	rank_types = list(
+		/datum/mil_rank/cooran/e1,
+		/datum/mil_rank/cooran/e2,
+		/datum/mil_rank/cooran/e3,
+		/datum/mil_rank/cooran/e4,
+		/datum/mil_rank/cooran/o1,
+		/datum/mil_rank/cooran/o2,
+		/datum/mil_rank/cooran/o3
+	)
+
+	spawn_rank_types = list(
 		/datum/mil_rank/cooran/e1,
 		/datum/mil_rank/cooran/e2,
 		/datum/mil_rank/cooran/e3,
