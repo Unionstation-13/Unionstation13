@@ -512,3 +512,138 @@
 	name_short = "ADM"
 	accessory = list()
 	sort_order = 140
+
+// BioTech Services Ranks
+/datum/mil_rank/bio/e1
+	name = "Trainee"
+	name_short = "TRN"
+	accessory = list()
+	sort_order = 10
+
+/datum/mil_rank/bio/e2
+	name = "Junior Attendant"
+	name_short = "JAT"
+	accessory = list()
+	sort_order = 20
+
+/datum/mil_rank/bio/e3
+	name = "Attendant"
+	name_short = "AT"
+	accessory = list()
+	sort_order = 30
+
+/datum/mil_rank/bio/e4
+	name = "Senior Attendant"
+	name_short = "SAT"
+	accessory = list()
+	sort_order = 40
+
+/datum/mil_rank/bio/o1
+	name = "Junior Manager"
+	name_short = "JM"
+	accessory = list()
+	sort_order = 110
+
+/datum/mil_rank/bio/o2
+	name = "Manager"
+	name_short = "MGR"
+	accessory = list()
+	sort_order = 120
+
+// ABCDEFG Ranks
+/datum/mil_rank/abc/e1
+	name = "Junior Technician"
+	name_short = "JTEC"
+	accessory = list()
+	sort_order = 10
+
+/datum/mil_rank/abc/e2
+	name = "Technician"
+	name_short = "TEC"
+	accessory = list()
+	sort_order = 20
+
+/datum/mil_rank/abc/e3
+	name = "Senior Technician"
+	name_short = "STEC"
+	accessory = list()
+	sort_order = 30
+
+/datum/mil_rank/abc/e4
+	name = "Specialist"
+	name_short = "SPC"
+	accessory = list()
+	sort_order = 40
+
+/datum/mil_rank/abc/e5
+	name = "Senior Specialist"
+	name_short = "SSPC"
+	accessory = list()
+	sort_order = 50
+
+/datum/mil_rank/abc/o1
+	name = "Analyst"
+	name_short = "ALS"
+	accessory = list()
+	sort_order = 110
+
+/datum/mil_rank/abc/o2
+	name = "Expeditionary Director"
+	name_short = "EDR"
+	accessory = list()
+	sort_order = 120
+
+/datum/mil_rank/abc/o3
+	name = "Regional Director"
+	name_short = "RDR"
+	accessory = list()
+	sort_order = 130
+
+// Cooran Supply Ranks
+/datum/mil_rank/cooran/e1
+	name = "Junior Agent"
+	name_short = "JAGT"
+	accessory = list()
+	sort_order = 10
+
+/datum/mil_rank/cooran/e2
+	name = "Agent"
+	name_short = "AGT"
+	accessory = list()
+	sort_order = 20
+
+/datum/mil_rank/cooran/e3
+	name = "Senior Agent"
+	name_short = "SAGT"
+	accessory = list()
+	sort_order = 30
+
+/datum/mil_rank/cooran/e4
+	name = "Chief Agent"
+	name_short = "CAGT"
+	accessory = list()
+	sort_order = 40
+
+/datum/mil_rank/cooran/o1
+	name = "Junior Supervisor"
+	name_short = "JSV"
+	accessory = list()
+	sort_order = 110
+
+/datum/mil_rank/cooran/o2
+	name = "Supervisor"
+	name_short = "SV"
+	accessory = list()
+	sort_order = 120
+
+/datum/mil_rank/cooran/o3
+	name = "Deck Chief"
+	name_short = "DCH"
+	accessory = list()
+	sort_order = 130
+
+/datum/mil_rank/rocknall/o4
+	name = "Loadmaster"
+	name_short = "LDM"
+	accessory = list()
+	sort_order = 140
