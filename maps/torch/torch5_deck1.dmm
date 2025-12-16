@@ -787,7 +787,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/medical{
-	name = "Chemistry"
+	name = "Operating Theater 1"
 	},
 /obj/machinery/holosign/surgery{
 	dir = 4;
@@ -5641,9 +5641,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Medical Maitnence"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/firstdeck/aftstarboard)
@@ -5801,8 +5799,8 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/laboratory)
 "apP" = (
-/obj/machinery/door/airlock/medical{
-	name = "Staff Room"
+/obj/machinery/door/airlock/maintenance{
+	name = "Medical Maitnence"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/medical/medpaperworkoffice)
@@ -13516,8 +13514,9 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d1port)
 "bdL" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Deep Storage"
+/obj/machinery/door/airlock/medical{
+	id_tag = "examdoor";
+	name = "Medical Locker Room"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -14912,9 +14911,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/medical{
-	id_tag = "examdoor";
-	name = "Medical Locker Room"
+/obj/machinery/door/airlock/glass/medical{
+	name = "Operating Theater 2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16616,7 +16614,7 @@
 /area/medical/recovery2)
 "eXF" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Safe Room"
+	name = "Medical Maitnence"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -20962,8 +20960,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/maintenance{
-	name = "Safe Room"
+/obj/machinery/door/airlock/medical{
+	name = "Medical Storeroom"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
@@ -22833,7 +22831,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
 	id_tag = "exam_room";
-	name = "Senior Medical Officer's Office"
+	name = "Exam Room"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
@@ -26994,7 +26992,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/medical{
-	name = "Chemistry Synthesis"
+	name = "Chemistry"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
@@ -29830,8 +29828,7 @@
 /area/assembly/chargebay)
 "uSI" = (
 /obj/machinery/door/airlock/medical{
-	id_tag = "examdoor";
-	name = "Medical Locker Room"
+	name = "Staff Room"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -30070,7 +30067,7 @@
 /area/crew_quarters/safe_room/medical)
 "vfK" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Safe Room"
+	name = "Medical Maitnence"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
