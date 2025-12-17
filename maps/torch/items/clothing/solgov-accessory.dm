@@ -577,7 +577,7 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/engineering
-	name = "nitros engineering insignia"
+	name = "Nitros Engineering insignia"
 	desc = "Insignia denoting employment in Nitros Engineering. These fit the standard Titen Uniform."
 	color = "#ff7f00"
 
@@ -607,8 +607,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/medical
-	name = "medical insignia"
-	desc = "Insignia denoting assignment to the medical department. These fit Expeditionary Corps uniforms."
+	name = "United Rocknall Medical insignia"
+	desc = "Insignia denoting employment in the United Rocknall Corporation, specifically the medical department. These fit the standard Titen uniforms."
 	color = "#4c9ce4"
 
 /obj/item/clothing/accessory/solgov/department/medical/service
@@ -623,8 +623,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/supply
-	name = "supply insignia"
-	desc = "Insignia denoting assignment to the supply department. These fit Expeditionary Corps uniforms."
+	name = "Cooran Supply insignia"
+	desc = "Insignia denoting employment at Cooran Supply. These fit the standard Titen uniforms."
 	color = "#bb9042"
 
 /obj/item/clothing/accessory/solgov/department/supply/service
@@ -638,8 +638,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/service
-	name = "service insignia"
-	desc = "Insignia denoting assignment to the service department. These fit Expeditionary Corps uniforms."
+	name = "Biotech Services insignia"
+	desc = "Insignia denoting assignment to Biotech Services. These fit the standard uniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -653,8 +653,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/exploration
-	name = "exploration insignia"
-	desc = "Insignia denoting assignment to the exploration department. These fit Expeditionary Corps uniforms."
+	name = "United Rocknall Exploration and Ecology insignia"
+	desc = "Insignia denoting employment at the United Rocknall Corporation, specifically the Exploration and Ecology department. These fit the standard Titen uniforms."
 	color = "#68099e"
 
 /obj/item/clothing/accessory/solgov/department/exploration/service
@@ -699,7 +699,7 @@ ranks - ec
 	icon_state = "ecrank_e3"
 
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o10
-	name = "ranks (O-10 expidition commander)"
+	name = "ranks (O-10 expedition commander)"
 	desc = "Insignia denoting the rank of Expedition Commander."
 	icon_state = "ecrank_o10"
 

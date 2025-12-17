@@ -48,7 +48,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/supply/tech
-	allowed_branches = list(/datum/mil_branch/cooran = /singleton/hierarchy/outfit/job/torch/crew/supply/contractor)
+	allowed_branches = list(/datum/mil_branch/cooran)
 	allowed_ranks = list(/datum/mil_rank/cooran/e1,
 	/datum/mil_rank/cooran/e2,
 	/datum/mil_rank/cooran/e3,

@@ -69,7 +69,7 @@
 	supervisors = "Containment protocols for biohazard breaches, otherwise, the Community Services Director"
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor/ec
 	allowed_branches = list(/datum/mil_branch/bio)
 	allowed_ranks = list(/datum/mil_rank/bio/e2,
 	/datum/mil_rank/bio/e3,
@@ -98,7 +98,7 @@
 	)
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	supervisors = "UGN Food regulations and the Community Services Director"
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook/ec
 	allowed_branches = list(/datum/mil_branch/bio)
 	allowed_ranks = list(/datum/mil_rank/bio/e2,
 	/datum/mil_rank/bio/e3,
