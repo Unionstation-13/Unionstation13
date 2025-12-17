@@ -693,6 +693,7 @@ ranks - ec
 	desc = "Insignia denoting rank of some kind. These appear blank."
 	icon_state = "ecrank_e1"
 
+
 /obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3
 	name = "ranks (E-3 explorer)"
 	desc = "Insignia denoting the rank of Explorer."
@@ -702,6 +703,17 @@ ranks - ec
 	name = "ranks (O-10 expedition commander)"
 	desc = "Insignia denoting the rank of Expedition Commander."
 	icon_state = "ecrank_o10"
+
+/*********
+ranks - nitros
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e1
+	name = "ranks (E-1 engineer recruit)"
+	desc = "Insignia denoting the rank of Engineer Recruit."
+	icon_state = "ecrank_e1"
+
+
+
 
 /************
 ranks - fleet

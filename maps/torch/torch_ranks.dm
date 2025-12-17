@@ -450,7 +450,7 @@
 /datum/mil_rank/nitros/e1
 	name = "Engineer Recruit"
 	name_short = "ER"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e1)
 	sort_order = 10
 
 /datum/mil_rank/nitros/e2
