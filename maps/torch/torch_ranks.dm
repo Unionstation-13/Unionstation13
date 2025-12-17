@@ -306,7 +306,8 @@
 		/datum/mil_rank/cooran/e4,
 		/datum/mil_rank/cooran/o1,
 		/datum/mil_rank/cooran/o2,
-		/datum/mil_rank/cooran/o3
+		/datum/mil_rank/cooran/o3,
+		/datum/mil_rank/cooran/o4
 	)
 
 	spawn_rank_types = list(
@@ -316,7 +317,8 @@
 		/datum/mil_rank/cooran/e4,
 		/datum/mil_rank/cooran/o1,
 		/datum/mil_rank/cooran/o2,
-		/datum/mil_rank/cooran/o3
+		/datum/mil_rank/cooran/o3,
+		/datum/mil_rank/cooran/o4
 	)
 //This variable returns decimal values for alt-ranks, but isn't player facing.
 /datum/mil_rank/grade()

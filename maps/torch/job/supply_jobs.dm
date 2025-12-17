@@ -13,7 +13,8 @@
 	allowed_branches = list(/datum/mil_branch/cooran)
 	allowed_ranks = list(/datum/mil_rank/cooran/o1,
 	/datum/mil_rank/cooran/o2,
-	/datum/mil_rank/cooran/o3
+	/datum/mil_rank/cooran/o3,
+	/datum/mil_rank/cooran/o4
 	)
 	skill_points = 24
 	min_skill = list( // 9 points
