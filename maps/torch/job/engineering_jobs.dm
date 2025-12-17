@@ -14,7 +14,7 @@
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/nitros = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/nitros
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/nitros/e3,
@@ -67,7 +67,7 @@
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/nitros = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/nitros
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/nitros/e1,
