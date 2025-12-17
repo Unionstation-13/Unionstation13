@@ -455,250 +455,250 @@
 
 /datum/mil_rank/nitros/e2
 	name = "Apprentice Engineer"
-	name_short = "AE"
-	accessory = list()
+	name_short = "AENG"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e2)
 	sort_order = 20
 
 /datum/mil_rank/nitros/e3
 	name = "Engineer"
 	name_short = "ENG"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e3)
 	sort_order = 30
 
 /datum/mil_rank/nitros/e4
 	name = "Specialist Engineer"
-	name_short = "SPE"
-	accessory = list()
+	name_short = "SPENG"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e4)
 	sort_order = 40
 
 /datum/mil_rank/nitros/e5
 	name = "Senior Engineer"
-	name_short = "SEG"
-	accessory = list()
+	name_short = "SENG"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e5)
 	sort_order = 50
 
 /datum/mil_rank/nitros/e6
 	name = "Master Engineer"
-	name_short = "MEG"
-	accessory = list()
+	name_short = "MENG"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/e6)
 	sort_order = 60
 
 /datum/mil_rank/nitros/o1
 	name = "Junior Foreman"
-	name_short = "JF"
-	accessory = list()
+	name_short = "JFM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/o1)
 	sort_order = 110
 
 /datum/mil_rank/nitros/o2
 	name = "Foreman"
 	name_short = "FM"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/o2)
 	sort_order = 120
 
 /datum/mil_rank/nitros/o3
 	name = "Senior Foreman"
-	name_short = "SF"
-	accessory = list()
+	name_short = "SFM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/o3)
 	sort_order = 130
 
 /datum/mil_rank/nitros/o4
 	name = "Master Foreman"
-	name_short = "MF"
-	accessory = list()
+	name_short = "MFM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/nitros/o4)
 	sort_order = 140
 
 // United Rocknall Corporation Ranks
 /datum/mil_rank/rocknall/e1
 	name = "Intern"
 	name_short = "INT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e1)
 	sort_order = 10
 
 /datum/mil_rank/rocknall/e2
 	name = "Junior Associate"
 	name_short = "JA"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e2)
 	sort_order = 20
 
 /datum/mil_rank/rocknall/e3
 	name = "Associate"
 	name_short = "AE"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e3)
 	sort_order = 30
 
 /datum/mil_rank/rocknall/e4
 	name = "Senior Associate"
 	name_short = "SE"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e4)
 	sort_order = 40
 
 /datum/mil_rank/rocknall/e5
 	name = "Junior Team Specialist"
 	name_short = "JTS"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e5)
 	sort_order = 50
 
 /datum/mil_rank/rocknall/e6
 	name = "Team Specialist"
 	name_short = "TS"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e6)
 	sort_order = 60
 
 /datum/mil_rank/rocknall/o1
 	name = "Junior Supervisor"
 	name_short = "JSV"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o1)
 	sort_order = 110
 
 /datum/mil_rank/rocknall/o2
 	name = "Supervisor"
 	name_short = "SV"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o2)
 	sort_order = 120
 
 /datum/mil_rank/rocknall/o3
 	name = "Junior Administrator"
-	name_short = "JAM"
-	accessory = list()
+	name_short = "JADM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o3)
 	sort_order = 130
 
 /datum/mil_rank/rocknall/o4
 	name = "Administrator"
 	name_short = "ADM"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o4)
 	sort_order = 140
 
-// BioTech Services Ranks
+// Biotech Services Ranks
 /datum/mil_rank/bio/e1
 	name = "Trainee"
 	name_short = "TRN"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/e1)
 	sort_order = 10
 
 /datum/mil_rank/bio/e2
 	name = "Junior Attendant"
 	name_short = "JAT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/e2)
 	sort_order = 20
 
 /datum/mil_rank/bio/e3
 	name = "Attendant"
 	name_short = "AT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/e3)
 	sort_order = 30
 
 /datum/mil_rank/bio/e4
 	name = "Senior Attendant"
 	name_short = "SAT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/e4)
 	sort_order = 40
 
 /datum/mil_rank/bio/o1
 	name = "Junior Manager"
 	name_short = "JM"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/o1)
 	sort_order = 110
 
 /datum/mil_rank/bio/o2
 	name = "Manager"
 	name_short = "MGR"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/o2)
 	sort_order = 120
 
 // ABCDEFG Ranks
 /datum/mil_rank/abc/e1
 	name = "Junior Technician"
 	name_short = "JTEC"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/e1)
 	sort_order = 10
 
 /datum/mil_rank/abc/e2
 	name = "Technician"
 	name_short = "TEC"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/e2)
 	sort_order = 20
 
 /datum/mil_rank/abc/e3
 	name = "Senior Technician"
 	name_short = "STEC"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/e3)
 	sort_order = 30
 
 /datum/mil_rank/abc/e4
 	name = "Specialist"
 	name_short = "SPC"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/e4)
 	sort_order = 40
 
 /datum/mil_rank/abc/e5
 	name = "Senior Specialist"
 	name_short = "SSPC"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/e5)
 	sort_order = 50
 
 /datum/mil_rank/abc/o1
 	name = "Analyst"
 	name_short = "ALS"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/o1)
 	sort_order = 110
 
 /datum/mil_rank/abc/o2
 	name = "Expeditionary Director"
 	name_short = "EDR"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/o2)
 	sort_order = 120
 
 /datum/mil_rank/abc/o3
 	name = "Regional Director"
 	name_short = "RDR"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/abc/o3)
 	sort_order = 130
 
 // Cooran Supply Ranks
 /datum/mil_rank/cooran/e1
 	name = "Junior Agent"
 	name_short = "JAGT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/e1)
 	sort_order = 10
 
 /datum/mil_rank/cooran/e2
 	name = "Agent"
 	name_short = "AGT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/e2)
 	sort_order = 20
 
 /datum/mil_rank/cooran/e3
 	name = "Senior Agent"
 	name_short = "SAGT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/e3)
 	sort_order = 30
 
 /datum/mil_rank/cooran/e4
 	name = "Chief Agent"
 	name_short = "CAGT"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/e4)
 	sort_order = 40
 
 /datum/mil_rank/cooran/o1
 	name = "Junior Supervisor"
 	name_short = "JSV"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o1)
 	sort_order = 110
 
 /datum/mil_rank/cooran/o2
 	name = "Supervisor"
 	name_short = "SV"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o2)
 	sort_order = 120
 
 /datum/mil_rank/cooran/o3
 	name = "Deck Chief"
 	name_short = "DCH"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o3)
 	sort_order = 130
 
 /datum/mil_rank/rocknall/o4
 	name = "Loadmaster"
 	name_short = "LDM"
-	accessory = list()
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o4)
 	sort_order = 140
