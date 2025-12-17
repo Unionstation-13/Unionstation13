@@ -186,7 +186,7 @@
 
 /datum/mil_branch/nitros
 	name = "Nitros Employee"
-	name_short = "NIT"
+	name_short = "NITROS"
 	email_domain = "nitros.corp"
 	rank_types = list(
 		/datum/mil_rank/nitros/e1,
@@ -270,7 +270,7 @@
 /datum/mil_branch/abc
 
 	name = "ABCDEFG Employee"
-	name_short = "ABC"
+	name_short = "ABCEFG"
 	email_domain = "abcdefg.corp"
 	rank_types = list(
 		/datum/mil_rank/abc/e1,
@@ -297,7 +297,7 @@
 /datum/mil_branch/cooran
 
 	name = "Cooran Supply Agent"
-	name_short = "COR"
+	name_short = "COORAN"
 	email_domain = "cooran.supply.corp"
 	rank_types = list(
 		/datum/mil_rank/cooran/e1,
@@ -540,7 +540,7 @@
 
 /datum/mil_rank/rocknall/e6
 	name = "Team Specialist"
-	name_short = "TS"
+	name_short = "TSPC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e6)
 	sort_order = 60
 
@@ -583,7 +583,7 @@
 
 /datum/mil_rank/bio/e3
 	name = "Attendant"
-	name_short = "AT"
+	name_short = "ATD"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/bio/e3)
 	sort_order = 30
 
