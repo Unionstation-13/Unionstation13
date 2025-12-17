@@ -693,7 +693,6 @@ ranks - ec
 	desc = "Insignia denoting rank of some kind. These appear blank."
 	icon_state = "ecrank_e1"
 
-
 /obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3
 	name = "ranks (E-3 explorer)"
 	desc = "Insignia denoting the rank of Explorer."
