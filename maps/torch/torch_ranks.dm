@@ -697,7 +697,7 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o3)
 	sort_order = 130
 
-/datum/mil_rank/rocknall/o4
+/datum/mil_rank/cooran/o4
 	name = "Loadmaster"
 	name_short = "LDM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/cooran/o4)
