@@ -4,7 +4,7 @@
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The United Rocknall Corporate representative, and the Commanding Officer"
+	supervisors = "The United Rocknall Corporate representative"
 	selection_color = "#68099e"
 	minimal_player_age = 1
 	economic_power = 10

@@ -563,7 +563,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/command
 	name = "command insignia"
-	desc = "Insignia denoting assignment to the command department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting employment in the command department. These fit the standard UGN uniforms."
 	color = "#e5ea4f"
 
 /obj/item/clothing/accessory/solgov/department/command/service
@@ -578,7 +578,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/engineering
 	name = "Nitros Engineering insignia"
-	desc = "Insignia denoting employment in Nitros Engineering. These fit the standard Titen Uniform."
+	desc = "Insignia denoting employment in Nitros Engineering. These fit the standard UGN Uniforms."
 	color = "#ff7f00"
 
 /obj/item/clothing/accessory/solgov/department/engineering/service
@@ -608,7 +608,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/medical
 	name = "United Rocknall Medical insignia"
-	desc = "Insignia denoting employment in the United Rocknall Corporation, specifically the medical department. These fit the standard Titen uniforms."
+	desc = "Insignia denoting employment in the United Rocknall Corporation, specifically the medical department. These fit the standard UGN uniforms."
 	color = "#4c9ce4"
 
 /obj/item/clothing/accessory/solgov/department/medical/service
@@ -624,7 +624,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/supply
 	name = "Cooran Supply insignia"
-	desc = "Insignia denoting employment at Cooran Supply. These fit the standard Titen uniforms."
+	desc = "Insignia denoting employment at Cooran Supply. These fit the standard UGN uniforms."
 	color = "#bb9042"
 
 /obj/item/clothing/accessory/solgov/department/supply/service
@@ -639,7 +639,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/service
 	name = "Biotech Services insignia"
-	desc = "Insignia denoting assignment to Biotech Services. These fit the standard uniforms."
+	desc = "Insignia denoting assignment to Biotech Services. These fit the standard UGNuniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -654,7 +654,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/exploration
 	name = "United Rocknall Exploration and Ecology insignia"
-	desc = "Insignia denoting employment at the United Rocknall Corporation, specifically the Exploration and Ecology department. These fit the standard Titen uniforms."
+	desc = "Insignia denoting employment at the United Rocknall Corporation, specifically the Exploration and Ecology department. These fit the standard UGN uniforms."
 	color = "#68099e"
 
 /obj/item/clothing/accessory/solgov/department/exploration/service
