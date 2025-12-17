@@ -82,7 +82,7 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	name = "standard UGN Command's uniform"
+	name = "Standard UGN Command Uniform"
 	desc = "The standard utility uniform of the UGN, made from biohazard resistant material. This one has gold trim."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"

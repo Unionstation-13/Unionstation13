@@ -638,8 +638,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/service
-	name = "Biotech Services insignia"
-	desc = "Insignia denoting assignment to Biotech Services. These fit the standard UGNuniforms."
+	name = "BIO insignia"
+	desc = "Insignia denoting assignment to BIO. These fit the standard UGNuniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -810,36 +810,36 @@ ranks - rocknall
 	icon_state = "ecrank_o6"
 
 /*********
-ranks - BioTech services
+ranks - BIO
 *********/
 /obj/item/clothing/accessory/solgov/rank/ec/bio/e1
 	name = "ranks (E-1 Trainee)"
-	desc = "BioTech Services insignia denoting the rank of Trainee."
+	desc = "BIO insignia denoting the rank of Trainee."
 	icon_state = "ecrank_e1"
 
 /obj/item/clothing/accessory/solgov/rank/ec/bio/e2
 	name = "ranks (E-2 Junior Attendant)"
-	desc = "BioTech Services Insignia denoting the rank of Junior Attendant."
+	desc = "BIO Insignia denoting the rank of Junior Attendant."
 	icon_state = "ecrank_e3"
 
 /obj/item/clothing/accessory/solgov/rank/ec/bio/e3
 	name = "ranks (E-3 Attendant)"
-	desc = "BioTech Services Insignia denoting the rank of Attendant."
+	desc = "BIO Insignia denoting the rank of Attendant."
 	icon_state = "ecrank_e5"
 
 /obj/item/clothing/accessory/solgov/rank/ec/bio/e4
 	name = "ranks (E-4 Senior Attendant)"
-	desc = "BioTech Services Insignia denoting the rank of Senior Attendant."
+	desc = "BIO Insignia denoting the rank of Senior Attendant."
 	icon_state = "ecrank_e7"
 
 /obj/item/clothing/accessory/solgov/rank/ec/bio/o1
 	name = "ranks (O-1 Junior Manager)"
-	desc = "BioTech Services Insignia denoting the rank of Junior Manager."
+	desc = "BIO Insignia denoting the rank of Junior Manager."
 	icon_state = "ecrank_o1"
 
 /obj/item/clothing/accessory/solgov/rank/ec/bio/o2
 	name = "ranks (O-2 Manager)"
-	desc = "BioTech Services Insignia denoting the rank of Manager."
+	desc = "BIO Insignia denoting the rank of Manager."
 	icon_state = "ecrank_o3"
 
 /*********
