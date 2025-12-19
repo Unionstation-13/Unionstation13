@@ -89,8 +89,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/o4)
 
 	skill_points = 36
 	min_skill = list( // 16 points
@@ -135,8 +135,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/o3)
 	skill_points = 32
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -175,8 +175,12 @@
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/nitros)
+	allowed_ranks = list(/datum/mil_rank/nitros/o1,
+	/datum/mil_rank/nitros/o2,
+	/datum/mil_rank/nitros/o3,
+	/datum/mil_rank/nitros/o4
+	)
 	skill_points = 36
 	min_skill = list( // 31 points
 		SKILL_BUREAUCRACY  = SKILL_BASIC, // 1 point

@@ -156,9 +156,9 @@ medals
 /*****
 patches
 *****/
-/obj/item/clothing/accessory/solgov/torch_patch
-	name = "\improper Torch mission patch"
-	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Torch Project."
+/obj/item/clothing/accessory/solgov/titen_patch
+	name = "\improper titen mission patch"
+	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Titen Project, and the overall Operation Beacon."
 	icon_state = "torchpatch"
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 	slot = ACCESSORY_SLOT_INSIGNIA
@@ -563,7 +563,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/command
 	name = "command insignia"
-	desc = "Insignia denoting assignment to the command department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting employment in the command department. These fit the standard UGN uniforms."
 	color = "#e5ea4f"
 
 /obj/item/clothing/accessory/solgov/department/command/service
@@ -577,8 +577,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/engineering
-	name = "engineering insignia"
-	desc = "Insignia denoting assignment to the engineering department. These fit Expeditionary Corps uniforms."
+	name = "Nitros Engineering insignia"
+	desc = "Insignia denoting employment in Nitros Engineering. These fit the standard UGN Uniforms."
 	color = "#ff7f00"
 
 /obj/item/clothing/accessory/solgov/department/engineering/service
@@ -607,8 +607,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/medical
-	name = "medical insignia"
-	desc = "Insignia denoting assignment to the medical department. These fit Expeditionary Corps uniforms."
+	name = "United Rocknall Medical insignia"
+	desc = "Insignia denoting employment in the United Rocknall Corporation, specifically the medical department. These fit the standard UGN uniforms."
 	color = "#4c9ce4"
 
 /obj/item/clothing/accessory/solgov/department/medical/service
@@ -623,8 +623,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/supply
-	name = "supply insignia"
-	desc = "Insignia denoting assignment to the supply department. These fit Expeditionary Corps uniforms."
+	name = "Cooran Supply insignia"
+	desc = "Insignia denoting employment at Cooran Supply. These fit the standard UGN uniforms."
 	color = "#bb9042"
 
 /obj/item/clothing/accessory/solgov/department/supply/service
@@ -638,8 +638,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/service
-	name = "service insignia"
-	desc = "Insignia denoting assignment to the service department. These fit Expeditionary Corps uniforms."
+	name = "BIO insignia"
+	desc = "Insignia denoting assignment to BIO. These fit the standard UGNuniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -653,8 +653,8 @@ department tags
 
 
 /obj/item/clothing/accessory/solgov/department/exploration
-	name = "exploration insignia"
-	desc = "Insignia denoting assignment to the exploration department. These fit Expeditionary Corps uniforms."
+	name = "United Rocknall Exploration and Ecology insignia"
+	desc = "Insignia denoting employment at the United Rocknall Corporation, specifically the Exploration and Ecology department. These fit the standard UGN uniforms."
 	color = "#68099e"
 
 /obj/item/clothing/accessory/solgov/department/exploration/service
@@ -699,9 +699,234 @@ ranks - ec
 	icon_state = "ecrank_e3"
 
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o10
-	name = "ranks (O-10 expidition commander)"
+	name = "ranks (O-10 expedition commander)"
 	desc = "Insignia denoting the rank of Expedition Commander."
 	icon_state = "ecrank_o10"
+
+/*********
+ranks - nitros
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e1
+	name = "ranks (E-1 Engineer Recruit)"
+	desc = "Nitros insignia denoting the rank of Engineer Recruit."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e2
+	name = "ranks (E-2 Junior Engineer)"
+	desc = "Nitros Insignia denoting the rank of Junior Engineer."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e3
+	name = "ranks (E-3 Engineer)"
+	desc = "Nitros Insignia denoting the rank of Engineer."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e4
+	name = "ranks (E-4 Specialist Engineer)"
+	desc = "Nitros Insignia denoting the rank of Specialist Engineer."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e5
+	name = "ranks (E-5 Senior Engineer)"
+	desc = "Nitros Insignia denoting the rank of Junior Engineer Officer."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/e6
+	name = "ranks (E-6 Master Engineer)"
+	desc = "Nitros Insignia denoting the rank of Master Engineer."
+	icon_state = "ecrank_e7"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/o1
+	name = "ranks (O-1 Junior Foreman)"
+	desc = "Nitros Insignia denoting the rank of Junior Foreman."
+	icon_state = "ecrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/o2
+	name = "ranks (O-2 Foreman)"
+	desc = "Nitros Insignia denoting the rank of Foreman."
+	icon_state = "ecrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/o3
+	name = "ranks (O-3 Senior Foreman)"
+	desc = "Nitros Insignia denoting the rank of Senior Foreman."
+	icon_state = "ecrank_o5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/nitros/o4
+	name = "ranks (O-4 Master Foreman)"
+	desc = "Nitros Insignia denoting the rank of Master Foreman."
+	icon_state = "ecrank_o6"
+
+/*********
+ranks - rocknall
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e1
+	name = "ranks (E-1 Intern)"
+	desc = "Rocknall insignia denoting the rank of Intern."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e2
+	name = "ranks (E-2 Junior Associate)"
+	desc = "Rocknall Insignia denoting the rank of Junior Associate."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e3
+	name = "ranks (E-3 Associate)"
+	desc = "Rocknall Insignia denoting the rank of Associate."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e4
+	name = "ranks (E-4 Senior Associate)"
+	desc = "Rocknall Insignia denoting the rank of Senior Associate."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e5
+	name = "ranks (E-5 Junior Team Specialist)"
+	desc = "Rocknall Insignia denoting the rank of Junior Team Specialist."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/e6
+	name = "ranks (E-6 Team Specialist)"
+	desc = "Rocknall Insignia denoting the rank of Team Specialist."
+	icon_state = "ecrank_e7"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o1
+	name = "ranks (O-1 Junior Supervisor)"
+	desc = "Rocknall Insignia denoting the rank of Junior Supervisor."
+	icon_state = "ecrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o2
+	name = "ranks (O-2 Supervisor)"
+	desc = "Rocknall Insignia denoting the rank of Supervisor."
+	icon_state = "ecrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o3
+	name = "ranks (O-3 Junior Administrator)"
+	desc = "Rocknall Insignia denoting the rank of Junior Administrator."
+	icon_state = "ecrank_o5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/rocknall/o4
+	name = "ranks (O-4 Administrator)"
+	desc = "Rocknall Insignia denoting the rank of Administrator."
+	icon_state = "ecrank_o6"
+
+/*********
+ranks - BIO
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/bio/e1
+	name = "ranks (E-1 Trainee)"
+	desc = "BIO insignia denoting the rank of Trainee."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/bio/e2
+	name = "ranks (E-2 Junior Attendant)"
+	desc = "BIO Insignia denoting the rank of Junior Attendant."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/bio/e3
+	name = "ranks (E-3 Attendant)"
+	desc = "BIO Insignia denoting the rank of Attendant."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/bio/e4
+	name = "ranks (E-4 Senior Attendant)"
+	desc = "BIO Insignia denoting the rank of Senior Attendant."
+	icon_state = "ecrank_e7"
+
+/obj/item/clothing/accessory/solgov/rank/ec/bio/o1
+	name = "ranks (O-1 Junior Manager)"
+	desc = "BIO Insignia denoting the rank of Junior Manager."
+	icon_state = "ecrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/bio/o2
+	name = "ranks (O-2 Manager)"
+	desc = "BIO Insignia denoting the rank of Manager."
+	icon_state = "ecrank_o3"
+
+/*********
+ranks - ABCDEFG
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/abc/e1
+	name = "ranks (E-1 Junior Technician)"
+	desc = "ABCDEFG Insignia denoting the rank of Junior Technician."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/e2
+	name = "ranks (E-2 Technician)"
+	desc = "ABCDEFG Insignia denoting the rank of Technician."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/e3
+	name = "ranks (E-3 Senior Technician)"
+	desc = "ABCDEFG Insignia denoting the rank of Senior Technician."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/e4
+	name = "ranks (E-4 Specialist)"
+	desc = "ABCDEFG Insignia denoting the rank of Specialist."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/e5
+	name = "ranks (E-5 Senior Specialist)"
+	desc = "ABCDEFG Insignia denoting the rank of Senior Specialist."
+	icon_state = "ecrank_e7"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/o1
+	name = "ranks (O-1 Analyst)"
+	desc = "ABCDEFG Insignia denoting the rank of Analyst."
+	icon_state = "ecrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/o2
+	name = "ranks (O-2 Expeditionary Director)"
+	desc = "ABCDEFG Insignia denoting the rank of Expeditionary Director."
+	icon_state = "ecrank_o5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/abc/o3
+	name = "ranks (O-3 Regional Director)"
+	desc = "ABCDEFG Insignia denoting the rank of Regional Director."
+	icon_state = "ecrank_o6"
+
+/*********
+ranks - cooran supply
+*********/
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/e1
+	name = "ranks (E-1 Junior Agent)"
+	desc = "Cooran Supply Insignia denoting the rank of Junior Agent."
+	icon_state = "ecrank_e1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/e2
+	name = "ranks (E-2 Agent)"
+	desc = "Cooran Supply Insignia denoting the rank of Agent."
+	icon_state = "ecrank_e3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/e3
+	name = "ranks (E-3 Senior Agent)"
+	desc = "Cooran Supply Insignia denoting the rank of Senior Agent."
+	icon_state = "ecrank_e5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/e4
+	name = "ranks (E-4 Chief Agent)"
+	desc = "Cooran Supply Insignia denoting the rank of Chief Agent."
+	icon_state = "ecrank_e7"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/o1
+	name = "ranks (O-1 Junior Supervisor)"
+	desc = "Cooran Supply Insignia denoting the rank of Junior Supervisor."
+	icon_state = "ecrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/o2
+	name = "ranks (O-2 Supervisor)"
+	desc = "Cooran Supply Insignia denoting the rank of Supervisor."
+	icon_state = "ecrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/o3
+	name = "ranks (O-3 Deck Chief)"
+	desc = "Cooran Supply Insignia denoting the rank of Deck Chief."
+	icon_state = "ecrank_o5"
+
+/obj/item/clothing/accessory/solgov/rank/ec/cooran/o4
+	name = "ranks (O-4 Loadmaster)"
+	desc = "Cooran Supply Insignia denoting the rank of Loadmaster."
+	icon_state = "ecrank_o6"
 
 /************
 ranks - fleet

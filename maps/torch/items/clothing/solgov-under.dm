@@ -44,8 +44,8 @@
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary
-	name = "expeditionary uniform"
-	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has silver trim."
+	name = "standard UGN uniform"
+	desc = "The standard utility uniform of the UGN, made from biohazard resistant material. This one has silver trim."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 
@@ -82,8 +82,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	name = "expeditionary officer's uniform"
-	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has gold trim."
+	name = "Standard UGN Command Uniform"
+	desc = "The standard utility uniform of the UGN, made from biohazard resistant material. This one has gold trim."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
 
@@ -191,6 +191,7 @@
 /obj/item/clothing/under/solgov/utility/fleet/combat/supply
 	accessories = list(/obj/item/clothing/accessory/solgov/department/supply/fleet)
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
+
 
 
 //Service

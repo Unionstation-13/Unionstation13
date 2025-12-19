@@ -14,10 +14,13 @@
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/nitros
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/nitros/e3,
+		/datum/mil_rank/nitros/e4,
+		/datum/mil_rank/nitros/e5,
+		/datum/mil_rank/nitros/e6
 	)
 	skill_points = 26
 	min_skill = list( // 22 points
@@ -64,10 +67,11 @@
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor
+		/datum/mil_branch/nitros
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/nitros/e1,
+		/datum/mil_rank/nitros/e2
 	)
 
 	skill_points = 10
@@ -120,10 +124,13 @@
 		"Technician")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
+		/datum/mil_branch/abc = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/abc/e2,
+		/datum/mil_rank/abc/e3,
+		/datum/mil_rank/abc/e4,
+		/datum/mil_rank/abc/e5
 	)
 	skill_points = 26
 	min_skill = list( // 22 points
