@@ -26,6 +26,24 @@
 /obj/wallframe_spawn/reinforced_phoron/titanium,
 /turf/simulated/wall/r_wall/hull,
 /area/vacant/brig)
+"ag" = (
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/structure/window/boron_reinforced,
+/obj/machinery/door/window/brigdoor/westright,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	dir = 4;
+	name = "Stall Shutters";
+	id_tag = "stall1"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "aj" = (
 /turf/simulated/wall/r_wall/hull,
 /area/crew_quarters/gym)
@@ -82,6 +100,12 @@
 /area/crew_quarters/community_manager{
 	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
 	})
+"aA" = (
+/obj/floor_decal/spline/plain/white{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/commerce/mall/hub)
 "aB" = (
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
@@ -175,16 +199,6 @@
 "aQ" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/starboard)
-"aR" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/sign/deck/third{
-	pixel_y = 32
-	},
-/obj/floor_decal/corner/green{
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/center)
 "aS" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -288,7 +302,7 @@
 /obj/decal/cleanable/dirt,
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "bp" = (
 /obj/random/torchcloset,
 /obj/floor_decal/industrial/outline/grey,
@@ -895,6 +909,14 @@
 /obj/machinery/chemical_dispenser/bar_soft/full,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/service_break_room)
+"cA" = (
+/obj/structure/table/rack,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "cB" = (
 /obj/structure/closet/jcloset_torch,
 /obj/item/reagent_containers/spray/cleaner,
@@ -1431,13 +1453,17 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "dI" = (
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "dJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -1999,6 +2025,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/service_break_room)
+"eZ" = (
+/obj/structure/sign/double/barsign,
+/turf/simulated/wall/prepainted,
+/area/hallway/primary/thirddeck/center)
 "fb" = (
 /turf/simulated/wall/r_wall/hull,
 /area/crew_quarters/service_break_room)
@@ -2024,7 +2054,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "ff" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2438,12 +2468,6 @@
 /obj/machinery/tele_pad,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/teleporter/thirddeck)
-"fU" = (
-/obj/structure/table/steel,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled,
-/area/maintenance/thirddeck/starboard)
 "fV" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -2933,12 +2957,11 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/mess)
 "gZ" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/computer/modular/preset/civilian{
-	dir = 1;
-	icon_state = "console"
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/holofloor/beach/water,
 /area/maintenance/thirddeck/starboard)
 "hc" = (
 /obj/floor_decal/spline/plain/green,
@@ -2950,7 +2973,7 @@
 /obj/decal/cleanable/dirt,
 /obj/item/stack/cable_coil/single,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "hf" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -4369,9 +4392,8 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "kc" = (
-/obj/structure/bed/chair/office/dark,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/floor/tiled,
+/area/commerce/mall/hub)
 "kd" = (
 /obj/structure/table/standard,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -4731,12 +4753,16 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "kY" = (
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "kZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -5420,6 +5446,14 @@
 /obj/structure/grille,
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
+"mQ" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "mR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/firealarm{
@@ -5558,12 +5592,14 @@
 /turf/simulated/floor/tiled,
 /area/holocontrol)
 "nm" = (
-/obj/structure/table/steel,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/random/tech_supply,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	name = "Commerce Hub Lockdown Shutters";
+	id_tag = "commerce_lockdown"
+	},
+/obj/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/white,
+/area/hallway/primary/thirddeck/center)
 "nn" = (
 /obj/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -6702,6 +6738,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/holocontrol)
 "qd" = (
@@ -6865,11 +6904,28 @@
 /turf/simulated/floor/wood/ebony,
 /area/crew_quarters/commissary)
 "qB" = (
-/obj/decal/cleanable/dirt,
-/obj/item/frame/light,
-/obj/item/light/tube/warm,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/catwalk_plated,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/hallway/primary/thirddeck/center)
 "qC" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -7266,11 +7322,8 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "rK" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/plating,
+/obj/structure/railing/mapped,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "rL" = (
 /obj/machinery/light{
@@ -7989,7 +8042,7 @@
 /obj/random/trash,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "td" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	target_pressure = 3000
@@ -8046,7 +8099,7 @@
 "ti" = (
 /obj/random/junk,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "tl" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -8347,16 +8400,23 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "tX" = (
-/obj/decal/cleanable/dirt,
-/obj/item/taperoll/engineering,
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	dir = 4;
+	name = "Stall Shutters";
+	id_tag = "stall1"
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "tZ" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -8535,13 +8595,11 @@
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/commissary)
 "uu" = (
-/obj/random/trash,
-/obj/decal/cleanable/dirt,
 /obj/structure/sign/ecplaque{
 	pixel_x = 32
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "uv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -8778,14 +8836,13 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "vd" = (
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "ve" = (
 /turf/simulated/wall/prepainted,
@@ -10156,12 +10213,26 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/teleporter/thirddeck)
 "yQ" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/machinery/light/small{
+/obj/structure/table/reinforced,
+/obj/structure/window/boron_reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	dir = 4;
+	name = "Stall Shutters";
+	id_tag = "stall1"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "yR" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -11084,7 +11155,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/wall/prepainted,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "BF" = (
 /obj/floor_decal/spline/fancy/black,
@@ -11245,14 +11317,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
 "Ce" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
+/obj/structure/table/rack,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
-/turf/simulated/wall/prepainted,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "Cf" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -11456,15 +11527,6 @@
 "CF" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/recreation)
-"CH" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Officer Mess";
-	dir = 2;
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW");
-	autoset_access = 0
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/maintenance/thirddeck/starboard)
 "CI" = (
 /obj/floor_decal/spline/fancy/black{
 	dir = 10
@@ -11529,7 +11591,7 @@
 /obj/decal/cleanable/dirt,
 /obj/structure/largecrate,
 /turf/simulated/floor/tiled,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "CQ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -11807,10 +11869,28 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "Dz" = (
-/obj/floor_decal/industrial/outline/grey,
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "stall1";
+	name = "Stall Shutters";
+	pixel_y = 20;
+	pixel_x = 10
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "DA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12225,13 +12305,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "Eq" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/wall/prepainted,
+/area/commerce/mall/store1)
 "Er" = (
 /obj/structure/closet,
 /obj/item/storage/candle_box,
@@ -12773,11 +12848,11 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "FH" = (
-/obj/structure/sign/warning/fall{
-	pixel_x = 32
+/obj/machinery/newscaster{
+	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/wall/prepainted,
+/area/engineering/hardstorage)
 "FI" = (
 /obj/structure/bookcase,
 /obj/decal/cleanable/cobweb,
@@ -13444,6 +13519,14 @@
 /obj/item/modular_computer/laptop/preset/custom_loadout/cheap,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
+"Hw" = (
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped,
+/turf/simulated/floor/holofloor/beach/water,
+/area/commerce/mall/hub)
 "Hx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -13732,11 +13815,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "Ii" = (
-/obj/random/trash,
-/obj/decal/cleanable/dirt,
-/obj/decal/cleanable/cobweb,
+/turf/simulated/wall/prepainted,
+/area/commerce/mall/hub)
+"Ij" = (
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "Ik" = (
 /obj/floor_decal/corner/green{
 	dir = 10
@@ -14857,7 +14940,8 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "KC" = (
-/turf/simulated/open,
+/obj/structure/fountain,
+/turf/simulated/floor/holofloor/beach/water,
 /area/maintenance/thirddeck/starboard)
 "KE" = (
 /obj/floor_decal/industrial/warning{
@@ -15429,6 +15513,27 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/space)
+"LR" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "LT" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -15607,8 +15712,9 @@
 /turf/simulated/floor/plating,
 /area/engineering/atmos/aux)
 "Mr" = (
-/obj/item/stack/cable_coil/single,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "Ms" = (
 /obj/floor_decal/industrial/warning{
@@ -15797,9 +15903,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "MT" = (
-/obj/structure/railing,
-/turf/simulated/open,
-/area/crew_quarters/mess)
+/turf/simulated/floor/holofloor/beach/water,
+/area/commerce/mall/hub)
 "MU" = (
 /obj/floor_decal/corner/yellow/half,
 /turf/simulated/floor/tiled/dark,
@@ -16350,11 +16455,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "Ou" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/structure/lattice,
-/turf/simulated/open,
+/turf/simulated/floor/holofloor/beach/water,
 /area/maintenance/thirddeck/starboard)
 "Ov" = (
 /obj/machinery/atmospherics/valve/shutoff/supply{
@@ -16423,9 +16525,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "OE" = (
-/obj/floor_decal/industrial/outline/grey,
-/obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "OG" = (
 /obj/structure/bed/chair/office/comfy,
@@ -17199,11 +17299,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
-"QT" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/monotile,
-/area/maintenance/thirddeck/starboard)
 "QU" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -17419,11 +17514,15 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
 "RB" = (
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "RC" = (
 /obj/floor_decal/corner/green{
 	dir = 10
@@ -17454,9 +17553,8 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
 "RF" = (
-/obj/random/junk,
-/turf/simulated/floor/tiled,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "RG" = (
 /turf/simulated/wall/prepainted,
 /area/chapel/main)
@@ -17744,16 +17842,14 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/gym)
 "Ss" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/structure/railing/mapped,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/floor_decal/spline/plain/white{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/commerce/mall/hub)
 "St" = (
 /obj/structure/railing/mapped,
 /obj/structure/lattice,
@@ -17789,11 +17885,10 @@
 /turf/simulated/wall/prepainted,
 /area/hydroponics)
 "Sx" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "Sy" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	frequency = 1441;
@@ -18195,7 +18290,7 @@
 "TI" = (
 /obj/structure/door_assembly,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "TJ" = (
 /obj/random/junk,
 /turf/simulated/floor/plating,
@@ -18226,11 +18321,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "TO" = (
-/obj/machinery/door/airlock/hatch/maintenance,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	name = "Commerce Hub Lockdown Shutters";
+	id_tag = "commerce_lockdown"
+	},
+/obj/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/white,
 /area/hallway/primary/thirddeck/center)
 "TP" = (
 /obj/machinery/door/airlock/chaplain{
@@ -18930,7 +19029,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/prepainted,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/thirddeck/starboard)
 "Vw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -18969,15 +19068,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/office)
-"VC" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
-/obj/floor_decal/corner/green/half{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/center)
 "VD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -18985,7 +19075,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/wall/prepainted,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "VE" = (
 /obj/floor_decal/corner/green/mono,
@@ -19208,10 +19299,16 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/thirddeck/center)
 "VX" = (
-/obj/decal/cleanable/dirt,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/thirddeck/center)
 "VY" = (
 /obj/structure/stairs/west,
 /obj/floor_decal/corner/yellow/half{
@@ -19224,9 +19321,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "Wb" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -19245,7 +19341,7 @@
 "Wg" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/hub)
 "Wh" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19744,6 +19840,20 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/galley)
+"Xx" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters/open{
+	name = "Commerce Hub Lockdown Shutters";
+	id_tag = "commerce_lockdown"
+	},
+/obj/floor_decal/industrial/warning,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/maintenance/thirddeck/starboard)
 "Xy" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/access_button{
@@ -19806,9 +19916,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
 "XE" = (
-/obj/structure/ore_box,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/structure/closet/secure_closet/personal,
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "XF" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -19901,11 +20011,13 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "XT" = (
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/structure/table/rack,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped,
+/turf/simulated/floor/holofloor/beach/water,
+/area/commerce/mall/hub)
 "XU" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -20093,12 +20205,11 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "Yp" = (
-/obj/random/junk,
-/obj/decal/cleanable/dirt,
-/obj/decal/cleanable/cobweb{
-	dir = 8
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/holofloor/beach/water,
 /area/maintenance/thirddeck/starboard)
 "Ys" = (
 /obj/structure/disposalpipe/segment{
@@ -20198,9 +20309,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/command/disperser)
 "YN" = (
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "YO" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -20349,10 +20459,6 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
-"Zf" = (
-/obj/structure/sign/warning/fall,
-/turf/simulated/wall/prepainted,
-/area/crew_quarters/mess)
 "Zg" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/random/torchcloset,
@@ -20390,9 +20496,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "Zm" = (
-/obj/random/trash,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/holofloor/beach/water,
 /area/maintenance/thirddeck/starboard)
 "Zo" = (
 /obj/structure/sign/directions/engineering{
@@ -20623,9 +20727,24 @@
 /turf/simulated/floor/reinforced,
 /area/thruster/d3starboard)
 "ZV" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/door/airlock/civilian,
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/commerce/mall/store1)
 "ZW" = (
 /obj/structure/table/woodentable_reinforced/mahogany,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -39120,7 +39239,7 @@ fB
 fB
 fB
 ct
-Zf
+fB
 fB
 fB
 fB
@@ -39320,14 +39439,14 @@ gD
 hz
 WN
 BE
-MT
+fB
 ld
 fB
-Sx
-nm
-fU
+LR
+Ce
+cA
 XE
-cl
+Eq
 Xn
 sj
 Dt
@@ -39522,14 +39641,14 @@ pw
 Ot
 os
 VD
-MT
+fB
 ld
 fB
-QT
-dd
-aY
+Dz
 RF
-cl
+RF
+RF
+Eq
 MS
 sj
 UQ
@@ -39722,16 +39841,16 @@ bA
 fG
 cl
 cl
-ZV
+cl
 Vv
 fB
 fB
 fB
-cl
+ZV
 yQ
-aY
-CH
-cl
+tX
+ag
+Eq
 qP
 RQ
 cV
@@ -39924,18 +40043,18 @@ cl
 NH
 Ux
 cl
-ZV
+OE
 vd
-RB
-RB
-RB
+Mr
+Mr
+Mr
 RB
 dI
 kY
-Ce
-cl
-Xn
-sj
+mQ
+Xx
+VX
+qB
 dB
 uU
 fo
@@ -40126,15 +40245,15 @@ df
 fH
 tu
 cl
-Dz
+OE
 rK
-ze
-ze
-ze
-ze
+Yp
+Yp
+Yp
+Hw
 Ss
 VZ
-RB
+Sx
 TO
 rc
 cS
@@ -40329,16 +40448,16 @@ dD
 cl
 cl
 OE
-FH
+rK
 Ou
 KC
-KC
-KC
-FH
-Eq
-Eq
-wD
-aR
+Zm
+MT
+Ii
+YN
+YN
+nm
+qQ
 sk
 xf
 uU
@@ -40530,17 +40649,17 @@ cl
 cl
 cl
 cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-tX
-wD
-VC
+OE
+rK
+gZ
+gZ
+gZ
+XT
+aA
+YN
+YN
+nm
+cw
 RQ
 dC
 uU
@@ -40732,16 +40851,16 @@ cl
 dD
 dD
 cl
-Ii
-Mr
+OE
+OE
+OE
+OE
+OE
 YN
-qB
-aY
-aY
 YN
 YN
 uu
-wD
+nm
 rf
 VG
 re
@@ -40935,14 +41054,14 @@ fK
 aY
 cl
 cl
-bE
+OE
 cl
 cl
 cl
-cl
+Ii
 TI
-cl
-cl
+Ii
+Ii
 wD
 cw
 su
@@ -41136,16 +41255,16 @@ cl
 da
 dD
 cl
-XT
-YN
-gZ
+OE
+OE
+OE
 cl
 jC
 tb
 hd
-dd
+kc
 ti
-wD
+eZ
 xE
 XP
 ov
@@ -41338,15 +41457,15 @@ cl
 da
 dD
 cl
-XT
-Zm
-kc
+OE
+OE
+OE
 cl
 aY
 bn
-aY
+Ij
 Wg
-dd
+kc
 wD
 Xn
 sw
@@ -41540,13 +41659,13 @@ cl
 da
 dD
 cl
-Yp
-aY
-VX
+OE
+OE
+OE
 cl
 zb
 ti
-cl
+Ii
 fe
 CP
 wD
@@ -42963,7 +43082,7 @@ uh
 uh
 dM
 dM
-eI
+FH
 rk
 sC
 tW

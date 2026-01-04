@@ -918,6 +918,34 @@
 	name = "\improper Upper Hangar Deck"
 	icon_state = "hangar_catwalk_p"
 
+// The Commerce Hub
+/area/commerce
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
+
+/area/commerce/mall
+	lighting_tone = LIGHT_COLOUR_WHITE
+	sound_env = LARGE_ENCLOSED
+
+/area/commerce/mall/hub
+	name = "\improper Commerce Hub"
+	icon_state = "quartstorage"
+
+/area/commerce/mall/store1
+	name = "\improper Rental Store 1"
+	icon_state = "quartoffice"
+
+/area/commerce/mall/store2
+	name = "\improper Rental Store 2"
+	icon_state = "quartoffice"
+
+/area/commerce/mall/cooranhelp
+	name = "\improper Help Desk"
+	icon_state = "quart"
+	req_access = list(access_cargo)
+
+/area/commerce/
+
+/area/commerce/
 // Research
 /area/rnd/canister
 	name = "\improper Canister Storage"
