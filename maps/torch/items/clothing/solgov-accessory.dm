@@ -980,3 +980,37 @@ ranks - fleet
 	name = "ranks (O-10 fleet admiral)"
 	desc = "Insignia denoting the rank of Commanding Officer."
 	icon_state = "fleetrank_o10"
+
+
+/************
+ranks - fleet
+************/
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet
+	name = "naval ranks"
+	desc = "Insignia denoting naval rank of some kind. These appear blank."
+	icon_state = "fleetrank"
+
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o1
+	name = "ranks (O-1 ensign)"
+	desc = "Insignia denoting the rank of Ensign."
+	icon_state = "fleetrank_o1"
+
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o2
+	name = "ranks (O-2 2nd Lieutenant)"
+	desc = "Insignia denoting the rank of 2nd Lieutenant."
+	icon_state = "fleetrank_o2"
+
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o3
+	name = "ranks (O-3 1st Lieutenant)"
+	desc = "Insignia denoting the rank of 1st Lieutenant."
+	icon_state = "fleetrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o4
+	name = "ranks (O-4 commander)"
+	desc = "Insignia denoting the rank of Commander."
+	icon_state = "fleetrank_o4"
+
+/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o5
+	name = "ranks (O-5 captain)"
+	desc = "Insignia denoting the rank of Captain."
+	icon_state = "fleetrank_o5"
