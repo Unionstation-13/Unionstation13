@@ -198,9 +198,9 @@
 	)
 
 /datum/mil_branch/solgov
-	name = "SolGov Employee"
-	name_short = "SCG"
-	email_domain = "torch.scg"
+	name = "UGN Government Employee"
+	name_short = "UGN"
+	email_domain = "torch.gov.ugn"
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
