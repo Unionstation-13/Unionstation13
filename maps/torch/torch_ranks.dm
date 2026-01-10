@@ -151,7 +151,7 @@
 	)
 
 /datum/mil_branch/ugn_fleet
-	name = "Fleet"
+	name = "UGN Naval Fleet"
 	name_short = "UGNNF"
 	email_domain = "titen.fleet.mil"
 
