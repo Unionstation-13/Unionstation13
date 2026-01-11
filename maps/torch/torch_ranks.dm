@@ -9,6 +9,7 @@
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
+		/datum/mil_branch/ugn_fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/alien,
@@ -26,6 +27,7 @@
 	spawn_branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
+		/datum/mil_branch/ugn_fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/alien,
@@ -119,9 +121,9 @@
 	)
 
 /datum/mil_branch/fleet
-	name = "Fleet"
-	name_short = "UGNGF"
-	email_domain = "titen.fleet.mil"
+	name = "Peacekeeper"
+	name_short = "UGNPK"
+	email_domain = "titen.pk.mil"
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
@@ -139,6 +141,34 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/o9,
 		/datum/mil_rank/fleet/o10
+	)
+
+	assistant_job = /datum/job/crew
+	min_skill = list( // 4 points
+		SKILL_HAULING = SKILL_BASIC, // 1 point
+		SKILL_WEAPONS = SKILL_BASIC, // 2 points
+		SKILL_EVA = SKILL_BASIC // 1 point
+	)
+
+/datum/mil_branch/ugn_fleet
+	name = "UGN Naval Fleet"
+	name_short = "UGNNF"
+	email_domain = "titen.fleet.mil"
+
+	rank_types = list(
+		/datum/mil_rank/ugn_fleet/o1,
+		/datum/mil_rank/ugn_fleet/o2,
+		/datum/mil_rank/ugn_fleet/o3,
+		/datum/mil_rank/ugn_fleet/o4,
+		/datum/mil_rank/ugn_fleet/o5
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/ugn_fleet/o1,
+		/datum/mil_rank/ugn_fleet/o2,
+		/datum/mil_rank/ugn_fleet/o3,
+		/datum/mil_rank/ugn_fleet/o4,
+		/datum/mil_rank/ugn_fleet/o5
 	)
 
 	assistant_job = /datum/job/crew
@@ -168,9 +198,9 @@
 	)
 
 /datum/mil_branch/solgov
-	name = "SolGov Employee"
-	name_short = "SCG"
-	email_domain = "torch.scg"
+	name = "UGN Government Employee"
+	name_short = "UGN"
+	email_domain = "titen.gov.ugn"
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
@@ -246,9 +276,9 @@
 
 /datum/mil_branch/bio
 
-	name = "BioTech Services Employee"
+	name = "B.I.O Services Employee"
 	name_short = "BIO"
-	email_domain = "biotech.srvs.corp"
+	email_domain = "bio.srvs.corp"
 	rank_types = list(
 		/datum/mil_rank/bio/e1,
 		/datum/mil_rank/bio/e2,
@@ -346,7 +376,7 @@
 	name = "Commissioned"
 	add_accesses = list(access_o_mess)
 
-// The Fleet Ranks
+// The Peacekeeper Ranks
 
 /datum/mil_rank/fleet/e1
 	name = "Sergeant"
@@ -389,6 +419,38 @@
 	name_short = "CO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 50
+
+// UGN Fleet Ranks
+/datum/mil_rank/ugn_fleet/o1
+	name = "Ensign"
+	name_short = "ENS"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o1)
+	sort_order = 110
+
+/datum/mil_rank/ugn_fleet/o2
+	name = "2nd Lieutenant"
+	name_short = "2LT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o2)
+	sort_order = 120
+
+/datum/mil_rank/ugn_fleet/o3
+	name = "1st Lieutenant"
+	name_short = "1LT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o3)
+	sort_order = 130
+
+/datum/mil_rank/ugn_fleet/o4
+	name = "Commander"
+	name_short = "CDR"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o4)
+	sort_order = 140
+
+/datum/mil_rank/ugn_fleet/o5
+	name = "Captain"
+	name_short = "CAPT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o5)
+	sort_order = 150
+
 
 
 // United Rocknall Corporation E&E Ranks
