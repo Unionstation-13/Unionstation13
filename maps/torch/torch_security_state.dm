@@ -59,8 +59,8 @@
 	overlay_status_display = "status_display_violet"
 	alert_border = "alert_border_violet"
 
-	up_description = "A major medical emergency has developed. Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
-	down_description = "Code violet procedures are now in effect; Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
+	up_description = "A major medical emergency has developed. Medical and research personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
+	down_description = "Code violet procedures are now in effect; Medical and research personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
 
 /singleton/security_level/default/torchdept/code_orange
 	name = "code orange"
