@@ -41,6 +41,9 @@
 	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
+	alt_titles = list(
+		"Commerce Center Supervisor"
+	)
 	supervisors = "Whoever pays you the most"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24

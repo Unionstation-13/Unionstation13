@@ -943,8 +943,10 @@
 	icon_state = "quart"
 	req_access = list(access_cargo)
 
-/area/commerce/
-
+/area/commerce/mall/staff_hallway
+	name = "\improper Staff Hallway"
+	icon_state = "quart"
+	req_access = list(access_cargo)
 /area/commerce/
 // Research
 /area/rnd/canister
