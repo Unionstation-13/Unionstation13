@@ -937,49 +937,46 @@ ranks - fleet
 	icon_state = "fleetrank"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted
-	name = "ranks (E-1 sergeant)"
-	desc = "Insignia denoting the rank of Sergeant."
+	name = "ranks (E-1 Peacekeeper Recruit)"
+	desc = "Insignia denoting the rank of Peacekeeper Recruit."
 	icon_state = "fleetrank_e1"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e2
-	name = "ranks (E-2 staff sergeant)"
-	desc = "Insignia denoting the rank of Staff Sergeant."
+	name = "ranks (E-2 Peacekeeper 3rd Class)"
+	desc = "Insignia denoting the rank of Peacekeeper 3rd Class."
 	icon_state = "fleetrank_e2"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e3
-	name = "ranks (E-3 master sergeant)"
-	desc = "Insignia denoting the rank of Master Sergeant."
+	name = "ranks (E-3 Peacekeeper 2nd Class)"
+	desc = "Insignia denoting the rank of Peacekeeper 2nd Class."
 	icon_state = "fleetrank_e3"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4
-	name = "ranks (E-4 vice-commander)"
-	desc = "Insignia denoting the rank of Vice-Commander."
+	name = "ranks (E-4 Peacekeeper 1st Class)"
+	desc = "Insignia denoting the rank of Peacekeeper 1st Class."
 	icon_state = "fleetrank_e4"
 
-/obj/item/clothing/accesory/solgov/rank/fleet/enlisted/o1
-	name = "ranks (O-1 colonel)"
-	desc = "Insignia denoting the rank of Colonel."
+/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o1
+	name = "ranks (O-1 Sub-lieutenant)"
+	desc = "Insignia denoting the rank of Sub-lieutenant."
 	icon_state = "fleetrank_o1"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8
-	name = "ranks (O-8 rear admiral)"
-	desc = "Insignia denoting the rank of Marshall."
-	icon_state = "fleetrank_o8"
+/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o2
+	name = "ranks (O-2 lieutenant)"
+	desc = "Insignia denoting the rank of Lieutenant."
+	icon_state = "fleetrank_o2"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9
-	name = "ranks (O-9 vice admiral)"
-	desc = "Insignia denoting the rank of Staff Commander."
-	icon_state = "fleetrank_o9"
+/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o3
+	name = "ranks (O-3 Peacekeeper Captain)"
+	desc = "Insignia denoting the rank of Peacekeeper Captain."
+	icon_state = "fleetrank_o3"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10
-	name = "ranks (O-10 admiral)"
-	desc = "Insignia denoting the rank of Commanding Officer."
-	icon_state = "fleetrank_o10"
+/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o4
+	name = "ranks (O-4 Peacekeeper Commander)"
+	desc = "Insignia denoting the rank of Peacekeeper Commander."
+	icon_state = "fleetrank_o4"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt
-	name = "ranks (O-10 fleet admiral)"
-	desc = "Insignia denoting the rank of Commanding Officer."
-	icon_state = "fleetrank_o10"
+
 
 
 /************

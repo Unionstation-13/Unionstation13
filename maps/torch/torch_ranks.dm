@@ -81,8 +81,10 @@
 				/datum/mil_rank/fleet/e2,
 				/datum/mil_rank/fleet/e3,
 				/datum/mil_rank/fleet/e4,
-				/datum/mil_rank/fleet/o9,
-				/datum/mil_rank/fleet/o10
+				/datum/mil_rank/fleet/o1,
+				/datum/mil_rank/fleet/o2,
+				/datum/mil_rank/fleet/o3,
+				/datum/mil_rank/fleet/o4
 			)
 		),
 		/singleton/species/vox = list(
@@ -130,8 +132,10 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/o9,
-		/datum/mil_rank/fleet/o10,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 
 	spawn_rank_types = list(
@@ -139,8 +143,10 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/o9,
-		/datum/mil_rank/fleet/o10
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 
 	assistant_job = /datum/job/crew
@@ -379,46 +385,52 @@
 // The Peacekeeper Ranks
 
 /datum/mil_rank/fleet/e1
-	name = "Sergeant"
-	name_short = "SGT"
+	name = "Peacekeeper Recruit"
+	name_short = "PKR"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 10
 
 /datum/mil_rank/fleet/e2
-	name = "Staff Sergeant"
-	name_short = "SSgt"
+	name = "Peacekeeper 3rd Class"
+	name_short = "PK3"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 20
 
 /datum/mil_rank/fleet/e3
-	name = "Master Sergeant"
-	name_short = "MSgt"
+	name = "Peacekeeper 2nd Class"
+	name_short = "PK2"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 30
 
 /datum/mil_rank/fleet/e4
-	name = "Vice-Commander"
-	name_short = "SC"
+	name = "Peacekeeper 1st Class"
+	name_short = "PK1"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
 
 /datum/mil_rank/fleet/o1
-	name = "Colonel"
-	name_short = "CL"
-	accessory = list(/obj/item/clothing/accesory/solgov/rank/fleet/enlisted/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	name = "Sub-Lieutenant"
+	name_short = "SLT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 40
 
-/datum/mil_rank/fleet/o9
-	name = "Staff Commander"
-	name_short = "SC"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+/datum/mil_rank/fleet/o2
+	name = "Lieutenant"
+	name_short = "LT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 50
 
-/datum/mil_rank/fleet/o10
-	name = "Commanding Officer"
-	name_short = "CO"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 50
+/datum/mil_rank/fleet/o3
+	name = "Peacekeeper Captain"
+	name_short = "PKC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	sort_order = 60
+
+/datum/mil_rank/fleet/o4
+	name = "Peacekeeper Commander"
+	name_short = "PKCMDR"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
+	sort_order = 70
 
 // UGN Fleet Ranks
 /datum/mil_rank/ugn_fleet/o1
