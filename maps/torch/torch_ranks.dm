@@ -449,7 +449,7 @@
 	name = "Captain"
 	name_short = "CAPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ugn_fleet/enlisted/o5)
-	sort_order = 150
+	sort_order = 165
 
 
 

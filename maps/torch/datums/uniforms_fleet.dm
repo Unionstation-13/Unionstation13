@@ -32,6 +32,17 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 
+/singleton/hierarchy/mil_uniform/fleet/com/capt //Gives the captain access to his dress uniform
+	name = "EC captain"
+	min_rank = 160
+
+	utility_hat = /obj/item/clothing/head/soft/solgov/expedition/co
+
+	service_hat = /obj/item/clothing/head/solgov/service/expedition/captain
+
+	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
+	dress_hat = /obj/item/clothing/head/solgov/service/expedition/captain
+
 /singleton/hierarchy/mil_uniform/fleet/com/flagofficer
 	name = "Fleet flag command"
 	min_rank = 170

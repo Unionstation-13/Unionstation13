@@ -507,13 +507,13 @@ armour attachments
 	slot = ACCESSORY_SLOT_ARMOR_MISC
 
 /obj/item/clothing/accessory/armor_tag/solgov/ec
-	name = "\improper Expeditionary Corps crest"
-	desc = "An emblem depicting the crest of the SCG Expeditionary Corps."
+	name = "\improper UGN crest"
+	desc = "An emblem depicting the crest of the United Galactic Nations."
 	icon_state = "ecflag"
 
 /obj/item/clothing/accessory/armor_tag/solgov/fleet
 	name = "\improper Fleet crest"
-	desc = "An emblem depicting the crest of the SCG Fleet."
+	desc = "An emblem depicting the crest of the UGN Fleet."
 	icon_state = "fleetflag"
 
 /obj/item/clothing/accessory/armor_tag/solgov/sec

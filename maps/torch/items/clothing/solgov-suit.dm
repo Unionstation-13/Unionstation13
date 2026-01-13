@@ -52,8 +52,8 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/solgov/service/expeditionary
-	name = "expeditionary jacket"
-	desc = "A uniform service jacket belonging to the SCG Expeditionary Corps."
+	name = "UGN jacket"
+	desc = "A uniform service jacket belonging to the United Galactic Nations."
 	icon_state = "ecservice_crew"
 
 /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
@@ -122,31 +122,31 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet
 	name = "fleet service jacket"
-	desc = "A navy blue SCG Fleet service jacket."
+	desc = "A navy blue UGN Fleet service jacket."
 	icon_state = "blueservice"
 	item_state = "blueservice"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 	name = "fleet SNCO service jacket"
-	desc = "A navy blue SCG Fleet service jacket with silver cuffs."
+	desc = "A navy blue UGN Fleet service jacket with silver cuffs."
 	icon_state = "blueservice_snco"
 	item_state = "blueservice_snco"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 	name = "fleet officer's service jacket"
-	desc = "A navy blue SCG Fleet dress jacket with silver accents."
+	desc = "A navy blue UGN Fleet dress jacket with silver accents."
 	icon_state = "blueservice_off"
 	item_state = "blueservice_off"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/command
 	name = "fleet senior officer's service jacket"
-	desc = "A navy blue SCG Fleet dress jacket with gold accents."
+	desc = "A navy blue UGN Fleet dress jacket with gold accents."
 	icon_state = "blueservice_comm"
 	item_state = "blueservice_comm"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "fleet flag officer's service jacket"
-	desc = "A navy blue SCG Fleet dress jacket with red accents."
+	desc = "A navy blue UGN Fleet dress jacket with red accents."
 	icon_state = "blueservice_flag"
 	item_state = "blueservice_flag"
 
@@ -154,7 +154,7 @@
 
 /obj/item/clothing/suit/solgov/fleet_sweater
 	name = "fleet service sweater"
-	desc = "A navy blue SCG Fleet service sweater."
+	desc = "A navy blue UGN Fleet service sweater."
 	icon_state = "fleet_sweater"
 	item_state = "fleet_sweater"
 	body_parts_covered = UPPER_TORSO|ARMS
@@ -175,19 +175,19 @@
 
 /obj/item/clothing/suit/solgov/fleet_sweater/officer
 	name = "fleet officer's service sweater"
-	desc = "A navy blue SCG Fleet service sweater with silver accents."
+	desc = "A navy blue UGN Fleet service sweater with silver accents."
 	icon_state = "fleet_sweater_off"
 	item_state = "fleet_sweater_off"
 
 /obj/item/clothing/suit/solgov/fleet_sweater/command
 	name = "fleet senior officer's service sweater"
-	desc = "A navy blue SCG Fleet service sweater with gold accents."
+	desc = "A navy blue UGN Fleet service sweater with gold accents."
 	icon_state = "fleet_sweater_comm"
 	item_state = "fleet_sweater_comm"
 
 /obj/item/clothing/suit/solgov/fleet_sweater/flag
 	name = "fleet flag officer's service sweater"
-	desc = "A navy blue SCG Fleet serivce sweater with red accents."
+	desc = "A navy blue UGN Fleet service sweater with red accents."
 	icon_state = "fleet_sweater_flag"
 	item_state = "fleet_sweater_flag"
 
@@ -204,69 +204,69 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition
-	name = "expeditionary dress coat"
-	desc = "A silver and black dress peacoat belonging to the SCG Expeditionary Corps. Fashionable, for the 25th century at least."
+	name = "UGN dress coat"
+	desc = "A silver and black dress peacoat belonging to the United Galactic Nations. Fashionable, for the 25th century at least."
 	icon_state = "ecdress_xpl"
 	item_state = "ecdress_xpl"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
-	name = "expeditionary senior's dress coat"
+	name = "UGN senior's dress coat"
 	icon_state = "ecdress_sxpl"
 	item_state = "ecdress_sxpl"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
-	name = "expeditionary chief's dress coat"
+	name = "UGN chief's dress coat"
 	icon_state = "ecdress_cxpl"
 	item_state = "ecdress_cxpl"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command
-	name = "expeditionary officer's dress coat"
-	desc = "A gold and black dress peacoat belonging to the SCG Expeditionary Corps. The height of fashion."
+	name = "UGN officer's dress coat"
+	desc = "A gold and black dress peacoat belonging to the United Galactic Nations. The height of fashion."
 	icon_state = "ecdress_ofcr"
 	item_state = "ecdress_ofcr"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
-	name = "expeditionary commander's dress coat"
+	name = "UGN commander's dress coat"
 	icon_state = "ecdress_cdr"
 	item_state = "ecdress_cdr"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
-	name = "expeditionary captain's dress coat"
+	name = "UGN captain's dress coat"
 	icon_state = "ecdress_capt"
 	item_state = "ecdress_capt"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
-	name = "expeditionary admiral's dress coat"
+	name = "UGN admiral's dress coat"
 	icon_state = "ecdress_adm"
 	item_state = "ecdress_adm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet
 	name = "fleet dress jacket"
-	desc = "A navy blue SCG Fleet dress jacket. Don't get near pasta sauce or vox."
+	desc = "A navy blue UGN Fleet dress jacket. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress"
 	item_state = "whitedress"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	name = "fleet dress SNCO jacket"
-	desc = "A navy blue SCG Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
+	desc = "A navy blue UGN Fleet dress jacket with silver cuffs. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_snco"
 	item_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "fleet officer's dress jacket"
-	desc = "A navy blue SCG Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue UGN Fleet dress jacket with silver accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_off"
 	item_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
-	desc = "A navy blue SCG Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue UGN Fleet dress jacket with gold accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_comm"
 	item_state = "whitedress_comm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"
-	desc = "A navy blue SCG Fleet dress jacket with red accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue UGN Fleet dress jacket with red accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_flag"
 	item_state = "whitedress_flag"
 
@@ -293,7 +293,7 @@
 
 /obj/item/clothing/suit/dress/solgov/fleet/sailor
 	name = "fleet dress overwear"
-	desc = "A navy blue SCG Fleet dress suit. Almost looks like a school-girl outfit."
+	desc = "A navy blue UGN Fleet dress suit."
 	icon_state = "sailordress"
 	item_state = "sailordress"
 
@@ -301,7 +301,7 @@
 //Misc
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/solgov
-	name = "expeditionary winter coat"
+	name = "UGN winter coat"
 	icon_state = "coatec"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
@@ -386,7 +386,7 @@
 
 /obj/item/clothing/suit/space/void/command
 	name = "command voidsuit"
-	desc = "A light, radiation resistant voidsuit commonly used among SCG uniformed services. This one has an EC seal on its chest plate and command department markings."
+	desc = "A light, radiation resistant voidsuit commonly used among UGN uniformed services. This one has an UGN seal on its chest plate and command department markings."
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 	icon_state = "rig_command"
@@ -414,7 +414,7 @@
 	name = "exploration voidsuit"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
-	desc = "The bulky Exoplanet Exploration Unit is a standard voidsuit for Expeditionary Corps field operations. It features extra padding and respectable radiation-resistant lining."
+	desc = "The bulky Exoplanet Exploration Unit is a standard voidsuit for URCE&E operations. It features extra padding and respectable radiation-resistant lining."
 	icon_state = "rig_explorer"
 	item_state = "rig_explorer"
 	sprite_sheets = list(
