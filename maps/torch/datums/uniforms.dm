@@ -22,7 +22,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition
 	dress_gloves = /obj/item/clothing/gloves/white
 
-	//dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
+	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
 
 /singleton/hierarchy/mil_uniform/fleet
 	name = "Master fleet outfit"

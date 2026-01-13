@@ -215,8 +215,8 @@ patches
 scarves
 *****/
 /obj/item/clothing/accessory/solgov/ec_scarf
-	name = "expeditionary scarf"
-	desc = "An SCG blue silk scarf, meant to be worn with Expeditionary Corps uniforms."
+	name = "UGN scarf"
+	desc = "An UGN blue silk scarf."
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
 	sprite_sheets = list(
