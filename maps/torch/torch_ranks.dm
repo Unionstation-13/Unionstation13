@@ -412,25 +412,25 @@
 	name = "Sub-Lieutenant"
 	name_short = "SLT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 40
+	sort_order = 110
 
 /datum/mil_rank/fleet/o2
 	name = "Lieutenant"
 	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 50
+	sort_order = 120
 
 /datum/mil_rank/fleet/o3
 	name = "Peacekeeper Captain"
 	name_short = "PKC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 60
+	sort_order = 130
 
 /datum/mil_rank/fleet/o4
 	name = "Peacekeeper Commander"
 	name_short = "PKCMDR"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/o4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
-	sort_order = 70
+	sort_order = 140
 
 // UGN Fleet Ranks
 /datum/mil_rank/ugn_fleet/o1
