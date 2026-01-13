@@ -1,5 +1,5 @@
 /datum/job/warden
-	title = "Second Lieutenant"
+	title = "Brig Officer"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Marshal"
@@ -12,7 +12,7 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/brig_chief/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/fleet/o1
 	)
 	skill_points = 26
 	min_skill = list( // 15 points
@@ -94,7 +94,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e1,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e3
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4
 	)
 	min_skill = list( // 14 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -141,7 +142,7 @@
 		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3
+		/datum/mil_rank/fleet/o1
 	)
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point

@@ -117,7 +117,7 @@
 		access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm, access_radio_sci, access_radio_exp,
 		access_radio_med, access_research_storage, access_fabrication, access_medical, access_morgue, access_external_airlocks,
 		access_chapel_office, access_crematorium, access_chemistry, access_virology,
-		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed
+		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed, access_aquila_helm, access_torch_helm
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -204,7 +204,7 @@
 		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
 		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
-		access_radio_eng
+		access_radio_eng, access_torch_helm
 		)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -233,7 +233,8 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o9
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 	skill_points = 34
 	min_skill = list( // 15 points
