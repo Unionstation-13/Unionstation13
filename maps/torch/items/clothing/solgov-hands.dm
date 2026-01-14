@@ -58,7 +58,7 @@
 
 /obj/item/clothing/gloves/thick/duty/solgov/fleet
 	name = "duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the UGN Military."
+	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the UGN Fleet."
 	icon_state = "fleet_gloves"
 	item_state = "fleet_gloves"
 

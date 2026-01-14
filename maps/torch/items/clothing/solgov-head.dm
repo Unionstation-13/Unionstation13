@@ -105,12 +105,12 @@
 
 /obj/item/clothing/head/solgov/dress/fleet
 	name = "dress wheel cover"
-	desc = "A white dress uniform cover. This one has an UGN Military crest."
+	desc = "A white dress uniform cover. This one has an UGN Fleet's crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
 	name = "officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and an UGN Military crest."
+	desc = "A white dress uniform cover. This one has a gold stripe and an UGN Fleet's crest."
 	icon_state = "whitepeakcap_com"
 
 
@@ -235,8 +235,8 @@
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
-	name = "UGN military beret"
-	desc = "A navy blue beret belonging to the UGN Military. For personnel that are more inclined towards style than safety."
+	name = "UGN Fleet beret"
+	desc = "A navy blue beret belonging to the UGN Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
@@ -456,7 +456,7 @@
 
 /obj/item/clothing/head/helmet/space/void/exploration
 	name = "exploration voidsuit helmet"
-	desc = "A helmet of URCR&E division, standard issue for URC away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
+	desc = "A helmet of URCE&E division, standard issue for URC Ecology and Exploration away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "rig0_explorer"

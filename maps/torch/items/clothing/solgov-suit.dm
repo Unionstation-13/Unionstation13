@@ -122,31 +122,31 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet
 	name = "service jacket"
-	desc = "A navy blue UGN Military service jacket."
+	desc = "A navy blue UGN Fleet service jacket."
 	icon_state = "blueservice"
 	item_state = "blueservice"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 	name = "SNCO service jacket"
-	desc = "A navy blue UGN Military service jacket with silver cuffs."
+	desc = "A navy blue UGN Fleet service jacket with silver cuffs."
 	icon_state = "blueservice_snco"
 	item_state = "blueservice_snco"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 	name = "officer's service jacket"
-	desc = "A navy blue UGN Military dress jacket with silver accents."
+	desc = "A navy blue UGN Fleet dress jacket with silver accents."
 	icon_state = "blueservice_off"
 	item_state = "blueservice_off"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/command
 	name = "senior officer's service jacket"
-	desc = "A navy blue UGN Military dress jacket with gold accents."
+	desc = "A navy blue UGN Fleet dress jacket with gold accents."
 	icon_state = "blueservice_comm"
 	item_state = "blueservice_comm"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "Flag officer's service jacket"
-	desc = "A navy blue UGN Military dress jacket with red accents."
+	desc = "A navy blue UGN Fleet dress jacket with red accents."
 	icon_state = "blueservice_flag"
 	item_state = "blueservice_flag"
 
@@ -154,7 +154,7 @@
 
 /obj/item/clothing/suit/solgov/fleet_sweater
 	name = "service sweater"
-	desc = "A navy blue UGN Military service sweater."
+	desc = "A navy blue UGN Fleet service sweater."
 	icon_state = "fleet_sweater"
 	item_state = "fleet_sweater"
 	body_parts_covered = UPPER_TORSO|ARMS
@@ -175,19 +175,19 @@
 
 /obj/item/clothing/suit/solgov/fleet_sweater/officer
 	name = "officer's service sweater"
-	desc = "A navy blue UGN Military service sweater with silver accents."
+	desc = "A navy blue UGN Fleet service sweater with silver accents."
 	icon_state = "fleet_sweater_off"
 	item_state = "fleet_sweater_off"
 
 /obj/item/clothing/suit/solgov/fleet_sweater/command
 	name = "senior officer's service sweater"
-	desc = "A navy blue UGN Military service sweater with gold accents."
+	desc = "A navy blue UGN Fleet service sweater with gold accents."
 	icon_state = "fleet_sweater_comm"
 	item_state = "fleet_sweater_comm"
 
 /obj/item/clothing/suit/solgov/fleet_sweater/flag
 	name = "flag officer's service sweater"
-	desc = "A navy blue UGN Military service sweater with red accents."
+	desc = "A navy blue UGN Fleet service sweater with red accents."
 	icon_state = "fleet_sweater_flag"
 	item_state = "fleet_sweater_flag"
 
@@ -242,31 +242,31 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet
 	name = "dress jacket"
-	desc = "A navy blue UGN Military dress jacket. Don't get near pasta sauce or The Union."
+	desc = "A navy blue UGN Fleet dress jacket. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress"
 	item_state = "whitedress"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	name = "dress SNCO jacket"
-	desc = "A navy blue UGN Military dress jacket with silver cuffs. Don't get near pasta sauce or The Union."
+	desc = "A navy blue UGN Fleet dress jacket with silver cuffs. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_snco"
 	item_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "officer's dress jacket"
-	desc = "A navy blue UGN Military dress jacket with silver accents. Don't get near pasta sauce or The Union."
+	desc = "A navy blue UGN Fleet dress jacket with silver accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_off"
 	item_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "senior officer's dress jacket"
-	desc = "A navy blue UGN Military dress jacket with gold accents. Don't get near pasta sauce or The Union."
+	desc = "A navy blue UGN Fleet dress jacket with gold accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_comm"
 	item_state = "whitedress_comm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "flag officer's dress jacket"
-	desc = "A navy blue UGN Military dress jacket with red accents. Don't get near pasta sauce or The Union."
+	desc = "A navy blue UGN Fleet dress jacket with red accents. Don't get near pasta sauce or The Union."
 	icon_state = "whitedress_flag"
 	item_state = "whitedress_flag"
 
@@ -293,7 +293,7 @@
 
 /obj/item/clothing/suit/dress/solgov/fleet/sailor
 	name = "dress overwear"
-	desc = "A navy blue UGN Military dress suit."
+	desc = "A navy blue UGN Fleet dress suit."
 	icon_state = "sailordress"
 	item_state = "sailordress"
 

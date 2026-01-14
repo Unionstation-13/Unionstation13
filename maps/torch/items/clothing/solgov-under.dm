@@ -120,8 +120,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/fleet
-	name = "Military coveralls"
-	desc = "The utility uniform of the UGN Military, made from an insulated material."
+	name = "Coveralls"
+	desc = "The utility uniform of the UGN Fleet, made from an insulated material."
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
@@ -205,7 +205,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet
 	name = "service uniform"
-	desc = "The service uniform of the UGN Military, made from immaculate white fabric."
+	desc = "The service uniform of the UGN Fleet, made from immaculate white fabric."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
@@ -213,7 +213,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "service skirt"
-	desc = "The service uniform skirt of the UGN Military, made from immaculate white fabric."
+	desc = "The service uniform skirt of the UGN Fleet, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
 
