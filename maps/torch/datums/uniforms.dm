@@ -4,9 +4,6 @@
 	hierarchy_type = /singleton/hierarchy/mil_uniform/ec
 	branches = list(/datum/mil_branch/nitros,/datum/mil_branch/rocknall,/datum/mil_branch/bio,/datum/mil_branch/abc,/datum/mil_branch/cooran)
 
-	//pt_under = /obj/item/clothing/under/solgov/pt/expeditionary
-	//pt_shoes = /obj/item/clothing/shoes/black
-
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary
 	utility_shoes = /obj/item/clothing/shoes/dutyboots
 	utility_hat = /obj/item/clothing/head/soft/solgov/expedition

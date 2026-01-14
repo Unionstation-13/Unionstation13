@@ -10,7 +10,7 @@
 
 /obj/item/clothing/gloves/thick/duty/solgov/eng
 	name = "Nitros duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color indicitave of Nitros Engineering."
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color indicative of Nitros Engineering."
 	icon_state = "duty_gloves_eng"
 	item_state = "duty_gloves_eng"
 
@@ -46,7 +46,7 @@
 
 /obj/item/clothing/gloves/thick/duty/solgov/svc
 	name = "BIO duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely green accent color, indicative of BIO."
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely green accent color indicative of BIO."
 	icon_state = "duty_gloves_svc"
 	item_state = "duty_gloves_svc"
 
