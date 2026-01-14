@@ -39,7 +39,7 @@
 	item_state = "duty_gloves_med"
 
 /obj/item/clothing/gloves/thick/duty/solgov/sec
-	name = "security duty gloves"
+	name = "Peacekeeper duty gloves"
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely red accent color."
 	icon_state = "duty_gloves_sec"
 	item_state = "duty_gloves_sec"
@@ -57,13 +57,13 @@
 	item_state = "duty_gloves_sup"
 
 /obj/item/clothing/gloves/thick/duty/solgov/fleet
-	name = "fleet duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the UGN Fleet."
+	name = "duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the UGN Military."
 	icon_state = "fleet_gloves"
 	item_state = "fleet_gloves"
 
 /obj/item/clothing/gloves/thick/duty/solgov/fleet/combat // Combat gloves but fleet style
-	name = "fleet combat gloves"
+	name = "combat gloves"
 	desc = "These thick tactical gloves are somewhat resistant to fire and impact. They will also protect the wearer from electrical shocks"
 	siemens_coefficient = 0
 	force = 5

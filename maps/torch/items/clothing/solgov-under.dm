@@ -24,7 +24,7 @@
 	worn_state = "expeditionpt"
 
 /obj/item/clothing/under/solgov/pt/fleet
-	name = "fleet pt uniform"
+	name = "pt uniform"
 	desc = "A tight-fitting navy blue shirt paired with black shorts. For when you need to 'get physical'."
 	icon_state = "fleetpt"
 	worn_state = "fleetpt"
@@ -120,8 +120,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/fleet
-	name = "fleet coveralls"
-	desc = "The utility uniform of the UGN Fleet, made from an insulated material."
+	name = "Military coveralls"
+	desc = "The utility uniform of the UGN Military, made from an insulated material."
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
@@ -159,8 +159,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/fleet/combat
-	name = "fleet fatigues"
-	desc = "Alternative utility uniform of the UGN Fleet, for when coveralls are impractical."
+	name = "Military fatigues"
+	desc = "Alternative utility uniform of the UGN Military, for when coveralls are impractical."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 
@@ -204,16 +204,16 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/solgov/service/fleet
-	name = "fleet service uniform"
-	desc = "The service uniform of the UGN Fleet, made from immaculate white fabric."
+	name = "service uniform"
+	desc = "The service uniform of the UGN Military, made from immaculate white fabric."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
 	accessories = list(/obj/item/clothing/accessory/navy)
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
-	name = "fleet service skirt"
-	desc = "The service uniform skirt of the UGN Fleet, made from immaculate white fabric."
+	name = "service skirt"
+	desc = "The service uniform skirt of the UGN Military, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
 

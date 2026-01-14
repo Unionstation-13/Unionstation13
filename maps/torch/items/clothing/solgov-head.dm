@@ -35,8 +35,8 @@
 	icon_state = "expeditioncomsoft"
 
 /obj/item/clothing/head/soft/solgov/fleet
-	name = "fleet cap"
-	desc = "It's a navy blue field cap with the UGN Fleet's crest in a silver colour."
+	name = "Military cap"
+	desc = "It's a navy blue field cap with the UGN Military's crest in a silver colour."
 	icon_state = "fleetsoft"
 
 /obj/item/clothing/head/solgov/utility
@@ -50,8 +50,8 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/utility/fleet
-	name = "fleet utility cover"
-	desc = "A navy blue utility cover bearing the crest of the UGN Fleet."
+	name = "Military utility cover"
+	desc = "A navy blue utility cover bearing the crest of the UGN Military."
 	icon_state = "navyutility"
 
 
@@ -104,13 +104,13 @@
 	icon_state = "whitegarrisoncap"
 
 /obj/item/clothing/head/solgov/dress/fleet
-	name = "fleet dress wheel cover"
-	desc = "A white dress uniform cover. This one has an UGN Fleet crest."
+	name = "dress wheel cover"
+	desc = "A white dress uniform cover. This one has an UGN Military crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
-	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and an UGN Fleet crest."
+	name = "officer's dress wheel cover"
+	desc = "A white dress uniform cover. This one has a gold stripe and an UGN Military crest."
 	icon_state = "whitepeakcap_com"
 
 
@@ -190,8 +190,8 @@
 	icon_state = "beret_black"
 
 /obj/item/clothing/head/beret/solgov/expedition/security
-	name = "expeditionary security beret"
-	desc = "An SCG Expeditionary Corps beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "Peacekeeper beret"
+	desc = "An Peacekeeper beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 
 /obj/item/clothing/head/beret/solgov/expedition/medical
@@ -235,13 +235,13 @@
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
-	name = "UGN fleet beret"
-	desc = "A navy blue beret belonging to the UGN Fleet. For personnel that are more inclined towards style than safety."
+	name = "UGN military beret"
+	desc = "A navy blue beret belonging to the UGN Military. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
-	name = "fleet security beret"
-	desc = "An SCG Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "Peacekeeper beret"
+	desc = "An Peacekeeper beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_security"
 
 /obj/item/clothing/head/beret/solgov/fleet/medical
@@ -270,18 +270,18 @@
 	icon_state = "beret_navy_exploration"
 
 /obj/item/clothing/head/beret/solgov/fleet/command
-	name = "fleet officer's beret"
-	desc = "An UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "officer's beret"
+	desc = "An UGN Military beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
-	name = "fleet dress beret"
-	desc = "A white UGN Fleet beret. For personnel that are more inclined towards style than safety."
+	name = "dress beret"
+	desc = "A white UGN Military beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
-	name = "fleet officer's dress beret"
-	desc = "A white UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "officer's dress beret"
+	desc = "A white UGN Military beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
@@ -323,8 +323,8 @@
 	)
 
 /obj/item/clothing/head/ushanka/solgov/fleet
-	name = "fleet fur hat"
-	desc = "An UGN Fleet synthfur-lined hat for operating in cold environments."
+	name = "military fur hat"
+	desc = "An UGN Military synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
