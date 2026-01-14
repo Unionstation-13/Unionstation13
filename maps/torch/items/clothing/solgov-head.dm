@@ -35,8 +35,8 @@
 	icon_state = "expeditioncomsoft"
 
 /obj/item/clothing/head/soft/solgov/fleet
-	name = "Military cap"
-	desc = "It's a navy blue field cap with the UGN Military's crest in a silver colour."
+	name = "Fleet cap"
+	desc = "It's a navy blue field cap with the UGN Fleet's crest in a silver colour."
 	icon_state = "fleetsoft"
 
 /obj/item/clothing/head/solgov/utility
@@ -50,8 +50,8 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/utility/fleet
-	name = "Military utility cover"
-	desc = "A navy blue utility cover bearing the crest of the UGN Military."
+	name = "Fleet utility cover"
+	desc = "A navy blue utility cover bearing the crest of the UGN Fleet."
 	icon_state = "navyutility"
 
 
@@ -271,17 +271,17 @@
 
 /obj/item/clothing/head/beret/solgov/fleet/command
 	name = "officer's beret"
-	desc = "An UGN Military beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "An UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
 	name = "dress beret"
-	desc = "A white UGN Military beret. For personnel that are more inclined towards style than safety."
+	desc = "A white UGN Fleet beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
 	name = "officer's dress beret"
-	desc = "A white UGN Military beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A white UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
@@ -323,8 +323,8 @@
 	)
 
 /obj/item/clothing/head/ushanka/solgov/fleet
-	name = "military fur hat"
-	desc = "An UGN Military synthfur-lined hat for operating in cold environments."
+	name = "Fleet fur hat"
+	desc = "An UGN Fleet synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
