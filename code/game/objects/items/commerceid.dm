@@ -11,6 +11,7 @@
 	var/imprinted = false
 	var/authorizer
 	var/authorized = false
+	var/emagged = false
 
 /obj/item/commerceid/attack_self(mob/user)
 	if (user.a_intent == I_GRAB)
@@ -19,12 +20,20 @@
 			var/hash = md5("[rand(1, 100000)][world.time]")
 			to_chat(user, SPAN_NOTICE("You imprint your identification onto the card."))
 			imprinted = true
-			info = "\icon[src] [src]:\nName: [user.real_name]\
-			\nFingerprint Hash: [fingerprint]\
-			\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
-			\nAuthorizer: [authorizer]\
-			\n<small>Stall Verification Card, [station_name()] Certification only\
-			\nVERIFICATION-HASH: [hash]</small>"
+			if(!emagged)
+				var/emag_name = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:NAME")
+				var/emag_auth = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:AUTHORIZER")
+				info = "\icon[src] [src]:\nName: [user.real_name]\
+				\nFingerprint Hash: [fingerprint]\
+				\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
+				\nAuthorizer: [authorizer]\
+				\n<small>Stall Verification Card, [station_name()] Certification only\
+				\nVERIFICATION-HASH: [hash]</small>"
+			else if(emagged)
+				info = "\icon[src] [src]:\nName: [emag_name]\
+				\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
+				\nAuthorizer: [emag_auth]\
+				\n<small>Stall Verification Card, [station_name()] Certification only</small>"
 		else if (authorized)
 			read_info(user)
 		else if (!authorized)
@@ -43,6 +52,9 @@
 			to_chat(user, SPAN_NOTICE("You authorize the card."))
 		else
 			to_chat(user, SPAN_NOTICE("You tap your ID card to [src]. Nothing happens."))
+	else if(istype(W, /obj/item/card/emag))
+		to_chat(user, SPAN_NOTICE("The screen flickers and turns red, displaying a wall of error messages before flickering to a blue screen and rebooting."))
+		emagged = true
 	else
 		return
 
