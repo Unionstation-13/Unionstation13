@@ -1,7 +1,7 @@
 /obj/item/commerceid
 	name = "Commerce Hub Trade Verification Card"
 	desc = "An identification card granted to commerce hub entrepreneurs by Cooran Supply. On the back of it, the words 'PLEASE REMOVE GLOVES BEFORE IMPRINTING' are printed in bold text."
-		icon = 'icons/obj/clothing/obj_accessories.dmi'
+	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	icon_state = "intelbadge"
 	force = 0.5
 	w_class = ITEM_SIZE_SMALL
