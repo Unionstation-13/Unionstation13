@@ -159,8 +159,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/fleet/combat
-	name = "Military fatigues"
-	desc = "Alternative utility uniform of the UGN Military, for when coveralls are impractical."
+	name = "Fleet fatigues"
+	desc = "Alternative utility uniform of the UGN Fleet, for when coveralls are impractical."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 
