@@ -8,10 +8,10 @@
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'
 	var/info
-	var/imprinted = false
+	var/imprinted = FALSE
 	var/authorizer
-	var/authorized = false
-	var/emagged = false
+	var/authorized = FALSE
+	var/emagged = FALSE
 
 /obj/item/commerceid/attack_self(mob/user)
 	if (user.a_intent == I_GRAB)
@@ -19,7 +19,7 @@
 			var/fingerprint = user.get_fingerprint() || "N/A"
 			var/hash = md5("[rand(1, 100000)][world.time]")
 			to_chat(user, SPAN_NOTICE("You imprint your identification onto the card."))
-			imprinted = true
+			imprinted = TRUE
 			if(!emagged)
 				info = "\icon[src] [src]:\nName: [user.real_name]\
 				\nFingerprint Hash: [fingerprint]\
@@ -47,14 +47,14 @@
 			if(authorized)
 				to_chat(user, SPAN_NOTICE("The card has already been authorized."))
 				return
-			authorized = true
+			authorized = TRUE
 			authorizer = "[ID.registered_name] ([ID.assignment])"
 			to_chat(user, SPAN_NOTICE("You authorize the card."))
 		else
 			to_chat(user, SPAN_NOTICE("You tap your ID card to [src]. Nothing happens."))
 	else if(istype(W, /obj/item/card/emag))
 		to_chat(user, SPAN_NOTICE("The screen flickers and turns red, displaying a wall of error messages before flickering to a blue screen and rebooting."))
-		emagged = true
+		emagged = TRUE
 	else
 		return
 
