@@ -21,9 +21,9 @@
 			imprinted = true
 			info = "\icon[src] [src]:\nName: [user.real_name]\
 			\nFingerprint Hash: [fingerprint]\
-			\nShip Identifier: UGN TITEN - CIVILIAN EXPLORATORY VESSEL MK. 15\
+			\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
 			\nAuthorizer: [authorizer]\
-			\n<small>Stall Verification Card, UGN Titen Certification only\
+			\n<small>Stall Verification Card, [station_name()] Certification only\
 			\nVERIFICATION-HASH: [hash]</small>"
 		else if (authorized)
 			read_info(user)
