@@ -449,7 +449,7 @@
 	. = ..()
 
 /datum/reagent/toxin/fertilizer //Reagents used for plant fertilizers.
-	name = "Fertilizer"
+	name = "Molecular Restructurer Catalyst"
 	description = "A chemical mix good for growing plants with."
 	taste_description = "plant food"
 	taste_mult = 0.5
@@ -470,7 +470,7 @@
 
 /datum/reagent/toxin/fertilizer/potash
 	name = "Potassium Nitrate"
-	description = "Also known as Saltpetre. Useful as a fertilizer."
+	description = "A rapidly acting chemical that makes it easier for a molecular restructuring tray to reorganize hydrogen atoms."
 	taste_description = "sharp salt"
 	reagent_state = SOLID
 	color = "#c7beb9"
@@ -478,7 +478,7 @@
 
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"
-	description = "A harmful toxic mixture to kill plantlife. Do not ingest!"
+	description = "A harmful toxic mixture to kill plantlife and halt the growth process of molecular restructing. Do not ingest!"
 	taste_mult = 1
 	reagent_state = LIQUID
 	color = "#49002e"
