@@ -21,8 +21,6 @@
 			to_chat(user, SPAN_NOTICE("You imprint your identification onto the card."))
 			imprinted = true
 			if(!emagged)
-				var/emag_name = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:NAME")
-				var/emag_auth = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:AUTHORIZER")
 				info = "\icon[src] [src]:\nName: [user.real_name]\
 				\nFingerprint Hash: [fingerprint]\
 				\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
@@ -30,6 +28,8 @@
 				\n<small>Stall Verification Card, [station_name()] Certification only\
 				\nVERIFICATION-HASH: [hash]</small>"
 			else if(emagged)
+				var/emag_name = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:NAME")
+				var/emag_auth = input("WARNING: TAMPERING DETECTED!!! INPUT ADMINISTRATIVE OVERRIDE. CLASS:AUTHORIZER")
 				info = "\icon[src] [src]:\nName: [emag_name]\
 				\nShip Identifier: [uppertext(station_name())] - CIVILIAN EXPLORATORY VESSEL MK. 15\
 				\nAuthorizer: [emag_auth]\
