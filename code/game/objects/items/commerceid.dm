@@ -16,7 +16,10 @@
 /obj/item/commerceid/attack_self(mob/user)
 	if (user.a_intent == I_GRAB)
 		if (!imprinted && authorized)
-			var/fingerprint = user.get_fingerprint() || "N/A"
+			if (user.dna)
+				var/fingerprint = md5(H.dna.uni_identity)
+			else
+				var/fingerprint = "N/A"
 			var/hash = md5("[rand(1, 100000)][world.time]")
 			to_chat(user, SPAN_NOTICE("You imprint your identification onto the card."))
 			imprinted = TRUE
@@ -40,7 +43,7 @@
 			to_chat(user, SPAN_NOTICE("[src] needs to be verified by a Cooran Supply identification card before you can imprint on it."))
 	else
 		read_info(user)
-/obj/item/commerceid/attackby(obj/item/W, mob/user) // Handles authorizing a commerce card
+/obj/item/commerceid/attackby(obj/item/W, mob/user) // Handles authorizing a commerce card(or emags)
 	if(istype(W, /obj/item/card/id))
 		var/obj/item/card/id/ID = W
 		if(access_cargo in ID.GetAccess())
