@@ -450,8 +450,8 @@
 
 /datum/reagent/toxin/fertilizer //Reagents used for plant fertilizers.
 	name = "Molecular Restructurer Catalyst"
-	description = "A chemical mix good for growing plants with."
-	taste_description = "plant food"
+	description = "A chemical mix good for restructuring molecules with."
+	taste_description = "tasteless"
 	taste_mult = 0.5
 	reagent_state = LIQUID
 	strength = 0.5 // It's not THAT poisonous.
@@ -469,9 +469,9 @@
 	name = "Robust Harvest"
 
 /datum/reagent/toxin/fertilizer/potash
-	name = "Potassium Nitrate"
+	name = "Desalinated Phoron Nitrate"
 	description = "A rapidly acting chemical that makes it easier for a molecular restructuring tray to reorganize hydrogen atoms."
-	taste_description = "sharp salt"
+	taste_description = "sharp burning sensation"
 	reagent_state = SOLID
 	color = "#c7beb9"
 	value = 0.9
