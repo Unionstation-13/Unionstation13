@@ -1,0 +1,35 @@
+{{if data.have_id_slot}}{{:helper.link('Access Modification', 'home', {'action' : 'switchm', 'target' : 'mod'}, data.mmode ? 'disabled' : null)}}{{/if}}
+{{:helper.link('Crew Manifest', 'folder-open', {'action' : 'switchm', 'target' : 'manifest'}, !data.mmode ? 'disabled' : null)}}
+{{if data.have_printer}}{{:helper.link('Print', 'print', {'action' : 'print'}, (!data.mmode || data.has_id) ? null : 'disabled')}}{{/if}}
+
+{{if !data.mmode}}
+<div class='item'>
+  <h2>Crew Manifest</h2>
+</div>
+<div class='item'>
+  {{:data.manifest}}
+</div>
+{{else}}
+<div class='item'>
+  <h2>Access Modification</h2>
+</div>
+
+{{if !data.has_id}}
+  <span class='alert'><i>Please insert an ID with proper credentials into the terminal to proceed with the printing process.</i></span><br>
+{{/if}}
+
+<div class='item'>
+  <div class='itemLabel'>
+	Target Identity:
+  </div>
+  <div class='itemContent'>
+	{{:helper.link(data.id_name, 'eject', {'action' : 'eject'})}}
+  </div>
+</div>
+<hr>
+
+{{if data.authenticated}}
+  {{if data.has_id}}
+	<div class='item'>
+	  <h2>Passport Printer Setup</h2>
+	</div>
