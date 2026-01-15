@@ -2,7 +2,7 @@
 /singleton/hierarchy/mil_uniform/ec
 	name = "Master EC outfit"
 	hierarchy_type = /singleton/hierarchy/mil_uniform/ec
-	branches = list(/datum/mil_branch/nitros,/datum/mil_branch/rocknall,/datum/mil_branch/bio,/datum/mil_branch/abc,/datum/mil_branch/cooran)
+	branches = list(/datum/mil_branch/nitros,/datum/mil_branch/rocknall,/datum/mil_branch/bio,/datum/mil_branch/abc,/datum/mil_branch/cooran,/datum/mil_branch/expeditionary_corps)
 
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary
 	utility_shoes = /obj/item/clothing/shoes/dutyboots
