@@ -5388,6 +5388,10 @@
 /area/hallway/primary/bridge/aft)
 "mT" = (
 /obj/structure/table/woodentable/walnut,
+/obj/item/paper/co,
+/obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt,
+/obj/item/clothing/under/solgov/dress/expeditionary/command,
+/obj/item/clothing/head/solgov/service/expedition/captain,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "mV" = (

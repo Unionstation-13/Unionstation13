@@ -202,3 +202,16 @@
 	<i>Regards, Forn.</i></tt>
 	<i>This paper has been stamped with the stamp of The United Rocknall Corporation.</i>
 	"}
+
+/obj/item/paper/co
+	name = "Note - Cooran Supply Notice"
+	info = {"
+	<center>
+<h2>Cooran Supply</h2>
+<h3>Notice Of Late Delivery</h3><hr>
+</center>
+<b>To: </b> <small> Commanding Officer, UGN Titen.
+<b></small>Body:</b><small> Greetings, Commanding Officer. This letter serves to inform you of the final delivery of your formal attire as requested. Cooran Supply offers its sincere apologies for the incorrect sizing of your official UGN Dress Uniform, and the subsequent delay in delivering a corrected version. If you have any other questions about the delay, please refer to communique 116 - Cooran-involved incident at the Vassi system border.
+</small><hr>
+<i>A small coupon has been attached to the bottom of the page. It reads "Official Cooran Supply Coupon - Valid at licensed Cooran Supply ordering terminals for a 2%(two percent) discount. </i>
+"}

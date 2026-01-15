@@ -6,8 +6,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
-	allowed_branches = list(/datum/mil_branch/fleet)
-	allowed_ranks = list(/datum/mil_rank/fleet/o10)
+	allowed_branches = list(/datum/mil_branch/ugn_fleet)
+	allowed_ranks = list(/datum/mil_rank/ugn_fleet/o5)
 	skill_points = 36
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -41,9 +41,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(/datum/mil_branch/ugn_fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o9
+		/datum/mil_rank/ugn_fleet/o3
 	)
 	skill_points = 36
 	min_skill = list( // 5 points
@@ -89,8 +89,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/o4)
 
 	skill_points = 36
 	min_skill = list( // 16 points
@@ -117,7 +117,7 @@
 		access_expedition_shuttle_helm, access_maint_tunnels, access_torch_fax, access_radio_comm, access_radio_sci, access_radio_exp,
 		access_radio_med, access_research_storage, access_fabrication, access_medical, access_morgue, access_external_airlocks,
 		access_chapel_office, access_crematorium, access_chemistry, access_virology,
-		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed
+		access_cmo, access_surgery, access_psychiatrist, access_medical_equip, access_senmed, access_aquila_helm, access_torch_helm
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -135,8 +135,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/rocknall)
+	allowed_ranks = list(/datum/mil_rank/rocknall/o3)
 	skill_points = 32
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
@@ -175,8 +175,12 @@
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/nitros)
+	allowed_ranks = list(/datum/mil_rank/nitros/o1,
+	/datum/mil_rank/nitros/o2,
+	/datum/mil_rank/nitros/o3,
+	/datum/mil_rank/nitros/o4
+	)
 	skill_points = 36
 	min_skill = list( // 31 points
 		SKILL_BUREAUCRACY  = SKILL_BASIC, // 1 point
@@ -200,7 +204,7 @@
 		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
 		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
-		access_radio_eng
+		access_radio_eng, access_torch_helm
 		)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
@@ -229,7 +233,8 @@
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o9
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 	skill_points = 34
 	min_skill = list( // 15 points
@@ -352,9 +357,9 @@
 	ideal_character_age = 32
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+		/datum/mil_branch/ugn_fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
 	)
-	allowed_ranks = list(/datum/mil_rank/fleet/o1)
+	allowed_ranks = list(/datum/mil_rank/ugn_fleet/o1)
 	skill_points = 26
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point

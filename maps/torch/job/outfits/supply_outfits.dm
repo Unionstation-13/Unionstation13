@@ -40,8 +40,8 @@
 
 /singleton/hierarchy/outfit/job/torch/passenger/research/prospector
 	name = OUTFIT_JOB_NAME("Prospector")
-	uniform = /obj/item/clothing/under/rank/ntwork
-	shoes = /obj/item/clothing/shoes/workboots
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/supply
+	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/passenger/research/mining)
 	pda_type = /obj/item/modular_computer/pda/mining
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL

@@ -2,10 +2,7 @@
 /singleton/hierarchy/mil_uniform/ec
 	name = "Master EC outfit"
 	hierarchy_type = /singleton/hierarchy/mil_uniform/ec
-	branches = list(/datum/mil_branch/expeditionary_corps)
-
-	pt_under = /obj/item/clothing/under/solgov/pt/expeditionary
-	pt_shoes = /obj/item/clothing/shoes/black
+	branches = list(/datum/mil_branch/nitros,/datum/mil_branch/rocknall,/datum/mil_branch/bio,/datum/mil_branch/abc,/datum/mil_branch/cooran,/datum/mil_branch/expeditionary_corps)
 
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary
 	utility_shoes = /obj/item/clothing/shoes/dutyboots
@@ -27,7 +24,7 @@
 /singleton/hierarchy/mil_uniform/fleet
 	name = "Master fleet outfit"
 	hierarchy_type = /singleton/hierarchy/mil_uniform/fleet
-	branches = list(/datum/mil_branch/fleet)
+	branches = list(/datum/mil_branch/fleet, /datum/mil_branch/ugn_fleet)
 
 	pt_under = /obj/item/clothing/under/solgov/pt/fleet
 	pt_shoes = /obj/item/clothing/shoes/black

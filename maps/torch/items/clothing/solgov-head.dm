@@ -25,18 +25,18 @@
 	icon_state = "cap_veteran"
 
 /obj/item/clothing/head/soft/solgov/expedition
-	name = "\improper Expeditionary Corps cap"
-	desc = "It's a black ballcap bearing the Expeditonary Corps crest."
+	name = "\improper UGN cap"
+	desc = "It's a black ballcap bearing the United Galactic Nation's crest."
 	icon_state = "expeditionsoft"
 
 /obj/item/clothing/head/soft/solgov/expedition/co
-	name = "\improper Expeditionary Corps captain's cap"
-	desc = "It's a black ballcap bearing the Expeditonary Corps crest. The brim has gold trim."
+	name = "\improper UGN Fleet Captain's cap"
+	desc = "It's a black ballcap bearing the United Galactic Nation Fleet's crest. The brim has gold trim."
 	icon_state = "expeditioncomsoft"
 
 /obj/item/clothing/head/soft/solgov/fleet
-	name = "fleet cap"
-	desc = "It's a navy blue field cap with the SCG Fleet crest in a silver colour."
+	name = "Fleet cap"
+	desc = "It's a navy blue field cap with the UGN Fleet's crest in a silver colour."
 	icon_state = "fleetsoft"
 
 /obj/item/clothing/head/solgov/utility
@@ -50,8 +50,8 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/utility/fleet
-	name = "fleet utility cover"
-	desc = "A navy blue utility cover bearing the crest of the SCG Fleet."
+	name = "Fleet utility cover"
+	desc = "A navy blue utility cover bearing the crest of the UGN Fleet."
 	icon_state = "navyutility"
 
 
@@ -67,23 +67,23 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/service/expedition
-	name = "expeditionary peaked cap"
-	desc = "A peaked black uniform cap belonging to the SCG Expeditionary Corps."
+	name = "UGN peaked cap"
+	desc = "A peaked black uniform cap belonging to the United Galactic Nations."
 	icon_state = "ecdresscap"
 
 /obj/item/clothing/head/solgov/service/expedition/command
-	name = "expeditionary officer's peaked cap"
-	desc = "A peaked black uniform cap belonging to the SCG Expeditionary Corps. This one is trimmed in gold."
+	name = "UGN officer's peaked cap"
+	desc = "A peaked black uniform cap belonging to the United Galactic Nations. This one is trimmed in gold."
 	icon_state = "ecdresscap_ofcr"
 
 /obj/item/clothing/head/solgov/service/expedition/captain
-	name = "expeditionary captain's peaked cap"
-	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the SCG Expeditionary Corps."
+	name = "UGN captain's peaked cap"
+	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the United Galactic Nations."
 	icon_state = "ecdresscap_capt"
 
 /obj/item/clothing/head/solgov/service/expedition/senior_command
-	name = "senior expedition officer's peaked cap"
-	desc = "A peaked grey uniform cap belonging to the SCG Expeditionary Corps. This one is trimmed in gold and blue."
+	name = "senior UGN officer's peaked cap"
+	desc = "A peaked grey uniform cap belonging to the United Galactic Nations. This one is trimmed in gold and blue."
 	icon_state = "ecdresscap_cdr"
 
 
@@ -104,13 +104,13 @@
 	icon_state = "whitegarrisoncap"
 
 /obj/item/clothing/head/solgov/dress/fleet
-	name = "fleet dress wheel cover"
-	desc = "A white dress uniform cover. This one has an SCG Fleet crest."
+	name = "dress wheel cover"
+	desc = "A white dress uniform cover. This one has an UGN Fleet's crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
-	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and an SCG Fleet crest."
+	name = "officer's dress wheel cover"
+	desc = "A white dress uniform cover. This one has a gold stripe and an UGN Fleet's crest."
 	icon_state = "whitepeakcap_com"
 
 
@@ -185,43 +185,43 @@
 	icon_state = "beret_greensilver"
 
 /obj/item/clothing/head/beret/solgov/expedition
-	name = "expeditionary beret"
-	desc = "A black beret belonging to the SCG Expeditionary Corps. For personnel that are more inclined towards style than safety."
+	name = "UGN beret"
+	desc = "A black beret belonging to the UGN. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black"
 
 /obj/item/clothing/head/beret/solgov/expedition/security
-	name = "expeditionary security beret"
-	desc = "An SCG Expeditionary Corps beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "Peacekeeper beret"
+	desc = "An Peacekeeper beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 
 /obj/item/clothing/head/beret/solgov/expedition/medical
-	name = "expeditionary medical beret"
-	desc = "An SCG Expeditionary Corps beret with a medical crest. For personnel that are more inclined towards style than safety."
+	name = "URC medical beret"
+	desc = "An United Rocknall Corporation beret with a medical crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_medical"
 
 /obj/item/clothing/head/beret/solgov/expedition/engineering
-	name = "expeditionary engineering beret"
-	desc = "An SCG Expeditionary Corps beret with an engineering crest. For personnel that are more inclined towards style than safety."
+	name = "Nitros Engineering beret"
+	desc = "An Nitros Engineering beret with an engineering crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_engineering"
 
 /obj/item/clothing/head/beret/solgov/expedition/supply
-	name = "expeditionary supply beret"
-	desc = "An SCG Expeditionary Corps beret with a supply crest. For personnel that are more inclined towards style than safety."
+	name = "Cooran Supply beret"
+	desc = "An Cooran Supply beret with a supply crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_supply"
 
 /obj/item/clothing/head/beret/solgov/expedition/service
-	name = "expeditionary service beret"
-	desc = "An SCG Expeditionary Corps beret with a service crest. For personnel that are more inclined towards style than safety."
+	name = "BIO beret"
+	desc = "An BIO beret with a service crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_service"
 
 /obj/item/clothing/head/beret/solgov/expedition/exploration
-	name = "expeditionary exploration beret"
-	desc = "An SCG Expeditionary Corps beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	name = "URCE&E beret"
+	desc = "An URC Exploration and Ecology Division beret with an exploration crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_exploration"
 
 /obj/item/clothing/head/beret/solgov/expedition/command
-	name = "expeditionary officer's beret"
-	desc = "An SCG Expeditionary Corps beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "UGN officer's beret"
+	desc = "An United Galactic Nations beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_command"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch
@@ -235,13 +235,13 @@
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
-	name = "fleet beret"
-	desc = "A navy blue beret belonging to the SCG Fleet. For personnel that are more inclined towards style than safety."
+	name = "UGN Fleet beret"
+	desc = "A navy blue beret belonging to the UGN Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
-	name = "fleet security beret"
-	desc = "An SCG Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "Peacekeeper beret"
+	desc = "An Peacekeeper beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_security"
 
 /obj/item/clothing/head/beret/solgov/fleet/medical
@@ -270,18 +270,18 @@
 	icon_state = "beret_navy_exploration"
 
 /obj/item/clothing/head/beret/solgov/fleet/command
-	name = "fleet officer's beret"
-	desc = "An SCG Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "officer's beret"
+	desc = "An UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
-	name = "fleet dress beret"
-	desc = "A white SCG Fleet beret. For personnel that are more inclined towards style than safety."
+	name = "dress beret"
+	desc = "A white UGN Fleet beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
-	name = "fleet officer's dress beret"
-	desc = "A white SCG Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "officer's dress beret"
+	desc = "A white UGN Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
@@ -312,8 +312,8 @@
 //ushanka
 
 /obj/item/clothing/head/ushanka/solgov
-	name = "expeditionary fur hat"
-	desc = "An SCG Expeditionary Corps synthfur-lined hat for operating in cold environments."
+	name = "UGN fur hat"
+	desc = "An United Galactic Nations synthfur-lined hat for operating in cold environments."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "ecushankadown"
@@ -323,8 +323,8 @@
 	)
 
 /obj/item/clothing/head/ushanka/solgov/fleet
-	name = "fleet fur hat"
-	desc = "An SCG Fleet synthfur-lined hat for operating in cold environments."
+	name = "Fleet fur hat"
+	desc = "An UGN Fleet synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
@@ -439,7 +439,7 @@
 
 /obj/item/clothing/head/helmet/space/void/command
 	name = "command voidsuit helmet"
-	desc = "A light, radiation resistant voidsuit helmet commonly used among SCG uniformed services."
+	desc = "A light, radiation resistant voidsuit helmet commonly used among UGN uniformed services."
 	icon_state = "rig0_command"
 	item_state = "command_helm"
 	light_overlay = "helmet_light_green_alt"
@@ -456,7 +456,7 @@
 
 /obj/item/clothing/head/helmet/space/void/exploration
 	name = "exploration voidsuit helmet"
-	desc = "A helmet of Exoplanet Exploration Unit, standard issue for Expeditionary Corps away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
+	desc = "A helmet of URCE&E division, standard issue for URC Ecology and Exploration away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "rig0_explorer"
