@@ -45,7 +45,7 @@
 	else
 		read_info(user)
 
-/obj/item/commerceid/attackby(obj/item/W, mob/user) // Handles authorizing a commerce card(or emags)
+/obj/item/commerceid/resolve_attackby(obj/item/W, mob/user) // Handles authorizing a commerce card(or emags)
 	if(istype(W, /obj/item/card/id))
 		var/obj/item/card/id/ID = W
 		if(access_cargo in ID.GetAccess())
