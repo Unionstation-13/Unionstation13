@@ -71,7 +71,7 @@
 	has_color = TRUE
 
 /datum/category_item/underwear/bottom/expedition_pt_shorts
-	name = "PT shorts, Expeditionary Corps"
+	name = "PT shorts, UGN"
 	icon_state = "expedition_shorts"
 
 /datum/category_item/underwear/bottom/fleet_pt_shorts

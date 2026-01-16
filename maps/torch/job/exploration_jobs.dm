@@ -89,7 +89,7 @@
 	department_flag = EXP
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "Your Rocknall Employment Contract and the Senior Rocknall Associate"
+	supervisors = "Your Rocknall Employment Contract and Exploration Commander"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
@@ -98,7 +98,8 @@
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/exploration/explorer
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
-	allowed_ranks = list(/datum/mil_rank/ec/e3)
+	allowed_ranks = list(/datum/mil_rank/ec/e3
+	)
 
 	min_skill = list( // 1 point
 		SKILL_EVA = SKILL_BASIC, // 1 point

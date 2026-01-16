@@ -9,8 +9,8 @@
 	)
 
 /obj/item/clothing/gloves/thick/duty/solgov/eng
-	name = "engineering duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color."
+	name = "Nitros duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color indicative of Nitros Engineering."
 	icon_state = "duty_gloves_eng"
 	item_state = "duty_gloves_eng"
 
@@ -21,49 +21,49 @@
 	item_state = "duty_gloves_cmd"
 
 /obj/item/clothing/gloves/thick/duty/solgov/exp
-	name = "exploration duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely purple accent color."
+	name = "URCE&E duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely purple accent color indicative of the URC Ecology and Exploration Division.."
 	icon_state = "duty_gloves_exp"
 	item_state = "duty_gloves_exp"
 
 /obj/item/clothing/gloves/thick/duty/solgov/sci
-	name = "science duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely heather accent color."
+	name = "URC science duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely heather accent color indicative of the URC."
 	icon_state = "duty_gloves_sci"
 	item_state = "duty_gloves_sci"
 
 /obj/item/clothing/gloves/thick/duty/solgov/med
-	name = "medical duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely blue accent color."
+	name = "URC medical duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely blue accent color indicative of the URC."
 	icon_state = "duty_gloves_med"
 	item_state = "duty_gloves_med"
 
 /obj/item/clothing/gloves/thick/duty/solgov/sec
-	name = "security duty gloves"
+	name = "Peacekeeper duty gloves"
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely red accent color."
 	icon_state = "duty_gloves_sec"
 	item_state = "duty_gloves_sec"
 
 /obj/item/clothing/gloves/thick/duty/solgov/svc
-	name = "service duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely green accent color."
+	name = "BIO duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely green accent color indicative of BIO."
 	icon_state = "duty_gloves_svc"
 	item_state = "duty_gloves_svc"
 
 /obj/item/clothing/gloves/thick/duty/solgov/sup
-	name = "supply duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely brown accent color."
+	name = "Cooran supply duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely brown accent color indicative of Cooran Supply."
 	icon_state = "duty_gloves_sup"
 	item_state = "duty_gloves_sup"
 
 /obj/item/clothing/gloves/thick/duty/solgov/fleet
-	name = "fleet duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the SCG Fleet."
+	name = "duty gloves"
+	desc = "These black duty gloves are made from durable synthetic materials. Standard issue to all ranks in the UGN Fleet."
 	icon_state = "fleet_gloves"
 	item_state = "fleet_gloves"
 
 /obj/item/clothing/gloves/thick/duty/solgov/fleet/combat // Combat gloves but fleet style
-	name = "fleet combat gloves"
+	name = "combat gloves"
 	desc = "These thick tactical gloves are somewhat resistant to fire and impact. They will also protect the wearer from electrical shocks"
 	siemens_coefficient = 0
 	force = 5
