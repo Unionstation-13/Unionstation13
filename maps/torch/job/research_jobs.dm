@@ -64,7 +64,7 @@
 		SKILL_COMPUTER = SKILL_BASIC, // 1 point
 		SKILL_DEVICES = SKILL_BASIC, // 2 points
 		SKILL_SCIENCE = SKILL_TRAINED, // 2 points
-		SKILL_WEAPONS = SKILL_TRAINED // Research Purposes
+		SKILL_WEAPONS = SKILL_BASIC // Research Purposes
 	)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
