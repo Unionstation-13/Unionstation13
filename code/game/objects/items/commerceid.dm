@@ -44,6 +44,7 @@
 			to_chat(user, SPAN_NOTICE("[src] needs to be verified by a Cooran Supply identification card before you can imprint on it."))
 	else
 		read_info(user)
+
 /obj/item/commerceid/attackby(obj/item/W, mob/user) // Handles authorizing a commerce card(or emags)
 	if(istype(W, /obj/item/card/id))
 		var/obj/item/card/id/ID = W
