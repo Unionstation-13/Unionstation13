@@ -479,6 +479,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/wood,
 /area/commerce/mall/staff_hallway)
 "bF" = (
@@ -1635,6 +1640,11 @@
 "dR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "dS" = (
@@ -2147,6 +2157,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable/green,
 /turf/simulated/floor/wood,
 /area/commerce/mall/staff_hallway)
 "ff" = (
@@ -2678,10 +2689,6 @@
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
-"gj" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/white,
-/area/commerce/mall/hub)
 "gk" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3676,6 +3683,16 @@
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"io" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "ip" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -4657,7 +4674,7 @@
 /obj/item/airlock_brace,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/staff_hallway)
 "kB" = (
 /obj/machinery/disposal,
 /obj/floor_decal/corner/green,
@@ -6291,12 +6308,6 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
-"oE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
-/area/commerce/mall/hub)
 "oH" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -8280,7 +8291,7 @@
 /area/hydroponics)
 "ti" = (
 /turf/simulated/floor/wood,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/staff_hallway)
 "tl" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -10760,6 +10771,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "zL" = (
@@ -10850,7 +10866,7 @@
 "Aa" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/wood,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/staff_hallway)
 "Ac" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/wall/ocp_wall,
@@ -12031,6 +12047,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"Dk" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "Dn" = (
 /turf/simulated/wall/prepainted,
 /area/vacant/cabin)
@@ -14137,7 +14157,7 @@
 /obj/item/tank/oxygen/full,
 /obj/item/tank/oxygen/full,
 /turf/simulated/floor/wood,
-/area/maintenance/thirddeck/starboard)
+/area/commerce/mall/staff_hallway)
 "Ik" = (
 /obj/floor_decal/corner/green{
 	dir = 10
@@ -14544,6 +14564,12 @@
 /obj/floor_decal/corner/green/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"Jj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "Jk" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -14745,17 +14771,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
-"JA" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/white,
-/area/commerce/mall/hub)
 "JB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16697,16 +16712,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
-"Oh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/commerce/mall/hub)
 "Oi" = (
 /obj/machinery/light{
 	dir = 1
@@ -16879,6 +16884,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
@@ -17906,8 +17916,6 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
 "RB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -17917,6 +17925,12 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
@@ -18733,14 +18747,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "TO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters/open{
 	name = "Commerce Hub Lockdown Shutters";
 	id_tag = "commerce_lockdown"
 	},
 /obj/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/valve/shutoff/scrubbers,
+/obj/machinery/atmospherics/valve/shutoff/supply,
+/obj/floor_decal/industrial/shutoff,
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "TP" = (
@@ -19209,6 +19224,17 @@
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/reinforced,
 /area/thruster/d3starboard)
+"US" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "UU" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
@@ -20920,6 +20946,12 @@
 	dir = 1;
 	pixel_y = -25
 	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green,
 /turf/simulated/floor/wood,
 /area/commerce/mall/staff_hallway)
 "Zl" = (
@@ -40503,7 +40535,7 @@ YN
 vd
 Sx
 bn
-Oh
+io
 RB
 dI
 kY
@@ -40706,7 +40738,7 @@ YN
 YN
 Yp
 YN
-oE
+Jj
 Ss
 VZ
 ne
@@ -40909,8 +40941,8 @@ Ou
 DH
 Ii
 MT
-gj
-JA
+Dk
+US
 nM
 nm
 qQ
@@ -41507,8 +41539,8 @@ dc
 dQ
 eF
 fK
-cl
-cl
+Mo
+Mo
 Mo
 fe
 Mo
@@ -41709,7 +41741,7 @@ ze
 ze
 AO
 da
-cl
+Mo
 Ij
 Cu
 bE
@@ -42113,7 +42145,7 @@ dd
 dd
 dd
 da
-cl
+Mo
 Aa
 zp
 Wa
@@ -42315,8 +42347,8 @@ dd
 dd
 dd
 da
-cl
-cl
+Mo
+Mo
 eI
 eI
 eI
