@@ -1030,11 +1030,6 @@
 	req_access = list(access_kitchen)
 	lighting_tone = AREA_LIGHTING_COOL
 
-/area/crew_quarters/commissary
-	name = "\improper Warehouse"
-	icon_state = "quart"
-	req_access = list(access_cargo)
-
 /area/crew_quarters/diplomatic_office
 	name = "\improper Diplomatic Meeting Room"
 	icon_state = "crew_quarters"

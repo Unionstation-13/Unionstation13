@@ -321,6 +321,15 @@
 	pixel_x = -24;
 	pixel_y = -24
 	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "bp" = (
@@ -2669,6 +2678,10 @@
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
+"gj" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "gk" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -6278,6 +6291,12 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
+"oE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "oH" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -14102,7 +14121,7 @@
 "Ij" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Emergency Supplies";
-	req_access = list("ACCESS_SUPPLY")
+	req_access = list("ACCESS_CARGO")
 	},
 /obj/item/gun/projectile/pistol/sec/lethal,
 /obj/item/gun/projectile/pistol/sec/lethal,
@@ -14726,6 +14745,17 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"JA" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "JB" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16204,6 +16234,9 @@
 /obj/machinery/atm{
 	pixel_y = 32
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "MU" = (
@@ -16664,6 +16697,16 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
+"Oh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white,
+/area/commerce/mall/hub)
 "Oi" = (
 /obj/machinery/light{
 	dir = 1
@@ -17870,6 +17913,11 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "RC" = (
@@ -18197,6 +18245,7 @@
 /obj/floor_decal/spline/plain/white{
 	dir = 10
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
 "St" = (
@@ -19683,14 +19732,16 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "VZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/commerce/mall/hub)
@@ -40452,7 +40503,7 @@ YN
 vd
 Sx
 bn
-Sx
+Oh
 RB
 dI
 kY
@@ -40655,7 +40706,7 @@ YN
 YN
 Yp
 YN
-YN
+oE
 Ss
 VZ
 ne
@@ -40858,8 +40909,8 @@ Ou
 DH
 Ii
 MT
-YN
-pw
+gj
+JA
 nM
 nm
 qQ
