@@ -470,7 +470,7 @@
 
 /datum/reagent/toxin/fertilizer/potash
 	name = "Desalinated Phoron Nitrate"
-	description = "A rapidly acting chemical that makes it easier for a molecular restructuring tray to reorganize hydrogen atoms."
+	description = "A rapidly acting chemical that makes it easier for a molecular restructuring tray to reorganize hydrogen atoms that uses breaks in the Phoron Nitrate bonds to trigger dipole moments. It cannot survive in PH levels lower than 4.5 and breaks apart into a benign chemical if exposed to such acidic enviorments."
 	taste_description = "sharp burning sensation"
 	reagent_state = SOLID
 	color = "#c7beb9"
