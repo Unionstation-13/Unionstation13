@@ -12124,7 +12124,7 @@
 	dir = 4
 	},
 /obj/machinery/button/blast_door{
-	id_tag = s;
+	id_tag = "stall1";
 	name = "Stall Shutters";
 	pixel_y = 20;
 	pixel_x = 10
