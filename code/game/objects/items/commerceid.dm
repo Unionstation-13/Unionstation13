@@ -12,14 +12,15 @@
 	var/authorizer
 	var/authorized = FALSE
 	var/emagged = FALSE
+	var/fingerprint
 
 /obj/item/commerceid/attack_self(mob/user)
 	if (user.a_intent == I_GRAB)
 		if (!imprinted && authorized)
 			if (user.dna)
-				var/fingerprint = md5(user.dna.uni_identity)
+				fingerprint = md5(user.dna.uni_identity)
 			else
-				var/fingerprint = "N/A"
+				fingerprint = "N/A"
 			var/hash = md5("[rand(1, 100000)][world.time]")
 			to_chat(user, SPAN_NOTICE("You imprint your identification onto the card."))
 			imprinted = TRUE
