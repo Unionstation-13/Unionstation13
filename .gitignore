@@ -53,3 +53,4 @@ package-lock.json
 
 # ignore local selected map
 /maps/using.dm
+.vscode/settings.json

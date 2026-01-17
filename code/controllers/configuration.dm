@@ -136,7 +136,7 @@
 	var/static/secret_disabled = FALSE
 
 	/// enables random events mid-round when set to 1
-	var/static/allow_random_events = FALSE
+	var/static/allow_random_events = TRUE
 
 	var/static/hostedby
 

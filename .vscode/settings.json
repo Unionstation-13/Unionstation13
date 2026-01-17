@@ -54,5 +54,10 @@
     "--ignore-revs-file", ".git-blame-ignore-revs"
   ],
 
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.words": [
+    "Cooran",
+    "minilathe",
+    "passportfab"
+  ]
 }
