@@ -11,7 +11,7 @@
 
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_UGNFLEET
-	description = "The United Galactic Nations fleet is the prevelant democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
+	description = "The United Galactic Nations fleet is the prevalent democratic military faction of the galaxy. They are tied for the largest military fleet with the Union, both being composed of around 800 ships.\
 	You, for what ever reason or another, decided to resign from the fleet and were enlisted onboard the Titen, remember, depending on your role in the Fleet, it may change the level of respect people give you.\
 	(Ex: an Admiral will get salutes from Peacekeepers while a private won't.)\
 	Always remember that UGN veterans are trained in CQC at least to a mediocre level, and know how to respond in emergency situations."
@@ -25,13 +25,13 @@
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
-	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410. \
-	Its greatest neighbor is the UGN, where it acquires most of its goods for trade and commerce, it is also home to Nitros Engineering, a pillar of the UGN's engineering wing. \
-	It is located in the Nitros system, and due to the abundance of resources in that system,they are able to make exorbiant profits off of the ruins of the Great Union Invasion \
-	The Federated Republic of Nitros is a externally independant pacifist nation, however singificant corruption has been unveiled over the past decades, particularly- \
+	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410 following The Union's invasion and the annihalation of Saepe Dei. \
+	The Republic's greatest asset is its location encircled by the UGN, as well as its existence of a pillar of engineering for the UGN, enforcing a two way dependancy that protects The Republic from any scandalous attempts by the UGN at serving their connection. \
+	It is located in the Nitros system, and due to the abundance of resources in that system, they are able to make exorbitant profits off of the ruins of the Great Union Invasion \
+	The Federated Republic of Nitros is a externally independent pacifist nation, however significant corruption has been unveiled over the past decades, particularly- \
 	related to the large population of ex URC employees in their political ranks, and thus the majority of individuals believe the Republic of Nitros to be in leagues with the URC\
-	In the year 2450, The Republic is a flourishing economic powerhouse, however individuals from the republic are often nickanmed as \"Wafflers\" in UGN space- \
-	due to their often exorbiant inherited riches or pompous attitude."
+	In the year 2450, The Republic is a flourishing economic powerhouse, partially because of its engineering status, however individuals from the republic are often nicknamed as \"Wafflers\" in UGN space- \
+	due to their often exorbitant inherited riches or pompous and nihilistic attitude."
 	economic_power = 1.4
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
@@ -51,16 +51,10 @@
 
 /singleton/cultural_info/faction/remote/neotrasen
 	name = FACTION_NEOTRASEN
-	description = "The NeoTrasen Corporation is a megaconglomerate entity that controls a\ majority of the management industry. Its employees are almost always\
-members of command or heads of departments, as it prides itself\
-on a capable workforce that is both ingenious and industrious\
-However, in recent years, NeoTrasen has been exposed for scandalous\
-activities revolving around the discovery of the Nitros system and the reported\
-Xeno exploitation initiatives NeoTrasen has put into effect under its new management of the NeoBoard. On top of that, NeoTrasen has also been\
-exposed in recent years for worker exploitation and wage theft,\
-suggesting that NeoTrasen should be investigated further by journalists.\
-At the present day, NeoTrasen is the wealthiest of the megacorps, valued at\
-609 trillion Galactic Space Currency."
+	description = "The NeoTrasen corporation is a management and hiring conglomerate owned and run by the Civic Society, a Private Equity firm owned by over 14 billion people.\
+	Founded in 2300 by an anonymous group of individuals called the Neo-Aurum, it was named in legacy of Robert Trasen, founder of the United Galactic Nations. As of present day,\
+	it is valued at 34.7 Trillion Galactic Space Currency(GSC), and owns recruitment firms across the UGN and even The Union. It was initially founded on the principles of a democratic,\
+	equal system of hiring, however after an algorithmic scandal in 2400, the original 60 founders cashed out with around 500,000,000,000 GSC each and becoming a partially public company."
 	economic_power = 1.2
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
@@ -68,8 +62,8 @@ At the present day, NeoTrasen is the wealthiest of the megacorps, valued at\
 
 /singleton/cultural_info/faction/remote/xynergy
 	name = FACTION_URC
-	description = "The United Rocknall Corporation is a massive Science and Medical conglomerate which owns almost every hospital and research facility in the galaxy.\
-	Their current valuation is 5.5 Billion Galactic Space Currency(GSC) They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
+	description = "The United Rocknall Corporation is a massive Science and Medical family-owned conglomerate which owns almost every hospital and research facility in the galaxy.\
+	Their current valuation is 35 trillion Galactic Space Currency(GSC). They are normally unfriendly to xenos and leave xeno life to the bottom of their command trees."
 	economic_power = 1.1
 	blacklisted_jobs = list(/datum/job/officer, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/sec_physician)
 
