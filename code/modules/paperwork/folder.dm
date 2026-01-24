@@ -181,14 +181,14 @@
 	sealed = TRUE
 	seal_stamp = "\improper SCG Expeditionary Command rubber stamp"
 
-/obj/item/material/folder/envelope/preset/bio_ordering_station
+/obj/item/material/folder/envelope/preset/bio_envelope
 	name = "sealed B.I.O LLC envelope"
 	desc = "An official envelope with the B.I.O LLC corporate seal."
 	icon_state = "envelope_sealed"
 	sealed = TRUE
 	seal_stamp = "\improper B.I.O LLC corporate rubber stamp"
 
-/obj/item/material/folder/envelope/preset/bio_ordering_station/New()
+/obj/item/material/folder/envelope/preset/bio_envelope/New()
 	..()
 	var/obj/item/paper/bio_memo = new(src)
 	bio_memo.name = "B.I.O LLC - Chat Channel Directive"
@@ -226,6 +226,59 @@
 		B.I.O LLC"}
 	bio_memo.update_icon()
 
+/obj/item/material/folder/envelope/preset/cooran_envelope
+	name = "sealed Cooran Supply envelope"
+	desc = "An official envelope with the Cooran Supply corporate seal."
+	icon_state = "envelope_sealed"
+	sealed = TRUE
+	seal_stamp = "\improper Cooran Supply corporate rubber stamp"
+
+/obj/item/material/folder/envelope/preset/bio_envelope/New()
+	..()
+	var/obj/item/paper/cooran_memo = new(src)
+	cooran_memo.name = "Cooran Supply - Commerce Hub Instructions"
+	cooran_memo.info = {"<center><b>COORAN SUPPLY CORPORATE MEMORANDUM</b></center><br>
+	<center><i>Sanctioned Secure Communication</i></center><br><br>
+	<b>To:</b> Cooran Supply Supply Director<br>
+		<b>From:</b> James Cooran, Chief Operations Officer of Cooran Supply<br>
+		<b>Date:</b> October 19, 2451" <br>
+		<b>Subject:</b> Commerce Hub Instructions<br><br>
+	You are likely very confused, agitated maybe. You may be wondering, 'Why is James Cooran contacting OUR MEASLY SOULS!?!' <br><br>
+
+	<center>Do not fret.</center>
+
+	Here at Cooran Supply, we strive for a safe, happy, and healthy workforce. But how can we do that without telling you what to do ?<br><br>
+
+	So I just want to say a few things about our new, state-of-the-art, reinforced polycarbonate lined Commerce Hub.
+
+	<b>INSTRUCTIONS:</b><br>
+	Please listen carefully, I will only say this once(though I do realize you can simply reread this document).
+	The commerce hub is our state of the art entrepreneurship module onboard the UGN Titen, designed to blossom a strong,
+	intimate connection from our common drifter to the inner machinations of our utopian capitalist system.
+
+	To do so, we cannot have dystopian 'free policies', so we must charge the common man all he can afford to purchase a rental ticket at one of our beautiful stalls!
+
+	<center><b>REMEMBER: All individuals at stalls must be checked regularly for Commerce ID's!</b></center>
+	1. To begin the booking process of an individual, grab a Commerce ID from the supply station.
+	2. Tap the ID against your own ID card.
+	3. Ensure the individual pays the proper due of 29.99 GSC on Cash or Credit.
+	4. (optional) Log the individuals name on a piece of paper to keep track of sales
+	5. Start a twenty minute timer.After that time has passed, revoke and incinerate the commerce ID if they would not like to renew it.
+	<small>Failure to do so shall result in immediate termination of employment.</small>
+	6. Let the individual into an empty stall in the Commerce Hub
+	7. <p>Relax<sup><a href="#footnote-1">[1]</a></sup></p>
+
+	And thats all you need to know!
+
+	Great job everyone!
+
+	And remember,
+
+	<center></b>DO NOT FUCK IT UP.</b></center>
+<hr>
+<p id="footnote-1"><small>1. As cordoned by law of the UGN, all workers of Cooran Supply require a mandatory twenty-minute break for every four hours worked</small></p>
+	"}
+	cooran_memo.update_icon()
 
 /obj/item/material/folder/envelope/on_update_icon()
 	if (sealed)
