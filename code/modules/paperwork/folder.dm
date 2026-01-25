@@ -274,7 +274,7 @@
 
 	And remember,
 
-	<center></b>DO NOT FUCK IT UP.</b></center>
+	<center><b>DO NOT FUCK IT UP.</b></center>
 <hr>
 <p id="footnote-1"><small>1. As cordoned by law of the UGN, all workers of Cooran Supply require a mandatory twenty-minute break for every four hours worked</small></p>
 	"}
