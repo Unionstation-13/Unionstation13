@@ -26,15 +26,17 @@
 
 	map_admin_faxes = list(
 		"United Rocknall Command HQ",
+		"Nitros Engineering Command HQ",
+		"ABCDEFG Command HQ",
+		"B.I.O Command HQ",
 		"Commisionary Dock",
-		"EXO Head Office",
-		"EXO Internal Affairs",
-		"SFP Territory Support",
-		"SFP Special Investigations",
-		"SFP Fugitive Recovery",
-		"Sol Fleet Mars Command",
-		"Diplomatic Representative's Office",
-		"Burea of Emergency Affairs",
+		"UGN Office of Peacekeeper Supreme Command",
+		"UGN Office of Internal Affairs",
+		"UGN Burea of Internal Criminal Investigations",
+		"Cooran Supply Central Office",
+		"Pax Supreme Fleet Command",
+		"UGN External Affairs Office",
+		"UGN Burea of Emergency Affairs",
 		"Secure Routing Service"
 	)
 

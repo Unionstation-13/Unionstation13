@@ -465,7 +465,7 @@
 
 /area/shuttle/petrov/rd
 	icon_state = "heads_rd"
-	name = "\improper SRV Petrov - CSO's Office"
+	name = "\improper SRV Petrov - Sci-Med Admin's Office"
 	icon_state = "head_quarters"
 	req_access = list(access_petrov_rd)
 
@@ -627,7 +627,7 @@
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/command/pathfinder
-	name = "\improper Pathfinder's Office"
+	name = "\improper Exploration Commander's Office"
 	icon_state = "pathfinder_office"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_pathfinder)
@@ -678,19 +678,19 @@
 
 /area/crew_quarters/heads/office/xo
 	icon_state = "heads_hop"
-	name = "\improper Command - XO's Office"
+	name = "\improper Command - 1LT's Office"
 	req_access = list(access_hop)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/rd
 	icon_state = "heads_rd"
-	name = "\improper Command - CSO's Office"
+	name = "\improper Command - Sci-Med Admin's Office"
 	req_access = list(access_rd)
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/heads/office/cmo
 	icon_state = "heads_cmo"
-	name = "\improper Command - CMO's Office"
+	name = "\improper Command - Medical Admin's Office"
 	req_access = list(access_cmo)
 	lighting_tone = AREA_LIGHTING_COOL
 
@@ -701,24 +701,24 @@
 
 /area/crew_quarters/heads/office/cos
 	icon_state = "heads_hos"
-	name = "\improper Command - CoS' Office"
+	name = "\improper Command - Marshall's Office"
 	req_access = list(access_hos)
 
 /area/crew_quarters/heads/office/cl
 	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
+	name = "\improper Command - HR's Office"
 	req_access = list(access_liaison)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - UGN Rep's Office"
 	req_access = list(access_representative)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
-	name = "\improper Command - SEA's Office"
+	name = "\improper Command - Unused Office"
 	req_access = list(access_senadv)
 
 /area/crew_quarters/heads/office/bridgesec
@@ -873,7 +873,7 @@
 	name = "\improper Supply Upper Warehouse"
 
 /area/quartermaster/deckchief
-	name = "\improper Deck Chief's Office"
+	name = "\improper Supply Manager's Office"
 	icon_state = "quart"
 	req_access = list(access_qm)
 

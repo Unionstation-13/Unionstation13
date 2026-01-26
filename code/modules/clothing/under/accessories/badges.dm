@@ -193,8 +193,8 @@
 
 
 /obj/item/clothing/accessory/badge/agent
-	name = "\improper PK Agent's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Peacekeeper Divison."
+	name = "\improper UGNICI Agent's badge"
+	desc = "A leather-backed gold badge displaying the crest of the UGN Burea of Internal Criminal Investigations."
 	icon_state = "agentbadge"
 	slot_flags = SLOT_BELT | SLOT_TIE | SLOT_MASK
 	slot = ACCESSORY_SLOT_INSIGNIA

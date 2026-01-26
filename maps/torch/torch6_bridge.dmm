@@ -1622,7 +1622,7 @@
 	},
 /obj/machinery/door/airlock/research{
 	id_tag = "csodoor";
-	name = "Rocknall Lead Administrator";
+	name = "Sci-Med Administrator";
 	secured_wires = 1
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -1750,7 +1750,9 @@
 /area/bridge/hallway/starboard)
 "dd" = (
 /obj/item/pen,
-/obj/item/stamp/xo,
+/obj/item/stamp/xo{
+	name = "first lieutenant's rubber stamp"
+	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_supply,
@@ -4650,7 +4652,11 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/structure/cable/green,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea)
 "kw" = (
@@ -5310,7 +5316,7 @@
 /area/crew_quarters/heads/office/cos)
 "mI" = (
 /obj/structure/closet/secure_closet/cos{
-	name = "Marshal's locker"
+	name = "Marshall's locker"
 	},
 /obj/floor_decal/industrial/outline/grey,
 /obj/item/book/manual/sol_sop,
@@ -6591,7 +6597,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
 	id_tag = "cosdoor";
-	name = "Marshal";
+	name = "Marshall";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7376,10 +7382,6 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/foreport)
 "sy" = (
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
 /obj/machinery/door/blast/shutters{
@@ -7396,11 +7398,6 @@
 /area/crew_quarters/heads/office/sea)
 "sz" = (
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -7709,7 +7706,9 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "ty" = (
-/obj/structure/closet/secure_closet/representative,
+/obj/structure/closet/secure_closet/representative{
+	name = "United Galactic Nations representative's locker"
+	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -7853,6 +7852,11 @@
 	dir = 8
 	},
 /obj/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea)
 "tZ" = (
@@ -8310,8 +8314,9 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
+	d1 = 1;
 	d2 = 4;
-	icon_state = "0-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -9673,7 +9678,9 @@
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
 "za" = (
-/obj/structure/closet/secure_closet/XO,
+/obj/structure/closet/secure_closet/XO{
+	name = "1st Lieutenant's locker"
+	},
 /obj/random/drinkbottle,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
@@ -10988,7 +10995,9 @@
 /area/crew_quarters/heads/office/cmo)
 "EP" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/closet/secure_closet/CMO_torch,
+/obj/structure/closet/secure_closet/CMO_torch{
+	name = "medical administrator's locker"
+	},
 /obj/item/book/manual/sol_sop,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
@@ -11735,10 +11744,13 @@
 /area/bridge)
 "HJ" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/stamp/solgov,
+/obj/item/stamp/solgov{
+	name = "United Galactic Nations rubber stamp"
+	},
 /obj/item/stamp/denied{
 	pixel_x = 4;
-	pixel_y = -2
+	pixel_y = -2;
+	name = "DENIED rubber stamp"
 	},
 /obj/random_multi/single_item/memo_scgr,
 /obj/structure/sign/double/solgovflag/left{
@@ -11968,6 +11980,11 @@
 /obj/structure/broken_door,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/valve/shutoff/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/sea)
 "Iv" = (
@@ -12479,7 +12496,9 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Titen - Chief Medical Officer"
 	},
-/obj/item/stamp/cmo,
+/obj/item/stamp/cmo{
+	name = "medcial administrator's rubber stamp"
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "KX" = (
@@ -12608,7 +12627,9 @@
 /area/maintenance/bridge/foreport)
 "Lv" = (
 /obj/structure/table/glass,
-/obj/item/stamp/rd,
+/obj/item/stamp/rd{
+	name = "sci-med administrator's rubber stamp"
+	},
 /obj/floor_decal/corner/research{
 	dir = 5
 	},
@@ -14103,10 +14124,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "RT" = (
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
 /obj/machinery/door/blast/shutters{
