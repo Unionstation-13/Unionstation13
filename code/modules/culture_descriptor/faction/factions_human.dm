@@ -25,7 +25,7 @@
 
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
-	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410 following The Union's invasion and the annihalation of Saepe Dei. \
+	description = "The Federated Republic of Nitros is a newcomer to the galactic spectrum, as it was created only 40 years ago in 2410 following The Union's invasion and the annihilation of Saepe Dei. \
 	The Republic's greatest asset is its location encircled by the UGN, as well as its existence of a pillar of engineering for the UGN, enforcing a two way dependancy that protects The Republic from any scandalous attempts by the UGN at serving their connection. \
 	It is located in the Nitros system, and due to the abundance of resources in that system, they are able to make exorbitant profits off of the ruins of the Great Union Invasion \
 	The Federated Republic of Nitros is a externally independent pacifist nation, however significant corruption has been unveiled over the past decades, particularly- \
