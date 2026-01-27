@@ -14,7 +14,7 @@
 	hitsound = 'sound/effects/stamp.ogg'
 
 /obj/item/stamp/captain
-	name = "captain's rubber stamp"
+	name = "commanding officer's rubber stamp"
 	icon_state = "stamp-cap"
 
 /obj/item/stamp/ce
@@ -22,11 +22,11 @@
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/rd
-	name = "chief science officer's rubber stamp"
+	name = "sci-med administrator's rubber stamp"
 	icon_state = "stamp-rd"
 
 /obj/item/stamp/cmo
-	name = "chief medical officer's rubber stamp"
+	name = "medical administrator's rubber stamp"
 	icon_state = "stamp-cmo"
 
 /obj/item/stamp/denied
