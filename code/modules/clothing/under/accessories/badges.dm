@@ -194,7 +194,7 @@
 
 /obj/item/clothing/accessory/badge/agent
 	name = "\improper FAICI Agent's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Federted Agency for Internal Criminal Investigations."
+	desc = "A leather-backed gold badge displaying the crest of the Federated Agency for Internal Criminal Investigations."
 	icon_state = "agentbadge"
 	slot_flags = SLOT_BELT | SLOT_TIE | SLOT_MASK
 	slot = ACCESSORY_SLOT_INSIGNIA
