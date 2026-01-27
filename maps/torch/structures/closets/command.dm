@@ -52,7 +52,7 @@
 	)
 
 /obj/structure/closet/secure_closet/XO
-	name = "executive officer's locker"
+	name = "first lieutenant's locker"
 	req_access = list(access_hop)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command/xo
 
