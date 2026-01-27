@@ -437,7 +437,7 @@
 //Petrov
 
 /area/shuttle/petrov
-	name = "\improper SRV Petrov"
+	name = "\improper RRV Petrov"
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
@@ -445,75 +445,74 @@
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/shuttle/petrov/cell1
-	name = "\improper SRV Petrov - Isolation Cell 1"
+	name = "\improper RRV Petrov - Isolation Cell 1"
 	icon_state = "shuttle"
 /area/shuttle/petrov/cell2
-	name = "\improper SRV Petrov - Isolation Cell 2"
+	name = "\improper RRV Petrov - Isolation Cell 2"
 	icon_state = "shuttlegrn"
 /area/shuttle/petrov/cell3
-	name = "\improper SRV Petrov - Isolation Cell 3"
+	name = "\improper RRV Petrov - Isolation Cell 3"
 	icon_state = "shuttle"
 
 /area/shuttle/petrov/hallwaya
-	name = "\improper SRV Petrov - Lower Hallway"
+	name = "\improper RRV Petrov - Lower Hallway"
 	icon_state = "hallA"
 
 /area/shuttle/petrov/control
-	name = "\improper SRV Petrov - Control Room"
+	name = "\improper RRV Petrov - Control Room"
 	icon_state = "checkpoint1"
 	req_access = list(access_petrov_control)
 
 /area/shuttle/petrov/rd
+	name = "\improper RRV Petrov - Sci-Med Admin's Office"
 	icon_state = "heads_rd"
-	name = "\improper SRV Petrov - Sci-Med Admin's Office"
-	icon_state = "head_quarters"
 	req_access = list(access_petrov_rd)
 
 /area/shuttle/petrov/cockpit
-	name = "\improper SRV Petrov - Cockpit"
+	name = "\improper RRV Petrov - Cockpit"
 	icon_state = "shuttlered"
 	req_access = list(access_petrov_helm)
 
 /area/shuttle/petrov/maint
-	name = "\improper SRV Petrov - Maintenance"
+	name = "\improper RRV Petrov - Maintenance"
 	icon_state = "engine"
 	req_access = list(access_petrov_maint)
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/analysis
-	name = "\improper SRV Petrov - Analysis Lab"
+	name = "\improper RRV Petrov - Analysis Lab"
 	icon_state = "devlab"
 	req_access = list(access_petrov_analysis)
 
 /area/shuttle/petrov/toxins
-	name = "\improper SRV Petrov - Toxins Lab"
+	name = "\improper RRV Petrov - Toxins Lab"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_toxins)
 
 /area/shuttle/petrov/rnd
-	name = "\improper SRV Petrov - Fabricator Lab"
+	name = "\improper RRV Petrov - Fabricator Lab"
 	icon_state = "devlab"
 
 /area/shuttle/petrov/isolation
-	name = "\improper SRV Petrov - Isolation Lab"
+	name = "\improper RRV Petrov - Isolation Lab"
 	icon_state = "xeno_lab"
 
 /area/shuttle/petrov/phoron
-	name = "\improper SRV Petrov - Sublimation Lab"
+	name = "\improper RRV Petrov - Sublimation Lab"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_phoron)
 
 /area/shuttle/petrov/custodial
-	name = "\improper SRV Petrov - Custodial"
+	name = "\improper RRV Petrov - Custodial"
 	icon_state = "decontamination"
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/equipment
-	name = "\improper SRV Petrov - Equipment Storage"
+	name = "\improper RRV Petrov - Equipment Storage"
 	icon_state = "locker"
 
 /area/shuttle/petrov/eva
-	name = "\improper SRV Petrov - EVA Storage"
+	name = "\improper RRV Petrov - EVA Storage"
 	icon_state = "locker"
 
 //Turbolift
