@@ -32,7 +32,7 @@
 		"Commisionary Dock",
 		"UGN Office of Peacekeeper Supreme Command",
 		"UGN Office of Internal Affairs",
-		"UGN Burea of Internal Criminal Investigations",
+		"FAICI Central Office",
 		"Cooran Supply Central Office",
 		"Pax Supreme Fleet Command",
 		"UGN External Affairs Office",
