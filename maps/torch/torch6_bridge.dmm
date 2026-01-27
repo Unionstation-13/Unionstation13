@@ -1750,9 +1750,7 @@
 /area/bridge/hallway/starboard)
 "dd" = (
 /obj/item/pen,
-/obj/item/stamp/xo{
-	name = "first lieutenant's rubber stamp"
-	},
+/obj/item/stamp/xo,
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_supply,
@@ -10717,6 +10715,7 @@
 "Dh" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/random_multi/single_item/memo_corporate,
+/obj/item/stamp/sea,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "Dj" = (
@@ -12485,9 +12484,7 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Titen - Chief Medical Officer"
 	},
-/obj/item/stamp/cmo{
-	name = "medcial administrator's rubber stamp"
-	},
+/obj/item/stamp/cmo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "KX" = (
@@ -12616,9 +12613,7 @@
 /area/maintenance/bridge/foreport)
 "Lv" = (
 /obj/structure/table/glass,
-/obj/item/stamp/rd{
-	name = "sci-med administrator's rubber stamp"
-	},
+/obj/item/stamp/rd,
 /obj/floor_decal/corner/research{
 	dir = 5
 	},
