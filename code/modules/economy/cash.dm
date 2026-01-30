@@ -1,6 +1,6 @@
 /obj/item/spacecash
-	name = "0 thalers"
-	desc = "It's worth 0 thalers."
+	name = "0 credits"
+	desc = "It's worth 0 credits."
 	gender = PLURAL
 	icon = 'icons/obj/money.dmi'
 	icon_state = "spacecash1"
@@ -52,9 +52,9 @@
 		return list(icon_state)
 
 /obj/item/spacecash/bundle
-	name = "pile of thalers"
+	name = "pile of credits"
 	icon_state = "spacecash1"
-	desc = "They are worth 0 Thalers."
+	desc = "They are worth 0 credits."
 	worth = 0
 
 /obj/item/spacecash/bundle/Initialize()
@@ -117,51 +117,51 @@
 		..()
 
 /obj/item/spacecash/bundle/c1
-	name = "1 Thaler"
+	name = "1 Credit"
 	icon_state = "spacecash1"
 	desc = "It's worth 1 credit."
 	worth = 1
 
 /obj/item/spacecash/bundle/c10
-	name = "10 Thaler"
+	name = "10 Credits"
 	icon_state = "spacecash10"
-	desc = "It's worth 10 Thalers."
+	desc = "It's worth 10 credits."
 	worth = 10
 
 /obj/item/spacecash/bundle/c20
-	name = "20 Thaler"
+	name = "20 Credits"
 	icon_state = "spacecash20"
-	desc = "It's worth 20 Thalers."
+	desc = "It's worth 20 credits."
 	worth = 20
 
 /obj/item/spacecash/bundle/c50
-	name = "50 Thaler"
+	name = "50 Credits"
 	icon_state = "spacecash50"
-	desc = "It's worth 50 Thalers."
+	desc = "It's worth 50 credits."
 	worth = 50
 
 /obj/item/spacecash/bundle/c100
-	name = "100 Thaler"
+	name = "100 Credits"
 	icon_state = "spacecash100"
-	desc = "It's worth 100 Thalers."
+	desc = "It's worth 100 credits."
 	worth = 100
 
 /obj/item/spacecash/bundle/c200
-	name = "200 Thaler"
+	name = "200 Credits"
 	icon_state = "spacecash200"
-	desc = "It's worth 200 Thalers."
+	desc = "It's worth 200 credits."
 	worth = 200
 
 /obj/item/spacecash/bundle/c500
-	name = "500 Thaler"
+	name = "500 Credits"
 	icon_state = "spacecash500"
-	desc = "It's worth 500 Thalers."
+	desc = "It's worth 500 credits."
 	worth = 500
 
 /obj/item/spacecash/bundle/c1000
-	name = "1000 Thaler"
+	name = "1000 Credits"
 	icon_state = "spacecash1000"
-	desc = "It's worth 1000 Thalers."
+	desc = "It's worth 1000 credits."
 	worth = 1000
 
 /proc/spawn_money(sum, spawnloc, mob/living/carbon/human/human_user as mob)
