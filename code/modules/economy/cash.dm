@@ -119,49 +119,49 @@
 /obj/item/spacecash/bundle/c1
 	name = "1 Credit"
 	icon_state = "spacecash1"
-	desc = "It's worth 1 credit."
+	desc = "It's worth 1 Credit."
 	worth = 1
 
 /obj/item/spacecash/bundle/c10
 	name = "10 Credits"
 	icon_state = "spacecash10"
-	desc = "It's worth 10 credits."
+	desc = "It's worth 10 Credits."
 	worth = 10
 
 /obj/item/spacecash/bundle/c20
 	name = "20 Credits"
 	icon_state = "spacecash20"
-	desc = "It's worth 20 credits."
+	desc = "It's worth 20 Credits."
 	worth = 20
 
 /obj/item/spacecash/bundle/c50
 	name = "50 Credits"
 	icon_state = "spacecash50"
-	desc = "It's worth 50 credits."
+	desc = "It's worth 50 Credits."
 	worth = 50
 
 /obj/item/spacecash/bundle/c100
 	name = "100 Credits"
 	icon_state = "spacecash100"
-	desc = "It's worth 100 credits."
+	desc = "It's worth 100 Credits."
 	worth = 100
 
 /obj/item/spacecash/bundle/c200
 	name = "200 Credits"
 	icon_state = "spacecash200"
-	desc = "It's worth 200 credits."
+	desc = "It's worth 200 Credits."
 	worth = 200
 
 /obj/item/spacecash/bundle/c500
 	name = "500 Credits"
 	icon_state = "spacecash500"
-	desc = "It's worth 500 credits."
+	desc = "It's worth 500 Credits."
 	worth = 500
 
 /obj/item/spacecash/bundle/c1000
 	name = "1000 Credits"
 	icon_state = "spacecash1000"
-	desc = "It's worth 1000 credits."
+	desc = "It's worth 1000 Credits."
 	worth = 1000
 
 /proc/spawn_money(sum, spawnloc, mob/living/carbon/human/human_user as mob)
