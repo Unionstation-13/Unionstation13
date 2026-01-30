@@ -384,7 +384,7 @@
 //Aquila
 
 /area/aquila
-	name = "\improper SEV Aquila"
+	name = "\improper UGN Aquila"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced
 	requires_power = 1
@@ -393,33 +393,33 @@
 	base_turf_special_handling = TRUE
 
 /area/aquila/cockpit
-	name = "\improper SEV Aquila - Cockpit"
+	name = "\improper UGN Aquila - Cockpit"
 	req_access = list(access_aquila)
 
 /area/aquila/power
-	name = "\improper SEV Aquila - Engineering Compartment"
+	name = "\improper UGN Aquila - Engineering Compartment"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/storage
-	name = "\improper SEV Aquila - Storage Bay"
+	name = "\improper UGN Aquila - Storage Bay"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/suits
-	name = "\improper SEV Aquila - Suit Storage Compartment"
+	name = "\improper UGN Aquila - Suit Storage Compartment"
 	req_access = list(access_aquila)
 
 /area/aquila/air
-	name = "\improper SEV Aquila - Life Support Compartment"
+	name = "\improper UGN Aquila - Life Support Compartment"
 
 /area/aquila/crew
-	name = "\improper SEV Aquila - Crew Compartment"
+	name = "\improper UGN Aquila - Crew Compartment"
 
 /area/aquila/medical
-	name = "\improper SEV Aquila - Medical Compartment"
+	name = "\improper UGN Aquila - Medical Compartment"
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/aquila/airlock
-	name = "\improper SEV Aquila - Airlock Compartment"
+	name = "\improper UGN Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Guppy
@@ -1365,7 +1365,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper UGN Titen Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
