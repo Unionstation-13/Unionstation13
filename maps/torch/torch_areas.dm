@@ -1093,7 +1093,7 @@
 // Security
 
 /area/security/bo
-	name = "\improper Security - Brig Chief"
+	name = "\improper Security - Brig Office"
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
