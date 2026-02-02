@@ -1466,7 +1466,7 @@
 /area/hallway/primary/bridge/fore)
 "cH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 6
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -1492,7 +1492,7 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 10
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -2883,7 +2883,7 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 10
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -4892,10 +4892,6 @@
 "kz" = (
 /obj/machinery/power/smes/buildable/preset/torch/substation_full{
 	RCon_tag = "AI_CHAMBER"
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
 	},
 /obj/structure/cable/cyan{
 	d2 = 2;
@@ -8110,20 +8106,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
-"tq" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor,
-/area/space)
 "tr" = (
 /obj/machinery/door/airlock/glass/command{
 	name = "AI Core"
@@ -10319,13 +10301,6 @@
 "yW" = (
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
-"yZ" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	id_tag = "ai_eva_pump"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
 "za" = (
 /obj/structure/closet/secure_closet/XO{
 	name = "1st Lieutenant's locker"
@@ -39673,7 +39648,7 @@ ad
 ad
 ad
 ad
-tq
+mM
 ad
 ad
 ad
@@ -41896,7 +41871,7 @@ ad
 ad
 qk
 TH
-yZ
+DU
 RJ
 PX
 qk
