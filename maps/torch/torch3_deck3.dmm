@@ -105,7 +105,6 @@
 /obj/floor_decal/spline/plain/green{
 	dir = 4
 	},
-/obj/item/material/folder/envelope/preset/bio_ordering_station,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/community_manager{
 	req_access = list("ACCESS_TORCH_CHIEF_STEWARD")
@@ -2926,6 +2925,12 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
+"gI" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup,
+/obj/item/material/folder/envelope/preset/bio_envelope,
+/turf/simulated/floor/carpet/green,
+/area/crew_quarters/service_break_room)
 "gJ" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -30454,7 +30459,7 @@ ZL
 PH
 GV
 vb
-bT
+gI
 bT
 LG
 cM

@@ -13936,6 +13936,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
+/obj/item/material/folder/envelope/preset/cooran_envelope,
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "UJ" = (
