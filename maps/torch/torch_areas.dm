@@ -384,7 +384,7 @@
 //Aquila
 
 /area/aquila
-	name = "\improper SEV Aquila"
+	name = "\improper UGN Aquila"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced
 	requires_power = 1
@@ -393,33 +393,33 @@
 	base_turf_special_handling = TRUE
 
 /area/aquila/cockpit
-	name = "\improper SEV Aquila - Cockpit"
+	name = "\improper UGN Aquila - Cockpit"
 	req_access = list(access_aquila)
 
 /area/aquila/power
-	name = "\improper SEV Aquila - Engineering Compartment"
+	name = "\improper UGN Aquila - Engineering Compartment"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/storage
-	name = "\improper SEV Aquila - Storage Bay"
+	name = "\improper UGN Aquila - Storage Bay"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/suits
-	name = "\improper SEV Aquila - Suit Storage Compartment"
+	name = "\improper UGN Aquila - Suit Storage Compartment"
 	req_access = list(access_aquila)
 
 /area/aquila/air
-	name = "\improper SEV Aquila - Life Support Compartment"
+	name = "\improper UGN Aquila - Life Support Compartment"
 
 /area/aquila/crew
-	name = "\improper SEV Aquila - Crew Compartment"
+	name = "\improper UGN Aquila - Crew Compartment"
 
 /area/aquila/medical
-	name = "\improper SEV Aquila - Medical Compartment"
+	name = "\improper UGN Aquila - Medical Compartment"
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/aquila/airlock
-	name = "\improper SEV Aquila - Airlock Compartment"
+	name = "\improper UGN Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Guppy
@@ -437,7 +437,7 @@
 //Petrov
 
 /area/shuttle/petrov
-	name = "\improper SRV Petrov"
+	name = "\improper RRV Petrov"
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
@@ -445,75 +445,74 @@
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/shuttle/petrov/cell1
-	name = "\improper SRV Petrov - Isolation Cell 1"
+	name = "\improper RRV Petrov - Isolation Cell 1"
 	icon_state = "shuttle"
 /area/shuttle/petrov/cell2
-	name = "\improper SRV Petrov - Isolation Cell 2"
+	name = "\improper RRV Petrov - Isolation Cell 2"
 	icon_state = "shuttlegrn"
 /area/shuttle/petrov/cell3
-	name = "\improper SRV Petrov - Isolation Cell 3"
+	name = "\improper RRV Petrov - Isolation Cell 3"
 	icon_state = "shuttle"
 
 /area/shuttle/petrov/hallwaya
-	name = "\improper SRV Petrov - Lower Hallway"
+	name = "\improper RRV Petrov - Lower Hallway"
 	icon_state = "hallA"
 
 /area/shuttle/petrov/control
-	name = "\improper SRV Petrov - Control Room"
+	name = "\improper RRV Petrov - Control Room"
 	icon_state = "checkpoint1"
 	req_access = list(access_petrov_control)
 
 /area/shuttle/petrov/rd
+	name = "\improper RRV Petrov - Sci-Med Admin's Office"
 	icon_state = "heads_rd"
-	name = "\improper SRV Petrov - CSO's Office"
-	icon_state = "head_quarters"
 	req_access = list(access_petrov_rd)
 
 /area/shuttle/petrov/cockpit
-	name = "\improper SRV Petrov - Cockpit"
+	name = "\improper RRV Petrov - Cockpit"
 	icon_state = "shuttlered"
 	req_access = list(access_petrov_helm)
 
 /area/shuttle/petrov/maint
-	name = "\improper SRV Petrov - Maintenance"
+	name = "\improper RRV Petrov - Maintenance"
 	icon_state = "engine"
 	req_access = list(access_petrov_maint)
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/analysis
-	name = "\improper SRV Petrov - Analysis Lab"
+	name = "\improper RRV Petrov - Analysis Lab"
 	icon_state = "devlab"
 	req_access = list(access_petrov_analysis)
 
 /area/shuttle/petrov/toxins
-	name = "\improper SRV Petrov - Toxins Lab"
+	name = "\improper RRV Petrov - Toxins Lab"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_toxins)
 
 /area/shuttle/petrov/rnd
-	name = "\improper SRV Petrov - Fabricator Lab"
+	name = "\improper RRV Petrov - Fabricator Lab"
 	icon_state = "devlab"
 
 /area/shuttle/petrov/isolation
-	name = "\improper SRV Petrov - Isolation Lab"
+	name = "\improper RRV Petrov - Isolation Lab"
 	icon_state = "xeno_lab"
 
 /area/shuttle/petrov/phoron
-	name = "\improper SRV Petrov - Sublimation Lab"
+	name = "\improper RRV Petrov - Sublimation Lab"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_phoron)
 
 /area/shuttle/petrov/custodial
-	name = "\improper SRV Petrov - Custodial"
+	name = "\improper RRV Petrov - Custodial"
 	icon_state = "decontamination"
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/equipment
-	name = "\improper SRV Petrov - Equipment Storage"
+	name = "\improper RRV Petrov - Equipment Storage"
 	icon_state = "locker"
 
 /area/shuttle/petrov/eva
-	name = "\improper SRV Petrov - EVA Storage"
+	name = "\improper RRV Petrov - EVA Storage"
 	icon_state = "locker"
 
 //Turbolift
@@ -627,7 +626,7 @@
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/command/pathfinder
-	name = "\improper Pathfinder's Office"
+	name = "\improper Exploration Commander's Office"
 	icon_state = "pathfinder_office"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_pathfinder)
@@ -678,19 +677,19 @@
 
 /area/crew_quarters/heads/office/xo
 	icon_state = "heads_hop"
-	name = "\improper Command - XO's Office"
+	name = "\improper Command - 1LT's Office"
 	req_access = list(access_hop)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/rd
 	icon_state = "heads_rd"
-	name = "\improper Command - CSO's Office"
+	name = "\improper Command - Sci-Med Admin's Office"
 	req_access = list(access_rd)
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/heads/office/cmo
 	icon_state = "heads_cmo"
-	name = "\improper Command - CMO's Office"
+	name = "\improper Command - Medical Admin's Office"
 	req_access = list(access_cmo)
 	lighting_tone = AREA_LIGHTING_COOL
 
@@ -701,24 +700,24 @@
 
 /area/crew_quarters/heads/office/cos
 	icon_state = "heads_hos"
-	name = "\improper Command - CoS' Office"
+	name = "\improper Command - Marshall's Office"
 	req_access = list(access_hos)
 
 /area/crew_quarters/heads/office/cl
 	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
+	name = "\improper Command - HR's Office"
 	req_access = list(access_liaison)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - UGN Rep's Office"
 	req_access = list(access_representative)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
-	name = "\improper Command - SEA's Office"
+	name = "\improper Command - Unused Office"
 	req_access = list(access_senadv)
 
 /area/crew_quarters/heads/office/bridgesec
@@ -873,7 +872,7 @@
 	name = "\improper Supply Upper Warehouse"
 
 /area/quartermaster/deckchief
-	name = "\improper Deck Chief's Office"
+	name = "\improper Supply Manager's Office"
 	icon_state = "quart"
 	req_access = list(access_qm)
 
@@ -1094,7 +1093,7 @@
 // Security
 
 /area/security/bo
-	name = "\improper Security - Brig Chief"
+	name = "\improper Security - Brig Office"
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
@@ -1366,7 +1365,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper UGN Titen Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND

@@ -503,7 +503,7 @@
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 
 /datum/mil_rank/sol/agent
-	name = "SFP Agent"
+	name = "FAICI Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent)
 

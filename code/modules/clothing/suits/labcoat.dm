@@ -12,12 +12,12 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	name = "chief medical officer's labcoat"
+	name = "medical administrator's labcoat"
 	desc = "Bluer than the standard model."
 	icon_state = "labcoat_cmo"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmoalt
-	name = "chief medical officer's labcoat"
+	name = "medical administrator's labcoat"
 	desc = "A labcoat with command blue highlights."
 	icon_state = "labcoat_cmoalt"
 
@@ -67,13 +67,13 @@
 	icon_state = "labcoat_foundation"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science
-	name = "\improper EXO labcoat"
-	desc = "A coat that protects against minor chemical spills. It has a green stripe on the shoulder and green trim on the sleeves, denoting it as a Expeditionary Corps Organisation labcoat."
+	name = "URC green labcoat"
+	desc = "A coat that protects against minor chemical spills. It has a green stripe on the shoulder and green trim with the symbol of the URC."
 	icon_state = "labcoat_TL"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
-	name = "\improper EC labcoat"
-	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders denoting it as an Expeditionary Corps labcoat."
+	name = "URC purple labcoat"
+	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders with the symbol of the URC."
 	icon_state = "labcoat_tox"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/nanotrasen
@@ -139,7 +139,7 @@
 	icon_state = "labcoat_rd_zeng"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
-	name = "chief science officer's labcoat"
-	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders denoting it as an Expeditionary Corps labcoat, and purple trim to indicate a Chief Science Officer."
+	name = "sci-med administrator's labcoat"
+	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders denoting it as an URC labcoat, and purple trim to indicate a Sci-med administrator."
 	icon_state = "labcoat_cso"
 	body_parts_covered = UPPER_TORSO|ARMS

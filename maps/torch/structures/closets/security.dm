@@ -30,7 +30,7 @@
 	)
 
 /obj/structure/closet/secure_closet/security_torch
-	name = "master at arms' locker"
+	name = "Peacekeeper's locker"
 	req_access = list(access_brig)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security
 
@@ -58,7 +58,7 @@
 
 
 /obj/structure/closet/secure_closet/cos
-	name = "chief of security's locker"
+	name = "Marshall's locker"
 	req_access = list(access_hos)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/hos
 
@@ -90,7 +90,7 @@
 	)
 
 /obj/structure/closet/secure_closet/brigchief
-	name = "brig chief's locker"
+	name = "Brig Officer's locker"
 	req_access = list(access_armory)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/warden
 

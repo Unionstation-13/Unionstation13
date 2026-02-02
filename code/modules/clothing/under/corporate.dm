@@ -18,7 +18,7 @@
 		)
 
 /obj/item/clothing/under/rank/scientist
-	name = "\improper EXO polo and pants"
+	name = "\improper URC polo and pants"
 	desc = "A fashionable polo and pair of trousers made from patented biohazard-resistant synthetic fabrics."
 	icon_state = "smock"
 	item_state = "w_suit"
@@ -35,8 +35,8 @@
 	accessories = list(/obj/item/clothing/accessory/tunic)
 
 /obj/item/clothing/under/rank/scientist/executive
-	name = "\improper EXO polo and pants"
-	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Expeditionary Corps Organisation higher-up."
+	name = "\improper URC polo and pants"
+	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a United Rocknall Corporation higher-up."
 	icon_state = "smockexec"
 	worn_state = "smockexec"
 	accessories = list(/obj/item/clothing/accessory/tunic/exec)
@@ -59,7 +59,7 @@
 
 /obj/item/clothing/under/rank/ntpilot
 	name = "green flight suit"
-	desc = "A sleek green Expeditionary Corps Organisation flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek green United Rocknall Corporation flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot"
 	item_state = "g_suit"
 	worn_state = "pilot"
@@ -70,8 +70,8 @@
 		)
 
 /obj/item/clothing/under/suit_jacket/corp
-	name = "\improper EXO executive suit"
-	desc = "A set of Expeditionary Corps Organisation-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
+	name = "\improper URC executive suit"
+	desc = "A set of United Rocknall Corporation-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
 	icon_state = "suit"
 	item_state = "bl_suit"
 	worn_state = "suit"
