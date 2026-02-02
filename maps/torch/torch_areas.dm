@@ -1643,7 +1643,7 @@
 // AI
 
 /area/ai/ai_control_room
-	name = "AI - AI Control antechamber"
+	name = "AI - AI Control Antechamber"
 	icon_state = "ai_server"
 	req_access = list(access_ai_core)
 
@@ -1653,7 +1653,7 @@
 	req_access = list(access_ai_core)
 
 /area/ai/ai_superstructure
-	name = "AI - AI foyer"
+	name = "AI - AI Chamber Exterior"
 	icon_state = "ai_foyer"
 	req_access = list(access_ai_core)
 
