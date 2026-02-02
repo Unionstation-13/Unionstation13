@@ -4,7 +4,7 @@
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "U.G.N. Titen - Mako Class - United Galatctic Registry 95519 - Oasis Ship Yards, Pax - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - United Galactic Nations - 'Never was anything great achieved without danger.'"
+	desc = "U.G.N. Titen - Mako Class - United Galactic Registry 95519 - Oasis Ship Yards, Pax - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - United Galactic Nations - 'Never was anything great achieved without danger.'"
 
 
 /obj/floor_decal/scglogo
