@@ -1640,6 +1640,33 @@
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_atmospherics)
 
+// AI
+
+/area/ai/ai_control_room
+	name = "AI - AI Control antechamber"
+	icon_state = "ai_server"
+	req_access = list(access_ai_core)
+
+/area/ai/ai_unility
+	name = "AI - AI Utility Compartment"
+	icon_state = "ai_server"
+	req_access = list(access_ai_core)
+
+/area/ai/ai_superstructure
+	name = "AI - AI foyer"
+	icon_state = "ai_foyer"
+	req_access = list(access_ai_core)
+
+/area/ai/ai_chamber_foyer
+	name = "AI - AI Chamber Foyer"
+	icon_state = "ai_foyer"
+	req_access = list(access_ai_core)
+
+/area/ai/ai_chamber
+	name = "AI - AI Chamber"
+	icon_state = "ai"
+	req_access = list(access_ai_core)
+
 // Research
 /area/assembly
 	req_access = list(access_robotics)
