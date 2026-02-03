@@ -10923,7 +10923,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "Bb" = (
-/obj/structure/sign/solgov,
+/obj/structure/sign/solgov{
+	pixel_x = 32;
+	pixel_y = -32
+	},
 /turf/simulated/wall/r_wall/hull,
 /area/ai/ai_superstructure)
 "Bc" = (
@@ -46704,7 +46707,7 @@ ad
 ad
 hP
 hP
-hP
+Bb
 hP
 hP
 hP
@@ -46907,7 +46910,7 @@ aa
 GP
 aa
 hP
-Bb
+hP
 hP
 aa
 GP
