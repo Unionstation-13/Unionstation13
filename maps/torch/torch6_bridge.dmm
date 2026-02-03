@@ -8087,6 +8087,10 @@
 	},
 /obj/machinery/light,
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber)
 "to" = (
@@ -8292,12 +8296,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_control_room)
-"tQ" = (
-/obj/item/device/radio/intercom/locked/ai_private{
-	dir = 8
-	},
-/turf/simulated/wall/prepainted,
-/area/ai/ai_chamber)
 "tR" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
@@ -11096,7 +11094,7 @@
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/ai/ai_chamber)
+/area/ai/ai_chamber_foyer)
 "BO" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
 	dir = 4;
@@ -12233,7 +12231,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/bridgesec)
 "Gv" = (
-/obj/item/device/radio/intercom/locked/ai_private,
+/obj/machinery/turretid/stun,
 /turf/simulated/wall/r_wall/hull,
 /area/ai/ai_chamber)
 "Gw" = (
@@ -13231,10 +13229,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
-"Jk" = (
-/obj/machinery/turretid/stun,
-/turf/simulated/wall/prepainted,
-/area/ai/ai_chamber)
 "Jo" = (
 /obj/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -13489,10 +13483,6 @@
 	icon_state = "tube1"
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber)
 "KA" = (
@@ -15174,6 +15164,9 @@
 	pixel_y = -28
 	},
 /obj/structure/cable/cyan,
+/obj/item/device/radio/intercom/locked/ai_private{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber_foyer)
 "QE" = (
@@ -45714,11 +45707,11 @@ GC
 xG
 HA
 PS
-tQ
-NZ
+HA
+HA
 BK
-Jk
-tQ
+HA
+HA
 ML
 HA
 xG
