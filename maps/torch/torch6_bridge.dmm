@@ -6048,7 +6048,7 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -6738,7 +6738,7 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
@@ -8106,12 +8106,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
-"tq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "tr" = (
 /obj/machinery/door/airlock/glass/command{
 	name = "AI Core"
@@ -10307,6 +10301,12 @@
 "yW" = (
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
+"yZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "za" = (
 /obj/structure/closet/secure_closet/XO{
 	name = "1st Lieutenant's locker"
@@ -16042,7 +16042,7 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
@@ -26308,7 +26308,7 @@ af
 at
 VB
 aL
-tq
+yZ
 bt
 Jp
 qO
