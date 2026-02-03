@@ -11094,7 +11094,7 @@
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/ai/ai_chamber_foyer)
+/area/ai/ai_chamber)
 "BO" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
 	dir = 4;
@@ -14361,8 +14361,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/backup_server,
-/obj/structure/backup_server,
 /turf/simulated/floor/bluegrid,
 /area/ai/ai_superstructure)
 "NW" = (
@@ -44895,7 +44893,7 @@ aa
 ad
 hP
 hP
-yT
+NU
 pZ
 US
 DR
@@ -44907,7 +44905,7 @@ DR
 DR
 PG
 iN
-yT
+NU
 hP
 hP
 ad
@@ -45097,7 +45095,7 @@ aa
 ad
 hP
 hP
-NU
+yT
 pZ
 US
 HA
@@ -45109,7 +45107,7 @@ HA
 HA
 PG
 iN
-yT
+NU
 hP
 hP
 ad
@@ -45299,7 +45297,7 @@ aa
 ad
 hP
 hP
-yT
+NU
 MN
 HA
 HA
@@ -45311,7 +45309,7 @@ QA
 HA
 HA
 px
-yT
+NU
 hP
 hP
 ad
@@ -45501,7 +45499,7 @@ aa
 ad
 hP
 hP
-yT
+NU
 xG
 HA
 St
@@ -45513,7 +45511,7 @@ Cj
 UH
 HA
 xG
-yT
+NU
 hP
 hP
 CG
@@ -45707,11 +45705,11 @@ GC
 xG
 HA
 PS
-HA
-HA
+NZ
+NZ
 BK
-HA
-HA
+NZ
+NZ
 ML
 HA
 xG
