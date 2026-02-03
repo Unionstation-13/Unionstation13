@@ -624,7 +624,7 @@
 /area/maintenance/bridge/aftstarboard)
 "bo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
@@ -8106,6 +8106,12 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
+"tq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "tr" = (
 /obj/machinery/door/airlock/glass/command{
 	name = "AI Core"
@@ -17386,7 +17392,7 @@
 "Zj" = (
 /obj/paint/hull,
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 5
+	dir = 10
 	},
 /turf/simulated/wall/titanium,
 /area/aquila/suits)
@@ -26302,7 +26308,7 @@ af
 at
 VB
 aL
-bo
+tq
 bt
 Jp
 qO
