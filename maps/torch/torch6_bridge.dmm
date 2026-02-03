@@ -13530,7 +13530,7 @@
 "KI" = (
 /obj/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/turf/space,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "KN" = (
 /obj/structure/table/standard,
@@ -15124,7 +15124,7 @@
 /obj/wallframe_spawn/reinforced,
 /obj/structure/sign/warning/lethal_turrets,
 /obj/machinery/door/firedoor,
-/turf/space,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "Qz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
