@@ -6488,11 +6488,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"pe" = (
-/obj/structure/lattice,
-/obj/machinery/nav_light,
-/turf/space,
-/area/space)
 "pf" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -47112,7 +47107,7 @@ aa
 aa
 aa
 aa
-pe
+ae
 aa
 aa
 aa
