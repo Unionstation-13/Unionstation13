@@ -59,7 +59,7 @@
 	economic_power = 1
 /singleton/cultural_info/culture/human/ceti_south
 	name = CULTURE_HUMAN_CETIS //change to nitros-6IPC
-	description = "#IPC ONLY# You were constructed on the south pole of Nitros-6, abused by your creators, and left to rot in a magma pit for weeks. After the riots broke out, you were found and recruited into the Nitros-6 People's Front. It didn't last long. You're free now. What will you do?  #IPC ONLY#"
+	description = "#FULL BODY PROSTHETIC ONLY# You were constructed on the south pole of Nitros-6, abused by your creators, and left to rot in a magma pit for weeks. After the riots broke out, you were found and recruited into the Nitros-6 People's Front. It didn't last long. You're free now. What will you do?  #FULL BODY PROSTHETIC ONLY#"
 	economic_power = 1.2
 
 /singleton/cultural_info/culture/human/tadmor

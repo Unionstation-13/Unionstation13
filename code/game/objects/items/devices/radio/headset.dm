@@ -119,58 +119,58 @@
 	ks1type = /obj/item/device/encryptionkey/binary
 
 /obj/item/device/radio/headset/headset_sec
-	name = "security radio headset"
+	name = "peacekeeper radio headset"
 	desc = "This is used by your elite security force."
 	icon_state = "sec_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_sec
 
 /obj/item/device/radio/headset/headset_sec/alt
-	name = "security bowman headset"
+	name = "peacekeeper bowman headset"
 	icon_state = "sec_headset_alt"
 	item_state = "sec_headset_alt"
 
 /obj/item/device/radio/headset/headset_eng
-	name = "engineering radio headset"
-	desc = "When the engineers wish to chat like girls."
+	name = "nitros engineering radio headset"
+	desc = "When the engineers wish to chat."
 	icon_state = "eng_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_eng
 
 /obj/item/device/radio/headset/headset_eng/alt
-	name = "engineering bowman headset"
+	name = "nitros engineering bowman headset"
 	icon_state = "eng_headset_alt"
 	item_state = "eng_headset_alt"
 
 /obj/item/device/radio/headset/headset_rob
-	name = "robotics radio headset"
-	desc = "Made specifically for the roboticists who cannot decide between departments."
+	name = "ABCDEFG radio headset"
+	desc = "Made specifically for...ABCDEFG?."
 	icon_state = "rob_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_rob
 
 /obj/item/device/radio/headset/headset_med
-	name = "medical radio headset"
+	name = "Rocknall medical radio headset"
 	desc = "A headset for the trained staff of the medbay."
 	icon_state = "med_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_med
 
 /obj/item/device/radio/headset/headset_med/alt
-	name = "medical bowman headset"
+	name = "Rocknall medical bowman headset"
 	icon_state = "med_headset_alt"
 	item_state = "med_headset_alt"
 
 /obj/item/device/radio/headset/headset_sci
-	name = "science radio headset"
+	name = "Rocknall science radio headset"
 	desc = "A sciency headset. Like usual."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_sci
 
 /obj/item/device/radio/headset/headset_medsci
-	name = "medical research radio headset"
-	desc = "A headset that is a result of the mating between medical and science."
+	name = "Rocknall science medical radio headset"
+	desc = "A headset that is a result of the Rocknall union of science and medical."
 	icon_state = "med_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_medsci
@@ -197,14 +197,14 @@
 	ks1type = /obj/item/device/encryptionkey/merchant
 
 /obj/item/device/radio/headset/heads/captain
-	name = "captain's headset"
+	name = "commanding officer's headset"
 	desc = "The headset of the boss."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/captain
 
 /obj/item/device/radio/headset/heads/captain/alt
-	name = "captain's bowman headset"
+	name = "commanding officer's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 	max_keys = 3
@@ -229,14 +229,14 @@
 	return ..(freq, level, 1)
 
 /obj/item/device/radio/headset/heads/rd
-	name = "chief science officer's headset"
+	name = "Sci-Med Administrator's headset"
 	desc = "Headset of the researching God."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/rd
 
 /obj/item/device/radio/headset/heads/hos
-	name = "head of security's headset"
+	name = "Marshall's headset"
 	desc = "The headset of the man who protects your worthless lives."
 	icon_state = "com_headset"
 	item_state = "headset"
@@ -255,19 +255,19 @@
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/heads/cmo
-	name = "chief medical officer's headset"
+	name = "Medical Administrator's headset"
 	desc = "The headset of the highly trained medical chief."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/cmo
 
 /obj/item/device/radio/headset/heads/cmo/alt
-	name = "chief medical officer's bowman headset"
+	name = "Medical Administrator's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/heads/hop
-	name = "head of personnel's headset"
+	name = "First Lieutenant's headset"
 	desc = "The headset of the guy who will one day be captain."
 	icon_state = "com_headset"
 	item_state = "headset"
@@ -308,14 +308,14 @@
 	max_keys = 3
 
 /obj/item/device/radio/headset/headset_cargo
-	name = "supply radio headset"
+	name = "cooran supply radio headset"
 	desc = "A headset used by the box-pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_cargo
 
 /obj/item/device/radio/headset/headset_cargo/alt
-	name = "supply bowman headset"
+	name = "cooran supply bowman headset"
 	icon_state = "cargo_headset_alt"
 	item_state = "cargo_headset_alt"
 	max_keys = 3

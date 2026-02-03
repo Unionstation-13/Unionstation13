@@ -127,7 +127,7 @@
 
 /obj/item/storage/backpack/security/exo
 	name = "corporate security backpack"
-	desc = "It's a very robust backpack, for security-related needs. This one is in EXO colors."
+	desc = "It's a very robust backpack, for security-related needs. This one is in UGN colors."
 	icon_state = "securitypack_exo"
 
 /obj/item/storage/backpack/command
@@ -227,7 +227,7 @@
 
 /obj/item/storage/backpack/sci
 	name = "science backpack"
-	desc = "It's a stain-resistant light backpack, modeled for use by Expeditionary Corps science personnel in laboratories and other scientific settings."
+	desc = "It's a stain-resistant light backpack, modeled for use by the United Rocknall Corporation science personnel in laboratories and other scientific settings."
 	icon_state = "scipack"
 	item_state_slots = list(
 		slot_l_hand_str = "scipack",
@@ -422,7 +422,7 @@
 
 /obj/item/storage/backpack/satchel/sec/exo
 	name = "corporate security satchel"
-	desc = "A robust satchel for corporate security-related needs. This one is in EXO colors."
+	desc = "A robust satchel for corporate security-related needs. This one is in UGN colors."
 	icon_state = "satchel-sec_exo"
 
 /obj/item/storage/backpack/satchel/hyd
@@ -441,7 +441,7 @@
 
 /obj/item/storage/backpack/satchel/sci
 	name = "science satchel"
-	desc = "It's a stain-resistant satchel, modeled for use by Expeditionary Corps science personnel in laboratories and other scientific settings."
+	desc = "It's a stain-resistant satchel, modeled for use by the United Rocknall Corporation science personnel in laboratories and other scientific settings."
 	icon_state = "satchel-sci"
 	item_state_slots = list(
 		slot_l_hand_str = "satchel-sci",
@@ -562,13 +562,13 @@
 
 /obj/item/storage/backpack/messenger/sec/exo
 	name = "corporate security messenger bag"
-	desc = "A small, tactical backpack worn over one shoulder. This one is in EXO colors."
+	desc = "A small, tactical backpack worn over one shoulder. This one is in UGN colors."
 	icon_state = "courierbagsec_exo"
 
 
 /obj/item/storage/backpack/messenger/sci
 	name = "science messenger bag"
-	desc = "A small, stain-resistant backpack worn over one shoulder. This one was modeled for use by Expeditionary Corps science personnel in laboratories and other scientific settings."
+	desc = "A small, stain-resistant backpack worn over one shoulder. This one was modeled for use by the United Rocknall Corporation science personnel in laboratories and other scientific settings."
 	icon_state = "courierbagsci"
 
 

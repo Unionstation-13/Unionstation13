@@ -15956,7 +15956,7 @@
 /area/quartermaster/storage)
 "UM" = (
 /obj/machinery/door/airlock/research{
-	name = "Chief Science Officer";
+	name = "Sci-Med Administrator";
 	secured_wires = 1
 	},
 /obj/structure/cable/cyan{

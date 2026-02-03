@@ -12,7 +12,7 @@
 
 /obj/item/device/radio/headset/heads/torchexec
 	name = "executive headset"
-	desc = "The headset of those brave men and women who command the Torch."
+	desc = "The headset of those brave men and women who command the Titen."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/torchexec
@@ -47,14 +47,14 @@
 	item_state = "nt_headset_alt"
 
 /obj/item/device/radio/headset/heads/torchntdirector
-	name = "chief science officer headset"
+	name = "sci-med administrator's headset"
 	desc = "Headset of the masters of the universe."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_torchrd
 
 /obj/item/device/radio/headset/heads/torchntdirector/alt
-	name = "chief science officer's bowman headset"
+	name = "sci-med administrator's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
@@ -64,52 +64,52 @@
 	item_state = "nt_headset_alt"
 
 /obj/item/device/radio/headset/heads/cos
-	name = "chief of security's headset"
-	desc = "The headset of the man who protects your worthless lives."
+	name = "Marshall's headset"
+	desc = "The headset of the man who protects your lives."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/cos/alt
-	name = "chief of security's bowman headset"
+	name = "Marshall's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/headset_deckofficer
-	name = "deck chief's radio headset"
+	name = "supply manager's radio headset"
 	desc = "The headset of the chief box pusher."
 	icon_state = "cargo_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_deckofficer
 
 /obj/item/device/radio/headset/headset_deckofficer/alt
-	name = "deck chief's bowman headset"
+	name = "supply manager's bowman headset"
 	item_state = "cargo_headset_alt"
 	icon_state = "cargo_headset_alt"
 	max_keys = 3
 
 /obj/item/device/radio/headset/headset_chief_steward
-	name = "chief steward's radio headset"
+	name = "community services manager's radio headset"
 	desc = "The headset of the menu maker."
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_chief_steward
 
 /obj/item/device/radio/headset/headset_chief_steward/alt
-	name = "chief steward's bowman headset"
+	name = "community services manager's bowman headset"
 	icon_state = "srv_headset_alt"
 	item_state = "headset"
 	max_keys = 3
 
 /obj/item/device/radio/headset/sea
-	name = "senior enlisted advisor's headset"
-	desc = "A headset for the guy or gal who advises the enlisted whilst from a position of seniority."
+	name = "human resources's headset"
+	desc = "A headset for the guy or gal who handles the paperwork."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/sea
 
 /obj/item/device/radio/headset/sea/alt
-	name = "senior enlisted advisor's bowman headset"
+	name = "human resources's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
@@ -139,14 +139,14 @@
 	item_state = "exp_headset_alt"
 
 /obj/item/device/radio/headset/pathfinder
-	name = "pathfinder's headset"
+	name = "exploration commander's headset"
 	desc = "A headset with access to the command and exploration channels. It has an inbuilt subspace antenna for better reception."
 	icon_state = "exp_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/pathfinder
 
 /obj/item/device/radio/headset/pathfinder/alt
-	name = "pathfinder's bowman headset"
+	name = "exploration commander's bowman headset"
 	icon_state = "exp_headset_alt"
 	item_state = "exp_headset_alt"
 
@@ -158,14 +158,14 @@
 	desc = "A bowman headset used by the hangar dwellers."
 
 /obj/item/device/radio/headset/headset_corpsman
-	name = "medical headset"
+	name = "rocknall medical headset"
 	desc = "A headset to yell into while patching open wounds. It has an inbuilt subspace antenna for better reception."
 	icon_state = "par_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_med
 
 /obj/item/device/radio/headset/headset_corpsman/alt
-	name = "medical bowman headset"
+	name = "rocknall medical bowman headset"
 	icon_state = "par_headset_alt"
 	item_state = "par_headset_alt"
 
