@@ -10276,13 +10276,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
-"yT" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/backup_server,
-/turf/simulated/floor/bluegrid,
-/area/ai/ai_superstructure)
 "yU" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random,
@@ -45095,7 +45088,7 @@ aa
 ad
 hP
 hP
-yT
+NU
 pZ
 US
 HA
