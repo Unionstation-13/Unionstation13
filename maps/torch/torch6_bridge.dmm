@@ -4815,22 +4815,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /turf/simulated/floor/plating,
 /area/aquila/air)
-"ko" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/catwalk_plated,
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
-/area/ai/ai_superstructure)
 "kq" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -6484,8 +6468,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
 "pe" = (
-/turf/simulated/wall/r_wall/hull,
-/area/space)
+/obj/structure/lattice,
+/turf/space,
+/area/ai/ai_superstructure)
 "pf" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -7938,7 +7923,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/ai/ai_superstructure)
 "sV" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -8159,7 +8144,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/ai/ai_superstructure)
 "tx" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/solgov_law,
@@ -10555,7 +10540,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/ai/ai_superstructure)
 "zT" = (
 /obj/floor_decal/corner/blue{
 	dir = 6
@@ -11426,7 +11411,7 @@
 "CG" = (
 /obj/machinery/camera/autoname,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/ai/ai_superstructure)
 "CH" = (
 /obj/structure/sign/directions/bridge{
 	dir = 8;
@@ -12354,7 +12339,7 @@
 	dir = 4
 	},
 /turf/space,
-/area/space)
+/area/ai/ai_superstructure)
 "GU" = (
 /obj/structure/displaycase,
 /obj/item/gun/projectile/revolver/medium/captain{
@@ -42656,7 +42641,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 qk
 SY
 Tv
@@ -42666,7 +42651,7 @@ pv
 CT
 tP
 qk
-pe
+hP
 ad
 ad
 ad
@@ -42857,8 +42842,8 @@ ad
 ad
 ad
 zS
-pe
-pe
+hP
+hP
 qk
 pm
 Yu
@@ -42868,8 +42853,8 @@ la
 LU
 HR
 qk
-pe
-pe
+hP
+hP
 zS
 ad
 ad
@@ -43058,8 +43043,8 @@ ad
 ad
 ad
 ad
-pe
-pe
+hP
+hP
 hP
 qk
 qL
@@ -43070,9 +43055,9 @@ Ya
 kq
 NA
 qk
-pe
-pe
-pe
+hP
+hP
+hP
 ad
 ad
 ad
@@ -43259,8 +43244,8 @@ ad
 ad
 ad
 ad
-pe
-pe
+hP
+hP
 hP
 hP
 Xn
@@ -43275,7 +43260,7 @@ VQ
 hP
 hP
 hP
-pe
+hP
 ad
 ad
 ad
@@ -43461,7 +43446,7 @@ ad
 ad
 ad
 sU
-pe
+hP
 hP
 TG
 ky
@@ -43477,7 +43462,7 @@ OC
 ky
 TG
 hP
-pe
+hP
 CG
 ad
 ad
@@ -43663,7 +43648,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 ky
 SW
@@ -43679,7 +43664,7 @@ Nu
 uc
 ky
 hP
-pe
+hP
 ad
 ad
 ad
@@ -43865,7 +43850,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 At
 bp
@@ -43881,7 +43866,7 @@ HO
 Uq
 KO
 hP
-pe
+hP
 ad
 ad
 ad
@@ -44067,7 +44052,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 Xc
 kB
@@ -44081,9 +44066,9 @@ Zd
 DR
 DR
 zE
-ko
+uY
 hP
-pe
+hP
 ad
 ad
 ad
@@ -44269,7 +44254,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 jC
 zt
@@ -44285,7 +44270,7 @@ Wz
 zt
 uY
 hP
-pe
+hP
 ad
 ad
 ad
@@ -44471,7 +44456,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 Vo
 BD
@@ -44487,7 +44472,7 @@ mr
 RR
 JJ
 hP
-pe
+hP
 ad
 ad
 ad
@@ -44673,7 +44658,7 @@ ad
 ad
 ad
 ad
-pe
+hP
 hP
 EF
 Kn
@@ -44689,7 +44674,7 @@ Ol
 jl
 ys
 hP
-pe
+hP
 ad
 ad
 ad
@@ -44875,7 +44860,7 @@ aa
 aa
 aa
 ad
-pe
+hP
 hP
 NU
 pZ
@@ -44891,7 +44876,7 @@ PG
 iN
 NU
 hP
-pe
+hP
 ad
 aa
 aa
@@ -45077,7 +45062,7 @@ aa
 aa
 aa
 ad
-pe
+hP
 hP
 NU
 pZ
@@ -45093,7 +45078,7 @@ PG
 iN
 NU
 hP
-pe
+hP
 ad
 aa
 aa
@@ -45279,7 +45264,7 @@ aa
 aa
 aa
 ad
-pe
+hP
 hP
 NU
 MN
@@ -45295,7 +45280,7 @@ HA
 px
 NU
 hP
-pe
+hP
 ad
 aa
 aa
@@ -45481,7 +45466,7 @@ aa
 aa
 aa
 ad
-pe
+hP
 hP
 NU
 xG
@@ -45497,7 +45482,7 @@ HA
 xG
 NU
 hP
-pe
+hP
 CG
 aa
 aa
@@ -45683,7 +45668,7 @@ aa
 aa
 aa
 sU
-pe
+hP
 hP
 GC
 xG
@@ -45699,7 +45684,7 @@ HA
 xG
 ys
 hP
-pe
+hP
 ad
 aa
 aa
@@ -45885,7 +45870,7 @@ aa
 aa
 aa
 ad
-pe
+hP
 hP
 xD
 xG
@@ -46902,9 +46887,9 @@ aa
 aa
 GP
 aa
-pe
-pe
-pe
+hP
+hP
+hP
 aa
 GP
 aa
@@ -47105,7 +47090,7 @@ aa
 aa
 aa
 aa
-ae
+pe
 aa
 aa
 aa
