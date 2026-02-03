@@ -12722,9 +12722,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "HO" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	level = 2
-	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/reinforced,
 /area/ai/ai_superstructure)
 "HP" = (
