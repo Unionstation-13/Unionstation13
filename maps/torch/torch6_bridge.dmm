@@ -6483,6 +6483,9 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"pe" = (
+/turf/simulated/wall/r_wall/hull,
+/area/space)
 "pf" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -7935,7 +7938,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/ai/ai_superstructure)
+/area/space)
 "sV" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -8156,7 +8159,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/reinforced,
-/area/ai/ai_superstructure)
+/area/space)
 "tx" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/solgov_law,
@@ -10552,7 +10555,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/ai/ai_superstructure)
+/area/space)
 "zT" = (
 /obj/floor_decal/corner/blue{
 	dir = 6
@@ -11423,7 +11426,7 @@
 "CG" = (
 /obj/machinery/camera/autoname,
 /turf/simulated/floor/reinforced,
-/area/ai/ai_superstructure)
+/area/space)
 "CH" = (
 /obj/structure/sign/directions/bridge{
 	dir = 8;
@@ -12351,7 +12354,7 @@
 	dir = 4
 	},
 /turf/space,
-/area/ai/ai_superstructure)
+/area/space)
 "GU" = (
 /obj/structure/displaycase,
 /obj/item/gun/projectile/revolver/medium/captain{
@@ -42653,7 +42656,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 qk
 SY
 Tv
@@ -42663,7 +42666,7 @@ pv
 CT
 tP
 qk
-hP
+pe
 ad
 ad
 ad
@@ -42854,8 +42857,8 @@ ad
 ad
 ad
 zS
-hP
-hP
+pe
+pe
 qk
 pm
 Yu
@@ -42865,8 +42868,8 @@ la
 LU
 HR
 qk
-hP
-hP
+pe
+pe
 zS
 ad
 ad
@@ -43055,8 +43058,8 @@ ad
 ad
 ad
 ad
-hP
-hP
+pe
+pe
 hP
 qk
 qL
@@ -43067,9 +43070,9 @@ Ya
 kq
 NA
 qk
-hP
-hP
-hP
+pe
+pe
+pe
 ad
 ad
 ad
@@ -43256,8 +43259,8 @@ ad
 ad
 ad
 ad
-hP
-hP
+pe
+pe
 hP
 hP
 Xn
@@ -43272,7 +43275,7 @@ VQ
 hP
 hP
 hP
-hP
+pe
 ad
 ad
 ad
@@ -43458,7 +43461,7 @@ ad
 ad
 ad
 sU
-hP
+pe
 hP
 TG
 ky
@@ -43474,7 +43477,7 @@ OC
 ky
 TG
 hP
-hP
+pe
 CG
 ad
 ad
@@ -43660,7 +43663,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 ky
 SW
@@ -43676,7 +43679,7 @@ Nu
 uc
 ky
 hP
-hP
+pe
 ad
 ad
 ad
@@ -43862,7 +43865,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 At
 bp
@@ -43878,7 +43881,7 @@ HO
 Uq
 KO
 hP
-hP
+pe
 ad
 ad
 ad
@@ -44064,7 +44067,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 Xc
 kB
@@ -44080,7 +44083,7 @@ DR
 zE
 ko
 hP
-hP
+pe
 ad
 ad
 ad
@@ -44266,7 +44269,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 jC
 zt
@@ -44282,7 +44285,7 @@ Wz
 zt
 uY
 hP
-hP
+pe
 ad
 ad
 ad
@@ -44468,7 +44471,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 Vo
 BD
@@ -44484,7 +44487,7 @@ mr
 RR
 JJ
 hP
-hP
+pe
 ad
 ad
 ad
@@ -44670,7 +44673,7 @@ ad
 ad
 ad
 ad
-hP
+pe
 hP
 EF
 Kn
@@ -44686,7 +44689,7 @@ Ol
 jl
 ys
 hP
-hP
+pe
 ad
 ad
 ad
@@ -44872,7 +44875,7 @@ aa
 aa
 aa
 ad
-hP
+pe
 hP
 NU
 pZ
@@ -44888,7 +44891,7 @@ PG
 iN
 NU
 hP
-hP
+pe
 ad
 aa
 aa
@@ -45074,7 +45077,7 @@ aa
 aa
 aa
 ad
-hP
+pe
 hP
 NU
 pZ
@@ -45090,7 +45093,7 @@ PG
 iN
 NU
 hP
-hP
+pe
 ad
 aa
 aa
@@ -45276,7 +45279,7 @@ aa
 aa
 aa
 ad
-hP
+pe
 hP
 NU
 MN
@@ -45292,7 +45295,7 @@ HA
 px
 NU
 hP
-hP
+pe
 ad
 aa
 aa
@@ -45478,7 +45481,7 @@ aa
 aa
 aa
 ad
-hP
+pe
 hP
 NU
 xG
@@ -45494,7 +45497,7 @@ HA
 xG
 NU
 hP
-hP
+pe
 CG
 aa
 aa
@@ -45680,7 +45683,7 @@ aa
 aa
 aa
 sU
-hP
+pe
 hP
 GC
 xG
@@ -45696,7 +45699,7 @@ HA
 xG
 ys
 hP
-hP
+pe
 ad
 aa
 aa
@@ -45882,7 +45885,7 @@ aa
 aa
 aa
 ad
-hP
+pe
 hP
 xD
 xG
@@ -46899,9 +46902,9 @@ aa
 aa
 GP
 aa
-hP
-hP
-hP
+pe
+pe
+pe
 aa
 GP
 aa
