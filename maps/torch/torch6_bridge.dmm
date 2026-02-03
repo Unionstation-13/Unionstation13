@@ -10135,7 +10135,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname{
-	dir = 10
+	dir = 1
 	},
 /turf/simulated/floor/reinforced,
 /area/ai/ai_superstructure)
@@ -13557,7 +13557,7 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/camera/autoname{
-	dir = 10
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
@@ -14773,9 +14773,6 @@
 	pixel_y = -28
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/machinery/camera/autoname{
 	dir = 8
 	},
 /obj/landmark/start/ai,
