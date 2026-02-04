@@ -5477,9 +5477,6 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "mr" = (
-/obj/machinery/door/airlock/glass/sol{
-	name = "Utility Compartment"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -5492,6 +5489,9 @@
 /obj/machinery/door/blast/regular/open{
 	id_tag = "AI Utility Lockdown";
 	name = "AI Utility Lockdown"
+	},
+/obj/machinery/door/airlock/glass/sol{
+	name = "Inner Utility Compartment"
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
@@ -6192,7 +6192,9 @@
 /turf/simulated/wall/prepainted,
 /area/aux_eva)
 "ov" = (
-/obj/machinery/door/airlock/glass/sol,
+/obj/machinery/door/airlock/glass/sol{
+	name = "Utility Sphere"
+	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
@@ -7099,7 +7101,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/glass/sol{
-	name = "Utility Compartment"
+	name = "Inner Utility Compartment"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7242,7 +7244,7 @@
 /area/ai/ai_airlock)
 "qX" = (
 /obj/machinery/door/airlock/glass/sol{
-	name = "AI Foyer"
+	name = "Maitnence Chamber"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -8126,7 +8128,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "tr" = (
-/obj/machinery/door/airlock/glass/sol,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -8140,6 +8141,9 @@
 /obj/machinery/door/blast/regular/open{
 	name = "AI Access Lockdown";
 	id_tag = "AI Access Lockdown"
+	},
+/obj/machinery/door/airlock/glass/sol{
+	name = "Utility Sphere"
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
@@ -11096,9 +11100,6 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
 "BK" = (
-/obj/machinery/door/airlock/glass/sol{
-	name = "AI Chamber"
-	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
@@ -11118,6 +11119,9 @@
 /obj/machinery/door/blast/regular/open{
 	name = "AI Lockdown";
 	id_tag = "AI Interior Lockdown"
+	},
+/obj/machinery/door/airlock/glass/sol{
+	name = "AI Core"
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_chamber)
@@ -12108,7 +12112,7 @@
 /area/crew_quarters/heads/office/xo)
 "FH" = (
 /obj/machinery/door/airlock/glass/sol{
-	name = "AI Foyer"
+	name = "Maitnence Chamber"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;

@@ -1648,27 +1648,27 @@
 	req_access = list(access_ai_core)
 
 /area/ai/ai_control_room
-	name = "AI - AI Control Antechamber"
+	name = "AI - Control Room"
 	icon_state = "ai_server"
 	req_access = list(access_ai_core)
 
 /area/ai/ai_unility
-	name = "AI - AI Utility Compartment"
+	name = "AI - Inner Utility Compartment"
 	icon_state = "ai_server"
 	req_access = list(access_ai_core)
 
 /area/ai/ai_superstructure
-	name = "AI - AI Chamber Exterior"
+	name = "AI - Utility Sphere"
 	icon_state = "ai_foyer"
 	req_access = list(access_ai_core)
 
 /area/ai/ai_chamber_foyer
-	name = "AI - AI Chamber Foyer"
+	name = "AI - AI Maitnence Chamber"
 	icon_state = "ai_foyer"
 	req_access = list(access_ai_core)
 
 /area/ai/ai_chamber
-	name = "AI - AI Chamber"
+	name = "AI - AI Core"
 	icon_state = "ai"
 	req_access = list(access_ai_core)
 
