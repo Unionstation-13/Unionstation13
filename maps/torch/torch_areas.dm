@@ -1642,6 +1642,11 @@
 
 // AI
 
+/area/ai/ai_airlock
+	name = "AI - AI EVA Access"
+	icon_state = "observatory"
+	req_access = list(access_ai_core)
+
 /area/ai/ai_control_room
 	name = "AI - AI Control Antechamber"
 	icon_state = "ai_server"

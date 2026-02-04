@@ -260,4 +260,4 @@
 /obj/landmark/start/ai
 	name = "AI"
 	icon = 'icons/mob/AI.dmi'
-	icon_state = "ai-empty" // Visual helper for the map editor
+	icon_state = "ai-empty"

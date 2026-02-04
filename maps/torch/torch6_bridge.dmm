@@ -3560,7 +3560,7 @@
 	},
 /obj/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "gz" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/aftstarboard)
@@ -3770,20 +3770,23 @@
 	icon_state = "4-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/door/airlock/external{
 	name = "AI External Access Airlock";
 	id_tag = "ai_eva_inner";
-	locked = 1;
 	frequency = 1390
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	name = "AI Access Lockdown";
+	id_tag = "AI Access Lockdown"
+	},
 /turf/simulated/floor/reinforced,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "hs" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/meeting_room)
@@ -4306,7 +4309,7 @@
 /area/bridge)
 "iN" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "iP" = (
 /obj/machinery/recharger/wallcharger{
@@ -4495,7 +4498,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/reinforced,
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "jw" = (
 /obj/floor_decal/corner/blue,
@@ -4899,7 +4904,8 @@
 /area/crew_quarters/heads/office/xo)
 "kB" = (
 /obj/machinery/light,
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "kE" = (
 /obj/structure/lattice,
@@ -5443,6 +5449,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"mn" = (
+/obj/catwalk_plated,
+/obj/machinery/rotating_alarm/security_alarm{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/ai/ai_superstructure)
 "mp" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/storage/briefcase{
@@ -5464,9 +5477,8 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "mr" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Utility Compartment";
-	secured_wires = 1
+/obj/machinery/door/airlock/glass/sol{
+	name = "Utility Compartment"
 	},
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -5477,6 +5489,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "AI Utility Lockdown";
+	name = "AI Utility Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
 "ms" = (
@@ -5495,7 +5511,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/camera/autoname,
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber)
 "mz" = (
 /obj/floor_decal/industrial/warning{
@@ -6026,11 +6042,11 @@
 	icon_state = "1-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
@@ -6176,9 +6192,7 @@
 /turf/simulated/wall/prepainted,
 /area/aux_eva)
 "ov" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Core"
-	},
+/obj/machinery/door/airlock/glass/sol,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
@@ -6189,6 +6203,10 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	name = "AI Access Lockdown";
+	id_tag = "AI Access Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
 "ox" = (
@@ -6597,7 +6615,7 @@
 /obj/machinery/atmospherics/pipe/cap/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "py" = (
 /obj/structure/filingcabinet/chestdrawer{
@@ -6715,9 +6733,6 @@
 	icon_state = "4-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9
-	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
 "pQ" = (
@@ -6790,7 +6805,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "qa" = (
 /obj/structure/bed/chair/comfy/blue{
@@ -6911,6 +6926,9 @@
 "qk" = (
 /turf/simulated/wall/r_wall/hull,
 /area/ai/ai_control_room)
+"ql" = (
+/turf/simulated/wall/r_wall/hull,
+/area/ai/ai_airlock)
 "qm" = (
 /obj/structure/sign/warning/high_voltage,
 /turf/simulated/wall/prepainted,
@@ -6987,6 +7005,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cos)
+"qr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
+/turf/simulated/floor/plating,
+/area/ai/ai_superstructure)
 "qs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
@@ -7072,14 +7098,17 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Utility Compartment";
-	secured_wires = 1
+/obj/machinery/door/airlock/glass/sol{
+	name = "Utility Compartment"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "AI Utility Lockdown";
+	name = "AI Utility Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
 "qD" = (
@@ -7127,14 +7156,11 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname,
+/obj/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_unility)
 "qL" = (
-/obj/machinery/portable_atmospherics/canister/air/airlock{
-	start_pressure = 1900
-	},
-/obj/machinery/atmospherics/portables_connector,
-/obj/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_control_room)
 "qN" = (
@@ -7208,17 +7234,15 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "qW" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	id_tag = "ai_eva_pump"
-	},
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "qX" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Core"
+/obj/machinery/door/airlock/glass/sol{
+	name = "AI Foyer"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -7232,6 +7256,13 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/item/airlock_brace{
+	req_access = list("ACCESS_AI_CORE")
+	},
+/obj/machinery/door/blast/regular/open{
+	name = "AI Lockdown";
+	id_tag = "AI Interior Lockdown"
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_chamber_foyer)
@@ -7685,7 +7716,7 @@
 	dir = 8
 	},
 /turf/simulated/wall/r_wall/hull,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "se" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -7788,6 +7819,9 @@
 "sq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_control_room)
@@ -8069,6 +8103,9 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/machinery/rotating_alarm/security_alarm{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber)
 "to" = (
@@ -8089,9 +8126,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "tr" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Core"
-	},
+/obj/machinery/door/airlock/glass/sol,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -8102,6 +8137,10 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	name = "AI Access Lockdown";
+	id_tag = "AI Access Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "ts" = (
@@ -8297,7 +8336,7 @@
 	},
 /obj/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "tW" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -9370,7 +9409,8 @@
 /obj/machinery/computer/modular/preset/aislot/sysadmin{
 	dir = 8
 	},
-/turf/simulated/floor/bluegrid,
+/obj/floor_decal/industrial/outline/red,
+/turf/simulated/floor/plating,
 /area/ai/ai_control_room)
 "ww" = (
 /obj/machinery/power/port_gen/pacman,
@@ -9574,6 +9614,10 @@
 /obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"xa" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ai/ai_airlock)
 "xb" = (
 /obj/structure/closet/crate,
 /obj/random/maintenance/solgov,
@@ -9866,7 +9910,7 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "xE" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -9879,7 +9923,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "xG" = (
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "xJ" = (
 /obj/structure/ladder,
@@ -10075,14 +10119,12 @@
 	icon_state = "4-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "yn" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10115,7 +10157,8 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "yw" = (
 /obj/floor_decal/corner/paleblue/diagonal,
@@ -10327,7 +10370,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/valve/shutoff/scrubbers,
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
@@ -10340,7 +10383,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber)
 "zo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -10382,7 +10425,9 @@
 /turf/simulated/floor,
 /area/solar/bridge)
 "zt" = (
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/obj/machinery/rotating_alarm/security_alarm,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "zw" = (
 /obj/floor_decal/techfloor{
@@ -10447,7 +10492,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "zF" = (
 /obj/structure/cable/green{
@@ -10462,15 +10508,14 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "zG" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	dir = 1;
-	id_tag = "ai_eva_pump"
-	},
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "zM" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/blast/shutters{
@@ -10534,7 +10579,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "zS" = (
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -10991,7 +11036,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
@@ -11051,8 +11096,8 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
 "BK" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Core"
+/obj/machinery/door/airlock/glass/sol{
+	name = "AI Chamber"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -11067,6 +11112,13 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/item/airlock_brace{
+	req_access = list("ACCESS_AI_CORE")
+	},
+/obj/machinery/door/blast/regular/open{
+	name = "AI Lockdown";
+	id_tag = "AI Interior Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_chamber)
 "BO" = (
@@ -11081,7 +11133,6 @@
 /obj/machinery/door/airlock/external{
 	name = "AI External Access Airlock";
 	id_tag = "ai_eva_outer";
-	locked = 1;
 	frequency = 1390
 	},
 /obj/structure/cable/green{
@@ -11092,8 +11143,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/cap/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	name = "AI Access Lockdown";
+	id_tag = "AI Access Lockdown"
+	},
 /turf/simulated/floor/reinforced,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "BR" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin{
@@ -11275,7 +11333,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber_foyer)
 "Ck" = (
 /obj/floor_decal/industrial/warning{
@@ -11373,6 +11431,8 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber_foyer)
 "CA" = (
@@ -11624,7 +11684,7 @@
 "DG" = (
 /obj/machinery/oxygen_pump,
 /turf/simulated/wall/r_wall/hull,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "DH" = (
 /obj/floor_decal/corner/blue{
 	dir = 9
@@ -11651,11 +11711,18 @@
 /turf/simulated/wall/prepainted,
 /area/ai/ai_unility)
 "DU" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	id_tag = "ai_eva_pump"
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "DV" = (
 /obj/structure/bed/chair/padded/blue,
 /obj/floor_decal/corner/blue{
@@ -11811,10 +11878,17 @@
 /turf/simulated/wall/titanium,
 /area/aquila/power)
 "EF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/machinery/button/blast_door{
+	name = "AI Interior Lockdown";
+	id_tag = "AI Interior Lockdown"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/wall/prepainted,
+/area/ai/ai_chamber)
+"EG" = (
+/obj/machinery/rotating_alarm/security_alarm{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "EJ" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -12033,9 +12107,8 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "FH" = (
-/obj/machinery/door/airlock/glass/command{
-	name = "AI Utility Compartment";
-	secured_wires = 1
+/obj/machinery/door/airlock/glass/sol{
+	name = "AI Foyer"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -12050,6 +12123,13 @@
 	},
 /obj/catwalk_plated,
 /obj/machinery/door/firedoor,
+/obj/item/airlock_brace{
+	req_access = list("ACCESS_AI_CORE")
+	},
+/obj/machinery/door/blast/regular/open{
+	id_tag = "AI Utility Lockdown";
+	name = "AI Utility Lockdown"
+	},
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
 "FK" = (
@@ -12284,7 +12364,8 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname,
-/turf/simulated/floor/reinforced,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "GD" = (
 /obj/structure/disposalpipe/segment{
@@ -12489,6 +12570,9 @@
 	lethal = 1
 	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/rotating_alarm/security_alarm{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber_foyer)
 "Ho" = (
@@ -12704,7 +12788,7 @@
 /area/bridge)
 "HO" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "HP" = (
 /obj/machinery/computer/modular/preset/supply_public{
@@ -12868,7 +12952,8 @@
 	dir = 4;
 	pixel_x = 21
 	},
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "Ik" = (
 /obj/machinery/button/alternate/door/bolts{
@@ -13145,7 +13230,8 @@
 /area/bridge)
 "Ja" = (
 /obj/machinery/alarm{
-	pixel_y = 24
+	pixel_y = 24;
+	breach_pressure = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -13201,6 +13287,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
+"Jk" = (
+/obj/machinery/button/blast_door{
+	name = "AI Access Lockdown";
+	id_tag = "AI Access Lockdown"
+	},
+/turf/simulated/wall/prepainted,
+/area/ai/ai_chamber)
 "Jo" = (
 /obj/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -13380,7 +13473,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/reinforced,
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "Ko" = (
 /obj/machinery/door/airlock/external{
@@ -13445,16 +13540,19 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/bridgesec)
 "Kz" = (
-/obj/machinery/porta_turret{
-	dir = 8;
-	enabled = 0;
-	lethal = 1
+/obj/machinery/rotating_alarm/security_alarm{
+	dir = 4
 	},
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/porta_turret{
+	dir = 8;
+	enabled = 0;
+	lethal = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber)
 "KA" = (
@@ -13516,7 +13614,7 @@
 /obj/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_superstructure)
+/area/ai/ai_control_room)
 "KN" = (
 /obj/structure/table/standard,
 /obj/item/defibrillator/loaded,
@@ -13559,7 +13657,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/camera/autoname{
-	dir = 10
+	dir = 1
 	},
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
@@ -13572,22 +13670,12 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/cap/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1390;
-	master_tag = "ai_eva_airlock";
-	name = "interior access button";
-	pixel_x = -24;
-	pixel_y = 24;
-	req_access = list("ACCESS_AI_CORE")
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
@@ -13703,6 +13791,16 @@
 /obj/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor,
 /area/space)
+"Lq" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ai/ai_airlock)
 "Lr" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13781,17 +13879,8 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1390;
-	master_tag = "ai_eva_airlock";
-	name = "exterior access button";
-	pixel_x = 23;
-	pixel_y = 6;
-	req_access = list("ACCESS_AI_CORE")
-	},
 /turf/simulated/floor,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light{
@@ -14024,6 +14113,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
+/obj/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_unility)
 "MK" = (
@@ -14031,14 +14121,14 @@
 /turf/simulated/wall/titanium,
 /area/aquila/air)
 "ML" = (
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber_foyer)
 "MN" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/cap/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "MU" = (
 /obj/machinery/oxygen_pump{
@@ -14292,6 +14382,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
+"NG" = (
+/obj/machinery/rotating_alarm/security_alarm,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ai/ai_superstructure)
 "NH" = (
 /obj/floor_decal/corner/blue/mono,
 /obj/structure/bed/chair/comfy/blue{
@@ -14333,7 +14427,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "NW" = (
 /obj/floor_decal/industrial/warning{
@@ -14655,7 +14750,7 @@
 	dir = 6
 	},
 /turf/simulated/floor,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "OX" = (
 /obj/machinery/shipsensors,
 /obj/floor_decal/industrial/hatch/yellow,
@@ -14755,7 +14850,7 @@
 	dir = 8
 	},
 /obj/landmark/start/ai,
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber)
 "Pl" = (
 /obj/structure/filingcabinet/chestdrawer{
@@ -14832,7 +14927,7 @@
 /area/aquila/air)
 "PG" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "PP" = (
 /obj/floor_decal/techfloor{
@@ -14843,7 +14938,7 @@
 /area/aquila/storage)
 "PS" = (
 /obj/machinery/firealarm,
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber_foyer)
 "PU" = (
 /obj/structure/cable/cyan{
@@ -14889,13 +14984,12 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/bridgesec)
 "PX" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	dir = 1;
-	id_tag = "ai_eva_pump"
-	},
 /obj/machinery/light,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -15110,7 +15204,7 @@
 /obj/structure/sign/warning/lethal_turrets,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_superstructure)
+/area/ai/ai_control_room)
 "Qz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15132,7 +15226,8 @@
 	},
 /obj/structure/cable/cyan,
 /obj/item/device/radio/intercom/locked/ai_private{
-	dir = 5
+	dir = 5;
+	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_chamber_foyer)
@@ -15182,17 +15277,14 @@
 /turf/simulated/wall/titanium,
 /area/aquila/power)
 "QM" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
-	dir = 1;
-	id_tag = "ai_eva_pump"
+/obj/machinery/alarm{
+	pixel_y = 24;
+	breach_pressure = 0
 	},
-/obj/machinery/airlock_sensor{
-	frequency = 1390;
-	id_tag = "ai_airlock_sensor";
-	pixel_y = -25
-	},
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "QN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -15495,12 +15587,19 @@
 	icon_state = "4-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "RK" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -15528,7 +15627,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
@@ -15579,7 +15678,7 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "Sb" = (
 /obj/machinery/power/apc/hyper/shuttle/aquila{
@@ -15677,16 +15776,15 @@
 /turf/simulated/floor/plating,
 /area/aquila/air)
 "St" = (
-/obj/machinery/camera/autoname{
-	dir = 6
-	},
-/turf/simulated/floor/bluegrid,
+/obj/machinery/camera/autoname,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber_foyer)
 "Su" = (
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
-/turf/simulated/floor/bluegrid,
+/obj/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "SA" = (
 /obj/wallframe_spawn/reinforced/titanium,
@@ -15774,6 +15872,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
+"SO" = (
+/obj/machinery/button/blast_door{
+	id_tag = "AI Utility Lockdown";
+	name = "AI Utility Lockdown"
+	},
+/turf/simulated/wall/prepainted,
+/area/ai/ai_chamber)
 "SQ" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1
@@ -16001,9 +16106,6 @@
 	icon_state = "2-4"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
-	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
 "Tx" = (
@@ -16041,20 +16143,24 @@
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
-/turf/simulated/floor/bluegrid,
+/obj/machinery/recharge_station,
+/turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
 "TH" = (
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	id_tag = "ai_eva_airlock";
-	tag_chamber_sensor = "ai_airlock_sensor";
-	tag_exterior_door = "ai_eva_outer";
-	tag_interior_door = "ai_eva_inner";
-	tag_airpump = "ai_eva_pump";
-	req_access = list("ACCESS_AI_CORE");
-	frequency = 1390
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall/hull,
-/area/ai/ai_control_room)
+/obj/catwalk_plated,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/ai/ai_airlock)
 "TI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -16246,6 +16352,11 @@
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ai/ai_superstructure)
+"Ut" = (
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ai/ai_unility)
 "Uu" = (
 /obj/machinery/hologram/holopad,
 /obj/floor_decal/industrial/outline/yellow,
@@ -16303,7 +16414,7 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/simulated/floor/bluegrid,
+/turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber_foyer)
 "UK" = (
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -16329,7 +16440,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "UW" = (
 /obj/paint/red,
@@ -16704,7 +16815,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_superstructure)
 "WK" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -16794,7 +16905,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/valve/shutoff/scrubbers,
 /obj/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ai/ai_unility)
@@ -17007,6 +17118,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_control_room)
 "Yb" = (
@@ -17135,9 +17249,6 @@
 	icon_state = "4-8"
 	},
 /obj/catwalk_plated,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/ai/ai_control_room)
 "Yz" = (
@@ -17454,7 +17565,7 @@
 "ZQ" = (
 /obj/structure/sign/warning/airlock,
 /turf/simulated/wall/r_wall/hull,
-/area/ai/ai_control_room)
+/area/ai/ai_airlock)
 "ZR" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -41432,11 +41543,11 @@ ad
 ad
 ad
 ad
-qk
+ql
 sb
 BP
-qk
-qk
+ql
+ql
 ad
 ad
 ad
@@ -41633,13 +41744,13 @@ ad
 ad
 ad
 ad
-qk
+ql
 DG
 qW
 ym
-QM
-qk
-qk
+Lq
+ql
+ql
 ad
 ad
 ad
@@ -41835,13 +41946,13 @@ ad
 ad
 ad
 ad
-qk
-TH
+ql
+ql
 DU
 RJ
 PX
-qk
-qk
+ql
+ql
 ad
 ad
 ad
@@ -42037,13 +42148,13 @@ ad
 ad
 ad
 ad
-qk
-qk
-DU
-RJ
+ql
+ql
+QM
+TH
 PX
-qk
-qk
+ql
+ql
 ad
 ad
 ad
@@ -42239,13 +42350,13 @@ ad
 ad
 ad
 ad
-qk
+ql
 DG
-DU
-RJ
+xa
+ym
 zG
-qk
-qk
+ql
+ql
 ad
 ad
 ad
@@ -42441,13 +42552,13 @@ ad
 ad
 zS
 qk
-qk
-qk
+ql
+ql
 ZQ
 hr
 ZQ
-qk
-qk
+ql
+ql
 qk
 zS
 ad
@@ -44060,7 +44171,7 @@ DR
 DR
 BV
 Qk
-UK
+Ut
 Pr
 Zd
 DR
@@ -44257,7 +44368,7 @@ ad
 hP
 hP
 jC
-zt
+mn
 DR
 kz
 Nx
@@ -44660,7 +44771,7 @@ ad
 ad
 hP
 hP
-EF
+NU
 Kn
 Az
 DR
@@ -45266,7 +45377,7 @@ aa
 ad
 hP
 hP
-NU
+qr
 MN
 HA
 HA
@@ -45469,7 +45580,7 @@ ad
 hP
 hP
 NU
-xG
+EG
 HA
 St
 Cj
@@ -45479,7 +45590,7 @@ Hn
 Cj
 UH
 HA
-xG
+NG
 NU
 hP
 hP
@@ -45675,9 +45786,9 @@ xG
 HA
 PS
 NZ
-NZ
+EF
 BK
-NZ
+SO
 NZ
 ML
 HA
@@ -45876,7 +45987,7 @@ xD
 xG
 HA
 HA
-NZ
+Jk
 Kz
 OU
 tn

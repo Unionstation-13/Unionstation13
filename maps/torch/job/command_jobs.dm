@@ -255,7 +255,7 @@
 		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
 		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
 		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
+		access_radio_comm, access_radio_sec, access_ai_core
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
