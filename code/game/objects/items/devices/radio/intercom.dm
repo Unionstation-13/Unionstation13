@@ -16,7 +16,7 @@
 	var/buildstage = 2
 	var/number = 0
 	var/last_tick //used to delay the powercheck
-	var/mob/living/silicon/ai/jacked = FALSE
+	var/jacked = FALSE
 	intercom_handling = TRUE
 	// Defined here to ensure they stay after proc shiftClick finishes
 	var/broadcastOrigVal

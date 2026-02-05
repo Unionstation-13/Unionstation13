@@ -59,7 +59,7 @@ var/global/list/ai_verbs_default = list(
 	var/icon/holo_icon_longrange //Yellow hologram.
 	var/holo_icon_malf = FALSE // for new hologram system
 	var/obj/item/device/multitool/aiMulti = null
-	var/obj/device/radio/intercom/focused_intercom = null
+	var/obj/item/device/radio/intercom/focused_intercom = null
 
 	silicon_camera = /obj/item/device/camera/siliconcam/ai_camera
 	silicon_radio = /obj/item/device/radio/headset/heads/ai_integrated
@@ -733,11 +733,11 @@ var/global/list/ai_verbs_default = list(
 #undef AI_CHECK_WIRELESS
 #undef AI_CHECK_RADIO
 
-/obj/device/radio/intercom/ShiftClick(mob/user)
+/obj/item/device/radio/intercom/ShiftClick(mob/user)
 	var/mob/living/silicon/ai/A
 	if(istype(user, /mob/living/silicon/ai))
 		A = user
-	else if(istype(user, /mob/camera/ai_eye))
+	else if(istype(user, /mob/observer/eye/ai))
 		var/mob/camera/ai_eye/E = user
 		A = E.ai
 
@@ -768,12 +768,12 @@ var/global/list/ai_verbs_default = list(
 
 /mob/living/silicon/ai/say(message)
 	if(focused_intercom)
-		if(focused_intercom.stat & (NOPOWER|BROKEN))
+		if(!focused_intercom.on)
 			to_chat(src, SPAN_WARNING("A wave of static overloads your feed! The connection with the intercom is quickly severed"))
 			focused_intercom.jacked = FALSE
 			focused_intercom = null
 		else
-			focused_intercom.say(message)
+			focused_intercom.talk_into(src, message)
 			to_chat(src, "<span class='game say'><span class='prefix'>[src.name] (Local Speaker):</span> <span class='message'>\"[message]\"</span></span>") // To make sure AI can hear what they said
 			return // Prevents radio shenanagins!
 
