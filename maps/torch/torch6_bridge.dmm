@@ -14858,7 +14858,7 @@
 /obj/machinery/button/alternate/door/bolts{
 	pixel_y = 20;
 	name = "Chamber Bolt Control";
-	id_tag = s
+	id_tag = "inner_chamber"
 	},
 /turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber)
