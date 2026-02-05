@@ -737,9 +737,9 @@ var/global/list/ai_verbs_default = list(
 	var/mob/living/silicon/ai/A
 	if(istype(user, /mob/living/silicon/ai))
 		A = user
-	else if(istype(user, /mob/observer/eye/ai))
-		var/mob/camera/ai_eye/E = user
-		A = E.ai
+	else if(istype(user, /mob/observer/eye))
+		var/mob/observer/eye/E = user
+		A = E.owner
 
 	if(A)
 		if(A.focused_intercom == src)

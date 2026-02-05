@@ -406,7 +406,7 @@
 	name = "confessional intercom"
 	locked_frequency = 1480
 
-/obj/device/radio/intercom/get_examine_text(mob/user)
+/obj/item/device/radio/intercom/examine()
 	. = ..()
 	if(jacked)
 		. += "<br><span class='danger'>A red light is blinking on the intercom with the text AI CONNECTION above it.</span>"
