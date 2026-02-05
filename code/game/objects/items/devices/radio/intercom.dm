@@ -16,7 +16,12 @@
 	var/buildstage = 2
 	var/number = 0
 	var/last_tick //used to delay the powercheck
+	var/mob/living/silicon/ai/jacked = FALSE
 	intercom_handling = TRUE
+	// Defined here to ensure they stay after proc shiftClick finishes
+	var/broadcastOrigVal
+	var/listeningOrigVal
+	var/frequencyOrigVal
 
 /obj/item/device/radio/intercom/get_storage_cost()
 	return ITEM_SIZE_NO_CONTAINER
@@ -400,3 +405,8 @@
 /obj/item/device/radio/intercom/locked/confessional
 	name = "confessional intercom"
 	locked_frequency = 1480
+
+/obj/device/radio/intercom/get_examine_text(mob/user)
+	. = ..()
+	if(jacked)
+		. += "<br><span class='danger'>A red light is blinking on the intercom with the text AI CONNECTION above it.</span>"
