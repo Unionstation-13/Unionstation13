@@ -13667,6 +13667,10 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
 	},
+/obj/item/device/radio/intercom/locked/ai_private{
+	dir = 8;
+	pixel_x = 20
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_unility)
 "KR" = (
