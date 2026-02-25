@@ -256,3 +256,8 @@
 	GLOB.ruin_landmarks -= src
 	ruin_template = null
 	. = ..()
+
+/obj/landmark/start/ai
+	name = "AI"
+	icon = 'icons/mob/AI.dmi'
+	icon_state = "ai-empty"

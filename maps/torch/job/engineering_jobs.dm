@@ -152,7 +152,7 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
 
 	access = list(
-		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng
+		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng, access_ai_core
 	)
 	extra_access = list(access_research)
 

@@ -124,6 +124,12 @@ var/global/const/access_captain = "ACCESS_CAPTAIN" //20
 	desc = "Captain"
 	region = ACCESS_REGION_COMMAND
 
+var/global/const/access_ai_core = "ACCESS_AI_CORE" //21
+/datum/access/ai_core
+	id = access_ai_core
+	desc = "AI Core"
+	region = ACCESS_REGION_COMMAND
+
 var/global/const/access_all_personal_lockers = "ACCESS_PERSONAL_LOCKERS" //21
 /datum/access/all_personal_lockers
 	id = access_all_personal_lockers

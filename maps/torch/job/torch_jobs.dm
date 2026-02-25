@@ -29,6 +29,7 @@
 		/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 		/datum/job/chief_steward, /datum/job/chef, /datum/job/janitor, /datum/job/crew,
 		/datum/job/cyborg,
+		/datum/job/ai,
 		/datum/job/chaplain,
 		/datum/job/assistant,
 		/datum/job/merchant
