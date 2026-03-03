@@ -5,15 +5,15 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", an Expeditionary Corps starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
-	. +=  "The vessel is staffed with a mix of SCG government personnel and hired contractors."
-	. +=  "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
+	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", a United Galactic Nations starship. Its primary mission is to search for scarce Phoron and explore, at least publicly."
+	. +=  "The vessel is staffed with a mixture of UGN Fleet members, corporate personell, Peacekeepers, and civilians."
+	. +=  "This area of space is uncharted, ungoverned, and untamed. Horrors hide in hulking masses of metal, while the Union threatens to tear the ship apart from the inside. Can you survive?"
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
 	var/obj/overmap/visitable/ship/torch = SSshuttle.ship_by_type(/obj/overmap/visitable/ship/torch)
 
-	var/welcome_text = "<center><img src = sollogo.png /><br />[FONT_LARGE("<b>SEV Torch</b> Sensor Readings:")]<br>"
+	var/welcome_text = "<center><img src = sollogo.png /><br />[FONT_LARGE("<b>UGN Titen</b> Sensor Readings:")]<br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[torch ? system_name : "Unknown"]</b><br /><br>"
 
@@ -21,7 +21,7 @@
 		var/list/space_things = list()
 		welcome_text += "Current Coordinates:<br /><b>[torch.x]:[torch.y]</b><br /><br>"
 		welcome_text += "Next system targeted for jump:<br /><b>[generate_system_name()]</b><br /><br>"
-		welcome_text += "Travel time to Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
+		welcome_text += "Travel Time to Pax:<br /><b>[rand(15,45)] days</b><br /><br>"
 		welcome_text += "Time since last port visit:<br /><b>[rand(60,180)] days</b><br /><hr>"
 		welcome_text += "Scan results show the following points of interest:<br />"
 
@@ -44,5 +44,5 @@
 
 		welcome_text += "<hr>"
 
-	post_comm_message("SEV Torch Sensor Readings", welcome_text)
+	post_comm_message("UGN Titen Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
