@@ -152,7 +152,7 @@
 ///Antag challenge coins, used to hack vendors.
 /obj/item/material/coin/challenge/syndie
 	name = "Syndicate Challenge Coin"
-	desc = "A heavy coin emblazoned with a shiny, red skull. The rim of the coin shows words in a language you do not understand."
+	desc = "A heavy coin emblazoned with a shiny, red serpent. The rim of the coin shows words in Unionspeak."
 	icon = 'icons/obj/materials/coin.dmi'
 	icon_state = "syndie"
 
