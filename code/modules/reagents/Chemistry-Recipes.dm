@@ -2236,7 +2236,7 @@
 	result_amount = 2
 
 /singleton/reaction/syndicatebomb
-	name = "Syndicate Bomb"
+	name = "Insurgent Bomb"
 	result = /datum/reagent/ethanol/syndicatebomb
 	required_reagents = list(/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/whiskey_cola = 1)
 	result_amount = 2

@@ -480,10 +480,10 @@ var/global/const/NO_EMAG_ACT = -50
 	extra_details = list("goldstripe")
 
 /obj/item/card/id/syndicate_command
-	name = "syndicate ID card"
-	desc = "An ID straight from the Syndicate."
-	registered_name = "Syndicate"
-	assignment = "Syndicate Overlord"
+	name = "union ID card"
+	desc = "An ID straight from the Union."
+	registered_name = "NAME HERE"
+	assignment = "Union Representative/Diplomat"
 	access = list(access_syndicate, access_external_airlocks)
 	color = COLOR_RED_GRAY
 	detail_color = COLOR_GRAY40

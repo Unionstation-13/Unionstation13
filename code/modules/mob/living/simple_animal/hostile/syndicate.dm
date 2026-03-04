@@ -119,7 +119,7 @@
 /mob/living/simple_animal/hostile/human/syndicate/ranged/space
 	icon_state = "syndicaterangedpsace"
 	icon_living = "syndicaterangedpsace"
-	name = "Syndicate Commando"
+	name = "Union Commando"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
