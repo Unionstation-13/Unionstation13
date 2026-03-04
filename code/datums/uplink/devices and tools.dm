@@ -238,7 +238,7 @@
 	desc = "A box of 7 handcuffs."
 
 /datum/uplink_item/item/tools/vendorcoins
-	name = "Syndicate Coins"
+	name = "Suspicious Coins"
 	item_cost = 50
 	path = /obj/item/storage/fancy/smokable/case/syndiecoins
 	desc = "A packet of five coins that unlock a secret compartment in any vending machine. \
