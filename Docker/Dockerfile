@@ -1,4 +1,4 @@
-FROM beestation/byond:latest AS builder
+FROM beestation/byond:515.1677 AS builder
 RUN apt-get update && apt-get install -y git
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
@@ -7,7 +7,7 @@ WORKDIR /build
 RUN git clone --depth 1 -b me-attempting-docker/sql https://github.com/Unionstation-13/Unionstation13.git .
 RUN DreamMaker baystation12.dme
 
-FROM beestation/byond:latest
+FROM beestation/byond:515.1677
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
