@@ -12,6 +12,7 @@ services:
       - ./player_data:/var/lib/mysql
     ports:
       - "3306:3306"
+      - "8000:8000"
 
   us13-instance:
     build:
