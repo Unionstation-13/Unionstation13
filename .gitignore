@@ -55,3 +55,5 @@ package-lock.json
 /maps/using.dm
 .vscode/settings.json
 /config/example/dbconfig.txt
+.env
+player_data/
