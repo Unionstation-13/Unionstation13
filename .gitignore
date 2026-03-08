@@ -57,3 +57,5 @@ package-lock.json
 .env
 player_data/
 config/example/dbconfig.txt
+config/dbconfig.txt
+config/config.txt
