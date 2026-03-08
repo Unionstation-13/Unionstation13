@@ -2,13 +2,14 @@ services:
   mariadb:
     image: mariadb:10.6
     container_name: unionstation-db
+    command: --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_USER=admin
       - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
-      - ./player_data:/var/lib/mysql:Z
+      - ./player_data:/var/lib/mysql
     ports:
       - "3306:3306"
 
@@ -20,8 +21,11 @@ services:
     depends_on:
       - mariadb
     network_mode: "service:mariadb"
+    environment:
+      - LD_LIBRARY_PATH=/usr/lib:/lib/i386-linux-gnu
     volumes:
-      - ./config/dbconfig.txt:/app/config/dbconfig.txt:Z
-      - ./data:/app/data:Z
+      - ${DB_PATH}:/app/config/dbconfig.txt
+      - ./data:/app/data
+      - ./config:/app/config
     ports:
       - "8000:8000"
