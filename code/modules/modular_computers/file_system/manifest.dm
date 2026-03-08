@@ -3,16 +3,16 @@
 	var/list/dept_data = list(
 		list("names" = list(), "header" = "Heads of Staff", "flag" = COM, "color" = MANIFEST_COLOR_COMMAND),
 		list("names" = list(), "header" = "Command Support", "flag" = SPT, "color" = MANIFEST_COLOR_SUPPORT),
-		list("names" = list(), "header" = "Research", "flag" = SCI, "color" = MANIFEST_COLOR_SCIENCE),
-		list("names" = list(), "header" = "Security", "flag" = SEC, "color" = MANIFEST_COLOR_SECURITY),
-		list("names" = list(), "header" = "Medical", "flag" = MED, "color" = MANIFEST_COLOR_MEDICAL),
-		list("names" = list(), "header" = "Engineering", "flag" = ENG, "color" = MANIFEST_COLOR_ENGINEER),
-		list("names" = list(), "header" = "Supply", "flag" = SUP, "color" = MANIFEST_COLOR_SUPPLY),
-		list("names" = list(), "header" = "Exploration", "flag" = EXP, "color" = MANIFEST_COLOR_EXPLORER),
-		list("names" = list(), "header" = "Service", "flag" = SRV, "color" = MANIFEST_COLOR_SERVICE),
+		list("names" = list(), "header" = "Rocknall Research", "flag" = SCI, "color" = MANIFEST_COLOR_SCIENCE),
+		list("names" = list(), "header" = "Peacekeeping", "flag" = SEC, "color" = MANIFEST_COLOR_SECURITY),
+		list("names" = list(), "header" = "Rocknall Medical", "flag" = MED, "color" = MANIFEST_COLOR_MEDICAL),
+		list("names" = list(), "header" = "Nitros Engineering", "flag" = ENG, "color" = MANIFEST_COLOR_ENGINEER),
+		list("names" = list(), "header" = "Cooran Supply", "flag" = SUP, "color" = MANIFEST_COLOR_SUPPLY),
+		list("names" = list(), "header" = "Rocknall Exploration", "flag" = EXP, "color" = MANIFEST_COLOR_EXPLORER),
+		list("names" = list(), "header" = "B.I.O Service", "flag" = SRV, "color" = MANIFEST_COLOR_SERVICE),
 		list("names" = list(), "header" = "Civilian", "flag" = CIV, "color" = MANIFEST_COLOR_CIVILIAN),
 		list("names" = list(), "header" = "Miscellaneous", "flag" = MSC, "color" = MANIFEST_COLOR_MISC),
-		list("names" = list(), "header" = "Silicon", "color" = MANIFEST_COLOR_SILICON),
+		list("names" = list(), "header" = "ABCDEFG Silicon", "color" = MANIFEST_COLOR_SILICON),
 	)
 	var/list/misc //Special departments for easier access
 	var/list/bot
