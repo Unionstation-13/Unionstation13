@@ -1,0 +1,27 @@
+services:
+  mariadb:
+    image: mariadb:10.6
+    container_name: unionstation-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./player_data:/var/lib/mysql:Z
+    ports:
+      - "3306:3306"
+
+  us13-instance:
+    build:
+      context: .
+      dockerfile: Docker/Dockerfile
+    container_name: union-server
+    depends_on:
+      - mariadb
+    network_mode: "service:mariadb"
+    volumes:
+      - ./config/dbconfig.txt:/app/config/dbconfig.txt:Z
+      - ./data:/app/data:Z
+    ports:
+      - "8000:8000"
