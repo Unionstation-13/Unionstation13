@@ -11120,7 +11120,8 @@
 	name = "AI Lockdown";
 	id_tag = "AI Interior Lockdown"
 	},
-/obj/machinery/door/airlock/glass/sol{
+/obj/machinery/door/airlock/highsecurity/bolted{
+	id_tag = "inner_chamber";
 	name = "AI Core"
 	},
 /turf/simulated/floor/plating,
@@ -13666,6 +13667,10 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
 	},
+/obj/item/device/radio/intercom/locked/ai_private{
+	dir = 8;
+	pixel_x = 20
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_unility)
 "KR" = (
@@ -14854,6 +14859,11 @@
 	dir = 8
 	},
 /obj/landmark/start/ai,
+/obj/machinery/button/alternate/door/bolts{
+	pixel_y = 20;
+	name = "Chamber Bolt Control";
+	id_tag = "inner_chamber"
+	},
 /turf/simulated/floor/selfestructgrid,
 /area/ai/ai_chamber)
 "Pl" = (
@@ -16648,7 +16658,9 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "VG" = (
-/obj/item/device/radio/intercom/hailing,
+/obj/item/device/radio/intercom/locked/ai_private{
+	dir = 3
+	},
 /turf/simulated/wall/prepainted,
 /area/ai/ai_chamber)
 "VL" = (
@@ -17125,6 +17137,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
+/obj/item/device/radio/intercom/locked/ai_private,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai/ai_control_room)
 "Yb" = (
