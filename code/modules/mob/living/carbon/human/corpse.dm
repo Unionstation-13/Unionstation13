@@ -194,12 +194,12 @@
 	corpse_outfits = list(/singleton/hierarchy/outfit/soviet_soldier)
 
 /obj/landmark/corpse/syndicate
-	name = "Syndicate Operative"
+	name = "Union Operative"
 	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/syndicate)
 	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
 
 /obj/landmark/corpse/syndicate/commando
-	name = "Syndicate Commando"
+	name = "Union Commando"
 	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/syndicate/commando)
 
 /obj/landmark/corpse/anomalist
