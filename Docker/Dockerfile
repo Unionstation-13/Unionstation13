@@ -4,7 +4,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -y --no-install-recommends libmariadb3:i386
 WORKDIR /build
-RUN git clone --depth 1 -b me-attempting-docker/sql https://github.com/Unionstation-13/Unionstation13.git .
+RUN git clone --depth 1 -b dev https://github.com/Unionstation-13/Unionstation13.git .
 RUN DreamMaker baystation12.dme
 
 FROM beestation/byond:515.1677
