@@ -4,7 +4,12 @@
     "biomejs.biome",
     "platymuus.dm-langclient",
     "anturk.dmi-editor",
-    "eamodio.gitlens",
-    "oderwat.indent-rainbow"
+    "oderwat.indent-rainbow",
+    "streetsidesoftware.code-spell-checker",
+    "ms-azuretools.vscode-containers",
+    "ms-azuretools.vscode-docker",
+    "mhutchie.git-graph",
+    "pokey.parse-tree",
+    "kylinideteam.gitlens"
   ]
 }
