@@ -184,6 +184,11 @@ var/global/const/access_rd = "ACCESS_RESEARCH_DIRECTOR" //30
 	desc = "Chief Science Officer"
 	region = ACCESS_REGION_RESEARCH
 
+var/global/const/access_cs = "ACCESS_CYBERSECURITY" //Uhm... Numbering may be fucked now
+	id = access_cs
+	desc = "Cybersecurity"
+	region = ACCESS_REGION_RESEARCH //ahh fuck... PLACEHOLDER
+
 var/global/const/access_cargo = "ACCESS_CARGO" //31
 /datum/access/cargo
 	id = access_cargo
