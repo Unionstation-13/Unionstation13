@@ -9,7 +9,6 @@
 	req_access = list(access_csa) //Only cybersec admins can access without multitool
 	var/working = TRUE
 	var/opened = 0 // Cover starts on. 1 is open 2 is destroyed
-	var/unlocked = FALSE
 	var/unscrewed = FALSE
 	var/locked = TRUE
 
@@ -39,16 +38,20 @@
 		return TRUE
 
 	if(isScrewdriver(W))
-		if(opened == 1)
+		if(opened >= 1 && !unscrewed)
 			unscrewed = TRUE
 			to_chat(user, "You unscrew the inner maintenance panel.")
+			return TRUE
+		else if(unscrewed)
+			unscrewed = FALSE
+			to_chat(user, "You screw back in the inner maintenance panel.")
 			return TRUE
 		// Otherwise, if not opened, nothing happens.
 		to_chat(user, "You tap the screwdriver against the panel. Nothing.")
 		return TRUE
 
 	// trying to unlock the inner area with an ID card
-	if (istype(W, /obj/item/card/id)||istype(W, /obj/item/modular_computer) && opened == 1 && unscrewed)
+	if ((istype(W, /obj/item/card/id)||istype(W, /obj/item/modular_computer)) && opened >= 1 && unscrewed)
 		if(emagged)
 			to_chat(user, "The interface is flashing random digits. It seems to be stuck in a loop. You may want to try using a BAT on it.")
 		else if(MACHINE_IS_BROKEN(src))
@@ -63,7 +66,7 @@
 		return TRUE
 
 	// trying to unlock the inner area with a multitool
-	if (isMultitool(W) && opened == 1 && unscrewed)
+	if (isMultitool(W) && opened >= 1 && unscrewed)
 		if(emagged)
 			to_chat(user, "The interface is flashing random digits. It seems to be stuck in a loop. You may want to try using a BAT on it.")
 		else if(MACHINE_IS_BROKEN(src))
@@ -71,8 +74,11 @@
 		else
 			if(prob(75))
 				user.visible_message(SPAN_NOTICE("\The [user] pulses a wire inside \the [src]."), SPAN_NOTICE("You pulse a stray wire inside \the [src]. The innermost panel suddenly opens."))
+				locked = FALSE
+				update_icon()
+				return
 			else
-				to_chat(user, SPAN_WARNING("Access denied."))
+				to_chat(user, SPAN_WARNING("You pulse a random wire... Nothing happens."))
 		return TRUE
 
 	if((. = ..())) // Further interactions are low priority attack stuff.
@@ -88,20 +94,25 @@
 		if((opened == 1 || opened == 2) && unscrewed && !MACHINE_IS_BROKEN(src))
 			to_chat(user, "You press the big red RESET button. The satellite whirs back to life.")
 			working = TRUE
+			update_icon()
 			return
 		if(MACHINE_IS_BROKEN(src))
 			to_chat(user, "Nothing happens when you press the big red RESET button. The satellite may be broken.")
 			return
+		return
 	if(!W && user.a_intent==I_HARM)
-		if(opened == 1 || opened == 2 && unscrewed)
+		if((opened == 1 || opened == 2) && unscrewed)
 			if(!MACHINE_IS_BROKEN(src))
 				to_chat(user, "You punch the big red RESET button. The satellite whirs back to life.")
+				return
 			else
 				to_chat(user, "You punch the big red RESET button... Nothing happens.")
+				return
 		if(opened==0)
 			to_chat(user, "You punch the maintenance panel. Your hand throbs.")
+			return
 			//TODO either remove harm damage interaction in favor of generic combat or code interaction
-	to_chat(user, "You don't know what to do.")
+		return
 	..()
 
 // Emags, of course
@@ -109,7 +120,7 @@
 	if (!(emagged))		// Trying to unlock with an emag card
 		if(opened)
 			to_chat(user, "You must close the cover to tap the emag to the panel.")
-		else if(wiresexposed)
+		else if(unscrewed)
 			to_chat(user, "You must close the inner panel first")
 		else if(MACHINE_IS_BROKEN(src) || GET_FLAGS(stat, MACHINE_STAT_MAINT))
 			to_chat(user, "Nothing happens.")
