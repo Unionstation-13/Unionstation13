@@ -185,11 +185,13 @@ var/global/const/access_rd = "ACCESS_RESEARCH_DIRECTOR" //30
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_cs = "ACCESS_CYBERSECURITY" //Uhm... Numbering may be fucked now
+/datum/access/cybersec_it
 	id = access_cs
 	desc = "Cybersecurity"
 	region = ACCESS_REGION_CYBERSEC
 
 var/global/const/access_csa = "ACCESS_CYBERSECURITY" //Uhm... Numbering may be fucked now
+	/datum/access/cybersec_admin
 	id = access_csa
 	desc = "Cybersecurity Admin"
 	region = ACCESS_REGION_CYBERSEC
