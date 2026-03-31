@@ -1899,7 +1899,7 @@
 #include "code\modules\culture_descriptor\religion\religions_vox.dm"
 #include "code\modules\cybersecurity\PAXNET\paxnet.dm"
 #include "code\modules\cybersecurity\PAXNET\nodes\node.dm"
-#include "code\modules\cybersecurity\sattelite\satellite_dish.dm"
+#include "code\modules\cybersecurity\satellite\satellite_dish.dm"
 #include "code\modules\detectivework\forensics.dm"
 #include "code\modules\detectivework\microscope\dnascanner.dm"
 #include "code\modules\detectivework\microscope\microscope.dm"
