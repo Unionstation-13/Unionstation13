@@ -58,8 +58,9 @@
 		else
 			to_chat(user, SPAN_NOTICE("You tap your ID card to [src]. Nothing happens."))
 	else if(istype(W, /obj/item/card/emag))
-		to_chat(user, SPAN_NOTICE("The screen flickers and turns red, displaying a wall of error messages before flickering to a blue screen and rebooting."))
-		emagged = TRUE
+		if(prob(50))
+			to_chat(user, SPAN_NOTICE("The screen flickers and turns red, displaying a wall of error messages before flickering to a blue screen and rebooting."))
+			emagged = TRUE
 	else
 		return
 
