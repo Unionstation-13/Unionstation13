@@ -100,7 +100,7 @@
 			to_chat(user, "Nothing happens when you press the big red RESET button. The satellite may be broken.")
 			return
 		return
-	if(!W && user.a_intent==I_HARM)
+	if(!W && user.a_intent==I_HURT)
 		if((opened == 1 || opened == 2) && unscrewed)
 			if(!MACHINE_IS_BROKEN(src))
 				to_chat(user, "You punch the big red RESET button. The satellite whirs back to life.")
@@ -113,7 +113,6 @@
 			return
 			//TODO either remove harm damage interaction in favor of generic combat or code interaction
 		return
-	..()
 
 // Emags, of course
 /obj/machinery/cybersec/satellite_dish/emag_act(remaining_charges, mob/user)
