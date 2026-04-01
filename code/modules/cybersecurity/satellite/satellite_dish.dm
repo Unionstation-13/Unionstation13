@@ -12,8 +12,12 @@
 	var/unscrewed = FALSE
 	var/locked = TRUE
 
+/obj/machinery/cybersec/satellite_dish/back
+name = "\improper Satellite Dish"
+machine_desc = "The front portion of a large quantumn antenna used for communication with Pax and PAXNET."
+icon_state = "sat_dish"
 // Edited version of APC code
-/obj/machinery/cybersec/satellite_dish/use_tool(obj/item/W, mob/living/user, list/click_params)
+/obj/machinery/cybersec/satellite_dish/back/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if (istype(user, /mob/living/silicon) && get_dist(src,user)>1)
 		return attack_robot(user)
 
@@ -89,7 +93,7 @@
 
 	return ..()
 
-/obj/machinery/cybersec/satellite_dish/attack_hand( mob/user) // Hand based actions
+/obj/machinery/cybersec/satellite_dish/back/attack_hand( mob/user) // Hand based actions
 	if(user.a_intent==I_HELP)
 		if((opened == 1 || opened == 2) && unscrewed && !MACHINE_IS_BROKEN(src))
 			to_chat(user, "You press the big red RESET button. The satellite whirs back to life.")
@@ -115,7 +119,7 @@
 		return
 
 // Emags, of course
-/obj/machinery/cybersec/satellite_dish/emag_act(remaining_charges, mob/user)
+/obj/machinery/cybersec/satellite_dish/back/emag_act(remaining_charges, mob/user)
 	if (!(emagged))		// Trying to unlock with an emag card
 		if(opened)
 			to_chat(user, "You must close the cover to tap the emag to the panel.")
@@ -141,7 +145,7 @@
 
 // /obj/machinery/cybersec/satellite_dish/proc/bat_access()
 
-/obj/machinery/cybersec/satellite_dish/sat_front
+/obj/machinery/cybersec/satellite_dish/front
 	name = "\improper Satellite Dish Front"
 	icon = 'icons/obj/machines/cybersecurity.dmi'
 	desc = "The front dish part of the Satellite Dish."
