@@ -89,8 +89,8 @@
 
 	return ..()
 
-/obj/machinery/cybersec/satellite_dish/resolve_attackby(obj/item/W, mob/user) // Hand based actions
-	if(!W && user.a_intent==I_HELP)
+/obj/machinery/cybersec/satellite_dish/attack_hand( mob/user) // Hand based actions
+	if(user.a_intent==I_HELP)
 		if((opened == 1 || opened == 2) && unscrewed && !MACHINE_IS_BROKEN(src))
 			to_chat(user, "You press the big red RESET button. The satellite whirs back to life.")
 			working = TRUE
@@ -100,7 +100,7 @@
 			to_chat(user, "Nothing happens when you press the big red RESET button. The satellite may be broken.")
 			return
 		return
-	if(!W && user.a_intent==I_HURT)
+	if(user.a_intent==I_HURT)
 		if((opened == 1 || opened == 2) && unscrewed)
 			if(!MACHINE_IS_BROKEN(src))
 				to_chat(user, "You punch the big red RESET button. The satellite whirs back to life.")
