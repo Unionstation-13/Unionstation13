@@ -1,6 +1,6 @@
 /obj/machinery/cybersec/satellite_dish
 	name = "\improper Satellite Dish"
-	icon = 'icons/obj/machines/cybersec/cybersecurity.dmi'
+	icon = 'icons/obj/machines/cybersecurity.dmi'
 	icon_state = "sat_dish"
 	base_type = /obj/machinery/r_n_d/server
 	construct_state = /singleton/machine_construction/default/panel_closed
@@ -135,8 +135,14 @@
 				else
 					to_chat(user, SPAN_WARNING("You fail to [ locked ? "unlock" : "lock"] the satellite."))
 
-// /obj/machinery/cybersec/satellite_dish/go_offline()
+// /obj/machinery/cybersec/satellite_dish/proc/go_offline()
 // Do something and disable PAXNET... IDK how to do this. So this is all a comment for now.
 // working = FALSE
 
-// /obj/machinery/cybersec/satellite_dish/bat_access()
+// /obj/machinery/cybersec/satellite_dish/proc/bat_access()
+
+/obj/machinery/cybersec/satellite_dish/sat_front
+	name = "\improper Satellite Dish Front"
+	icon = 'icons/obj/machines/cybersecurity.dmi'
+	desc = "The front dish part of the Satellite Dish."
+	icon_state = "sat_front"
