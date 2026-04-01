@@ -7,15 +7,16 @@
 	machine_name = "\improper Satellite Dish"
 	machine_desc = "A large quantumn antenna used for communication with Pax and PAXNET."
 	req_access = list(access_csa) //Only cybersec admins can access without multitool
+
+
+/obj/machinery/cybersec/satellite_dish/back
+	name = "\improper Satellite Dish"
+	machine_desc = "The front portion of a large quantumn antenna used for communication with Pax and PAXNET."
+	icon_state = "sat_dish"
 	var/working = TRUE
 	var/opened = 0 // Cover starts on. 1 is open 2 is destroyed
 	var/unscrewed = FALSE
 	var/locked = TRUE
-
-/obj/machinery/cybersec/satellite_dish/back
-name = "\improper Satellite Dish"
-machine_desc = "The front portion of a large quantumn antenna used for communication with Pax and PAXNET."
-icon_state = "sat_dish"
 // Edited version of APC code
 /obj/machinery/cybersec/satellite_dish/back/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if (istype(user, /mob/living/silicon) && get_dist(src,user)>1)
