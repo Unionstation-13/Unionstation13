@@ -14,12 +14,16 @@
 	/// The privelages a BAT has. There are three types. ADMIN, HOMEMADE, and TRAITOR. You can learn more about them in accessdef.dm
 	var/privileges = 0
 
+// /obj/item/device/backdooraccesstool/proc/init_hack(device_type, valid_commands)
+	// Nothing yet
+
+
 // Types of BAT's
 
 /obj/item/device/backdooraccesstool/official
 	name = "Official Backdoor Access Tool"
 	desc = "An official ABCDEFG Backdoor Access Tool. The ABCDEFG logo is printed on the front on a cover covering the circuitry."
-	privileges |= ADMIN // I hope this is how it works
+	privileges = ADMIN // I hope this is how it works
 
 /obj/device/backdooraccesstool/official/get_antag_info()
 	. = ..()
@@ -29,7 +33,7 @@
 	name = "Homemade Access Tool"
 	desc = "A small device that fits in the palm of your hand with two prongs sticking out the top. The cover is ripped off and the circuitry is exposed. It is probably very fragile."
 	icon_state = "bat_home"
-	privileges |= HOMEMADE
+	privileges = HOMEMADE
 	// Its smaller and lighter so it can be thrown farther but less power
 	throwforce = 4.5
 	throw_range = 16
@@ -42,4 +46,4 @@
 /obj/item/device/backdooraccesstool/traitor
 	name = "Suspicious Handheld Device"
 	icon_state = "bat_home"
-	privileges |= TRAITOR
+	privileges = TRAITOR
