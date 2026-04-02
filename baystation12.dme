@@ -1897,6 +1897,8 @@
 #include "code\modules\culture_descriptor\religion\religions_skrell.dm"
 #include "code\modules\culture_descriptor\religion\religions_unathi.dm"
 #include "code\modules\culture_descriptor\religion\religions_vox.dm"
+#include "code\modules\cybersecurity\items\bat.dm"
+#include "code\modules\cybersecurity\PAXNET\accessdef.dm"
 #include "code\modules\cybersecurity\PAXNET\paxnet.dm"
 #include "code\modules\cybersecurity\PAXNET\nodes\node.dm"
 #include "code\modules\cybersecurity\satellite\satellite_dish.dm"
