@@ -11,6 +11,7 @@
 	stat_immune = 0
 	frame_type = /obj/machinery/constructable_frame/computerframe/deconstruct
 	var/processing = 0
+	var/valid_commands = list()
 
 	health_max = 80
 	damage_hitsound = 'sound/weapons/smash.ogg'
