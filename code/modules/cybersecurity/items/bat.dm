@@ -13,6 +13,13 @@
 	origin_tech = list(TECH_MAGNET = 1, TECH_ENGINEERING = 1)
 	/// The privelages a BAT has. There are three types. ADMIN, HOMEMADE, and TRAITOR. The default is ADMIN.
 	var/privileges = 0
+	// The following are to define flags.
+	/// Admin gives default sudo access meaning no cracker needed
+	var/ADMIN = 0
+	/// Doesn't have default sudo access; needs to escalate w/ password cracker(just takes time)
+	var/HOMEMADE = 1
+	/// Gives malware compilation ability + Homemade needs
+	var/TRAITOR = 2
 
 // /obj/item/device/backdooraccesstool/proc/init_hack(device_type, valid_commands)
 	// Nothing yet
