@@ -11,7 +11,7 @@
 	throw_speed = 3
 	matter = list(MATERIAL_PLASTIC = 50, MATERIAL_GLASS = 20, MATERIAL_STEEL = 5)
 	origin_tech = list(TECH_MAGNET = 1, TECH_ENGINEERING = 1)
-	/// The privelages a BAT has. There are three types. ADMIN, HOMEMADE, and TRAITOR. You can learn more about them in accessdef.dm
+	/// The privelages a BAT has. There are three types. ADMIN, HOMEMADE, and TRAITOR. The default is ADMIN.
 	var/privileges = 0
 
 // /obj/item/device/backdooraccesstool/proc/init_hack(device_type, valid_commands)
