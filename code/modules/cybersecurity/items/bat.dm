@@ -1,6 +1,6 @@
 /obj/item/device/backdooraccesstool
 	name = "Backdoor Access Tool"
-	desc = "If your seeing this, make an issue on github. This is the base class for the backdoor access tool."
+	desc = "If your seeing this, make an issue on github and message an admin. This is the base class for the backdoor access tool."
 	icon = 'icons/obj/machines/cybersecurity.dmi'
 	icon_state = "bat_official"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -30,7 +30,7 @@
 /obj/item/device/backdooraccesstool/official
 	name = "Official Backdoor Access Tool"
 	desc = "An official ABCDEFG Backdoor Access Tool. The ABCDEFG logo is printed on the front on a cover covering the circuitry."
-	privileges = ADMIN // I hope this is how it works
+	privileges = ADMIN
 
 /obj/device/backdooraccesstool/official/get_antag_info()
 	. = ..()
@@ -54,3 +54,7 @@
 	name = "Suspicious Handheld Device"
 	icon_state = "bat_home"
 	privileges = TRAITOR
+
+/obj/device/backdooraccesstool/trator/get_antag_info()
+	. = ..()
+	. +=  "This is definetly not a handheld computer; It is a Union cyber-hacking device that was reverse-engineered from a ABCDEFG Backdoor Access Tool. It is probably a good idea to keep this away from security."
