@@ -55,7 +55,9 @@ package-lock.json
 /maps/using.dm
 .vscode/settings.json
 .env
+# Ignore config/data
 player_data/
 config/example/dbconfig.txt
 config/dbconfig.txt
-config/config.txt
+config/
+!config/example

@@ -1,20 +1,15 @@
-### GETTING THE CODE
+### DEFAULT INSTALLATION
 
-The simplest way to obtain the code is using Github's .zip feature.
+**FOR THOSE WANTING TO SETUP A LONG-TERM SERVER, SEE [ADVANCED CONFIG](#sqladvanced-setup)**
 
-Click [here](https://github.com/Baystation12/Baystation12/archive/dev.zip) to get the latest code as a .zip file, then unzip it to wherever you want.
+It is highly recommended to **not use** the github zip feature if you'd like ease of updating, as it requires manually copying + pasting and is not documented here.
 
-The more complicated and easier to update method is using git. You'll need to download git or some client from [here](http://git-scm.com/). When that's installed, right click in any folder and click on "Git Bash". When that opens, type in:
+To do so, you'll need to download git or some client from [here](http://git-scm.com/). Once that is open, go to the folder where you want your code to be, right click, and click on "Git Bash". A terminal window will *likely* open, so when it does, input:
 
-    git clone https://github.com/Baystation12/Baystation12.git
+    git clone https://github.com/Unionstation-13/Unionstation13.git
 
-(hint: hold down ctrl and press insert to paste into git bash)
-
-This will take a while to download, but it provides an easier method for updating.
-
----
-
-### INSTALLATION
+Then, use your preferred editor to open the folder and **voila**, the server is installed.
+#### COMPILING
 
 First-time installation should be fairly straightforward. First, you'll need BYOND installed. You can get it from [here](http://www.byond.com/).
 
@@ -23,8 +18,7 @@ This is a source-only release, so the next step is to compile the server files. 
     saving baystation12.dmb (DEBUG mode)
     baystation12.dmb - 0 errors, 0 warnings
 
-If you see any errors or warnings, something has gone wrong - possibly a corrupt download or the files extracted wrong, or a code issue on the main repo. Ask on IRC or discord.
-
+If you see errors or warnings, post on the discord.
 ---
 
 ### CONFIGURATION
@@ -61,6 +55,23 @@ Webhooks additionally require a HTTP POST library called [byhttp](https://github
 
 ### UPDATING
 
+Updating is dependant on whether you are working with a [docker](#sqladvanced-setup) install or a [default](#default-installation) install.
+
+#### Default
+
+Please first backup /config and /data. Then, run:
+    git pull
+
+In the root directory and it **should** update.
+#### Docker
+Simply run:
+
+    git pull
+
+#### Pulling git for VSCode users(NO CLI NEEDED)
+![Go to 'source control'](image-1.png)
+![Click 'more actions'](image.png)
+![Pull!](image-2.png)
 To update an existing installation, first back up your `/config` and `/data` folders
 as these store your server configuration, player preferences and banlist.
 
@@ -76,7 +87,12 @@ When you have done this, you'll need to recompile the code, but then it should w
 
 ---
 
-### SQL Setup
+### SQL/Advanced Setup
 
-Although there are fallbacks, Baystation is intended to be run with a MySQL or MariaDB database when hosting.
-You will need to apply the `/sql/schema.sql` file to a new database and set appropriate credentials to read/write it in the `/config/dbconfig.txt` file.
+Although there are fallbacks, Unionstation13 is intended to be run with a MySQL or MariaDB database when hosting.
+If you fill out a .env with the following types:
+- DB_ROOT_PASSWORD
+- DB_PASSWORD
+- DB_NAME
+- DB_PATH
+And have docker installed from [here](https://www.docker.com/), then all you do is run docker-compose up -d, and the server **should** start with a database. However, this is **not** required and should be used for dedicated server setups rather than just one-off hostings as it is more complex. 
