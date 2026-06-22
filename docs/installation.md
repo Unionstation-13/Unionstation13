@@ -96,3 +96,43 @@ If you fill out a .env with the following types:
 - DB_NAME
 - DB_PATH
 And have docker installed from [here](https://www.docker.com/), then all you do is run docker-compose up -d, and the server **should** start with a database. However, this is **not** required and should be used for dedicated server setups rather than just one-off hostings as it is more complex. 
+
+#### Play-it Setup
+
+If you wish to play with players outside of LAN, make sure to follow this step.
+
+##### Creating a Play-it account
+To create a playit.gg account, go to [playit.gg](playit.gg) and follow the instructions to create an account.
+
+##### Connecting the Agent
+In the wizard, select docker and it will give you a yml command like:
+
+    version: '3'
+
+    services:
+    playit:
+        image: ghcr.io/playit-cloud/playit-agent:0.17
+        network_mode: host
+        environment:
+        - SECRET_KEY=mykeyhere
+
+Grab the key and paste it into the .env as PLAYIT_KEY.
+
+i.e:
+    PLAYIT_KEY=ususuaus
+
+Then, start your docker server with docker compose up -d and it should connect.
+
+##### Connecting a Tunnel
+This is the home stretch!
+Click exit wizard in the top right of the screen and it will bring you to a screen where it says create new tunnel. Click there, type your tunnel's name, choose Minecraft Java(to get free TCP) as tunnel type, port count 1 and fill out the rest up as appropriate until you reach origin config.
+
+For that, put in these values:
+- IP: 127.0.0.1
+- PORT: 8000
+- PROXY PROTOCOL: NONE
+
+Then create it, copy the address, add byond:// before it, and it might work.
+
+Feel free to ask questions in the official Unionstation13 Discord:
+https://discord.gg/Yj8a3v583j
