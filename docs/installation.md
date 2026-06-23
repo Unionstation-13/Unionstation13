@@ -103,15 +103,17 @@ All you have to do is create in the root folder a frpc.ini file.
 
 In it, put something like this:
 ```toml
-[common]
-server_addr = freefrp.net
-server_port = 7000 # Port of freefrp.net
+serverAddr = "frp.freefrp.net"
+serverPort = 7000
+auth.method = "token"
+auth.token = "freefrp.net"
 
-[byond_server]
-type = tcp
-local_ip = us13-instance # Do not change this unless you change the name of the docker container
-local_port = 8000 # The default port(changable if you edit the yml)
-remote_port = 25565 # the port that goes after freefrp.net
+[[proxies]]
+name = "un13_official_proxy"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 46392
 ```
 
 After that, your server's address should be:

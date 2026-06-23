@@ -14,7 +14,6 @@ services:
     ports:
       - "3306:3306"
       - "8000:8000"
-      - "5515:5515"
 
   us13-instance:
     build:
@@ -32,8 +31,9 @@ services:
       - ./config:/app/config
   
   frp-tunnel:
-    image: snowdreamtech/frpc
+    image: docker.io/snowdreamtech/frpc
     container_name: frp-tunnel
+    network_mode: "service:mariadb"
     restart: always
     volumes:
-      - ./frpc.ini:/etc/frp/frpc.ini
+      - ./frpc.toml:/etc/frp/frpc.toml
