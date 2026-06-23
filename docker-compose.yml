@@ -1,8 +1,9 @@
 services:
   mariadb:
-    image: mariadb:10.6
+    image: docker.io/library/mariadb:10.6
     container_name: unionstation-db
     command: --default-authentication-plugin=mysql_native_password
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
@@ -17,7 +18,7 @@ services:
   us13-instance:
     build:
       context: .
-      dockerfile: Docker/Dockerfile
+      dockerfile: docker/Dockerfile
     container_name: union-server
     depends_on:
       - mariadb
@@ -28,5 +29,11 @@ services:
       - ${DB_PATH}:/app/config/dbconfig.txt
       - ./data:/app/data
       - ./config:/app/config
-    ports:
-      - "8000:8000"
+  
+  frp-tunnel:
+    image: docker.io/snowdreamtech/frpc
+    container_name: frp-tunnel
+    network_mode: "service:mariadb"
+    restart: always
+    volumes:
+      - ./frpc.toml:/etc/frp/frpc.toml

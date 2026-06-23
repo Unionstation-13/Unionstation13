@@ -96,3 +96,25 @@ If you fill out a .env with the following types:
 - DB_NAME
 - DB_PATH
 And have docker installed from [here](https://www.docker.com/), then all you do is run docker-compose up -d, and the server **should** start with a database. However, this is **not** required and should be used for dedicated server setups rather than just one-off hostings as it is more complex. 
+
+#### FRP Setup
+Fast Reverse Proxy is an easy way to get non-LAN users able to play on your ss13 server.
+All you have to do is create in the root folder a frpc.ini file.
+
+In it, put something like this:
+```toml
+serverAddr = "frp.freefrp.net"
+serverPort = 7000
+auth.method = "token"
+auth.token = "freefrp.net"
+
+[[proxies]]
+name = "un13_official_proxy"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 46392
+```
+
+After that, your server's address should be:
+`byond://frp.freefrp.net:[remotePort]`

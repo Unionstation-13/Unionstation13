@@ -1,0 +1,11 @@
+serverAddr = "frp.freefrp.net"
+serverPort = 7000
+auth.method = "token"
+auth.token = "freefrp.net"
+
+[[proxies]]
+name = "un13_official_proxy"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 46392
