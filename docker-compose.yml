@@ -30,9 +30,10 @@ services:
       - ${DB_PATH}:/app/config/dbconfig.txt
       - ./data:/app/data
       - ./config:/app/config
-
-  playit-agent:
-    image: ghcr.io/playit-cloud/playit-agent:0.17
-    network_mode: "service:mariadb"
-    environment:
-    - SECRET_KEY=${PLAYIT_KEY}
+  
+  frp-tunnel:
+    image: snowdreamtech/frpc
+    container_name: frp-tunnel
+    restart: always
+    volumes:
+      - ./frpc.ini:/etc/frp/frpc.ini

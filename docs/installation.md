@@ -97,42 +97,22 @@ If you fill out a .env with the following types:
 - DB_PATH
 And have docker installed from [here](https://www.docker.com/), then all you do is run docker-compose up -d, and the server **should** start with a database. However, this is **not** required and should be used for dedicated server setups rather than just one-off hostings as it is more complex. 
 
-#### Play-it Setup
+#### FRP Setup
+Fast Reverse Proxy is an easy way to get non-LAN users able to play on your ss13 server.
+All you have to do is create in the root folder a frpc.ini file.
 
-If you wish to play with players outside of LAN, make sure to follow this step.
+In it, put something like this:
+```toml
+[common]
+server_addr = freefrp.net
+server_port = 7000 # Port of freefrp.net
 
-##### Creating a Play-it account
-To create a playit.gg account, go to [playit.gg](playit.gg) and follow the instructions to create an account.
+[byond_server]
+type = tcp
+local_ip = us13-instance # Do not change this unless you change the name of the docker container
+local_port = 8000 # The default port(changable if you edit the yml)
+remote_port = 25565 # the port that goes after freefrp.net
+```
 
-##### Connecting the Agent
-In the wizard, select docker and it will give you a yml command like:
-
-    version: '3'
-
-    services:
-    playit:
-        image: ghcr.io/playit-cloud/playit-agent:0.17
-        network_mode: host
-        environment:
-        - SECRET_KEY=mykeyhere
-
-Grab the key and paste it into the .env as PLAYIT_KEY.
-
-i.e:
-    PLAYIT_KEY=ususuaus
-
-Then, start your docker server with docker compose up -d and it should connect.
-
-##### Connecting a Tunnel
-This is the home stretch!
-Click exit wizard in the top right of the screen and it will bring you to a screen where it says create new tunnel. Click there, type your tunnel's name, choose Minecraft Java(to get free TCP) as tunnel type, port count 1 and fill out the rest up as appropriate until you reach origin config.
-
-For that, put in these values:
-- IP: 127.0.0.1
-- PORT: 8000
-- PROXY PROTOCOL: NONE
-
-Then create it, copy the address, add byond:// before it, and it might work.
-
-Feel free to ask questions in the official Unionstation13 Discord:
-https://discord.gg/Yj8a3v583j
+After that, your server's address should be:
+`byond://freefrp.net:[port]`
