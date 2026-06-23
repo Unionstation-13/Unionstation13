@@ -117,4 +117,4 @@ remotePort = 46392
 ```
 
 After that, your server's address should be:
-`byond://freefrp.net:[port]`
+`byond://frp.freefrp.net:[remotePort]`
